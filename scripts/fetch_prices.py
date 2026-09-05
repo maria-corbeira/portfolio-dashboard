@@ -33,6 +33,9 @@ def _get(url: str, timeout: int = 20) -> bytes:
         return r.read()
 
 
+ERRORS: list[str] = []
+
+
 def from_yahoo(ticker: str):
     """Precio actual + cierre anterior desde el chart API de Yahoo Finance."""
     for host in ("query1", "query2"):
@@ -40,7 +43,8 @@ def from_yahoo(ticker: str):
                f"?range=5d&interval=1d&includePrePost=false")
         try:
             meta = json.loads(_get(url))["chart"]["result"][0]["meta"]
-        except Exception:
+        except Exception as e:
+            ERRORS.append(f"yahoo/{host} {ticker}: {type(e).__name__}: {str(e)[:160]}")
             continue
         price = meta.get("regularMarketPrice")
         prev = meta.get("chartPreviousClose") or meta.get("previousClose")
@@ -74,7 +78,8 @@ def from_stooq(ticker: str):
             "market_time": None,
             "source": "stooq",
         }
-    except Exception:
+    except Exception as e:
+        ERRORS.append(f"stooq {ticker}: {type(e).__name__}: {str(e)[:160]}")
         return None
 
 
@@ -97,17 +102,19 @@ def main() -> int:
             print(f"  {t:<6} SIN DATOS")
         time.sleep(0.25)
 
-    if not prices:
-        print("ERROR: no se obtuvo ningún precio; no se escribe data.json", file=sys.stderr)
-        return 1
-
-    OUT.write_text(json.dumps({
+    payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "count": len(prices),
         "failed": failed,
         "prices": prices,
-    }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    }
+    if not prices:
+        # Se escribe igualmente para dejar rastro de por qué falló.
+        payload["errors"] = ERRORS[:12]
+    OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"\ndata.json escrito: {len(prices)} ok, {len(failed)} fallidos")
+    for e in ERRORS[:12]:
+        print("  !", e)
     return 0
 
 
