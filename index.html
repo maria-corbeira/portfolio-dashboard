@@ -31,7 +31,7 @@
     padding: 32px 20px 80px;
     min-height: 100vh;
   }
-  .wrap{ max-width: 1100px; margin: 0 auto; }
+  .wrap{ max-width: 1240px; margin: 0 auto; }
   header{
     display:flex; justify-content:space-between; align-items:flex-end;
     flex-wrap: wrap; gap: 16px;
@@ -157,6 +157,61 @@
   @media (prefers-reduced-motion: reduce){
     *{ transition:none !important; }
   }
+
+  /* ---- resumen de cartera --------------------------------------------- */
+  .summary{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:1px; background:var(--line); border:1px solid var(--line);
+    border-radius:8px; overflow:hidden; margin-bottom:16px; }
+  .stat{ background:var(--panel); padding:14px 16px; }
+  .stat .k{ font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+  .stat .v{ font-family:'Space Grotesk',sans-serif; font-size:21px; font-weight:600; margin-top:5px; }
+  .stat .s{ font-size:11px; color:var(--muted); margin-top:3px; }
+  .up{ color:var(--buy); } .down{ color:var(--avoid); }
+
+  .conc{ border:1px solid var(--line); border-left:3px solid var(--hold);
+    background:var(--panel); border-radius:8px; padding:14px 16px; margin-bottom:22px; }
+  .conc h3{ font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:600; margin-bottom:8px; }
+  .conc p{ font-size:12px; color:var(--muted); line-height:1.65; }
+  .conc b{ color:var(--text); }
+  .conc-bar{ display:flex; height:8px; border-radius:4px; overflow:hidden; margin:10px 0 8px; background:var(--panel-2); }
+  .conc-bar i{ display:block; }
+  .conc-key{ display:flex; gap:14px; flex-wrap:wrap; font-size:10.5px; color:var(--muted); }
+  .conc-key span{ display:inline-flex; align-items:center; gap:5px; }
+
+  /* ---- columna de posicion -------------------------------------------- */
+  .pos{ font-size:11.5px; line-height:1.6; white-space:nowrap; }
+  .pos .pl{ font-weight:600; font-size:13px; }
+  .pos .mut{ color:var(--muted); }
+
+  /* ---- fila desplegable ------------------------------------------------ */
+  tbody tr.main{ cursor:pointer; }
+  tbody tr.main:hover{ background:var(--panel); }
+  .caret{ color:var(--muted); font-size:11px; transition:transform .15s ease; display:inline-block; }
+  tr.main.open .caret{ transform:rotate(90deg); color:var(--text); }
+  tr.detail > td{ background:var(--panel); padding:0 !important; border-top:none; }
+  .detail-in{ padding:18px 16px 22px; }
+  .detail-note{ font-size:12px; color:var(--muted); line-height:1.7; margin-bottom:16px;
+    border-left:2px solid var(--line); padding-left:12px; }
+  .src{ font-size:10.5px; color:var(--muted); margin-top:14px; line-height:1.6; }
+  .no-fund{ font-size:11.5px; color:var(--muted); font-style:italic; }
+
+  .chk-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:1px;
+    background:var(--line); border:1px solid var(--line); border-radius:6px; overflow:hidden; margin-bottom:18px; }
+  .chk{ background:var(--panel-2); padding:9px 11px; display:flex; justify-content:space-between;
+    align-items:baseline; gap:10px; }
+  .chk .lbl{ font-size:10.5px; color:var(--muted); }
+  .chk .val{ font-size:13px; font-weight:600; white-space:nowrap; }
+  .chk.pass .val{ color:var(--buy); } .chk.fail .val{ color:var(--avoid); }
+  .chk.warn .val{ color:var(--hold); } .chk.na .val{ color:var(--muted); }
+
+  .fund-scroll{ overflow-x:auto; border:1px solid var(--line); border-radius:6px; }
+  table.fund{ font-size:11px; min-width:820px; }
+  table.fund th, table.fund td{ padding:6px 9px; text-align:right; white-space:nowrap; border-bottom:1px solid var(--line); }
+  table.fund th{ position:sticky; top:0; background:var(--panel-2); color:var(--muted);
+    font-weight:500; font-size:10px; text-transform:none; letter-spacing:0; }
+  table.fund th:first-child, table.fund td:first-child{ text-align:left; }
+  table.fund tbody tr:last-child td{ border-bottom:none; font-weight:600; background:var(--panel-2); }
+  table.fund .neg{ color:var(--avoid); }
 </style>
 </head>
 <body>
@@ -166,7 +221,7 @@
     <div>
       <h1>Portfolio Scorecard</h1>
       <div class="sub" id="last-updated">Cargando datos en vivo…</div>
-      <div class="sub" style="margin-top:2px;">Última revisión manual: 31 ago 2026 — precios de mercado actualizados en todo el portafolio</div>
+      <div class="sub" style="margin-top:2px;">Última revisión: 5 sep 2026 — P&amp;L real por posición; GOOGL con 10 años de datos de la SEC</div>
     </div>
     <div class="legend">
       <span><span class="dot" style="background:var(--q-quality)"></span>Calidad 40%</span>
@@ -178,6 +233,9 @@
   </header>
 
   <div class="banner" id="today-banner"></div>
+
+  <div class="summary" id="summary"></div>
+  <div class="conc" id="conc"></div>
 
   <div class="filters" id="filters">
     <button class="active" data-f="all">Todas</button>
@@ -192,13 +250,16 @@
         <th>Ticker</th>
         <th>Score</th>
         <th>Composición</th>
+        <th>Posición</th>
         <th>Precio vs. valor intrínseco</th>
         <th>Veredicto</th>
-        <th>Nota clave</th>
       </tr>
     </thead>
     <tbody id="rows"></tbody>
   </table>
+  <div style="font-size:11px; color:var(--muted); margin-top:10px;">
+    Pulsa cualquier fila para ver la nota y, si existe, la ficha de 10 años con datos de la SEC.
+  </div>
 
   <div class="outside">
     <h2>Fuera del framework</h2>
@@ -238,27 +299,27 @@
 // price: precio de mercado actual · intrinsic: {low, base, high} valor intrínseco estimado
 // null en cualquiera de los dos = todavía no definido para ese ticker (se ve como "Pendiente")
 const holdings = [
-  { t:"NVDA", shares:1.38, cost:222.95, score:91, verdict:"buy", cat:{q:97,h:95,g:90,v:78,ti:65}, price:217.55, intrinsic:{low:180, base:320, high:379}, note:"La más sólida de todo lo analizado: ROE 117%, ROIC 92%, PE 49% bajo su propio promedio de 10 años. GuruFocus advierte 'posible trampa de valor' — riesgo real es el ciclo de capex de IA de sus clientes, no el negocio en sí. Ya tienes mucha exposición a IA vía MSFT/GOOGL/META — no la sobre-pondere." },
-  { t:"MSFT", shares:1.9, cost:473.93, score:86, verdict:"buy",  cat:{q:95,h:90,g:80,v:75,ti:60}, price:488.00, intrinsic:{low:380, base:550, high:577}, todayMove:null, note:"Mejor perfil del portafolio. D/E 0.13, PEG 1.37. -11.9% en 52sem, punto de entrada razonable." },
-  { t:"GOOGL", shares:3.88, cost:316.38, score:84, verdict:"buy", cat:{q:95,h:90,g:80,v:65,ti:40}, price:338.76, intrinsic:{low:180, base:250, high:360}, todayMove:null, note:"ROIC 24.9%, márgenes 59%/32%. +97.5% en 52sem." },
-  { t:"META", shares:3.8, cost:579.12, score:83, verdict:"buy", cat:{q:90,h:85,g:75,v:80,ti:65}, price:578.00, intrinsic:{low:588, base:830, high:1040}, todayMove:null, note:"PEG 0.82, barata vs. crecimiento. -19.9% en 52sem, buen punto de entrada actual." },
-  { t:"ISRG", shares:1.61, cost:372.5, score:80, verdict:"buy", cat:{q:90,h:95,g:65,v:55,ti:65}, price:398.00, intrinsic:{low:208, base:400, high:620}, todayMove:null, note:"Sin deuda, ROIC 25%. -34.1% en 52sem, posible valor." },
-  { t:"UBER", shares:8.14, cost:73.74, score:76, verdict:"buy", cat:{q:82,h:58,g:80,v:88,ti:55}, price:78.82, intrinsic:{low:66, base:90, high:105}, todayMove:null, note:"Post-Q2: bookings +24% YoY, guía Q3 débil (ruido, no tesis rota). Subió bien desde los $70." },
-  { t:"AMZN", shares:1.89, cost:212.15, score:71, verdict:"hold", cat:{q:80,h:55,g:80,v:65,ti:50}, price:267.28, intrinsic:{low:180, base:245, high:345}, todayMove:null, note:"FCF TTM negativo por capex AWS/AI — vigilar si persiste." },
-  { t:"AAPL", shares:0.686713, cost:291.24, score:71, verdict:"hold", cat:{q:95,h:75,g:55,v:30,ti:40}, price:316.83, intrinsic:{low:176, base:210, high:284}, todayMove:null, note:"Moat excelente pero PEG 3.10, +47.8% en 52sem. Cara para entrar ahora." },
-  { t:"IBM", shares:2.66, cost:244.36, score:63, verdict:"hold", cat:{q:70,h:55,g:55,v:65,ti:60}, price:235.50, intrinsic:{low:128, base:240, high:286}, todayMove:null, note:"D/E elevado (~1.75). GuruFocus: modestamente infravalorada." },
-  { t:"COP", shares:1.85, cost:108.15, score:62, verdict:"hold", cat:{q:60,h:70,g:55,v:65,ti:60}, price:121.00, intrinsic:null, todayMove:null, note:"Beat claro en Q2, mejora Salud y Calidad. Sigue siendo commodity/cíclico — no lo pongas por delante de META o ISRG para dinero nuevo." },
-  { t:"WMT", shares:15.28, cost:111.28, score:62, verdict:"hold", cat:{q:72,h:50,g:60,v:48,ti:70}, price:103.84, intrinsic:{low:72, base:94, high:160}, todayMove:null, note:"Caída post-Q2 ya hizo buena parte del ajuste de valoración. RSI 32.6, cerca de soporte $107. Posible entrada por tramos." },
-  { t:"CVX", shares:2.63, cost:190.45, score:52, verdict:"hold", cat:{q:45,h:60,g:45,v:70,ti:55}, price:203.00, intrinsic:{low:126, base:155, high:200}, todayMove:null, note:"ROIC ~6%, débil. Dividendo ~4%, pero ahora por encima incluso del extremo alto de nuestro rango de valor — más cara que hace 3 semanas." },
+  { t:"NVDA", shares:1.38, cost:222.95, score:91, verdict:"buy", cat:{q:97,h:95,g:90,v:78,ti:65}, price:229.49, intrinsic:{low:180, base:320, high:379}, note:"La más sólida de todo lo analizado: ROE 117%, ROIC 92%, PE 49% bajo su propio promedio de 10 años. GuruFocus advierte 'posible trampa de valor' — riesgo real es el ciclo de capex de IA de sus clientes, no el negocio en sí. Ya tienes mucha exposición a IA vía MSFT/GOOGL/META — no la sobre-pondere." },
+  { t:"MSFT", shares:1.9, cost:473.93, score:86, verdict:"buy",  cat:{q:95,h:90,g:80,v:75,ti:60}, price:499.41, intrinsic:{low:380, base:550, high:577}, todayMove:null, note:"Mejor perfil del portafolio. D/E 0.13, PEG 1.37. -11.9% en 52sem, punto de entrada razonable." },
+  { t:"GOOGL", shares:3.88, cost:316.38, score:84, verdict:"hold", cat:{q:92,h:95,g:78,v:58,ti:null}, price:338.72, intrinsic:{low:180, base:250, high:360}, todayMove:null, note:"Analizada con 10 ejercicios de la SEC (2016-2025). Calidad y balance de primer nivel: ROIC medio 5a 37,1%, ROE 31,8%, caja neta de $59.800M, margen bruto y operativo en expansión. El punto débil es la caja: el capex pasó de $52.535M a $91.447M en un año y el FCF se quedó plano (+0,7%); el margen de FCF cae del 26,0% (2021) al 18,2% (2025). A $338,72 el FCF yield es 1,77%, muy por debajo del 4% del framework, y el P/E 31,3 se sale de la banda 15-30. PEG 1,05 con el precio de hoy, pero medido contra beneficio contable, no contra caja. Mantener; no ampliar a este precio. El valor intrínseco que se muestra viene del análisis web anterior, no de la SEC."},
+  { t:"META", shares:3.8, cost:579.12, score:83, verdict:"buy", cat:{q:90,h:85,g:75,v:80,ti:65}, price:615.2, intrinsic:{low:588, base:830, high:1040}, todayMove:null, note:"PEG 0.82, barata vs. crecimiento. -19.9% en 52sem, buen punto de entrada actual." },
+  { t:"ISRG", shares:1.61, cost:372.5, score:80, verdict:"buy", cat:{q:90,h:95,g:65,v:55,ti:65}, price:366.25, intrinsic:{low:208, base:400, high:620}, todayMove:null, note:"Sin deuda, ROIC 25%. -34.1% en 52sem, posible valor." },
+  { t:"UBER", shares:8.14, cost:73.74, score:76, verdict:"buy", cat:{q:82,h:58,g:80,v:88,ti:55}, price:75.7, intrinsic:{low:66, base:90, high:105}, todayMove:null, note:"Post-Q2: bookings +24% YoY, guía Q3 débil (ruido, no tesis rota). Subió bien desde los $70." },
+  { t:"AMZN", shares:1.89, cost:212.15, score:71, verdict:"hold", cat:{q:80,h:55,g:80,v:65,ti:50}, price:258.3, intrinsic:{low:180, base:245, high:345}, todayMove:null, note:"FCF TTM negativo por capex AWS/AI — vigilar si persiste." },
+  { t:"AAPL", shares:0.686713, cost:291.24, score:71, verdict:"hold", cat:{q:95,h:75,g:55,v:30,ti:40}, price:320.01, intrinsic:{low:176, base:210, high:284}, todayMove:null, note:"Moat excelente pero PEG 3.10, +47.8% en 52sem. Cara para entrar ahora." },
+  { t:"IBM", shares:2.66, cost:244.36, score:63, verdict:"hold", cat:{q:70,h:55,g:55,v:65,ti:60}, price:234.77, intrinsic:{low:128, base:240, high:286}, todayMove:null, note:"D/E elevado (~1.75). GuruFocus: modestamente infravalorada." },
+  { t:"COP", shares:1.85, cost:108.15, score:62, verdict:"hold", cat:{q:60,h:70,g:55,v:65,ti:60}, price:134.23, intrinsic:null, todayMove:null, note:"Beat claro en Q2, mejora Salud y Calidad. Sigue siendo commodity/cíclico — no lo pongas por delante de META o ISRG para dinero nuevo." },
+  { t:"WMT", shares:15.28, cost:111.28, score:62, verdict:"hold", cat:{q:72,h:50,g:60,v:48,ti:70}, price:107.14, intrinsic:{low:72, base:94, high:160}, todayMove:null, note:"Caída post-Q2 ya hizo buena parte del ajuste de valoración. RSI 32.6, cerca de soporte $107. Posible entrada por tramos." },
+  { t:"CVX", shares:2.63, cost:190.45, score:52, verdict:"hold", cat:{q:45,h:60,g:45,v:70,ti:55}, price:208.6, intrinsic:{low:126, base:155, high:200}, todayMove:null, note:"ROIC ~6%, débil. Dividendo ~4%, pero ahora por encima incluso del extremo alto de nuestro rango de valor — más cara que hace 3 semanas." },
 ];
 // SNDK: vendida a breakeven tras el rebote post-earnings (confirmado por el usuario) — retirada del portafolio.
 // Los precios de este array son solo un fallback estático. En producción los
 // sobrescribe data.json, que genera el GitHub Action cada 15 min (ver scripts/fetch_prices.py).
 
 const outsideFramework = [
-  { t:"QQQ", shares:1.4, cost:689.45, note:"Índice Nasdaq-100. Núcleo diversificado." },
-  { t:"VOO", shares:0.23946, cost:626.41, note:"Índice S&P 500. Núcleo diversificado." },
-  { t:"IAUM", shares:17.72, cost:45.14, note:"Oro físico. Hedge / no operativo." },
+  { t:"QQQ", shares:1.4, cost:689.45, price:717.5, note:"Índice Nasdaq-100. Núcleo diversificado." },
+  { t:"VOO", shares:0.23946, cost:626.41, price:707.66, note:"Índice S&P 500. Núcleo diversificado." },
+  { t:"IAUM", shares:17.72, cost:45.14, price:44.2, note:"Oro físico. Hedge / no operativo." },
 ];
 
 // Watchlist: candidatas analizadas que NO están en cartera. Mismo framework y
@@ -272,35 +333,229 @@ const watchlist = [
   { t:"SHEL", score:61, verdict:"hold", cat:{q:65,h:65,g:45,v:75,ti:40}, price:90.70, intrinsic:{low:69, base:82, high:98}, note:"Mejor negocio que CVX (ROIC más alto, más barata en múltiplos), pero mismo riesgo cíclico que ya tienes vía Chevron — no diversifica, duplica exposición a energía." },
 ];
 
+// <<<FUNDAMENTALS
+// Generado por scripts/embed_fundamentals.py — no editar a mano.
+const fundamentals = {"GOOGL":{"company":"Alphabet Inc.","units":"millones de USD; margenes, crecimientos y rentabilidades en %","aggregates":{"years_covered":"2016-2025","revenue_cagr_5y":17.2,"revenue_cagr_10y":18.1,"eps_cagr_5y":29.8,"fcf_cagr_5y":11.3,"roic_avg_5y":37.1,"roe_avg_5y":28.4,"fcf_positive_5y":true,"fcf_positive_10y":true,"share_count_change_5y":-2.3,"gross_margin_trend_5y":2.8,"operating_margin_trend_5y":1.4,"pe_latest":28.6,"peg_5y":0.96,"fcf_yield_latest":1.94,"latest_fiscal_year":"2025","diluted_shares_latest":12230,"net_income_latest":132170,"fcf_latest":73266,"revenue_latest":402836,"equity_latest":415265},"by_year":[{"year":"2016","revenue":90272,"revenue_growth":null,"gross_margin":61.1,"operating_margin":26.3,"net_margin":21.6,"roe":14.0,"roic":33.8,"interest_coverage":191.3,"debt_to_equity":0.03,"net_debt_ebitda":-2.84,"current_ratio":6.29,"eps_diluted":1.3925,"eps_growth":null,"cfo":36036,"capex":-10212,"fcf":25824,"fcf_margin":28.6,"fcf_growth":null,"sbc_pct_revenue":7.4,"diluted_shares":13974,"market_cap":538975.67,"price_close":39.623,"pe":27.7,"fcf_yield":4.79},{"year":"2017","revenue":110855,"revenue_growth":22.8,"gross_margin":58.9,"operating_margin":23.6,"net_margin":11.4,"roe":8.3,"roic":22.3,"interest_coverage":240.2,"debt_to_equity":0.03,"net_debt_ebitda":-3.03,"current_ratio":5.14,"eps_diluted":0.9,"eps_growth":-35.4,"cfo":37091,"capex":-13184,"fcf":23907,"fcf_margin":21.6,"fcf_growth":-7.4,"sbc_pct_revenue":6.9,"diluted_shares":14072,"market_cap":729444.67,"price_close":52.67,"pe":57.6,"fcf_yield":3.28},{"year":"2018","revenue":136819,"revenue_growth":23.4,"gross_margin":56.5,"operating_margin":20.1,"net_margin":22.5,"roe":17.3,"roic":33.4,"interest_coverage":241.4,"debt_to_equity":0.02,"net_debt_ebitda":-2.95,"current_ratio":3.92,"eps_diluted":2.185,"eps_growth":142.8,"cfo":47971,"capex":-25139,"fcf":22832,"fcf_margin":16.7,"fcf_growth":-4.5,"sbc_pct_revenue":6.8,"diluted_shares":14066,"market_cap":723981.23,"price_close":52.248,"pe":23.6,"fcf_yield":3.15},{"year":"2019","revenue":161857,"revenue_growth":18.3,"gross_margin":55.6,"operating_margin":21.1,"net_margin":21.2,"roe":17.0,"roic":30.3,"interest_coverage":342.3,"debt_to_equity":0.08,"net_debt_ebitda":-2.3,"current_ratio":3.37,"eps_diluted":2.458,"eps_growth":12.5,"cfo":54520,"capex":-23548,"fcf":30972,"fcf_margin":19.1,"fcf_growth":35.7,"sbc_pct_revenue":6.7,"diluted_shares":13971,"market_cap":924583.69,"price_close":66.97,"pe":26.9,"fcf_yield":3.35},{"year":"2020","revenue":182527,"revenue_growth":12.8,"gross_margin":53.6,"operating_margin":22.6,"net_margin":22.1,"roe":18.1,"roic":30.4,"interest_coverage":305.4,"debt_to_equity":0.13,"net_debt_ebitda":-2.01,"current_ratio":3.07,"eps_diluted":2.9305,"eps_growth":19.2,"cfo":65124,"capex":-22281,"fcf":42843,"fcf_margin":23.5,"fcf_growth":38.3,"sbc_pct_revenue":7.1,"diluted_shares":13741,"market_cap":1187555.92,"price_close":87.632,"pe":29.5,"fcf_yield":3.61},{"year":"2021","revenue":257637,"revenue_growth":41.2,"gross_margin":56.9,"operating_margin":30.6,"net_margin":29.5,"roe":30.2,"roic":46.9,"interest_coverage":227.5,"debt_to_equity":0.11,"net_debt_ebitda":-1.25,"current_ratio":2.93,"eps_diluted":5.61,"eps_growth":91.4,"cfo":91652,"capex":-24640,"fcf":67012,"fcf_margin":26.0,"fcf_growth":56.4,"sbc_pct_revenue":6.0,"diluted_shares":13553,"market_cap":1924518.45,"price_close":144.852,"pe":25.3,"fcf_yield":3.48},{"year":"2022","revenue":282836,"revenue_growth":9.8,"gross_margin":55.4,"operating_margin":26.5,"net_margin":21.2,"roe":23.4,"roic":36.5,"interest_coverage":209.6,"debt_to_equity":0.12,"net_debt_ebitda":-0.95,"current_ratio":2.38,"eps_diluted":4.56,"eps_growth":-18.7,"cfo":91495,"capex":-31485,"fcf":60010,"fcf_margin":21.2,"fcf_growth":-10.4,"sbc_pct_revenue":6.8,"diluted_shares":13159,"market_cap":1147453.54,"price_close":88.23,"pe":19.1,"fcf_yield":5.23},{"year":"2023","revenue":307394,"revenue_growth":8.7,"gross_margin":56.6,"operating_margin":27.4,"net_margin":24.0,"roe":26.0,"roic":35.9,"interest_coverage":273.7,"debt_to_equity":0.11,"net_debt_ebitda":-0.84,"current_ratio":2.1,"eps_diluted":5.8,"eps_growth":27.2,"cfo":101746,"capex":-32251,"fcf":69495,"fcf_margin":22.6,"fcf_growth":15.8,"sbc_pct_revenue":7.3,"diluted_shares":12722,"market_cap":1758945.41,"price_close":139.69,"pe":23.8,"fcf_yield":3.95},{"year":"2024","revenue":350018,"revenue_growth":13.9,"gross_margin":58.2,"operating_margin":32.1,"net_margin":28.6,"roe":30.8,"roic":36.1,"interest_coverage":419.4,"debt_to_equity":0.09,"net_debt_ebitda":-0.51,"current_ratio":1.84,"eps_diluted":8.04,"eps_growth":38.6,"cfo":125299,"capex":-52535,"fcf":72764,"fcf_margin":20.8,"fcf_growth":4.7,"sbc_pct_revenue":6.5,"diluted_shares":12447,"market_cap":2327879.82,"price_close":189.3,"pe":23.3,"fcf_yield":3.13},{"year":"2025","revenue":402836,"revenue_growth":15.1,"gross_margin":59.7,"operating_margin":32.0,"net_margin":32.8,"roe":31.8,"roic":30.2,"interest_coverage":175.3,"debt_to_equity":0.16,"net_debt_ebitda":-0.4,"current_ratio":2.01,"eps_diluted":10.81,"eps_growth":34.5,"cfo":164713,"capex":-91447,"fcf":73266,"fcf_margin":18.2,"fcf_growth":0.7,"sbc_pct_revenue":6.2,"diluted_shares":12230,"market_cap":3784444.21,"price_close":313.0,"pe":28.6,"fcf_yield":1.94}]}};
+// FUNDAMENTALS>>>
+
 const verdictLabel = { buy:"Comprar", hold:"Observar", avoid:"Evitar" };
+
+// Las seis grandes tecnologicas que se solapan entre si y con QQQ/VOO.
+const BIG_TECH = ["MSFT","GOOGL","META","AMZN","AAPL","NVDA"];
+const INDEX_ETF = ["QQQ","VOO"];
+
+const money = n => n==null ? "—" : "$" + n.toLocaleString('es-ES',{minimumFractionDigits:2, maximumFractionDigits:2});
+const sign  = (n,d=1) => n==null ? "—" : (n>=0?"+":"") + n.toFixed(d) + "%";
+const num   = (n,d=1) => n==null ? "—" : n.toLocaleString('es-ES',{minimumFractionDigits:d, maximumFractionDigits:d});
+const cls   = n => n==null ? "" : (n>=0 ? "up" : "down");
+const allPositions = () => [...holdings, ...outsideFramework];
+
+function stats(h){
+  if(h.shares==null || h.price==null) return null;
+  const mv = h.shares * h.price;
+  const cost = h.cost==null ? null : h.shares * h.cost;
+  return { mv, cost, pl: cost==null?null:mv-cost, plPct: cost ? (mv/cost-1)*100 : null };
+}
+
+function totals(){
+  let mv=0, cost=0, win=0, lose=0;
+  allPositions().forEach(h => {
+    const st = stats(h); if(!st) return;
+    mv += st.mv;
+    if(st.cost!=null){ cost += st.cost; st.pl>0 ? win++ : lose++; }
+  });
+  return { mv, cost, pl: mv-cost, plPct: cost ? (mv/cost-1)*100 : null, win, lose };
+}
+
+function renderSummary(){
+  const t = totals();
+  const el = document.getElementById('summary');
+  el.innerHTML = `
+    <div class="stat"><div class="k">Invertido</div><div class="v">${money(t.cost)}</div>
+      <div class="s">${allPositions().length} posiciones</div></div>
+    <div class="stat"><div class="k">Valor de mercado</div><div class="v">${money(t.mv)}</div>
+      <div class="s">precio actual × participaciones</div></div>
+    <div class="stat"><div class="k">P&L</div><div class="v ${cls(t.pl)}">${t.pl>=0?"+":"−"}${money(Math.abs(t.pl))}</div>
+      <div class="s ${cls(t.plPct)}">${sign(t.plPct)}</div></div>
+    <div class="stat"><div class="k">En ganancia</div><div class="v">${t.win} <span style="font-size:14px;color:var(--muted)">/ ${t.win+t.lose}</span></div>
+      <div class="s">${t.lose} en pérdida</div></div>`;
+
+  // --- concentracion ---
+  const sum = list => list.reduce((acc,h)=> acc + (stats(h)?.mv || 0), 0);
+  const big = sum(allPositions().filter(h => BIG_TECH.includes(h.t)));
+  const etf = sum(allPositions().filter(h => INDEX_ETF.includes(h.t)));
+  const rest = t.mv - big - etf;
+  const pctOf = v => v / t.mv * 100;
+  const ranked = allPositions().map(h => ({t:h.t, w: pctOf(stats(h)?.mv || 0)}))
+                               .sort((a,b)=> b.w - a.w);
+  const top1 = ranked[0], top3 = ranked.slice(0,3);
+  document.getElementById('conc').innerHTML = `
+    <h3>Riesgo de concentración</h3>
+    <div class="conc-bar">
+      <i style="width:${pctOf(big)}%; background:var(--q-quality)"></i>
+      <i style="width:${pctOf(etf)}%; background:var(--q-growth)"></i>
+      <i style="width:${pctOf(rest)}%; background:var(--line)"></i>
+    </div>
+    <div class="conc-key">
+      <span><span class="dot" style="background:var(--q-quality)"></span>Grandes tecnológicas directas ${num(pctOf(big))}%</span>
+      <span><span class="dot" style="background:var(--q-growth)"></span>QQQ + VOO ${num(pctOf(etf))}%</span>
+      <span><span class="dot" style="background:var(--line)"></span>Resto ${num(pctOf(rest))}%</span>
+    </div>
+    <p style="margin-top:10px;">
+      <b>${num(pctOf(big))}%</b> de la cartera está en ${BIG_TECH.join(", ")} — seis compañías
+      expuestas al mismo ciclo de capex de IA. QQQ y VOO añaden otro <b>${num(pctOf(etf))}%</b> cuyas
+      mayores posiciones son en buena parte esas mismas seis, así que la exposición real es superior
+      al ${num(pctOf(big))}% (el desglose exacto de cada ETF no está en este dashboard, no se estima).
+      Mayor posición individual: <b>${top1.t} ${num(top1.w)}%</b>. Las tres mayores suman
+      <b>${num(top3.reduce((a,x)=>a+x.w,0))}%</b>.
+      El scoring puntúa empresas de una en una y no ve este riesgo.
+    </p>`;
+}
+
+// ---------------------------------------------------------------- fichas ---
+const lastYear = f => f.by_year[f.by_year.length-1];
+
+// Recalcula P/E, PEG y FCF yield con el precio en vivo, no con el cierre del ejercicio.
+function live(f, price){
+  const a = f.aggregates;
+  if(price==null || !a.diluted_shares_latest) return {};
+  const mcap = price * a.diluted_shares_latest;            // millones de USD
+  const pe = a.net_income_latest ? mcap / a.net_income_latest : null;
+  return {
+    mcap, pe,
+    fcfY: a.fcf_latest ? a.fcf_latest / mcap * 100 : null,
+    peg: (pe && a.eps_cagr_5y > 0) ? pe / a.eps_cagr_5y : null
+  };
+}
+
+// Umbrales del framework. state: pass | warn | fail | na
+function checks(f, price){
+  const a = f.aggregates, y = lastYear(f), L = live(f, price);
+  const st = (v, ok, warn) => v==null ? "na" : (ok ? "pass" : (warn ? "warn" : "fail"));
+  return [
+    ["ROIC medio 5a > 12%", a.roic_avg_5y==null?null:num(a.roic_avg_5y)+"%",
+      st(a.roic_avg_5y, a.roic_avg_5y>15, a.roic_avg_5y>12)],
+    ["ROE > 15%", y.roe==null?null:num(y.roe)+"%", st(y.roe, y.roe>15, y.roe>12)],
+    ["Margen bruto 5a", a.gross_margin_trend_5y==null?null:sign(a.gross_margin_trend_5y)+" pp",
+      st(a.gross_margin_trend_5y, a.gross_margin_trend_5y>=0, a.gross_margin_trend_5y>=-1)],
+    ["Margen operativo 5a", a.operating_margin_trend_5y==null?null:sign(a.operating_margin_trend_5y)+" pp",
+      st(a.operating_margin_trend_5y, a.operating_margin_trend_5y>=0, a.operating_margin_trend_5y>=-1)],
+    ["FCF positivo 5 años", a.fcf_positive_5y==null?null:(a.fcf_positive_5y?"sí":"no"),
+      st(a.fcf_positive_5y, a.fcf_positive_5y===true, false)],
+    ["Cobertura intereses > 3", y.interest_coverage==null?null:num(y.interest_coverage)+"x",
+      st(y.interest_coverage, y.interest_coverage>3, false)],
+    ["Deuda / Fondos propios < 1", y.debt_to_equity==null?null:num(y.debt_to_equity,2),
+      st(y.debt_to_equity, y.debt_to_equity<1, y.debt_to_equity<1.5)],
+    ["Deuda neta / EBITDA < 3", y.net_debt_ebitda==null?null:num(y.net_debt_ebitda,2)+"x",
+      st(y.net_debt_ebitda, y.net_debt_ebitda<3, y.net_debt_ebitda<4)],
+    ["Liquidez corriente > 1,5", y.current_ratio==null?null:num(y.current_ratio,2),
+      st(y.current_ratio, y.current_ratio>1.5, y.current_ratio>1.2)],
+    ["Ventas CAGR 5a > 5%", a.revenue_cagr_5y==null?null:num(a.revenue_cagr_5y)+"%",
+      st(a.revenue_cagr_5y, a.revenue_cagr_5y>5, a.revenue_cagr_5y>3)],
+    ["BPA CAGR 5a > 8%", a.eps_cagr_5y==null?null:num(a.eps_cagr_5y)+"%",
+      st(a.eps_cagr_5y, a.eps_cagr_5y>8, a.eps_cagr_5y>0)],
+    ["FCF CAGR 5a > 0", a.fcf_cagr_5y==null?null:num(a.fcf_cagr_5y)+"%",
+      st(a.fcf_cagr_5y, a.fcf_cagr_5y>8, a.fcf_cagr_5y>0)],
+    ["P/E 15-30 (precio actual)", L.pe==null?null:num(L.pe),
+      st(L.pe, L.pe>=15 && L.pe<=30, L.pe<35)],
+    ["PEG 0,8-1,5", L.peg==null?null:num(L.peg,2),
+      st(L.peg, L.peg>=0.8 && L.peg<=1.5, L.peg<2)],
+    ["FCF yield > 4%", L.fcfY==null?null:num(L.fcfY,2)+"%",
+      st(L.fcfY, L.fcfY>4, L.fcfY>2.5)],
+  ];
+}
+
+const FUND_COLS = [
+  ["year","Ejercicio",0,""], ["revenue","Ventas",0,""], ["revenue_growth","Ventas %",1,"%"],
+  ["gross_margin","M. bruto",1,"%"], ["operating_margin","M. oper.",1,"%"], ["net_margin","M. neto",1,"%"],
+  ["roe","ROE",1,"%"], ["roic","ROIC",1,"%"], ["fcf","FCF",0,""], ["fcf_margin","M. FCF",1,"%"],
+  ["debt_to_equity","D/E",2,""], ["current_ratio","Liq.",2,""], ["eps_diluted","BPA",2,""], ["pe","P/E cierre",1,""]
+];
+
+function fundTable(f){
+  const head = FUND_COLS.map(c => `<th>${c[1]}</th>`).join("");
+  const body = f.by_year.map(r => "<tr>" + FUND_COLS.map(([k,,d,suf]) => {
+    const v = r[k];
+    if(v==null) return `<td class="mut">—</td>`;
+    if(k==="year") return `<td>${v}</td>`;
+    return `<td class="${v<0?'neg':''}">${num(v,d)}${suf}</td>`;
+  }).join("") + "</tr>").join("");
+  return `<div class="fund-scroll"><table class="fund"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>`;
+}
+
+function detailHtml(h){
+  const f = fundamentals[h.t];
+  let out = `<div class="detail-note">${h.note}</div>`;
+  if(!f){
+    out += `<div class="no-fund">Sin ficha de 10 años todavía. El score de arriba viene del análisis
+      anterior por búsqueda web, no de los 10-K de la SEC.</div>`;
+    return `<div class="detail-in">${out}</div>`;
+  }
+  const chk = checks(f, h.price).map(([lbl,val,state]) =>
+    `<div class="chk ${state}"><span class="lbl">${lbl}</span><span class="val">${val ?? "n.d."}</span></div>`).join("");
+  const a = f.aggregates;
+  out += `<div class="chk-grid">${chk}</div>` + fundTable(f);
+  out += `<div class="src">Fuente: 10-K de ${f.company} en data.sec.gov, ejercicios ${a.years_covered},
+    cifras reexpresadas (se toma el hecho XBRL con <code>filed</code> más reciente).
+    ${f.units}. P/E, PEG y FCF yield de las tarjetas se recalculan con el precio en vivo
+    (${a.diluted_shares_latest?.toLocaleString('es-ES')} M de acciones diluidas, cierre ${a.latest_fiscal_year});
+    la columna «P/E cierre» de la tabla usa la capitalización al cierre de cada ejercicio.
+    Las casillas en gris son datos que no se han podido obtener, no ceros.</div>`;
+  return `<div class="detail-in">${out}</div>`;
+}
+
+// ------------------------------------------------------------------ tabla ---
+function scoreBar(h){
+  return `<div class="bar-wrap">
+      <div class="bar">
+        <div class="seg" style="width:${h.cat.q*0.4}%; background:var(--q-quality)"></div>
+        <div class="seg" style="width:${h.cat.h*0.2}%; background:var(--q-health)"></div>
+        <div class="seg" style="width:${h.cat.g*0.2}%; background:var(--q-growth)"></div>
+        <div class="seg" style="width:${h.cat.v*0.15}%; background:var(--q-valuation)"></div>
+        <div class="seg" style="width:${(h.cat.ti ?? 0)*0.05}%; background:var(--q-timing)"></div>
+        ${h.cat.ti==null ? '<div class="seg" style="width:5%; background:repeating-linear-gradient(45deg,var(--line),var(--line)3px,transparent 3px,transparent 6px)" title="Timing sin datos"></div>' : ''}
+      </div>
+      <div class="bar-note">Q${h.cat.q} · S${h.cat.h} · C${h.cat.g} · V${h.cat.v} · T${h.cat.ti ?? "n.d."}</div>
+    </div>`;
+}
+
+function posCell(h, totalMv){
+  const st = stats(h);
+  if(!st) return `<div class="pos mut">—</div>`;
+  const w = st.mv / totalMv * 100;
+  return `<div class="pos">
+      <div class="pl ${cls(st.plPct)}">${sign(st.plPct)}</div>
+      <div class="mut">${money(st.mv)} · ${num(w)}% cartera</div>
+      <div class="mut">${h.shares} × coste ${money(h.cost)}</div>
+    </div>`;
+}
 
 function renderRows(filter){
   const rowsEl = document.getElementById('rows');
+  const totalMv = totals().mv;
   rowsEl.innerHTML = '';
   holdings
     .filter(h => filter === 'all' || h.verdict === filter)
     .forEach(h => {
       const tr = document.createElement('tr');
+      tr.className = 'main';
       tr.innerHTML = `
-        <td><div class="ticker">${h.t}${renderTodayBadge(h)}</div></td>
+        <td><div class="ticker"><span class="caret">▸</span> ${h.t}${renderTodayBadge(h)}</div></td>
         <td><span class="score">${h.score}</span></td>
-        <td>
-          <div class="bar-wrap">
-            <div class="bar">
-              <div class="seg" style="width:${h.cat.q*0.4}%; background:var(--q-quality)"></div>
-              <div class="seg" style="width:${h.cat.h*0.2}%; background:var(--q-health)"></div>
-              <div class="seg" style="width:${h.cat.g*0.2}%; background:var(--q-growth)"></div>
-              <div class="seg" style="width:${h.cat.v*0.15}%; background:var(--q-valuation)"></div>
-              <div class="seg" style="width:${h.cat.ti*0.05}%; background:var(--q-timing)"></div>
-            </div>
-            <div class="bar-note">Q${h.cat.q} · S${h.cat.h} · C${h.cat.g} · V${h.cat.v} · T${h.cat.ti}</div>
-          </div>
-        </td>
+        <td>${scoreBar(h)}</td>
+        <td>${posCell(h, totalMv)}</td>
         <td>${renderIntrinsic(h)}</td>
-        <td><span class="verdict v-${h.verdict}">${verdictLabel[h.verdict]}</span></td>
-        <td><div class="note">${h.note}</div></td>
-      `;
+        <td><span class="verdict v-${h.verdict}">${verdictLabel[h.verdict]}</span></td>`;
+      const det = document.createElement('tr');
+      det.className = 'detail';
+      det.hidden = true;
+      det.innerHTML = `<td colspan="6">${detailHtml(h)}</td>`;
+      tr.addEventListener('click', () => {
+        det.hidden = !det.hidden;
+        tr.classList.toggle('open', !det.hidden);
+      });
       rowsEl.appendChild(tr);
+      rowsEl.appendChild(det);
     });
 }
 
@@ -319,14 +574,14 @@ function renderIntrinsic(h){
       </div>`;
   }
   const diffPct = ((h.intrinsic.base - h.price) / h.price) * 100;
-  let cls = 'iv-fair', label = `En rango justo (${diffPct>=0?'+':''}${diffPct.toFixed(0)}%)`;
-  if(diffPct >= 10){ cls = 'iv-cheap'; label = `Barata (${diffPct.toFixed(0)}% bajo valor)`; }
-  else if(diffPct <= -10){ cls = 'iv-expensive'; label = `Cara (${Math.abs(diffPct).toFixed(0)}% sobre valor)`; }
+  let c = 'iv-fair', label = `En rango justo (${diffPct>=0?'+':''}${diffPct.toFixed(0)}%)`;
+  if(diffPct >= 10){ c = 'iv-cheap'; label = `Barata (${diffPct.toFixed(0)}% bajo valor)`; }
+  else if(diffPct <= -10){ c = 'iv-expensive'; label = `Cara (${Math.abs(diffPct).toFixed(0)}% sobre valor)`; }
   return `
     <div class="iv-wrap">
       <div class="iv-prices">Precio <b>$${h.price.toFixed(2)}</b>${dayChangeHtml(h)} · Valor <b>$${h.intrinsic.base.toFixed(2)}</b>
         <span style="opacity:.6">($${h.intrinsic.low}-$${h.intrinsic.high})</span></div>
-      <span class="iv-badge ${cls}">${label}</span>
+      <span class="iv-badge ${c}">${label}</span>
     </div>`;
 }
 
@@ -349,20 +604,21 @@ function renderBanner(){
       <div class="banner-item">
         <b>${h.t} ${h.todayMove.pct >= 0 ? '▲' : '▼'}${Math.abs(h.todayMove.pct)}%</b>
         <span>${h.todayMove.reason}</span>
-      </div>
-    `).join('')}
-  `;
+      </div>`).join('')}`;
 }
 
 function renderOutside(){
-  const el = document.getElementById('outside');
-  el.innerHTML = outsideFramework.map(o => `
-    <div class="outside-card">
+  const totalMv = totals().mv;
+  document.getElementById('outside').innerHTML = outsideFramework.map(o => {
+    const st = stats(o);
+    return `<div class="outside-card">
       <div class="t">${o.t}</div>
       <div class="s">${o.price != null ? `$${o.price.toFixed(2)}${dayChangeHtml(o)}` : '—'}</div>
+      ${st ? `<div class="s"><span class="${cls(st.plPct)}">${sign(st.plPct)}</span> ·
+        ${money(st.mv)} · ${num(st.mv/totalMv*100)}% cartera</div>` : ''}
       <div class="s">${o.note}</div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 }
 
 document.getElementById('filters').addEventListener('click', (e) => {
@@ -381,18 +637,14 @@ async function loadLiveData(){
     let matched = 0;
     [...holdings, ...outsideFramework, ...watchlist].forEach(item => {
       const q = data.prices && data.prices[item.t];
-      if(q){
-        item.price = q.price;
-        item.dayChangePct = q.change_pct;
-        matched++;
-      }
+      if(q){ item.price = q.price; item.dayChangePct = q.change_pct; matched++; }
     });
     const when = data.generated_at ? new Date(data.generated_at).toLocaleString('es', { dateStyle:'medium', timeStyle:'short' }) : 'hora desconocida';
     statusEl.textContent = matched > 0
       ? `Datos en vivo · actualizado ${when} · ${matched} tickers`
       : `data.json cargó pero sin precios reconocidos · revisa scripts/fetch_prices.py`;
   }catch(e){
-    statusEl.textContent = 'Datos en vivo aún no disponibles — mostrando últimos precios guardados manualmente. El GitHub Action los reemplazará en su primera corrida.';
+    statusEl.textContent = 'Precios del cierre del 5 sep 2026 — el Action de precios aún no ha corrido con éxito.';
   }
 }
 
@@ -404,28 +656,17 @@ function renderWatchlist(){
     tr.innerHTML = `
       <td><div class="ticker">${h.t}${renderTodayBadge(h)}</div></td>
       <td><span class="score">${h.score}</span></td>
-      <td>
-        <div class="bar-wrap">
-          <div class="bar">
-            <div class="seg" style="width:${h.cat.q*0.4}%; background:var(--q-quality)"></div>
-            <div class="seg" style="width:${h.cat.h*0.2}%; background:var(--q-health)"></div>
-            <div class="seg" style="width:${h.cat.g*0.2}%; background:var(--q-growth)"></div>
-            <div class="seg" style="width:${h.cat.v*0.15}%; background:var(--q-valuation)"></div>
-            <div class="seg" style="width:${h.cat.ti*0.05}%; background:var(--q-timing)"></div>
-          </div>
-          <div class="bar-note">Q${h.cat.q} · S${h.cat.h} · C${h.cat.g} · V${h.cat.v} · T${h.cat.ti}</div>
-        </div>
-      </td>
+      <td>${scoreBar(h)}</td>
       <td>${renderIntrinsic(h)}</td>
       <td><span class="verdict v-${h.verdict}">${verdictLabel[h.verdict]}</span></td>
-      <td><div class="note">${h.note}</div></td>
-    `;
+      <td><div class="note">${h.note}</div></td>`;
     rowsEl.appendChild(tr);
   });
 }
 
 async function init(){
   await loadLiveData();
+  renderSummary();
   renderRows('all');
   renderOutside();
   renderBanner();

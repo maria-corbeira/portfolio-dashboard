@@ -179,6 +179,16 @@ def compute(d):
     agg["peg_5y"] = None if (pe is None or not g or g <= 0) else round(pe / g, 2)
     agg["fcf_yield_latest"] = last("fcf_yield")
 
+    # Cifras del ultimo ejercicio, para que el dashboard recalcule P/E, PEG y
+    # FCF yield con el precio en vivo en vez de con el cierre del ejercicio.
+    agg["latest_fiscal_year"] = last("year")
+    agg["diluted_shares_latest"] = last("diluted_shares")
+    agg["net_income_latest"] = last("revenue") and None
+    agg["net_income_latest"] = ni[-1] if ni else None
+    agg["fcf_latest"] = last("fcf")
+    agg["revenue_latest"] = last("revenue")
+    agg["equity_latest"] = equity[-1] if equity else None
+
     missing = sorted({k for r in rows for k, v in r.items() if v is None})
     return {
         "ticker": d.get("ticker"),
