@@ -1,0 +1,46 @@
+{
+  "yahoo_chart": {
+    "status": 200,
+    "body": "{\"chart\":{\"result\":[{\"meta\":{\"currency\":\"USD\",\"symbol\":\"MSFT\",\"exchangeName\":\"NMS\",\"fullExchangeName\":\"NasdaqGS\",\"instrumentType\":\"EQUITY\",\"firstTradeDate\":511108200,\"regularMarketTime\":1788552001,\"hasPrePostMarketData\":true,\"gmtoffset\":-14400,\"timezone\":\"EDT\",\"exchangeTimezoneName\":\"America/New_York\",\"regularMarketPrice\":499.7,\"regularMarketChangePercent\":-2.043,\"fulldayPrice\":499.62,\"fulldayChan"
+  },
+  "yahoo_spark": {
+    "status": 200,
+    "body": "{\"spark\":{\"result\":[{\"symbol\":\"MSFT\",\"response\":[{\"meta\":{\"currency\":\"USD\",\"symbol\":\"MSFT\",\"exchangeName\":\"NMS\",\"fullExchangeName\":\"NasdaqGS\",\"instrumentType\":\"EQUITY\",\"firstTradeDate\":511108200,\"regularMarketTime\":1788552001,\"hasPrePostMarketData\":true,\"gmtoffset\":-14400,\"timezone\":\"EDT\",\"exchangeTimezoneName\":\"America/New_York\",\"regularMarketPrice\":499.7,\"regularMarketChangePercent\":-2.043,\"full"
+  },
+  "stooq_com": {
+    "status": 404,
+    "body": "HTTP Error 404: Not Found"
+  },
+  "stooq_pl": {
+    "status": 404,
+    "body": "HTTP Error 404: Not Found"
+  },
+  "cnbc": {
+    "status": 200,
+    "body": "{\"FormattedQuoteResult\":{\"FormattedQuote\":[{\"symbol\":\"MSFT\",\"symbolType\":\"symbol\",\"code\":0,\"name\":\"Microsoft Corporation\",\"shortName\":\"MSFT\",\"onAirName\":\"Microsoft\",\"altName\":\"Microsoft Corporation\",\"last\":\"499.70\",\"last_timedate\":\"09/04/26 EDT\",\"last_time\":\"2026-09-04\",\"changetype\":\"DOWN\",\"type\":\"STOCK\",\"subType\":\"Common Stock\",\"exchange\":\"NASDAQ\",\"source\":\"Last NASDAQ LS, VOL From CTA\",\"open\":\"5"
+  },
+  "nasdaq": {
+    "status": 200,
+    "body": "{\"data\":{\"symbol\":\"MSFT\",\"companyName\":\"Microsoft Corporation Common Stock\",\"stockType\":\"Common Stock\",\"exchange\":\"NASDAQ-GS\",\"isNasdaqListed\":true,\"isNasdaq100\":true,\"isHeld\":false,\"primaryData\":{\"lastSalePrice\":\"$499.70\",\"netChange\":\"-10.42\",\"percentageChange\":\"-2.04%\",\"deltaIndicator\":\"down\",\"lastTradeTimestamp\":\"Sep 3, 2026\",\"isRealTime\":false,\"bidPrice\":\"N/A\",\"askPrice\":\"N/A\",\"bidSize\":\"N/A\","
+  },
+  "wsj": {
+    "status": 401,
+    "body": "HTTP Error 401: HTTP Forbidden"
+  },
+  "fmp_demo": {
+    "status": 401,
+    "body": "HTTP Error 401: Unauthorized"
+  },
+  "twelvedata_demo": {
+    "status": 401,
+    "body": "HTTP Error 401: Unauthorized"
+  },
+  "alphavantage_demo": {
+    "status": 200,
+    "body": "{\n    \"Global Quote\": {\n        \"01. symbol\": \"IBM\",\n        \"02. open\": \"233.3300\",\n        \"03. high\": \"236.1700\",\n        \"04. low\": \"231.6800\",\n        \"05. price\": \"234.8900\",\n        \"06. volume\": \"3722860\",\n        \"07. latest trading day\": \"2026-09-04\",\n        \"08. previous close\": \"234.7100\",\n        \"09. change\": \"0.1800\",\n        \"10. change percent\": \"0.0767%\"\n    }\n}"
+  },
+  "coincap_style_hn": {
+    "status": 401,
+    "body": "HTTP Error 401: Unauthorized"
+  }
+}
