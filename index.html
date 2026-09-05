@@ -238,33 +238,32 @@
 // price: precio de mercado actual · intrinsic: {low, base, high} valor intrínseco estimado
 // null en cualquiera de los dos = todavía no definido para ese ticker (se ve como "Pendiente")
 const holdings = [
-  { t:"MSFT", score:86, verdict:"buy",  cat:{q:95,h:90,g:80,v:75,ti:60}, price:488.00, intrinsic:{low:380, base:550, high:577}, todayMove:null, note:"Mejor perfil del portafolio. D/E 0.13, PEG 1.37. -11.9% en 52sem, punto de entrada razonable." },
-  { t:"GOOGL", score:84, verdict:"buy", cat:{q:95,h:90,g:80,v:65,ti:40}, price:338.76, intrinsic:{low:180, base:250, high:360}, todayMove:null, note:"ROIC 24.9%, márgenes 59%/32%. +97.5% en 52sem." },
-  { t:"META", score:83, verdict:"buy", cat:{q:90,h:85,g:75,v:80,ti:65}, price:578.00, intrinsic:{low:588, base:830, high:1040}, todayMove:null, note:"PEG 0.82, barata vs. crecimiento. -19.9% en 52sem, buen punto de entrada actual." },
-  { t:"ISRG", score:80, verdict:"buy", cat:{q:90,h:95,g:65,v:55,ti:65}, price:398.00, intrinsic:{low:208, base:400, high:620}, todayMove:null, note:"Sin deuda, ROIC 25%. -34.1% en 52sem, posible valor." },
-  { t:"UBER", score:76, verdict:"buy", cat:{q:82,h:58,g:80,v:88,ti:55}, price:78.82, intrinsic:{low:66, base:90, high:105}, todayMove:null, note:"Post-Q2: bookings +24% YoY, guía Q3 débil (ruido, no tesis rota). Subió bien desde los $70." },
-  { t:"AMZN", score:71, verdict:"hold", cat:{q:80,h:55,g:80,v:65,ti:50}, price:267.28, intrinsic:{low:180, base:245, high:345}, todayMove:null, note:"FCF TTM negativo por capex AWS/AI — vigilar si persiste." },
-  { t:"AAPL", score:71, verdict:"hold", cat:{q:95,h:75,g:55,v:30,ti:40}, price:316.83, intrinsic:{low:176, base:210, high:284}, todayMove:null, note:"Moat excelente pero PEG 3.10, +47.8% en 52sem. Cara para entrar ahora." },
-  { t:"IBM", score:63, verdict:"hold", cat:{q:70,h:55,g:55,v:65,ti:60}, price:235.50, intrinsic:{low:128, base:240, high:286}, todayMove:null, note:"D/E elevado (~1.75). GuruFocus: modestamente infravalorada." },
-  { t:"COP", score:62, verdict:"hold", cat:{q:60,h:70,g:55,v:65,ti:60}, price:121.00, intrinsic:null, todayMove:null, note:"Beat claro en Q2, mejora Salud y Calidad. Sigue siendo commodity/cíclico — no lo pongas por delante de META o ISRG para dinero nuevo." },
-  { t:"WMT", score:62, verdict:"hold", cat:{q:72,h:50,g:60,v:48,ti:70}, price:103.84, intrinsic:{low:72, base:94, high:160}, todayMove:null, note:"Caída post-Q2 ya hizo buena parte del ajuste de valoración. RSI 32.6, cerca de soporte $107. Posible entrada por tramos." },
-  { t:"CVX", score:52, verdict:"hold", cat:{q:45,h:60,g:45,v:70,ti:55}, price:203.00, intrinsic:{low:126, base:155, high:200}, todayMove:null, note:"ROIC ~6%, débil. Dividendo ~4%, pero ahora por encima incluso del extremo alto de nuestro rango de valor — más cara que hace 3 semanas." },
-  { t:"TSLA", score:55, verdict:"hold", cat:{q:55,h:85,g:55,v:15,ti:50}, price:345.00, intrinsic:{low:21, base:150, high:333}, todayMove:null, note:"ROIC 5.5%, PEG extremo — extremadamente cara pese al moat de marca. Ya por encima incluso del caso alcista (GF Value) de nuestro rango." },
+  { t:"NVDA", shares:1.38, cost:null, score:91, verdict:"buy", cat:{q:97,h:95,g:90,v:78,ti:65}, price:217.55, intrinsic:{low:180, base:320, high:379}, note:"La más sólida de todo lo analizado: ROE 117%, ROIC 92%, PE 49% bajo su propio promedio de 10 años. GuruFocus advierte 'posible trampa de valor' — riesgo real es el ciclo de capex de IA de sus clientes, no el negocio en sí. Ya tienes mucha exposición a IA vía MSFT/GOOGL/META — no la sobre-pondere." },
+  { t:"MSFT", shares:1.9, cost:null, score:86, verdict:"buy",  cat:{q:95,h:90,g:80,v:75,ti:60}, price:488.00, intrinsic:{low:380, base:550, high:577}, todayMove:null, note:"Mejor perfil del portafolio. D/E 0.13, PEG 1.37. -11.9% en 52sem, punto de entrada razonable." },
+  { t:"GOOGL", shares:3.88, cost:null, score:84, verdict:"buy", cat:{q:95,h:90,g:80,v:65,ti:40}, price:338.76, intrinsic:{low:180, base:250, high:360}, todayMove:null, note:"ROIC 24.9%, márgenes 59%/32%. +97.5% en 52sem." },
+  { t:"META", shares:3.8, cost:null, score:83, verdict:"buy", cat:{q:90,h:85,g:75,v:80,ti:65}, price:578.00, intrinsic:{low:588, base:830, high:1040}, todayMove:null, note:"PEG 0.82, barata vs. crecimiento. -19.9% en 52sem, buen punto de entrada actual." },
+  { t:"ISRG", shares:1.61, cost:null, score:80, verdict:"buy", cat:{q:90,h:95,g:65,v:55,ti:65}, price:398.00, intrinsic:{low:208, base:400, high:620}, todayMove:null, note:"Sin deuda, ROIC 25%. -34.1% en 52sem, posible valor." },
+  { t:"UBER", shares:8.14, cost:null, score:76, verdict:"buy", cat:{q:82,h:58,g:80,v:88,ti:55}, price:78.82, intrinsic:{low:66, base:90, high:105}, todayMove:null, note:"Post-Q2: bookings +24% YoY, guía Q3 débil (ruido, no tesis rota). Subió bien desde los $70." },
+  { t:"AMZN", shares:1.89, cost:null, score:71, verdict:"hold", cat:{q:80,h:55,g:80,v:65,ti:50}, price:267.28, intrinsic:{low:180, base:245, high:345}, todayMove:null, note:"FCF TTM negativo por capex AWS/AI — vigilar si persiste." },
+  { t:"AAPL", shares:0.686713, cost:null, score:71, verdict:"hold", cat:{q:95,h:75,g:55,v:30,ti:40}, price:316.83, intrinsic:{low:176, base:210, high:284}, todayMove:null, note:"Moat excelente pero PEG 3.10, +47.8% en 52sem. Cara para entrar ahora." },
+  { t:"IBM", shares:2.66, cost:null, score:63, verdict:"hold", cat:{q:70,h:55,g:55,v:65,ti:60}, price:235.50, intrinsic:{low:128, base:240, high:286}, todayMove:null, note:"D/E elevado (~1.75). GuruFocus: modestamente infravalorada." },
+  { t:"COP", shares:1.85, cost:null, score:62, verdict:"hold", cat:{q:60,h:70,g:55,v:65,ti:60}, price:121.00, intrinsic:null, todayMove:null, note:"Beat claro en Q2, mejora Salud y Calidad. Sigue siendo commodity/cíclico — no lo pongas por delante de META o ISRG para dinero nuevo." },
+  { t:"WMT", shares:15.28, cost:null, score:62, verdict:"hold", cat:{q:72,h:50,g:60,v:48,ti:70}, price:103.84, intrinsic:{low:72, base:94, high:160}, todayMove:null, note:"Caída post-Q2 ya hizo buena parte del ajuste de valoración. RSI 32.6, cerca de soporte $107. Posible entrada por tramos." },
+  { t:"CVX", shares:2.63, cost:null, score:52, verdict:"hold", cat:{q:45,h:60,g:45,v:70,ti:55}, price:203.00, intrinsic:{low:126, base:155, high:200}, todayMove:null, note:"ROIC ~6%, débil. Dividendo ~4%, pero ahora por encima incluso del extremo alto de nuestro rango de valor — más cara que hace 3 semanas." },
 ];
 // SNDK: vendida a breakeven tras el rebote post-earnings (confirmado por el usuario) — retirada del portafolio.
 // Los precios de este array son solo un fallback estático. En producción los
 // sobrescribe data.json, que genera el GitHub Action cada 15 min (ver scripts/fetch_prices.py).
 
 const outsideFramework = [
-  { t:"QQQ", note:"Índice Nasdaq-100. Núcleo diversificado." },
-  { t:"VOO", note:"Índice S&P 500. Núcleo diversificado." },
-  { t:"IAUM", note:"Oro físico. Hedge / no operativo." },
+  { t:"QQQ", shares:1.4, cost:null, note:"Índice Nasdaq-100. Núcleo diversificado." },
+  { t:"VOO", shares:0.23946, cost:null, note:"Índice S&P 500. Núcleo diversificado." },
+  { t:"IAUM", shares:17.72, cost:null, note:"Oro físico. Hedge / no operativo." },
 ];
 
 // Watchlist: candidatas analizadas que NO están en cartera. Mismo framework y
 // misma lógica de semáforo de valor intrínseco que las posiciones reales.
 const watchlist = [
-  { t:"NVDA", score:91, verdict:"buy", cat:{q:97,h:95,g:90,v:78,ti:65}, price:217.55, intrinsic:{low:180, base:320, high:379}, note:"La más sólida de todo lo analizado: ROE 117%, ROIC 92%, PE 49% bajo su propio promedio de 10 años. GuruFocus advierte 'posible trampa de valor' — riesgo real es el ciclo de capex de IA de sus clientes, no el negocio en sí. Ya tienes mucha exposición a IA vía MSFT/GOOGL/META — no la sobre-pondere." },
   { t:"PGR", score:88, verdict:"buy", cat:{q:92,h:90,g:85,v:88,ti:70}, price:206.00, intrinsic:{low:180, base:232, high:260}, note:"Aseguradora de auto mejor gestionada de EE.UU. ROE 34.9%, ROIC 28.7%, PEG 0.51 — genuinamente barata para su crecimiento (EPS +44%/año 3 años, precio solo +18%/año, rezagado). Diversifica hacia seguros/financieros, sector que hoy no tienes. Vigilar: márgenes de suscripción normalizándose desde niveles excepcionales." },
   { t:"V", score:77, verdict:"buy", cat:{q:95,h:75,g:65,v:55,ti:60}, price:343.09, intrinsic:{low:290, base:390, high:420}, note:"Moat de red de pagos casi insuperable, ROE 61%, ROIC 55%. Preferida sobre Mastercard: mismo tipo de negocio con mucho menos apalancamiento (D/E 0.68 vs 4.40 de MA). Diversifica hacia pagos/financieros, sector que hoy no tienes." },
   { t:"PLTR", score:76, verdict:"hold", cat:{q:90,h:95,g:85,v:15,ti:40}, price:186.53, intrinsic:{low:28, base:172, high:207}, note:"Negocio excepcional (Rule of 40 de 155%, sin deuda), pero sin margen de seguridad — un DCF puro de flujo de caja la manda a $28. Apuesta de convicción en la narrativa, no compra de 'value+quality' clásica. Insiders vendiendo fuerte." },
