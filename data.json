@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-09-05T18:54:04+00:00",
+  "count": 0,
+  "failed": [
+    "MSFT",
+    "GOOGL",
+    "META",
+    "ISRG",
+    "UBER",
+    "AMZN",
+    "AAPL",
+    "IBM",
+    "COP",
+    "WMT",
+    "CVX",
+    "TSLA",
+    "QQQ",
+    "VOO",
+    "IAUM",
+    "NVDA",
+    "PGR",
+    "V",
+    "PLTR",
+    "LULU",
+    "UNP",
+    "SHEL"
+  ],
+  "prices": {},
+  "errors": [
+    "yahoo/query1 MSFT: HTTPError: HTTP Error 429: Too Many Requests",
+    "yahoo/query2 MSFT: HTTPError: HTTP Error 429: Too Many Requests",
+    "stooq MSFT: HTTPError: HTTP Error 404: Not Found",
+    "yahoo/query1 GOOGL: HTTPError: HTTP Error 429: Too Many Requests",
+    "yahoo/query2 GOOGL: HTTPError: HTTP Error 429: Too Many Requests",
+    "stooq GOOGL: HTTPError: HTTP Error 404: Not Found",
+    "yahoo/query1 META: HTTPError: HTTP Error 429: Too Many Requests",
+    "yahoo/query2 META: HTTPError: HTTP Error 429: Too Many Requests",
+    "stooq META: HTTPError: HTTP Error 404: Not Found",
+    "yahoo/query1 ISRG: HTTPError: HTTP Error 429: Too Many Requests",
+    "yahoo/query2 ISRG: HTTPError: HTTP Error 429: Too Many Requests",
+    "stooq ISRG: HTTPError: HTTP Error 404: Not Found"
+  ]
+}
