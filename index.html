@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Scorecard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0A0D10;
+    --panel: #12161B;
+    --panel-2: #171C22;
+    --line: #232A32;
+    --text: #E8ECEF;
+    --muted: #7C8790;
+    --buy: #35D07F;
+    --hold: #F2B84B;
+    --avoid: #E85D5D;
+    --q-quality: #4C8DFF;
+    --q-health: #35D07F;
+    --q-growth: #A78BFA;
+    --q-valuation: #F2B84B;
+    --q-timing: #E85D5D;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 32px 20px 80px;
+    min-height: 100vh;
+  }
+  .wrap{ max-width: 1100px; margin: 0 auto; }
+  header{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    flex-wrap: wrap; gap: 16px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 20px; margin-bottom: 28px;
+  }
+  h1{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700; font-size: 28px; letter-spacing:-0.02em;
+  }
+  .sub{ color: var(--muted); font-size:13px; margin-top:4px; }
+  .legend{ display:flex; gap:18px; font-size:11px; color:var(--muted); flex-wrap:wrap; }
+  .legend span{ display:inline-flex; align-items:center; gap:6px; }
+  .dot{ width:8px; height:8px; border-radius:2px; display:inline-block; }
+
+  .filters{ display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap; }
+  .filters button{
+    background: var(--panel); color: var(--muted); border:1px solid var(--line);
+    font-family:'IBM Plex Mono', monospace; font-size:12px;
+    padding:7px 14px; border-radius:6px; cursor:pointer;
+    transition: all .15s ease;
+  }
+  .filters button:hover{ color: var(--text); border-color:#3a434d; }
+  .filters button.active{ color: var(--bg); background: var(--text); border-color: var(--text); }
+
+  table{ width:100%; border-collapse: collapse; }
+  thead th{
+    text-align:left; font-size:10px; text-transform:uppercase; letter-spacing:.08em;
+    color:var(--muted); font-weight:500; padding:0 12px 10px;
+    border-bottom:1px solid var(--line);
+  }
+  tbody tr{
+    border-bottom:1px solid var(--line);
+    transition: background .15s ease;
+  }
+  tbody tr:hover{ background: var(--panel); }
+  tbody td{ padding:14px 12px; vertical-align:middle; font-size:13px; }
+
+  .ticker{
+    font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:16px;
+    display:flex; align-items:baseline; gap:8px;
+  }
+
+  .score{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px; }
+  .verdict{
+    font-size:10px; font-weight:600; padding:4px 9px; border-radius:20px;
+    text-transform:uppercase; letter-spacing:.04em; display:inline-block;
+  }
+  .v-buy{ background: rgba(53,208,127,.12); color: var(--buy); }
+  .v-hold{ background: rgba(242,184,74,.12); color: var(--hold); }
+  .v-avoid{ background: rgba(232,93,93,.12); color: var(--avoid); }
+
+  .bar{ display:flex; height:8px; width:220px; border-radius:2px; overflow:hidden; background:var(--line); }
+  .seg{ height:100%; }
+  .bar-wrap{ display:flex; flex-direction:column; gap:5px; }
+  .bar-note{ font-size:10px; color:var(--muted); }
+
+  .flag{ color: var(--avoid); font-size:11px; }
+  .note{ color: var(--muted); font-size:11px; max-width:260px; line-height:1.5; }
+
+  .iv-wrap{ display:flex; flex-direction:column; gap:5px; min-width:130px; }
+  .iv-prices{ font-size:11px; color:var(--muted); display:flex; gap:8px; }
+  .iv-prices b{ color:var(--text); font-weight:600; }
+  .iv-badge{
+    font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;
+    display:inline-flex; align-items:center; gap:5px; width:fit-content;
+  }
+  .iv-cheap{ background: rgba(53,208,127,.14); color: var(--buy); }
+  .iv-expensive{ background: rgba(232,93,93,.14); color: var(--avoid); }
+  .iv-fair{ background: rgba(242,184,74,.14); color: var(--hold); }
+  .iv-pending{ background: var(--panel-2); color: var(--muted); border:1px dashed var(--line); }
+
+  .today-move{
+    font-size:10px; font-weight:600; padding:2px 7px; border-radius:10px;
+    display:inline-flex; align-items:center; gap:3px;
+  }
+  .today-up{ background: rgba(53,208,127,.14); color: var(--buy); }
+  .today-down{ background: rgba(232,93,93,.14); color: var(--avoid); }
+
+  .banner{
+    background: var(--panel); border:1px solid var(--line); border-radius:10px;
+    padding:16px 18px; margin-bottom:24px;
+  }
+  .banner-title{
+    font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:12px;
+    text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin-bottom:10px;
+  }
+  .banner-item{ display:flex; gap:10px; padding:8px 0; border-top:1px solid var(--line); font-size:12.5px; line-height:1.6; }
+  .banner-item:first-of-type{ border-top:none; }
+  .banner-item b{ font-family:'Space Grotesk',sans-serif; font-size:13px; min-width:52px; }
+
+  .outside{
+    margin-top:44px; padding-top:24px; border-top:1px solid var(--line);
+  }
+  .outside h2{
+    font-family:'Space Grotesk',sans-serif; font-size:15px; color:var(--muted);
+    text-transform:uppercase; letter-spacing:.06em; margin-bottom:14px; font-weight:600;
+  }
+  .outside-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:10px; }
+  .outside-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:12px 14px;
+  }
+  .outside-card .t{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:14px; }
+  .outside-card .s{ color:var(--muted); font-size:11px; margin-top:2px; }
+
+  .watchlist{ margin-top:44px; padding-top:24px; border-top:1px solid var(--line); }
+  .watchlist h2{
+    font-family:'Space Grotesk',sans-serif; font-size:15px; color:var(--muted);
+    text-transform:uppercase; letter-spacing:.06em; margin-bottom:6px; font-weight:600;
+  }
+  .watchlist .wl-sub{ color:var(--muted); font-size:12px; margin-bottom:14px; }
+
+  footer{ margin-top:50px; color:var(--muted); font-size:11px; line-height:1.7; }
+  footer a{ color:var(--text); }
+
+  @media (max-width: 800px){
+    table thead{ display:none; }
+    table, tbody, tr, td{ display:block; width:100%; }
+    tbody tr{ padding:14px 0; }
+    tbody td{ padding:4px 0; }
+    .bar{ width:100%; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <h1>Portfolio Scorecard</h1>
+      <div class="sub" id="last-updated">Cargando datos en vivo…</div>
+      <div class="sub" style="margin-top:2px;">Última revisión manual: 31 ago 2026 — precios de mercado actualizados en todo el portafolio</div>
+    </div>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--q-quality)"></span>Calidad 40%</span>
+      <span><span class="dot" style="background:var(--q-health)"></span>Salud 20%</span>
+      <span><span class="dot" style="background:var(--q-growth)"></span>Crecimiento 20%</span>
+      <span><span class="dot" style="background:var(--q-valuation)"></span>Valoración 15%</span>
+      <span><span class="dot" style="background:var(--q-timing)"></span>Timing 5%</span>
+    </div>
+  </header>
+
+  <div class="banner" id="today-banner"></div>
+
+  <div class="filters" id="filters">
+    <button class="active" data-f="all">Todas</button>
+    <button data-f="buy">Comprar</button>
+    <button data-f="hold">Observar</button>
+    <button data-f="avoid">Evitar</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Ticker</th>
+        <th>Score</th>
+        <th>Composición</th>
+        <th>Precio vs. valor intrínseco</th>
+        <th>Veredicto</th>
+        <th>Nota clave</th>
+      </tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+
+  <div class="outside">
+    <h2>Fuera del framework</h2>
+    <div class="outside-grid" id="outside"></div>
+  </div>
+
+  <div class="watchlist">
+    <h2>Watchlist — no está en cartera</h2>
+    <div class="wl-sub">Candidatas analizadas para posible compra futura, ordenadas por score.</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Score</th>
+          <th>Composición</th>
+          <th>Precio vs. valor intrínseco</th>
+          <th>Veredicto</th>
+          <th>Nota clave</th>
+        </tr>
+      </thead>
+      <tbody id="wl-rows"></tbody>
+    </table>
+  </div>
+
+  <footer>
+    Metodología: scoring ponderado Calidad(40%) + Salud(20%) + Crecimiento(20%) + Valoración(15%) + Timing(5%).
+    80-100 Excelente · 60-79 Buena · 40-59 Neutral/cautela · &lt;40 Evitar.<br>
+    Datos y scores según el último análisis conversacional — actualizar el array <code>holdings</code> abajo cuando cambien fundamentales o precios.<br>
+    Señal de valor: <span style="color:var(--buy)">verde</span> = precio ≥10% bajo el valor intrínseco base (barata) ·
+    <span style="color:var(--hold)">ámbar</span> = dentro de ±10% (rango justo) ·
+    <span style="color:var(--avoid)">rojo</span> = precio ≥10% sobre el valor intrínseco (cara).
+    "Pendiente" = todavía no se ha definido un valor intrínseco para ese ticker.
+  </footer>
+</div>
+
+<script>
+// price: precio de mercado actual · intrinsic: {low, base, high} valor intrínseco estimado
+// null en cualquiera de los dos = todavía no definido para ese ticker (se ve como "Pendiente")
+const holdings = [
+  { t:"MSFT", score:86, verdict:"buy",  cat:{q:95,h:90,g:80,v:75,ti:60}, price:488.00, intrinsic:{low:380, base:550, high:577}, todayMove:null, note:"Mejor perfil del portafolio. D/E 0.13, PEG 1.37. -11.9% en 52sem, punto de entrada razonable." },
+  { t:"GOOGL", score:84, verdict:"buy", cat:{q:95,h:90,g:80,v:65,ti:40}, price:338.76, intrinsic:{low:180, base:250, high:360}, todayMove:null, note:"ROIC 24.9%, márgenes 59%/32%. +97.5% en 52sem." },
+  { t:"META", score:83, verdict:"buy", cat:{q:90,h:85,g:75,v:80,ti:65}, price:578.00, intrinsic:{low:588, base:830, high:1040}, todayMove:null, note:"PEG 0.82, barata vs. crecimiento. -19.9% en 52sem, buen punto de entrada actual." },
+  { t:"ISRG", score:80, verdict:"buy", cat:{q:90,h:95,g:65,v:55,ti:65}, price:398.00, intrinsic:{low:208, base:400, high:620}, todayMove:null, note:"Sin deuda, ROIC 25%. -34.1% en 52sem, posible valor." },
+  { t:"UBER", score:76, verdict:"buy", cat:{q:82,h:58,g:80,v:88,ti:55}, price:78.82, intrinsic:{low:66, base:90, high:105}, todayMove:null, note:"Post-Q2: bookings +24% YoY, guía Q3 débil (ruido, no tesis rota). Subió bien desde los $70." },
+  { t:"AMZN", score:71, verdict:"hold", cat:{q:80,h:55,g:80,v:65,ti:50}, price:267.28, intrinsic:{low:180, base:245, high:345}, todayMove:null, note:"FCF TTM negativo por capex AWS/AI — vigilar si persiste." },
+  { t:"AAPL", score:71, verdict:"hold", cat:{q:95,h:75,g:55,v:30,ti:40}, price:316.83, intrinsic:{low:176, base:210, high:284}, todayMove:null, note:"Moat excelente pero PEG 3.10, +47.8% en 52sem. Cara para entrar ahora." },
+  { t:"IBM", score:63, verdict:"hold", cat:{q:70,h:55,g:55,v:65,ti:60}, price:235.50, intrinsic:{low:128, base:240, high:286}, todayMove:null, note:"D/E elevado (~1.75). GuruFocus: modestamente infravalorada." },
+  { t:"COP", score:62, verdict:"hold", cat:{q:60,h:70,g:55,v:65,ti:60}, price:121.00, intrinsic:null, todayMove:null, note:"Beat claro en Q2, mejora Salud y Calidad. Sigue siendo commodity/cíclico — no lo pongas por delante de META o ISRG para dinero nuevo." },
+  { t:"WMT", score:62, verdict:"hold", cat:{q:72,h:50,g:60,v:48,ti:70}, price:103.84, intrinsic:{low:72, base:94, high:160}, todayMove:null, note:"Caída post-Q2 ya hizo buena parte del ajuste de valoración. RSI 32.6, cerca de soporte $107. Posible entrada por tramos." },
+  { t:"CVX", score:52, verdict:"hold", cat:{q:45,h:60,g:45,v:70,ti:55}, price:203.00, intrinsic:{low:126, base:155, high:200}, todayMove:null, note:"ROIC ~6%, débil. Dividendo ~4%, pero ahora por encima incluso del extremo alto de nuestro rango de valor — más cara que hace 3 semanas." },
+  { t:"TSLA", score:55, verdict:"hold", cat:{q:55,h:85,g:55,v:15,ti:50}, price:345.00, intrinsic:{low:21, base:150, high:333}, todayMove:null, note:"ROIC 5.5%, PEG extremo — extremadamente cara pese al moat de marca. Ya por encima incluso del caso alcista (GF Value) de nuestro rango." },
+];
+// SNDK: vendida a breakeven tras el rebote post-earnings (confirmado por el usuario) — retirada del portafolio.
+// Los precios de este array son solo un fallback estático. En producción los
+// sobrescribe data.json, que genera el GitHub Action cada 15 min (ver scripts/fetch_prices.py).
+
+const outsideFramework = [
+  { t:"QQQ", note:"Índice Nasdaq-100. Núcleo diversificado." },
+  { t:"VOO", note:"Índice S&P 500. Núcleo diversificado." },
+  { t:"IAUM", note:"Oro físico. Hedge / no operativo." },
+];
+
+// Watchlist: candidatas analizadas que NO están en cartera. Mismo framework y
+// misma lógica de semáforo de valor intrínseco que las posiciones reales.
+const watchlist = [
+  { t:"NVDA", score:91, verdict:"buy", cat:{q:97,h:95,g:90,v:78,ti:65}, price:217.55, intrinsic:{low:180, base:320, high:379}, note:"La más sólida de todo lo analizado: ROE 117%, ROIC 92%, PE 49% bajo su propio promedio de 10 años. GuruFocus advierte 'posible trampa de valor' — riesgo real es el ciclo de capex de IA de sus clientes, no el negocio en sí. Ya tienes mucha exposición a IA vía MSFT/GOOGL/META — no la sobre-pondere." },
+  { t:"PGR", score:88, verdict:"buy", cat:{q:92,h:90,g:85,v:88,ti:70}, price:206.00, intrinsic:{low:180, base:232, high:260}, note:"Aseguradora de auto mejor gestionada de EE.UU. ROE 34.9%, ROIC 28.7%, PEG 0.51 — genuinamente barata para su crecimiento (EPS +44%/año 3 años, precio solo +18%/año, rezagado). Diversifica hacia seguros/financieros, sector que hoy no tienes. Vigilar: márgenes de suscripción normalizándose desde niveles excepcionales." },
+  { t:"V", score:77, verdict:"buy", cat:{q:95,h:75,g:65,v:55,ti:60}, price:343.09, intrinsic:{low:290, base:390, high:420}, note:"Moat de red de pagos casi insuperable, ROE 61%, ROIC 55%. Preferida sobre Mastercard: mismo tipo de negocio con mucho menos apalancamiento (D/E 0.68 vs 4.40 de MA). Diversifica hacia pagos/financieros, sector que hoy no tienes." },
+  { t:"PLTR", score:76, verdict:"hold", cat:{q:90,h:95,g:85,v:15,ti:40}, price:186.53, intrinsic:{low:28, base:172, high:207}, note:"Negocio excepcional (Rule of 40 de 155%, sin deuda), pero sin margen de seguridad — un DCF puro de flujo de caja la manda a $28. Apuesta de convicción en la narrativa, no compra de 'value+quality' clásica. Insiders vendiendo fuerte." },
+  { t:"LULU", score:68, verdict:"hold", cat:{q:68,h:85,g:35,v:90,ti:75}, price:118.00, intrinsic:{low:190, base:254, high:359}, note:"Diversifica fuera de tech — único candidato de consumo. Barata en casi todos los modelos, pero con razón real: márgenes cayendo 2 años seguidos, EPS -16%. Dilema genuino: ¿deterioro temporal (aranceles) o estructural (competencia)?" },
+  { t:"UNP", score:57, verdict:"hold", cat:{q:80,h:55,g:45,v:25,ti:30}, price:303.00, intrinsic:{low:159, base:256, high:300}, note:"Moat ferroviario real y márgenes excelentes (79% bruto, mejor que el 100% de su industria), pero subió +38.9% en 52sem y ya está cara (PEG 2.49). Buen negocio, mal momento — watchlist, no compra todavía." },
+  { t:"SHEL", score:61, verdict:"hold", cat:{q:65,h:65,g:45,v:75,ti:40}, price:90.70, intrinsic:{low:69, base:82, high:98}, note:"Mejor negocio que CVX (ROIC más alto, más barata en múltiplos), pero mismo riesgo cíclico que ya tienes vía Chevron — no diversifica, duplica exposición a energía." },
+];
+
+const verdictLabel = { buy:"Comprar", hold:"Observar", avoid:"Evitar" };
+
+function renderRows(filter){
+  const rowsEl = document.getElementById('rows');
+  rowsEl.innerHTML = '';
+  holdings
+    .filter(h => filter === 'all' || h.verdict === filter)
+    .forEach(h => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><div class="ticker">${h.t}${renderTodayBadge(h)}</div></td>
+        <td><span class="score">${h.score}</span></td>
+        <td>
+          <div class="bar-wrap">
+            <div class="bar">
+              <div class="seg" style="width:${h.cat.q*0.4}%; background:var(--q-quality)"></div>
+              <div class="seg" style="width:${h.cat.h*0.2}%; background:var(--q-health)"></div>
+              <div class="seg" style="width:${h.cat.g*0.2}%; background:var(--q-growth)"></div>
+              <div class="seg" style="width:${h.cat.v*0.15}%; background:var(--q-valuation)"></div>
+              <div class="seg" style="width:${h.cat.ti*0.05}%; background:var(--q-timing)"></div>
+            </div>
+            <div class="bar-note">Q${h.cat.q} · S${h.cat.h} · C${h.cat.g} · V${h.cat.v} · T${h.cat.ti}</div>
+          </div>
+        </td>
+        <td>${renderIntrinsic(h)}</td>
+        <td><span class="verdict v-${h.verdict}">${verdictLabel[h.verdict]}</span></td>
+        <td><div class="note">${h.note}</div></td>
+      `;
+      rowsEl.appendChild(tr);
+    });
+}
+
+function dayChangeHtml(h){
+  if(h.dayChangePct == null) return '';
+  const up = h.dayChangePct >= 0;
+  return ` <span class="today-move ${up?'today-up':'today-down'}">${up?'▲':'▼'}${Math.abs(h.dayChangePct).toFixed(2)}%</span>`;
+}
+
+function renderIntrinsic(h){
+  if(h.intrinsic == null){
+    return `
+      <div class="iv-wrap">
+        ${h.price != null ? `<div class="iv-prices">Precio <b>$${h.price.toFixed(2)}</b>${dayChangeHtml(h)}</div>` : ''}
+        <span class="iv-badge iv-pending">Valor intrínseco pendiente</span>
+      </div>`;
+  }
+  const diffPct = ((h.intrinsic.base - h.price) / h.price) * 100;
+  let cls = 'iv-fair', label = `En rango justo (${diffPct>=0?'+':''}${diffPct.toFixed(0)}%)`;
+  if(diffPct >= 10){ cls = 'iv-cheap'; label = `Barata (${diffPct.toFixed(0)}% bajo valor)`; }
+  else if(diffPct <= -10){ cls = 'iv-expensive'; label = `Cara (${Math.abs(diffPct).toFixed(0)}% sobre valor)`; }
+  return `
+    <div class="iv-wrap">
+      <div class="iv-prices">Precio <b>$${h.price.toFixed(2)}</b>${dayChangeHtml(h)} · Valor <b>$${h.intrinsic.base.toFixed(2)}</b>
+        <span style="opacity:.6">($${h.intrinsic.low}-$${h.intrinsic.high})</span></div>
+      <span class="iv-badge ${cls}">${label}</span>
+    </div>`;
+}
+
+function renderTodayBadge(h){
+  if(!h.todayMove) return '';
+  const up = h.todayMove.pct >= 0;
+  return `<span class="today-move ${up ? 'today-up' : 'today-down'}">${up?'▲':'▼'} ${Math.abs(h.todayMove.pct)}% hoy</span>`;
+}
+
+function renderBanner(){
+  const withNews = holdings.filter(h => h.todayMove);
+  const el = document.getElementById('today-banner');
+  if(withNews.length === 0){
+    el.innerHTML = `<div class="banner-title">Hoy</div><div class="banner-item">Sin catalizadores propios en tu portafolio — movimiento general de mercado.</div>`;
+    return;
+  }
+  el.innerHTML = `
+    <div class="banner-title">Plan de hoy — ${withNews.length} posición(es) con noticia propia</div>
+    ${withNews.map(h => `
+      <div class="banner-item">
+        <b>${h.t} ${h.todayMove.pct >= 0 ? '▲' : '▼'}${Math.abs(h.todayMove.pct)}%</b>
+        <span>${h.todayMove.reason}</span>
+      </div>
+    `).join('')}
+  `;
+}
+
+function renderOutside(){
+  const el = document.getElementById('outside');
+  el.innerHTML = outsideFramework.map(o => `
+    <div class="outside-card">
+      <div class="t">${o.t}</div>
+      <div class="s">${o.price != null ? `$${o.price.toFixed(2)}${dayChangeHtml(o)}` : '—'}</div>
+      <div class="s">${o.note}</div>
+    </div>
+  `).join('');
+}
+
+document.getElementById('filters').addEventListener('click', (e) => {
+  if(e.target.tagName !== 'BUTTON') return;
+  document.querySelectorAll('#filters button').forEach(b => b.classList.remove('active'));
+  e.target.classList.add('active');
+  renderRows(e.target.dataset.f);
+});
+
+async function loadLiveData(){
+  const statusEl = document.getElementById('last-updated');
+  try{
+    const res = await fetch('./data.json', { cache: 'no-store' });
+    if(!res.ok) throw new Error('data.json no encontrado');
+    const data = await res.json();
+    let matched = 0;
+    [...holdings, ...outsideFramework, ...watchlist].forEach(item => {
+      const q = data.prices && data.prices[item.t];
+      if(q){
+        item.price = q.price;
+        item.dayChangePct = q.change_pct;
+        matched++;
+      }
+    });
+    const when = data.generated_at ? new Date(data.generated_at).toLocaleString('es', { dateStyle:'medium', timeStyle:'short' }) : 'hora desconocida';
+    statusEl.textContent = matched > 0
+      ? `Datos en vivo · actualizado ${when} · ${matched} tickers`
+      : `data.json cargó pero sin precios reconocidos · revisa scripts/fetch_prices.py`;
+  }catch(e){
+    statusEl.textContent = 'Datos en vivo aún no disponibles — mostrando últimos precios guardados manualmente. El GitHub Action los reemplazará en su primera corrida.';
+  }
+}
+
+function renderWatchlist(){
+  const rowsEl = document.getElementById('wl-rows');
+  rowsEl.innerHTML = '';
+  watchlist.forEach(h => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><div class="ticker">${h.t}${renderTodayBadge(h)}</div></td>
+      <td><span class="score">${h.score}</span></td>
+      <td>
+        <div class="bar-wrap">
+          <div class="bar">
+            <div class="seg" style="width:${h.cat.q*0.4}%; background:var(--q-quality)"></div>
+            <div class="seg" style="width:${h.cat.h*0.2}%; background:var(--q-health)"></div>
+            <div class="seg" style="width:${h.cat.g*0.2}%; background:var(--q-growth)"></div>
+            <div class="seg" style="width:${h.cat.v*0.15}%; background:var(--q-valuation)"></div>
+            <div class="seg" style="width:${h.cat.ti*0.05}%; background:var(--q-timing)"></div>
+          </div>
+          <div class="bar-note">Q${h.cat.q} · S${h.cat.h} · C${h.cat.g} · V${h.cat.v} · T${h.cat.ti}</div>
+        </div>
+      </td>
+      <td>${renderIntrinsic(h)}</td>
+      <td><span class="verdict v-${h.verdict}">${verdictLabel[h.verdict]}</span></td>
+      <td><div class="note">${h.note}</div></td>
+    `;
+    rowsEl.appendChild(tr);
+  });
+}
+
+async function init(){
+  await loadLiveData();
+  renderRows('all');
+  renderOutside();
+  renderBanner();
+  renderWatchlist();
+}
+init();
+</script>
+</body>
+</html>

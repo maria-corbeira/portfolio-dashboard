@@ -1,0 +1,43 @@
+name: Actualizar precios
+
+on:
+  schedule:
+    # Cada 15 min, de lunes a viernes, 12:00-22:00 UTC
+    # (cubre 9:30-16:00 ET tanto en horario de verano como de invierno)
+    - cron: '*/15 12-22 * * 1-5'
+  workflow_dispatch:        # permite lanzarlo a mano desde la pestaña Actions
+  push:
+    branches: [main]
+    paths: ['index.html', 'scripts/fetch_prices.py']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: precios
+  cancel-in-progress: false
+
+jobs:
+  precios:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Descargar precios
+        run: python scripts/fetch_prices.py
+
+      - name: Commit si hay cambios
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data.json)" ]; then
+            git add data.json
+            git commit -m "precios: $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          else
+            echo "Sin cambios en data.json"
+          fi
