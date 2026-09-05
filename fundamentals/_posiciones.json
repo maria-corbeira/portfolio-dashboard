@@ -1,0 +1,77 @@
+{
+  "NVDA": {
+    "shares": 1.38,
+    "cost": 222.95,
+    "price_snapshot": 229.49
+  },
+  "CVX": {
+    "shares": 2.63,
+    "cost": 190.45,
+    "price_snapshot": 208.6
+  },
+  "GOOGL": {
+    "shares": 3.88,
+    "cost": 316.38,
+    "price_snapshot": 338.72
+  },
+  "ISRG": {
+    "shares": 1.61,
+    "cost": 372.5,
+    "price_snapshot": 366.25
+  },
+  "META": {
+    "shares": 3.8,
+    "cost": 579.12,
+    "price_snapshot": 615.2
+  },
+  "MSFT": {
+    "shares": 1.9,
+    "cost": 473.93,
+    "price_snapshot": 499.41
+  },
+  "COP": {
+    "shares": 1.85,
+    "cost": 108.15,
+    "price_snapshot": 134.23
+  },
+  "WMT": {
+    "shares": 15.28,
+    "cost": 111.28,
+    "price_snapshot": 107.14
+  },
+  "AAPL": {
+    "shares": 0.686713,
+    "cost": 291.24,
+    "price_snapshot": 320.01
+  },
+  "IBM": {
+    "shares": 2.66,
+    "cost": 244.36,
+    "price_snapshot": 234.77
+  },
+  "AMZN": {
+    "shares": 1.89,
+    "cost": 212.15,
+    "price_snapshot": 258.3
+  },
+  "UBER": {
+    "shares": 8.14,
+    "cost": 73.74,
+    "price_snapshot": 75.7
+  },
+  "VOO": {
+    "shares": 0.23946,
+    "cost": 626.41,
+    "price_snapshot": 707.66
+  },
+  "QQQ": {
+    "shares": 1.4,
+    "cost": 689.45,
+    "price_snapshot": 717.5
+  },
+  "IAUM": {
+    "shares": 17.72,
+    "cost": 45.14,
+    "price_snapshot": 44.2
+  }
+}
