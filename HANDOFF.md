@@ -210,11 +210,25 @@ sección 5, y por el mismo motivo.
 
 ## 5 · El entorno: cinco cosas que cuestan tiempo si no se saben
 
-**El push lo tiene que hacer Maria.** El shell del dispositivo no llega al llavero de
-macOS: `git push` falla con *could not read Username*. `pull` y `fetch` sí funcionan. Haz
-commit en local y pídeselo. Su token necesita **`repo` Y `workflow`**: sin el segundo,
-cualquier push que toque `.github/workflows/` se rechaza entero. Ya pasó una vez.
-`GITHUB.md` lo explica paso a paso, escrito para ella.
+**El push depende del entorno. Compruébalo antes de pedírselo a Maria.**
+
+- **Desde Claude Code en su Mac: `git push` funciona.** El repo tiene
+  `credential.helper=osxkeychain` y el token sale del llavero. Comprobado el 6-sep-2026,
+  cuatro commits subidos sin intervención suya. **Hazlo tú**: no sabe hacer push a mano y
+  pedírselo le carga trabajo que no le toca.
+- **Desde el shell del dispositivo: falla** con *could not read Username*, porque no llega
+  al llavero. Solo ahí hay que hacer commit en local y pedírselo.
+
+Para saber en cuál estás: `git config --get credential.helper`. Si dice `osxkeychain`,
+prueba el push.
+
+Su token necesita **`repo` Y `workflow`**: sin el segundo, cualquier push que toque
+`.github/workflows/` se rechaza entero. Ya pasó una vez. `GITHUB.md` lo explica paso a
+paso, escrito para ella.
+
+**Lo que sigue sin poder hacerse desde aquí es lanzar un workflow**: `gh` no está
+autenticado y la extensión de Chrome no responde, así que Actions → Run workflow lo tiene
+que pulsar ella. Se arreglaría con un `gh auth login`.
 
 **Los locks de git.** El shell no puede borrar ficheros por defecto, así que
 `.git/HEAD.lock`, `index.lock` y los `tmp_obj_*` sobreviven y bloquean el siguiente push.
