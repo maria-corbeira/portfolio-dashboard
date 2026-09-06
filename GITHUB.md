@@ -90,9 +90,16 @@ GitHub ya no acepta la contraseña normal desde la Terminal. Necesitas un token:
 1. En GitHub, arriba a la derecha tu foto → **Settings**.
 2. Abajo del todo del menú izquierdo: **Developer settings**.
 3. **Personal access tokens** → **Tokens (classic)** → **Generate new token (classic)**.
-4. Ponle un nombre (`portfolio-dashboard`), marca la casilla **repo** y genera.
-5. **Cópialo en ese momento**: no se vuelve a mostrar. Guárdalo en tu gestor de contraseñas.
-6. Cuando la Terminal te pida la contraseña, pega el token.
+4. Ponle un nombre (`portfolio-dashboard`) y marca **DOS** casillas:
+   - **`repo`** — para poder subir ficheros
+   - **`workflow`** — para poder subir o cambiar los Actions (`.github/workflows/`)
+
+   Si te olvidas de `workflow`, el push falla con
+   *"refusing to allow a Personal Access Token to create or update workflow ... without `workflow` scope"*.
+   No es un fallo tuyo ni del repo: es que el token no tiene ese permiso.
+5. Genera el token.
+6. **Cópialo en ese momento**: no se vuelve a mostrar. Guárdalo en tu gestor de contraseñas.
+7. Cuando la Terminal te pida la contraseña, pega el token.
 
 Para no tener que pegarlo cada vez, pega esto una sola vez en la Terminal:
 
@@ -114,6 +121,23 @@ cd ~/Claude/Investing/portfolio-dashboard && git log --oneline -5
 
 Te lista los últimos cinco cambios. Pásame la lista y te digo qué hacer. **No borres la
 carpeta ni el repo**: todo el historial está ahí y se puede recuperar casi cualquier cosa.
+
+**Si el push falla por el permiso `workflow`**: tu token no lo tiene. No hace falta
+crear uno nuevo — se le puede añadir al que ya tienes: **Settings → Developer settings →
+Personal access tokens → Tokens (classic)**, pincha en tu token, marca **`workflow`** y
+**Update token**. El valor del token no cambia, así que el que está en tu llavero sigue
+valiendo. Vuelve a la Terminal y repite `git push`.
+
+**Si creaste un token nuevo** y el push sigue fallando, el llavero está dando el viejo.
+Bórralo escribiendo esto y pulsando Enter dos veces al final:
+
+```
+git credential-osxkeychain erase
+host=github.com
+protocol=https
+```
+
+El siguiente `git push` te volverá a pedir usuario y token.
 
 **Si un push falla diciendo algo de `lock`**: es un fichero de bloqueo que dejé yo.
 Ejecuta esto y vuelve a intentarlo:

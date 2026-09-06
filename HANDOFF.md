@@ -137,7 +137,9 @@ ojo, ejecútalo.**
 
 **El push lo tiene que hacer Maria.** El shell del dispositivo no llega al llavero de
 macOS: `git push` falla con *could not read Username*. `pull` y `fetch` sí funcionan.
-Haz commit en local y pídeselo.
+Haz commit en local y pídeselo. Su token necesita **los permisos `repo` Y `workflow`**:
+sin el segundo, cualquier push que toque `.github/workflows/` se rechaza entero. Ya pasó
+una vez. `GITHUB.md` lo explica paso a paso.
 
 **Los locks de git.** El shell no puede borrar ficheros por defecto, así que
 `.git/HEAD.lock`, `index.lock` y los `tmp_obj_*` sobreviven y bloquean el siguiente
