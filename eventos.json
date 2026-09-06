@@ -1,0 +1,16 @@
+{
+  "_nota": "Eventos de compania (keynotes, presentaciones de producto, dias del inversor). NO son fechas de resultados: esas las trae scripts/fetch_news.py del calendario de Nasdaq. No hay fuente publica gratuita fiable de keynotes, asi que este fichero se mantiene a mano. Cada entrada lleva su fuente y si esta confirmada por la propia empresa. El dashboard oculta los eventos ya pasados.",
+  "_mantenimiento": "Anadir eventos segun se confirmen. Verificar la fuente antes de meter una fecha: un rumor de prensa va con confirmado=false y se pinta distinto.",
+  "eventos": [
+    {
+      "ticker": "AAPL",
+      "fecha": "2026-09-09",
+      "titulo": "Keynote de otoño de Apple — «Surprise and Shine»",
+      "detalle": "Presentación del iPhone 18 Pro y del iPhone Ultra, según la previa de la prensa especializada.",
+      "confirmado": true,
+      "fuente": "https://www.macrumors.com/2026/08/26/apple-iphone-event-2026/",
+      "fuente_nombre": "MacRumors",
+      "anadido": "2026-09-06"
+    }
+  ]
+}

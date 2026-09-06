@@ -7,246 +7,268 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
+  /* =========================================================================
+     Sistema visual. Tipografia de interfaz para el texto y monoespaciada solo
+     para las cifras, que es donde la alineacion en columna aporta algo.
+     Las cinco tintas de las barras salen de una paleta validada para vision
+     con daltonismo sobre este fondo oscuro (contraste >= 3:1, delta E adyacente
+     por encima del umbral).
+     ========================================================================= */
   :root{
-    --bg: #0A0D10;
-    --panel: #12161B;
-    --panel-2: #171C22;
-    --line: #232A32;
-    --text: #E8ECEF;
-    --muted: #7C8790;
-    --buy: #35D07F;
-    --hold: #F2B84B;
-    --avoid: #E85D5D;
-    --q-quality: #4C8DFF;
-    --q-health: #35D07F;
-    --q-growth: #A78BFA;
-    --q-valuation: #F2B84B;
-    --q-timing: #E85D5D;
+    --bg:        #0E1013;
+    --surface:   #16181D;
+    --surface-2: #1C1F26;
+    --line:      #262A33;
+    --line-soft: #1F232B;
+    --text:      #E9EBEF;
+    --text-2:    #A7AEBB;
+    --muted:     #737B8A;
+
+    --buy:   #199e70;
+    --hold:  #c98500;
+    --avoid: #e66767;
+
+    --q-quality:   #3987e5;
+    --q-health:    #d95926;
+    --q-growth:    #199e70;
+    --q-valuation: #c98500;
+    --q-timing:    #d55181;
+
+    --accent: #3987e5;
+
+    --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter",
+            "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: "SF Mono", "JetBrains Mono", "IBM Plex Mono", ui-monospace,
+            SFMono-Regular, Menlo, monospace;
+
+    --r-lg: 14px;
+    --r-md: 10px;
+    --r-sm: 6px;
   }
-  *{box-sizing:border-box; margin:0; padding:0;}
+  *{ box-sizing:border-box; margin:0; padding:0; }
   body{
     background: var(--bg);
     color: var(--text);
-    font-family: 'IBM Plex Mono', monospace;
-    padding: 32px 20px 80px;
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    padding: 40px 24px 96px;
     min-height: 100vh;
   }
-  .wrap{ max-width: 1240px; margin: 0 auto; }
+  .wrap{ max-width: 1280px; margin: 0 auto; }
+  .num{ font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
   header{
     display:flex; justify-content:space-between; align-items:flex-end;
-    flex-wrap: wrap; gap: 16px;
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 20px; margin-bottom: 28px;
+    flex-wrap:wrap; gap:20px; padding-bottom:24px; margin-bottom:28px;
+    border-bottom:1px solid var(--line);
   }
-  h1{
-    font-family:'Space Grotesk', sans-serif;
-    font-weight:700; font-size: 28px; letter-spacing:-0.02em;
-  }
-  .sub{ color: var(--muted); font-size:13px; margin-top:4px; }
-  .legend{ display:flex; gap:18px; font-size:11px; color:var(--muted); flex-wrap:wrap; }
+  h1{ font-size:26px; font-weight:640; letter-spacing:-0.021em; }
+  .sub{ color:var(--text-2); font-size:12.5px; margin-top:6px; }
+  .legend{ display:flex; gap:16px; font-size:11px; color:var(--muted); flex-wrap:wrap; }
   .legend span{ display:inline-flex; align-items:center; gap:6px; }
-  .dot{ width:8px; height:8px; border-radius:2px; display:inline-block; }
+  .dot{ width:8px; height:8px; border-radius:50%; display:inline-block; flex:none; }
 
-  .filters{ display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap; }
+  /* ---- controles ---------------------------------------------------------- */
+  .filters{ display:flex; gap:6px; margin-bottom:18px; flex-wrap:wrap; }
   .filters button{
-    background: var(--panel); color: var(--muted); border:1px solid var(--line);
-    font-family:'IBM Plex Mono', monospace; font-size:12px;
-    padding:7px 14px; border-radius:6px; cursor:pointer;
-    transition: all .15s ease;
+    background:transparent; color:var(--text-2); border:1px solid var(--line);
+    font-family:var(--sans); font-size:12.5px; font-weight:500;
+    padding:7px 14px; border-radius:999px; cursor:pointer;
+    transition: background .14s ease, color .14s ease, border-color .14s ease;
   }
-  .filters button:hover{ color: var(--text); border-color:#3a434d; }
-  .filters button.active{ color: var(--bg); background: var(--text); border-color: var(--text); }
+  .filters button:hover{ color:var(--text); border-color:#38404D; background:var(--surface); }
+  .filters button.active{ color:var(--bg); background:var(--text); border-color:var(--text); }
 
-  table{ width:100%; border-collapse: collapse; }
-  thead th{
-    text-align:left; font-size:10px; text-transform:uppercase; letter-spacing:.08em;
-    color:var(--muted); font-weight:500; padding:0 12px 10px;
-    border-bottom:1px solid var(--line);
+  /* ---- resumen ------------------------------------------------------------ */
+  .summary{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(168px,1fr));
+    gap:14px; margin-bottom:16px;
   }
-  tbody tr{
-    border-bottom:1px solid var(--line);
-    transition: background .15s ease;
+  .stat{
+    background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--r-lg); padding:16px 18px;
   }
-  tbody tr:hover{ background: var(--panel); }
-  tbody td{ padding:14px 12px; vertical-align:middle; font-size:13px; }
-
-  .ticker{
-    font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:16px;
-    display:flex; align-items:baseline; gap:8px;
-  }
-
-  .score{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px; }
-  .verdict{
-    font-size:10px; font-weight:600; padding:4px 9px; border-radius:20px;
-    text-transform:uppercase; letter-spacing:.04em; display:inline-block;
-  }
-  .v-buy{ background: rgba(53,208,127,.12); color: var(--buy); }
-  .v-hold{ background: rgba(242,184,74,.12); color: var(--hold); }
-  .v-avoid{ background: rgba(232,93,93,.12); color: var(--avoid); }
-
-  .bar{ display:flex; height:8px; width:220px; border-radius:2px; overflow:hidden; background:var(--line); }
-  .seg{ height:100%; }
-  .bar-wrap{ display:flex; flex-direction:column; gap:5px; }
-  .bar-note{ font-size:10px; color:var(--muted); }
-
-  .flag{ color: var(--avoid); font-size:11px; }
-  .note{ color: var(--muted); font-size:11px; max-width:260px; line-height:1.5; }
-
-  .iv-wrap{ display:flex; flex-direction:column; gap:5px; min-width:130px; }
-  .iv-prices{ font-size:11px; color:var(--muted); display:flex; gap:8px; }
-  .iv-prices b{ color:var(--text); font-weight:600; }
-  .iv-badge{
-    font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;
-    display:inline-flex; align-items:center; gap:5px; width:fit-content;
-  }
-  .iv-cheap{ background: rgba(53,208,127,.14); color: var(--buy); }
-  .iv-expensive{ background: rgba(232,93,93,.14); color: var(--avoid); }
-  .iv-fair{ background: rgba(242,184,74,.14); color: var(--hold); }
-  .iv-pending{ background: var(--panel-2); color: var(--muted); border:1px dashed var(--line); }
-
-  .today-move{
-    font-size:10px; font-weight:600; padding:2px 7px; border-radius:10px;
-    display:inline-flex; align-items:center; gap:3px;
-  }
-  .today-up{ background: rgba(53,208,127,.14); color: var(--buy); }
-  .today-down{ background: rgba(232,93,93,.14); color: var(--avoid); }
-
-  .banner{
-    background: var(--panel); border:1px solid var(--line); border-radius:10px;
-    padding:16px 18px; margin-bottom:24px;
-  }
-  .banner-title{
-    font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:12px;
-    text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin-bottom:10px;
-  }
-  .banner-item{ display:flex; gap:10px; padding:8px 0; border-top:1px solid var(--line); font-size:12.5px; line-height:1.6; }
-  .banner-item:first-of-type{ border-top:none; }
-  .banner-item b{ font-family:'Space Grotesk',sans-serif; font-size:13px; min-width:52px; }
-
-  .outside{
-    margin-top:44px; padding-top:24px; border-top:1px solid var(--line);
-  }
-  .outside h2{
-    font-family:'Space Grotesk',sans-serif; font-size:15px; color:var(--muted);
-    text-transform:uppercase; letter-spacing:.06em; margin-bottom:14px; font-weight:600;
-  }
-  .outside-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:10px; }
-  .outside-card{
-    background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:12px 14px;
-  }
-  .outside-card .t{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:14px; }
-  .outside-card .s{ color:var(--muted); font-size:11px; margin-top:2px; }
-
-  .watchlist{ margin-top:44px; padding-top:24px; border-top:1px solid var(--line); }
-  .watchlist h2{
-    font-family:'Space Grotesk',sans-serif; font-size:15px; color:var(--muted);
-    text-transform:uppercase; letter-spacing:.06em; margin-bottom:6px; font-weight:600;
-  }
-  .watchlist .wl-sub{ color:var(--muted); font-size:12px; margin-bottom:14px; }
-
-  footer{ margin-top:50px; color:var(--muted); font-size:11px; line-height:1.7; }
-  footer a{ color:var(--text); }
-
-  @media (max-width: 800px){
-    table thead{ display:none; }
-    table, tbody, tr, td{ display:block; width:100%; }
-    tbody tr{ padding:14px 0; }
-    tbody td{ padding:4px 0; }
-    .bar{ width:100%; }
-  }
-  @media (prefers-reduced-motion: reduce){
-    *{ transition:none !important; }
-  }
-
-  /* ---- resumen de cartera --------------------------------------------- */
-  .summary{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    gap:1px; background:var(--line); border:1px solid var(--line);
-    border-radius:8px; overflow:hidden; margin-bottom:16px; }
-  .stat{ background:var(--panel); padding:14px 16px; }
-  .stat .k{ font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
-  .stat .v{ font-family:'Space Grotesk',sans-serif; font-size:21px; font-weight:600; margin-top:5px; }
-  .stat .s{ font-size:11px; color:var(--muted); margin-top:3px; }
+  .stat .k{ font-size:11px; color:var(--muted); font-weight:500; }
+  .stat .v{ font-family:var(--mono); font-variant-numeric:tabular-nums;
+    font-size:23px; font-weight:600; margin-top:7px; letter-spacing:-0.02em; }
+  .stat .s{ font-size:11.5px; color:var(--muted); margin-top:4px; }
   .up{ color:var(--buy); } .down{ color:var(--avoid); }
 
-  .conc{ border:1px solid var(--line); border-left:3px solid var(--hold);
-    background:var(--panel); border-radius:8px; padding:14px 16px; margin-bottom:22px; }
-  .conc h3{ font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:600; margin-bottom:8px; }
-  .conc p{ font-size:12px; color:var(--muted); line-height:1.65; }
-  .conc b{ color:var(--text); }
-  .conc-bar{ display:flex; height:8px; border-radius:4px; overflow:hidden; margin:10px 0 8px; background:var(--panel-2); }
+  .conc{
+    border:1px solid var(--line); background:var(--surface);
+    border-radius:var(--r-lg); padding:18px 20px; margin-bottom:26px;
+  }
+  .conc h3{ font-size:13px; font-weight:600; margin-bottom:12px; }
+  .conc p{ font-size:12.5px; color:var(--text-2); line-height:1.7; }
+  .conc b{ color:var(--text); font-weight:600; }
+  .conc-bar{ display:flex; height:10px; border-radius:999px; overflow:hidden;
+    margin:12px 0 10px; background:var(--surface-2); gap:2px; }
   .conc-bar i{ display:block; }
-  .conc-key{ display:flex; gap:14px; flex-wrap:wrap; font-size:10.5px; color:var(--muted); }
-  .conc-key span{ display:inline-flex; align-items:center; gap:5px; }
+  .conc-key{ display:flex; gap:16px; flex-wrap:wrap; font-size:11px; color:var(--muted); }
+  .conc-key span{ display:inline-flex; align-items:center; gap:6px; }
 
-  /* ---- columna de posicion -------------------------------------------- */
-  .pos{ font-size:11.5px; line-height:1.6; white-space:nowrap; }
-  .pos .pl{ font-weight:600; font-size:13px; }
-  .pos .mut{ color:var(--muted); }
+  /* ---- tabla -------------------------------------------------------------- */
+  table{ width:100%; border-collapse:separate; border-spacing:0; }
+  thead th{
+    font-size:10.5px; font-weight:500; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--muted); text-align:left; padding:0 14px 10px; border-bottom:1px solid var(--line);
+  }
+  tbody td{ padding:16px 14px; border-bottom:1px solid var(--line-soft); vertical-align:top; }
+  .ticker{ font-size:15px; font-weight:600; display:flex; align-items:center; gap:8px; }
+  .score{ font-family:var(--mono); font-size:21px; font-weight:600; letter-spacing:-0.02em; }
 
-  /* ---- fila desplegable ------------------------------------------------ */
-  tbody tr.main{ cursor:pointer; }
-  tbody tr.main:hover{ background:var(--panel); }
-  .caret{ color:var(--muted); font-size:11px; transition:transform .15s ease; display:inline-block; }
+  .bar-wrap{ min-width:170px; }
+  .bar{ display:flex; height:7px; border-radius:999px; overflow:hidden;
+    background:var(--surface-2); gap:2px; }
+  .seg{ height:100%; }
+  .bar-note{ font-family:var(--mono); font-size:10px; color:var(--muted); margin-top:7px;
+    letter-spacing:.02em; }
+
+  .pos{ font-size:12px; line-height:1.65; white-space:nowrap; }
+  .pos .pl{ font-family:var(--mono); font-weight:600; font-size:14px; }
+  .pos .mut{ color:var(--muted); font-family:var(--mono); font-size:11px; }
+
+  .iv-wrap{ min-width:210px; }
+  .iv-prices{ font-size:12px; color:var(--text-2); }
+  .iv-prices b{ font-family:var(--mono); color:var(--text); font-weight:600; }
+  .iv-badge{ display:inline-block; margin-top:7px; font-size:11px; font-weight:500;
+    padding:3px 9px; border-radius:var(--r-sm); border:1px solid currentColor; }
+  .iv-cheap{ color:var(--buy); } .iv-fair{ color:var(--hold); }
+  .iv-expensive{ color:var(--avoid); } .iv-pending{ color:var(--muted); }
+
+  .verdict{ font-size:11px; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
+    padding:5px 11px; border-radius:999px; border:1px solid currentColor; white-space:nowrap; }
+  .v-buy{ color:var(--buy); } .v-hold{ color:var(--hold); } .v-avoid{ color:var(--avoid); }
+  .note{ font-size:12px; color:var(--text-2); line-height:1.65; max-width:420px; }
+  .today-move{ font-family:var(--mono); font-size:11px; font-weight:600; }
+  .today-up{ color:var(--buy); } .today-down{ color:var(--avoid); }
+
+  /* ---- fila desplegable --------------------------------------------------- */
+  tbody tr.main{ cursor:pointer; transition: background .12s ease; }
+  tbody tr.main:hover{ background:var(--surface); }
+  .caret{ color:var(--muted); font-size:10px; transition:transform .16s ease; display:inline-block; }
   tr.main.open .caret{ transform:rotate(90deg); color:var(--text); }
-  tr.detail > td{ background:var(--panel); padding:0 !important; border-top:none; }
-  .detail-in{ padding:18px 16px 22px; }
-  .detail-note{ font-size:12px; color:var(--muted); line-height:1.7; margin-bottom:16px;
-    border-left:2px solid var(--line); padding-left:12px; }
-  .src{ font-size:10.5px; color:var(--muted); margin-top:14px; line-height:1.6; }
-  .no-fund{ font-size:11.5px; color:var(--muted); font-style:italic; }
+  tr.detail > td{ background:var(--surface); padding:0 !important; border-bottom:1px solid var(--line); }
+  .detail-in{ padding:22px 20px 26px; }
+  .detail-note{ font-size:12.5px; color:var(--text-2); line-height:1.75; margin-bottom:20px;
+    border-left:2px solid var(--line); padding-left:14px; }
+  .src{ font-size:11px; color:var(--muted); margin-top:16px; line-height:1.65; }
+  .no-fund{ font-size:12px; color:var(--muted); font-style:italic; }
 
-  .chk-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:1px;
-    background:var(--line); border:1px solid var(--line); border-radius:6px; overflow:hidden; margin-bottom:18px; }
-  .chk{ background:var(--panel-2); padding:9px 11px; display:flex; justify-content:space-between;
-    align-items:baseline; gap:10px; }
-  .chk .lbl{ font-size:10.5px; color:var(--muted); }
-  .chk .val{ font-size:13px; font-weight:600; white-space:nowrap; }
+  .chk-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(228px,1fr));
+    gap:8px; margin-bottom:22px; }
+  .chk{ background:var(--surface-2); border:1px solid var(--line-soft); border-radius:var(--r-md);
+    padding:10px 13px; display:flex; justify-content:space-between; align-items:baseline; gap:10px; }
+  .chk .lbl{ font-size:11px; color:var(--muted); }
+  .chk .val{ font-family:var(--mono); font-size:13.5px; font-weight:600; white-space:nowrap; }
   .chk.pass .val{ color:var(--buy); } .chk.fail .val{ color:var(--avoid); }
   .chk.warn .val{ color:var(--hold); } .chk.na .val{ color:var(--muted); }
 
-  .fund-scroll{ overflow-x:auto; border:1px solid var(--line); border-radius:6px; }
-  table.fund{ font-size:11px; min-width:820px; }
-  table.fund th, table.fund td{ padding:6px 9px; text-align:right; white-space:nowrap; border-bottom:1px solid var(--line); }
-  table.fund th{ position:sticky; top:0; background:var(--panel-2); color:var(--muted);
-    font-weight:500; font-size:10px; text-transform:none; letter-spacing:0; }
+  .fund-scroll{ overflow-x:auto; border:1px solid var(--line); border-radius:var(--r-md); }
+  table.fund{ font-family:var(--mono); font-size:11.5px; min-width:840px; }
+  table.fund th, table.fund td{ padding:8px 11px; text-align:right; white-space:nowrap;
+    border-bottom:1px solid var(--line-soft); }
+  table.fund th{ position:sticky; top:0; background:var(--surface-2); color:var(--muted);
+    font-family:var(--sans); font-weight:500; font-size:10.5px; text-transform:none; letter-spacing:0; }
   table.fund th:first-child, table.fund td:first-child{ text-align:left; }
-  table.fund tbody tr:last-child td{ border-bottom:none; font-weight:600; background:var(--panel-2); }
+  table.fund tbody tr:last-child td{ border-bottom:none; font-weight:600; background:var(--surface-2); }
   table.fund .neg{ color:var(--avoid); }
+  table.fund .mut{ color:var(--muted); }
 
-  /* ---- noticias -------------------------------------------------------- */
-  .hoy{ border:1px solid var(--line); border-radius:8px; background:var(--panel);
-    margin-bottom:22px; overflow:hidden; }
-  .hoy-head{ display:flex; justify-content:space-between; align-items:baseline; gap:12px;
-    padding:12px 16px; border-bottom:1px solid var(--line); flex-wrap:wrap; }
-  .hoy-head h2{ font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:600; }
-  .hoy-head .when{ font-size:10.5px; color:var(--muted); }
-  .hoy-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:1px;
-    background:var(--line); }
-  .hoy-col{ background:var(--panel); padding:13px 16px; }
-  .hoy-col h3{ font-size:10px; letter-spacing:.08em; text-transform:uppercase;
-    color:var(--muted); margin-bottom:9px; }
-  .nw{ display:block; padding:6px 0; border-bottom:1px solid var(--panel-2);
+  /* ---- graficos ----------------------------------------------------------- */
+  .spark-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(232px,1fr));
+    gap:12px; margin-bottom:22px; }
+  .spark{ background:var(--surface-2); border:1px solid var(--line-soft);
+    border-radius:var(--r-md); padding:12px 14px 8px; }
+  .spark-h{ display:flex; justify-content:space-between; align-items:baseline; gap:8px;
+    margin-bottom:8px; }
+  .spark-h .t{ font-size:11px; color:var(--muted); }
+  .spark-h .v{ font-family:var(--mono); font-size:14px; font-weight:600; }
+  .spark svg{ display:block; width:100%; height:52px; overflow:visible; }
+  .spark .dotm{ opacity:0; }
+  .spark:hover .dotm{ opacity:1; }
+  .spark-x{ display:flex; justify-content:space-between; font-family:var(--mono);
+    font-size:9.5px; color:var(--muted); margin-top:4px; }
+
+  .chart-card{ background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--r-lg); padding:20px; margin-bottom:26px; }
+  .chart-card h3{ font-size:13px; font-weight:600; margin-bottom:4px; }
+  .chart-card .cap{ font-size:11.5px; color:var(--muted); margin-bottom:16px; }
+  .pnl-row{ display:grid; grid-template-columns:56px 1fr 92px; align-items:center;
+    gap:10px; padding:3px 0; }
+  .pnl-row .tk{ font-size:12px; font-weight:600; }
+  .pnl-track{ position:relative; height:16px; }
+  .pnl-zero{ position:absolute; top:-3px; bottom:-3px; width:1px; background:var(--line); }
+  .pnl-bar{ position:absolute; top:2px; height:12px; border-radius:3px; }
+  .pnl-val{ font-family:var(--mono); font-size:12px; font-weight:600; text-align:right; }
+  .alloc-legend{ display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr));
+    gap:6px 14px; margin-top:14px; font-size:11.5px; color:var(--text-2); }
+  .alloc-legend span{ display:flex; align-items:center; gap:8px; }
+  .alloc-legend b{ font-family:var(--mono); color:var(--text); margin-left:auto; font-weight:600; }
+
+  /* ---- noticias ----------------------------------------------------------- */
+  .hoy{ border:1px solid var(--line); border-radius:var(--r-lg); background:var(--surface);
+    margin-bottom:26px; overflow:hidden; }
+  .hoy-head{ display:flex; justify-content:space-between; align-items:baseline; gap:14px;
+    padding:15px 20px; border-bottom:1px solid var(--line); flex-wrap:wrap; }
+  .hoy-head h2{ font-size:14px; font-weight:600; }
+  .hoy-head .when{ font-size:11px; color:var(--muted); }
+  .hoy-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+  .hoy-col{ padding:16px 20px; border-right:1px solid var(--line-soft); }
+  .hoy-col:last-child{ border-right:none; }
+  .hoy-col h3{ font-size:10.5px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:11px; font-weight:500; }
+  .nw{ display:block; padding:8px 0; border-bottom:1px solid var(--line-soft);
     text-decoration:none; color:var(--text); }
   .nw:last-child{ border-bottom:none; }
-  .nw:hover .nw-t{ text-decoration:underline; }
-  .nw-t{ font-size:12px; line-height:1.5; display:block; }
-  .nw-m{ font-size:10px; color:var(--muted); margin-top:3px; display:flex; gap:7px;
+  .nw:hover .nw-t{ color:var(--accent); }
+  .nw-t{ font-size:12.5px; line-height:1.5; display:block; transition:color .12s ease; }
+  .nw-m{ font-size:10.5px; color:var(--muted); margin-top:5px; display:flex; gap:8px;
     align-items:center; flex-wrap:wrap; }
-  .tag{ font-size:9px; letter-spacing:.05em; text-transform:uppercase; padding:1px 5px;
-    border-radius:3px; border:1px solid currentColor; }
+  .tag{ font-size:9.5px; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
+    padding:2px 6px; border-radius:4px; border:1px solid currentColor; }
   .k-resultados{ color:var(--buy); } .k-analista{ color:var(--hold); }
-  .k-rumor{ color:var(--avoid); } .k-producto{ color:var(--q-quality); }
-  .k-hecho{ color:var(--muted); }
-  .unconf{ color:var(--avoid); border-color:var(--avoid); font-weight:600; }
-  .cal-row{ display:flex; justify-content:space-between; gap:10px; padding:5px 0;
-    border-bottom:1px solid var(--panel-2); font-size:12px; }
+  .k-rumor{ color:var(--avoid); } .k-producto{ color:var(--accent); }
+  .k-hecho{ color:var(--muted); } .k-evento{ color:var(--q-timing); }
+  .unconf{ color:var(--avoid); }
+  .cal-row{ display:flex; justify-content:space-between; align-items:baseline; gap:12px;
+    padding:8px 0; border-bottom:1px solid var(--line-soft); font-size:12.5px; }
   .cal-row:last-child{ border-bottom:none; }
-  .cal-row b{ font-family:'Space Grotesk',sans-serif; }
-  .vacio{ font-size:11.5px; color:var(--muted); font-style:italic; line-height:1.6; }
-  .news-block{ margin-bottom:16px; }
-  .news-block h4{ font-size:10px; letter-spacing:.08em; text-transform:uppercase;
-    color:var(--muted); margin-bottom:7px; }
-  .news-aviso{ font-size:10px; color:var(--muted); margin-top:8px; line-height:1.55; }
+  .cal-row .tk{ font-weight:600; }
+  .cal-row .dt{ font-family:var(--mono); font-size:11.5px; color:var(--text-2); }
+  .cal-row .cd{ font-family:var(--mono); font-size:10.5px; color:var(--muted); }
+  .cal-ev{ font-size:11.5px; color:var(--text-2); margin-top:2px; line-height:1.5; }
+  .vacio{ font-size:12px; color:var(--muted); font-style:italic; line-height:1.65; }
+  .news-block{ margin-bottom:20px; }
+  .news-block h4{ font-size:10.5px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:8px; font-weight:500; }
+  .news-aviso{ font-size:10.5px; color:var(--muted); line-height:1.6; }
+
+  /* ---- secciones ---------------------------------------------------------- */
+  .outside, .watchlist{ margin-top:44px; }
+  .outside h2, .watchlist h2{ font-size:16px; font-weight:600; margin-bottom:6px; }
+  .wl-sub{ font-size:12px; color:var(--muted); margin-bottom:18px; }
+  .outside-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:14px; margin-top:16px; }
+  .outside-card{ background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--r-lg); padding:16px 18px; }
+  .outside-card .t{ font-size:15px; font-weight:600; }
+  .outside-card .s{ font-size:11.5px; color:var(--muted); margin-top:6px; line-height:1.6; }
+  footer{ margin-top:56px; padding-top:22px; border-top:1px solid var(--line);
+    font-size:11px; color:var(--muted); line-height:1.8; }
+
+  @media (max-width: 900px){
+    body{ padding:24px 14px 72px; }
+    thead{ display:none; }
+    table, tbody, tr, td{ display:block; width:100%; }
+    tbody tr.main{ padding:14px 0; border-bottom:1px solid var(--line); }
+    tbody td{ padding:5px 0; border:none; }
+    .note, .iv-wrap{ max-width:none; }
+    .hoy-col{ border-right:none; border-bottom:1px solid var(--line-soft); }
+  }
+  @media (prefers-reduced-motion: reduce){ *{ transition:none !important; } }
 </style>
 </head>
 <body>
@@ -271,6 +293,9 @@
 
   <div class="summary" id="summary"></div>
   <div class="conc" id="conc"></div>
+
+  <div class="chart-card" id="alloc"></div>
+  <div class="chart-card" id="pnl"></div>
 
   <div class="filters" id="filters">
     <button class="active" data-f="all">Todas</button>
@@ -449,6 +474,144 @@ function renderSummary(){
 }
 
 // ---------------------------------------------------------------- fichas ---
+// ------------------------------------------------------------------ graficos ---
+// SVG en linea, sin librerias: la pagina tiene que abrirse sin red.
+// Los huecos de datos se dibujan como huecos, nunca se interpolan.
+
+const VIZ = { azul:"#3987e5", ejes:"#262A33", cero:"#38404D" };
+
+function sparkline(serie, opts){
+  const pts = serie.map((v,i) => ({i, v}));
+  const val = pts.filter(p => p.v != null);
+  if(val.length < 2) return '<div class="vacio">Sin serie suficiente.</div>';
+  const W = 240, H = 52;
+  const min = Math.min(...val.map(p => p.v)), max = Math.max(...val.map(p => p.v));
+  const lo = Math.min(min, opts.zeroBase ? 0 : min), hi = Math.max(max, 0);
+  const span = (hi - lo) || 1;
+  const x = i => (i / (serie.length - 1)) * W;
+  const y = v => H - ((v - lo) / span) * H;
+
+  // Segmentos separados: un hueco corta la linea en vez de interpolarla.
+  let d = '', abierto = false;
+  pts.forEach(p => {
+    if(p.v == null){ abierto = false; return; }
+    d += (abierto ? 'L' : 'M') + x(p.i).toFixed(1) + ' ' + y(p.v).toFixed(1) + ' ';
+    abierto = true;
+  });
+  const ult = val[val.length - 1];
+  const cero = (lo < 0 && hi > 0)
+    ? `<line x1="0" y1="${y(0).toFixed(1)}" x2="${W}" y2="${y(0).toFixed(1)}"
+        stroke="${VIZ.cero}" stroke-width="1" stroke-dasharray="3 3"/>` : '';
+  const marcas = val.map(p =>
+    `<circle cx="${x(p.i).toFixed(1)}" cy="${y(p.v).toFixed(1)}" r="6" fill="transparent">
+       <title>${opts.years[p.i]}: ${opts.fmt(p.v)}</title></circle>`).join('');
+
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img"
+      aria-label="${opts.title}: de ${opts.fmt(val[0].v)} a ${opts.fmt(ult.v)}">
+      ${cero}
+      <path d="${d.trim()}" fill="none" stroke="${VIZ.azul}" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+      <circle cx="${x(ult.i).toFixed(1)}" cy="${y(ult.v).toFixed(1)}" r="4"
+        fill="${VIZ.azul}" stroke="var(--surface-2)" stroke-width="2"/>
+      ${marcas}
+    </svg>`;
+}
+
+const fMill = v => (Math.abs(v) >= 1000 ? (v/1000).toFixed(1)+" B$" : Math.round(v)+" M$");
+const fPct  = v => num(v) + "%";
+
+function sparkSet(f){
+  const years = f.by_year.map(r => r.year);
+  const defs = [
+    { k:"revenue",          t:"Ventas",           fmt:fMill, zeroBase:true },
+    { k:"fcf",              t:"Flujo de caja libre", fmt:fMill, zeroBase:true },
+    { k:"roic",             t:"ROIC",             fmt:fPct,  zeroBase:true },
+    { k:"operating_margin", t:"Margen operativo", fmt:fPct,  zeroBase:true },
+  ];
+  const cards = defs.map(d => {
+    const serie = f.by_year.map(r => r[d.k]);
+    // Si el ultimo dato NO es el del ejercicio mas reciente, hay que decir de que
+    // ano es: un ROIC de 152% sin fecha se lee como el actual y no lo es.
+    let iUlt = -1;
+    for(let i = serie.length - 1; i >= 0; i--){ if(serie[i] != null){ iUlt = i; break; } }
+    const ult = iUlt >= 0 ? serie[iUlt] : null;
+    const viejo = iUlt >= 0 && iUlt < serie.length - 1;
+    return `<div class="spark">
+        <div class="spark-h"><span class="t">${d.t}${viejo
+          ? ` <span style="color:var(--hold)">· ${years[iUlt]}</span>` : ''}</span>
+          <span class="v">${ult == null ? "n.d." : d.fmt(ult)}</span></div>
+        ${sparkline(serie, {years, fmt:d.fmt, title:d.t, zeroBase:d.zeroBase})}
+        <div class="spark-x"><span>${years[0]}</span><span>${years[years.length-1]}</span></div>
+      </div>`;
+  }).join('');
+  return `<div class="spark-grid">${cards}</div>`;
+}
+
+// ---- reparto de la cartera ---------------------------------------------------
+// Ocho grupos como maximo: la paleta esta validada para ocho tintas adyacentes.
+const GRUPOS = [
+  ["Grandes tecnológicas", ["MSFT","GOOGL","META","AMZN","AAPL","NVDA"], "#3987e5"],
+  ["ETF de índice",        ["QQQ","VOO"],                                "#d95926"],
+  ["Salud",                ["ISRG"],                                     "#199e70"],
+  ["Consumo",              ["WMT"],                                      "#c98500"],
+  ["Energía",              ["CVX","COP"],                                "#d55181"],
+  ["Movilidad",            ["UBER"],                                     "#008300"],
+  ["TI clásica",           ["IBM"],                                      "#9085e9"],
+  ["Oro",                  ["IAUM"],                                     "#e66767"],
+];
+
+function renderAlloc(){
+  const el = document.getElementById('alloc');
+  if(!el) return;
+  const total = totals().mv;
+  const filas = GRUPOS.map(([nombre, tks, color]) => {
+    const mv = allPositions().filter(h => tks.includes(h.t))
+                             .reduce((a,h) => a + (stats(h)?.mv || 0), 0);
+    return { nombre, color, mv, pct: mv / total * 100 };
+  }).filter(g => g.mv > 0).sort((a,b) => b.mv - a.mv);
+
+  el.innerHTML = `
+    <h3>Reparto de la cartera</h3>
+    <div class="cap">Peso de cada grupo sobre ${money(total)} de valor de mercado.</div>
+    <div class="conc-bar" style="height:14px">
+      ${filas.map(g => `<i style="width:${g.pct}%; background:${g.color}"
+          title="${g.nombre}: ${num(g.pct)}%"></i>`).join('')}
+    </div>
+    <div class="alloc-legend">
+      ${filas.map(g => `<span><span class="dot" style="background:${g.color}"></span>
+        ${g.nombre}<b>${num(g.pct)}%</b></span>`).join('')}
+    </div>`;
+}
+
+// ---- P&L por posicion --------------------------------------------------------
+function renderPnl(){
+  const el = document.getElementById('pnl');
+  if(!el) return;
+  const filas = allPositions().map(h => ({ t:h.t, ...(stats(h) || {}) }))
+    .filter(r => r.plPct != null).sort((a,b) => b.plPct - a.plPct);
+  if(!filas.length){ el.innerHTML = ''; return; }
+  const tope = Math.max(...filas.map(r => Math.abs(r.plPct))) * 1.12;
+
+  el.innerHTML = `
+    <h3>Ganancia y pérdida por posición</h3>
+    <div class="cap">Frente a tu coste medio. El signo y la cifra van siempre escritos:
+      el color no es la única señal.</div>
+    ${filas.map(r => {
+      const ancho = Math.abs(r.plPct) / tope * 50;
+      const pos = r.plPct >= 0;
+      return `<div class="pnl-row">
+        <span class="tk">${r.t}</span>
+        <span class="pnl-track">
+          <span class="pnl-zero" style="left:50%"></span>
+          <span class="pnl-bar" style="${pos ? `left:50%` : `right:50%`};
+            width:${ancho}%; background:${pos ? 'var(--buy)' : 'var(--avoid)'}"
+            title="${r.t}: ${sign(r.plPct)} · ${money(r.pl)}"></span>
+        </span>
+        <span class="pnl-val ${cls(r.plPct)}">${sign(r.plPct)}</span>
+      </div>`;
+    }).join('')}`;
+}
+
 // ------------------------------------------------------------------ noticias ---
 // Lo escribe scripts/fetch_news.py cada 6 h vía .github/workflows/news.yml.
 let news = null;
@@ -487,14 +650,14 @@ function tieneTicker(titulo){
 
 function renderHoy(){
   const el = document.getElementById('hoy');
-  if(!news){
+  if(!news && !eventos.length){
     el.innerHTML = `<div class="hoy-head"><h2>Hoy</h2></div>
       <div class="hoy-col"><div class="vacio">Las noticias todavía no están disponibles.
       El GitHub Action «Actualizar noticias» las escribe en <code>news.json</code> cada 6 horas;
       abierto como fichero local el navegador bloquea esa carga por CORS.</div></div>`;
     return;
   }
-  const m = news.mercado || [];
+  const m = (news && news.mercado) || [];
   const tag = t => m.filter(n => (n.tags||[]).includes(t));
   // Una noticia puede llevar 'macro' y 'politica' a la vez: sin deduplicar
   // salia dos veces en la misma columna.
@@ -502,7 +665,7 @@ function renderHoy(){
   const macro = unicos([...tag('macro'), ...tag('politica')]).slice(0, 5);
   const mercado = tag('mercado').slice(0, 5);
   const mio = unicos(m.filter(n => (n.tags||[]).includes('capex-ia') || tieneTicker(n.title))).slice(0, 5);
-  const cal = (news.calendario || []);
+  const cal = (news && news.calendario) || [];
 
   const col = (titulo, cuerpo) =>
     `<div class="hoy-col"><h3>${titulo}</h3>${cuerpo}</div>`;
@@ -510,17 +673,47 @@ function renderHoy(){
     col(titulo, items.length ? items.map(newsItem).join('')
                              : `<div class="vacio">${vacio}</div>`);
 
-  const calHtml = cal.length
-    ? cal.map(c => `<div class="cal-row"><b>${c.ticker}</b><span>${c.fecha_texto}</span></div>`).join('')
-    : `<div class="vacio">Sin fechas de resultados. Los dos endpoints públicos de Nasdaq que
-       prueba el script no respondieron; no se estiman fechas.</div>`;
+  // Dos cosas distintas en la misma columna: resultados (automatico, de Nasdaq)
+  // y eventos de compania (curados en eventos.json). Se ordenan juntos por fecha
+  // y se ocultan los que ya pasaron.
+  const agenda = [
+    ...cal.map(c => ({ ticker:c.ticker, fecha:c.fecha_texto.slice(0,10),
+                       tipo:"Resultados", detalle:"", url:null, confirmado:true })),
+    ...eventos.map(e => ({ ticker:e.ticker, fecha:e.fecha, tipo:"Evento",
+                           detalle:e.titulo, url:e.fuente, confirmado:e.confirmado })),
+  ].filter(a => /^\d{4}-\d{2}-\d{2}$/.test(a.fecha) && diasHasta(a.fecha) >= 0)
+   .sort((a,b) => a.fecha.localeCompare(b.fecha));
+
+  const calHtml = agenda.length
+    ? agenda.map(a => {
+        const n = diasHasta(a.fecha);
+        const titulo = a.detalle
+          ? (a.url ? `<a class="nw" style="padding:0;border:none"
+                        href="${a.url}" target="_blank" rel="noopener noreferrer">
+                        <span class="cal-ev">${a.detalle}</span></a>`
+                   : `<div class="cal-ev">${a.detalle}</div>`)
+          : '';
+        return `<div class="cal-row" style="display:block">
+          <div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline">
+            <span><span class="tk">${a.ticker}</span>
+              <span class="tag k-${a.tipo === 'Evento' ? 'evento' : 'resultados'}"
+                    style="margin-left:6px">${a.tipo}</span>
+              ${a.confirmado === false ? '<span class="tag unconf">sin confirmar</span>' : ''}</span>
+            <span><span class="dt">${a.fecha}</span>
+              <span class="cd">· ${cuentaAtras(n)}</span></span>
+          </div>${titulo}</div>`;
+      }).join('')
+    : `<div class="vacio">Sin fechas próximas. Los resultados vienen de Nasdaq y los eventos
+       de <code>eventos.json</code>; si Nasdaq no responde, el bloque queda vacío en vez de
+       estimar fechas.</div>`;
 
   el.innerHTML = `
     <div class="hoy-head">
       <h2>Hoy</h2>
-      <span class="when">Noticias actualizadas ${news.generated_at
+      <span class="when">${!news ? 'Noticias pendientes de la primera pasada del Action' :
+        `Noticias actualizadas ${news.generated_at
         ? new Date(news.generated_at).toLocaleString('es',{dateStyle:'medium',timeStyle:'short'})
-        : '—'} · ${news.total || 0} titulares</span>
+        : '—'} · ${news.total || 0} titulares`}</span>
     </div>
     <div class="hoy-grid">
       ${col('Quién reporta', calHtml)}
@@ -529,7 +722,7 @@ function renderHoy(){
       ${bloque('Lo que te afecta a ti', mio, 'Nada que toque tus posiciones ni el ciclo de capex de IA.')}
     </div>
     <div class="hoy-col" style="border-top:1px solid var(--line)">
-      <div class="news-aviso">${news.aviso || ''}</div>
+      <div class="news-aviso">${(news && news.aviso) || ''}</div>
     </div>`;
 }
 
@@ -637,7 +830,7 @@ function detailHtml(h){
   const chk = checks(f, h.price).map(([lbl,val,state]) =>
     `<div class="chk ${state}"><span class="lbl">${lbl}</span><span class="val">${val ?? "n.d."}</span></div>`).join("");
   const a = f.aggregates;
-  out += `<div class="chk-grid">${chk}</div>` + fundTable(f);
+  out += sparkSet(f) + `<div class="chk-grid">${chk}</div>` + fundTable(f);
   out += `<div class="src">Fuente: 10-K de ${f.company} en data.sec.gov, ejercicios ${a.years_covered},
     cifras reexpresadas (se toma el hecho XBRL con <code>filed</code> más reciente).
     ${f.units}. P/E, PEG y FCF yield de las tarjetas se recalculan con el precio en vivo
@@ -734,6 +927,31 @@ function renderTodayBadge(h){
   return `<span class="today-move ${up ? 'today-up' : 'today-down'}">${up?'▲':'▼'} ${Math.abs(h.todayMove.pct)}% hoy</span>`;
 }
 
+let eventos = [];
+
+// Eventos de compañia (keynotes, dias del inversor). No hay fuente publica
+// gratuita fiable, asi que eventos.json se mantiene a mano con su fuente.
+async function loadEventos(){
+  try{
+    const res = await fetch('./eventos.json', { cache: 'no-store' });
+    if(!res.ok) throw new Error('eventos.json no encontrado');
+    eventos = (await res.json()).eventos || [];
+  }catch(e){ eventos = []; }
+}
+
+function diasHasta(fecha){
+  const hoy = new Date(); hoy.setHours(0,0,0,0);
+  const d = new Date(fecha + 'T00:00:00');
+  return Math.round((d - hoy) / 86400000);
+}
+
+function cuentaAtras(n){
+  if(n === 0) return "hoy";
+  if(n === 1) return "mañana";
+  if(n < 0) return "";
+  return `en ${n} d`;
+}
+
 async function loadNews(){
   try{
     const res = await fetch('./news.json', { cache: 'no-store' });
@@ -800,9 +1018,11 @@ function renderWatchlist(){
 }
 
 async function init(){
-  await Promise.all([loadLiveData(), loadNews()]);
+  await Promise.all([loadLiveData(), loadNews(), loadEventos()]);
   renderHoy();
   renderSummary();
+  renderAlloc();
+  renderPnl();
   renderRows('all');
   renderOutside();
   renderWatchlist();
