@@ -1,0 +1,40 @@
+name: Actualizar noticias
+
+on:
+  schedule:
+    # Cada 6 horas. Las noticias no cambian minuto a minuto y asi el repo no se
+    # llena de commits.
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/fetch_news.py', '.github/workflows/news.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: noticias
+  cancel-in-progress: false
+
+jobs:
+  noticias:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Descargar noticias
+        run: python scripts/fetch_news.py
+      - name: Commit si hay cambios
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain news.json)" ]; then
+            git add news.json
+            git commit -m "noticias: $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          else
+            echo "Sin cambios en news.json"
+          fi
