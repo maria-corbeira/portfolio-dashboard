@@ -43,6 +43,9 @@ y se explica por qué. Nunca se rellena con una estimación, una media ni un cer
 - **6 empresas analizadas con 10 años de la SEC**: GOOGL, MSFT, META, UBER, ISRG, NVDA.
   Las otras 6 (AMZN, AAPL, IBM, COP, WMT, CVX) siguen con scores de búsqueda web de la
   primera sesión, y su ficha lo dice.
+- **Las seis ya tienen P/E por ejercicio.** Los precios históricos de NVDA se cerraron el
+  6-sep-2026; con ellos aparece también su P/E frente a la mediana de 10 años (mediana
+  50,9; hoy −8%).
 
 ---
 
@@ -160,6 +163,27 @@ daltonismo (ΔE 4,6 en deuteranopía, indistinguibles). Se usa el aqua de la pal
 y cada casilla lleva siempre el número con signo. Para validar una paleta nueva usa la
 skill `dataviz` y su `scripts/validate_palette.js`. **No lo estimes a ojo, ejecútalo.**
 
+**El periodo mensual miente si el ejercicio no cierra a fin de mes.** Para `_precios.json`
+se usó `period=Monthly` con MSFT, META, UBER e ISRG, y ahí vale: todas cierran el último
+día de un mes. NVIDIA cierra el **último domingo de enero**, que casi nunca coincide: en
+FY2025 el cierre mensual eran 120,07 (31-ene-2025, ya con la caída de DeepSeek del día 27)
+frente a los 142,62 del cierre a fecha fiscal (24-ene-2025). Un 18% de desviación, que
+falsea el P/E de ese ejercicio. Para estos casos usa `period=Weekly`: **la fila va
+etiquetada con el primer día hábil de la semana y su campo `c` es el cierre del último día
+hábil de esa semana**, así que se toma la fila de la semana que contiene el último día
+hábil anterior al cierre fiscal. Antes de dar por buena la interpretación, compruébala:
+la fila `2025-01-21` vale 142,62, que es el cierre del viernes 24, no el del martes 21.
+
+**WebFetch resume con un modelo pequeño, y ese modelo se inventa cifras.** Al pedirle
+directamente las diez fechas de NVDA, **cinco de las diez respuestas estaban mal**: unas
+desplazadas una semana y una — 144,47 para enero de 2024 — sencillamente inventada, cuando
+el valor real era 61,03. Las inventadas son plausibles, así que no se detectan leyéndolas.
+Lo que funciona: pedir **todas las filas de una ventana, verbatim y sin resumir**, quedarse
+con la que toca uno mismo, y validar cada valor contra una referencia independiente. Aquí
+fueron los precios sin ajustar, multiplicando por 40 antes del split de julio de 2021 y por
+10 antes del de junio de 2024. Es la misma disciplina de anclas de los subagentes de la
+sección 5, y por el mismo motivo.
+
 ---
 
 ## 5 · El entorno: cinco cosas que cuestan tiempo si no se saben
@@ -209,11 +233,9 @@ Ordenado por lo que más desbloquea.
    `FUENTES_MERCADO` y de `top_movers()` lo que no responda: hay 13 candidatas sin
    verificar. Los top movers salieron vacíos en la primera pasada, pero era domingo con
    el mercado cerrado — el probe lo confirma o lo desmiente.
-2. **Precios históricos de NVDA** — lo único que falta para tener el P/E por ejercicio de
-   las seis. Una consulta con WebFetch a
-   `https://stockanalysis.com/api/symbol/s/nvda/history?range=10Y&period=Monthly`,
-   tomando la fila de enero (NVIDIA cierra el último domingo de enero). El resultado va a
-   `fundamentals/raw/_precios.json`.
+2. ~~Precios históricos de NVDA~~ — **hecho el 6-sep-2026.** Las seis analizadas ya
+   tienen P/E por ejercicio. Lo que hay que saber si se repite para otro ticker con cierre
+   fiscal fuera de fin de mes: ver "El periodo mensual miente" en la sección 4.
 3. **Inversiones a corto de NVIDIA en FY2026.** No existen bajo ninguno de los tres tags
    habituales; el último hecho es de octubre de 2025. Sin eso, el ROIC y la deuda neta de
    FY2026 salen n.d. Probablemente cambiaron de etiqueta en el 10-K.

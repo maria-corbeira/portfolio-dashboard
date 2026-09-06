@@ -51,22 +51,23 @@
    566.36
   ],
   "NVDA": [
-   null,
-   null,
-   null,
-   null,
-   null,
-   null,
-   null,
-   null,
-   null,
-   null
+   2.794,
+   6.083,
+   4.004,
+   6.262,
+   12.99,
+   22.84,
+   20.365,
+   61.031,
+   142.62,
+   187.67
   ]
  },
  "avisos": [
   "MSFT 30-jun-2016: la ventana de 10 anos en periodo mensual no llega hasta ahi.",
-  "NVDA: los diez precios sin obtener, el limite de sesion de WebFetch se agoto a mitad de la consulta.",
   "UBER 2016-2018: no cotizaba, salio a bolsa el 10-may-2019.",
-  "Fechas desplazadas al ultimo dia habil anterior cuando el cierre caia en fin de semana."
+  "Fechas desplazadas al ultimo dia habil anterior cuando el cierre caia en fin de semana.",
+  "NVDA: periodo Weekly, no Monthly. El ejercicio cierra el ultimo domingo de enero, que casi nunca coincide con fin de mes: en FY2025 el cierre mensual (120,07 el 31-ene-2025, tras la caida de DeepSeek) se desvia un 18% del cierre a fecha fiscal (142,62 el 24-ene-2025).",
+  "NVDA: en la serie Weekly la fila se etiqueta con el primer dia habil de la semana y su 'c' es el cierre del ultimo dia habil de esa semana. Se toma la fila de la semana que contiene el viernes anterior al domingo de cierre fiscal."
  ]
 }
