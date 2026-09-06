@@ -151,10 +151,15 @@ def tickers_from_index() -> list:
 
 
 # --- fuentes ------------------------------------------------------------------
+# Yahoo Finance estuvo aqui como segunda fuente y se retiro el 6-sep-2026. Devolvio
+# HTTP 429 en los 15 tickers, 15 de 15, en la primera pasada real del Action, igual que
+# ya le habia pasado a fetch_prices.py: limita las IPs de GitHub Actions por volumen.
+# No aporto ni una noticia (las 75 salieron de Google News) y costaba 15 peticiones que
+# se reintentaban tres veces con esperas de 3 y 6 segundos: unos 135 segundos por pasada,
+# cada 6 horas. Si algun dia se quiere recuperar, hay que comprobarlo antes con probe.yml
+# y sabiendo que el probe ya dio verde a Yahoo una vez y en produccion siguio dando 429.
 def noticias_ticker(t: str) -> list:
     items = []
-    items += parse_rss(get(f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={t}"
-                           "&region=US&lang=en-US", f"yahoo:{t}"), "Yahoo Finance", f"yahoo:{t}")
     items += parse_rss(get(f"https://news.google.com/rss/search?q={t}+stock+when:30d"
                            "&hl=en-US&gl=US&ceid=US:en", f"google:{t}"), "Google News", f"google:{t}")
     return items
@@ -189,8 +194,13 @@ def calendario_resultados(tickers: list) -> list:
     si ninguno responde, el calendario sale vacio y se dice, no se inventa."""
     out = []
     for t in tickers:
+        # api.nasdaq.com/api/company/{t}/earnings-date se retiro el 6-sep-2026: dio
+        # HTTP 404 en los 15 tickers, 15 de 15. El endpoint ya no existe.
+        # AVISO: el que queda responde 200 pero su JSON no trae ninguna de las tres
+        # claves que busca la regex de abajo, asi que hoy el calendario sale VACIO.
+        # Eso es correcto segun la regla del proyecto (vacio antes que inventado), pero
+        # significa que no hay ninguna fuente de fechas de resultados que funcione.
         for plantilla, etiqueta in (
-            ("https://api.nasdaq.com/api/company/{t}/earnings-date", "nasdaq-earnings-date"),
             ("https://api.nasdaq.com/api/quote/{t}/eps", "nasdaq-eps"),
         ):
             raw = get(plantilla.format(t=t), f"cal:{t}:{etiqueta}")

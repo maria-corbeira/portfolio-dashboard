@@ -250,11 +250,17 @@ comportamiento que hay que pedir.
 
 Ordenado por lo que más desbloquea.
 
-1. **Lanzar a mano `news.yml` y `probe.yml`** (Actions → Run workflow). Es lo único
-   pendiente para que Home se llene. Luego leer `probe_news.json` y podar de
-   `FUENTES_MERCADO` y de `top_movers()` lo que no responda: hay 13 candidatas sin
-   verificar. Los top movers salieron vacíos en la primera pasada, pero era domingo con
-   el mercado cerrado — el probe lo confirma o lo desmiente.
+1. **Lanzar a mano `probe.yml`** (Actions → Run workflow). `news.yml` ya corrió el
+   6-sep-2026 y Home se llena: 87 noticias, 15 tickers, 12 de mercado. De la poda que
+   quedaba pendiente, hecha la que tenía evidencia y descartada la que no:
+   - **`FUENTES_MERCADO` no necesita poda**: sus cinco fuentes responden `ok`. Las "13
+     candidatas sin verificar" de la nota anterior no existían; solo hay cinco.
+   - **Yahoo retirado de las noticias por ticker**: 429 en los 15, sin aportar ni una
+     de las 75 noticias, y costaba unos 135 segundos de reintentos por pasada.
+   - **`nasdaq-earnings-date` retirado**: 404 en los 15.
+   - **`top_movers()` NO se ha tocado**, y es importante no hacerlo a ciegas: Nasdaq sí
+     respondió, con la tabla vacía porque era domingo. Hace falta una pasada en día
+     hábil y leer `errors` de `data.json` (que hasta ahora se descartaban).
 2. ~~Precios históricos de NVDA~~ — **hecho el 6-sep-2026.** Las seis analizadas ya
    tienen P/E por ejercicio. Lo que hay que saber si se repite para otro ticker con cierre
    fiscal fuera de fin de mes: ver "El periodo mensual miente" en la sección 4.

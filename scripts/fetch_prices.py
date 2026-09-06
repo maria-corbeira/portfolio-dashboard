@@ -306,7 +306,10 @@ def main() -> int:
         "top_movers": movers,
         "top_movers_fuente": movers_fuente,
     }
-    if failed:
+    # Antes era "if failed:", y failed solo cuenta precios. Con los 21 precios OK pero
+    # top_movers() fallando, failed valia 0 y los errores se tiraban: la pasada del
+    # 6-sep-2026 dejo top_movers vacio sin decir por que. Se vuelcan siempre que haya.
+    if ERRORS:
         payload["errors"] = ERRORS[:20]
 
     # Nunca sobrescribir datos buenos con un fichero vacio.

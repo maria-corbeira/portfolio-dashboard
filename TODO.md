@@ -1,5 +1,12 @@
 # Pendientes del dashboard
 
+- [ ] **El calendario de resultados sale vacío.** De los dos endpoints de Nasdaq, el
+  de `earnings-date` daba 404 en los 15 tickers y se ha retirado. El que queda
+  (`quote/{t}/eps`) responde 200, pero su JSON no trae ninguna de las tres claves que
+  busca la regex (`reportDate`, `date`, `announcementDate`), así que no sale ninguna
+  fecha. Vacío es lo correcto frente a inventado, pero hoy no hay ninguna fuente de
+  fechas de resultados que funcione: hay que encontrar otra o leer la estructura real
+  de ese JSON.
 - [ ] **Toggle inglés / español en las noticias.** Ahora los titulares salen en el
   idioma de origen porque el Action los copia tal cual. La idea es un botón que
   cambie el idioma de toda la vista. Implica guardar una traducción por titular:
@@ -30,7 +37,13 @@
   de valor intrínseco de cada una (PGR 180, V 290, PLTR 28, LULU 190, UNP 159,
   SHEL 69). Son propuestas mías, no tuyas: revísalos.
 - [ ] **Fuente de top movers sin verificar.** Se prueban tres en cascada
-  (Nasdaq marketmovers y los dos screeners de Yahoo). Ninguna está comprobada
-  todavía: hay que ejecutar `probe.yml` y mirar `probe_news.json`.
+  (Nasdaq marketmovers y los dos screeners de Yahoo). Sigue sin comprobarse, pero
+  ahora se sabe más: en la pasada del 6-sep-2026 Nasdaq **sí respondió** (aparece en
+  `top_movers_fuente`) y devolvió la tabla vacía porque era **domingo, con el mercado
+  cerrado**. No es que la fuente esté rota. Los errores de las otras dos se perdían
+  porque `data.json` solo los volcaba `if failed:`, y `failed` cuenta únicamente
+  precios: ya está arreglado, se vuelcan siempre. **Para decidir hace falta una pasada
+  en día hábil**, y luego leer `errors` de `data.json`. Ejecutar `probe.yml` sirve para
+  saber si responden, pero en fin de semana no distingue "rota" de "sin datos hoy".
 - [ ] **Las 6 posiciones que faltan por analizar con datos de la SEC**: AMZN, AAPL,
   IBM, COP, WMT, CVX. Hoy tienen scores de búsqueda web de la primera sesión.
