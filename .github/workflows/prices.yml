@@ -34,8 +34,11 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain data.json)" ]; then
-            git add data.json
+          # prices_history.json tambien: sin el, el historico se reescribe en
+          # cada ejecucion y nunca se acumula, asi que ni el RSI, ni la media de
+          # 200, ni la variacion a 5 sesiones llegarian a existir nunca.
+          if [ -n "$(git status --porcelain data.json prices_history.json)" ]; then
+            git add data.json prices_history.json
             git commit -m "precios: $(date -u '+%Y-%m-%d %H:%M UTC')"
             git push
           else

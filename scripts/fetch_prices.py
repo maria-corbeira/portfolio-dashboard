@@ -38,8 +38,11 @@ def log_err(tag: str, e: Exception) -> None:
 
 
 def tickers_from_index() -> list[str]:
+    """Solo se miran los tres arrays de posiciones. Barriendo el fichero entero
+    se colaba cualquier otra clave en mayusculas del resto del codigo."""
     html = INDEX.read_text(encoding="utf-8")
-    found = re.findall(r'\bt:\s*"([A-Z][A-Z0-9.\-]{0,9})"', html)
+    ini, fin = html.index("const holdings"), html.index("const verdictLabel")
+    found = re.findall(r'\bt:\s*"([A-Z][A-Z0-9.\-]{0,9})"', html[ini:fin])
     seen, out = set(), []
     for t in found:
         if t not in seen:

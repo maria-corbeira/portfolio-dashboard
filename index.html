@@ -608,10 +608,15 @@ const fPct  = v => num(v) + "%";
 function sparkSet(f){
   const years = f.by_year.map(r => r.year);
   const defs = [
-    { k:"revenue",          t:"Ventas",           fmt:fMill, zeroBase:true },
-    { k:"fcf",              t:"Flujo de caja libre", fmt:fMill, zeroBase:true },
-    { k:"roic",             t:"ROIC",             fmt:fPct,  zeroBase:true },
-    { k:"operating_margin", t:"Margen operativo", fmt:fPct,  zeroBase:true },
+    // OJO: la clave del titulo NO puede llamarse igual que la del ticker. La
+    // regex que extrae los tickers de este fichero buscaba esa clave en todo el
+    // documento y se llevaba el titulo de la minificha del ROIC como si fuera
+    // una accion; el Action intento descargar su precio y fallo. Ahora la regex
+    // solo mira los arrays de posiciones, pero no vuelvas a usar esa clave aqui.
+    { k:"revenue",          titulo:"Ventas",              fmt:fMill, zeroBase:true },
+    { k:"fcf",              titulo:"Flujo de caja libre", fmt:fMill, zeroBase:true },
+    { k:"roic",             titulo:"ROIC",                fmt:fPct,  zeroBase:true },
+    { k:"operating_margin", titulo:"Margen operativo",    fmt:fPct,  zeroBase:true },
   ];
   const cards = defs.map(d => {
     const serie = f.by_year.map(r => r[d.k]);
@@ -622,10 +627,10 @@ function sparkSet(f){
     const ult = iUlt >= 0 ? serie[iUlt] : null;
     const viejo = iUlt >= 0 && iUlt < serie.length - 1;
     return `<div class="spark">
-        <div class="spark-h"><span class="t">${d.t}${viejo
+        <div class="spark-h"><span class="t">${d.titulo}${viejo
           ? ` <span style="color:var(--hold)">· ${years[iUlt]}</span>` : ''}</span>
           <span class="v">${ult == null ? "n.d." : d.fmt(ult)}</span></div>
-        ${sparkline(serie, {years, fmt:d.fmt, title:d.t, zeroBase:d.zeroBase})}
+        ${sparkline(serie, {years, fmt:d.fmt, title:d.titulo, zeroBase:d.zeroBase})}
         <div class="spark-x"><span>${years[0]}</span><span>${years[years.length-1]}</span></div>
       </div>`;
   }).join('');
