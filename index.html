@@ -312,6 +312,37 @@
   .snippet{ margin-top:10px; background:var(--bg); border:1px solid var(--line);
     border-radius:var(--r-sm); padding:12px; font-family:var(--mono); font-size:10.5px;
     color:var(--text-2); white-space:pre-wrap; word-break:break-all; line-height:1.6; }
+
+  /* ---- mapa de calor de precios ------------------------------------------- */
+  .heat{ background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--r-lg); padding:18px 20px 20px; margin-bottom:26px; }
+  .heat-head{ display:flex; justify-content:space-between; align-items:baseline;
+    gap:14px; flex-wrap:wrap; margin-bottom:4px; }
+  .heat-head h3{ font-size:13px; font-weight:600; }
+  .heat-head .when{ font-size:11px; color:var(--muted); font-family:var(--mono); }
+  .heat .cap{ font-size:11.5px; color:var(--muted); margin-bottom:14px; }
+  .heat-map{ position:relative; width:100%; height:300px; }
+  .heat-map .tile{ position:absolute; }
+  .heat-grid{ display:flex; flex-wrap:wrap; gap:4px; }
+  .tile{ border-radius:var(--r-sm); padding:9px 10px; overflow:hidden;
+    display:flex; flex-direction:column; justify-content:space-between;
+    text-decoration:none; color:var(--text); border:1px solid rgba(255,255,255,.05);
+    transition:border-color .12s ease; }
+  .heat-grid .tile{ min-width:96px; height:78px; }
+  .tile.mini .pr{ display:none; }
+  .tile.mini .tk{ font-size:11px; }
+  .tile.mini .ch{ font-size:11px; }
+  .tile:hover{ transform:translateY(-1px); border-color:rgba(255,255,255,.22); }
+  .tile .tk{ font-size:13px; font-weight:700; letter-spacing:.01em; }
+  .tile .pr{ font-family:var(--mono); font-size:12px; opacity:.92; }
+  .tile .ch{ font-family:var(--mono); font-size:13px; font-weight:700; }
+  .tile.sinDato{ background:var(--surface-2); border-style:dashed; }
+  .tile.sinDato .ch{ color:var(--muted); font-weight:500; font-size:11px; }
+  .heat-sub{ font-size:10.5px; color:var(--muted); margin-top:12px; line-height:1.6; }
+  .heat-wl{ margin-top:16px; padding-top:14px; border-top:1px solid var(--line-soft); }
+  .heat-wl h4{ font-size:10.5px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:9px; font-weight:500; }
+  .heat-wl .tile{ height:62px; min-width:88px; }
 </style>
 </head>
 <body>
@@ -339,6 +370,7 @@
   </nav>
 
   <section class="panel" id="tab-home">
+    <div class="heat" id="heat"></div>
     <div class="movers" id="movers"></div>
     <div class="hoy" id="hoy"></div>
   </section>
@@ -668,7 +700,7 @@ function renderPnl(){
 // ------------------------------------------------------------------ noticias ---
 // Lo escribe scripts/fetch_news.py cada 6 h vía .github/workflows/news.yml.
 let news = null;
-let indic = {}, movimientos = [], topMovers = [];
+let indic = {}, movimientos = [], topMovers = [], ultimoPrecio = null;
 
 const KIND_LABEL = { resultados:"Resultados", analista:"Analista", rumor:"Rumor",
                      producto:"Producto", hecho:"Hecho" };
@@ -1058,6 +1090,7 @@ async function loadLiveData(){
       const q = data.prices && data.prices[item.t];
       if(q){ item.price = q.price; item.dayChangePct = q.change_pct; matched++; }
     });
+    ultimoPrecio = data.generated_at || null;
     indic = data.indicadores || {};
     movimientos = data.movimientos_fuertes || [];
     topMovers = data.top_movers || [];
@@ -1069,6 +1102,151 @@ async function loadLiveData(){
     statusEl.textContent = 'Precios del cierre del 5 sep 2026 — el Action de precios aún no ha corrido con éxito.';
   }
 }
+
+
+// ------------------------------------------------------ mapa de calor de precios ---
+// Tamano de cada casilla = peso en la cartera. Color = variacion del dia.
+//
+// Sobre el color: el verde puro contra el rojo, que es lo que usan las apps de
+// bolsa, es el peor par posible para daltonismo (delta E 4,6 en deuteranopia:
+// indistinguibles). Se usa el aqua de la paleta validada, que separa mejor, y
+// AUN ASI el color nunca va solo: cada casilla lleva el porcentaje con su signo
+// y una flecha. Quien no distinga los tonos lee el numero igual.
+const HEAT_POS = "#199e70", HEAT_NEG = "#e66767", HEAT_NEUTRO = "#23262E";
+const HEAT_TOPE = 3;      // a partir de +-3% la casilla ya va a plena intensidad
+const HEAT_MEZCLA = 0.65; // tope de mezcla, para que el texto blanco mantenga contraste
+
+function mezcla(a, b, t){
+  const h = x => [1,3,5].map(i => parseInt(x.slice(i,i+2),16));
+  const [r1,g1,b1] = h(a), [r2,g2,b2] = h(b);
+  const c = (u,v) => Math.round(u + (v-u)*t).toString(16).padStart(2,'0');
+  return `#${c(r1,r2)}${c(g1,g2)}${c(b1,b2)}`;
+}
+
+function colorTile(pct){
+  if(pct == null) return HEAT_NEUTRO;
+  const t = Math.min(Math.abs(pct)/HEAT_TOPE, 1) * HEAT_MEZCLA;
+  return mezcla(HEAT_NEUTRO, pct >= 0 ? HEAT_POS : HEAT_NEG, t);
+}
+
+// Treemap escalonado (squarified). Con flex-wrap el area NO era proporcional:
+// las posiciones mas pequenas quedaban solas en la ultima fila y se estiraban,
+// asi que COP con el 2,1% se veia mas grande que META con el 19,7%. Eso miente
+// sobre lo unico que la casilla codifica, que es el peso.
+function treemap(items, x, y, w, h){
+  const out = [];
+  const resto = items.filter(i => i.value > 0).sort((a,b) => b.value - a.value);
+  const total = resto.reduce((a,i) => a + i.value, 0);
+  if(!total || w <= 0 || h <= 0) return out;
+  const escala = (w * h) / total;
+  let rx = x, ry = y, rw = w, rh = h;
+
+  while(resto.length){
+    const enColumna = rw >= rh;          // apilamos a lo largo del lado corto
+    const largo = enColumna ? rh : rw;
+    let fila = [], mejor = Infinity;
+    while(resto.length){
+      const cand = fila.concat(resto[0]);
+      const area = cand.reduce((a,i) => a + i.value, 0) * escala;
+      const grosor = area / largo;
+      const peor = Math.max(...cand.map(i => {
+        const lado = (i.value * escala) / grosor;
+        return Math.max(lado / grosor, grosor / lado);
+      }));
+      if(fila.length && peor > mejor) break;
+      fila = cand; mejor = peor; resto.shift();
+    }
+    const area = fila.reduce((a,i) => a + i.value, 0) * escala;
+    const grosor = area / largo;
+    let off = enColumna ? ry : rx;
+    fila.forEach(i => {
+      const lado = (i.value * escala) / grosor;
+      // El rectangulo usa w/h. La carga util viaja en 'pos' precisamente para
+      // que el alto no la pise, que es el fallo que tuvo la primera version.
+      out.push(enColumna
+        ? { pos:i.pos, x:rx, y:off, w:grosor, h:lado }
+        : { pos:i.pos, x:off, y:ry, w:lado, h:grosor });
+      off += lado;
+    });
+    if(enColumna){ rx += grosor; rw -= grosor; } else { ry += grosor; rh -= grosor; }
+  }
+  return out;
+}
+
+function cuerpoTile(h, pct){
+  const flecha = pct == null ? '' : (pct >= 0 ? '▲' : '▼');
+  return `<div class="tk">${h.t}</div>
+      <div>
+        <div class="pr">${money(h.price)}</div>
+        <div class="ch">${pct == null ? '—' : flecha + ' ' + sign(pct,2)}</div>
+      </div>`;
+}
+
+function tile(h, estilo, mini){
+  const pct = h.dayChangePct;
+  if(h.price == null){
+    return `<div class="tile sinDato" style="${estilo}">
+        <div class="tk">${h.t}</div><div class="ch">sin precio</div></div>`;
+  }
+  return `<div class="tile${mini ? ' mini' : ''}" style="${estilo}
+      background:${colorTile(pct)}" title="${h.t} · ${money(h.price)}${
+      pct != null ? ' · ' + sign(pct,2) + ' hoy' : ''}">${cuerpoTile(h, pct)}</div>`;
+}
+
+function renderHeat(){
+  const el = document.getElementById('heat');
+  const totalMv = totals().mv;
+  const pos = allPositions().map(h => ({ pos: h, value: (stats(h)?.mv || 0) }));
+  const wl = [...watchlist].sort((a,b) => b.score - a.score);
+  const cuando = ultimoPrecio
+    ? new Date(ultimoPrecio).toLocaleString('es', { dateStyle:'short', timeStyle:'short' })
+    : null;
+
+  el.innerHTML = `
+    <div class="heat-head">
+      <h3>Tus posiciones ahora</h3>
+      <span class="when">${cuando ? 'último dato ' + cuando : 'sin datos de precio'}</span>
+    </div>
+    <div class="cap">El área de cada casilla es su peso real en tu cartera; el color, la
+      variación del día. Las que más te mueven la cartera son las más grandes.</div>
+    <div class="heat-map" id="heat-map"></div>
+    <div class="heat-wl">
+      <h4>En seguimiento</h4>
+      <div class="heat-grid">${wl.map(h => tile(h, '')).join('')}</div>
+    </div>
+    <div class="heat-sub">
+      <b>Esto no es tiempo real.</b> Los precios vienen de fuentes públicas gratuitas,
+      con hasta 15 minutos de retraso, y el GitHub Action los refresca cada 15 minutos:
+      en el peor caso el dato puede tener media hora. La página vuelve a pedir
+      <code>data.json</code> cada minuto, así que una pestaña abierta se mantiene al día sola.
+    </div>`;
+
+  pintaTreemap(pos);
+}
+
+function pintaTreemap(pos){
+  const cont = document.getElementById('heat-map');
+  if(!cont) return;
+  const W = cont.clientWidth, H = cont.clientHeight;
+  const G = 4;                                  // separacion entre casillas
+  const celdas = treemap(pos, 0, 0, W, H);
+  cont.innerHTML = celdas.map(c => {
+    const w = Math.max(0, c.w - G), h = Math.max(0, c.h - G);
+    const estilo = `left:${c.x.toFixed(1)}px; top:${c.y.toFixed(1)}px;
+      width:${w.toFixed(1)}px; height:${h.toFixed(1)}px;`;
+    return tile(c.pos, estilo, h < 56 || w < 76);  // casillas pequenas: solo ticker y %
+  }).join('');
+}
+
+// El treemap se calcula en pixeles, asi que hay que rehacerlo al cambiar el ancho.
+let redimensionar;
+addEventListener('resize', () => {
+  clearTimeout(redimensionar);
+  redimensionar = setTimeout(() => {
+    const totalMv = totals().mv;
+    pintaTreemap(allPositions().map(h => ({ pos: h, value: (stats(h)?.mv || 0) })));
+  }, 150);
+});
 
 // ------------------------------------------------------------------ pestanas ---
 function initTabs(){
@@ -1197,6 +1375,7 @@ async function init(){
   await Promise.all([loadLiveData(), loadNews(), loadEventos()]);
   renderHoy();
   initTabs();
+  renderHeat();
   renderMovers();
   renderSummary();
   renderAlloc();
@@ -1206,6 +1385,22 @@ async function init(){
   renderWatchlist();
 }
 init();
+
+// Refresco: se vuelve a pedir data.json cada minuto y se repintan solo las vistas
+// que dependen del precio. Si el fichero no ha cambiado, no se toca nada.
+setInterval(async () => {
+  const antes = ultimoPrecio;
+  await loadLiveData();
+  if(ultimoPrecio === antes) return;
+  renderHeat();
+  renderMovers();
+  renderSummary();
+  renderAlloc();
+  renderPnl();
+  renderRows(document.querySelector('#filters button.active')?.dataset.f || 'all');
+  renderOutside();
+  renderWatchlist();
+}, 60000);
 </script>
 </body>
 </html>
