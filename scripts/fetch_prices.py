@@ -18,9 +18,13 @@ import json, re, sys, time, urllib.request, urllib.error
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import history as H
+
 ROOT = Path(__file__).resolve().parent.parent
 INDEX = ROOT / "index.html"
 OUT = ROOT / "data.json"
+HIST = ROOT / "prices_history.json"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
 BATCH = 20          # tickers por peticion
@@ -194,6 +198,58 @@ def yahoo_chart_one(ticker: str) -> dict | None:
     return None
 
 
+def top_movers():
+    """Mayores subidas y bajadas del mercado. No hay una fuente publica gratuita
+    de referencia, asi que se prueban tres en cascada y se registra cual respondio.
+    Si ninguna responde, devuelve vacio: no se estiman movimientos."""
+    candidatas = [
+        ("nasdaq_marketmovers",
+         "https://api.nasdaq.com/api/marketmovers",
+         lambda d: [(r.get("symbol"), r.get("pctchange"), grupo)
+                    for grupo, clave in (("subidas", "GAINERS"), ("bajadas", "LOSERS"))
+                    for r in (((d.get("data") or {}).get(clave) or {}).get("table") or {}).get("rows", [])]),
+        ("yahoo_day_gainers",
+         "https://query1.finance.yahoo.com/v1/finance/screener/predefined/saved"
+         "?scrIds=day_gainers&count=8",
+         lambda d: [(q.get("symbol"), q.get("regularMarketChangePercent"), "subidas")
+                    for q in (((d.get("finance") or {}).get("result") or [{}])[0]
+                              .get("quotes") or [])]),
+        ("yahoo_day_losers",
+         "https://query1.finance.yahoo.com/v1/finance/screener/predefined/saved"
+         "?scrIds=day_losers&count=8",
+         lambda d: [(q.get("symbol"), q.get("regularMarketChangePercent"), "bajadas")
+                    for q in (((d.get("finance") or {}).get("result") or [{}])[0]
+                              .get("quotes") or [])]),
+    ]
+    filas, usadas = [], []
+    for nombre, url, extrae in candidatas:
+        raw = _get(url, tag=f"movers/{nombre}")
+        if not raw:
+            continue
+        try:
+            for sym, pct, grupo in extrae(json.loads(raw)):
+                if not sym or pct in (None, ""):
+                    continue
+                try:
+                    v = float(str(pct).replace("%", "").replace("+", "").replace(",", ""))
+                except ValueError:
+                    continue
+                filas.append({"ticker": sym, "pct": round(v, 2), "grupo": grupo,
+                              "fuente": nombre})
+            usadas.append(nombre)
+        except Exception as e:
+            ERRORS.append(f"movers/{nombre} parse: {type(e).__name__}: {str(e)[:100]}")
+        if filas:
+            break
+    vistos, out = set(), []
+    for f in sorted(filas, key=lambda x: abs(x["pct"]), reverse=True):
+        if f["ticker"] in vistos:
+            continue
+        vistos.add(f["ticker"])
+        out.append(f)
+    return out[:10], usadas
+
+
 # ------------------------------------------------------------------ main ---
 
 def main() -> int:
@@ -226,11 +282,26 @@ def main() -> int:
         chg = f"({q['change_pct']:+.2f}%)" if q["change_pct"] is not None else ""
         print(f"  {t:<6} {q['price']:>9.2f}  {chg:<10} [{q['source']}]")
 
+    # Historico: un punto por sesion y ticker. De ahi salen las variaciones a 1 y
+    # 5 sesiones, el RSI de 14 y la media de 200, que antes no se podian calcular.
+    series = H.carga(HIST)
+    if prices:
+        series = H.actualiza(series, prices)
+        H.guarda(HIST, series)
+    indic = H.indicadores(series, prices)
+    movimientos = H.fuertes(indic)
+    movers, movers_fuente = top_movers()
+
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "count": len(prices),
         "failed": failed,
         "prices": prices,
+        "indicadores": indic,
+        "movimientos_fuertes": movimientos,
+        "umbral_fuerte": H.UMBRAL_FUERTE,
+        "top_movers": movers,
+        "top_movers_fuente": movers_fuente,
     }
     if failed:
         payload["errors"] = ERRORS[:20]
@@ -248,6 +319,13 @@ def main() -> int:
             pass
 
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    con_rsi = sum(1 for d in indic.values() if d["rsi_14"] is not None)
+    con_ma = sum(1 for d in indic.values() if d["ma_200"] is not None)
+    print(f"\nhistorico: {len(series)} tickers · RSI en {con_rsi} · media de 200 en {con_ma}")
+    if movimientos:
+        print("movimientos fuertes:")
+        for m in movimientos:
+            print(f"  {m['ticker']:<6} {m['pct']:+.2f}% en {m['ventana']}")
     print(f"\ndata.json escrito: {len(prices)} ok, {len(failed)} fallidos")
     for e in ERRORS[:20]:
         print("  !", e)

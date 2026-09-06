@@ -269,6 +269,49 @@
     .hoy-col{ border-right:none; border-bottom:1px solid var(--line-soft); }
   }
   @media (prefers-reduced-motion: reduce){ *{ transition:none !important; } }
+
+  /* ---- pestanas ----------------------------------------------------------- */
+  .tabs{ display:flex; gap:4px; margin-bottom:28px; border-bottom:1px solid var(--line); }
+  .tabs button{
+    background:none; border:none; border-bottom:2px solid transparent;
+    color:var(--muted); font-family:var(--sans); font-size:14px; font-weight:550;
+    padding:11px 16px; margin-bottom:-1px; cursor:pointer;
+    transition:color .14s ease, border-color .14s ease;
+  }
+  .tabs button:hover{ color:var(--text-2); }
+  .tabs button.active{ color:var(--text); border-bottom-color:var(--accent); }
+  .tabs .cnt{ font-family:var(--mono); font-size:11px; color:var(--muted); margin-left:6px; }
+  .panel[hidden]{ display:none !important; }
+
+  /* ---- movimientos fuertes ------------------------------------------------ */
+  .movers{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:14px; margin-bottom:26px; }
+  .mv-card{ background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--r-lg); padding:18px 20px; }
+  .mv-card.alerta{ border-left:3px solid var(--hold); }
+  .mv-card h3{ font-size:13px; font-weight:600; margin-bottom:4px; }
+  .mv-card .cap{ font-size:11.5px; color:var(--muted); margin-bottom:14px; }
+  .mv-row{ display:flex; align-items:baseline; gap:10px; padding:7px 0;
+    border-bottom:1px solid var(--line-soft); }
+  .mv-row:last-child{ border-bottom:none; }
+  .mv-row .tk{ font-size:13px; font-weight:600; min-width:52px; }
+  .mv-row .pc{ font-family:var(--mono); font-size:13px; font-weight:600; min-width:72px; }
+  .mv-row .wn{ font-size:11px; color:var(--muted); }
+  .mv-row .mine{ font-size:10px; color:var(--accent); border:1px solid currentColor;
+    border-radius:4px; padding:1px 5px; }
+
+  /* ---- watchlist ---------------------------------------------------------- */
+  .tgt{ font-size:12px; line-height:1.65; white-space:nowrap; }
+  .tgt .d{ font-family:var(--mono); font-weight:600; font-size:14px; }
+  .tgt .mut{ color:var(--muted); font-family:var(--mono); font-size:11px; }
+  .hit{ color:var(--buy); } .far{ color:var(--muted); }
+  .mover{ background:none; border:1px solid var(--line); color:var(--text-2);
+    font-family:var(--sans); font-size:11px; padding:5px 10px; border-radius:var(--r-sm);
+    cursor:pointer; margin-top:10px; }
+  .mover:hover{ border-color:var(--accent); color:var(--accent); }
+  .snippet{ margin-top:10px; background:var(--bg); border:1px solid var(--line);
+    border-radius:var(--r-sm); padding:12px; font-family:var(--mono); font-size:10.5px;
+    color:var(--text-2); white-space:pre-wrap; word-break:break-all; line-height:1.6; }
 </style>
 </head>
 <body>
@@ -289,65 +332,75 @@
     </div>
   </header>
 
-  <div class="hoy" id="hoy"></div>
+  <nav class="tabs" id="tabs">
+    <button data-tab="home" class="active">Home</button>
+    <button data-tab="stocks">My Stocks<span class="cnt" id="cnt-stocks"></span></button>
+    <button data-tab="watch">My Watchlist<span class="cnt" id="cnt-watch"></span></button>
+  </nav>
 
-  <div class="summary" id="summary"></div>
-  <div class="conc" id="conc"></div>
+  <section class="panel" id="tab-home">
+    <div class="movers" id="movers"></div>
+    <div class="hoy" id="hoy"></div>
+  </section>
 
-  <div class="chart-card" id="alloc"></div>
-  <div class="chart-card" id="pnl"></div>
+  <section class="panel" id="tab-stocks" hidden>
+    <div class="summary" id="summary"></div>
+    <div class="conc" id="conc"></div>
+    <div class="chart-card" id="alloc"></div>
+    <div class="chart-card" id="pnl"></div>
 
-  <div class="filters" id="filters">
-    <button class="active" data-f="all">Todas</button>
-    <button data-f="buy">Comprar</button>
-    <button data-f="hold">Observar</button>
-    <button data-f="avoid">Evitar</button>
-  </div>
+    <div class="filters" id="filters">
+      <button class="active" data-f="all">Todas</button>
+      <button data-f="buy">Comprar</button>
+      <button data-f="hold">Observar</button>
+      <button data-f="avoid">Evitar</button>
+    </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Ticker</th>
-        <th>Score</th>
-        <th>Composición</th>
-        <th>Posición</th>
-        <th>Precio vs. valor intrínseco</th>
-        <th>Veredicto</th>
-      </tr>
-    </thead>
-    <tbody id="rows"></tbody>
-  </table>
-  <div style="font-size:11px; color:var(--muted); margin-top:10px;">
-    Pulsa cualquier fila para ver la nota y, si existe, la ficha de 10 años con datos de la SEC.
-  </div>
-
-  <div class="outside">
-    <h2>Fuera del framework</h2>
-    <div class="outside-grid" id="outside"></div>
-  </div>
-
-  <div class="watchlist">
-    <h2>Watchlist — no está en cartera</h2>
-    <div class="wl-sub">Candidatas analizadas para posible compra futura, ordenadas por score.</div>
     <table>
       <thead>
         <tr>
-          <th>Ticker</th>
-          <th>Score</th>
-          <th>Composición</th>
-          <th>Precio vs. valor intrínseco</th>
-          <th>Veredicto</th>
-          <th>Nota clave</th>
+          <th>Ticker</th><th>Score</th><th>Composición</th><th>Posición</th>
+          <th>Precio vs. valor intrínseco</th><th>Veredicto</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div style="font-size:11.5px; color:var(--muted); margin-top:12px;">
+      Pulsa cualquier fila para ver las noticias, la nota y, si existe, la ficha de
+      10 años con datos de la SEC.
+    </div>
+
+    <div class="outside">
+      <h2>Fuera del framework</h2>
+      <div class="wl-sub">El scoring de calidad de empresa no aplica a un índice ni al oro.</div>
+      <div class="outside-grid" id="outside"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="tab-watch" hidden>
+    <div class="wl-sub" style="margin-bottom:18px">
+      Candidatas analizadas que no están en cartera, ordenadas por score. El precio
+      objetivo es una <b>propuesta mía</b>, sembrada con el extremo bajo del rango de
+      valor intrínseco de cada una — corrígelos cuando los veas.
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th><th>Score</th><th>Composición</th><th>Objetivo de entrada</th>
+          <th>Precio vs. valor intrínseco</th><th>Veredicto</th>
         </tr>
       </thead>
       <tbody id="wl-rows"></tbody>
     </table>
-  </div>
+  </section>
 
   <footer>
     Metodología: scoring ponderado Calidad(40%) + Salud(20%) + Crecimiento(20%) + Valoración(15%) + Timing(5%).
     80-100 Excelente · 60-79 Buena · 40-59 Neutral/cautela · &lt;40 Evitar.<br>
-    Datos y scores según el último análisis conversacional — actualizar el array <code>holdings</code> abajo cuando cambien fundamentales o precios.<br>
+    Los datos y los scores se editan en los arrays <code>holdings</code>,
+    <code>outsideFramework</code> y <code>watchlist</code> del propio <code>index.html</code>.
+    Los precios, indicadores y noticias los escriben los GitHub Actions en
+    <code>data.json</code> y <code>news.json</code>.<br>
     Señal de valor: <span style="color:var(--buy)">verde</span> = precio ≥10% bajo el valor intrínseco base (barata) ·
     <span style="color:var(--hold)">ámbar</span> = dentro de ±10% (rango justo) ·
     <span style="color:var(--avoid)">rojo</span> = precio ≥10% sobre el valor intrínseco (cara).
@@ -385,12 +438,12 @@ const outsideFramework = [
 // Watchlist: candidatas analizadas que NO están en cartera. Mismo framework y
 // misma lógica de semáforo de valor intrínseco que las posiciones reales.
 const watchlist = [
-  { t:"PGR", score:88, verdict:"buy", cat:{q:92,h:90,g:85,v:88,ti:70}, price:206.00, intrinsic:{low:180, base:232, high:260}, note:"Aseguradora de auto mejor gestionada de EE.UU. ROE 34.9%, ROIC 28.7%, PEG 0.51 — genuinamente barata para su crecimiento (EPS +44%/año 3 años, precio solo +18%/año, rezagado). Diversifica hacia seguros/financieros, sector que hoy no tienes. Vigilar: márgenes de suscripción normalizándose desde niveles excepcionales." },
-  { t:"V", score:77, verdict:"buy", cat:{q:95,h:75,g:65,v:55,ti:60}, price:343.09, intrinsic:{low:290, base:390, high:420}, note:"Moat de red de pagos casi insuperable, ROE 61%, ROIC 55%. Preferida sobre Mastercard: mismo tipo de negocio con mucho menos apalancamiento (D/E 0.68 vs 4.40 de MA). Diversifica hacia pagos/financieros, sector que hoy no tienes." },
-  { t:"PLTR", score:76, verdict:"hold", cat:{q:90,h:95,g:85,v:15,ti:40}, price:186.53, intrinsic:{low:28, base:172, high:207}, note:"Negocio excepcional (Rule of 40 de 155%, sin deuda), pero sin margen de seguridad — un DCF puro de flujo de caja la manda a $28. Apuesta de convicción en la narrativa, no compra de 'value+quality' clásica. Insiders vendiendo fuerte." },
-  { t:"LULU", score:68, verdict:"hold", cat:{q:68,h:85,g:35,v:90,ti:75}, price:118.00, intrinsic:{low:190, base:254, high:359}, note:"Diversifica fuera de tech — único candidato de consumo. Barata en casi todos los modelos, pero con razón real: márgenes cayendo 2 años seguidos, EPS -16%. Dilema genuino: ¿deterioro temporal (aranceles) o estructural (competencia)?" },
-  { t:"UNP", score:57, verdict:"hold", cat:{q:80,h:55,g:45,v:25,ti:30}, price:303.00, intrinsic:{low:159, base:256, high:300}, note:"Moat ferroviario real y márgenes excelentes (79% bruto, mejor que el 100% de su industria), pero subió +38.9% en 52sem y ya está cara (PEG 2.49). Buen negocio, mal momento — watchlist, no compra todavía." },
-  { t:"SHEL", score:61, verdict:"hold", cat:{q:65,h:65,g:45,v:75,ti:40}, price:90.70, intrinsic:{low:69, base:82, high:98}, note:"Mejor negocio que CVX (ROIC más alto, más barata en múltiplos), pero mismo riesgo cíclico que ya tienes vía Chevron — no diversifica, duplica exposición a energía." },
+  { t:"PGR", target:180, score:88, verdict:"buy", cat:{q:92,h:90,g:85,v:88,ti:70}, price:206.00, intrinsic:{low:180, base:232, high:260}, note:"Aseguradora de auto mejor gestionada de EE.UU. ROE 34.9%, ROIC 28.7%, PEG 0.51 — genuinamente barata para su crecimiento (EPS +44%/año 3 años, precio solo +18%/año, rezagado). Diversifica hacia seguros/financieros, sector que hoy no tienes. Vigilar: márgenes de suscripción normalizándose desde niveles excepcionales." },
+  { t:"V", target:290, score:77, verdict:"buy", cat:{q:95,h:75,g:65,v:55,ti:60}, price:343.09, intrinsic:{low:290, base:390, high:420}, note:"Moat de red de pagos casi insuperable, ROE 61%, ROIC 55%. Preferida sobre Mastercard: mismo tipo de negocio con mucho menos apalancamiento (D/E 0.68 vs 4.40 de MA). Diversifica hacia pagos/financieros, sector que hoy no tienes." },
+  { t:"PLTR", target:28, score:76, verdict:"hold", cat:{q:90,h:95,g:85,v:15,ti:40}, price:186.53, intrinsic:{low:28, base:172, high:207}, note:"Negocio excepcional (Rule of 40 de 155%, sin deuda), pero sin margen de seguridad — un DCF puro de flujo de caja la manda a $28. Apuesta de convicción en la narrativa, no compra de 'value+quality' clásica. Insiders vendiendo fuerte." },
+  { t:"LULU", target:190, score:68, verdict:"hold", cat:{q:68,h:85,g:35,v:90,ti:75}, price:118.00, intrinsic:{low:190, base:254, high:359}, note:"Diversifica fuera de tech — único candidato de consumo. Barata en casi todos los modelos, pero con razón real: márgenes cayendo 2 años seguidos, EPS -16%. Dilema genuino: ¿deterioro temporal (aranceles) o estructural (competencia)?" },
+  { t:"UNP", target:159, score:57, verdict:"hold", cat:{q:80,h:55,g:45,v:25,ti:30}, price:303.00, intrinsic:{low:159, base:256, high:300}, note:"Moat ferroviario real y márgenes excelentes (79% bruto, mejor que el 100% de su industria), pero subió +38.9% en 52sem y ya está cara (PEG 2.49). Buen negocio, mal momento — watchlist, no compra todavía." },
+  { t:"SHEL", target:69, score:61, verdict:"hold", cat:{q:65,h:65,g:45,v:75,ti:40}, price:90.70, intrinsic:{low:69, base:82, high:98}, note:"Mejor negocio que CVX (ROIC más alto, más barata en múltiplos), pero mismo riesgo cíclico que ya tienes vía Chevron — no diversifica, duplica exposición a energía." },
 ];
 
 // <<<FUNDAMENTALS
@@ -615,6 +668,7 @@ function renderPnl(){
 // ------------------------------------------------------------------ noticias ---
 // Lo escribe scripts/fetch_news.py cada 6 h vía .github/workflows/news.yml.
 let news = null;
+let indic = {}, movimientos = [], topMovers = [];
 
 const KIND_LABEL = { resultados:"Resultados", analista:"Analista", rumor:"Rumor",
                      producto:"Producto", hecho:"Hecho" };
@@ -752,8 +806,9 @@ function live(f, price){
 }
 
 // Umbrales del framework. state: pass | warn | fail | na
-function checks(f, price){
+function checks(f, price, ticker){
   const a = f.aggregates, y = lastYear(f), L = live(f, price);
+  const ti = indic[ticker] || {};
   const st = (v, ok, warn) => v==null ? "na" : (ok ? "pass" : (warn ? "warn" : "fail"));
   return [
     ["ROIC medio 5a > 12%", a.roic_avg_5y==null?null:num(a.roic_avg_5y)+"%",
@@ -798,6 +853,14 @@ function checks(f, price){
         st(L.pe, L.pe < a.pe_median_10y*0.9, L.pe < a.pe_median_10y*1.15)],
     ["FCF yield > 4%", L.fcfY==null?null:num(L.fcfY,2)+"%",
       st(L.fcfY, L.fcfY>4, L.fcfY>2.5)],
+    // Timing. Sale del historico diario que guarda el Action: el RSI necesita 15
+    // sesiones y la media de 200 necesita 200, o sea unos diez meses. Hasta
+    // entonces, n.d. — no se calcula sobre menos sesiones de las que exige.
+    ["RSI 14 (30-50 preferido)", ti.rsi_14==null?null:num(ti.rsi_14),
+      ti.rsi_14==null ? "na" : st(ti.rsi_14, ti.rsi_14>=30 && ti.rsi_14<=50,
+                                  ti.rsi_14>=25 && ti.rsi_14<=60)],
+    ["Precio vs. media de 200", ti.vs_ma200==null?null:sign(ti.vs_ma200),
+      ti.vs_ma200==null ? "na" : st(ti.vs_ma200, ti.vs_ma200<=0, ti.vs_ma200<=10)],
   ];
 }
 
@@ -827,7 +890,7 @@ function detailHtml(h){
       anterior por búsqueda web, no de los 10-K de la SEC.</div>`;
     return `<div class="detail-in">${out}</div>`;
   }
-  const chk = checks(f, h.price).map(([lbl,val,state]) =>
+  const chk = checks(f, h.price, h.t).map(([lbl,val,state]) =>
     `<div class="chk ${state}"><span class="lbl">${lbl}</span><span class="val">${val ?? "n.d."}</span></div>`).join("");
   const a = f.aggregates;
   out += sparkSet(f) + `<div class="chk-grid">${chk}</div>` + fundTable(f);
@@ -836,7 +899,10 @@ function detailHtml(h){
     ${f.units}. P/E, PEG y FCF yield de las tarjetas se recalculan con el precio en vivo
     (${a.diluted_shares_latest?.toLocaleString('es-ES')} M de acciones diluidas, cierre ${a.latest_fiscal_year});
     la columna «P/E cierre» de la tabla usa la capitalización al cierre de cada ejercicio.
-    Las casillas en gris son datos que no se han podido obtener, no ceros.</div>`;
+    Las casillas en gris son datos que no se han podido obtener, no ceros.
+    El RSI y la media de 200 se calculan sobre el histórico diario que va acumulando
+    el Action de precios: el RSI aparece a las 15 sesiones y la media de 200 a las 200,
+    unos diez meses desde la primera pasada.</div>`;
   return `<div class="detail-in">${out}</div>`;
 }
 
@@ -992,6 +1058,9 @@ async function loadLiveData(){
       const q = data.prices && data.prices[item.t];
       if(q){ item.price = q.price; item.dayChangePct = q.change_pct; matched++; }
     });
+    indic = data.indicadores || {};
+    movimientos = data.movimientos_fuertes || [];
+    topMovers = data.top_movers || [];
     const when = data.generated_at ? new Date(data.generated_at).toLocaleString('es', { dateStyle:'medium', timeStyle:'short' }) : 'hora desconocida';
     statusEl.textContent = matched > 0
       ? `Datos en vivo · actualizado ${when} · ${matched} tickers`
@@ -1001,25 +1070,134 @@ async function loadLiveData(){
   }
 }
 
+// ------------------------------------------------------------------ pestanas ---
+function initTabs(){
+  const nav = document.getElementById('tabs');
+  nav.addEventListener('click', e => {
+    const b = e.target.closest('button');
+    if(!b) return;
+    nav.querySelectorAll('button').forEach(x => x.classList.toggle('active', x === b));
+    ['home','stocks','watch'].forEach(k =>
+      document.getElementById('tab-' + k).hidden = (k !== b.dataset.tab));
+    location.hash = b.dataset.tab;
+  });
+  const inicial = (location.hash || '').replace('#','');
+  if(['home','stocks','watch'].includes(inicial))
+    nav.querySelector(`[data-tab="${inicial}"]`).click();
+  document.getElementById('cnt-stocks').textContent = allPositions().length;
+  document.getElementById('cnt-watch').textContent = watchlist.length;
+}
+
+// ---------------------------------------------------- movimientos fuertes ---
+function renderMovers(){
+  const el = document.getElementById('movers');
+  const mios = new Set([...holdings, ...outsideFramework, ...watchlist].map(h => h.t));
+  const propios = movimientos.filter(m => mios.has(m.ticker));
+  const mercado = topMovers.filter(m => !mios.has(m.ticker));
+
+  // La etiqueta "en tu radar" solo tiene sentido en la tarjeta de mercado:
+  // dentro de la tuya seria redundante en todas las filas.
+  const fila = (m, marcar) => `<div class="mv-row">
+      <span class="tk">${m.ticker}</span>
+      <span class="pc ${cls(m.pct)}">${sign(m.pct,1)}</span>
+      ${m.ventana ? `<span class="wn">en ${m.ventana}</span>` : ''}
+      ${marcar && mios.has(m.ticker) ? '<span class="mine">en tu radar</span>' : ''}
+    </div>`;
+
+  const sesiones = Object.values(indic).map(d => d.sesiones || 0);
+  const maxSes = sesiones.length ? Math.max(...sesiones) : 0;
+
+  el.innerHTML = `
+    <div class="mv-card ${propios.length ? 'alerta' : ''}">
+      <h3>Movimientos fuertes en tu radar</h3>
+      <div class="cap">Variación de ±5% o más en un día o en cinco sesiones,
+        sobre tus 15 posiciones y las 6 de la watchlist.</div>
+      ${propios.length ? propios.map(m => fila(m, false)).join('')
+        : `<div class="vacio">${maxSes >= 6
+            ? 'Nada se ha movido un 5% ni en un día ni en cinco sesiones.'
+            : `Aún no hay histórico suficiente: llevamos ${maxSes} sesión(es) guardadas.
+               El aviso de un día necesita 2 y el de cinco sesiones necesita 6.`}</div>`}
+    </div>
+    <div class="mv-card">
+      <h3>Mayores movimientos del mercado</h3>
+      <div class="cap">Del día, fuera de lo que ya sigues.</div>
+      ${mercado.length ? mercado.map(m => fila(m, true)).join('')
+        : `<div class="vacio">Sin datos de mercado. Se prueban tres fuentes públicas en
+           cascada y ninguna respondió; no se estiman movimientos.</div>`}
+    </div>`;
+}
+
+// ----------------------------------------------------------------- watchlist ---
+function targetCell(h){
+  if(h.target == null) return `<div class="tgt mut">Sin objetivo</div>`;
+  if(h.price == null) return `<div class="tgt"><span class="mut">Objetivo ${money(h.target)}</span></div>`;
+  const dist = (h.price / h.target - 1) * 100;
+  const llego = dist <= 0;
+  return `<div class="tgt">
+      <div class="d ${llego ? 'hit' : 'far'}">${llego ? 'En precio' : sign(dist,1)}</div>
+      <div class="mut">objetivo ${money(h.target)}</div>
+      <div class="mut">actual ${money(h.price)}</div>
+    </div>`;
+}
+
+function snippetMover(h){
+  const campos = [`t:"${h.t}"`, `shares:0`, `cost:0`, `score:${h.score}`,
+    `verdict:"${h.verdict}"`,
+    `cat:{q:${h.cat.q},h:${h.cat.h},g:${h.cat.g},v:${h.cat.v},ti:${h.cat.ti ?? 'null'}}`,
+    `price:${h.price}`,
+    h.intrinsic ? `intrinsic:{low:${h.intrinsic.low}, base:${h.intrinsic.base}, high:${h.intrinsic.high}}` : 'intrinsic:null',
+    `todayMove:null`];
+  return `  { ${campos.join(', ')},\n    note:${JSON.stringify(h.note)} },`;
+}
+
 function renderWatchlist(){
   const rowsEl = document.getElementById('wl-rows');
   rowsEl.innerHTML = '';
-  watchlist.forEach(h => {
+  [...watchlist].sort((a,b) => b.score - a.score).forEach(h => {
     const tr = document.createElement('tr');
+    tr.className = 'main';
     tr.innerHTML = `
-      <td><div class="ticker">${h.t}${renderTodayBadge(h)}</div></td>
+      <td><div class="ticker"><span class="caret">▸</span> ${h.t}</div></td>
       <td><span class="score">${h.score}</span></td>
       <td>${scoreBar(h)}</td>
+      <td>${targetCell(h)}</td>
       <td>${renderIntrinsic(h)}</td>
-      <td><span class="verdict v-${h.verdict}">${verdictLabel[h.verdict]}</span></td>
-      <td><div class="note">${h.note}</div></td>`;
+      <td><span class="verdict v-${h.verdict}">${verdictLabel[h.verdict]}</span></td>`;
+    const det = document.createElement('tr');
+    det.className = 'detail';
+    det.hidden = true;
+    det.innerHTML = `<td colspan="6"><div class="detail-in">
+        ${newsDeTicker(h.t)}
+        <div class="detail-note">${h.note}</div>
+        ${fundamentals[h.t] ? sparkSet(fundamentals[h.t]) : `<div class="no-fund">
+          Sin ficha de 10 años todavía: su score viene del análisis por búsqueda web,
+          no de los 10-K de la SEC.</div>`}
+        <button class="mover" data-t="${h.t}">Preparar el paso a cartera</button>
+        <div class="snippet" hidden></div>
+      </div></td>`;
+    tr.addEventListener('click', () => {
+      det.hidden = !det.hidden;
+      tr.classList.toggle('open', !det.hidden);
+    });
+    det.querySelector('.mover').addEventListener('click', e => {
+      e.stopPropagation();
+      const cod = det.querySelector('.snippet');
+      cod.hidden = false;
+      cod.textContent =
+        `El dashboard es un fichero estático: este botón no puede guardar el cambio.\n` +
+        `Pega esta línea en el array "holdings" de index.html, pon tus participaciones\n` +
+        `y tu coste medio, y bórrala de "watchlist".\n\n` + snippetMover(h);
+    });
     rowsEl.appendChild(tr);
+    rowsEl.appendChild(det);
   });
 }
 
 async function init(){
   await Promise.all([loadLiveData(), loadNews(), loadEventos()]);
   renderHoy();
+  initTabs();
+  renderMovers();
   renderSummary();
   renderAlloc();
   renderPnl();

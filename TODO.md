@@ -17,7 +17,15 @@
   en el 10-K.
 - [ ] **Amortización de Microsoft.** Los dos tags estándar dan 404 y el disponible
   solo cubre inmovilizado. Sin eso no hay EBITDA ni Deuda neta/EBITDA de MSFT.
-- [ ] **RSI y media de 200 sesiones.** La pata de Timing del scoring (5%) sale
-  n.d. en las seis analizadas. Haría falta guardar histórico de precios diario.
+- [x] ~~RSI y media de 200 sesiones~~ — hecho. `scripts/history.py` acumula el
+  cierre diario en `prices_history.json` y calcula RSI de 14 y media de 200. El RSI
+  aparecerá a las 15 sesiones desde la primera pasada del Action; la media de 200,
+  a las 200 (unos diez meses). Hasta entonces salen n.d., no aproximados.
+- [ ] **Precios objetivo de la watchlist.** Los sembré con el extremo bajo del rango
+  de valor intrínseco de cada una (PGR 180, V 290, PLTR 28, LULU 190, UNP 159,
+  SHEL 69). Son propuestas mías, no tuyas: revísalos.
+- [ ] **Fuente de top movers sin verificar.** Se prueban tres en cascada
+  (Nasdaq marketmovers y los dos screeners de Yahoo). Ninguna está comprobada
+  todavía: hay que ejecutar `probe.yml` y mirar `probe_news.json`.
 - [ ] **Las 6 posiciones que faltan por analizar con datos de la SEC**: AMZN, AAPL,
   IBM, COP, WMT, CVX. Hoy tienen scores de búsqueda web de la primera sesión.

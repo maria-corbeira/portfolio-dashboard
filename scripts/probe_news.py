@@ -15,6 +15,9 @@ CANDIDATAS = {
  "nasdaq_earndate":"https://api.nasdaq.com/api/company/NVDA/earnings-date",
  "nasdaq_eps":     "https://api.nasdaq.com/api/quote/NVDA/eps",
  "nasdaq_calend":  "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-08",
+ "nasdaq_movers":  "https://api.nasdaq.com/api/marketmovers",
+ "yahoo_gainers":  "https://query1.finance.yahoo.com/v1/finance/screener/predefined/saved?scrIds=day_gainers&count=8",
+ "yahoo_losers":   "https://query1.finance.yahoo.com/v1/finance/screener/predefined/saved?scrIds=day_losers&count=8",
  "sec_8k":         "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001045810&type=8-K&count=5&output=atom",
 }
 res = {}
