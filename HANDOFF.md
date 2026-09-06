@@ -293,7 +293,10 @@ Ordenado por lo que más desbloquea.
 ## 7 · Cómo trabaja Maria
 
 Escribe en español. Pidió explícitamente **respuestas directas, sin preámbulos ni
-resúmenes, en estilo lacónico**. Prefiere ir paso a paso, con las preguntas por delante, y
+resúmenes, en estilo lacónico**. El 6-sep-2026 tuvo que repetirlo: **bullets cortos, no
+párrafos**, porque tanto texto la deja "abrumada y perdida". Es el aviso que más veces se
+ha incumplido de todo este documento. El detalle largo va al commit o aquí, no a la
+respuesta; si de verdad hace falta extenderse, se pregunta antes. Prefiere ir paso a paso, con las preguntas por delante, y
 acepta subagentes que revisen el trabajo.
 
 No es programadora: explícale los pasos de Terminal y de GitHub sin dar nada por supuesto,
