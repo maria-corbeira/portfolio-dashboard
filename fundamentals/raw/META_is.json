@@ -1,0 +1,142 @@
+{
+ "ticker": "META",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "revenue": [
+   27638,
+   40653,
+   55838,
+   70697,
+   85965,
+   117929,
+   116609,
+   134902,
+   164501,
+   200966
+  ],
+  "cogs": [
+   3789,
+   5454,
+   9355,
+   12770,
+   16692,
+   22649,
+   25249,
+   25959,
+   30161,
+   36175
+  ],
+  "gross_profit": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "operating_income": [
+   12427,
+   20203,
+   24913,
+   23986,
+   32671,
+   46753,
+   28944,
+   46751,
+   69380,
+   83276
+  ],
+  "interest_expense": [
+   -10,
+   -6,
+   -9,
+   -20,
+   null,
+   -23,
+   -185,
+   -446,
+   -715,
+   -1165
+  ],
+  "income_tax": [
+   -2301,
+   -4660,
+   -3249,
+   -6327,
+   -4034,
+   -7914,
+   -5619,
+   -8330,
+   -8303,
+   -25474
+  ],
+  "net_income": [
+   10217,
+   15934,
+   22112,
+   18485,
+   29146,
+   39370,
+   23200,
+   39098,
+   62360,
+   60458
+  ],
+  "eps_diluted": [
+   3.49,
+   5.39,
+   7.57,
+   6.43,
+   10.09,
+   13.77,
+   8.59,
+   14.87,
+   23.86,
+   23.49
+  ],
+  "diluted_shares": [
+   2925,
+   2956,
+   2921,
+   2876,
+   2888,
+   2859,
+   2702,
+   2629,
+   2614,
+   2574
+  ],
+  "rd_expense": [
+   5919,
+   7754,
+   10273,
+   13600,
+   18447,
+   24655,
+   35338,
+   38483,
+   43873,
+   57372
+  ]
+ },
+ "avisos": [
+  "Meta no etiqueta GrossProfit en XBRL (404 los diez ejercicios): el beneficio bruto se deriva como ventas menos coste de ventas, aritmetica sobre datos publicados.",
+  "Sin gasto financiero en 2020 bajo ninguno de los tres tags. Meta no tuvo deuda en bonos hasta agosto de 2022: las cifras de 2016-2021 (entre 6 y 23 millones) son partidas menores.",
+  "El impuesto de FY2025 (25.474) triplica el de FY2024 (8.303) y es lo que hace caer el beneficio neto pese a crecer las ventas un 22%. La causa concreta no se ha verificado en el texto del 10-K."
+ ]
+}

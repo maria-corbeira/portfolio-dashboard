@@ -1,0 +1,192 @@
+{
+ "ticker": "META",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "cash": [
+   8903,
+   8079,
+   10019,
+   19079,
+   17576,
+   16601,
+   14681,
+   41862,
+   43889,
+   35873
+  ],
+  "short_term_investments": [
+   20546,
+   33632,
+   31095,
+   35776,
+   44378,
+   31397,
+   26057,
+   23541,
+   33926,
+   45719
+  ],
+  "total_current_assets": [
+   34401,
+   48563,
+   50480,
+   66225,
+   75670,
+   66666,
+   59549,
+   85365,
+   100045,
+   108722
+  ],
+  "total_assets": [
+   64961,
+   84524,
+   97334,
+   133376,
+   159316,
+   165987,
+   185727,
+   229623,
+   276054,
+   366021
+  ],
+  "total_current_liabilities": [
+   2875,
+   3760,
+   7017,
+   15053,
+   14981,
+   21135,
+   27026,
+   31960,
+   33596,
+   41836
+  ],
+  "total_liabilities": [
+   5767,
+   10177,
+   13207,
+   32322,
+   31026,
+   41108,
+   60014,
+   76455,
+   93417,
+   148778
+  ],
+  "total_equity": [
+   59194,
+   74347,
+   84127,
+   101054,
+   128290,
+   124879,
+   125713,
+   153168,
+   182637,
+   217243
+  ],
+  "short_term_borrowings": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "current_portion_ltd": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "long_term_debt": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   9923,
+   18385,
+   28826,
+   58744
+  ],
+  "finance_lease_current": [
+   null,
+   null,
+   null,
+   55,
+   54,
+   75,
+   129,
+   90,
+   76,
+   308
+  ],
+  "finance_lease_noncurrent": [
+   null,
+   null,
+   418,
+   null,
+   469,
+   506,
+   558,
+   600,
+   633,
+   876
+  ],
+  "operating_lease_current": [
+   null,
+   null,
+   null,
+   800,
+   1023,
+   1127,
+   1367,
+   1623,
+   1942,
+   2213
+  ],
+  "operating_lease_noncurrent": [
+   null,
+   null,
+   0,
+   9524,
+   9631,
+   12746,
+   15301,
+   17226,
+   18292,
+   22940
+  ]
+ },
+ "avisos": [
+  "El balance cuadra exacto (Activo = Pasivo + Patrimonio) en los 10 ejercicios.",
+  "Meta no usa ShortTermBorrowings, CommercialPaper ni LongTermDebtCurrent (404 los diez anos): no tiene deuda financiera a corto plazo etiquetada.",
+  "Sin deuda a largo en 2016-2021 porque Meta no emitio bonos hasta agosto de 2022.",
+  "Sin hecho puntual de arrendamiento financiero no corriente a 31-12-2019 bajo ese tag: se deja vacio en vez de derivarlo del total.",
+  "El 0 de arrendamiento operativo no corriente a 31-12-2018 es un dato real, no una ausencia: bajo ASC 840 los arrendamientos operativos no se reconocian en balance."
+ ]
+}

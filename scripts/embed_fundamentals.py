@@ -19,7 +19,7 @@ START, END = "// <<<FUNDAMENTALS", "// FUNDAMENTALS>>>"
 # Se incrusta solo lo que el dashboard usa: agregados + serie anual recortada.
 KEEP_YEAR = ["year", "revenue", "revenue_growth", "gross_margin", "operating_margin",
              "net_margin", "roe", "roic", "interest_coverage", "debt_to_equity",
-             "net_debt_ebitda", "current_ratio", "eps_diluted", "eps_growth",
+             "net_debt_ebitda", "current_ratio", "eps_diluted", "eps_growth", "net_income", "net_income_growth",
              "cfo", "capex", "fcf", "fcf_margin", "fcf_growth", "sbc_pct_revenue",
              "diluted_shares", "market_cap", "price_close", "pe", "fcf_yield"]
 

@@ -1,0 +1,192 @@
+{
+ "ticker": "MSFT",
+ "fiscal_dates": [
+  "2016-06-30",
+  "2017-06-30",
+  "2018-06-30",
+  "2019-06-30",
+  "2020-06-30",
+  "2021-06-30",
+  "2022-06-30",
+  "2023-06-30",
+  "2024-06-30",
+  "2025-06-30"
+ ],
+ "rows": {
+  "cash": [
+   6510,
+   7663,
+   11946,
+   11356,
+   13576,
+   14224,
+   13931,
+   34704,
+   18315,
+   30242
+  ],
+  "short_term_investments": [
+   null,
+   null,
+   121822,
+   122463,
+   122951,
+   116110,
+   90826,
+   76558,
+   57228,
+   64323
+  ],
+  "total_current_assets": [
+   139660,
+   162696,
+   169662,
+   175552,
+   181915,
+   184406,
+   169684,
+   184257,
+   159734,
+   191131
+  ],
+  "total_assets": [
+   193468,
+   250312,
+   258848,
+   286556,
+   301311,
+   333779,
+   364840,
+   411976,
+   512163,
+   619003
+  ],
+  "total_current_liabilities": [
+   59357,
+   55745,
+   58488,
+   69420,
+   72310,
+   88657,
+   95082,
+   104149,
+   125286,
+   141218
+  ],
+  "total_liabilities": [
+   121471,
+   162601,
+   176130,
+   184226,
+   183007,
+   191791,
+   198298,
+   205753,
+   243686,
+   275524
+  ],
+  "total_equity": [
+   71997,
+   87711,
+   82718,
+   102330,
+   118304,
+   141988,
+   166542,
+   206223,
+   268477,
+   343479
+  ],
+  "short_term_borrowings": [
+   12904,
+   9072,
+   0,
+   0,
+   null,
+   null,
+   null,
+   0,
+   6693,
+   0
+  ],
+  "current_portion_ltd": [
+   0,
+   1049,
+   3998,
+   5516,
+   3749,
+   8072,
+   2749,
+   5247,
+   2249,
+   2999
+  ],
+  "long_term_debt": [
+   40783,
+   76073,
+   72242,
+   66662,
+   59578,
+   50074,
+   47032,
+   41990,
+   42688,
+   40152
+  ],
+  "finance_lease_current": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "finance_lease_noncurrent": [
+   null,
+   null,
+   null,
+   6574,
+   9496,
+   12541,
+   14902,
+   17067,
+   27145,
+   46172
+  ],
+  "operating_lease_current": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "operating_lease_noncurrent": [
+   null,
+   5372,
+   5568,
+   6188,
+   7671,
+   9629,
+   11489,
+   12728,
+   15497,
+   17437
+  ]
+ },
+ "avisos": [
+  "El balance cuadra exacto (Activo = Pasivo + Patrimonio) en los 10 ejercicios.",
+  "Microsoft no desglosa el arrendamiento financiero en corriente y no corriente: los dos tags dan 404. Se usa el agregado FinanceLeaseLiability colocado entero en la fila no corriente; el total de deuda es correcto, el reparto por plazo no.",
+  "OperatingLeaseLiabilityCurrent da 404 en Microsoft: la deuda total queda infravalorada en el arrendamiento operativo corriente, del orden de unos pocos miles de millones. No se estima.",
+  "Sin dato de deuda a corto en 2020-2022: ni ShortTermBorrowings ni CommercialPaper tienen entradas. En 2019 y 2023 se publica 0 explicito, asi que probablemente tambien fuera 0, pero no se asume.",
+  "Sin dato de inversiones a corto en 2016 y 2017: la caja total y la deuda neta de esos dos ejercicios salen vacias."
+ ]
+}

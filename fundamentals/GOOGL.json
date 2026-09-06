@@ -41,6 +41,7 @@
     {
       "year": "2016",
       "revenue": 90272,
+      "net_income": 19478,
       "gross_margin": 61.1,
       "operating_margin": 26.3,
       "net_margin": 21.6,
@@ -66,11 +67,13 @@
       "fcf_yield": 4.79,
       "revenue_growth": null,
       "eps_growth": null,
-      "fcf_growth": null
+      "fcf_growth": null,
+      "net_income_growth": null
     },
     {
       "year": "2017",
       "revenue": 110855,
+      "net_income": 12662,
       "gross_margin": 58.9,
       "operating_margin": 23.6,
       "net_margin": 11.4,
@@ -96,11 +99,13 @@
       "fcf_yield": 3.28,
       "revenue_growth": 22.8,
       "eps_growth": -35.4,
-      "fcf_growth": -7.4
+      "fcf_growth": -7.4,
+      "net_income_growth": -35.0
     },
     {
       "year": "2018",
       "revenue": 136819,
+      "net_income": 30736,
       "gross_margin": 56.5,
       "operating_margin": 20.1,
       "net_margin": 22.5,
@@ -126,11 +131,13 @@
       "fcf_yield": 3.15,
       "revenue_growth": 23.4,
       "eps_growth": 142.8,
-      "fcf_growth": -4.5
+      "fcf_growth": -4.5,
+      "net_income_growth": 142.7
     },
     {
       "year": "2019",
       "revenue": 161857,
+      "net_income": 34343,
       "gross_margin": 55.6,
       "operating_margin": 21.1,
       "net_margin": 21.2,
@@ -156,11 +163,13 @@
       "fcf_yield": 3.35,
       "revenue_growth": 18.3,
       "eps_growth": 12.5,
-      "fcf_growth": 35.7
+      "fcf_growth": 35.7,
+      "net_income_growth": 11.7
     },
     {
       "year": "2020",
       "revenue": 182527,
+      "net_income": 40269,
       "gross_margin": 53.6,
       "operating_margin": 22.6,
       "net_margin": 22.1,
@@ -186,11 +195,13 @@
       "fcf_yield": 3.61,
       "revenue_growth": 12.8,
       "eps_growth": 19.2,
-      "fcf_growth": 38.3
+      "fcf_growth": 38.3,
+      "net_income_growth": 17.3
     },
     {
       "year": "2021",
       "revenue": 257637,
+      "net_income": 76033,
       "gross_margin": 56.9,
       "operating_margin": 30.6,
       "net_margin": 29.5,
@@ -216,11 +227,13 @@
       "fcf_yield": 3.48,
       "revenue_growth": 41.2,
       "eps_growth": 91.4,
-      "fcf_growth": 56.4
+      "fcf_growth": 56.4,
+      "net_income_growth": 88.8
     },
     {
       "year": "2022",
       "revenue": 282836,
+      "net_income": 59972,
       "gross_margin": 55.4,
       "operating_margin": 26.5,
       "net_margin": 21.2,
@@ -246,11 +259,13 @@
       "fcf_yield": 5.23,
       "revenue_growth": 9.8,
       "eps_growth": -18.7,
-      "fcf_growth": -10.4
+      "fcf_growth": -10.4,
+      "net_income_growth": -21.1
     },
     {
       "year": "2023",
       "revenue": 307394,
+      "net_income": 73795,
       "gross_margin": 56.6,
       "operating_margin": 27.4,
       "net_margin": 24.0,
@@ -276,11 +291,13 @@
       "fcf_yield": 3.95,
       "revenue_growth": 8.7,
       "eps_growth": 27.2,
-      "fcf_growth": 15.8
+      "fcf_growth": 15.8,
+      "net_income_growth": 23.0
     },
     {
       "year": "2024",
       "revenue": 350018,
+      "net_income": 100118,
       "gross_margin": 58.2,
       "operating_margin": 32.1,
       "net_margin": 28.6,
@@ -306,11 +323,13 @@
       "fcf_yield": 3.13,
       "revenue_growth": 13.9,
       "eps_growth": 38.6,
-      "fcf_growth": 4.7
+      "fcf_growth": 4.7,
+      "net_income_growth": 35.7
     },
     {
       "year": "2025",
       "revenue": 402836,
+      "net_income": 132170,
       "gross_margin": 59.7,
       "operating_margin": 32.0,
       "net_margin": 32.8,
@@ -336,12 +355,14 @@
       "fcf_yield": 1.94,
       "revenue_growth": 15.1,
       "eps_growth": 34.5,
-      "fcf_growth": 0.7
+      "fcf_growth": 0.7,
+      "net_income_growth": 32.0
     }
   ],
   "campos_incompletos": [
     "eps_growth",
     "fcf_growth",
+    "net_income_growth",
     "revenue_growth"
   ]
 }

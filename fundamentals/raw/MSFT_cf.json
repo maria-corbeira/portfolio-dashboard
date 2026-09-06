@@ -1,0 +1,104 @@
+{
+ "ticker": "MSFT",
+ "fiscal_dates": [
+  "2016-06-30",
+  "2017-06-30",
+  "2018-06-30",
+  "2019-06-30",
+  "2020-06-30",
+  "2021-06-30",
+  "2022-06-30",
+  "2023-06-30",
+  "2024-06-30",
+  "2025-06-30"
+ ],
+ "rows": {
+  "cfo": [
+   33325,
+   39507,
+   43884,
+   52185,
+   60675,
+   76740,
+   89035,
+   87582,
+   118548,
+   136162
+  ],
+  "capex": [
+   -8343,
+   -8129,
+   -11632,
+   -13925,
+   -15441,
+   -20622,
+   -23886,
+   -28107,
+   -44477,
+   -64551
+  ],
+  "depreciation_amortization": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "stock_based_compensation": [
+   2668,
+   3266,
+   3940,
+   4652,
+   5289,
+   6118,
+   7502,
+   9611,
+   10734,
+   11974
+  ],
+  "buybacks": [
+   15969,
+   11788,
+   10721,
+   19543,
+   22968,
+   27385,
+   32696,
+   22245,
+   17254,
+   18420
+  ],
+  "dividends_paid": [
+   11006,
+   11845,
+   12699,
+   13811,
+   15137,
+   16521,
+   18135,
+   19800,
+   21771,
+   24082
+  ],
+  "cash_taxes_paid": [
+   3900,
+   2400,
+   5500,
+   8400,
+   12500,
+   13400,
+   16000,
+   23100,
+   23400,
+   28700
+  ]
+ },
+ "avisos": [
+  "AMORTIZACION DELIBERADAMENTE VACIA. DepreciationDepletionAndAmortization y DepreciationAmortizationAndAccretionNet dan 404 en Microsoft, y el tag Depreciation solo recoge la del inmovilizado: valores redondeados a centenas de millon y no monotonos (10.700 en FY2020 frente a 9.300 en FY2021). Usarlo falsearia el EBITDA. Consecuencia: EBITDA y Deuda neta/EBITDA salen n.d. en Microsoft hasta consultar la etiqueta propia de la empresa."
+ ]
+}

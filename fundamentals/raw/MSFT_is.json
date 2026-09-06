@@ -1,0 +1,142 @@
+{
+ "ticker": "MSFT",
+ "fiscal_dates": [
+  "2016-06-30",
+  "2017-06-30",
+  "2018-06-30",
+  "2019-06-30",
+  "2020-06-30",
+  "2021-06-30",
+  "2022-06-30",
+  "2023-06-30",
+  "2024-06-30",
+  "2025-06-30"
+ ],
+ "rows": {
+  "revenue": [
+   91154,
+   96571,
+   110360,
+   125843,
+   143015,
+   168088,
+   198270,
+   211915,
+   245122,
+   281724
+  ],
+  "cogs": [
+   32780,
+   34261,
+   38353,
+   42910,
+   46078,
+   52232,
+   62650,
+   65863,
+   74114,
+   87831
+  ],
+  "gross_profit": [
+   58374,
+   62310,
+   72007,
+   82933,
+   96937,
+   115856,
+   135620,
+   146052,
+   171008,
+   193893
+  ],
+  "operating_income": [
+   26078,
+   29025,
+   35058,
+   42959,
+   52959,
+   69916,
+   83383,
+   88523,
+   109433,
+   128528
+  ],
+  "interest_expense": [
+   -1243,
+   -2222,
+   -2733,
+   -2686,
+   -2591,
+   -2346,
+   -2063,
+   -1968,
+   -2935,
+   -2385
+  ],
+  "income_tax": [
+   -5100,
+   -4412,
+   -19903,
+   -4448,
+   -8755,
+   -9831,
+   -10978,
+   -16950,
+   -19651,
+   -21795
+  ],
+  "net_income": [
+   20539,
+   25489,
+   16571,
+   39240,
+   44281,
+   61271,
+   72738,
+   72361,
+   88136,
+   101832
+  ],
+  "eps_diluted": [
+   2.56,
+   3.25,
+   2.13,
+   5.06,
+   5.76,
+   8.05,
+   9.65,
+   9.68,
+   11.8,
+   13.64
+  ],
+  "diluted_shares": [
+   8013,
+   7832,
+   7794,
+   7753,
+   7683,
+   7608,
+   7540,
+   7472,
+   7469,
+   7465
+  ],
+  "rd_expense": [
+   11988,
+   13037,
+   14726,
+   16876,
+   19269,
+   20716,
+   24512,
+   27195,
+   29510,
+   32488
+  ]
+ },
+ "avisos": [
+  "FY2016 y FY2017 son cifras reexpresadas por la adopcion retrospectiva de ASC 606 (10-K de FY2018): las ventas de FY2016 pasaron de 85.320 a 91.154 y las de FY2017 de 89.950 a 96.571. Se usan las reexpresadas, conforme a la regla del 'filed' mas reciente.",
+  "El impuesto de FY2018 (19.903) es anormalmente alto por el cargo unico de repatriacion de la reforma fiscal TCJA. No es un error de extraccion.",
+  "El gasto financiero de FY2025 procede de InterestExpenseNonoperating; InterestExpense dejo de publicarse ese ejercicio."
+ ]
+}

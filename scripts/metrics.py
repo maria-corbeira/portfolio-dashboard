@@ -99,14 +99,17 @@ def compute(d):
         nopat = None if (opinc[i] is None or etr is None) else opinc[i] * (1 - etr)
         # capital invertido = deuda total + fondos propios - caja y equivalentes
         ic = None
-        if debt[i] is not None and equity[i] is not None:
-            ic = debt[i] + equity[i] - (cash[i] or 0)
+        if debt[i] is not None and equity[i] is not None and cash[i] is not None:
+            # Si falta la caja NO se asume cero: eso inflaria el capital invertido
+            # y hundiria el ROIC de ese ejercicio. Sin caja, no hay ROIC.
+            ic = debt[i] + equity[i] - cash[i]
             if ic <= 0:
                 ic = None
 
         rows.append({
             "year": dates[i][:4],
             "revenue": rev[i],
+            "net_income": ni[i],
             "gross_margin": pct(div(gross[i], rev[i])),
             "operating_margin": pct(div(opinc[i], rev[i])),
             "net_margin": pct(div(ni[i], rev[i])),
@@ -134,11 +137,12 @@ def compute(d):
             "fcf_yield": pct(div(fcf[i], mcap[i]), 2),
         })
 
-    rev_g, eps_g, fcf_g = yoy(rev), yoy(eps), yoy(fcf)
+    rev_g, eps_g, fcf_g, ni_g = yoy(rev), yoy(eps), yoy(fcf), yoy(ni)
     for i, r in enumerate(rows):
         r["revenue_growth"] = pct(rev_g[i])
         r["eps_growth"] = pct(eps_g[i])
         r["fcf_growth"] = pct(fcf_g[i])
+        r["net_income_growth"] = pct(ni_g[i])
 
     def last(key):
         return rows[-1][key] if rows else None
