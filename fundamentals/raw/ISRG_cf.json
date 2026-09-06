@@ -1,0 +1,107 @@
+{
+ "ticker": "ISRG",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "cfo": [
+   1043,
+   1144,
+   1170,
+   1598,
+   1485,
+   2089,
+   1491,
+   1814,
+   2415,
+   3031
+  ],
+  "capex": [
+   -54,
+   -191,
+   -187,
+   -426,
+   -342,
+   -354,
+   -532,
+   -1064,
+   -1111,
+   -540
+  ],
+  "depreciation_amortization": [
+   71,
+   82,
+   106,
+   157,
+   221,
+   280,
+   326,
+   382,
+   439,
+   600
+  ],
+  "stock_based_compensation": [
+   178,
+   209,
+   261,
+   336,
+   395,
+   449,
+   513,
+   593,
+   677,
+   788
+  ],
+  "buybacks": [
+   43,
+   2274,
+   0,
+   270,
+   134,
+   0,
+   2607,
+   416,
+   0,
+   2295
+  ],
+  "dividends_paid": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "cash_taxes_paid": [
+   138,
+   148,
+   179,
+   159,
+   34,
+   180,
+   444,
+   448,
+   467,
+   538
+  ]
+ },
+ "avisos": [
+  "Flujo de explotacion positivo los diez ejercicios.",
+  "Amortizacion del tag Depreciation: los dos preferentes dan 404. Puede no incluir intangibles, asi que el EBITDA queda algo infravalorado.",
+  "ANCLA FALLIDA MIA: di 2.510 millones de flujo para 2024 y el real es 2.415 (-3,8%). Verificado en dos filings.",
+  "Intuitive Surgical no ha pagado dividendo nunca."
+ ]
+}

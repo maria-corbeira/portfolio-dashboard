@@ -1,0 +1,72 @@
+{
+ "fuente": "API de stockanalysis.com, campo 'c' (ajustado solo por splits, nunca por dividendos)",
+ "obtenido": "2026-09-06",
+ "precios": {
+  "MSFT": [
+   null,
+   68.93,
+   98.61,
+   133.96,
+   203.51,
+   270.9,
+   256.83,
+   340.54,
+   446.95,
+   497.41
+  ],
+  "META": [
+   115.05,
+   176.46,
+   131.09,
+   205.25,
+   273.16,
+   336.35,
+   120.34,
+   353.96,
+   585.51,
+   660.09
+  ],
+  "UBER": [
+   null,
+   null,
+   null,
+   29.74,
+   51.0,
+   41.93,
+   24.73,
+   61.57,
+   60.32,
+   81.71
+  ],
+  "ISRG": [
+   70.463,
+   121.647,
+   159.64,
+   197.05,
+   272.7,
+   359.3,
+   265.35,
+   337.36,
+   521.96,
+   566.36
+  ],
+  "NVDA": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "avisos": [
+  "MSFT 30-jun-2016: la ventana de 10 anos en periodo mensual no llega hasta ahi.",
+  "NVDA: los diez precios sin obtener, el limite de sesion de WebFetch se agoto a mitad de la consulta.",
+  "UBER 2016-2018: no cotizaba, salio a bolsa el 10-may-2019.",
+  "Fechas desplazadas al ultimo dia habil anterior cuando el cierre caia en fin de semana."
+ ]
+}

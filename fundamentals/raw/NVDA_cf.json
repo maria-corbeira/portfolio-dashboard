@@ -1,0 +1,106 @@
+{
+ "ticker": "NVDA",
+ "fiscal_dates": [
+  "2017-01-29",
+  "2018-01-28",
+  "2019-01-27",
+  "2020-01-26",
+  "2021-01-31",
+  "2022-01-30",
+  "2023-01-29",
+  "2024-01-28",
+  "2025-01-26",
+  "2026-01-25"
+ ],
+ "rows": {
+  "cfo": [
+   1672,
+   3502,
+   3743,
+   4761,
+   5822,
+   9108,
+   5641,
+   28090,
+   64089,
+   102718
+  ],
+  "capex": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   -976,
+   -1833,
+   -1069,
+   -3236,
+   -6042
+  ],
+  "depreciation_amortization": [
+   118,
+   144,
+   233,
+   381,
+   1098,
+   1174,
+   1544,
+   1508,
+   1864,
+   2843
+  ],
+  "stock_based_compensation": [
+   247,
+   391,
+   557,
+   844,
+   1397,
+   2004,
+   2709,
+   3549,
+   4737,
+   6386
+  ],
+  "buybacks": [
+   739,
+   909,
+   1579,
+   0,
+   0,
+   0,
+   10039,
+   9533,
+   33706,
+   40086
+  ],
+  "dividends_paid": [
+   261,
+   341,
+   371,
+   390,
+   395,
+   399,
+   398,
+   395,
+   834,
+   974
+  ],
+  "cash_taxes_paid": [
+   14,
+   22,
+   61,
+   176,
+   249,
+   396,
+   1404,
+   6549,
+   15118,
+   20288
+  ]
+ },
+ "avisos": [
+  "SIN CAPEX EN FY2017-FY2021: ninguno de los dos tags tiene hecho anual esos ejercicios. El flujo de caja libre solo existe de FY2022 en adelante, cinco ejercicios, asi que el CAGR del FCF a 5 anos sale n.d.",
+  "Amortizacion de FY2017-2019 del tag Depreciation (solo inmovilizado); de FY2020 en adelante es el tag completo. Los tres primeros anos no son homogeneos.",
+  "Flujo de explotacion positivo los diez ejercicios."
+ ]
+}

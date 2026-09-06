@@ -30,7 +30,9 @@ DEBT_PARTS = [
     ("operating_lease_current", "arrend. operativo corriente"),
     ("operating_lease_noncurrent", "arrend. operativo no corriente"),
 ]
-EMPRESAS = {"MSFT": "Microsoft Corporation", "META": "Meta Platforms, Inc."}
+EMPRESAS = {"MSFT": "Microsoft Corporation", "META": "Meta Platforms, Inc.",
+            "UBER": "Uber Technologies, Inc.", "ISRG": "Intuitive Surgical, Inc.",
+            "NVDA": "NVIDIA Corporation"}
 
 
 def build(ticker: str) -> dict:
@@ -54,9 +56,13 @@ def build(ticker: str) -> dict:
         derivadas.append("Gross Profit = Total Revenues - Cost of Goods Sold "
                          "(la empresa no etiqueta GrossProfit en XBRL)")
 
-    ebt = [None if (ni is None or t is None) else ni + abs(t)
+    # El impuesto lleva signo: negativo cuando es gasto, POSITIVO cuando es un
+    # ingreso fiscal (Uber 2024: +5.758 por liberacion de provision). Por eso se
+    # resta con su signo. Usar +|impuesto| inflaria el resultado antes de
+    # impuestos justo en los anos en que la empresa se apunta un credito fiscal.
+    ebt = [None if (ni is None or t is None) else ni - t
            for ni, t in zip(I["net_income"], I["income_tax"])]
-    derivadas.append("EBT Incl. Unusual Items = Net Income + |Income Tax Expense|")
+    derivadas.append("EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)")
 
     da = col(C, "depreciation_amortization")
     ebitda = [None if (o is None or d is None) else o + d
@@ -80,6 +86,27 @@ def build(ticker: str) -> dict:
         net_debt.append(None if (td is None or cs is None) else td - cs)
     derivadas += ["Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
                   "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)"]
+
+    precios = [None] * n
+    pf = RAW / "_precios.json"
+    if pf.exists():
+        px = json.loads(pf.read_text(encoding="utf-8"))["precios"].get(ticker)
+        if px:
+            assert len(px) == n, f"{ticker}: {len(px)} precios para {n} ejercicios"
+            precios = px
+
+    # Control: BPA x acciones diluidas ~= beneficio neto. Es lo que detecta que
+    # el BPA y las acciones esten en bases de split distintas.
+    split_ok, split_detalle = True, []
+    for i in range(n):
+        e, sh, b = I["eps_diluted"][i], I["diluted_shares"][i], I["net_income"][i]
+        if None in (e, sh, b) or b <= 0 or e <= 0:
+            continue
+        desv = abs(e * sh / b - 1)
+        if desv > 0.05:
+            split_ok = False
+            split_detalle.append(f"{dates[i][:4]}: BPA x acciones = {e*sh:,.0f} "
+                                 f"frente a beneficio {b:,.0f} ({desv*100:.1f}%)")
 
     fcf = [None if (o is None or x is None) else o + x
            for o, x in zip(C["cfo"], C["capex"])]
@@ -110,12 +137,16 @@ def build(ticker: str) -> dict:
                 "Stock-Based Compensation": C["stock_based_compensation"],
                 "Repurchase of Common Stock": neg(col(C, "buybacks")),
                 "Common & Preferred Stock Dividends Paid": neg(col(C, "dividends_paid"))},
-            "10.TIKR_Val": {"Market Cap (MM)": [None] * n, "Price": [None] * n},
+            # El P/E historico se calcula como precio/BPA, que no necesita el
+            # recuento de acciones. La capitalizacion se deja vacia: sin ella el
+            # FCF yield por ejercicio sale n.d., preferible a aproximarla.
+            "10.TIKR_Val": {"Market Cap (MM)": [None] * n, "Price": precios},
         },
         "notas": {
             "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por "
                       "ejercicio (cifras reexpresadas cuando las hay)",
             "extraido": "2026-09-05", "derivadas": derivadas, "deuda_incompleta": incompleta,
+            "control_splits": {"cuadra": split_ok, "desviaciones": split_detalle},
             "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. "
                                     "P/E y FCF yield por ejercicio salen vacios; los actuales se "
                                     "calculan con el precio en vivo.",

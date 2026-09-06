@@ -1,0 +1,143 @@
+{
+ "ticker": "ISRG",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "revenue": [
+   2707,
+   3138,
+   3724,
+   4479,
+   4358,
+   5710,
+   6222,
+   7124,
+   8352,
+   10065
+  ],
+  "cogs": [
+   814,
+   936,
+   1120,
+   1368,
+   1497,
+   1752,
+   2026,
+   2395,
+   2718,
+   3422
+  ],
+  "gross_profit": [
+   1893,
+   2202,
+   2604,
+   3110,
+   2861,
+   3959,
+   4196,
+   4730,
+   5634,
+   6642
+  ],
+  "operating_income": [
+   950,
+   1063,
+   1199,
+   1375,
+   1050,
+   1821,
+   1577,
+   1767,
+   2349,
+   2946
+  ],
+  "interest_expense": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "income_tax": [
+   -247,
+   -434,
+   -155,
+   -120,
+   -140,
+   -162,
+   -262,
+   -142,
+   -336,
+   -435
+  ],
+  "net_income": [
+   738,
+   671,
+   1128,
+   1379,
+   1061,
+   1705,
+   1322,
+   1798,
+   2323,
+   2856
+  ],
+  "eps_diluted": [
+   2.086667,
+   1.923333,
+   3.163333,
+   3.846667,
+   2.94,
+   4.66,
+   3.65,
+   5.03,
+   6.42,
+   7.87
+  ],
+  "diluted_shares": [
+   354,
+   348,
+   357,
+   360,
+   360,
+   366,
+   362,
+   357,
+   362,
+   363
+  ],
+  "rd_expense": [
+   240,
+   329,
+   418,
+   557,
+   595,
+   671,
+   879,
+   999,
+   1145,
+   1312
+  ]
+ },
+ "avisos": [
+  "BPA y acciones de 2016-2020 homogeneizados por el split 3:1 de octubre de 2021 (BPA /3, acciones x3). La SEC los publica como [6.26, 5.77, 9.49, 11.54, 8.82, 4.66, 3.65, 5.03, 6.42, 7.87] y [118, 116, 119, 120, 120, 366, 362, 357, 362, 363].",
+  "El subagente detecto un SEGUNDO split 3:1 durante 2017 que no estaba en el encargo: el 10-K original de 2016 daba 39,3 millones de acciones y 18,73 de BPA, y los filings posteriores lo reexpresan a ~118 millones y ~6,26. La regla del 'filed' mas reciente ya recoge ese ajuste.",
+  "Sin gasto financiero los diez ejercicios: los tres tags dan 404, Intuitive Surgical no tiene deuda. La cobertura de intereses sale n.d. porque no hay intereses que cubrir.",
+  "Beneficio neto = NetIncomeLoss, atribuible a la matriz."
+ ]
+}

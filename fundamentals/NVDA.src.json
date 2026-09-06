@@ -1,0 +1,429 @@
+{
+  "company": "NVIDIA Corporation",
+  "ticker": "NVDA",
+  "fiscal_dates": [
+    "2017-01-29",
+    "2018-01-28",
+    "2019-01-27",
+    "2020-01-26",
+    "2021-01-31",
+    "2022-01-30",
+    "2023-01-29",
+    "2024-01-28",
+    "2025-01-26",
+    "2026-01-25"
+  ],
+  "sheets": {
+    "7.TIKR_IS": {
+      "Total Revenues": [
+        6910,
+        9714,
+        11716,
+        10918,
+        16675,
+        26914,
+        26974,
+        60922,
+        130497,
+        215938
+      ],
+      "Cost of Goods Sold": [
+        2847,
+        3892,
+        4545,
+        4150,
+        6279,
+        9439,
+        11618,
+        16621,
+        32639,
+        62475
+      ],
+      "Gross Profit": [
+        4063,
+        5822,
+        7171,
+        6768,
+        10396,
+        17475,
+        15356,
+        44301,
+        97858,
+        153463
+      ],
+      "Operating Income": [
+        1934,
+        3210,
+        3804,
+        2846,
+        4532,
+        10041,
+        4224,
+        32972,
+        81453,
+        130387
+      ],
+      "EBITDA": [
+        2052,
+        3354,
+        4037,
+        3227,
+        5630,
+        11215,
+        5768,
+        34480,
+        83317,
+        133230
+      ],
+      "Interest Expense": [
+        -58,
+        -61,
+        -58,
+        -52,
+        -184,
+        -236,
+        -262,
+        -257,
+        -247,
+        -259
+      ],
+      "EBT Incl. Unusual Items": [
+        1905,
+        3196,
+        3896,
+        2970,
+        4409,
+        9941,
+        4181,
+        33818,
+        84026,
+        141450
+      ],
+      "Income Tax Expense": [
+        -239,
+        -149,
+        245,
+        -174,
+        -77,
+        -189,
+        187,
+        -4058,
+        -11146,
+        -21383
+      ],
+      "Net Income": [
+        1666,
+        3047,
+        4141,
+        2796,
+        4332,
+        9752,
+        4368,
+        29760,
+        72880,
+        120067
+      ],
+      "Diluted EPS Excl Extra Items": [
+        0.06425,
+        0.1205,
+        0.16575,
+        0.113,
+        0.173,
+        0.385,
+        0.17,
+        1.19,
+        2.94,
+        4.9
+      ],
+      "Weighted Average Diluted Shares Outstanding": [
+        25960,
+        25280,
+        25000,
+        24720,
+        25100,
+        25350,
+        25070,
+        24940,
+        24804,
+        24514
+      ],
+      "R&D Expenses": [
+        1463,
+        1797,
+        2376,
+        2829,
+        3924,
+        5268,
+        7339,
+        8675,
+        12914,
+        18497
+      ]
+    },
+    "8.TIKR_BS": {
+      "Cash And Equivalents": [
+        1766,
+        4002,
+        782,
+        10896,
+        847,
+        1990,
+        3389,
+        7280,
+        8589,
+        10605
+      ],
+      "Total Cash And Short Term Investments": [
+        6798,
+        7108,
+        7422,
+        10897,
+        11561,
+        21208,
+        13296,
+        25984,
+        43210,
+        null
+      ],
+      "Total Current Assets": [
+        8536,
+        9255,
+        10557,
+        13690,
+        16055,
+        28829,
+        23073,
+        44345,
+        80126,
+        125605
+      ],
+      "Total Current Liabilities": [
+        1788,
+        1153,
+        1329,
+        1784,
+        3925,
+        4335,
+        6563,
+        10631,
+        18047,
+        32163
+      ],
+      "Total Assets": [
+        9841,
+        11241,
+        13292,
+        17315,
+        28791,
+        44187,
+        41182,
+        65728,
+        111601,
+        206803
+      ],
+      "Total Liabilities": [
+        4048,
+        3770,
+        3950,
+        5111,
+        11898,
+        17575,
+        19081,
+        22750,
+        32274,
+        49510
+      ],
+      "Total Equity": [
+        5762,
+        7471,
+        9342,
+        12204,
+        16893,
+        26612,
+        22101,
+        42978,
+        79327,
+        157293
+      ],
+      "Total Debt": [
+        1983,
+        1985,
+        1988,
+        2643,
+        7718,
+        11831,
+        12031,
+        11056,
+        10270,
+        11412
+      ],
+      "Net Debt": [
+        -4815,
+        -5123,
+        -5434,
+        -8254,
+        -3843,
+        -9377,
+        -1265,
+        -14928,
+        -32940,
+        null
+      ]
+    },
+    "9.TIKR_CF": {
+      "Cash from Operations": [
+        1672,
+        3502,
+        3743,
+        4761,
+        5822,
+        9108,
+        5641,
+        28090,
+        64089,
+        102718
+      ],
+      "Capital Expenditure": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        -976,
+        -1833,
+        -1069,
+        -3236,
+        -6042
+      ],
+      "Free Cash Flow": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        8132,
+        3808,
+        27021,
+        60853,
+        96676
+      ],
+      "Depreciation & Amortization": [
+        118,
+        144,
+        233,
+        381,
+        1098,
+        1174,
+        1544,
+        1508,
+        1864,
+        2843
+      ],
+      "Stock-Based Compensation": [
+        247,
+        391,
+        557,
+        844,
+        1397,
+        2004,
+        2709,
+        3549,
+        4737,
+        6386
+      ],
+      "Repurchase of Common Stock": [
+        -739,
+        -909,
+        -1579,
+        0,
+        0,
+        0,
+        -10039,
+        -9533,
+        -33706,
+        -40086
+      ],
+      "Common & Preferred Stock Dividends Paid": [
+        -261,
+        -341,
+        -371,
+        -390,
+        -395,
+        -399,
+        -398,
+        -395,
+        -834,
+        -974
+      ]
+    },
+    "10.TIKR_Val": {
+      "Market Cap (MM)": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Price": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "notas": {
+    "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por ejercicio (cifras reexpresadas cuando las hay)",
+    "extraido": "2026-09-05",
+    "derivadas": [
+      "EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)",
+      "EBITDA = Operating Income + Depreciation & Amortization",
+      "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
+      "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
+      "Free Cash Flow = Cash from Operations + Capital Expenditure"
+    ],
+    "deuda_incompleta": [
+      "2017: suma sin deuda a corto, porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2018: suma sin deuda a corto, porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2019: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2020: suma sin arrend. financiero corriente, arrend. financiero no corriente",
+      "2021: suma sin arrend. financiero corriente, arrend. financiero no corriente",
+      "2022: suma sin deuda a corto, arrend. financiero corriente, arrend. financiero no corriente",
+      "2023: suma sin deuda a corto, arrend. financiero corriente, arrend. financiero no corriente",
+      "2024: suma sin arrend. financiero corriente, arrend. financiero no corriente",
+      "2025: suma sin arrend. financiero corriente, arrend. financiero no corriente",
+      "2026: suma sin deuda a corto, arrend. financiero corriente, arrend. financiero no corriente"
+    ],
+    "control_splits": {
+      "cuadra": true,
+      "desviaciones": []
+    },
+    "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "tags_is": null,
+    "tags_bs": null,
+    "tags_cf": null,
+    "avisos_extraccion": [
+      "Ejercicio cerrado el ultimo domingo de enero: las fechas no son un dia fijo.",
+      "BPA y acciones homogeneizados a la base actual desde TRES bases distintas (factores 40, 10 y 1). La SEC solo reexpresa los tres ejercicios de la ventana comparativa de cada 10-K. Publicados eran [2.57, 4.82, 6.63, 1.13, 1.73, 3.85, 0.17, 1.19, 2.94, 4.9] y [649, 632, 625, 2472, 2510, 2535, 25070, 24940, 24804, 24514].",
+      "El impuesto de FY2019 y FY2023 fue un INGRESO fiscal (+245 y +187), no un gasto.",
+      "FALTA EL DATO MAS IMPORTANTE: las inversiones a corto de FY2026 (cierre 25-ene-2026) no existen bajo ninguno de los tres tags; el ultimo hecho de MarketableSecuritiesCurrent es de octubre de 2025 (49.122 millones). Verificado directamente. Consecuencia: caja total, deuda neta y ROIC de FY2026 salen n.d. Probable cambio de etiqueta en el 10-K de FY2026.",
+      "El balance de FY2017 no cuadra por 31 millones (0,32%). Verificado dos veces: es una inconsistencia del propio filing. Los otros nueve cuadran exactos.",
+      "Deuda a largo de FY2017-2019 del tag LongTermDebt (total) porque LongTermDebtNoncurrent no existe esos anos.",
+      "NVIDIA no etiqueta arrendamientos financieros; solo operativos desde FY2020.",
+      "SIN CAPEX EN FY2017-FY2021: ninguno de los dos tags tiene hecho anual esos ejercicios. El flujo de caja libre solo existe de FY2022 en adelante, cinco ejercicios, asi que el CAGR del FCF a 5 anos sale n.d.",
+      "Amortizacion de FY2017-2019 del tag Depreciation (solo inmovilizado); de FY2020 en adelante es el tag completo. Los tres primeros anos no son homogeneos.",
+      "Flujo de explotacion positivo los diez ejercicios."
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+ "ticker": "UBER",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "cash": [
+   null,
+   4393,
+   6406,
+   10873,
+   5647,
+   4295,
+   4208,
+   4680,
+   5893,
+   7105
+  ],
+  "short_term_investments": [
+   null,
+   null,
+   0,
+   440,
+   1180,
+   0,
+   103,
+   727,
+   1084,
+   528
+  ],
+  "total_current_assets": [
+   null,
+   null,
+   8658,
+   13925,
+   9882,
+   8819,
+   9249,
+   11297,
+   12245,
+   13993
+  ],
+  "total_assets": [
+   null,
+   null,
+   23988,
+   31761,
+   33252,
+   38774,
+   32109,
+   38699,
+   51244,
+   61802
+  ],
+  "total_current_liabilities": [
+   null,
+   null,
+   4259,
+   5639,
+   6865,
+   9024,
+   8853,
+   9454,
+   11476,
+   12320
+  ],
+  "total_liabilities": [
+   null,
+   null,
+   17196,
+   16578,
+   19498,
+   23425,
+   23605,
+   26017,
+   28768,
+   33719
+  ],
+  "total_equity": [
+   null,
+   -8557,
+   -7385,
+   14190,
+   12266,
+   14458,
+   7340,
+   11249,
+   21558,
+   27041
+  ],
+  "short_term_borrowings": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   0
+  ],
+  "current_portion_ltd": [
+   null,
+   null,
+   27,
+   27,
+   27,
+   27,
+   27,
+   25,
+   1150,
+   0
+  ],
+  "long_term_debt": [
+   null,
+   null,
+   6869,
+   5707,
+   7560,
+   9276,
+   9265,
+   9459,
+   8347,
+   10521
+  ],
+  "finance_lease_current": [
+   null,
+   null,
+   null,
+   165,
+   177,
+   191,
+   115,
+   156,
+   136,
+   138
+  ],
+  "finance_lease_noncurrent": [
+   null,
+   null,
+   null,
+   143,
+   120,
+   43,
+   284,
+   322,
+   174,
+   84
+  ],
+  "operating_lease_current": [
+   null,
+   null,
+   null,
+   196,
+   175,
+   185,
+   201,
+   190,
+   175,
+   169
+  ],
+  "operating_lease_noncurrent": [
+   null,
+   null,
+   null,
+   1523,
+   1544,
+   1644,
+   1673,
+   1550,
+   1454,
+   1390
+  ]
+ },
+ "avisos": [
+  "El balance NO cuadra como Activo = Pasivo + Patrimonio, y es correcto: Uber tiene preferentes convertibles y minoritarios redimibles en 'mezzanine equity', fuera del pasivo y del patrimonio. En 2018 la diferencia es de ~14.177 millones.",
+  "Fondos propios NEGATIVOS en 2017 y 2018 (-8.557 y -7.385): dato real de la etapa pre-IPO. El ROE y la deuda/fondos propios de esos anos salen n.d. porque no significan nada con patrimonio negativo.",
+  "Deuda a corto sin dato salvo 2025 (0)."
+ ]
+}

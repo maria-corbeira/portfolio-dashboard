@@ -46,7 +46,9 @@ def cagr(series, years):
 def yoy(series):
     out = [None]
     for prev, cur in zip(series, series[1:]):
-        out.append(None if (prev in (None, 0) or cur is None) else cur / prev - 1)
+        # Desde una base negativa o nula un porcentaje no significa nada
+        # (Uber venia de perdidas): mejor vacio que un numero enganoso.
+        out.append(None if (prev is None or cur is None or prev <= 0) else cur / prev - 1)
     return out
 
 
@@ -91,10 +93,13 @@ def compute(d):
     rows = []
     for i in range(n):
         # tasa impositiva efectiva: Income Tax Expense viene negativo
+        pretax = ebt[i]
+        if pretax is None and ni[i] is not None and tax[i] is not None:
+            pretax = ni[i] - tax[i]
         etr = None
-        if ebt[i] not in (None, 0) and tax[i] is not None:
-            etr = abs(tax[i]) / ebt[i] if ebt[i] > 0 else None
-            if etr is not None and not (0 <= etr <= 0.6):
+        if pretax not in (None, 0) and tax[i] is not None and pretax > 0:
+            etr = -tax[i] / pretax          # el impuesto viene con signo
+            if not (0 <= etr <= 0.6):
                 etr = None
         nopat = None if (opinc[i] is None or etr is None) else opinc[i] * (1 - etr)
         # capital invertido = deuda total + fondos propios - caja y equivalentes
@@ -106,6 +111,14 @@ def compute(d):
             if ic <= 0:
                 ic = None
 
+        # P/E: si hay precio de cierre y BPA positivo es precio/BPA, la definicion
+        # exacta, que no necesita el recuento de acciones. Si no, capitalizacion/beneficio.
+        pe = None
+        if price[i] is not None and eps[i] is not None and eps[i] > 0:
+            pe = round(price[i] / eps[i], 1)
+        elif mcap[i] is not None and ni[i] is not None and ni[i] > 0:
+            pe = round(mcap[i] / ni[i], 1)
+
         rows.append({
             "year": dates[i][:4],
             "revenue": rev[i],
@@ -113,14 +126,15 @@ def compute(d):
             "gross_margin": pct(div(gross[i], rev[i])),
             "operating_margin": pct(div(opinc[i], rev[i])),
             "net_margin": pct(div(ni[i], rev[i])),
-            "roe": pct(div(ni[i], equity[i])),
+            "roe": pct(div(ni[i], equity[i])) if (equity[i] or 0) > 0 else None,
             "roa": pct(div(ni[i], assets[i])),
             "roic": pct(div(nopat, ic)),
             "effective_tax_rate": pct(etr),
             "interest_coverage": (None if intexp[i] in (None, 0)
                                   else round(div(opinc[i], abs(intexp[i])) or 0, 1)
                                   if opinc[i] is not None else None),
-            "debt_to_equity": None if div(debt[i], equity[i]) is None else round(div(debt[i], equity[i]), 2),
+            "debt_to_equity": (None if (div(debt[i], equity[i]) is None or (equity[i] or 0) <= 0)
+                               else round(debt[i] / equity[i], 2)),
             "net_debt_ebitda": None if div(netdebt[i], ebitda[i]) is None else round(div(netdebt[i], ebitda[i]), 2),
             "current_ratio": None if div(tca[i], tcl[i]) is None else round(div(tca[i], tcl[i]), 2),
             "eps_diluted": eps[i],
@@ -133,7 +147,7 @@ def compute(d):
             "buyback": buyback[i],
             "market_cap": mcap[i],
             "price_close": price[i],
-            "pe": None if div(mcap[i], ni[i]) is None else round(div(mcap[i], ni[i]), 1),
+            "pe": pe,
             "fcf_yield": pct(div(fcf[i], mcap[i]), 2),
         })
 
@@ -182,6 +196,11 @@ def compute(d):
     agg["pe_latest"] = pe
     agg["peg_5y"] = None if (pe is None or not g or g <= 0) else round(pe / g, 2)
     agg["fcf_yield_latest"] = last("fcf_yield")
+    pes = sorted(r["pe"] for r in rows if r["pe"] is not None)
+    agg["pe_median_10y"] = (round(pes[len(pes)//2] if len(pes) % 2 else
+                                  (pes[len(pes)//2 - 1] + pes[len(pes)//2]) / 2, 1)
+                            if pes else None)
+    agg["pe_years_available"] = len(pes)
 
     # Cifras del ultimo ejercicio, para que el dashboard recalcule P/E, PEG y
     # FCF yield con el precio en vivo en vez de con el cierre del ejercicio.

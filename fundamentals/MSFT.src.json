@@ -371,15 +371,15 @@
       ],
       "Price": [
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        68.93,
+        98.61,
+        133.96,
+        203.51,
+        270.9,
+        256.83,
+        340.54,
+        446.95,
+        497.41
       ]
     }
   },
@@ -387,7 +387,7 @@
     "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por ejercicio (cifras reexpresadas cuando las hay)",
     "extraido": "2026-09-05",
     "derivadas": [
-      "EBT Incl. Unusual Items = Net Income + |Income Tax Expense|",
+      "EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)",
       "EBITDA vacio: sin dato fiable de amortizacion",
       "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
       "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
@@ -405,6 +405,10 @@
       "2024: suma sin arrend. financiero corriente, arrend. operativo corriente",
       "2025: suma sin arrend. financiero corriente, arrend. operativo corriente"
     ],
+    "control_splits": {
+      "cuadra": true,
+      "desviaciones": []
+    },
     "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
     "tags_is": null,
     "tags_bs": null,

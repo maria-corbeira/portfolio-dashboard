@@ -1,0 +1,427 @@
+{
+  "company": "Intuitive Surgical, Inc.",
+  "ticker": "ISRG",
+  "fiscal_dates": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+  ],
+  "sheets": {
+    "7.TIKR_IS": {
+      "Total Revenues": [
+        2707,
+        3138,
+        3724,
+        4479,
+        4358,
+        5710,
+        6222,
+        7124,
+        8352,
+        10065
+      ],
+      "Cost of Goods Sold": [
+        814,
+        936,
+        1120,
+        1368,
+        1497,
+        1752,
+        2026,
+        2395,
+        2718,
+        3422
+      ],
+      "Gross Profit": [
+        1893,
+        2202,
+        2604,
+        3110,
+        2861,
+        3959,
+        4196,
+        4730,
+        5634,
+        6642
+      ],
+      "Operating Income": [
+        950,
+        1063,
+        1199,
+        1375,
+        1050,
+        1821,
+        1577,
+        1767,
+        2349,
+        2946
+      ],
+      "EBITDA": [
+        1021,
+        1145,
+        1305,
+        1532,
+        1271,
+        2101,
+        1903,
+        2149,
+        2788,
+        3546
+      ],
+      "Interest Expense": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "EBT Incl. Unusual Items": [
+        985,
+        1105,
+        1283,
+        1499,
+        1201,
+        1867,
+        1584,
+        1940,
+        2659,
+        3291
+      ],
+      "Income Tax Expense": [
+        -247,
+        -434,
+        -155,
+        -120,
+        -140,
+        -162,
+        -262,
+        -142,
+        -336,
+        -435
+      ],
+      "Net Income": [
+        738,
+        671,
+        1128,
+        1379,
+        1061,
+        1705,
+        1322,
+        1798,
+        2323,
+        2856
+      ],
+      "Diluted EPS Excl Extra Items": [
+        2.086667,
+        1.923333,
+        3.163333,
+        3.846667,
+        2.94,
+        4.66,
+        3.65,
+        5.03,
+        6.42,
+        7.87
+      ],
+      "Weighted Average Diluted Shares Outstanding": [
+        354,
+        348,
+        357,
+        360,
+        360,
+        366,
+        362,
+        357,
+        362,
+        363
+      ],
+      "R&D Expenses": [
+        240,
+        329,
+        418,
+        557,
+        595,
+        671,
+        879,
+        999,
+        1145,
+        1312
+      ]
+    },
+    "8.TIKR_BS": {
+      "Cash And Equivalents": [
+        1037,
+        648,
+        858,
+        1168,
+        1623,
+        1291,
+        1581,
+        2750,
+        2027,
+        3368
+      ],
+      "Total Cash And Short Term Investments": [
+        2555,
+        1960,
+        3063,
+        3222,
+        5112,
+        4204,
+        4118,
+        5223,
+        4013,
+        5935
+      ],
+      "Total Current Assets": [
+        3250,
+        2809,
+        4333,
+        4663,
+        6626,
+        5845,
+        6253,
+        7888,
+        7111,
+        9780
+      ],
+      "Total Current Liabilities": [
+        597,
+        663,
+        821,
+        1030,
+        965,
+        1150,
+        1422,
+        1659,
+        1745,
+        2006
+      ],
+      "Total Assets": [
+        6487,
+        5777,
+        7847,
+        9733,
+        11169,
+        13555,
+        12974,
+        15442,
+        18743,
+        20459
+      ],
+      "Total Liabilities": [
+        709,
+        996,
+        1159,
+        1449,
+        1410,
+        1604,
+        1861,
+        2044,
+        2214,
+        2517
+      ],
+      "Total Equity": [
+        5778,
+        4779,
+        6679,
+        8264,
+        9732,
+        11901,
+        11042,
+        13308,
+        16434,
+        17824
+      ],
+      "Total Debt": [
+        null,
+        null,
+        null,
+        77,
+        80,
+        87,
+        94,
+        90,
+        147,
+        171
+      ],
+      "Net Debt": [
+        null,
+        null,
+        null,
+        -3145,
+        -5032,
+        -4117,
+        -4024,
+        -5133,
+        -3866,
+        -5764
+      ]
+    },
+    "9.TIKR_CF": {
+      "Cash from Operations": [
+        1043,
+        1144,
+        1170,
+        1598,
+        1485,
+        2089,
+        1491,
+        1814,
+        2415,
+        3031
+      ],
+      "Capital Expenditure": [
+        -54,
+        -191,
+        -187,
+        -426,
+        -342,
+        -354,
+        -532,
+        -1064,
+        -1111,
+        -540
+      ],
+      "Free Cash Flow": [
+        989,
+        953,
+        983,
+        1172,
+        1143,
+        1735,
+        959,
+        750,
+        1304,
+        2491
+      ],
+      "Depreciation & Amortization": [
+        71,
+        82,
+        106,
+        157,
+        221,
+        280,
+        326,
+        382,
+        439,
+        600
+      ],
+      "Stock-Based Compensation": [
+        178,
+        209,
+        261,
+        336,
+        395,
+        449,
+        513,
+        593,
+        677,
+        788
+      ],
+      "Repurchase of Common Stock": [
+        -43,
+        -2274,
+        0,
+        -270,
+        -134,
+        0,
+        -2607,
+        -416,
+        0,
+        -2295
+      ],
+      "Common & Preferred Stock Dividends Paid": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "10.TIKR_Val": {
+      "Market Cap (MM)": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Price": [
+        70.463,
+        121.647,
+        159.64,
+        197.05,
+        272.7,
+        359.3,
+        265.35,
+        337.36,
+        521.96,
+        566.36
+      ]
+    }
+  },
+  "notas": {
+    "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por ejercicio (cifras reexpresadas cuando las hay)",
+    "extraido": "2026-09-05",
+    "derivadas": [
+      "EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)",
+      "EBITDA = Operating Income + Depreciation & Amortization",
+      "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
+      "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
+      "Free Cash Flow = Cash from Operations + Capital Expenditure"
+    ],
+    "deuda_incompleta": [
+      "2019: suma sin deuda a corto, porcion corriente, deuda a largo, arrend. financiero corriente, arrend. financiero no corriente",
+      "2020: suma sin deuda a corto, porcion corriente, deuda a largo, arrend. financiero corriente, arrend. financiero no corriente",
+      "2021: suma sin deuda a corto, porcion corriente, deuda a largo, arrend. financiero corriente, arrend. financiero no corriente",
+      "2022: suma sin deuda a corto, porcion corriente, deuda a largo, arrend. financiero corriente, arrend. financiero no corriente",
+      "2023: suma sin deuda a corto, porcion corriente, deuda a largo, arrend. financiero corriente, arrend. financiero no corriente",
+      "2024: suma sin deuda a corto, porcion corriente, deuda a largo, arrend. financiero corriente, arrend. financiero no corriente",
+      "2025: suma sin deuda a corto, porcion corriente, deuda a largo, arrend. financiero corriente, arrend. financiero no corriente"
+    ],
+    "control_splits": {
+      "cuadra": true,
+      "desviaciones": []
+    },
+    "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "tags_is": null,
+    "tags_bs": null,
+    "tags_cf": null,
+    "avisos_extraccion": [
+      "BPA y acciones de 2016-2020 homogeneizados por el split 3:1 de octubre de 2021 (BPA /3, acciones x3). La SEC los publica como [6.26, 5.77, 9.49, 11.54, 8.82, 4.66, 3.65, 5.03, 6.42, 7.87] y [118, 116, 119, 120, 120, 366, 362, 357, 362, 363].",
+      "El subagente detecto un SEGUNDO split 3:1 durante 2017 que no estaba en el encargo: el 10-K original de 2016 daba 39,3 millones de acciones y 18,73 de BPA, y los filings posteriores lo reexpresan a ~118 millones y ~6,26. La regla del 'filed' mas reciente ya recoge ese ajuste.",
+      "Sin gasto financiero los diez ejercicios: los tres tags dan 404, Intuitive Surgical no tiene deuda. La cobertura de intereses sale n.d. porque no hay intereses que cubrir.",
+      "Beneficio neto = NetIncomeLoss, atribuible a la matriz.",
+      "SIN DEUDA FINANCIERA los diez ejercicios: los cuatro tags dan 404. Ausencia real confirmada. La unica deuda del calculo son los arrendamientos operativos desde 2019.",
+      "El balance cuadra: la diferencia entre Activo y Pasivo + Patrimonio de la matriz coincide ano a ano con los minoritarios (de 1,6 millones en 2017 a 118 en 2025).",
+      "ANCLA FALLIDA MIA: di 17.980 millones de activo a cierre de 2024 y el dato real es 18.743 (+4,2%). El subagente no lo ajusto, lo reporto y verifico que cuadra. El error era de la ancla.",
+      "Flujo de explotacion positivo los diez ejercicios.",
+      "Amortizacion del tag Depreciation: los dos preferentes dan 404. Puede no incluir intangibles, asi que el EBITDA queda algo infravalorado.",
+      "ANCLA FALLIDA MIA: di 2.510 millones de flujo para 2024 y el real es 2.415 (-3,8%). Verificado en dos filings.",
+      "Intuitive Surgical no ha pagado dividendo nunca."
+    ]
+  }
+}

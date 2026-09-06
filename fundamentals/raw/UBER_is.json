@@ -1,0 +1,144 @@
+{
+ "ticker": "UBER",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "revenue": [
+   null,
+   7932,
+   10433,
+   13000,
+   11139,
+   17455,
+   31877,
+   37281,
+   43978,
+   52017
+  ],
+  "cogs": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "gross_profit": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "operating_income": [
+   null,
+   -4080,
+   -3033,
+   -8596,
+   -4863,
+   -3834,
+   -1832,
+   1110,
+   2799,
+   5565
+  ],
+  "interest_expense": [
+   null,
+   -479,
+   -648,
+   -559,
+   -458,
+   -483,
+   -565,
+   -633,
+   -523,
+   -440
+  ],
+  "income_tax": [
+   null,
+   542,
+   -283,
+   -45,
+   192,
+   492,
+   181,
+   -213,
+   5758,
+   4346
+  ],
+  "net_income": [
+   null,
+   -4033,
+   997,
+   -8506,
+   -6768,
+   -496,
+   -9141,
+   1887,
+   9856,
+   10053
+  ],
+  "eps_diluted": [
+   null,
+   -9.46,
+   0.0,
+   -6.81,
+   -3.86,
+   -0.29,
+   -4.65,
+   0.87,
+   4.56,
+   4.73
+  ],
+  "diluted_shares": [
+   null,
+   426,
+   479,
+   1248,
+   1753,
+   1896,
+   1975,
+   2092,
+   2151,
+   2120
+  ],
+  "rd_expense": [
+   null,
+   1201,
+   1505,
+   4836,
+   2205,
+   2054,
+   2798,
+   3164,
+   3109,
+   3402
+  ]
+ },
+ "avisos": [
+  "2016 sin hechos XBRL: Uber salio a bolsa en mayo de 2019 y 2016 solo figura en el S-1, que no esta en companyconcept. Ausencia esperada.",
+  "Coste de ventas y beneficio bruto vacios los diez ejercicios: los tres tags dan 404 porque Uber usa una extension propia. El margen bruto sale n.d.",
+  "EL IMPUESTO DE 2024 Y 2025 ES UN INGRESO, NO UN GASTO (+5.758 y +4.346), por liberacion de provision fiscal. Es el motor del salto del beneficio de 2024. El signo positivo es intencionado.",
+  "El BPA no cuadra con beneficio/acciones en 2018, 2021 y 2023 (preferentes pre-IPO y ajustes del numerador atribuible al comun). No se ha forzado.",
+  "Ventas de 2018 y 2019 reexpresadas a la baja en 10-K posteriores (2018 de 11.270 a 10.433; 2019 de 14.147 a 13.000)."
+ ]
+}

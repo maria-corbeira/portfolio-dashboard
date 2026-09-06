@@ -1,0 +1,191 @@
+{
+ "ticker": "NVDA",
+ "fiscal_dates": [
+  "2017-01-29",
+  "2018-01-28",
+  "2019-01-27",
+  "2020-01-26",
+  "2021-01-31",
+  "2022-01-30",
+  "2023-01-29",
+  "2024-01-28",
+  "2025-01-26",
+  "2026-01-25"
+ ],
+ "rows": {
+  "cash": [
+   1766,
+   4002,
+   782,
+   10896,
+   847,
+   1990,
+   3389,
+   7280,
+   8589,
+   10605
+  ],
+  "short_term_investments": [
+   5032,
+   3106,
+   6640,
+   1,
+   10714,
+   19218,
+   9907,
+   18704,
+   34621,
+   null
+  ],
+  "total_current_assets": [
+   8536,
+   9255,
+   10557,
+   13690,
+   16055,
+   28829,
+   23073,
+   44345,
+   80126,
+   125605
+  ],
+  "total_assets": [
+   9841,
+   11241,
+   13292,
+   17315,
+   28791,
+   44187,
+   41182,
+   65728,
+   111601,
+   206803
+  ],
+  "total_current_liabilities": [
+   1788,
+   1153,
+   1329,
+   1784,
+   3925,
+   4335,
+   6563,
+   10631,
+   18047,
+   32163
+  ],
+  "total_liabilities": [
+   4048,
+   3770,
+   3950,
+   5111,
+   11898,
+   17575,
+   19081,
+   22750,
+   32274,
+   49510
+  ],
+  "total_equity": [
+   5762,
+   7471,
+   9342,
+   12204,
+   16893,
+   26612,
+   22101,
+   42978,
+   79327,
+   157293
+  ],
+  "short_term_borrowings": [
+   null,
+   null,
+   0,
+   0,
+   0,
+   null,
+   null,
+   0,
+   0,
+   null
+  ],
+  "current_portion_ltd": [
+   null,
+   null,
+   null,
+   0,
+   999,
+   0,
+   1250,
+   1250,
+   0,
+   999
+  ],
+  "long_term_debt": [
+   1983,
+   1985,
+   1988,
+   1991,
+   5964,
+   10946,
+   9703,
+   8459,
+   8463,
+   7469
+  ],
+  "finance_lease_current": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "finance_lease_noncurrent": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "operating_lease_current": [
+   null,
+   null,
+   null,
+   91,
+   121,
+   144,
+   176,
+   228,
+   288,
+   372
+  ],
+  "operating_lease_noncurrent": [
+   null,
+   null,
+   null,
+   561,
+   634,
+   741,
+   902,
+   1119,
+   1519,
+   2572
+  ]
+ },
+ "avisos": [
+  "FALTA EL DATO MAS IMPORTANTE: las inversiones a corto de FY2026 (cierre 25-ene-2026) no existen bajo ninguno de los tres tags; el ultimo hecho de MarketableSecuritiesCurrent es de octubre de 2025 (49.122 millones). Verificado directamente. Consecuencia: caja total, deuda neta y ROIC de FY2026 salen n.d. Probable cambio de etiqueta en el 10-K de FY2026.",
+  "El balance de FY2017 no cuadra por 31 millones (0,32%). Verificado dos veces: es una inconsistencia del propio filing. Los otros nueve cuadran exactos.",
+  "Deuda a largo de FY2017-2019 del tag LongTermDebt (total) porque LongTermDebtNoncurrent no existe esos anos.",
+  "NVIDIA no etiqueta arrendamientos financieros; solo operativos desde FY2020."
+ ]
+}

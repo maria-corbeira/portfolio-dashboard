@@ -1,0 +1,105 @@
+{
+ "ticker": "UBER",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "cfo": [
+   null,
+   -1418,
+   -1541,
+   -4321,
+   -2745,
+   -445,
+   642,
+   3585,
+   7137,
+   10099
+  ],
+  "capex": [
+   null,
+   -821,
+   -558,
+   -588,
+   -616,
+   -298,
+   -252,
+   -223,
+   -242,
+   -336
+  ],
+  "depreciation_amortization": [
+   null,
+   510,
+   426,
+   472,
+   575,
+   902,
+   947,
+   823,
+   711,
+   719
+  ],
+  "stock_based_compensation": [
+   null,
+   124,
+   170,
+   4596,
+   827,
+   1168,
+   1793,
+   1935,
+   1796,
+   1826
+  ],
+  "buybacks": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   0,
+   0,
+   1252,
+   6523
+  ],
+  "dividends_paid": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "cash_taxes_paid": [
+   null,
+   153,
+   289,
+   133,
+   82,
+   87,
+   175,
+   234,
+   324,
+   345
+  ]
+ },
+ "avisos": [
+  "El flujo de explotacion fue NEGATIVO cinco ejercicios seguidos, de 2017 a 2021. Dato real.",
+  "Uber no paga dividendo. Las recompras empiezan en 2024."
+ ]
+}

@@ -1,0 +1,427 @@
+{
+  "company": "Uber Technologies, Inc.",
+  "ticker": "UBER",
+  "fiscal_dates": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+  ],
+  "sheets": {
+    "7.TIKR_IS": {
+      "Total Revenues": [
+        null,
+        7932,
+        10433,
+        13000,
+        11139,
+        17455,
+        31877,
+        37281,
+        43978,
+        52017
+      ],
+      "Cost of Goods Sold": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Gross Profit": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Operating Income": [
+        null,
+        -4080,
+        -3033,
+        -8596,
+        -4863,
+        -3834,
+        -1832,
+        1110,
+        2799,
+        5565
+      ],
+      "EBITDA": [
+        null,
+        -3570,
+        -2607,
+        -8124,
+        -4288,
+        -2932,
+        -885,
+        1933,
+        3510,
+        6284
+      ],
+      "Interest Expense": [
+        null,
+        -479,
+        -648,
+        -559,
+        -458,
+        -483,
+        -565,
+        -633,
+        -523,
+        -440
+      ],
+      "EBT Incl. Unusual Items": [
+        null,
+        -4575,
+        1280,
+        -8461,
+        -6960,
+        -988,
+        -9322,
+        2100,
+        4098,
+        5707
+      ],
+      "Income Tax Expense": [
+        null,
+        542,
+        -283,
+        -45,
+        192,
+        492,
+        181,
+        -213,
+        5758,
+        4346
+      ],
+      "Net Income": [
+        null,
+        -4033,
+        997,
+        -8506,
+        -6768,
+        -496,
+        -9141,
+        1887,
+        9856,
+        10053
+      ],
+      "Diluted EPS Excl Extra Items": [
+        null,
+        -9.46,
+        0.0,
+        -6.81,
+        -3.86,
+        -0.29,
+        -4.65,
+        0.87,
+        4.56,
+        4.73
+      ],
+      "Weighted Average Diluted Shares Outstanding": [
+        null,
+        426,
+        479,
+        1248,
+        1753,
+        1896,
+        1975,
+        2092,
+        2151,
+        2120
+      ],
+      "R&D Expenses": [
+        null,
+        1201,
+        1505,
+        4836,
+        2205,
+        2054,
+        2798,
+        3164,
+        3109,
+        3402
+      ]
+    },
+    "8.TIKR_BS": {
+      "Cash And Equivalents": [
+        null,
+        4393,
+        6406,
+        10873,
+        5647,
+        4295,
+        4208,
+        4680,
+        5893,
+        7105
+      ],
+      "Total Cash And Short Term Investments": [
+        null,
+        null,
+        6406,
+        11313,
+        6827,
+        4295,
+        4311,
+        5407,
+        6977,
+        7633
+      ],
+      "Total Current Assets": [
+        null,
+        null,
+        8658,
+        13925,
+        9882,
+        8819,
+        9249,
+        11297,
+        12245,
+        13993
+      ],
+      "Total Current Liabilities": [
+        null,
+        null,
+        4259,
+        5639,
+        6865,
+        9024,
+        8853,
+        9454,
+        11476,
+        12320
+      ],
+      "Total Assets": [
+        null,
+        null,
+        23988,
+        31761,
+        33252,
+        38774,
+        32109,
+        38699,
+        51244,
+        61802
+      ],
+      "Total Liabilities": [
+        null,
+        null,
+        17196,
+        16578,
+        19498,
+        23425,
+        23605,
+        26017,
+        28768,
+        33719
+      ],
+      "Total Equity": [
+        null,
+        -8557,
+        -7385,
+        14190,
+        12266,
+        14458,
+        7340,
+        11249,
+        21558,
+        27041
+      ],
+      "Total Debt": [
+        null,
+        null,
+        6896,
+        7761,
+        9603,
+        11366,
+        11565,
+        11702,
+        11436,
+        12302
+      ],
+      "Net Debt": [
+        null,
+        null,
+        490,
+        -3552,
+        2776,
+        7071,
+        7254,
+        6295,
+        4459,
+        4669
+      ]
+    },
+    "9.TIKR_CF": {
+      "Cash from Operations": [
+        null,
+        -1418,
+        -1541,
+        -4321,
+        -2745,
+        -445,
+        642,
+        3585,
+        7137,
+        10099
+      ],
+      "Capital Expenditure": [
+        null,
+        -821,
+        -558,
+        -588,
+        -616,
+        -298,
+        -252,
+        -223,
+        -242,
+        -336
+      ],
+      "Free Cash Flow": [
+        null,
+        -2239,
+        -2099,
+        -4909,
+        -3361,
+        -743,
+        390,
+        3362,
+        6895,
+        9763
+      ],
+      "Depreciation & Amortization": [
+        null,
+        510,
+        426,
+        472,
+        575,
+        902,
+        947,
+        823,
+        711,
+        719
+      ],
+      "Stock-Based Compensation": [
+        null,
+        124,
+        170,
+        4596,
+        827,
+        1168,
+        1793,
+        1935,
+        1796,
+        1826
+      ],
+      "Repurchase of Common Stock": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        0,
+        -1252,
+        -6523
+      ],
+      "Common & Preferred Stock Dividends Paid": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "10.TIKR_Val": {
+      "Market Cap (MM)": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Price": [
+        null,
+        null,
+        null,
+        29.74,
+        51.0,
+        41.93,
+        24.73,
+        61.57,
+        60.32,
+        81.71
+      ]
+    }
+  },
+  "notas": {
+    "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por ejercicio (cifras reexpresadas cuando las hay)",
+    "extraido": "2026-09-05",
+    "derivadas": [
+      "Gross Profit = Total Revenues - Cost of Goods Sold (la empresa no etiqueta GrossProfit en XBRL)",
+      "EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)",
+      "EBITDA = Operating Income + Depreciation & Amortization",
+      "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
+      "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
+      "Free Cash Flow = Cash from Operations + Capital Expenditure"
+    ],
+    "deuda_incompleta": [
+      "2018: suma sin deuda a corto, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2019: suma sin deuda a corto",
+      "2020: suma sin deuda a corto",
+      "2021: suma sin deuda a corto",
+      "2022: suma sin deuda a corto",
+      "2023: suma sin deuda a corto",
+      "2024: suma sin deuda a corto"
+    ],
+    "control_splits": {
+      "cuadra": true,
+      "desviaciones": []
+    },
+    "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "tags_is": null,
+    "tags_bs": null,
+    "tags_cf": null,
+    "avisos_extraccion": [
+      "2016 sin hechos XBRL: Uber salio a bolsa en mayo de 2019 y 2016 solo figura en el S-1, que no esta en companyconcept. Ausencia esperada.",
+      "Coste de ventas y beneficio bruto vacios los diez ejercicios: los tres tags dan 404 porque Uber usa una extension propia. El margen bruto sale n.d.",
+      "EL IMPUESTO DE 2024 Y 2025 ES UN INGRESO, NO UN GASTO (+5.758 y +4.346), por liberacion de provision fiscal. Es el motor del salto del beneficio de 2024. El signo positivo es intencionado.",
+      "El BPA no cuadra con beneficio/acciones en 2018, 2021 y 2023 (preferentes pre-IPO y ajustes del numerador atribuible al comun). No se ha forzado.",
+      "Ventas de 2018 y 2019 reexpresadas a la baja en 10-K posteriores (2018 de 11.270 a 10.433; 2019 de 14.147 a 13.000).",
+      "El balance NO cuadra como Activo = Pasivo + Patrimonio, y es correcto: Uber tiene preferentes convertibles y minoritarios redimibles en 'mezzanine equity', fuera del pasivo y del patrimonio. En 2018 la diferencia es de ~14.177 millones.",
+      "Fondos propios NEGATIVOS en 2017 y 2018 (-8.557 y -7.385): dato real de la etapa pre-IPO. El ROE y la deuda/fondos propios de esos anos salen n.d. porque no significan nada con patrimonio negativo.",
+      "Deuda a corto sin dato salvo 2025 (0).",
+      "El flujo de explotacion fue NEGATIVO cinco ejercicios seguidos, de 2017 a 2021. Dato real.",
+      "Uber no paga dividendo. Las recompras empiezan en 2024."
+    ]
+  }
+}

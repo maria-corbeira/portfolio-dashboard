@@ -1,0 +1,190 @@
+{
+ "ticker": "ISRG",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "cash": [
+   1037,
+   648,
+   858,
+   1168,
+   1623,
+   1291,
+   1581,
+   2750,
+   2027,
+   3368
+  ],
+  "short_term_investments": [
+   1518,
+   1312,
+   2205,
+   2054,
+   3489,
+   2913,
+   2537,
+   2473,
+   1986,
+   2567
+  ],
+  "total_current_assets": [
+   3250,
+   2809,
+   4333,
+   4663,
+   6626,
+   5845,
+   6253,
+   7888,
+   7111,
+   9780
+  ],
+  "total_assets": [
+   6487,
+   5777,
+   7847,
+   9733,
+   11169,
+   13555,
+   12974,
+   15442,
+   18743,
+   20459
+  ],
+  "total_current_liabilities": [
+   597,
+   663,
+   821,
+   1030,
+   965,
+   1150,
+   1422,
+   1659,
+   1745,
+   2006
+  ],
+  "total_liabilities": [
+   709,
+   996,
+   1159,
+   1449,
+   1410,
+   1604,
+   1861,
+   2044,
+   2214,
+   2517
+  ],
+  "total_equity": [
+   5778,
+   4779,
+   6679,
+   8264,
+   9732,
+   11901,
+   11042,
+   13308,
+   16434,
+   17824
+  ],
+  "short_term_borrowings": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "current_portion_ltd": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "long_term_debt": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "finance_lease_current": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "finance_lease_noncurrent": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "operating_lease_current": [
+   null,
+   null,
+   null,
+   8,
+   22,
+   20,
+   24,
+   25,
+   34,
+   39
+  ],
+  "operating_lease_noncurrent": [
+   null,
+   null,
+   null,
+   69,
+   58,
+   67,
+   70,
+   65,
+   113,
+   132
+  ]
+ },
+ "avisos": [
+  "SIN DEUDA FINANCIERA los diez ejercicios: los cuatro tags dan 404. Ausencia real confirmada. La unica deuda del calculo son los arrendamientos operativos desde 2019.",
+  "El balance cuadra: la diferencia entre Activo y Pasivo + Patrimonio de la matriz coincide ano a ano con los minoritarios (de 1,6 millones en 2017 a 118 en 2025).",
+  "ANCLA FALLIDA MIA: di 17.980 millones de activo a cierre de 2024 y el dato real es 18.743 (+4,2%). El subagente no lo ajusto, lo reporto y verifico que cuadra. El error era de la ancla."
+ ]
+}
