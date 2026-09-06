@@ -451,10 +451,10 @@ const holdings = [
   { t:"ISRG", shares:1.61, cost:372.5, score:83, verdict:"buy", cat:{q:82,h:98,g:92,v:52,ti:null}, price:366.25, intrinsic:{low:208, base:400, high:620}, todayMove:null, note:"Analizada con 10 ejercicios de la SEC (2016-2025). El balance más limpio de la cartera: CERO deuda financiera en los diez años (los cuatro tags de deuda dan 404 en la SEC), caja neta de 1,6x EBITDA y liquidez corriente 4,88. ROIC medio 5a 19,5%, FCF positivo 10/10, ventas +20,5% y acelerando, FCF +91% en 2025. Moat de costes de cambio muy real: cirujanos formados en da Vinci y consumibles recurrentes. El punto débil son los márgenes, que llevan cinco años estrechándose (bruto 69,3% → 66,0%, operativo 31,9% → 29,3%). Valoración: P/E 46,6, PEG 2,14 y FCF yield 1,87% fallan tus umbrales en absoluto — pero su mediana de P/E a 10 años es 69,5, así que cotiza un 33% por debajo de su propia norma, lo más barata de la década."},
   { t:"UBER", shares:8.14, cost:73.74, score:72, verdict:"buy", cat:{q:62,h:72,g:88,v:78,ti:null}, price:75.7, intrinsic:{low:66, base:90, high:105}, todayMove:null, note:"Analizada con 10 ejercicios de la SEC (2016-2025). Es la única de tu cartera cuyo precio deja margen: FCF yield 6,08%, el único por encima de tu umbral del 4%. El negocio se dio la vuelta de verdad — margen operativo de -22,0% (2021) a +10,7% (2025), flujo de explotación de -445 M$ a +10.099, FCF de -743 M$ a +9.763. CUIDADO CON EL P/E DE 16: el beneficio de 2024 y 2025 está inflado por créditos fiscales (+5.758 y +4.346 M$ de ingreso fiscal, no gasto). Antes de impuestos 2025 gana 5.707, no 10.053; con una tasa normal el P/E real rondaría 35. El FCF sí es limpio. Debilidades: ROIC medio 5a del 5,7% (por debajo de tu umbral de 12%, aunque 2025 ya cruza al 12,6%), liquidez corriente 1,14 y el FCF solo lleva cuatro años en positivo. Calidad en construcción, no probada."},
   { t:"AMZN", shares:1.89, cost:212.15, score:71, verdict:"hold", cat:{q:80,h:55,g:80,v:65,ti:50}, price:258.3, intrinsic:{low:180, base:245, high:345}, todayMove:null, note:"FCF TTM negativo por capex AWS/AI — vigilar si persiste." },
-  { t:"AAPL", shares:0.686713, cost:291.24, score:71, verdict:"hold", cat:{q:95,h:75,g:55,v:30,ti:40}, price:320.01, intrinsic:{low:176, base:210, high:284}, todayMove:null, note:"Moat excelente pero PEG 3.10, +47.8% en 52sem. Cara para entrar ahora." },
-  { t:"IBM", shares:2.66, cost:244.36, score:63, verdict:"hold", cat:{q:70,h:55,g:55,v:65,ti:60}, price:234.77, intrinsic:{low:128, base:240, high:286}, todayMove:null, note:"D/E elevado (~1.75). GuruFocus: modestamente infravalorada." },
+  { t:"AAPL", shares:0.686713, cost:291.24, score:71, verdict:"hold", cat:{q:95,h:75,g:55,v:30,ti:40}, price:320.01, intrinsic:{low:176, base:210, high:284}, todayMove:null, note:"Moat excelente pero PEG 3,10, +47,8% en 52sem. Cara para entrar ahora." },
+  { t:"IBM", shares:2.66, cost:244.36, score:63, verdict:"hold", cat:{q:70,h:55,g:55,v:65,ti:60}, price:234.77, intrinsic:{low:128, base:240, high:286}, todayMove:null, note:"D/E elevado (~1,75). GuruFocus: modestamente infravalorada." },
   { t:"COP", shares:1.85, cost:108.15, score:62, verdict:"hold", cat:{q:60,h:70,g:55,v:65,ti:60}, price:134.23, intrinsic:null, todayMove:null, note:"Beat claro en Q2, mejora Salud y Calidad. Sigue siendo commodity/cíclico — no lo pongas por delante de META o ISRG para dinero nuevo." },
-  { t:"WMT", shares:15.28, cost:111.28, score:62, verdict:"hold", cat:{q:72,h:50,g:60,v:48,ti:70}, price:107.14, intrinsic:{low:72, base:94, high:160}, todayMove:null, note:"Caída post-Q2 ya hizo buena parte del ajuste de valoración. RSI 32.6, cerca de soporte $107. Posible entrada por tramos." },
+  { t:"WMT", shares:15.28, cost:111.28, score:62, verdict:"hold", cat:{q:72,h:50,g:60,v:48,ti:70}, price:107.14, intrinsic:{low:72, base:94, high:160}, todayMove:null, note:"Caída post-Q2 ya hizo buena parte del ajuste de valoración. RSI 32,6, cerca de soporte $107. Posible entrada por tramos." },
   { t:"CVX", shares:2.63, cost:190.45, score:52, verdict:"hold", cat:{q:45,h:60,g:45,v:70,ti:55}, price:208.6, intrinsic:{low:126, base:155, high:200}, todayMove:null, note:"ROIC ~6%, débil. Dividendo ~4%, pero ahora por encima incluso del extremo alto de nuestro rango de valor — más cara que hace 3 semanas." },
 ];
 // SNDK: vendida a breakeven tras el rebote post-earnings (confirmado por el usuario) — retirada del portafolio.
@@ -470,11 +470,11 @@ const outsideFramework = [
 // Watchlist: candidatas analizadas que NO están en cartera. Mismo framework y
 // misma lógica de semáforo de valor intrínseco que las posiciones reales.
 const watchlist = [
-  { t:"PGR", target:180, score:88, verdict:"buy", cat:{q:92,h:90,g:85,v:88,ti:70}, price:206.00, intrinsic:{low:180, base:232, high:260}, note:"Aseguradora de auto mejor gestionada de EE.UU. ROE 34.9%, ROIC 28.7%, PEG 0.51 — genuinamente barata para su crecimiento (EPS +44%/año 3 años, precio solo +18%/año, rezagado). Diversifica hacia seguros/financieros, sector que hoy no tienes. Vigilar: márgenes de suscripción normalizándose desde niveles excepcionales." },
-  { t:"V", target:290, score:77, verdict:"buy", cat:{q:95,h:75,g:65,v:55,ti:60}, price:343.09, intrinsic:{low:290, base:390, high:420}, note:"Moat de red de pagos casi insuperable, ROE 61%, ROIC 55%. Preferida sobre Mastercard: mismo tipo de negocio con mucho menos apalancamiento (D/E 0.68 vs 4.40 de MA). Diversifica hacia pagos/financieros, sector que hoy no tienes." },
+  { t:"PGR", target:180, score:88, verdict:"buy", cat:{q:92,h:90,g:85,v:88,ti:70}, price:206.00, intrinsic:{low:180, base:232, high:260}, note:"Aseguradora de auto mejor gestionada de EE.UU. ROE 34,9%, ROIC 28,7%, PEG 0,51 — genuinamente barata para su crecimiento (EPS +44%/año 3 años, precio solo +18%/año, rezagado). Diversifica hacia seguros/financieros, sector que hoy no tienes. Vigilar: márgenes de suscripción normalizándose desde niveles excepcionales." },
+  { t:"V", target:290, score:77, verdict:"buy", cat:{q:95,h:75,g:65,v:55,ti:60}, price:343.09, intrinsic:{low:290, base:390, high:420}, note:"Moat de red de pagos casi insuperable, ROE 61%, ROIC 55%. Preferida sobre Mastercard: mismo tipo de negocio con mucho menos apalancamiento (D/E 0,68 vs 4,40 de MA). Diversifica hacia pagos/financieros, sector que hoy no tienes." },
   { t:"PLTR", target:28, score:76, verdict:"hold", cat:{q:90,h:95,g:85,v:15,ti:40}, price:186.53, intrinsic:{low:28, base:172, high:207}, note:"Negocio excepcional (Rule of 40 de 155%, sin deuda), pero sin margen de seguridad — un DCF puro de flujo de caja la manda a $28. Apuesta de convicción en la narrativa, no compra de 'value+quality' clásica. Insiders vendiendo fuerte." },
   { t:"LULU", target:190, score:68, verdict:"hold", cat:{q:68,h:85,g:35,v:90,ti:75}, price:118.00, intrinsic:{low:190, base:254, high:359}, note:"Diversifica fuera de tech — único candidato de consumo. Barata en casi todos los modelos, pero con razón real: márgenes cayendo 2 años seguidos, EPS -16%. Dilema genuino: ¿deterioro temporal (aranceles) o estructural (competencia)?" },
-  { t:"UNP", target:159, score:57, verdict:"hold", cat:{q:80,h:55,g:45,v:25,ti:30}, price:303.00, intrinsic:{low:159, base:256, high:300}, note:"Moat ferroviario real y márgenes excelentes (79% bruto, mejor que el 100% de su industria), pero subió +38.9% en 52sem y ya está cara (PEG 2.49). Buen negocio, mal momento — watchlist, no compra todavía." },
+  { t:"UNP", target:159, score:57, verdict:"hold", cat:{q:80,h:55,g:45,v:25,ti:30}, price:303.00, intrinsic:{low:159, base:256, high:300}, note:"Moat ferroviario real y márgenes excelentes (79% bruto, mejor que el 100% de su industria), pero subió +38,9% en 52sem y ya está cara (PEG 2,49). Buen negocio, mal momento — watchlist, no compra todavía." },
   { t:"SHEL", target:69, score:61, verdict:"hold", cat:{q:65,h:65,g:45,v:75,ti:40}, price:90.70, intrinsic:{low:69, base:82, high:98}, note:"Mejor negocio que CVX (ROIC más alto, más barata en múltiplos), pero mismo riesgo cíclico que ya tienes vía Chevron — no diversifica, duplica exposición a energía." },
 ];
 
@@ -489,10 +489,26 @@ const verdictLabel = { buy:"Comprar", hold:"Observar", avoid:"Evitar" };
 const BIG_TECH = ["MSFT","GOOGL","META","AMZN","AAPL","NVDA"];
 const INDEX_ETF = ["QQQ","VOO"];
 
-const money = n => n==null ? "—" : "$" + n.toLocaleString('es-ES',{minimumFractionDigits:2, maximumFractionDigits:2});
-const sign  = (n,d=1) => n==null ? "—" : (n>=0?"+":"") +
-  n.toLocaleString('es-ES',{minimumFractionDigits:d, maximumFractionDigits:d}) + "%";
-const num   = (n,d=1) => n==null ? "—" : n.toLocaleString('es-ES',{minimumFractionDigits:d, maximumFractionDigits:d});
+// Intl con es-ES NO agrupa los numeros de cuatro cifras: (6910).toLocaleString('es-ES')
+// devuelve "6910" y no "6.910". Es la regla ortografica del espanol, pero en una tabla de
+// cifras comparables descuadra la lectura, asi que aqui se agrupa siempre, a proposito.
+// Se hace a mano porque minimumGroupingDigits no esta soportado en todas partes.
+const agrupa = s => {
+  const neg = s.startsWith("-");
+  const [ent, ...resto] = (neg ? s.slice(1) : s).split(",");
+  const sep = (ent.length > 3 && !ent.includes("."))
+    ? ent.replace(/\B(?=(\d{3})+$)/g, ".") : ent;
+  return (neg ? "-" : "") + [sep, ...resto].join(",");
+};
+// TODA cifra visible pasa por uno de estos tres. Nunca uses toFixed() para pintar un
+// numero: escribe el punto decimal ingles ("215.9" en vez de "215,9").
+const loc = (n,d) => agrupa(n.toLocaleString('es-ES',{minimumFractionDigits:d, maximumFractionDigits:d}));
+const money = n => n==null ? "—" : "$" + loc(n, 2);
+const sign  = (n,d=1) => n==null ? "—" : (n>=0?"+":"") + loc(n, d) + "%";
+const num   = (n,d=1) => n==null ? "—" : loc(n, d);
+// Para cantidades cuyos decimales no son fijos (acciones fraccionadas): no rellena
+// con ceros, asi 1,38 sigue siendo 1,38 y 10 sigue siendo 10.
+const cant  = n => n==null ? "—" : agrupa(n.toLocaleString('es-ES',{maximumFractionDigits:4}));
 const cls   = n => n==null ? "" : (n>=0 ? "up" : "down");
 const allPositions = () => [...holdings, ...outsideFramework];
 
@@ -602,7 +618,7 @@ function sparkline(serie, opts){
     </svg>`;
 }
 
-const fMill = v => (Math.abs(v) >= 1000 ? (v/1000).toFixed(1)+" B$" : Math.round(v)+" M$");
+const fMill = v => Math.abs(v) >= 1000 ? num(v/1000,1)+" B$" : num(v,0)+" M$";
 const fPct  = v => num(v) + "%";
 
 function sparkSet(f){
@@ -934,7 +950,7 @@ function detailHtml(h){
   out += `<div class="src">Fuente: 10-K de ${f.company} en data.sec.gov, ejercicios ${a.years_covered},
     cifras reexpresadas (se toma el hecho XBRL con <code>filed</code> más reciente).
     ${f.units}. P/E, PEG y FCF yield de las tarjetas se recalculan con el precio en vivo
-    (${a.diluted_shares_latest?.toLocaleString('es-ES')} M de acciones diluidas, cierre ${a.latest_fiscal_year});
+    (${a.diluted_shares_latest==null ? '—' : num(a.diluted_shares_latest,0)} M de acciones diluidas, cierre ${a.latest_fiscal_year});
     la columna «P/E cierre» de la tabla usa la capitalización al cierre de cada ejercicio.
     Las casillas en gris son datos que no se han podido obtener, no ceros.
     El RSI y la media de 200 se calculan sobre el histórico diario que va acumulando
@@ -965,7 +981,7 @@ function posCell(h, totalMv){
   return `<div class="pos">
       <div class="pl ${cls(st.plPct)}">${sign(st.plPct)}</div>
       <div class="mut">${money(st.mv)} · ${num(w)}% cartera</div>
-      <div class="mut">${h.shares} × coste ${money(h.cost)}</div>
+      <div class="mut">${cant(h.shares)} × coste ${money(h.cost)}</div>
     </div>`;
 }
 
@@ -1001,25 +1017,25 @@ function renderRows(filter){
 function dayChangeHtml(h){
   if(h.dayChangePct == null) return '';
   const up = h.dayChangePct >= 0;
-  return ` <span class="today-move ${up?'today-up':'today-down'}">${up?'▲':'▼'}${Math.abs(h.dayChangePct).toFixed(2)}%</span>`;
+  return ` <span class="today-move ${up?'today-up':'today-down'}">${up?'▲':'▼'}${num(Math.abs(h.dayChangePct),2)}%</span>`;
 }
 
 function renderIntrinsic(h){
   if(h.intrinsic == null){
     return `
       <div class="iv-wrap">
-        ${h.price != null ? `<div class="iv-prices">Precio <b>$${h.price.toFixed(2)}</b>${dayChangeHtml(h)}</div>` : ''}
+        ${h.price != null ? `<div class="iv-prices">Precio <b>${money(h.price)}</b>${dayChangeHtml(h)}</div>` : ''}
         <span class="iv-badge iv-pending">Valor intrínseco pendiente</span>
       </div>`;
   }
   const diffPct = ((h.intrinsic.base - h.price) / h.price) * 100;
-  let c = 'iv-fair', label = `En rango justo (${diffPct>=0?'+':''}${diffPct.toFixed(0)}%)`;
-  if(diffPct >= 10){ c = 'iv-cheap'; label = `Barata (${diffPct.toFixed(0)}% bajo valor)`; }
-  else if(diffPct <= -10){ c = 'iv-expensive'; label = `Cara (${Math.abs(diffPct).toFixed(0)}% sobre valor)`; }
+  let c = 'iv-fair', label = `En rango justo (${sign(diffPct,0)})`;
+  if(diffPct >= 10){ c = 'iv-cheap'; label = `Barata (${num(diffPct,0)}% bajo valor)`; }
+  else if(diffPct <= -10){ c = 'iv-expensive'; label = `Cara (${num(Math.abs(diffPct),0)}% sobre valor)`; }
   return `
     <div class="iv-wrap">
-      <div class="iv-prices">Precio <b>$${h.price.toFixed(2)}</b>${dayChangeHtml(h)} · Valor <b>$${h.intrinsic.base.toFixed(2)}</b>
-        <span style="opacity:.6">($${h.intrinsic.low}-$${h.intrinsic.high})</span></div>
+      <div class="iv-prices">Precio <b>${money(h.price)}</b>${dayChangeHtml(h)} · Valor <b>${money(h.intrinsic.base)}</b>
+        <span style="opacity:.6">(${money(h.intrinsic.low)}-${money(h.intrinsic.high)})</span></div>
       <span class="iv-badge ${c}">${label}</span>
     </div>`;
 }
@@ -1069,7 +1085,7 @@ function renderOutside(){
     const st = stats(o);
     return `<div class="outside-card">
       <div class="t">${o.t}</div>
-      <div class="s">${o.price != null ? `$${o.price.toFixed(2)}${dayChangeHtml(o)}` : '—'}</div>
+      <div class="s">${o.price != null ? `${money(o.price)}${dayChangeHtml(o)}` : '—'}</div>
       ${st ? `<div class="s"><span class="${cls(st.plPct)}">${sign(st.plPct)}</span> ·
         ${money(st.mv)} · ${num(st.mv/totalMv*100)}% cartera</div>` : ''}
       <div class="s">${o.note}</div>

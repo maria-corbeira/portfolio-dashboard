@@ -174,6 +174,28 @@ hábil de esa semana**, así que se toma la fila de la semana que contiene el ú
 hábil anterior al cierre fiscal. Antes de dar por buena la interpretación, compruébala:
 la fila `2025-01-21` vale 142,62, que es el cierre del viernes 24, no el del martes 21.
 
+**Los números se pintan en español, y solo con los helpers.** Toda cifra visible sale por
+`money`, `sign`, `num` o `cant` (y `fMill` para los gráficos), que ya aplican coma decimal y
+punto de millar. **Nunca uses `toFixed()` para pintar un número**: escribe el punto decimal
+inglés, y así llegaron a producción `215.9 B$` en los gráficos de Ventas y FCF, `$230.36`
+en los precios y `▲0.84%` en la variación del día. `toFixed()` solo vale para coordenadas
+SVG y píxeles de CSS, que sí llevan punto — son las únicas siete que quedan en el fichero.
+
+Y dos trampas al tocar esto:
+
+- **`es-ES` no agrupa los números de cuatro cifras.** `(6910).toLocaleString('es-ES')`
+  devuelve `6910`, no `6.910`. No es un fallo de Intl: es la regla ortográfica del español.
+  Aquí se agrupa igualmente, a propósito, porque en una tabla de cifras comparables un
+  `6910` entre un `11.716` y un `215.938` descuadra la lectura. Lo hace `agrupa()`, a mano,
+  porque `minimumGroupingDigits` no está soportado en todas las implementaciones.
+- **Nunca lances un reemplazo global de `.` por `,` sobre `index.html`.** Los datos son
+  literales JS en el mismo fichero: `price:366.25` y `shares:1.61` **tienen** que llevar
+  punto, y cambiarlos rompe la página entera. Acota la sustitución al interior de las
+  cadenas (`note:"..."`) y **excluye los separadores de miles**: convertir `96.676 M$` en
+  `96,676` divide la cifra por mil sin que nada falle. La salvaguarda que funciona es
+  tocar solo los puntos seguidos de una o dos cifras, porque un separador de millar
+  siempre lleva tres. Revisa la lista de coincidencias antes de escribir, no después.
+
 **WebFetch resume con un modelo pequeño, y ese modelo se inventa cifras.** Al pedirle
 directamente las diez fechas de NVDA, **cinco de las diez respuestas estaban mal**: unas
 desplazadas una semana y una — 144,47 para enero de 2024 — sencillamente inventada, cuando
