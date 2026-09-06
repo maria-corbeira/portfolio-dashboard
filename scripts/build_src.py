@@ -32,7 +32,7 @@ DEBT_PARTS = [
 ]
 EMPRESAS = {"MSFT": "Microsoft Corporation", "META": "Meta Platforms, Inc.",
             "UBER": "Uber Technologies, Inc.", "ISRG": "Intuitive Surgical, Inc.",
-            "NVDA": "NVIDIA Corporation"}
+            "NVDA": "NVIDIA Corporation", "WMT": "Walmart Inc."}
 
 
 def build(ticker: str) -> dict:

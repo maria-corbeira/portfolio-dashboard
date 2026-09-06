@@ -1,0 +1,260 @@
+{
+ "ticker": "WMT",
+ "fiscal_dates": [
+  "2017-01-31",
+  "2018-01-31",
+  "2019-01-31",
+  "2020-01-31",
+  "2021-01-31",
+  "2022-01-31",
+  "2023-01-31",
+  "2024-01-31",
+  "2025-01-31",
+  "2026-01-31"
+ ],
+ "rows": {
+  "cash": [
+   6867,
+   6756,
+   7722,
+   9465,
+   17741,
+   14760,
+   8625,
+   9867,
+   9037,
+   10727
+  ],
+  "short_term_investments": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "total_current_assets": [
+   57689,
+   59664,
+   61897,
+   61806,
+   90067,
+   81070,
+   75655,
+   76877,
+   79458,
+   84874
+  ],
+  "total_assets": [
+   198825,
+   204522,
+   219295,
+   236495,
+   252496,
+   244860,
+   243197,
+   252399,
+   260823,
+   284668
+  ],
+  "total_current_liabilities": [
+   66928,
+   78521,
+   77477,
+   77790,
+   92645,
+   87379,
+   92198,
+   92415,
+   96584,
+   107469
+  ],
+  "total_liabilities": [
+   118290,
+   123700,
+   139661,
+   154943,
+   164965,
+   152969,
+   159443,
+   162050,
+   163402,
+   178781
+  ],
+  "total_equity": [
+   77798,
+   77869,
+   72496,
+   74669,
+   80925,
+   83253,
+   76693,
+   83861,
+   91013,
+   99617
+  ],
+  "short_term_borrowings": [
+   1099,
+   5257,
+   5225,
+   575,
+   224,
+   410,
+   372,
+   878,
+   3068,
+   6596
+  ],
+  "current_portion_ltd": [
+   2256,
+   3738,
+   1876,
+   5362,
+   3115,
+   2803,
+   4191,
+   3447,
+   2598,
+   3542
+  ],
+  "long_term_debt": [
+   36015,
+   30045,
+   43520,
+   43714,
+   41194,
+   34864,
+   34649,
+   36132,
+   33401,
+   34624
+  ],
+  "finance_lease_current": [
+   null,
+   null,
+   0,
+   511,
+   491,
+   511,
+   567,
+   725,
+   800,
+   856
+  ],
+  "finance_lease_noncurrent": [
+   null,
+   null,
+   0,
+   4307,
+   3847,
+   4243,
+   4843,
+   5709,
+   5923,
+   5905
+  ],
+  "operating_lease_current": [
+   null,
+   null,
+   0,
+   1793,
+   1466,
+   1483,
+   1473,
+   1487,
+   1499,
+   1631
+  ],
+  "operating_lease_noncurrent": [
+   null,
+   null,
+   0,
+   16171,
+   12909,
+   13009,
+   12828,
+   12943,
+   12825,
+   13941
+  ]
+ },
+ "tags_usados": {
+  "cash": {
+   "tag": "CashAndCashEquivalentsAtCarryingValue",
+   "filed": "varía por año, se usó el filed más reciente disponible para cada end date (10-K del ejercicio o 10-Q posterior que reexpresa); valores idénticos entre filed sucesivos, sin reexpresiones detectadas"
+  },
+  "short_term_investments": {
+   "tag": null,
+   "filed": null
+  },
+  "total_current_assets": {
+   "tag": "AssetsCurrent",
+   "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+  },
+  "total_assets": {
+   "tag": "Assets",
+   "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+  },
+  "total_current_liabilities": {
+   "tag": "LiabilitiesCurrent",
+   "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+  },
+  "total_liabilities": {
+   "tag": null,
+   "filed": null
+  },
+  "total_equity": {
+   "tag": "StockholdersEquity",
+   "filed": "filed más reciente por end date, sin reexpresiones detectadas; es el patrimonio atribuible a Walmart (excluye minoritarios)"
+  },
+  "short_term_borrowings": {
+   "tag": "ShortTermBorrowings",
+   "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+  },
+  "current_portion_ltd": {
+   "tag": "LongTermDebtCurrent",
+   "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+  },
+  "long_term_debt": {
+   "tag": "LongTermDebtNoncurrent",
+   "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+  },
+  "finance_lease_current": {
+   "tag": "FinanceLeaseLiabilityCurrent",
+   "filed": "no reportado (sin hechos XBRL) en 2017-01-31 y 2018-01-31; en 2019-01-31 el único hecho disponible (filed 2020-03-20, 10-K FY2020) vale 0; desde 2020-01-31 filed más reciente por end date, sin reexpresiones"
+  },
+  "finance_lease_noncurrent": {
+   "tag": "FinanceLeaseLiabilityNoncurrent",
+   "filed": "no reportado en 2017-01-31 y 2018-01-31; en 2019-01-31 el filed más reciente disponible (2019-12-04, 10-Q Q3 FY2020) vale 0, sin entrada de 10-K para ese end date bajo este tag; desde 2020-01-31 filed más reciente por end date, sin reexpresiones"
+  },
+  "operating_lease_current": {
+   "tag": "OperatingLeaseLiabilityCurrent",
+   "filed": "no reportado en 2017-01-31 y 2018-01-31; en 2019-01-31 filed más reciente (2020-03-20, 10-K) vale 0; desde 2020-01-31 filed más reciente por end date, sin reexpresiones"
+  },
+  "operating_lease_noncurrent": {
+   "tag": "OperatingLeaseLiabilityNoncurrent",
+   "filed": "no reportado en 2017-01-31 y 2018-01-31; en 2019-01-31 filed más reciente (2020-03-20, 10-K) vale 0; desde 2020-01-31 filed más reciente por end date, sin reexpresiones"
+  }
+ },
+ "avisos": [
+  "total_liabilities: el tag us-gaap:Liabilities devuelve 404 en la API de la SEC para Walmart (CIK 0000104169) en los 10 ejercicios; el emisor no lo etiqueta como hecho consolidado directo. No hay fallback definido en la cascada para este campo, por lo que se deja en null en los 10 años, tal como exige la regla 6 (null no es 0 y no se estima). A título informativo (NO escrito en las filas), el pasivo total implícito = Assets - StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest sería: 2017:118290, 2018:123700, 2019:139661, 2020:154943, 2021:164965, 2022:152969, 2023:159443, 2024:162050, 2025:163402, 2026:178781 (millones USD). Esta cifra no sustituye al campo total_liabilities pedido, que queda null por falta de dato reportado directamente.",
+  "short_term_investments: los tres tags de la cascada (ShortTermInvestments, MarketableSecuritiesCurrent, AvailableForSaleSecuritiesDebtSecuritiesCurrent) devuelven 404 para Walmart en los 10 ejercicios. Walmart no reporta inversiones a corto plazo como partida de balance separada. Campo null en los 10 años.",
+  "Minoritarios (StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest menos StockholdersEquity), en millones USD por ejercicio: 2017:2737, 2018:2953, 2019:7138, 2020:6883, 2021:6606, 2022:8638, 2023:7061, 2024:6488, 2025:6408, 2026:6270. El descuadre entre Activo y (Pasivo+Patrimonio atribuible a Walmart) usando total_equity de este fichero es exactamente este importe de minoritarios cada año, tal y como se advierte en las reglas del encargo: es lo esperado, no un error.",
+  "Arrendamientos (ASC 842): Walmart adopta la norma en el ejercicio cerrado 2020-01-31. Para finance_lease_current, finance_lease_noncurrent, operating_lease_current y operating_lease_noncurrent: 2017-01-31 y 2018-01-31 son null porque no existe ningún hecho XBRL bajo estos tags (no se reconocían en balance con esta nomenclatura antes de ASC 842; los arrendamientos de capital pre-842 se etiquetaban con tags distintos, como CapitalLeaseObligationsCurrent/Noncurrent, no solicitados en este encargo). El ejercicio 2019-01-31 sí tiene un hecho XBRL puntual bajo estos tags, con valor 0 (reportado en filings posteriores a la adopción como comparativo bajo la nueva norma); se ha dejado como 0 (dato real reportado), no como null, siguiendo la regla 2 de tomar el filed más reciente disponible. No es una estimación.",
+  "CONTROL DE COHERENCIA (Activo = Pasivo + Patrimonio incl. minoritarios): no se puede verificar de forma independiente porque total_liabilities es null (tag no reportado por Walmart, ver aviso anterior). Usando el pasivo implícito (Assets - EquityInclNCI, calculado más arriba) el cuadre es exacto por construcción en los 10 ejercicios (es tautológico, no una verificación independiente), por lo que no constituye una prueba real de coherencia del dato de Liabilities, que simplemente no existe como hecho XBRL separado para este emisor.",
+  "Anclas de validación: FY2025 total_assets obtenido = 260823 M$ (tag Assets, 10-K filed 2025-03-14) coincide con el ancla ~260.823 M$. FY2025 total_equity obtenido = 91013 M$ (tag StockholdersEquity) coincide con el ancla ~91.013 M$. FY2024 total_assets obtenido = 252399 M$ coincide con el ancla ~252.399 M$. Los tres anclas cuadran exactamente (desviación 0%).",
+  "Todos los valores de cash, total_current_assets, total_assets, total_current_liabilities, total_equity, short_term_borrowings, current_portion_ltd y long_term_debt se mantuvieron idénticos entre el filing original (10-K) y los 10-Q/10-K posteriores para el mismo end date; no se detectaron reexpresiones (restatements) en ninguno de los 10 ejercicios para estos campos.",
+  "total_liabilities DERIVADO el 2026-09-06 como Activo total - (Patrimonio atribuible + Minoritarios), porque el emisor no etiqueta us-gaap:Liabilities (404 en los diez ejercicios). Es aritmetica sobre cifras publicadas, no una estimacion. Minoritarios usados: [2737, 2953, 7138, 6883, 6606, 8638, 7061, 6488, 6408, 6270].",
+  "short_term_investments fijado a 0 el 2026-09-06, NO por defecto: los tres tags dan 404 y el residuo del activo corriente es cero exacto en los diez ejercicios (cash + clientes + existencias + anticipos = AssetsCurrent), asi que la partida no existe; no es un dato ausente."
+ ],
+ "homogeneizado": {
+  "pasivo_derivado": true,
+  "ceros": [
+   "short_term_investments"
+  ]
+ }
+}

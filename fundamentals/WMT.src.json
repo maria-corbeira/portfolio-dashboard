@@ -1,0 +1,569 @@
+{
+  "company": "Walmart Inc.",
+  "ticker": "WMT",
+  "fiscal_dates": [
+    "2017-01-31",
+    "2018-01-31",
+    "2019-01-31",
+    "2020-01-31",
+    "2021-01-31",
+    "2022-01-31",
+    "2023-01-31",
+    "2024-01-31",
+    "2025-01-31",
+    "2026-01-31"
+  ],
+  "sheets": {
+    "7.TIKR_IS": {
+      "Total Revenues": [
+        485873,
+        500343,
+        514405,
+        523964,
+        559151,
+        572754,
+        611289,
+        648125,
+        680985,
+        713163
+      ],
+      "Cost of Goods Sold": [
+        361256,
+        373396,
+        385301,
+        394605,
+        420315,
+        429000,
+        463721,
+        490142,
+        511753,
+        535395
+      ],
+      "Gross Profit": [
+        124617,
+        126947,
+        129104,
+        129359,
+        138836,
+        143754,
+        147568,
+        157983,
+        169232,
+        177768
+      ],
+      "Operating Income": [
+        22764,
+        20437,
+        21957,
+        20568,
+        22548,
+        25942,
+        20428,
+        27012,
+        29348,
+        29825
+      ],
+      "EBITDA": [
+        32844,
+        30966,
+        32635,
+        31555,
+        33700,
+        36600,
+        31373,
+        38865,
+        42321,
+        44028
+      ],
+      "Interest Expense": [
+        2044,
+        1978,
+        1975,
+        2262,
+        1976,
+        1674,
+        1787,
+        2259,
+        2249,
+        2318
+      ],
+      "EBT Incl. Unusual Items": [
+        19847,
+        14462,
+        10951,
+        19796,
+        20368,
+        18429,
+        17404,
+        21089,
+        25588,
+        29092
+      ],
+      "Income Tax Expense": [
+        -6204,
+        -4600,
+        -4281,
+        -4915,
+        -6858,
+        -4756,
+        -5724,
+        -5578,
+        -6152,
+        -7199
+      ],
+      "Net Income": [
+        13643,
+        9862,
+        6670,
+        14881,
+        13510,
+        13673,
+        11680,
+        15511,
+        19436,
+        21893
+      ],
+      "Diluted EPS Excl Extra Items": [
+        1.46,
+        1.093333,
+        0.753333,
+        1.73,
+        1.583333,
+        1.62,
+        1.42,
+        1.91,
+        2.41,
+        2.73
+      ],
+      "Weighted Average Diluted Shares Outstanding": [
+        9336,
+        9030,
+        8835,
+        8604,
+        8541,
+        8415,
+        8202,
+        8108,
+        8081,
+        8022
+      ],
+      "R&D Expenses": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "8.TIKR_BS": {
+      "Cash And Equivalents": [
+        6867,
+        6756,
+        7722,
+        9465,
+        17741,
+        14760,
+        8625,
+        9867,
+        9037,
+        10727
+      ],
+      "Total Cash And Short Term Investments": [
+        6867,
+        6756,
+        7722,
+        9465,
+        17741,
+        14760,
+        8625,
+        9867,
+        9037,
+        10727
+      ],
+      "Total Current Assets": [
+        57689,
+        59664,
+        61897,
+        61806,
+        90067,
+        81070,
+        75655,
+        76877,
+        79458,
+        84874
+      ],
+      "Total Current Liabilities": [
+        66928,
+        78521,
+        77477,
+        77790,
+        92645,
+        87379,
+        92198,
+        92415,
+        96584,
+        107469
+      ],
+      "Total Assets": [
+        198825,
+        204522,
+        219295,
+        236495,
+        252496,
+        244860,
+        243197,
+        252399,
+        260823,
+        284668
+      ],
+      "Total Liabilities": [
+        118290,
+        123700,
+        139661,
+        154943,
+        164965,
+        152969,
+        159443,
+        162050,
+        163402,
+        178781
+      ],
+      "Total Equity": [
+        77798,
+        77869,
+        72496,
+        74669,
+        80925,
+        83253,
+        76693,
+        83861,
+        91013,
+        99617
+      ],
+      "Total Debt": [
+        39370,
+        39040,
+        50621,
+        72433,
+        63246,
+        57323,
+        58923,
+        61321,
+        60114,
+        67095
+      ],
+      "Net Debt": [
+        32503,
+        32284,
+        42899,
+        62968,
+        45505,
+        42563,
+        50298,
+        51454,
+        51077,
+        56368
+      ]
+    },
+    "9.TIKR_CF": {
+      "Cash from Operations": [
+        31673,
+        28337,
+        27753,
+        25255,
+        36074,
+        24181,
+        28841,
+        35726,
+        36443,
+        41565
+      ],
+      "Capital Expenditure": [
+        -10619,
+        -10051,
+        -10344,
+        -10705,
+        -10264,
+        -13106,
+        -16857,
+        -20606,
+        -23783,
+        -26642
+      ],
+      "Free Cash Flow": [
+        21054,
+        18286,
+        17409,
+        14550,
+        25810,
+        11075,
+        11984,
+        15120,
+        12660,
+        14923
+      ],
+      "Depreciation & Amortization": [
+        10080,
+        10529,
+        10678,
+        10987,
+        11152,
+        10658,
+        10945,
+        11853,
+        12973,
+        14203
+      ],
+      "Stock-Based Compensation": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Repurchase of Common Stock": [
+        -8298,
+        -8296,
+        -7410,
+        -5717,
+        -2625,
+        -9787,
+        -9920,
+        -2779,
+        -4494,
+        -8088
+      ],
+      "Common & Preferred Stock Dividends Paid": [
+        -6216,
+        -6124,
+        -6102,
+        -6048,
+        -6116,
+        -6152,
+        -6114,
+        -6140,
+        -6688,
+        -7507
+      ]
+    },
+    "10.TIKR_Val": {
+      "Market Cap (MM)": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Price": [
+        22.247,
+        35.533,
+        31.943,
+        38.163,
+        46.83,
+        46.603,
+        47.957,
+        55.083,
+        98.16,
+        119.14
+      ]
+    }
+  },
+  "notas": {
+    "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por ejercicio (cifras reexpresadas cuando las hay)",
+    "extraido": "2026-09-05",
+    "derivadas": [
+      "Gross Profit = Total Revenues - Cost of Goods Sold (la empresa no etiqueta GrossProfit en XBRL)",
+      "EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)",
+      "EBITDA = Operating Income + Depreciation & Amortization",
+      "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
+      "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
+      "Free Cash Flow = Cash from Operations + Capital Expenditure"
+    ],
+    "deuda_incompleta": [
+      "2017: suma sin arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2018: suma sin arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente"
+    ],
+    "control_splits": {
+      "cuadra": true,
+      "desviaciones": []
+    },
+    "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "tags_is": {
+      "revenue": {
+        "tag": "Revenues",
+        "filed": "2017-03-31 a 2026-03-13 (ingresos totales: Net sales + Membership and other income; una entrada por ejercicio, misma etiqueta todo el periodo, valor identico en filings solapados)"
+      },
+      "net_sales": {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "filed": "2019-03-28 a 2026-03-13 (una entrada por ejercicio, misma etiqueta todo el periodo) -- SOLO 'Net sales', excluye 'Membership and other income'"
+      },
+      "cogs": {
+        "tag": "CostOfRevenue",
+        "filed": "2017-03-31 a 2026-03-13 (CostOfGoodsAndServicesSold y CostOfGoodsSold devolvieron 404)"
+      },
+      "gross_profit": {
+        "tag": null,
+        "filed": null
+      },
+      "operating_income": {
+        "tag": "OperatingIncomeLoss",
+        "filed": "2017-03-31 a 2026-03-13"
+      },
+      "interest_expense": {
+        "tag": "InterestExpenseDebt",
+        "filed": "2017-03-31 a 2026-03-13 (InterestExpense devolvio 404)"
+      },
+      "income_tax": {
+        "tag": "IncomeTaxExpenseBenefit",
+        "filed": "2017-03-31 a 2026-03-13"
+      },
+      "net_income": {
+        "tag": "NetIncomeLoss",
+        "filed": "2017-03-31 a 2026-03-13"
+      },
+      "eps_diluted": {
+        "tag": "EarningsPerShareDiluted",
+        "filed": "varia por ejercicio, ver avisos (split 3x1 de feb-2024)"
+      },
+      "diluted_shares": {
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "filed": "varia por ejercicio, ver avisos (split 3x1 de feb-2024)"
+      },
+      "rd_expense": {
+        "tag": null,
+        "filed": null
+      }
+    },
+    "tags_bs": {
+      "cash": {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "filed": "varía por año, se usó el filed más reciente disponible para cada end date (10-K del ejercicio o 10-Q posterior que reexpresa); valores idénticos entre filed sucesivos, sin reexpresiones detectadas"
+      },
+      "short_term_investments": {
+        "tag": null,
+        "filed": null
+      },
+      "total_current_assets": {
+        "tag": "AssetsCurrent",
+        "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+      },
+      "total_assets": {
+        "tag": "Assets",
+        "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+      },
+      "total_current_liabilities": {
+        "tag": "LiabilitiesCurrent",
+        "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+      },
+      "total_liabilities": {
+        "tag": null,
+        "filed": null
+      },
+      "total_equity": {
+        "tag": "StockholdersEquity",
+        "filed": "filed más reciente por end date, sin reexpresiones detectadas; es el patrimonio atribuible a Walmart (excluye minoritarios)"
+      },
+      "short_term_borrowings": {
+        "tag": "ShortTermBorrowings",
+        "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+      },
+      "current_portion_ltd": {
+        "tag": "LongTermDebtCurrent",
+        "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+      },
+      "long_term_debt": {
+        "tag": "LongTermDebtNoncurrent",
+        "filed": "filed más reciente por end date, sin reexpresiones detectadas"
+      },
+      "finance_lease_current": {
+        "tag": "FinanceLeaseLiabilityCurrent",
+        "filed": "no reportado (sin hechos XBRL) en 2017-01-31 y 2018-01-31; en 2019-01-31 el único hecho disponible (filed 2020-03-20, 10-K FY2020) vale 0; desde 2020-01-31 filed más reciente por end date, sin reexpresiones"
+      },
+      "finance_lease_noncurrent": {
+        "tag": "FinanceLeaseLiabilityNoncurrent",
+        "filed": "no reportado en 2017-01-31 y 2018-01-31; en 2019-01-31 el filed más reciente disponible (2019-12-04, 10-Q Q3 FY2020) vale 0, sin entrada de 10-K para ese end date bajo este tag; desde 2020-01-31 filed más reciente por end date, sin reexpresiones"
+      },
+      "operating_lease_current": {
+        "tag": "OperatingLeaseLiabilityCurrent",
+        "filed": "no reportado en 2017-01-31 y 2018-01-31; en 2019-01-31 filed más reciente (2020-03-20, 10-K) vale 0; desde 2020-01-31 filed más reciente por end date, sin reexpresiones"
+      },
+      "operating_lease_noncurrent": {
+        "tag": "OperatingLeaseLiabilityNoncurrent",
+        "filed": "no reportado en 2017-01-31 y 2018-01-31; en 2019-01-31 filed más reciente (2020-03-20, 10-K) vale 0; desde 2020-01-31 filed más reciente por end date, sin reexpresiones"
+      }
+    },
+    "tags_cf": {
+      "cfo": {
+        "tag": "NetCashProvidedByUsedInOperatingActivities",
+        "filed": "2026-03-13"
+      },
+      "capex": {
+        "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "filed": "2026-03-13"
+      },
+      "depreciation_amortization": {
+        "tag": "DepreciationDepletionAndAmortization (FY2017-FY2019) + DepreciationAmortizationAndAccretionNet (FY2020-FY2026)",
+        "filed": "2026-03-13"
+      },
+      "stock_based_compensation": {
+        "tag": "ShareBasedCompensation",
+        "filed": null
+      },
+      "buybacks": {
+        "tag": "PaymentsForRepurchaseOfCommonStock",
+        "filed": "2026-03-13"
+      },
+      "dividends_paid": {
+        "tag": "PaymentsOfDividendsCommonStock (FY2019-FY2026) + PaymentsOfDividends fallback (FY2017-FY2018)",
+        "filed": "2026-03-13"
+      },
+      "cash_taxes_paid": {
+        "tag": "IncomeTaxesPaidNet (FY2024-FY2026) + IncomeTaxesPaid fallback (FY2017-FY2023)",
+        "filed": "2026-03-13"
+      }
+    },
+    "avisos_extraccion": [
+      "CORRECCION: revenue se ha actualizado para representar INGRESOS TOTALES (Net sales + Membership and other income), usando el tag us-gaap:Revenues de la API companyconcept de la SEC (CIK0000104169), que SI existe para Walmart y devuelve el total ya consolidado (no hizo falta sumar tags por separado ni usar fallbacks RevenueFromContractWithCustomerIncludingAssessedTax/RevenuesNetOfInterestExpense). La serie previa (solo 'Net sales', tag RevenueFromContractWithCustomerExcludingAssessedTax) se ha movido a la fila nueva 'net_sales' para no perderla. Anclas verificadas EXACTAS: FY2025 (2025-01-31) = 680.985 M$ (ancla ~680.985) y FY2024 (2024-01-31) = 648.125 M$ (ancla ~648.125). Los 10 valores de 'revenue' (M$, FY2017-FY2026): 485873, 500343, 514405, 523964, 559151, 572754, 611289, 648125, 680985, 713163. Para cada periodo se comprobo que el valor es identico en todas las entradas XBRL que lo reportan (distintos 'filed' de 10-K solapados), por lo que la regla de 'filed mas reciente' no genera ambiguedad. Todos los periodos son 10-K, start->end de ~365 dias.",
+      "revenue (nota historica, ya superada por la correccion anterior): la version anterior de esta fila se desviaba ~0.9% de los anclas (FY2025: 674.538 vs ancla 680.985; FY2024: 642.637 vs ancla 648.125) porque RevenueFromContractWithCustomerExcludingAssessedTax es solo 'Net sales' de Walmart, EXCLUYENDO 'Membership and other income' (6.447M en FY2025, 5.488M en FY2024). Sumando ambos se reconcilia EXACTAMENTE con las anclas (674.538+6.447=680.985; 642.637+5.488=648.125). El net_income SI coincide exactamente con las anclas (19.436 FY2025, 15.511 FY2024), lo que confirma que el resto de datos es correcto y que el ancla de ventas usa 'total revenues', no 'net sales'. Esta serie de solo 'Net sales' ahora vive en la fila 'net_sales'.",
+      "gross_profit: el tag GrossProfit devuelve 404 para CIK 0000104169 -- Walmart no reporta esa partida en XBRL (su cuenta de resultados no incluye linea de beneficio bruto). Se deja null en los 10 ejercicios, sin estimar. A titulo informativo (no almacenado), revenue-cogs implica un margen bruto ~24.9%-25.0% estable en los 10 anios, sin anomalias.",
+      "rd_expense: ResearchAndDevelopmentExpense devuelve 404 -- Walmart no reporta I+D. Null en los 10 ejercicios, como se esperaba.",
+      "cogs: CostOfGoodsAndServicesSold y CostOfGoodsSold devuelven 404. Se uso el fallback CostOfRevenue, con cobertura completa y consistente en los 10 ejercicios.",
+      "interest_expense: el tag primario InterestExpense devuelve 404. Se uso el fallback InterestExpenseDebt (valores positivos, cobertura completa 10 ejercicios). No se uso InterestIncomeExpenseNet (siguiente fallback) por tener ya cobertura completa con InterestExpenseDebt.",
+      "eps_diluted / diluted_shares: Walmart hizo un split 3x1 efectivo feb-2024. El XBRL solo contiene valores reexpresados (post-split) para FY2022 y FY2023 (retagueados en el 10-K de FY2024, accn 0000104169-24-000056, filed 2024-03-15, y filings posteriores), porque esos fueron los unicos ejercicios previos que seguian apareciendo como comparativos tras el split. FY2017-FY2021 quedan SIN reexpresar (valores pre-split) porque ya habian salido de la ventana de 3 anios de comparativos antes de ocurrir el split, y no existe hecho XBRL que los ajuste. Es una discontinuidad estructural de la serie (no un error): EPS/acciones de FY2017-2021 son pre-split (base ~2.8-3.1 mil M acciones) y de FY2022-2026 son post-split (base ~8 mil M acciones). Pese a ello, EPS x acciones diluidas ~= beneficio neto se cumple con desviacion <0.3% en los 10 ejercicios, porque la regla de 'filed mas reciente' empareja siempre valores pre-split con pre-split y post-split con post-split.",
+      "BPA y acciones diluidas homogeneizados el 2026-09-06: split 3:1 del 26-feb-2024; FY2017-FY2021 venian en la base anterior. Factores por ejercicio: [3, 3, 3, 3, 3, 1, 1, 1, 1, 1]. El BPA se dividio y las acciones se multiplicaron. Control BPA x acciones ~= beneficio neto: OK en los 10 ejercicios.",
+      "income_tax: signo invertido el 2026-09-06. El extractor lo devolvio en positivo y la convencion del proyecto es negativo cuando es gasto, porque build_src.py calcula EBT = beneficio neto - impuesto con signo.",
+      "total_liabilities: el tag us-gaap:Liabilities devuelve 404 en la API de la SEC para Walmart (CIK 0000104169) en los 10 ejercicios; el emisor no lo etiqueta como hecho consolidado directo. No hay fallback definido en la cascada para este campo, por lo que se deja en null en los 10 años, tal como exige la regla 6 (null no es 0 y no se estima). A título informativo (NO escrito en las filas), el pasivo total implícito = Assets - StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest sería: 2017:118290, 2018:123700, 2019:139661, 2020:154943, 2021:164965, 2022:152969, 2023:159443, 2024:162050, 2025:163402, 2026:178781 (millones USD). Esta cifra no sustituye al campo total_liabilities pedido, que queda null por falta de dato reportado directamente.",
+      "short_term_investments: los tres tags de la cascada (ShortTermInvestments, MarketableSecuritiesCurrent, AvailableForSaleSecuritiesDebtSecuritiesCurrent) devuelven 404 para Walmart en los 10 ejercicios. Walmart no reporta inversiones a corto plazo como partida de balance separada. Campo null en los 10 años.",
+      "Minoritarios (StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest menos StockholdersEquity), en millones USD por ejercicio: 2017:2737, 2018:2953, 2019:7138, 2020:6883, 2021:6606, 2022:8638, 2023:7061, 2024:6488, 2025:6408, 2026:6270. El descuadre entre Activo y (Pasivo+Patrimonio atribuible a Walmart) usando total_equity de este fichero es exactamente este importe de minoritarios cada año, tal y como se advierte en las reglas del encargo: es lo esperado, no un error.",
+      "Arrendamientos (ASC 842): Walmart adopta la norma en el ejercicio cerrado 2020-01-31. Para finance_lease_current, finance_lease_noncurrent, operating_lease_current y operating_lease_noncurrent: 2017-01-31 y 2018-01-31 son null porque no existe ningún hecho XBRL bajo estos tags (no se reconocían en balance con esta nomenclatura antes de ASC 842; los arrendamientos de capital pre-842 se etiquetaban con tags distintos, como CapitalLeaseObligationsCurrent/Noncurrent, no solicitados en este encargo). El ejercicio 2019-01-31 sí tiene un hecho XBRL puntual bajo estos tags, con valor 0 (reportado en filings posteriores a la adopción como comparativo bajo la nueva norma); se ha dejado como 0 (dato real reportado), no como null, siguiendo la regla 2 de tomar el filed más reciente disponible. No es una estimación.",
+      "CONTROL DE COHERENCIA (Activo = Pasivo + Patrimonio incl. minoritarios): no se puede verificar de forma independiente porque total_liabilities es null (tag no reportado por Walmart, ver aviso anterior). Usando el pasivo implícito (Assets - EquityInclNCI, calculado más arriba) el cuadre es exacto por construcción en los 10 ejercicios (es tautológico, no una verificación independiente), por lo que no constituye una prueba real de coherencia del dato de Liabilities, que simplemente no existe como hecho XBRL separado para este emisor.",
+      "Anclas de validación: FY2025 total_assets obtenido = 260823 M$ (tag Assets, 10-K filed 2025-03-14) coincide con el ancla ~260.823 M$. FY2025 total_equity obtenido = 91013 M$ (tag StockholdersEquity) coincide con el ancla ~91.013 M$. FY2024 total_assets obtenido = 252399 M$ coincide con el ancla ~252.399 M$. Los tres anclas cuadran exactamente (desviación 0%).",
+      "Todos los valores de cash, total_current_assets, total_assets, total_current_liabilities, total_equity, short_term_borrowings, current_portion_ltd y long_term_debt se mantuvieron idénticos entre el filing original (10-K) y los 10-Q/10-K posteriores para el mismo end date; no se detectaron reexpresiones (restatements) en ninguno de los 10 ejercicios para estos campos.",
+      "total_liabilities DERIVADO el 2026-09-06 como Activo total - (Patrimonio atribuible + Minoritarios), porque el emisor no etiqueta us-gaap:Liabilities (404 en los diez ejercicios). Es aritmetica sobre cifras publicadas, no una estimacion. Minoritarios usados: [2737, 2953, 7138, 6883, 6606, 8638, 7061, 6488, 6408, 6270].",
+      "short_term_investments fijado a 0 el 2026-09-06, NO por defecto: los tres tags dan 404 y el residuo del activo corriente es cero exacto en los diez ejercicios (cash + clientes + existencias + anticipos = AssetsCurrent), asi que la partida no existe; no es un dato ausente.",
+      "Convención de signos: cfo positivo (entrada de caja); capex, buybacks y dividends_paid en NEGATIVO (salidas de caja). El consumidor calcula fcf = cfo + capex.",
+      "Anclas validadas: FY2025 cfo=36443 M$ (ancla ~36443, desviación 0%) y capex=-23783 M$ (ancla ~-23783, desviación 0%); FY2024 cfo=35726 M$ (ancla ~35726, desviación 0%). Todas las cifras cuadran exactamente con las anclas proporcionadas.",
+      "stock_based_compensation: el tag ShareBasedCompensation devuelve 404 para Walmart (CIK 0000104169) en las 10 fechas solicitadas; la cascada de la tarea no define un tag alternativo, así que los 10 valores quedan en null. Walmart integra la SBC dentro de otras partidas de flujo de explotación sin desglosarla con este tag estándar; existen tags no autorizados en la cascada (p.ej. AllocatedShareBasedCompensationExpense) que no se han probado por instrucción expresa de no interpolar/estimar fuera de la cascada dada.",
+      "depreciation_amortization: para FY2017-FY2019 se usó DepreciationDepletionAndAmortization (10080, 10529, 10678 M$); a partir de FY2020 ese tag deja de reportarse y se usó el fallback DepreciationAmortizationAndAccretionNet (10987, 11152, 10658, 10945, 11853, 12973, 14203 M$ para FY2020-FY2026). Los valores de solape en FY2018 y FY2019 coinciden entre ambos tags (10529 y 10678), lo que da confianza en la continuidad de la serie. Ambos tags son comprehensivos (incluyen depleción/amortización, no solo depreciación de inmovilizado), por lo que no deberían ser datos parciales de cara al EBITDA.",
+      "dividends_paid: PaymentsOfDividendsCommonStock solo cubre desde FY2019 en adelante (aparece por primera vez como comparativo en el 10-K de FY2021, filed 2021-03-19). Para FY2017 (-6216 M$) y FY2018 (-6124 M$) se usó el fallback PaymentsOfDividends. Los valores de solape en FY2019 y FY2020 coinciden entre ambos tags (6102 y 6048 M$), confirmando la continuidad.",
+      "cash_taxes_paid: IncomeTaxesPaidNet solo existe para FY2024-FY2026 (reportado por primera vez en el 10-K de FY2026, filed 2026-03-13, probablemente por el nuevo requisito de desglose de impuestos pagados ASU 2023-09). Para FY2017-FY2023 se usó el fallback IncomeTaxesPaid. Los valores de FY2024 (5879) y FY2025 (5884) coinciden exactamente entre ambos tags, lo que confirma que representan el mismo concepto.",
+      "Coherencia: flujo de explotación (cfo) positivo los 10 ejercicios, con dos saltos bruscos a señalar: FY2020->FY2021 sube de 25255 a 36074 M$ (+43%, ligado a la acumulación de inventario/estímulo por COVID-19) y FY2021->FY2022 cae de 36074 a 24181 M$ (-33%, normalización post-COVID y fuerte acumulación de inventario en ese ejercicio). Ambos movimientos están respaldados por los propios 10-K de Walmart de la época, no parecen errores de dato.",
+      "Todas las partidas de flujo se seleccionaron exigiendo periodo start->end de ~365 días con end en la fecha de cierre de ejercicio, descartando periodos parciales (Q1/Q2/Q3 acumulados) y quedándose con el 'filed' más reciente disponible cuando había reexpresiones; no se detectaron hechos con dimensiones/segmentos en los endpoints companyconcept consultados."
+    ]
+  }
+}

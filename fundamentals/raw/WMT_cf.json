@@ -1,0 +1,32 @@
+{
+  "ticker": "WMT",
+  "fiscal_dates": ["2017-01-31", "2018-01-31", "2019-01-31", "2020-01-31", "2021-01-31", "2022-01-31", "2023-01-31", "2024-01-31", "2025-01-31", "2026-01-31"],
+  "rows": {
+    "cfo": [31673, 28337, 27753, 25255, 36074, 24181, 28841, 35726, 36443, 41565],
+    "capex": [-10619, -10051, -10344, -10705, -10264, -13106, -16857, -20606, -23783, -26642],
+    "depreciation_amortization": [10080, 10529, 10678, 10987, 11152, 10658, 10945, 11853, 12973, 14203],
+    "stock_based_compensation": [null, null, null, null, null, null, null, null, null, null],
+    "buybacks": [-8298, -8296, -7410, -5717, -2625, -9787, -9920, -2779, -4494, -8088],
+    "dividends_paid": [-6216, -6124, -6102, -6048, -6116, -6152, -6114, -6140, -6688, -7507],
+    "cash_taxes_paid": [4507, 6179, 3982, 3616, 5271, 5918, 3310, 5879, 5884, 5364]
+  },
+  "tags_usados": {
+    "cfo": {"tag": "NetCashProvidedByUsedInOperatingActivities", "filed": "2026-03-13"},
+    "capex": {"tag": "PaymentsToAcquirePropertyPlantAndEquipment", "filed": "2026-03-13"},
+    "depreciation_amortization": {"tag": "DepreciationDepletionAndAmortization (FY2017-FY2019) + DepreciationAmortizationAndAccretionNet (FY2020-FY2026)", "filed": "2026-03-13"},
+    "stock_based_compensation": {"tag": "ShareBasedCompensation", "filed": null},
+    "buybacks": {"tag": "PaymentsForRepurchaseOfCommonStock", "filed": "2026-03-13"},
+    "dividends_paid": {"tag": "PaymentsOfDividendsCommonStock (FY2019-FY2026) + PaymentsOfDividends fallback (FY2017-FY2018)", "filed": "2026-03-13"},
+    "cash_taxes_paid": {"tag": "IncomeTaxesPaidNet (FY2024-FY2026) + IncomeTaxesPaid fallback (FY2017-FY2023)", "filed": "2026-03-13"}
+  },
+  "avisos": [
+    "Convención de signos: cfo positivo (entrada de caja); capex, buybacks y dividends_paid en NEGATIVO (salidas de caja). El consumidor calcula fcf = cfo + capex.",
+    "Anclas validadas: FY2025 cfo=36443 M$ (ancla ~36443, desviación 0%) y capex=-23783 M$ (ancla ~-23783, desviación 0%); FY2024 cfo=35726 M$ (ancla ~35726, desviación 0%). Todas las cifras cuadran exactamente con las anclas proporcionadas.",
+    "stock_based_compensation: el tag ShareBasedCompensation devuelve 404 para Walmart (CIK 0000104169) en las 10 fechas solicitadas; la cascada de la tarea no define un tag alternativo, así que los 10 valores quedan en null. Walmart integra la SBC dentro de otras partidas de flujo de explotación sin desglosarla con este tag estándar; existen tags no autorizados en la cascada (p.ej. AllocatedShareBasedCompensationExpense) que no se han probado por instrucción expresa de no interpolar/estimar fuera de la cascada dada.",
+    "depreciation_amortization: para FY2017-FY2019 se usó DepreciationDepletionAndAmortization (10080, 10529, 10678 M$); a partir de FY2020 ese tag deja de reportarse y se usó el fallback DepreciationAmortizationAndAccretionNet (10987, 11152, 10658, 10945, 11853, 12973, 14203 M$ para FY2020-FY2026). Los valores de solape en FY2018 y FY2019 coinciden entre ambos tags (10529 y 10678), lo que da confianza en la continuidad de la serie. Ambos tags son comprehensivos (incluyen depleción/amortización, no solo depreciación de inmovilizado), por lo que no deberían ser datos parciales de cara al EBITDA.",
+    "dividends_paid: PaymentsOfDividendsCommonStock solo cubre desde FY2019 en adelante (aparece por primera vez como comparativo en el 10-K de FY2021, filed 2021-03-19). Para FY2017 (-6216 M$) y FY2018 (-6124 M$) se usó el fallback PaymentsOfDividends. Los valores de solape en FY2019 y FY2020 coinciden entre ambos tags (6102 y 6048 M$), confirmando la continuidad.",
+    "cash_taxes_paid: IncomeTaxesPaidNet solo existe para FY2024-FY2026 (reportado por primera vez en el 10-K de FY2026, filed 2026-03-13, probablemente por el nuevo requisito de desglose de impuestos pagados ASU 2023-09). Para FY2017-FY2023 se usó el fallback IncomeTaxesPaid. Los valores de FY2024 (5879) y FY2025 (5884) coinciden exactamente entre ambos tags, lo que confirma que representan el mismo concepto.",
+    "Coherencia: flujo de explotación (cfo) positivo los 10 ejercicios, con dos saltos bruscos a señalar: FY2020->FY2021 sube de 25255 a 36074 M$ (+43%, ligado a la acumulación de inventario/estímulo por COVID-19) y FY2021->FY2022 cae de 36074 a 24181 M$ (-33%, normalización post-COVID y fuerte acumulación de inventario en ese ejercicio). Ambos movimientos están respaldados por los propios 10-K de Walmart de la época, no parecen errores de dato.",
+    "Todas las partidas de flujo se seleccionaron exigiendo periodo start->end de ~365 días con end en la fecha de cierre de ejercicio, descartando periodos parciales (Q1/Q2/Q3 acumulados) y quedándose con el 'filed' más reciente disponible cuando había reexpresiones; no se detectaron hechos con dimensiones/segmentos en los endpoints companyconcept consultados."
+  ]
+}

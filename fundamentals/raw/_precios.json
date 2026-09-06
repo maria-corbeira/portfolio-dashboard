@@ -61,6 +61,18 @@
    61.031,
    142.62,
    187.67
+  ],
+  "WMT": [
+   22.247,
+   35.533,
+   31.943,
+   38.163,
+   46.83,
+   46.603,
+   47.957,
+   55.083,
+   98.16,
+   119.14
   ]
  },
  "avisos": [
@@ -68,6 +80,7 @@
   "UBER 2016-2018: no cotizaba, salio a bolsa el 10-may-2019.",
   "Fechas desplazadas al ultimo dia habil anterior cuando el cierre caia en fin de semana.",
   "NVDA: periodo Weekly, no Monthly. El ejercicio cierra el ultimo domingo de enero, que casi nunca coincide con fin de mes: en FY2025 el cierre mensual (120,07 el 31-ene-2025, tras la caida de DeepSeek) se desvia un 18% del cierre a fecha fiscal (142,62 el 24-ene-2025).",
-  "NVDA: en la serie Weekly la fila se etiqueta con el primer dia habil de la semana y su 'c' es el cierre del ultimo dia habil de esa semana. Se toma la fila de la semana que contiene el viernes anterior al domingo de cierre fiscal."
+  "NVDA: en la serie Weekly la fila se etiqueta con el primer dia habil de la semana y su 'c' es el cierre del ultimo dia habil de esa semana. Se toma la fila de la semana que contiene el viernes anterior al domingo de cierre fiscal.",
+  "WMT: periodo Monthly. El ejercicio cierra el 31 de enero, que SI es fin de mes, asi que la fila mensual de enero es el cierre a fecha fiscal. Igual que en la serie semanal, la fila va etiquetada con el primer dia habil del mes y su 'c' es el cierre del ultimo: verificado con 2018-01-02 = 35,533, que x3 son los 106,60 del 31-ene-2018 y no los ~99 del dia 2. Ajustado por el split 3:1 del 26-feb-2024, la misma base que el BPA ya homogeneizado en WMT_is.json."
  ]
 }

@@ -1,0 +1,212 @@
+{
+ "ticker": "WMT",
+ "fiscal_dates": [
+  "2017-01-31",
+  "2018-01-31",
+  "2019-01-31",
+  "2020-01-31",
+  "2021-01-31",
+  "2022-01-31",
+  "2023-01-31",
+  "2024-01-31",
+  "2025-01-31",
+  "2026-01-31"
+ ],
+ "rows": {
+  "revenue": [
+   485873,
+   500343,
+   514405,
+   523964,
+   559151,
+   572754,
+   611289,
+   648125,
+   680985,
+   713163
+  ],
+  "net_sales": [
+   481317,
+   495761,
+   510329,
+   519926,
+   555233,
+   567762,
+   605881,
+   642637,
+   674538,
+   706413
+  ],
+  "cogs": [
+   361256,
+   373396,
+   385301,
+   394605,
+   420315,
+   429000,
+   463721,
+   490142,
+   511753,
+   535395
+  ],
+  "gross_profit": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "operating_income": [
+   22764,
+   20437,
+   21957,
+   20568,
+   22548,
+   25942,
+   20428,
+   27012,
+   29348,
+   29825
+  ],
+  "interest_expense": [
+   2044,
+   1978,
+   1975,
+   2262,
+   1976,
+   1674,
+   1787,
+   2259,
+   2249,
+   2318
+  ],
+  "income_tax": [
+   -6204,
+   -4600,
+   -4281,
+   -4915,
+   -6858,
+   -4756,
+   -5724,
+   -5578,
+   -6152,
+   -7199
+  ],
+  "net_income": [
+   13643,
+   9862,
+   6670,
+   14881,
+   13510,
+   13673,
+   11680,
+   15511,
+   19436,
+   21893
+  ],
+  "eps_diluted": [
+   1.46,
+   1.093333,
+   0.753333,
+   1.73,
+   1.583333,
+   1.62,
+   1.42,
+   1.91,
+   2.41,
+   2.73
+  ],
+  "diluted_shares": [
+   9336,
+   9030,
+   8835,
+   8604,
+   8541,
+   8415,
+   8202,
+   8108,
+   8081,
+   8022
+  ],
+  "rd_expense": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "tags_usados": {
+  "revenue": {
+   "tag": "Revenues",
+   "filed": "2017-03-31 a 2026-03-13 (ingresos totales: Net sales + Membership and other income; una entrada por ejercicio, misma etiqueta todo el periodo, valor identico en filings solapados)"
+  },
+  "net_sales": {
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "filed": "2019-03-28 a 2026-03-13 (una entrada por ejercicio, misma etiqueta todo el periodo) -- SOLO 'Net sales', excluye 'Membership and other income'"
+  },
+  "cogs": {
+   "tag": "CostOfRevenue",
+   "filed": "2017-03-31 a 2026-03-13 (CostOfGoodsAndServicesSold y CostOfGoodsSold devolvieron 404)"
+  },
+  "gross_profit": {
+   "tag": null,
+   "filed": null
+  },
+  "operating_income": {
+   "tag": "OperatingIncomeLoss",
+   "filed": "2017-03-31 a 2026-03-13"
+  },
+  "interest_expense": {
+   "tag": "InterestExpenseDebt",
+   "filed": "2017-03-31 a 2026-03-13 (InterestExpense devolvio 404)"
+  },
+  "income_tax": {
+   "tag": "IncomeTaxExpenseBenefit",
+   "filed": "2017-03-31 a 2026-03-13"
+  },
+  "net_income": {
+   "tag": "NetIncomeLoss",
+   "filed": "2017-03-31 a 2026-03-13"
+  },
+  "eps_diluted": {
+   "tag": "EarningsPerShareDiluted",
+   "filed": "varia por ejercicio, ver avisos (split 3x1 de feb-2024)"
+  },
+  "diluted_shares": {
+   "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+   "filed": "varia por ejercicio, ver avisos (split 3x1 de feb-2024)"
+  },
+  "rd_expense": {
+   "tag": null,
+   "filed": null
+  }
+ },
+ "avisos": [
+  "CORRECCION: revenue se ha actualizado para representar INGRESOS TOTALES (Net sales + Membership and other income), usando el tag us-gaap:Revenues de la API companyconcept de la SEC (CIK0000104169), que SI existe para Walmart y devuelve el total ya consolidado (no hizo falta sumar tags por separado ni usar fallbacks RevenueFromContractWithCustomerIncludingAssessedTax/RevenuesNetOfInterestExpense). La serie previa (solo 'Net sales', tag RevenueFromContractWithCustomerExcludingAssessedTax) se ha movido a la fila nueva 'net_sales' para no perderla. Anclas verificadas EXACTAS: FY2025 (2025-01-31) = 680.985 M$ (ancla ~680.985) y FY2024 (2024-01-31) = 648.125 M$ (ancla ~648.125). Los 10 valores de 'revenue' (M$, FY2017-FY2026): 485873, 500343, 514405, 523964, 559151, 572754, 611289, 648125, 680985, 713163. Para cada periodo se comprobo que el valor es identico en todas las entradas XBRL que lo reportan (distintos 'filed' de 10-K solapados), por lo que la regla de 'filed mas reciente' no genera ambiguedad. Todos los periodos son 10-K, start->end de ~365 dias.",
+  "revenue (nota historica, ya superada por la correccion anterior): la version anterior de esta fila se desviaba ~0.9% de los anclas (FY2025: 674.538 vs ancla 680.985; FY2024: 642.637 vs ancla 648.125) porque RevenueFromContractWithCustomerExcludingAssessedTax es solo 'Net sales' de Walmart, EXCLUYENDO 'Membership and other income' (6.447M en FY2025, 5.488M en FY2024). Sumando ambos se reconcilia EXACTAMENTE con las anclas (674.538+6.447=680.985; 642.637+5.488=648.125). El net_income SI coincide exactamente con las anclas (19.436 FY2025, 15.511 FY2024), lo que confirma que el resto de datos es correcto y que el ancla de ventas usa 'total revenues', no 'net sales'. Esta serie de solo 'Net sales' ahora vive en la fila 'net_sales'.",
+  "gross_profit: el tag GrossProfit devuelve 404 para CIK 0000104169 -- Walmart no reporta esa partida en XBRL (su cuenta de resultados no incluye linea de beneficio bruto). Se deja null en los 10 ejercicios, sin estimar. A titulo informativo (no almacenado), revenue-cogs implica un margen bruto ~24.9%-25.0% estable en los 10 anios, sin anomalias.",
+  "rd_expense: ResearchAndDevelopmentExpense devuelve 404 -- Walmart no reporta I+D. Null en los 10 ejercicios, como se esperaba.",
+  "cogs: CostOfGoodsAndServicesSold y CostOfGoodsSold devuelven 404. Se uso el fallback CostOfRevenue, con cobertura completa y consistente en los 10 ejercicios.",
+  "interest_expense: el tag primario InterestExpense devuelve 404. Se uso el fallback InterestExpenseDebt (valores positivos, cobertura completa 10 ejercicios). No se uso InterestIncomeExpenseNet (siguiente fallback) por tener ya cobertura completa con InterestExpenseDebt.",
+  "eps_diluted / diluted_shares: Walmart hizo un split 3x1 efectivo feb-2024. El XBRL solo contiene valores reexpresados (post-split) para FY2022 y FY2023 (retagueados en el 10-K de FY2024, accn 0000104169-24-000056, filed 2024-03-15, y filings posteriores), porque esos fueron los unicos ejercicios previos que seguian apareciendo como comparativos tras el split. FY2017-FY2021 quedan SIN reexpresar (valores pre-split) porque ya habian salido de la ventana de 3 anios de comparativos antes de ocurrir el split, y no existe hecho XBRL que los ajuste. Es una discontinuidad estructural de la serie (no un error): EPS/acciones de FY2017-2021 son pre-split (base ~2.8-3.1 mil M acciones) y de FY2022-2026 son post-split (base ~8 mil M acciones). Pese a ello, EPS x acciones diluidas ~= beneficio neto se cumple con desviacion <0.3% en los 10 ejercicios, porque la regla de 'filed mas reciente' empareja siempre valores pre-split con pre-split y post-split con post-split.",
+  "BPA y acciones diluidas homogeneizados el 2026-09-06: split 3:1 del 26-feb-2024; FY2017-FY2021 venian en la base anterior. Factores por ejercicio: [3, 3, 3, 3, 3, 1, 1, 1, 1, 1]. El BPA se dividio y las acciones se multiplicaron. Control BPA x acciones ~= beneficio neto: OK en los 10 ejercicios.",
+  "income_tax: signo invertido el 2026-09-06. El extractor lo devolvio en positivo y la convencion del proyecto es negativo cuando es gasto, porque build_src.py calcula EBT = beneficio neto - impuesto con signo."
+ ],
+ "homogeneizado": {
+  "split": "split 3:1 del 26-feb-2024; FY2017-FY2021 venian en la base anterior",
+  "signos": [
+   "income_tax"
+  ]
+ }
+}
