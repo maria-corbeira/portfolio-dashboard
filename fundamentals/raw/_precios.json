@@ -121,6 +121,18 @@
    149.16,
    144.84,
    152.41
+  ],
+  "COP": [
+   50.14,
+   54.89,
+   62.35,
+   65.03,
+   39.99,
+   72.18,
+   118.0,
+   116.07,
+   99.17,
+   93.61
   ]
  },
  "avisos": [
@@ -133,6 +145,7 @@
   "IBM: periodo Monthly, cierre el 31 de diciembre (fin de mes, asi que la fila de diciembre es el cierre a fecha fiscal). Sin splits en la ventana. Cinco anclas exactas contra el cierre real: 165,99 en 2016, 113,67 en 2018, 125,88 en 2020, 163,55 en 2023 y 219,83 en 2024.",
   "AMZN: cierre de ejercicio el 31-dic, que es fin de mes, asi que la fila mensual de diciembre es valida. Serie ajustada por el split 20:1 de junio de 2022. Validada contra cierres sin ajustar: 2016 749,87/20=37,494 - 2019 1.847,84/20=92,392 - 2021 3.334,34/20=166,717.",
   "AAPL: cierre de ejercicio el ultimo sabado de septiembre, que NUNCA es fin de mes, asi que la fila mensual NO vale: se usa period=Weekly y se toma la semana que contiene el cierre fiscal (fila etiquetada con el lunes, campo c = cierre del viernes). Serie ajustada por el split 4:1 del 28-ago-2020. Validada contra cierres sin ajustar: 2016 112,71/4=28,178 - 2018 225,74/4=56,435 - 2019 218,82/4=54,705 - 2024 227,79 sin ajuste.",
-  "CVX: cierre de ejercicio el 31-dic, fin de mes, asi que la fila mensual de diciembre vale. Chevron NO ha hecho ningun split en estos diez anios, asi que la serie no lleva ajuste alguno y coincide con los cierres reales de cada 31 de diciembre."
+  "CVX: cierre de ejercicio el 31-dic, fin de mes, asi que la fila mensual de diciembre vale. Chevron NO ha hecho ningun split en estos diez anios, asi que la serie no lleva ajuste alguno y coincide con los cierres reales de cada 31 de diciembre.",
+  "COP: cierre de ejercicio el 31-dic, fin de mes, asi que la fila mensual de diciembre vale. ConocoPhillips no ha hecho ningun split en estos diez anios, asi que la serie no lleva ajuste. OJO: en la primera peticion el modelo pequeño de WebFetch devolvio 'No disponible' para diciembre de 2023 y de 2026 pese a que la fila de 2023 SI existe (116,07). Hubo que pedir el anio 2023 aparte. Un hueco que devuelve WebFetch no prueba que el dato falte."
  ]
 }

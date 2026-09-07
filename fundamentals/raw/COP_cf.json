@@ -1,0 +1,34 @@
+{"ticker":"COP",
+ "fiscal_dates":["2016-12-31","2017-12-31","2018-12-31","2019-12-31","2020-12-31","2021-12-31","2022-12-31","2023-12-31","2024-12-31","2025-12-31"],
+ "rows":{
+   "cfo":[4403,7077,12934,11104,4802,16996,28314,19965,20124,19796],
+   "capex":[-4869,-4591,-6750,-6636,-4715,-5324,-10159,-11248,-12118,-12553],
+   "depreciation_amortization":[9062,6845,5956,6090,5521,7208,7504,8270,9599,11500],
+   "stock_based_compensation":[null,null,null,null,null,null,null,null,null,null],
+   "buybacks":[-126,-3000,-2999,-3500,-892,-3623,-9270,-5400,-5463,-5018],
+   "dividends_paid":[-1253,-1305,-1363,-1500,-1831,-2359,-5726,-5583,-3646,-3995],
+   "cash_taxes_paid":[-318,1168,2976,2905,905,856,7368,5406,3621,4822]
+ },
+ "tags_usados":{
+   "cfo":{"tag":"NetCashProvidedByUsedInOperatingActivities","filed":"2017-02-21 a 2026-02-17 (un filing 10-K por anio)"},
+   "capex":{"tag":"PaymentsToAcquireProductiveAssets (linea COP: \"Capital expenditures and investments\")","filed":"2016-2022 via companyconcept API (filed 2017-02-21 a 2023-02-16); 2023-2025 via paginas R de los 10-K (R7 del accession 0001163165-26-000009, filed 2026-02-17) porque el companyconcept vino truncado. Tag alternativo PaymentsToAcquirePropertyPlantAndEquipment dio 404."},
+   "depreciation_amortization":{"tag":"ninguno de companyconcept funciono (DepreciationDepletionAndAmortization y DepreciationAmortizationAndAccretionNet dieron 404 los dos)","filed":"obtenido de la linea \"Depreciation, depletion and amortization\" de las paginas R (Consolidated Statement of Cash Flows) de los 4 10-K: accessions 000119312517050077, 000119312520039954, 000116316523000006, 000116316526000009"},
+   "stock_based_compensation":{"tag":"ShareBasedCompensation -> 404 confirmado dos veces","filed":null},
+   "buybacks":{"tag":"PaymentsForRepurchaseOfCommonStock","filed":"verificado exacto contra la linea \"Repurchase of company common stock\" de las paginas R de los 10-K"},
+   "dividends_paid":{"tag":"PaymentsOfDividendsCommonStock","filed":"verificado exacto contra la linea \"Dividends paid\" de las paginas R de los 10-K"},
+   "cash_taxes_paid":{"tag":"IncomeTaxesPaidNet","filed":"consistente en dos fetches independientes con instruccion anti-alucinacion; no aparece en la cara del estado de flujos (no se pudo cruzar contra pagina R), pero coherente con la evolucion de beneficios"}
+ },
+ "avisos":[
+   "ALERTA DE PROCESO: la primera pasada de WebFetch sobre companyconcept devolvio series NUMERICAS INTERCAMBIADAS entre stock_based_compensation, buybacks, dividends_paid y cash_taxes_paid (el modelo pequeno mezclo/invento datos). Se detecto porque los importes de 'SBC' eran de escala imposible (hasta 9.270 M$/anio). Se corrigio re-pidiendo cada tag con instruccion explicita anti-alucinacion y, sobre todo, verificando buybacks y dividends_paid contra las paginas R (Consolidated Statement of Cash Flows) de los 10-K reales: ambos coinciden EXACTOS con las lineas 'Repurchase of company common stock' y 'Dividends paid'.",
+   "capex: companyconcept vino truncado (se corto tras 2022, sin llegar a 2023-2025). Se completo con las paginas R de los 10-K en vez de reintentar la API, tal como indica la instruccion. La linea usada es 'Capital expenditures and investments' de COP; en el mismo estado de flujos existe una linea aparte 'Acquisition of business, net of cash acquired' (Concho/Permico Shell/Marathon) que NO se incluyo.",
+   "depreciation_amortization: los dos tags XBRL estandar dieron 404 en companyconcept. Se obtuvo integramente de las paginas R de los 4 10-K necesarios para cubrir los 10 anios. Es la linea completa 'Depreciation, depletion and amortization', SI incluye el agotamiento de reservas (los importes son del orden de 6.000-11.500 M$/anio como se esperaba); no es un tag parcial.",
+   "stock_based_compensation: null en los 10 anios. El tag ShareBasedCompensation da 404 y las paginas R del estado de flujos no muestran ninguna linea de compensacion en acciones (igual que en Chevron: COP no la desglosa aparte).",
+   "cash_taxes_paid: no aparece en la cara del Consolidated Statement of Cash Flows (no se pudo cruzar contra pagina R), asi que se deja el valor de IncomeTaxesPaidNet obtenido de companyconcept, confirmado igual en dos llamadas independientes con aviso anti-alucinacion. 2016 sale negativo (-318 M$, devolucion neta de impuestos), el resto positivo.",
+   "Signos aplicados: cfo y cash_taxes_paid con el signo tal cual reporta la SEC (cash_taxes_paid negativo = devolucion neta). capex, buybacks y dividends_paid convertidos a NEGATIVOS (la SEC los publica como 'pagos por' en positivo); aguas abajo fcf = cfo + capex.",
+   "Ciclicidad confirmada, no se ha suavizado nada: cfo cae a 4.403 M$ en 2016 y a 4.802 M$ en 2020, y se dispara a 28.314 M$ en 2022.",
+   "Control fcf = cfo + capex: NEGATIVO solo en 2016 (-466 M$). Casi cero en 2020 (+87 M$). Resto positivo, maximo en 2022 (+18.155 M$).",
+   "Control dividendos+recompras / FCF: supera el 100% en 2016 (FCF negativo), 2017 (~173%), 2019 (~112%), 2020 (FCF casi cero, ratio disparado), 2023 (~126%), 2024 (~114%) y 2025 (~124%). Solo queda claramente por debajo del 100% en 2018, 2021 y 2022.",
+   "dividends_paid incluye dividendo ordinario Y devolucion variable de capital (VROC) juntos: COP no los separa en la cara del estado de flujos, solo hay una linea 'Dividends paid'. El salto de 2.359 M$ (2021) a 5.726 M$ (2022) refleja la rampa de la VROC iniciada a mediados de 2021.",
+   "Anclas: FY2024 cfo=20.124 M$ (coincide exacto con la ancla ~20.124 M$). FY2024 capex=-12.118 M$ vs ancla ~-12.120 M$ (desviacion 0,02%, dentro de tolerancia). FY2022 cfo=28.314 M$ (coincide exacto con la ancla ~28.314 M$)."
+ ]
+}

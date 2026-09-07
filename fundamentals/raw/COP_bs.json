@@ -1,0 +1,262 @@
+{
+ "ticker": "COP",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "cash": [
+   3610,
+   6325,
+   5915,
+   5088,
+   2991,
+   5028,
+   6458,
+   5635,
+   5607,
+   6497
+  ],
+  "short_term_investments": [
+   50,
+   1873,
+   248,
+   3028,
+   3609,
+   446,
+   2785,
+   971,
+   507,
+   484
+  ],
+  "total_current_assets": [
+   8609,
+   16512,
+   13274,
+   16913,
+   12066,
+   16050,
+   18749,
+   14330,
+   15647,
+   15532
+  ],
+  "total_assets": [
+   89772,
+   73362,
+   69980,
+   70514,
+   62618,
+   90661,
+   93829,
+   95924,
+   122780,
+   121939
+  ],
+  "total_current_liabilities": [
+   6909,
+   9397,
+   7395,
+   7043,
+   5366,
+   12021,
+   12847,
+   10005,
+   12124,
+   11972
+  ],
+  "total_liabilities": [
+   54546,
+   42561,
+   37916,
+   35464,
+   32769,
+   45255,
+   45826,
+   46645,
+   57984,
+   57452
+  ],
+  "total_equity": [
+   34974,
+   30607,
+   31939,
+   34981,
+   29849,
+   45406,
+   48003,
+   49279,
+   64796,
+   64487
+  ],
+  "short_term_borrowings": [
+   1089,
+   2575,
+   112,
+   105,
+   619,
+   1200,
+   417,
+   1074,
+   1035,
+   1020
+  ],
+  "current_portion_ltd": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "long_term_debt": [
+   26186,
+   22435,
+   14856,
+   18108,
+   14750,
+   18734,
+   16226,
+   17863,
+   23289,
+   22424
+  ],
+  "finance_lease_current": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "finance_lease_noncurrent": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "operating_lease_current": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "operating_lease_noncurrent": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "tags_usados": {
+  "cash": {
+   "tag": "CashAndCashEquivalentsAtCarryingValue",
+   "filed": "variable, ver detalle por anio, todos 10-K, no truncado"
+  },
+  "short_term_investments": {
+   "tag": "ShortTermInvestments (fallback MarketableSecuritiesCurrent probado solo para 2021/2022, sin datos)",
+   "filed": "variable"
+  },
+  "total_current_assets": {
+   "tag": "AssetsCurrent",
+   "filed": "variable, todos 10-K"
+  },
+  "total_assets": {
+   "tag": "Assets",
+   "filed": "variable, todos 10-K"
+  },
+  "total_current_liabilities": {
+   "tag": "LiabilitiesCurrent",
+   "filed": "variable, todos 10-K"
+  },
+  "total_liabilities": {
+   "tag": "Liabilities",
+   "filed": "variable, todos 10-K"
+  },
+  "total_equity": {
+   "tag": "StockholdersEquity",
+   "filed": "variable, todos 10-K"
+  },
+  "short_term_borrowings": {
+   "tag": "ShortTermBorrowings -> CommercialPaper",
+   "filed": "sin datos 2016-2025 (CommercialPaper solo tiene datos 2009-2013); campo null"
+  },
+  "current_portion_ltd": {
+   "tag": "LongTermDebtCurrent",
+   "filed": "404, tag no usado por COP; campo null"
+  },
+  "long_term_debt": {
+   "tag": "LongTermDebt (companyconcept truncado en anios recientes) + verificacion via R.htm de los 10-K de FY2017, FY2019, FY2021, FY2023 y FY2025 para resolver huecos y restataciones; se uso el valor con 'filed' mas reciente por cada fecha",
+   "filed": "ver avisos, varia mucho entre vintages"
+  },
+  "finance_lease_current": {
+   "tag": "FinanceLeaseLiabilityCurrent",
+   "filed": "404, tag no usado por COP; campo null"
+  },
+  "finance_lease_noncurrent": {
+   "tag": "FinanceLeaseLiabilityNoncurrent",
+   "filed": "404, tag no usado por COP; campo null"
+  },
+  "operating_lease_current": {
+   "tag": "OperatingLeaseLiabilityCurrent",
+   "filed": "404, tag no usado por COP; campo null"
+  },
+  "operating_lease_noncurrent": {
+   "tag": "OperatingLeaseLiabilityNoncurrent",
+   "filed": "404, tag no usado por COP; campo null"
+  }
+ },
+ "avisos": [
+  "DebtCurrent (deuda con vencimiento a un anio, tag existe y con datos completos): 2016=1089, 2017=2575, 2018=112, 2019=105, 2020=619, 2021=1200, 2022=417, 2023=1074, 2024=1035, 2025=1020 (millones). Verificado contra la fila 'Short-term debt'/'Debt maturing within one year' en R.htm para 2016,2017,2020,2021,2022,2023,2024,2025: coincide exactamente. COP NO desglosa ShortTermBorrowings ni LongTermDebtCurrent por separado: usa una unica linea 'deuda a corto plazo' bajo el tag DebtCurrent. Por eso short_term_borrowings y current_portion_ltd quedan null en las filas (para no adivinar en que cubo va) y el valor real de deuda corriente esta aqui, en avisos, no en las filas.",
+  "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest (Total Equity con minoritarios): 2016=35226, 2017=30801, 2018=32064, 2019=35050, 2020=29849, 2021=45406, 2022=48003, 2023=49279, 2024=64796, 2025=64487. MinorityInterest (tag) = 404, no existe para COP. Minoritarios implicitos (Total Equity - total_equity atribuible a COP), verificados contra la fila 'Noncontrolling interests' en R.htm de 2016 y 2017: 2016=252, 2017=194, 2018=125, 2019=69, 2020=0, 2021=0, 2022=0, 2023=0, 2024=0, 2025=0. Es decir, COP tiene minoritarios materiales solo en 2016-2019; desde 2020 son cero.",
+  "Arrendamientos financieros pre-ASC842 (2016-2018): CapitalLeaseObligationsNoncurrent = 404 (tag no usado). El primer intento de traer CapitalLeaseObligationsCurrent devolvio unos valores (252, 194, 125, 69, 0) que, al contrastarlos, resultaron ser IDENTICOS a los minoritarios (ver aviso anterior) y no a arrendamientos: es decir, WebFetch invento/confundio la respuesta (el aviso del prompt sobre 'el modelo pequeño se inventa cifras' se cumplio aqui). Se descarto ese dato. No se pudo confirmar de forma fiable si existian obligaciones de arrendamiento de capital en 2016-2018; se deja null en vez de asumir cero.",
+  "Arrendamientos operativos y financieros post-ASC842 (2019 en adelante): los cuatro tags (FinanceLeaseLiabilityCurrent/Noncurrent, OperatingLeaseLiabilityCurrent/Noncurrent) devuelven 404 para COP. No es que el valor sea cero: simplemente COP no parece reportarlos como partidas separadas del balance bajo estos tags estandar (posiblemente incluidos dentro de 'Other liabilities' corriente/no corriente sin desglose XBRL propio). Los 4 campos quedan null real, no verificado.",
+  "long_term_debt: la partida 'Long-term debt' de COP se ha restatado o reclasificado de forma notable entre distintas vintages de filings para el mismo cierre. Ejemplos (valor original vs valor mas reciente usado, ambos en M$): 2017: 17128 (10-K FY2017, filed 2018-02-20) -> 22435 (comparativo en 10-K FY2018, filed 2019-02-19, USADO por ser el filed mas reciente). 2018: 16147 (10-K FY2018, filed 2019-02-19) -> 14856 (comparativo en 10-K FY2019, filed 2020-02-18, USADO). 2019: 14790 (10-K FY2019, filed 2020-02-18) -> 18108 (10-Q Q3-2020, filed 2020-11-03, USADO). 2020: 19106 (10-Q Q3-2021, filed 2021-11-04) -> 14750 (comparativo en 10-K FY2021, filed 2022-02-17, USADO). Se aplico la regla de quedarse con el filed mas reciente en todos los casos, pero el usuario deberia tratar estas cifras (sobre todo 2016-2020) con cautela dado el patron de reclasificacion.",
+  "El endpoint companyconcept de LongTermDebtNoncurrent devolvio 404 (COP no usa ese tag); se uso el tag alternativo LongTermDebt, cuyo JSON via WebFetch aparecio truncado/incompleto para 2016, 2021, 2022, 2023, 2024 y 2025. Se completaron esos anios via la via alternativa de paginas R.htm de los 10-K de FY2017 (2016,2017), FY2021 (2020,2021), FY2023 (2022,2023) y FY2025 (2024,2025), mas un fetch adicional del 10-K de FY2019 (R4.htm) para 2018 y 2019. Total de llamadas usadas: bien por debajo del limite de 20 que marca la instruccion para cambiar de via.",
+  "CONTROL Activo = Pasivo + Patrimonio (con minoritarios), los 10 ejercicios: CUADRA EXACTAMENTE en los 10 anios (2016-2025), usando total_equity + minoritarios implicitos de arriba. No hay descuadres.",
+  "Anclas: FY2024 activo total = 122780 (coincide exacto con la ancla ~122780). FY2024 patrimonio atribuible a COP = 64796 (coincide exacto con la ancla ~64796). FY2023 activo total = 95924 (coincide exacto con la ancla ~95924). Sin desviaciones.",
+  "short_term_investments: sin datos para 2021-12-31 y 2022-12-31 ni en ShortTermInvestments ni en MarketableSecuritiesCurrent (fallback). Se deja null, hueco real, no truncacion (hay datos limpios antes y despues de esos dos anios).",
+  "Rellenado el 2026-09-07 desde tags renombrados por la SEC: deuda a corto leida de us-gaap:DebtCurrent, la unica linea que publica COP para los vencimientos a un anio: ShortTermBorrowings y LongTermDebtCurrent dan 404 porque no desglosa. Se pone entera en short_term_borrowings y current_portion_ltd se queda vacio, para no contarla dos veces. Verificado contra la fila 'Debt maturing within one year' de las paginas R de los 10-K en 2016, 2017 y 2020-2025.",
+  "Rellenado el 2026-09-07 (short_term_investments) desde un tag renombrado o leido por otra via: deuda a corto leida de us-gaap:DebtCurrent, la unica linea que publica COP para los vencimientos a un anio: ShortTermBorrowings y LongTermDebtCurrent dan 404 porque no desglosa. Se pone entera en short_term_borrowings y current_portion_ltd se queda vacio, para no contarla dos veces. Verificado contra la fila 'Debt maturing within one year' de las paginas R de los 10-K en 2016, 2017 y 2020-2025. Las inversiones a corto de 2021 (446) y 2022 (2.785) salen de la pagina R5 del 10-K de FY2022 (expediente 0001163165-23-000006), cuya caja, activo corriente y activo total de los dos anios coinciden exactos con los ya extraidos."
+ ],
+ "homogeneizado": {
+  "tags_antiguos": [
+   "short_term_borrowings",
+   "short_term_investments"
+  ]
+ }
+}

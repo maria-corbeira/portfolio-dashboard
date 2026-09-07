@@ -40,10 +40,10 @@ y se explica por qué. Nunca se rellena con una estimación, una media ni un cer
   mano una vez (Actions → Run workflow). Hasta entonces `news.json` no existe y el
   panel de Home sale con su estado vacío, que es lo correcto.
 - 15 posiciones reales, 6 candidatas en watchlist.
-- **11 empresas analizadas con 10 años de la SEC**: GOOGL, MSFT, META, UBER, ISRG, NVDA,
-  WMT, IBM, AMZN, AAPL y CVX. Solo queda COP con el score de búsqueda web de la primera
-  sesión, y su ficha lo dice.
-- **Las once tienen P/E por ejercicio.** Los precios históricos de NVDA se cerraron el
+- **LAS DOCE empresas analizadas con 10 años de la SEC**: GOOGL, MSFT, META, UBER, ISRG,
+  NVDA, WMT, IBM, AMZN, AAPL, CVX y COP. Ya no queda ninguna con score de búsqueda web. Los
+  4 ETF de `outsideFramework` no entran en el scoring por diseño.
+- **Las doce tienen P/E por ejercicio.** Los precios históricos de NVDA se cerraron el
   6-sep-2026; con ellos aparece también su P/E frente a la mediana de 10 años (mediana
   50,9; hoy −8%).
 - **Lo que va saliendo:** WMT 63/100 y IBM 58/100, las dos Observar y por motivos
@@ -52,11 +52,13 @@ y se explica por qué. Nunca se rellena con una estimación, una media ni un cer
   3,1% al 11,2% en diez años) con la valoración sin colchón, porque el capex de IA se come
   el flujo libre. AAPL 72/100, Observar: **95 sobre 100 de calidad, el mejor negocio de la
   cartera, y los tres criterios de valoración fallando a la vez** (P/E 42,9, PEG 2,39, FCF
-  yield 2,06%). CVX 52/100, Observar, y es el caso distinto: aquí falla la calidad (ROIC medio
-  11,6%, ROE 13,0%) mientras el balance saca 82 y el FCF yield del 4,29% aprueba. Van cinco de
-  cinco en Observar y en cuatro de las cinco **el freno está en la pata de valoración, no en
-  la de calidad.** Ninguna ha salido Comprar todavía, y eso ya es un hallazgo sobre la cartera,
-  no sobre las empresas.
+  yield 2,06%). CVX 52/100 y COP 61/100, las dos Observar, y son el caso distinto: aquí falla la
+  calidad, no el precio. En las dos petroleras el balance saca 82 y el FCF yield aprueba;
+  COP además pasa el P/E, cosa que CVX no.
+- **LAS DOCE SALEN OBSERVAR.** Ninguna Comprar, ninguna Evitar. No es un empate, es un
+  resultado: en las de calidad alta el freno es siempre el precio, y en las dos petroleras es
+  la calidad. **Conviene hablarlo con Maria**, porque el marco no está señalando ningún sitio
+  donde poner dinero nuevo, y eso es información aunque no sea una recomendación.
 
 ---
 
@@ -216,6 +218,21 @@ con la que toca uno mismo, y validar cada valor contra una referencia independie
 fueron los precios sin ajustar, multiplicando por 40 antes del split de julio de 2021 y por
 10 antes del de junio de 2024. Es la misma disciplina de anclas de los subagentes de la
 sección 5, y por el mismo motivo.
+
+**Persigue los huecos: pueden cambiar el veredicto.** En COP faltaban las inversiones a corto
+de 2021 y 2022. Con el hueco, el ROIC medio de cinco años salía 13,8%; al cerrarlo, 18,1%. Es
+la diferencia entre suspender y aprobar el umbral del 12%, en la pata que pesa el 40%. Dos
+llamadas a una página R lo resolvieron. **Un `n.d.` en una métrica de cabecera no es un detalle
+cosmético**: antes de puntuar, mira qué agregados salen vacíos y por qué.
+
+**El aviso de un subagente vale más que su dato.** Los mejores momentos de estas extracciones
+no fueron los datos que trajeron, sino los que se negaron a traer: el BPA de 2018 de COP venía
+mal desde la SEC (el valor de 2019 duplicado) y el extractor lo detectó con el control de BPA
+por acciones, lo reportó y **no lo tocó**; el extractor del balance de COP se negó a repartir
+la deuda a corto entre dos cubos cuando la empresa la publica en una sola línea; y otro pilló a
+WebFetch devolviéndole como arrendamientos unas cifras que eran los minoritarios. Todo eso
+salió de instrucciones explícitas del brief: «si te desvías, NO ajustes, reporta» y «el modelo
+pequeño se inventa cifras plausibles». Escríbelas siempre.
 
 **Cuando el companyconcept viene truncado, tira de las páginas R del 10-K.** Los ficheros
 `companyconcept` de conceptos muy usados pueden ser enormes, y WebFetch los corta **por el

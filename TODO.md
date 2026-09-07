@@ -45,12 +45,20 @@
   precios: ya está arreglado, se vuelcan siempre. **Para decidir hace falta una pasada
   en día hábil**, y luego leer `errors` de `data.json`. Ejecutar `probe.yml` sirve para
   saber si responden, pero en fin de semana no distingue "rota" de "sin datos hoy".
-- [ ] **Solo queda COP por analizar con datos de la SEC.** Hoy tiene el score de búsqueda web
-  de la primera sesión. Hechas el 6-sep-2026: **WMT** (63/100, Observar) e **IBM** (58/100,
-  Observar). El 7-sep-2026: **AMZN** (70/100, Observar), **AAPL** (72/100, Observar) y **CVX**
-  (52/100, Observar). COP es la hermana de CVX: mismas trampas (sin margen bruto, sin resultado
-  de explotación etiquetado, ejercicios en pérdidas en 2016 y 2020), así que el brief de CVX
-  sirve casi tal cual. CIK de ConocoPhillips: 0001163165.
+- [x] **Las doce posiciones analizables ya tienen 10 años de datos de la SEC.** Se cerró el
+  7-sep-2026 con COP (61/100, Observar). Las doce salen **Observar**: ninguna Comprar y ninguna
+  Evitar. Eso no es un empate, es un resultado: en las de calidad alta el freno es siempre el
+  precio, y en las dos petroleras es la calidad. Merece una conversación con Maria sobre qué
+  hacer con el dinero nuevo, porque el marco no está señalando ningún sitio donde ponerlo.
+- [ ] **Los 4 ETF de `outsideFramework` siguen sin analizar** y no les aplica este scoring. Si
+  alguna vez se quiere una vista real de concentración, hace falta su composición, que hoy no
+  se estima a propósito.
+- [ ] **Arrendamientos de COP: ausencia no verificada.** Ni los cuatro tags nuevos ni los dos
+  antiguos devuelven nada en ningún ejercicio, así que la deuda total está algo infravalorada.
+  No se puso un cero. Se cerraría leyendo la nota de arrendamientos de un 10-K por la vía de
+  las páginas R.
+- [ ] **Retribución en acciones de COP sin etiquetar**, igual que en CVX: `sbc_pct_revenue`
+  sale n.d. en las dos petroleras.
 - [ ] **El marco de puntuación castiga a las cíclicas por construcción.** CVX saca 45 en
   calidad porque el umbral de ROIC del 12% y el de ROE del 15% no tienen sentido para una
   productora de materia prima que perdió dinero en 2016 y 2020 y ganó 35.465 M$ en 2022. Está

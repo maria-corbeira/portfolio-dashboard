@@ -172,6 +172,36 @@ TAGS_ANTIGUOS = {
             "y eso SI es real: Apple adopto la ASC 842 en el primer trimestre de FY2020, asi "
             "que antes no habia nada que reconocer en balance.",
     }],
+    # COP: ConocoPhillips NO desglosa la deuda a corto en papel comercial y porcion corriente
+    # de la deuda a largo: presenta una sola linea, "Debt maturing within one year", bajo el
+    # tag agregado DebtCurrent. Los dos tags que busca el extractor dan 404, y el extractor
+    # hizo lo correcto al dejarlos vacios en vez de adivinar en cual de los dos cubos meter la
+    # cifra. Se coloca aqui, en short_term_borrowings, que es el cubo que representa la deuda
+    # a corto en `build_src.py`. Los diez valores estan verificados contra la fila del balance
+    # en las paginas R de los 10-K en ocho de los diez ejercicios.
+    "COP": [{
+        "estado": "bs",
+        "valores": {
+            "short_term_borrowings": {
+                "2016": 1089, "2017": 2575, "2018": 112, "2019": 105, "2020": 619,
+                "2021": 1200, "2022": 417, "2023": 1074, "2024": 1035, "2025": 1020},
+            # Las inversiones a corto de 2021 y 2022 tampoco llegaron por la via XBRL, y sin
+            # ellas el ROIC de esos dos ejercicios salia n.d. porque el capital invertido resta
+            # caja mas inversiones. Leidas del mismo balance del 10-K de FY2022: en esa misma
+            # tabla la caja, el activo corriente y el activo total de los dos anios coinciden
+            # EXACTOS con lo ya extraido, asi que la fuente esta contrastada.
+            "short_term_investments": {"2021": 446, "2022": 2785},
+        },
+        "motivo":
+            "deuda a corto leida de us-gaap:DebtCurrent, la unica linea que publica COP para "
+            "los vencimientos a un anio: ShortTermBorrowings y LongTermDebtCurrent dan 404 "
+            "porque no desglosa. Se pone entera en short_term_borrowings y current_portion_ltd "
+            "se queda vacio, para no contarla dos veces. Verificado contra la fila 'Debt "
+            "maturing within one year' de las paginas R de los 10-K en 2016, 2017 y 2020-2025. "
+            "Las inversiones a corto de 2021 (446) y 2022 (2.785) salen de la pagina R5 del 10-K de "
+            "FY2022 (expediente 0001163165-23-000006), cuya caja, activo corriente y activo total "
+            "de los dos anios coinciden exactos con los ya extraidos.",
+    }],
     # CVX: aqui el hueco NO lo causo un tag renombrado, sino una limitacion de la herramienta.
     # Los ficheros companyconcept de LongTermDebtNoncurrent y CashAndCashEquivalentsAt
     # CarryingValue de Chevron son enormes y WebFetch los trunca POR EL FINAL; como los hechos
@@ -246,6 +276,40 @@ TAGS_ANTIGUOS = {
 # sociedades. Dejarla puesta hacia que build_src.py derivase un "margen bruto" del 38-45% que
 # no significa nada. Se anula: el margen bruto de Chevron sale n.d., que es la verdad.
 SERIES_REEMPLAZADAS = {
+    # COP / eps_diluted: el extractor trajo 6,40 para 2018, que es el valor de 2019 duplicado.
+    # Lo detecto el control BPA x acciones ~= beneficio neto, que fallaba un 20% solo en ese
+    # anio, y el extractor hizo lo correcto: lo reporto y NO lo toco. Pedir otra vez el mismo
+    # concepto a la API devolvio una respuesta todavia peor (2019 = 6,07, que contradice
+    # 7.189 / 1.123,54 = 6,40), asi que se fue a la pagina R2 del 10-K de FY2019
+    # (0001193125-20-039954), que da 2019 = 6,40, 2018 = 5,32 y 2017 = -0,70, con un beneficio
+    # neto de los tres anios identico al ya extraido. Solo cambia 2018.
+    "COP": [{
+        # Mismo caso exacto que Chevron: el tag existe, pero en una petrolera recoge solo la
+        # compra de crudo y productos, no un coste de ventas agregado. Restarlo de los ingresos
+        # daba un "margen bruto" del 56-68% que no significa nada para una empresa de
+        # exploracion y produccion, porque deja fuera los costes de extraccion, el agotamiento
+        # de reservas y los impuestos distintos del de sociedades.
+        "estado": "is",
+        "campo": "cogs",
+        "espera_actual": [9994, 12475, 14294, 11842, 8078, 18158, 33971, 21975, 20012, 22325],
+        "nueva": [None] * 10,
+        "motivo":
+            "us-gaap:CostOfGoodsAndServicesSold en COP es una partida parcial, no un coste de "
+            "ventas agregado, igual que en Chevron. Se anula para que el margen bruto salga "
+            "n.d. en vez de un 56-68% que no describe nada.",
+    }, {
+        "estado": "is",
+        "campo": "eps_diluted",
+        "espera_actual": [-2.91, -0.7, 6.4, 6.4, -2.51, 6.07, 14.57, 9.06, 7.81, 6.35],
+        "nueva": [-2.91, -0.7, 5.32, 6.4, -2.51, 6.07, 14.57, 9.06, 7.81, 6.35],
+        "motivo":
+            "BPA diluido de 2018 corregido de 6,40 a 5,32. El 6,40 era el valor de 2019 "
+            "duplicado: 6,40 x 1.175,54 M acciones daba 7.523 M$ frente a un beneficio neto "
+            "real de 6.257 M$, un 20% de desviacion. El valor bueno se leyo de la pagina R2 "
+            "del 10-K de FY2019 (expediente 0001193125-20-039954), que ademas repite el "
+            "beneficio neto de 2017, 2018 y 2019 identico al ya extraido. Los otros nueve "
+            "ejercicios no se tocan.",
+    }],
     "CVX": [{
         "estado": "is",
         "campo": "revenue",
@@ -308,12 +372,17 @@ def rellena_tags_antiguos(ticker: str) -> list:
 def _rellena_bloque(ticker: str, cfg: dict) -> list:
     p = RAW / f"{ticker}_{cfg['estado']}.json"
     d = json.loads(p.read_text(encoding="utf-8"))
-    if "tags_antiguos" in d.get("homogeneizado", {}):
-        return [f"{ticker}: tags antiguos ya rellenados, no se toca"]
-
+    # La marca de idempotencia va POR CAMPO, no por bloque. Si fuese por bloque, añadir mas
+    # tarde un campo nuevo a un fichero ya procesado quedaria bloqueado en silencio, que es
+    # justo lo que paso al recuperar las inversiones a corto de COP despues de la deuda.
+    hechos = set(d.get("homogeneizado", {}).get("tags_antiguos", []))
     anios = [f[:4] for f in d["fiscal_dates"]]
-    out = []
+    out, nuevos = [], []
+
     for campo, porano in cfg["valores"].items():
+        if campo in hechos:
+            out.append(f"{ticker}: {campo} ya rellenado, no se toca")
+            continue
         fila = d["rows"][campo]
         for anio, val in porano.items():
             i = anios.index(anio)
@@ -321,11 +390,14 @@ def _rellena_bloque(ticker: str, cfg: dict) -> list:
                 f"{ticker} {campo} {anio}: ya hay un valor de la SEC ({fila[i]}), no se pisa")
             fila[i] = val
             out.append(f"{ticker}: {campo} {anio} = {val}")
+        nuevos.append(campo)
 
-    d.setdefault("homogeneizado", {})["tags_antiguos"] = sorted(cfg["valores"])
+    if not nuevos:
+        return out
+    d.setdefault("homogeneizado", {})["tags_antiguos"] = sorted(hechos | set(nuevos))
     d.setdefault("avisos", []).append(
-        f"Rellenado el {date.today().isoformat()} desde tags renombrados por la SEC: "
-        f"{cfg['motivo']}")
+        f"Rellenado el {date.today().isoformat()} ({', '.join(nuevos)}) desde un tag renombrado "
+        f"o leido por otra via: {cfg['motivo']}")
     p.write_text(json.dumps(d, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return out
 

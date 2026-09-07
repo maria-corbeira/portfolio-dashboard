@@ -1,0 +1,214 @@
+{
+ "ticker": "COP",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "revenue": [
+   24360,
+   32584,
+   38727,
+   36670,
+   19256,
+   48349,
+   78494,
+   56141,
+   54745,
+   58944
+  ],
+  "cogs": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "gross_profit": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "operating_income": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "interest_expense": [
+   1279,
+   1114,
+   838,
+   799,
+   788,
+   887,
+   791,
+   824,
+   941,
+   1176
+  ],
+  "income_tax": [
+   1971,
+   1822,
+   -3668,
+   -2267,
+   485,
+   -4633,
+   -9548,
+   -5331,
+   -4427,
+   -4668
+  ],
+  "net_income": [
+   -3615,
+   -855,
+   6257,
+   7189,
+   -2701,
+   8079,
+   18680,
+   10957,
+   9245,
+   7988
+  ],
+  "eps_diluted": [
+   -2.91,
+   -0.7,
+   5.32,
+   6.4,
+   -2.51,
+   6.07,
+   14.57,
+   9.06,
+   7.81,
+   6.35
+  ],
+  "diluted_shares": [
+   1245.44,
+   1221.04,
+   1175.54,
+   1123.54,
+   1078.03,
+   1328.15,
+   1278.16,
+   1205.68,
+   1180.87,
+   1253.45
+  ],
+  "rd_expense": [
+   116,
+   100,
+   78,
+   82,
+   75,
+   62,
+   71,
+   81,
+   81,
+   78
+  ]
+ },
+ "tags_usados": {
+  "revenue": {
+   "tag": "Revenues",
+   "nota": "total 'Revenues and Other Income' (incluye resultado de participadas y plusvalias); filed mas reciente 2017-02-21 a 2026-02-17 segun el año"
+  },
+  "revenue_ventas_puras": {
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "serie_aparte": [
+    23693,
+    29106,
+    36417,
+    32567,
+    18784,
+    34590,
+    61049,
+    48522,
+    49418,
+    51824
+   ],
+   "nota": "serie de ventas puras (sin otros ingresos ni resultado de participadas), NO es la fila revenue"
+  },
+  "cogs": {
+   "tag": "CostOfGoodsAndServicesSold",
+   "filed": "2019-02-19 a 2026-02-17"
+  },
+  "gross_profit": {
+   "tag": "GrossProfit",
+   "resultado": "404 los 10 años"
+  },
+  "operating_income": {
+   "tag": "OperatingIncomeLoss",
+   "resultado": "404 los 10 años"
+  },
+  "interest_expense": {
+   "tag": "InterestExpenseDebt",
+   "nota": "InterestExpense (primer tag) dio 404 los 10 años; se uso el segundo tag InterestExpenseDebt, que si funciono"
+  },
+  "income_tax": {
+   "tag": "IncomeTaxExpenseBenefit",
+   "nota": "signo invertido respecto al valor bruto de la SEC"
+  },
+  "net_income": {
+   "tag": "NetIncomeLoss"
+  },
+  "eps_diluted": {
+   "tag": "EarningsPerShareDiluted"
+  },
+  "diluted_shares": {
+   "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+   "nota": "la API devolvio los valores en escalas mezcladas (miles para 2016-2021, unidades para 2022-2025); se normalizaron todos a millones dividiendo por la escala correspondiente"
+  },
+  "rd_expense": {
+   "tag": "ResearchAndDevelopmentExpense",
+   "nota": "no dio 404: COP si reporta una partida pequeña bajo este tag los 10 años"
+  }
+ },
+ "avisos": [
+  "revenue: se puso la cifra TOTAL del tag Revenues (incluye otros ingresos/participadas), no la de ventas puras. La serie de ventas puras (tag RevenueFromContractWithCustomerExcludingAssessedTax) se deja aparte en tags_usados.revenue_ventas_puras.",
+  "ANCLA revenue FY2024 ~56.954M no coincide: Revenues (total) dio 54.745M (desviacion 3.9%) y la de ventas puras dio 49.418M (desviacion 13.2%). Ninguna de las dos tags cuadra con el ancla; no se ajusto nada, es posible que el ancla este equivocada o se refiera a otra metrica.",
+  "ANCLA net_income FY2024 ~9.245M: coincide exactamente con NetIncomeLoss (9.245.000.000). ANCLA net_income FY2023 ~10.957M: coincide exactamente (10.957.000.000).",
+  "cogs (CostOfGoodsAndServicesSold): se devolvio un valor los 10 años (entre 8.078M y 33.971M, ~25-45% de revenue). No hay forma de confirmar desde el JSON si es un COGS agregado o una partida parcial tipo 'purchased commodities/production costs' como paso con Chevron; se deja tal cual, sin sumar nada por mi cuenta.",
+  "gross_profit y operating_income: 404 los 10 años con sus tags unicos permitidos (GrossProfit, OperatingIncomeLoss). Quedan null, tal como se esperaba.",
+  "interest_expense: el tag InterestExpense dio 404 los 10 años; se uso el segundo tag permitido, InterestExpenseDebt, que si devolvio los 10 años.",
+  "income_tax con signo ya invertido (negativo=gasto, positivo=beneficio fiscal): 2016 +1.971 (beneficio), 2017 +1.822 (beneficio), 2018 -3.668 (gasto), 2019 -2.267 (gasto), 2020 +485 (beneficio), 2021 -4.633 (gasto), 2022 -9.548 (gasto), 2023 -5.331 (gasto), 2024 -4.427 (gasto), 2025 -4.668 (gasto). Los signos en 2016 y 2020 (beneficio fiscal en años de perdida) son coherentes con lo esperado.",
+  "CONTROL neto negativo 2016/2020: se cumple (net_income -3.615M en 2016 y -2.701M en 2020, coinciden con las anclas).",
+  "CONTROL BPA x acciones diluidas vs beneficio neto: cuadra en 9 de los 10 años (desviacion <0.4%). El año 2018 desvia fuerte: EPS diluido reportado 6.40 x acciones 1.175,54M = 7.523M, pero net_income real es 6.257M (desviacion ~20%). Sospecho que el valor de EarningsPerShareDiluted extraido para 2018 (6.40) es erroneo/duplicado del de 2019 (tambien 6.40); no lo he corregido ni interpolado, se deja el valor tal como vino de la API.",
+  "diluted_shares: la API devolvio escalas distintas por año (2016-2021 en miles, ej. 1.245.440; 2022-2025 en unidades, ej. 1.278.163.000). Se normalizo todo a millones (1.245,44 ... 1.253,45) contrastando contra el numero de acciones conocido de COP; los saltos de 1.078,03M (2020) a 1.328,15M (2021) por Concho/Shell Permico, y de 1.180,87M (2024) a 1.253,45M (2025) por Marathon Oil, son coherentes con las adquisiciones, no con splits.",
+  "rd_expense: contra lo esperado (404 en Chevron), aqui el tag ResearchAndDevelopmentExpense SI devolvio valores pequeños los 10 años (62-116M).",
+  "Fila `eps_diluted` REEMPLAZADA el 2026-09-07: BPA diluido de 2018 corregido de 6,40 a 5,32. El 6,40 era el valor de 2019 duplicado: 6,40 x 1.175,54 M acciones daba 7.523 M$ frente a un beneficio neto real de 6.257 M$, un 20% de desviacion. El valor bueno se leyo de la pagina R2 del 10-K de FY2019 (expediente 0001193125-20-039954), que ademas repite el beneficio neto de 2017, 2018 y 2019 identico al ya extraido. Los otros nueve ejercicios no se tocan.",
+  "Fila `cogs` REEMPLAZADA el 2026-09-07: us-gaap:CostOfGoodsAndServicesSold en COP es una partida parcial, no un coste de ventas agregado, igual que en Chevron. Se anula para que el margen bruto salga n.d. en vez de un 56-68% que no describe nada."
+ ],
+ "homogeneizado": {
+  "series_reemplazadas": [
+   "eps_diluted",
+   "cogs"
+  ]
+ }
+}

@@ -1,0 +1,598 @@
+{
+  "company": "ConocoPhillips",
+  "ticker": "COP",
+  "fiscal_dates": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+  ],
+  "sheets": {
+    "7.TIKR_IS": {
+      "Total Revenues": [
+        24360,
+        32584,
+        38727,
+        36670,
+        19256,
+        48349,
+        78494,
+        56141,
+        54745,
+        58944
+      ],
+      "Cost of Goods Sold": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Gross Profit": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Operating Income": [
+        -4307,
+        -1563,
+        10763,
+        10255,
+        -2398,
+        13599,
+        29019,
+        17112,
+        14613,
+        13832
+      ],
+      "EBITDA": [
+        4755,
+        5282,
+        16719,
+        16345,
+        3123,
+        20807,
+        36523,
+        25382,
+        24212,
+        25332
+      ],
+      "Interest Expense": [
+        1279,
+        1114,
+        838,
+        799,
+        788,
+        887,
+        791,
+        824,
+        941,
+        1176
+      ],
+      "EBT Incl. Unusual Items": [
+        -5586,
+        -2677,
+        9925,
+        9456,
+        -3186,
+        12712,
+        28228,
+        16288,
+        13672,
+        12656
+      ],
+      "Income Tax Expense": [
+        1971,
+        1822,
+        -3668,
+        -2267,
+        485,
+        -4633,
+        -9548,
+        -5331,
+        -4427,
+        -4668
+      ],
+      "Net Income": [
+        -3615,
+        -855,
+        6257,
+        7189,
+        -2701,
+        8079,
+        18680,
+        10957,
+        9245,
+        7988
+      ],
+      "Diluted EPS Excl Extra Items": [
+        -2.91,
+        -0.7,
+        5.32,
+        6.4,
+        -2.51,
+        6.07,
+        14.57,
+        9.06,
+        7.81,
+        6.35
+      ],
+      "Weighted Average Diluted Shares Outstanding": [
+        1245.44,
+        1221.04,
+        1175.54,
+        1123.54,
+        1078.03,
+        1328.15,
+        1278.16,
+        1205.68,
+        1180.87,
+        1253.45
+      ],
+      "R&D Expenses": [
+        116,
+        100,
+        78,
+        82,
+        75,
+        62,
+        71,
+        81,
+        81,
+        78
+      ]
+    },
+    "8.TIKR_BS": {
+      "Cash And Equivalents": [
+        3610,
+        6325,
+        5915,
+        5088,
+        2991,
+        5028,
+        6458,
+        5635,
+        5607,
+        6497
+      ],
+      "Total Cash And Short Term Investments": [
+        3660,
+        8198,
+        6163,
+        8116,
+        6600,
+        5474,
+        9243,
+        6606,
+        6114,
+        6981
+      ],
+      "Total Current Assets": [
+        8609,
+        16512,
+        13274,
+        16913,
+        12066,
+        16050,
+        18749,
+        14330,
+        15647,
+        15532
+      ],
+      "Total Current Liabilities": [
+        6909,
+        9397,
+        7395,
+        7043,
+        5366,
+        12021,
+        12847,
+        10005,
+        12124,
+        11972
+      ],
+      "Total Assets": [
+        89772,
+        73362,
+        69980,
+        70514,
+        62618,
+        90661,
+        93829,
+        95924,
+        122780,
+        121939
+      ],
+      "Total Liabilities": [
+        54546,
+        42561,
+        37916,
+        35464,
+        32769,
+        45255,
+        45826,
+        46645,
+        57984,
+        57452
+      ],
+      "Total Equity": [
+        34974,
+        30607,
+        31939,
+        34981,
+        29849,
+        45406,
+        48003,
+        49279,
+        64796,
+        64487
+      ],
+      "Total Debt": [
+        27275,
+        25010,
+        14968,
+        18213,
+        15369,
+        19934,
+        16643,
+        18937,
+        24324,
+        23444
+      ],
+      "Net Debt": [
+        23615,
+        16812,
+        8805,
+        10097,
+        8769,
+        14460,
+        7400,
+        12331,
+        18210,
+        16463
+      ]
+    },
+    "9.TIKR_CF": {
+      "Cash from Operations": [
+        4403,
+        7077,
+        12934,
+        11104,
+        4802,
+        16996,
+        28314,
+        19965,
+        20124,
+        19796
+      ],
+      "Capital Expenditure": [
+        -4869,
+        -4591,
+        -6750,
+        -6636,
+        -4715,
+        -5324,
+        -10159,
+        -11248,
+        -12118,
+        -12553
+      ],
+      "Free Cash Flow": [
+        -466,
+        2486,
+        6184,
+        4468,
+        87,
+        11672,
+        18155,
+        8717,
+        8006,
+        7243
+      ],
+      "Depreciation & Amortization": [
+        9062,
+        6845,
+        5956,
+        6090,
+        5521,
+        7208,
+        7504,
+        8270,
+        9599,
+        11500
+      ],
+      "Stock-Based Compensation": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Repurchase of Common Stock": [
+        -126,
+        -3000,
+        -2999,
+        -3500,
+        -892,
+        -3623,
+        -9270,
+        -5400,
+        -5463,
+        -5018
+      ],
+      "Common & Preferred Stock Dividends Paid": [
+        -1253,
+        -1305,
+        -1363,
+        -1500,
+        -1831,
+        -2359,
+        -5726,
+        -5583,
+        -3646,
+        -3995
+      ]
+    },
+    "10.TIKR_Val": {
+      "Market Cap (MM)": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Price": [
+        50.14,
+        54.89,
+        62.35,
+        65.03,
+        39.99,
+        72.18,
+        118.0,
+        116.07,
+        99.17,
+        93.61
+      ]
+    }
+  },
+  "notas": {
+    "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por ejercicio (cifras reexpresadas cuando las hay)",
+    "extraido": "2026-09-05",
+    "derivadas": [
+      "Gross Profit = Total Revenues - Cost of Goods Sold (la empresa no etiqueta GrossProfit en XBRL)",
+      "EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)",
+      "Operating Income = EBT + Interest Expense (el emisor no etiqueta OperatingIncomeLoss; incluye resultados no operativos y deterioros)",
+      "EBITDA = Operating Income + Depreciation & Amortization",
+      "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
+      "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
+      "Free Cash Flow = Cash from Operations + Capital Expenditure"
+    ],
+    "deuda_incompleta": [
+      "2016: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2017: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2018: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2019: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2020: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2021: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2022: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2023: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2024: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2025: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente"
+    ],
+    "control_splits": {
+      "cuadra": true,
+      "desviaciones": []
+    },
+    "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "discontinuidad": null,
+    "tags_is": {
+      "revenue": {
+        "tag": "Revenues",
+        "nota": "total 'Revenues and Other Income' (incluye resultado de participadas y plusvalias); filed mas reciente 2017-02-21 a 2026-02-17 segun el año"
+      },
+      "revenue_ventas_puras": {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "serie_aparte": [
+          23693,
+          29106,
+          36417,
+          32567,
+          18784,
+          34590,
+          61049,
+          48522,
+          49418,
+          51824
+        ],
+        "nota": "serie de ventas puras (sin otros ingresos ni resultado de participadas), NO es la fila revenue"
+      },
+      "cogs": {
+        "tag": "CostOfGoodsAndServicesSold",
+        "filed": "2019-02-19 a 2026-02-17"
+      },
+      "gross_profit": {
+        "tag": "GrossProfit",
+        "resultado": "404 los 10 años"
+      },
+      "operating_income": {
+        "tag": "OperatingIncomeLoss",
+        "resultado": "404 los 10 años"
+      },
+      "interest_expense": {
+        "tag": "InterestExpenseDebt",
+        "nota": "InterestExpense (primer tag) dio 404 los 10 años; se uso el segundo tag InterestExpenseDebt, que si funciono"
+      },
+      "income_tax": {
+        "tag": "IncomeTaxExpenseBenefit",
+        "nota": "signo invertido respecto al valor bruto de la SEC"
+      },
+      "net_income": {
+        "tag": "NetIncomeLoss"
+      },
+      "eps_diluted": {
+        "tag": "EarningsPerShareDiluted"
+      },
+      "diluted_shares": {
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "nota": "la API devolvio los valores en escalas mezcladas (miles para 2016-2021, unidades para 2022-2025); se normalizaron todos a millones dividiendo por la escala correspondiente"
+      },
+      "rd_expense": {
+        "tag": "ResearchAndDevelopmentExpense",
+        "nota": "no dio 404: COP si reporta una partida pequeña bajo este tag los 10 años"
+      }
+    },
+    "tags_bs": {
+      "cash": {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "filed": "variable, ver detalle por anio, todos 10-K, no truncado"
+      },
+      "short_term_investments": {
+        "tag": "ShortTermInvestments (fallback MarketableSecuritiesCurrent probado solo para 2021/2022, sin datos)",
+        "filed": "variable"
+      },
+      "total_current_assets": {
+        "tag": "AssetsCurrent",
+        "filed": "variable, todos 10-K"
+      },
+      "total_assets": {
+        "tag": "Assets",
+        "filed": "variable, todos 10-K"
+      },
+      "total_current_liabilities": {
+        "tag": "LiabilitiesCurrent",
+        "filed": "variable, todos 10-K"
+      },
+      "total_liabilities": {
+        "tag": "Liabilities",
+        "filed": "variable, todos 10-K"
+      },
+      "total_equity": {
+        "tag": "StockholdersEquity",
+        "filed": "variable, todos 10-K"
+      },
+      "short_term_borrowings": {
+        "tag": "ShortTermBorrowings -> CommercialPaper",
+        "filed": "sin datos 2016-2025 (CommercialPaper solo tiene datos 2009-2013); campo null"
+      },
+      "current_portion_ltd": {
+        "tag": "LongTermDebtCurrent",
+        "filed": "404, tag no usado por COP; campo null"
+      },
+      "long_term_debt": {
+        "tag": "LongTermDebt (companyconcept truncado en anios recientes) + verificacion via R.htm de los 10-K de FY2017, FY2019, FY2021, FY2023 y FY2025 para resolver huecos y restataciones; se uso el valor con 'filed' mas reciente por cada fecha",
+        "filed": "ver avisos, varia mucho entre vintages"
+      },
+      "finance_lease_current": {
+        "tag": "FinanceLeaseLiabilityCurrent",
+        "filed": "404, tag no usado por COP; campo null"
+      },
+      "finance_lease_noncurrent": {
+        "tag": "FinanceLeaseLiabilityNoncurrent",
+        "filed": "404, tag no usado por COP; campo null"
+      },
+      "operating_lease_current": {
+        "tag": "OperatingLeaseLiabilityCurrent",
+        "filed": "404, tag no usado por COP; campo null"
+      },
+      "operating_lease_noncurrent": {
+        "tag": "OperatingLeaseLiabilityNoncurrent",
+        "filed": "404, tag no usado por COP; campo null"
+      }
+    },
+    "tags_cf": {
+      "cfo": {
+        "tag": "NetCashProvidedByUsedInOperatingActivities",
+        "filed": "2017-02-21 a 2026-02-17 (un filing 10-K por anio)"
+      },
+      "capex": {
+        "tag": "PaymentsToAcquireProductiveAssets (linea COP: \"Capital expenditures and investments\")",
+        "filed": "2016-2022 via companyconcept API (filed 2017-02-21 a 2023-02-16); 2023-2025 via paginas R de los 10-K (R7 del accession 0001163165-26-000009, filed 2026-02-17) porque el companyconcept vino truncado. Tag alternativo PaymentsToAcquirePropertyPlantAndEquipment dio 404."
+      },
+      "depreciation_amortization": {
+        "tag": "ninguno de companyconcept funciono (DepreciationDepletionAndAmortization y DepreciationAmortizationAndAccretionNet dieron 404 los dos)",
+        "filed": "obtenido de la linea \"Depreciation, depletion and amortization\" de las paginas R (Consolidated Statement of Cash Flows) de los 4 10-K: accessions 000119312517050077, 000119312520039954, 000116316523000006, 000116316526000009"
+      },
+      "stock_based_compensation": {
+        "tag": "ShareBasedCompensation -> 404 confirmado dos veces",
+        "filed": null
+      },
+      "buybacks": {
+        "tag": "PaymentsForRepurchaseOfCommonStock",
+        "filed": "verificado exacto contra la linea \"Repurchase of company common stock\" de las paginas R de los 10-K"
+      },
+      "dividends_paid": {
+        "tag": "PaymentsOfDividendsCommonStock",
+        "filed": "verificado exacto contra la linea \"Dividends paid\" de las paginas R de los 10-K"
+      },
+      "cash_taxes_paid": {
+        "tag": "IncomeTaxesPaidNet",
+        "filed": "consistente en dos fetches independientes con instruccion anti-alucinacion; no aparece en la cara del estado de flujos (no se pudo cruzar contra pagina R), pero coherente con la evolucion de beneficios"
+      }
+    },
+    "avisos_extraccion": [
+      "revenue: se puso la cifra TOTAL del tag Revenues (incluye otros ingresos/participadas), no la de ventas puras. La serie de ventas puras (tag RevenueFromContractWithCustomerExcludingAssessedTax) se deja aparte en tags_usados.revenue_ventas_puras.",
+      "ANCLA revenue FY2024 ~56.954M no coincide: Revenues (total) dio 54.745M (desviacion 3.9%) y la de ventas puras dio 49.418M (desviacion 13.2%). Ninguna de las dos tags cuadra con el ancla; no se ajusto nada, es posible que el ancla este equivocada o se refiera a otra metrica.",
+      "ANCLA net_income FY2024 ~9.245M: coincide exactamente con NetIncomeLoss (9.245.000.000). ANCLA net_income FY2023 ~10.957M: coincide exactamente (10.957.000.000).",
+      "cogs (CostOfGoodsAndServicesSold): se devolvio un valor los 10 años (entre 8.078M y 33.971M, ~25-45% de revenue). No hay forma de confirmar desde el JSON si es un COGS agregado o una partida parcial tipo 'purchased commodities/production costs' como paso con Chevron; se deja tal cual, sin sumar nada por mi cuenta.",
+      "gross_profit y operating_income: 404 los 10 años con sus tags unicos permitidos (GrossProfit, OperatingIncomeLoss). Quedan null, tal como se esperaba.",
+      "interest_expense: el tag InterestExpense dio 404 los 10 años; se uso el segundo tag permitido, InterestExpenseDebt, que si devolvio los 10 años.",
+      "income_tax con signo ya invertido (negativo=gasto, positivo=beneficio fiscal): 2016 +1.971 (beneficio), 2017 +1.822 (beneficio), 2018 -3.668 (gasto), 2019 -2.267 (gasto), 2020 +485 (beneficio), 2021 -4.633 (gasto), 2022 -9.548 (gasto), 2023 -5.331 (gasto), 2024 -4.427 (gasto), 2025 -4.668 (gasto). Los signos en 2016 y 2020 (beneficio fiscal en años de perdida) son coherentes con lo esperado.",
+      "CONTROL neto negativo 2016/2020: se cumple (net_income -3.615M en 2016 y -2.701M en 2020, coinciden con las anclas).",
+      "CONTROL BPA x acciones diluidas vs beneficio neto: cuadra en 9 de los 10 años (desviacion <0.4%). El año 2018 desvia fuerte: EPS diluido reportado 6.40 x acciones 1.175,54M = 7.523M, pero net_income real es 6.257M (desviacion ~20%). Sospecho que el valor de EarningsPerShareDiluted extraido para 2018 (6.40) es erroneo/duplicado del de 2019 (tambien 6.40); no lo he corregido ni interpolado, se deja el valor tal como vino de la API.",
+      "diluted_shares: la API devolvio escalas distintas por año (2016-2021 en miles, ej. 1.245.440; 2022-2025 en unidades, ej. 1.278.163.000). Se normalizo todo a millones (1.245,44 ... 1.253,45) contrastando contra el numero de acciones conocido de COP; los saltos de 1.078,03M (2020) a 1.328,15M (2021) por Concho/Shell Permico, y de 1.180,87M (2024) a 1.253,45M (2025) por Marathon Oil, son coherentes con las adquisiciones, no con splits.",
+      "rd_expense: contra lo esperado (404 en Chevron), aqui el tag ResearchAndDevelopmentExpense SI devolvio valores pequeños los 10 años (62-116M).",
+      "Fila `eps_diluted` REEMPLAZADA el 2026-09-07: BPA diluido de 2018 corregido de 6,40 a 5,32. El 6,40 era el valor de 2019 duplicado: 6,40 x 1.175,54 M acciones daba 7.523 M$ frente a un beneficio neto real de 6.257 M$, un 20% de desviacion. El valor bueno se leyo de la pagina R2 del 10-K de FY2019 (expediente 0001193125-20-039954), que ademas repite el beneficio neto de 2017, 2018 y 2019 identico al ya extraido. Los otros nueve ejercicios no se tocan.",
+      "Fila `cogs` REEMPLAZADA el 2026-09-07: us-gaap:CostOfGoodsAndServicesSold en COP es una partida parcial, no un coste de ventas agregado, igual que en Chevron. Se anula para que el margen bruto salga n.d. en vez de un 56-68% que no describe nada.",
+      "DebtCurrent (deuda con vencimiento a un anio, tag existe y con datos completos): 2016=1089, 2017=2575, 2018=112, 2019=105, 2020=619, 2021=1200, 2022=417, 2023=1074, 2024=1035, 2025=1020 (millones). Verificado contra la fila 'Short-term debt'/'Debt maturing within one year' en R.htm para 2016,2017,2020,2021,2022,2023,2024,2025: coincide exactamente. COP NO desglosa ShortTermBorrowings ni LongTermDebtCurrent por separado: usa una unica linea 'deuda a corto plazo' bajo el tag DebtCurrent. Por eso short_term_borrowings y current_portion_ltd quedan null en las filas (para no adivinar en que cubo va) y el valor real de deuda corriente esta aqui, en avisos, no en las filas.",
+      "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest (Total Equity con minoritarios): 2016=35226, 2017=30801, 2018=32064, 2019=35050, 2020=29849, 2021=45406, 2022=48003, 2023=49279, 2024=64796, 2025=64487. MinorityInterest (tag) = 404, no existe para COP. Minoritarios implicitos (Total Equity - total_equity atribuible a COP), verificados contra la fila 'Noncontrolling interests' en R.htm de 2016 y 2017: 2016=252, 2017=194, 2018=125, 2019=69, 2020=0, 2021=0, 2022=0, 2023=0, 2024=0, 2025=0. Es decir, COP tiene minoritarios materiales solo en 2016-2019; desde 2020 son cero.",
+      "Arrendamientos financieros pre-ASC842 (2016-2018): CapitalLeaseObligationsNoncurrent = 404 (tag no usado). El primer intento de traer CapitalLeaseObligationsCurrent devolvio unos valores (252, 194, 125, 69, 0) que, al contrastarlos, resultaron ser IDENTICOS a los minoritarios (ver aviso anterior) y no a arrendamientos: es decir, WebFetch invento/confundio la respuesta (el aviso del prompt sobre 'el modelo pequeño se inventa cifras' se cumplio aqui). Se descarto ese dato. No se pudo confirmar de forma fiable si existian obligaciones de arrendamiento de capital en 2016-2018; se deja null en vez de asumir cero.",
+      "Arrendamientos operativos y financieros post-ASC842 (2019 en adelante): los cuatro tags (FinanceLeaseLiabilityCurrent/Noncurrent, OperatingLeaseLiabilityCurrent/Noncurrent) devuelven 404 para COP. No es que el valor sea cero: simplemente COP no parece reportarlos como partidas separadas del balance bajo estos tags estandar (posiblemente incluidos dentro de 'Other liabilities' corriente/no corriente sin desglose XBRL propio). Los 4 campos quedan null real, no verificado.",
+      "long_term_debt: la partida 'Long-term debt' de COP se ha restatado o reclasificado de forma notable entre distintas vintages de filings para el mismo cierre. Ejemplos (valor original vs valor mas reciente usado, ambos en M$): 2017: 17128 (10-K FY2017, filed 2018-02-20) -> 22435 (comparativo en 10-K FY2018, filed 2019-02-19, USADO por ser el filed mas reciente). 2018: 16147 (10-K FY2018, filed 2019-02-19) -> 14856 (comparativo en 10-K FY2019, filed 2020-02-18, USADO). 2019: 14790 (10-K FY2019, filed 2020-02-18) -> 18108 (10-Q Q3-2020, filed 2020-11-03, USADO). 2020: 19106 (10-Q Q3-2021, filed 2021-11-04) -> 14750 (comparativo en 10-K FY2021, filed 2022-02-17, USADO). Se aplico la regla de quedarse con el filed mas reciente en todos los casos, pero el usuario deberia tratar estas cifras (sobre todo 2016-2020) con cautela dado el patron de reclasificacion.",
+      "El endpoint companyconcept de LongTermDebtNoncurrent devolvio 404 (COP no usa ese tag); se uso el tag alternativo LongTermDebt, cuyo JSON via WebFetch aparecio truncado/incompleto para 2016, 2021, 2022, 2023, 2024 y 2025. Se completaron esos anios via la via alternativa de paginas R.htm de los 10-K de FY2017 (2016,2017), FY2021 (2020,2021), FY2023 (2022,2023) y FY2025 (2024,2025), mas un fetch adicional del 10-K de FY2019 (R4.htm) para 2018 y 2019. Total de llamadas usadas: bien por debajo del limite de 20 que marca la instruccion para cambiar de via.",
+      "CONTROL Activo = Pasivo + Patrimonio (con minoritarios), los 10 ejercicios: CUADRA EXACTAMENTE en los 10 anios (2016-2025), usando total_equity + minoritarios implicitos de arriba. No hay descuadres.",
+      "Anclas: FY2024 activo total = 122780 (coincide exacto con la ancla ~122780). FY2024 patrimonio atribuible a COP = 64796 (coincide exacto con la ancla ~64796). FY2023 activo total = 95924 (coincide exacto con la ancla ~95924). Sin desviaciones.",
+      "short_term_investments: sin datos para 2021-12-31 y 2022-12-31 ni en ShortTermInvestments ni en MarketableSecuritiesCurrent (fallback). Se deja null, hueco real, no truncacion (hay datos limpios antes y despues de esos dos anios).",
+      "Rellenado el 2026-09-07 desde tags renombrados por la SEC: deuda a corto leida de us-gaap:DebtCurrent, la unica linea que publica COP para los vencimientos a un anio: ShortTermBorrowings y LongTermDebtCurrent dan 404 porque no desglosa. Se pone entera en short_term_borrowings y current_portion_ltd se queda vacio, para no contarla dos veces. Verificado contra la fila 'Debt maturing within one year' de las paginas R de los 10-K en 2016, 2017 y 2020-2025.",
+      "Rellenado el 2026-09-07 (short_term_investments) desde un tag renombrado o leido por otra via: deuda a corto leida de us-gaap:DebtCurrent, la unica linea que publica COP para los vencimientos a un anio: ShortTermBorrowings y LongTermDebtCurrent dan 404 porque no desglosa. Se pone entera en short_term_borrowings y current_portion_ltd se queda vacio, para no contarla dos veces. Verificado contra la fila 'Debt maturing within one year' de las paginas R de los 10-K en 2016, 2017 y 2020-2025. Las inversiones a corto de 2021 (446) y 2022 (2.785) salen de la pagina R5 del 10-K de FY2022 (expediente 0001163165-23-000006), cuya caja, activo corriente y activo total de los dos anios coinciden exactos con los ya extraidos.",
+      "ALERTA DE PROCESO: la primera pasada de WebFetch sobre companyconcept devolvio series NUMERICAS INTERCAMBIADAS entre stock_based_compensation, buybacks, dividends_paid y cash_taxes_paid (el modelo pequeno mezclo/invento datos). Se detecto porque los importes de 'SBC' eran de escala imposible (hasta 9.270 M$/anio). Se corrigio re-pidiendo cada tag con instruccion explicita anti-alucinacion y, sobre todo, verificando buybacks y dividends_paid contra las paginas R (Consolidated Statement of Cash Flows) de los 10-K reales: ambos coinciden EXACTOS con las lineas 'Repurchase of company common stock' y 'Dividends paid'.",
+      "capex: companyconcept vino truncado (se corto tras 2022, sin llegar a 2023-2025). Se completo con las paginas R de los 10-K en vez de reintentar la API, tal como indica la instruccion. La linea usada es 'Capital expenditures and investments' de COP; en el mismo estado de flujos existe una linea aparte 'Acquisition of business, net of cash acquired' (Concho/Permico Shell/Marathon) que NO se incluyo.",
+      "depreciation_amortization: los dos tags XBRL estandar dieron 404 en companyconcept. Se obtuvo integramente de las paginas R de los 4 10-K necesarios para cubrir los 10 anios. Es la linea completa 'Depreciation, depletion and amortization', SI incluye el agotamiento de reservas (los importes son del orden de 6.000-11.500 M$/anio como se esperaba); no es un tag parcial.",
+      "stock_based_compensation: null en los 10 anios. El tag ShareBasedCompensation da 404 y las paginas R del estado de flujos no muestran ninguna linea de compensacion en acciones (igual que en Chevron: COP no la desglosa aparte).",
+      "cash_taxes_paid: no aparece en la cara del Consolidated Statement of Cash Flows (no se pudo cruzar contra pagina R), asi que se deja el valor de IncomeTaxesPaidNet obtenido de companyconcept, confirmado igual en dos llamadas independientes con aviso anti-alucinacion. 2016 sale negativo (-318 M$, devolucion neta de impuestos), el resto positivo.",
+      "Signos aplicados: cfo y cash_taxes_paid con el signo tal cual reporta la SEC (cash_taxes_paid negativo = devolucion neta). capex, buybacks y dividends_paid convertidos a NEGATIVOS (la SEC los publica como 'pagos por' en positivo); aguas abajo fcf = cfo + capex.",
+      "Ciclicidad confirmada, no se ha suavizado nada: cfo cae a 4.403 M$ en 2016 y a 4.802 M$ en 2020, y se dispara a 28.314 M$ en 2022.",
+      "Control fcf = cfo + capex: NEGATIVO solo en 2016 (-466 M$). Casi cero en 2020 (+87 M$). Resto positivo, maximo en 2022 (+18.155 M$).",
+      "Control dividendos+recompras / FCF: supera el 100% en 2016 (FCF negativo), 2017 (~173%), 2019 (~112%), 2020 (FCF casi cero, ratio disparado), 2023 (~126%), 2024 (~114%) y 2025 (~124%). Solo queda claramente por debajo del 100% en 2018, 2021 y 2022.",
+      "dividends_paid incluye dividendo ordinario Y devolucion variable de capital (VROC) juntos: COP no los separa en la cara del estado de flujos, solo hay una linea 'Dividends paid'. El salto de 2.359 M$ (2021) a 5.726 M$ (2022) refleja la rampa de la VROC iniciada a mediados de 2021.",
+      "Anclas: FY2024 cfo=20.124 M$ (coincide exacto con la ancla ~20.124 M$). FY2024 capex=-12.118 M$ vs ancla ~-12.120 M$ (desviacion 0,02%, dentro de tolerancia). FY2022 cfo=28.314 M$ (coincide exacto con la ancla ~28.314 M$)."
+    ]
+  }
+}
