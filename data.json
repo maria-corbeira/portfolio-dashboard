@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T20:27:53+00:00",
+  "generated_at": "2026-09-07T00:37:43+00:00",
   "count": 21,
   "failed": [],
   "prices": {
@@ -174,168 +174,168 @@
   },
   "indicadores": {
     "NVDA": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "MSFT": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "GOOGL": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "META": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "ISRG": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "UBER": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "AMZN": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "AAPL": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "IBM": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "COP": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "WMT": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "CVX": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "QQQ": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "VOO": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "IAUM": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "PGR": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "V": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "PLTR": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "LULU": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "UNP": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
     },
     "SHEL": {
-      "sesiones": 1,
-      "var_1d": null,
+      "sesiones": 2,
+      "var_1d": 0.0,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
