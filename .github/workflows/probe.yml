@@ -1,5 +1,15 @@
 name: Probe fuentes
-on: { workflow_dispatch: {} }
+on:
+  schedule:
+    # Martes y jueves a las 17:00 UTC = 13:00 en Nueva York, con la sesion abierta.
+    # Se programa asi a proposito: lanzado en fin de semana o en festivo, este probe
+    # responde 200 y devuelve tablas vacias, y entonces no distingue "la fuente esta
+    # rota" de "hoy no hubo sesion". Paso dos veces (domingo 6-sep y Labor Day 7-sep
+    # de 2026) y las dos veces hubo que pedirselo a Maria a mano para nada.
+    # Dos dias en vez de uno para que un festivo no se lleve la semana entera por
+    # delante. Si cae en festivo, la pasada siguiente lo corrige sola.
+    - cron: '0 17 * * 2,4'
+  workflow_dispatch:        # y a mano cuando haga falta
 permissions: { contents: write }
 jobs:
   probe:
