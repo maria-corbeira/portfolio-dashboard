@@ -106,3 +106,18 @@
 - [ ] **Capex de IBM sin el software capitalizado.** IBM dejó de etiquetarlo en XBRL después
   de 2016 y no hay tag us-gaap que lo recoja, así que su FCF está algo sobrestimado. Está
   dicho en la ficha. Si aparece la cifra, va a `rows.capex` sumada al inmovilizado.
+- [ ] **Constellation: solo 4 ejercicios, y faltan 2016-2021.** Están en los PDF anuales de
+  `csisoftware.com` (los `Q4<NN>` de 2017 a 2021, localizables por la API REST de WordPress del
+  sitio) y se leen con `pypdf` igual que los dos ya usados. Con diez años su score sería
+  comparable al de las doce, y sobre todo se vería el ROIC **antes** de las escisiones de Topicus
+  (2021) y Lumine (2023), que es la pregunta de verdad: si la máquina ya se estaba desacelerando
+  antes de repartirse.
+- [ ] **Constellation: el tipo impositivo de 2023 invalida su ROIC.** Fue del 77% por el gasto de
+  las acciones preferentes rescatables (597 M$), y `metrics.py` solo acepta el rango 0-60%, así
+  que ese año sale n.d. Es el mismo problema que el de IBM y se arreglaría con el mismo criterio,
+  si algún día se decide uno.
+- [ ] **Constellation cotiza en CAD y la ficha está en USD.** Sus cuentas están en dólares
+  estadounidenses, así que las métricas son correctas, pero el precio que sigue el dashboard es el
+  de CNSWF en el OTC, que es poco líquido: el 7-sep-2026 marcaba 2.175,00 $ frente a 3.023,96 CAD
+  en Toronto (FX implícito 1,390, coherente). Si algún día CNSWF deja de cotizar días enteros,
+  habrá que decidir si se convierte el precio de la TSX en vez de leer el OTC.

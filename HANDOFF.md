@@ -39,7 +39,7 @@ y se explica por qué. Nunca se rellena con una estimación, una media ni un cer
 - **El de noticias y el probe no han corrido todavía.** Maria tiene que lanzarlos a
   mano una vez (Actions → Run workflow). Hasta entonces `news.json` no existe y el
   panel de Home sale con su estado vacío, que es lo correcto.
-- 15 posiciones reales, 6 candidatas en watchlist.
+- 15 posiciones reales, 7 candidatas en watchlist (la séptima, Constellation, entró el 7-sep-2026).
 - **LAS DOCE empresas analizadas con 10 años de la SEC**: GOOGL, MSFT, META, UBER, ISRG,
   NVDA, WMT, IBM, AMZN, AAPL, CVX y COP. Ya no queda ninguna con score de búsqueda web. Los
   4 ETF de `outsideFramework` no entran en el scoring por diseño.
@@ -55,6 +55,16 @@ y se explica por qué. Nunca se rellena con una estimación, una media ni un cer
   yield 2,06%). CVX 52/100 y COP 61/100, las dos Observar, y son el caso distinto: aquí falla la
   calidad, no el precio. En las dos petroleras el balance saca 82 y el FCF yield aprueba;
   COP además pasa el P/E, cosa que CVX no.
+- **Constellation Software (CNSWF) en watchlist, 75/100, Observar — y es el primer caso
+  de una empresa que NO presenta ante la SEC.** Es canadiense (TSX: CSU), reporta en dólares
+  bajo IFRS y no tiene 10-K: los datos salen de sus cuentas anuales auditadas por KPMG, en PDF,
+  leídas con `pypdf` (ver sección 5). Son **4 ejercicios (2022-2025), no 10**, así que su score
+  no es directamente comparable con el de las doce. Lo interesante del caso: el P/E de 90 veces
+  dice "carísima" y el EV/FCF de 20 veces dice "razonable", y la diferencia entera es la
+  amortización de intangibles de adquisiciones (1.182 M$ sobre 11.623 de ventas). El ROIC se
+  publica al 20,6% y en caja es del 33%. Su riesgo real no es el múltiplo: es que el gasto en
+  adquisiciones lleva tres años bajando mientras la caja generada casi se dobla.
+
 - **LAS DOCE SALEN OBSERVAR.** Ninguna Comprar, ninguna Evitar. No es un empate, es un
   resultado: en las de calidad alta el freno es siempre el precio, y en las dos petroleras es
   la calidad. **Conviene hablarlo con Maria**, porque el marco no está señalando ningún sitio
@@ -302,6 +312,29 @@ se niega a pisar un valor que ya venga de la SEC.
 
 ---
 
+**No toda empresa buena presenta ante la SEC, y no pasa nada: hay que cambiar de fuente,
+no rebajar el estándar.** Constellation Software es canadiense (TSX: CSU), presenta en SEDAR+
+bajo IFRS y en EDGAR no existe — dos búsquedas por nombre no devolvieron nada. La tentación es
+puntuarla con cifras de búsqueda web, y eso está prohibido por la misma razón de siempre. La
+salida buena fue ir a sus **cuentas anuales auditadas en PDF**, que son fuente primaria igual
+que un 10-K. Cómo se encontraron: el selector de año de su web no dispara por script y adivinar
+la URL daba 404, pero la **API REST de WordPress** del sitio las lista todas
+(`/wp-json/wp/v2/media?search=Financial-Statement&per_page=40&_fields=source_url,date`).
+Dos avisos que costaron tiempo: **WebFetch no sabe leer un PDF, pero lo guarda en disco** y te
+dice dónde — ahí es donde empieza el trabajo, no donde termina; y al leerlo con `pypdf` el
+estado de flujos sale **con las etiquetas desordenadas al final de la página**, separadas de sus
+cifras, así que el mapeo línea-número hay que verificarlo contra las etiquetas que sí salen en
+línea antes de citar ningún capex. Con dos PDF (el de 2025 y el de 2023) salieron cuatro
+ejercicios completos de los tres estados.
+
+**Cuando la fuente no es la SEC, dilo en la ficha y dilo en el pie.** El dashboard tenía un
+texto automático para las candidatas sin ficha: *"su score viene del análisis por búsqueda web,
+no de los 10-K de la SEC"*. Para Constellation eso era **falso** y además justo del tipo de
+falsedad que importa aquí. Se añadió un campo opcional `fuente` en el objeto de la posición que
+sustituye ese texto. Si mañana entra otra empresa por una vía distinta, se usa el mismo campo.
+
+---
+
 ## 5 · El entorno: cinco cosas que cuestan tiempo si no se saben
 
 **El push depende del entorno. Compruébalo antes de pedírselo a Maria.**
@@ -336,6 +369,11 @@ Para comprobar cualquier otra fuente hay que ejecutar `probe.yml` en Actions y l
 `probe.json` / `probe_news.json`. **No hay atajo, y esto no es opcional**: el fallo de
 precios de la primera sesión se diagnosticó mal hasta que el probe demostró que Yahoo sí
 respondía 200 desde Actions y el 429 era por volumen propio.
+
+**Leer PDF en este entorno.** No hay `pdftoppm`, ni librería de PDF en el Python del
+sistema, ni `Quartz`. Lo que sí funciona:
+`python3 -m pip install --target /tmp/pdflib pypdf` y luego `PYTHONPATH=/tmp/pdflib`. Ojo
+también: `timeout` no existe en este zsh.
 
 **Hay cosas que solo se ven ejecutando el Action de verdad.** La primera pasada real
 destapó tres fallos que ninguna prueba local habría encontrado: el falso ticker `ROIC`,

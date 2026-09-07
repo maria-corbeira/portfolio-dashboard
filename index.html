@@ -476,6 +476,7 @@ const watchlist = [
   { t:"LULU", target:190, score:68, verdict:"hold", cat:{q:68,h:85,g:35,v:90,ti:75}, price:118.00, intrinsic:{low:190, base:254, high:359}, note:"Diversifica fuera de tech — único candidato de consumo. Barata en casi todos los modelos, pero con razón real: márgenes cayendo 2 años seguidos, EPS -16%. Dilema genuino: ¿deterioro temporal (aranceles) o estructural (competencia)?" },
   { t:"UNP", target:159, score:57, verdict:"hold", cat:{q:80,h:55,g:45,v:25,ti:30}, price:303.00, intrinsic:{low:159, base:256, high:300}, note:"Moat ferroviario real y márgenes excelentes (79% bruto, mejor que el 100% de su industria), pero subió +38,9% en 52sem y ya está cara (PEG 2,49). Buen negocio, mal momento — watchlist, no compra todavía." },
   { t:"SHEL", target:69, score:61, verdict:"hold", cat:{q:65,h:65,g:45,v:75,ti:40}, price:90.70, intrinsic:{low:69, base:82, high:98}, note:"Mejor negocio que CVX (ROIC más alto, más barata en múltiplos), pero mismo riesgo cíclico que ya tienes vía Chevron — no diversifica, duplica exposición a energía." },
+  { t:"CNSWF", target:1500, fuente:"Sin ficha de 10 años: Constellation no cotiza en EE.UU. como emisor registrado y no presenta ante la SEC, así que no hay 10-K del que sacar la serie. El score viene de sus cuentas anuales auditadas en IFRS (2022-2025), no de una búsqueda web — pero son 4 ejercicios, no 10.", score:75, verdict:"hold", cat:{q:84,h:72,g:74,v:55,ti:null}, price:2175.00, intrinsic:{low:1500, base:2380, high:3070}, note:"Constellation Software (TSX: CSU; aquí su acción ordinaria en el OTC estadounidense, CNSWF, poco líquida — no es un ADR). OJO CON LA BASE DE DATOS: no es un emisor de la SEC, así que estas cifras NO salen de EDGAR sino de sus cuentas anuales auditadas en IFRS (KPMG), y son SOLO 4 ejercicios (2022-2025), no 10. El puntaje no es directamente comparable con el de las doce posiciones. Reporta en dólares pero cotiza en dólares canadienses. ROIC, dos lecturas y las dos importan: 20,6% en 2025 y 21,6% en 2024 sobre capital invertido tal como se publica (2023 sale n.d. porque el tipo efectivo fue del 77% por el gasto de las acciones preferentes rescatables, fuera del rango 0-60% que acepta el motor; 2022 fue 19,6%). Si se devuelve la amortización de intangibles de adquisiciones (1.182 M$ en 2025, una décima parte de las ventas) el ROIC en caja sube a ~33%. El EBIT sobre capital antes de impuestos sube ordenadamente cada año: 25,9% - 27,3% - 28,4% - 33,1%. Crecimiento excelente y sin dilución: ventas +20,6% anual compuesto en 3 años (6.622 a 11.623 M$) y flujo libre +28,7% anual (1.148 a 2.446 M$), con las acciones clavadas en 21,2 millones los cuatro años. Pero el BPA está PLANO: 24,18$ en 2022 y 24,15$ en 2025, porque la amortización de intangibles y las revaluaciones del pasivo IRGA/TSS se comen el beneficio contable mientras la caja crece. Por eso el P/E de 90 veces engaña: sobre valor de empresa (~49.500 M$ incluyendo deuda neta, IRGA y minoritarios) el múltiplo es 20 veces flujo libre y el FCF yield es del 5,3%. Cara por beneficio, razonable por caja. Lo que frena el veredicto: (1) el precio ya descuenta que la máquina siga funcionando — está un 9% por debajo de mi caso base, no hay margen de seguridad; (2) el gasto en adquisiciones BAJA (1.633, 1.609, 1.347 y 1.227 M$) mientras la caja generada casi se dobla, así que en 2025 sobraron 1.219 M$ sin desplegar: el riesgo clásico de un comprador en serie que se hace demasiado grande para su propio coto de caza; (3) liquidez corriente de 0,96 y deuda/fondos propios de 1,07 incumplen los umbrales, aunque en su caso son estructurales (ingresos diferidos) y la deuda neta es de solo 0,45 veces EBITDA; (4) las escisiones de Topicus (2021) y Lumine (2023) parten el perímetro, así que ninguna serie que cruce esos años es del todo comparable. Rango intrínseco: el extremo bajo (1.500$) supone que TODA la adquisición es mantenimiento y valora el flujo posterior a compras; el alto (3.070$) supone que el compounding continúa. Timing n.d.: sin RSI ni media de 200 sesiones para este ticker." },
 ];
 
 // <<<FUNDAMENTALS
@@ -939,8 +940,10 @@ function detailHtml(h){
   const f = fundamentals[h.t];
   let out = newsDeTicker(h.t) + `<div class="detail-note">${h.note}</div>`;
   if(!f){
-    out += `<div class="no-fund">Sin ficha de 10 años todavía. El score de arriba viene del análisis
-      anterior por búsqueda web, no de los 10-K de la SEC.</div>`;
+    // `fuente` permite decir de donde sale el score cuando NO es ni la SEC ni una
+    // busqueda web (Constellation: cuentas auditadas en IFRS, que no estan en EDGAR).
+    out += `<div class="no-fund">${h.fuente || `Sin ficha de 10 años todavía. El score de arriba viene del análisis
+      anterior por búsqueda web, no de los 10-K de la SEC.`}</div>`;
     return `<div class="detail-in">${out}</div>`;
   }
   const chk = checks(f, h.price, h.t).map(([lbl,val,state]) =>
@@ -1368,9 +1371,8 @@ function renderWatchlist(){
     det.innerHTML = `<td colspan="6"><div class="detail-in">
         ${newsDeTicker(h.t)}
         <div class="detail-note">${h.note}</div>
-        ${fundamentals[h.t] ? sparkSet(fundamentals[h.t]) : `<div class="no-fund">
-          Sin ficha de 10 años todavía: su score viene del análisis por búsqueda web,
-          no de los 10-K de la SEC.</div>`}
+        ${fundamentals[h.t] ? sparkSet(fundamentals[h.t]) : `<div class="no-fund">${h.fuente || `Sin ficha de 10 años todavía: su score viene del análisis por búsqueda web,
+          no de los 10-K de la SEC.`}</div>`}
         <button class="mover" data-t="${h.t}">Preparar el paso a cartera</button>
         <div class="snippet" hidden></div>
       </div></td>`;
