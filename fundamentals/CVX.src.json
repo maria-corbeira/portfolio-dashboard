@@ -1,0 +1,602 @@
+{
+  "company": "Chevron Corporation",
+  "ticker": "CVX",
+  "fiscal_dates": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+  ],
+  "sheets": {
+    "7.TIKR_IS": {
+      "Total Revenues": [
+        114472,
+        141722,
+        166339,
+        146516,
+        94692,
+        162465,
+        246252,
+        200949,
+        202792,
+        189031
+      ],
+      "Cost of Goods Sold": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Gross Profit": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Operating Income": [
+        -2025,
+        9454,
+        21287,
+        6413,
+        -6738,
+        22287,
+        50047,
+        30011,
+        28012,
+        20774
+      ],
+      "EBITDA": [
+        17432,
+        28803,
+        40706,
+        35631,
+        12770,
+        40212,
+        66366,
+        47337,
+        45294,
+        40906
+      ],
+      "Interest Expense": [
+        201,
+        307,
+        748,
+        798,
+        697,
+        712,
+        516,
+        469,
+        594,
+        1217
+      ],
+      "EBT Incl. Unusual Items": [
+        -2226,
+        9147,
+        20539,
+        5615,
+        -7435,
+        21575,
+        49531,
+        29542,
+        27418,
+        19557
+      ],
+      "Income Tax Expense": [
+        1729,
+        48,
+        -5715,
+        -2691,
+        1892,
+        -5950,
+        -14066,
+        -8173,
+        -9757,
+        -7258
+      ],
+      "Net Income": [
+        -497,
+        9195,
+        14824,
+        2924,
+        -5543,
+        15625,
+        35465,
+        21369,
+        17661,
+        12299
+      ],
+      "Diluted EPS Excl Extra Items": [
+        -0.27,
+        4.85,
+        7.74,
+        1.54,
+        -2.96,
+        8.14,
+        18.28,
+        11.36,
+        9.72,
+        6.63
+      ],
+      "Weighted Average Diluted Shares Outstanding": [
+        1873,
+        1898,
+        1914,
+        1895,
+        1870,
+        1920,
+        1940,
+        1880,
+        1817,
+        1856
+      ],
+      "R&D Expenses": [
+        476,
+        433,
+        453,
+        500,
+        435,
+        268,
+        268,
+        320,
+        353,
+        427
+      ]
+    },
+    "8.TIKR_BS": {
+      "Cash And Equivalents": [
+        6988,
+        4813,
+        9342,
+        5686,
+        5596,
+        5640,
+        17678,
+        8178,
+        6781,
+        6293
+      ],
+      "Total Cash And Short Term Investments": [
+        7001,
+        4822,
+        9395,
+        5749,
+        5627,
+        5675,
+        17901,
+        8223,
+        6781,
+        6293
+      ],
+      "Total Current Assets": [
+        29619,
+        28560,
+        34021,
+        28329,
+        26078,
+        33738,
+        50343,
+        41128,
+        40911,
+        38552
+      ],
+      "Total Current Liabilities": [
+        31785,
+        27737,
+        27171,
+        26530,
+        22183,
+        26791,
+        34208,
+        32258,
+        38558,
+        33387
+      ],
+      "Total Assets": [
+        260078,
+        253806,
+        253863,
+        237428,
+        239790,
+        239535,
+        257709,
+        261632,
+        256938,
+        324012
+      ],
+      "Total Liabilities": [
+        113356,
+        104487,
+        98221,
+        92220,
+        107064,
+        99595,
+        97467,
+        99703,
+        103781,
+        131836
+      ],
+      "Total Equity": [
+        145556,
+        148124,
+        154554,
+        144213,
+        131688,
+        139067,
+        159282,
+        160957,
+        152318,
+        186450
+      ],
+      "Total Debt": [
+        52286,
+        45389,
+        39458,
+        36212,
+        51454,
+        40315,
+        30512,
+        28354,
+        34227,
+        50533
+      ],
+      "Net Debt": [
+        45285,
+        40567,
+        30063,
+        30463,
+        45827,
+        34640,
+        12611,
+        20131,
+        27446,
+        44240
+      ]
+    },
+    "9.TIKR_CF": {
+      "Cash from Operations": [
+        12690,
+        20338,
+        30618,
+        27314,
+        10577,
+        29187,
+        49602,
+        35609,
+        31492,
+        33939
+      ],
+      "Capital Expenditure": [
+        -18109,
+        -13404,
+        -13792,
+        -14116,
+        -8922,
+        -8056,
+        -11974,
+        -15829,
+        -16448,
+        -17347
+      ],
+      "Free Cash Flow": [
+        -5419,
+        6934,
+        16826,
+        13198,
+        1655,
+        21131,
+        37628,
+        19780,
+        15044,
+        16592
+      ],
+      "Depreciation & Amortization": [
+        19457,
+        19349,
+        19419,
+        29218,
+        19508,
+        17925,
+        16319,
+        17326,
+        17282,
+        20132
+      ],
+      "Stock-Based Compensation": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Repurchase of Common Stock": [
+        -2,
+        -1,
+        -1751,
+        -4039,
+        -1757,
+        -1383,
+        -11255,
+        -14939,
+        -15229,
+        -12079
+      ],
+      "Common & Preferred Stock Dividends Paid": [
+        -8032,
+        -8132,
+        -8502,
+        -8959,
+        -9651,
+        -10179,
+        -10968,
+        -11336,
+        -11801,
+        -12751
+      ]
+    },
+    "10.TIKR_Val": {
+      "Market Cap (MM)": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Price": [
+        117.7,
+        125.19,
+        108.79,
+        120.51,
+        84.45,
+        117.35,
+        179.49,
+        149.16,
+        144.84,
+        152.41
+      ]
+    }
+  },
+  "notas": {
+    "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por ejercicio (cifras reexpresadas cuando las hay)",
+    "extraido": "2026-09-05",
+    "derivadas": [
+      "Gross Profit = Total Revenues - Cost of Goods Sold (la empresa no etiqueta GrossProfit en XBRL)",
+      "EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)",
+      "Operating Income = EBT + Interest Expense (el emisor no etiqueta OperatingIncomeLoss; incluye resultados no operativos y deterioros)",
+      "EBITDA = Operating Income + Depreciation & Amortization",
+      "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
+      "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
+      "Free Cash Flow = Cash from Operations + Capital Expenditure"
+    ],
+    "deuda_incompleta": [
+      "2016: suma sin arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2017: suma sin arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2018: suma sin arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente"
+    ],
+    "control_splits": {
+      "cuadra": true,
+      "desviaciones": []
+    },
+    "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "discontinuidad": null,
+    "tags_is": {
+      "revenue": {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "filed": "2026-02-24 (10-K FY2025, accn 0000093410-26-000078); serie completa cruzada con filings de cada ejercicio (2019-02-22 a 2026-02-24), sin restatements",
+        "nota": "Esta es la cifra de VENTAS ('Sales and other operating revenues'), NO el total con otros ingresos. Solo existe en XBRL desde FY2018 (adopcion ASC 606); FY2016 y FY2017 no tienen este tag ni SalesRevenueNet (404), por eso quedan en null, no se ha usado el tag 'Revenues' para rellenarlos porque ese tag es el TOTAL, no las ventas.",
+        "alt_tag": "Revenues",
+        "alt_desc": "Total revenues and other income (incluye ingresos por participadas y otros ingresos, ademas de ventas)",
+        "alt_series_10y": [
+          114472,
+          141722,
+          166339,
+          146516,
+          94692,
+          162465,
+          246252,
+          200949,
+          202792,
+          189031
+        ]
+      },
+      "cogs": {
+        "tag": "CostOfGoodsAndServicesSold",
+        "filed": "2026-02-24 (10-K FY2025, accn 0000093410-26-000078); serie completa sin restatements",
+        "nota": "OJO: casi con toda seguridad esto NO es un coste de ventas agregado (Chevron no presenta ese subtotal), sino que corresponde a la partida 'Purchased crude oil and products' etiquetada bajo este tag estandar. NO usar como COGS total sin verificar contra el 10-K: comparado con ingresos, dejaria un margen bruto implausiblemente alto porque faltan 'Operating expenses', 'D,D&A' y 'Taxes other than on income'."
+      },
+      "gross_profit": {
+        "tag": null,
+        "filed": null,
+        "nota": "GrossProfit da 404 en las 10 fechas: Chevron no lo etiqueta. null en los 10 anios."
+      },
+      "operating_income": {
+        "tag": null,
+        "filed": null,
+        "nota": "OperatingIncomeLoss da 404 en las 10 fechas: Chevron no lo etiqueta (igual que IBM). null en los 10 anios; hay que derivarlo aguas arriba para EBITDA/ROIC."
+      },
+      "interest_expense": {
+        "tag": "InterestExpenseDebt",
+        "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements",
+        "nota": "InterestExpense, InterestExpenseNonoperating e InterestIncomeExpenseNet dan 404 en las 10 fechas. Se ha usado InterestExpenseDebt (fallback nº2 de la cascada). Es muy probable que sea la cifra NETA de capitalizacion de intereses (la partida 'Interest and debt expense' que Chevron presenta ya neta de intereses capitalizados), como se advertia en el encargo."
+      },
+      "income_tax": {
+        "tag": "IncomeTaxExpenseBenefit",
+        "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements",
+        "nota": "Signo invertido respecto al dato bruto de la SEC (positivo=gasto en la SEC). Aqui: negativo=gasto, positivo=beneficio fiscal. Ver avisos para el signo anio a anio."
+      },
+      "net_income": {
+        "tag": "NetIncomeLoss",
+        "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements",
+        "nota": "Beneficio atribuible a Chevron (no se ha usado la variante 'IncludingPortionAttributableToNoncontrollingInterest')."
+      },
+      "eps_diluted": {
+        "tag": "EarningsPerShareDiluted",
+        "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements"
+      },
+      "diluted_shares": {
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements"
+      },
+      "rd_expense": {
+        "tag": "ResearchAndDevelopmentExpense",
+        "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements",
+        "nota": "Al contrario de lo esperado (se preveia 404), Chevron SI etiqueta un gasto de I+D pequeño los 10 anios."
+      }
+    },
+    "tags_bs": {
+      "cash": {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "filed": "2024-02-26 (dato mas reciente obtenido; 2019/2024/2025 no recuperables, ver avisos)"
+      },
+      "short_term_investments": {
+        "tag": "MarketableSecuritiesCurrent",
+        "filed": "2026-02-24"
+      },
+      "total_current_assets": {
+        "tag": "AssetsCurrent",
+        "filed": "2026-02-24"
+      },
+      "total_assets": {
+        "tag": "Assets",
+        "filed": "2026-02-24"
+      },
+      "total_current_liabilities": {
+        "tag": "LiabilitiesCurrent",
+        "filed": "2026-02-24"
+      },
+      "total_liabilities": {
+        "tag": "Liabilities",
+        "filed": "2026-02-24"
+      },
+      "total_equity": {
+        "tag": "StockholdersEquity",
+        "filed": "2026-02-24"
+      },
+      "short_term_borrowings": {
+        "tag": "ShortTermBorrowings",
+        "filed": "2026-02-24"
+      },
+      "current_portion_ltd": {
+        "tag": "LongTermDebtCurrent",
+        "filed": "2026-02-24"
+      },
+      "long_term_debt": {
+        "tag": "LongTermDebtNoncurrent",
+        "filed": "2018-02-22 (unico dato reciente disponible es 2017; 2018-2025 no recuperables, ver avisos)"
+      },
+      "finance_lease_current": {
+        "tag": "FinanceLeaseLiabilityCurrent",
+        "filed": "2026-02-24"
+      },
+      "finance_lease_noncurrent": {
+        "tag": "FinanceLeaseLiabilityNoncurrent",
+        "filed": "2026-02-24"
+      },
+      "operating_lease_current": {
+        "tag": "OperatingLeaseLiabilityCurrent",
+        "filed": "2026-02-24"
+      },
+      "operating_lease_noncurrent": {
+        "tag": "OperatingLeaseLiabilityNoncurrent",
+        "filed": "2026-02-24"
+      }
+    },
+    "tags_cf": {
+      "cfo": {
+        "tag": "NetCashProvidedByUsedInOperatingActivities",
+        "filed": "2026-02-24 (mas reciente por anio; ver avisos)"
+      },
+      "capex": {
+        "tag": "PaymentsToAcquireProductiveAssets",
+        "filed": "2026-02-24 (mas reciente por anio; ver avisos)"
+      },
+      "depreciation_amortization": {
+        "tag": "DepreciationDepletionAndAmortization",
+        "filed": "2026-02-24 (mas reciente por anio; ver avisos)"
+      },
+      "stock_based_compensation": {
+        "tag": "ShareBasedCompensation",
+        "filed": null
+      },
+      "buybacks": {
+        "tag": "PaymentsForRepurchaseOfCommonStock",
+        "filed": "2026-02-24 (mas reciente por anio; ver avisos)"
+      },
+      "dividends_paid": {
+        "tag": "PaymentsOfDividendsCommonStock",
+        "filed": "2026-02-24 (mas reciente por anio; ver avisos)"
+      },
+      "cash_taxes_paid": {
+        "tag": "IncomeTaxesPaidNet (solo 2025) / IncomeTaxesPaid (2016-2024)",
+        "filed": "2026-02-24 (2025); 2025-02-21 (2024); ver avisos"
+      }
+    },
+    "avisos_extraccion": [
+      "REVENUE: el tag RevenueFromContractWithCustomerExcludingAssessedTax da la cifra de VENTAS ('Sales and other operating revenues'), no el total. FY2024=193.414 M$ (ancla ~193.400, OK). No cubre 2016 ni 2017 (no existia antes de ASC 606); SalesRevenueNet da 404 esos anios -> revenue=null en 2016 y 2017 (no se ha rellenado con el tag 'Revenues' porque ese es el TOTAL, mezclaria conceptos).",
+      "Serie alternativa 'Revenues' (total revenues and other income), los 10 anios, para poder comprobar: 2016=114.472, 2017=141.722, 2018=166.339, 2019=146.516, 2020=94.692, 2021=162.465, 2022=246.252, 2023=200.949, 2024=202.792 (ancla ~202.800, OK), 2025=189.031.",
+      "COGS: CostOfGoodsAndServicesSold SI existe (no dio 404, al contrario de lo previsto), pero casi seguro es solo 'Purchased crude oil and products', NO un coste de ventas agregado. No se ha sumado nada por mi cuenta. Usar con cautela aguas arriba.",
+      "GROSS_PROFIT: 404 en los 10 anios -> null.",
+      "OPERATING_INCOME: 404 en los 10 anios -> null. Hay que derivarlo aguas arriba para EBITDA y ROIC, como en IBM.",
+      "INTEREST_EXPENSE: InterestExpense, InterestExpenseNonoperating e InterestIncomeExpenseNet dan 404. Se uso el fallback InterestExpenseDebt (probablemente neto de intereses capitalizados).",
+      "INCOME_TAX, signo por anio (negativo=gasto, positivo=beneficio fiscal, tras invertir el signo bruto de la SEC): 2016=+1.729 (beneficio), 2017=+48 (beneficio), 2018=-5.715 (gasto), 2019=-2.691 (gasto), 2020=+1.892 (beneficio), 2021=-5.950 (gasto), 2022=-14.066 (gasto), 2023=-8.173 (gasto), 2024=-9.757 (gasto), 2025=-7.258 (gasto). 2016 y 2020 dan beneficio fiscal (positivo) porque hubo perdidas antes de impuestos: es correcto, no se ha forzado a negativo.",
+      "NET_INCOME negativo en 2016 (-497 M$) y 2020 (-5.543 M$), coincide exactamente con las cifras de referencia del encargo.",
+      "ANCLAS: FY2024 ventas 193.414 (ok vs ~193.400) y total 202.792 (ok vs ~202.800); FY2024 neto 17.661 (ok, exacto); FY2023 neto 21.369 (ok, exacto). Ninguna desviacion relevante.",
+      "CONTROL BPA x ACCIONES: desviacion maxima 1,75% en 2016 (EPS -0,27 x 1.873 M acciones = -505,7 M vs neto real -497 M), por redondeo del EPS a 2 decimales en un anio de perdida con importe pequeño. El resto de anios desvia menos del 0,2%. Ningun anio supera el 2%.",
+      "ACCIONES DILUIDAS: no hay splits. Bajaron en 2023-2024 (1.940->1.880->1.817) pese a los pagos en acciones de PDC Energy (2023), pese a que las recompras superaron la dilucion; subieron de 2024 a 2025 (1.817->1.856, +39 M) coincidiendo con el cierre de la compra de Hess (2025). El salto de Noble Energy (cierre oct-2020) se nota en la media de 2021 (1.870->1.920) mas que en 2020 mismo, por ser media ponderada del ejercicio. No hay ningun salto anomalo tipo split.",
+      "R&D_EXPENSE: al contrario de lo previsto, SI existe ResearchAndDevelopmentExpense los 10 anios (valores pequeños, 268-500 M$/anio); no se ha buscado sustituto, se reporta tal cual.",
+      "Fila `revenue` REEMPLAZADA el 2026-09-07: serie de us-gaap:Revenues, o sea 'Total revenues and other income'. Se usa esta y no la de ventas porque la de ventas solo existe desde 2018 (nace con la ASC 606) y los tags antiguos SalesRevenueNet y SalesRevenueGoodsNet dan 404. Incluye el resultado de participadas y las plusvalias por venta de activos, asi que en FY2024 son 202.792 M$ frente a 193.414 de ventas puras, un 4,9% mas.",
+      "Fila `cogs` REEMPLAZADA el 2026-09-07: us-gaap:CostOfGoodsAndServicesSold en Chevron es solo 'Purchased crude oil and products', no un coste de ventas agregado: no incluye gastos de explotacion, agotamiento de reservas ni impuestos distintos del de sociedades. Restarlo de los ingresos daba un falso margen bruto del 38-45%. Se anula para que el margen bruto salga n.d., que es lo que realmente se sabe.",
+      "ANCLAS: FY2024 total_assets obtenido 256.938M vs ancla ~256.900M (desv. 0,015%) -> cuadra. FY2024 total_equity (atribuible a Chevron) obtenido 152.318M vs ancla ~152.300M (desv. 0,012%) -> cuadra. FY2023 total_assets obtenido 261.632M vs ancla ~261.600M (desv. 0,012%) -> cuadra.",
+      "COHERENCIA Activo = Pasivo + Patrimonio con minoritarios: CUADRA EXACTO (diferencia 0) en los 10 ejercicios 2016-2025, usando total_assets, total_liabilities y StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest.",
+      "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest (10 valores, MUSD): [146722,149319,155642,145208,132726,139940,160242,161929,153157,192176].",
+      "MinorityInterest (10 valores, MUSD): [1166,1195,1088,995,1038,873,960,972,839,5726]. En todos los años total_equity + MinorityInterest = StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest de forma exacta.",
+      "MinorityInterest y total_assets dan un salto grande en 2025 (839->5726 y 256.938->324.012 respectivamente); es coherente con la adquisicion de Hess Corporation por Chevron cerrada en 2025 (incluye intereses minoritarios de Hess Midstream), no parece un error de datos: la ecuacion contable sigue cuadrando exacto ese año.",
+      "DebtCurrent (tag agregado de deuda a corto de Chevron, 10 valores MUSD): [19840,15192,15626,13032,11373,8015,6014,5072,12656,10918]. En TODOS los años, short_term_borrowings + current_portion_ltd (y sumando ademas finance_lease_current donde existe) es MENOR que DebtCurrent, nunca mayor (brecha entre ~1.300M y ~7.600M, variable por año). Esto descarta solapamiento/doble contabilizacion entre short_term_borrowings y current_portion_ltd -> es seguro usar ambos campos por separado sin inflar la deuda. La brecha indica que DebtCurrent incluye otras partidas de deuda corriente de Chevron no capturadas por estos tags individuales.",
+      "Arrendamientos financieros ANTIGUOS (pre-ASC842, tag CapitalLeaseObligations*) SI existen para Chevron en 2016-2018, reportados aparte (NO en las filas de leases): CapitalLeaseObligationsCurrent [2016:14, 2017:15, 2018:18] y CapitalLeaseObligationsNoncurrent [2016:93, 2017:94, 2018:127], todos en MUSD, procedentes de los 10-K de esos ejercicios.",
+      "Los null en operating_lease_current/noncurrent y finance_lease_current/noncurrent para 2016-2018 son un dato real: Chevron adopta ASC 842 en el ejercicio cerrado el 2019-12-31, antes no se reconocian arrendamientos operativos en balance.",
+      "LIMITACION TECNICA (no es ausencia real del tag): cash quedo null en 2019, 2024 y 2025, y long_term_debt (tag LongTermDebtNoncurrent) quedo null en 2018-2025 (7 de 10 años, solo se obtuvo 2016 y 2017). La causa es que el JSON companyconcept de estos dos tags es muy voluminoso (Chevron los reporta desde ~2009-2016 con muchas duplicaciones trimestrales) y WebFetch trunca/resume el contenido antes de alcanzar esas fechas. Se confirmo con multiples reintentos, prompts distintos e incluso una URL con parametro anti-cache: el corte siempre reaparecio en el mismo punto (p.ej. LongTermDebtNoncurrent se corta sistematicamente en el registro de 2018-09-30). Se probo tambien el tag alternativo DebtNoncurrent: no existe para Chevron (404 real). Con acceso HTTP directo (curl/requests, bloqueado en este entorno) estos 8 valores puntuales serian faciles de completar.",
+      "long_term_debt (LongTermDebtNoncurrent) valores obtenidos: 2016=35.193M, 2017=33.477M. El resto (2018-2025) queda null por la limitacion tecnica anterior, NO se debe interpretar como 0 ni estimarse.",
+      "Rellenado el 2026-09-07 desde tags renombrados por la SEC: deuda a largo (2018-2025) y caja (2019, 2024, 2025) leidas de las paginas R del informe financiero de los 10-K de FY2019, FY2020, FY2021, FY2022, FY2023 y FY2025, porque el companyconcept de esos dos tags es demasiado grande y WebFetch lo trunca por el final. Cada importe aparece identico en dos 10-K distintos y el activo total de cada tabla cuadra con el ya verificado. No es una estimacion: es el dato publicado, leido por otra via.",
+      "SIGNOS: cfo y cash_taxes_paid en positivo tal cual la SEC. capex, buybacks y dividends_paid se convirtieron a NEGATIVO (son salidas de caja) aunque la SEC los publica como importes positivos de 'pagos por'. fcf = cfo + capex, calculado con esta convencion.",
+      "CAPEX - cascada de tags: PaymentsToAcquirePropertyPlantAndEquipment devuelve 404 en todos los periodos (Chevron NO usa este tag). Se uso el segundo fallback, PaymentsToAcquireProductiveAssets, que Chevron rotula 'Capital expenditures' en su estado de flujos. Coincide con el ancla FY2024 (-16448 vs ~-16400, desviacion 0.3%).",
+      "CAPEX - tercer tag PaymentsToExploreAndDevelopOilAndGasProperties SI existe pero es una partida mucho mas pequena (gasto exploratorio, no el capex total): 2016=544, 2017=666, 2018=523, 2019=598, 2020=500, 2021=431 (millones); sin dato de ejercicio completo 2022-2025 (Chevron dejo de reportar este tag por separado tras 2021, solo quedo un dato parcial Q1-2022=74). NO se uso como capex porque subestimaria enormemente la inversion real; se deja aqui solo como referencia solicitada.",
+      "CAPEX no incluye las adquisiciones de Noble Energy (2020), PDC Energy (2023) ni Hess (2024): esas operaciones fueron pagadas con acciones, no aparecen como salida de caja en PaymentsToAcquireProductiveAssets ni lo afectan.",
+      "DEPRECIATION_AMORTIZATION: DepreciationDepletionAndAmortization existe para los 10 anios y da magnitudes de 16.000-20.000 M$/anio como se esperaba en una petrolera, EXCEPTO 2019 = 29.218 M$ (vs 19.419 en 2018 y 19.508 en 2020). El salto coincide con los grandes deterioros de activos (impairments, principalmente Appalachia/Kitimat) que Chevron registro en el Q4-2019; es probable que este tag los incluya junto con la depreciacion/agotamiento normal ese anio. AVISO para uso aguas abajo: si esta serie se usa para EBITDA, el ejercicio 2019 quedara sobreestimado por este efecto no recurrente.",
+      "STOCK_BASED_COMPENSATION: el tag ShareBasedCompensation devuelve 404 en todos los periodos. Chevron no parece reportar este XBRL tag especifico (puede estar dentro de otras partidas de nomina/beneficios no desglosadas). Los 10 valores quedan en null, tal como exige la regla de no estimar ni interpolar.",
+      "CASH_TAXES_PAID: IncomeTaxesPaidNet SOLO tiene un dato, el de FY2025 (7304 M$, 10-K filed 2026-02-24); no existe para 2016-2024 (es un tag de adopcion reciente, coherente con la nueva norma de divulgacion fiscal ASU 2023-09 que empieza a aplicarse en torno a 2025). Para 2016-2024 se uso el fallback IncomeTaxesPaid, que si cubre esos 9 anios; ese tag NO tiene una entrada FY2025, asi que para 2025 no habia alternativa mas que usar IncomeTaxesPaidNet. En definitiva la serie mezcla dos tags distintos segun el anio.",
+      "ANCLAS DE VALIDACION: FY2024 cfo=31492 (ancla ~31500, desv. 0.03%) OK; FY2023 cfo=35609 (ancla ~35600) OK; FY2022 cfo=49602 (ancla ~49600) OK; FY2024 capex=-16448 (ancla ~-16400, desv. 0.3%) OK. Las cuatro anclas cuadran dentro del margen del 1%.",
+      "CICLICIDAD: cfo pasa de 12690 M$ (2016) a 49602 M$ (2022) y vuelve a bajar a 33939 M$ (2025), confirmando el patron ciclico esperado; no se suavizo nada.",
+      "PERDIDAS 2016/2020: cfo fue positivo en ambos anios (12690 y 10577 M$ respectivamente), pese a que Chevron reporto perdida neta esos ejercicios. Confirmado.",
+      "FCF = cfo + capex por anio (M$): 2016=-5419, 2017=6934, 2018=16826, 2019=13198, 2020=1655, 2021=21131, 2022=37628, 2023=19780, 2024=15044, 2025=16592. FCF NEGATIVO unicamente en 2016.",
+      "DIVIDENDOS+RECOMPRAS / FCF (valor absoluto de dividends_paid+buybacks entre FCF, %): 2016=indefinido/infinito (FCF negativo, -5419, con pagos de 8034 M$: Chevron sostuvo el dividendo con deuda); 2017=117%; 2018=61%; 2019=98%; 2020=689% (FCF muy bajo, 1655 M$, frente a 11408 M$ de dividendos+recompras: confirma financiacion con deuda, el caso mas extremo de la serie); 2021=55%; 2022=59%; 2023=133%; 2024=180%; 2025=150%. Ademas de 2016 y 2020 (los anios anticipados en el enunciado), la ratio tambien supera el 100% en 2017, 2023, 2024 y 2025, por el fuerte ritmo de recompras en esos anios.",
+      "REVISIONES: para cfo, los valores de 2016 (12846->12690) y 2017 (20515->20338) se revisaron a la baja en 10-K posteriores; se tomo siempre el 'filed' mas reciente por regla del enunciado. El resto de partidas no mostro revisiones materiales entre presentaciones."
+    ]
+  }
+}

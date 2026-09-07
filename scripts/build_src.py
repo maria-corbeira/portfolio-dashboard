@@ -34,7 +34,8 @@ EMPRESAS = {"MSFT": "Microsoft Corporation", "META": "Meta Platforms, Inc.",
             "UBER": "Uber Technologies, Inc.", "ISRG": "Intuitive Surgical, Inc.",
             "NVDA": "NVIDIA Corporation", "WMT": "Walmart Inc.",
             "IBM": "International Business Machines Corporation",
-            "AMZN": "Amazon.com, Inc.", "AAPL": "Apple Inc."}
+            "AMZN": "Amazon.com, Inc.", "AAPL": "Apple Inc.",
+            "CVX": "Chevron Corporation"}
 
 
 def build(ticker: str) -> dict:
@@ -66,9 +67,26 @@ def build(ticker: str) -> dict:
            for ni, t in zip(I["net_income"], I["income_tax"])]
     derivadas.append("EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)")
 
+    # Algunos emisores no etiquetan OperatingIncomeLoss en absoluto (Chevron, los diez
+    # ejercicios). Sin resultado de explotacion no hay margen operativo, ni EBITDA, ni
+    # cobertura de intereses, ni ROIC. Se deriva como EBIT = EBT + gasto financiero, que es
+    # aritmetica sobre cifras publicadas. OJO CON LO QUE INCLUYE: al partir del resultado
+    # antes de impuestos, arrastra tambien los ingresos no operativos (resultado de
+    # participadas, plusvalias por venta de activos) y los deterioros. En una petrolera eso
+    # no es residual. Solo se hace si la fila viene ENTERA a null: si el emisor la publica
+    # aunque sea a medias, se respeta lo publicado.
+    opinc = I["operating_income"]
+    if all(v is None for v in opinc):
+        opinc = [None if (e is None or ie is None) else e + ie
+                 for e, ie in zip(ebt, I["interest_expense"])]
+        if any(v is not None for v in opinc):
+            derivadas.append("Operating Income = EBT + Interest Expense (el emisor no etiqueta "
+                             "OperatingIncomeLoss; incluye resultados no operativos y "
+                             "deterioros)")
+
     da = col(C, "depreciation_amortization")
     ebitda = [None if (o is None or d is None) else o + d
-              for o, d in zip(I["operating_income"], da)]
+              for o, d in zip(opinc, da)]
     derivadas.append("EBITDA vacio: sin dato fiable de amortizacion"
                      if all(v is None for v in ebitda)
                      else "EBITDA = Operating Income + Depreciation & Amortization")
@@ -120,7 +138,7 @@ def build(ticker: str) -> dict:
         "sheets": {
             "7.TIKR_IS": {
                 "Total Revenues": I["revenue"], "Cost of Goods Sold": I["cogs"],
-                "Gross Profit": gross, "Operating Income": I["operating_income"],
+                "Gross Profit": gross, "Operating Income": opinc,
                 "EBITDA": ebitda, "Interest Expense": I["interest_expense"],
                 "EBT Incl. Unusual Items": ebt, "Income Tax Expense": I["income_tax"],
                 "Net Income": I["net_income"], "Diluted EPS Excl Extra Items": I["eps_diluted"],

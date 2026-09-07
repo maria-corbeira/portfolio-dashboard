@@ -172,6 +172,30 @@ TAGS_ANTIGUOS = {
             "y eso SI es real: Apple adopto la ASC 842 en el primer trimestre de FY2020, asi "
             "que antes no habia nada que reconocer en balance.",
     }],
+    # CVX: aqui el hueco NO lo causo un tag renombrado, sino una limitacion de la herramienta.
+    # Los ficheros companyconcept de LongTermDebtNoncurrent y CashAndCashEquivalentsAt
+    # CarryingValue de Chevron son enormes y WebFetch los trunca POR EL FINAL; como los hechos
+    # van en orden cronologico ascendente, lo que se pierde es justo lo reciente. Se recuperaron
+    # de las paginas R del informe financiero de cada 10-K, que son tablas HTML pequeñas con el
+    # balance consolidado de dos ejercicios. Es el mismo hecho publicado por Chevron, leido en
+    # otro sitio. Cada valor se confirmo en DOS 10-K distintos (el del ejercicio y el siguiente,
+    # que lo repite como comparativo) y el activo total de cada tabla se contrasto con las
+    # cifras ya verificadas: 2019=237.428, 2024=256.938, 2025=324.012 M$.
+    "CVX": [{
+        "estado": "bs",
+        "valores": {
+            "long_term_debt": {"2018": 28733, "2019": 23691, "2020": 42767, "2021": 31113,
+                               "2022": 21375, "2023": 20307, "2024": 20135, "2025": 39781},
+            "cash": {"2019": 5686, "2024": 6781, "2025": 6293},
+        },
+        "motivo":
+            "deuda a largo (2018-2025) y caja (2019, 2024, 2025) leidas de las paginas R del "
+            "informe financiero de los 10-K de FY2019, FY2020, FY2021, FY2022, FY2023 y FY2025, "
+            "porque el companyconcept de esos dos tags es demasiado grande y WebFetch lo trunca "
+            "por el final. Cada importe aparece identico en dos 10-K distintos y el activo total "
+            "de cada tabla cuadra con el ya verificado. No es una estimacion: es el dato "
+            "publicado, leido por otra via.",
+    }],
     "AMZN": [{
         "estado": "bs",
         "valores": {
@@ -199,6 +223,80 @@ TAGS_ANTIGUOS = {
             "no existe en ningun tag de intereses y se queda vacio: no se estima.",
     }],
 }
+
+
+# --- Filas sustituidas por una serie alternativa completa --------------------------------
+# Ultimo recurso, y solo cuando el problema NO es que falte el dato sino que la fila que trae
+# el extractor no significa lo que el resto del pipeline cree. Sustituir una fila entera exige
+# escribir aqui los diez valores y el motivo, y el codigo comprueba antes de escribir que la
+# fila actual es la que se espera: no puede pisar otra cosa por descuido.
+#
+# CVX / revenue: Chevron presenta DOS cifras arriba de su cuenta de resultados, "Sales and
+# other operating revenues" y "Total revenues and other income", que ademas suma el resultado
+# de sus participadas (TCO, Angola LNG y demas) y las plusvalias por venta de activos. El tag
+# de ventas solo existe desde 2018, porque nace con la ASC 606, y los dos tags antiguos
+# (SalesRevenueNet y SalesRevenueGoodsNet) dan 404: Chevron nunca los uso. Asi que la unica
+# serie COMPLETA de diez ejercicios es la del total. Se usa esa, en los diez anios, para no
+# mezclar dos definiciones dentro de la misma serie. En FY2024 son 202.792 M$ en vez de
+# 193.414: un 4,9% mas. Queda dicho en la ficha del dashboard.
+#
+# CVX / cogs: el extractor SI encontro CostOfGoodsAndServicesSold, pero en Chevron esa etiqueta
+# recoge solo "Purchased crude oil and products", no un coste de ventas agregado: fuera quedan
+# los gastos de explotacion, el agotamiento de reservas y los impuestos distintos del de
+# sociedades. Dejarla puesta hacia que build_src.py derivase un "margen bruto" del 38-45% que
+# no significa nada. Se anula: el margen bruto de Chevron sale n.d., que es la verdad.
+SERIES_REEMPLAZADAS = {
+    "CVX": [{
+        "estado": "is",
+        "campo": "revenue",
+        "espera_actual": [None, None, 158902, 139865, 94471, 155606, 235717, 196913, 193414,
+                          184432],
+        "nueva": [114472, 141722, 166339, 146516, 94692, 162465, 246252, 200949, 202792,
+                  189031],
+        "motivo":
+            "serie de us-gaap:Revenues, o sea 'Total revenues and other income'. Se usa esta y "
+            "no la de ventas porque la de ventas solo existe desde 2018 (nace con la ASC 606) "
+            "y los tags antiguos SalesRevenueNet y SalesRevenueGoodsNet dan 404. Incluye el "
+            "resultado de participadas y las plusvalias por venta de activos, asi que en "
+            "FY2024 son 202.792 M$ frente a 193.414 de ventas puras, un 4,9% mas.",
+    }, {
+        "estado": "is",
+        "campo": "cogs",
+        "espera_actual": [59321, 75765, 94578, 80113, 50488, 89372, 145416, 119196, 119206,
+                          108214],
+        "nueva": [None] * 10,
+        "motivo":
+            "us-gaap:CostOfGoodsAndServicesSold en Chevron es solo 'Purchased crude oil and "
+            "products', no un coste de ventas agregado: no incluye gastos de explotacion, "
+            "agotamiento de reservas ni impuestos distintos del de sociedades. Restarlo de los "
+            "ingresos daba un falso margen bruto del 38-45%. Se anula para que el margen bruto "
+            "salga n.d., que es lo que realmente se sabe.",
+    }],
+}
+
+
+def reemplaza_series(ticker: str) -> list:
+    out = []
+    for cfg in SERIES_REEMPLAZADAS.get(ticker, []):
+        p = RAW / f"{ticker}_{cfg['estado']}.json"
+        d = json.loads(p.read_text(encoding="utf-8"))
+        hechas = d.get("homogeneizado", {}).get("series_reemplazadas", [])
+        if cfg["campo"] in hechas:
+            out.append(f"{ticker}: {cfg['campo']} ya reemplazado, no se toca")
+            continue
+        actual = d["rows"][cfg["campo"]]
+        assert actual == cfg["espera_actual"], (
+            f"{ticker}/{cfg['campo']}: la fila actual no es la esperada, no se reemplaza.\n"
+            f"  esperaba: {cfg['espera_actual']}\n  hay:      {actual}")
+        assert len(cfg["nueva"]) == len(d["fiscal_dates"]), f"{ticker}: serie descuadrada"
+        d["rows"][cfg["campo"]] = list(cfg["nueva"])
+        d.setdefault("homogeneizado", {}).setdefault("series_reemplazadas", []).append(
+            cfg["campo"])
+        d.setdefault("avisos", []).append(
+            f"Fila `{cfg['campo']}` REEMPLAZADA el {date.today().isoformat()}: {cfg['motivo']}")
+        p.write_text(json.dumps(d, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        out.append(f"{ticker}: {cfg['campo']} reemplazado -> {cfg['nueva'][-3:]}")
+    return out
 
 
 def rellena_tags_antiguos(ticker: str) -> list:
@@ -399,10 +497,11 @@ def deriva_pasivo(ticker: str) -> list:
 def main() -> int:
     tickers = sys.argv[1:] or sorted(set(SPLITS) | set(NCI) | set(CEROS_VERIFICADOS)
                                      | set(SIGNOS) | set(DISCONTINUIDADES)
-                                     | set(TAGS_ANTIGUOS))
+                                     | set(TAGS_ANTIGUOS) | set(SERIES_REEMPLAZADAS))
     for t in tickers:
         for linea in (marca_discontinuidad(t) + normaliza_signos(t) + aplica_split(t)
-                      + deriva_pasivo(t) + aplica_ceros(t) + rellena_tags_antiguos(t)):
+                      + deriva_pasivo(t) + aplica_ceros(t) + rellena_tags_antiguos(t)
+                      + reemplaza_series(t)):
             print(" ", linea)
     return 0
 

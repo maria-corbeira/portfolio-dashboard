@@ -40,10 +40,10 @@ y se explica por qué. Nunca se rellena con una estimación, una media ni un cer
   mano una vez (Actions → Run workflow). Hasta entonces `news.json` no existe y el
   panel de Home sale con su estado vacío, que es lo correcto.
 - 15 posiciones reales, 6 candidatas en watchlist.
-- **10 empresas analizadas con 10 años de la SEC**: GOOGL, MSFT, META, UBER, ISRG, NVDA,
-  WMT, IBM, AMZN y AAPL. Solo quedan COP y CVX, las dos petroleras, con scores de búsqueda
-  web de la primera sesión, y su ficha lo dice.
-- **Las diez tienen P/E por ejercicio.** Los precios históricos de NVDA se cerraron el
+- **11 empresas analizadas con 10 años de la SEC**: GOOGL, MSFT, META, UBER, ISRG, NVDA,
+  WMT, IBM, AMZN, AAPL y CVX. Solo queda COP con el score de búsqueda web de la primera
+  sesión, y su ficha lo dice.
+- **Las once tienen P/E por ejercicio.** Los precios históricos de NVDA se cerraron el
   6-sep-2026; con ellos aparece también su P/E frente a la mediana de 10 años (mediana
   50,9; hoy −8%).
 - **Lo que va saliendo:** WMT 63/100 y IBM 58/100, las dos Observar y por motivos
@@ -52,9 +52,11 @@ y se explica por qué. Nunca se rellena con una estimación, una media ni un cer
   3,1% al 11,2% en diez años) con la valoración sin colchón, porque el capex de IA se come
   el flujo libre. AAPL 72/100, Observar: **95 sobre 100 de calidad, el mejor negocio de la
   cartera, y los tres criterios de valoración fallando a la vez** (P/E 42,9, PEG 2,39, FCF
-  yield 2,06%). Van cuatro de cuatro en el mismo patrón: **el freno está siempre en la pata
-  de valoración, no en la de calidad.** Ninguna ha salido Comprar todavía, y eso ya es un
-  hallazgo sobre la cartera, no sobre las empresas.
+  yield 2,06%). CVX 52/100, Observar, y es el caso distinto: aquí falla la calidad (ROIC medio
+  11,6%, ROE 13,0%) mientras el balance saca 82 y el FCF yield del 4,29% aprueba. Van cinco de
+  cinco en Observar y en cuatro de las cinco **el freno está en la pata de valoración, no en
+  la de calidad.** Ninguna ha salido Comprar todavía, y eso ya es un hallazgo sobre la cartera,
+  no sobre las empresas.
 
 ---
 
@@ -214,6 +216,44 @@ con la que toca uno mismo, y validar cada valor contra una referencia independie
 fueron los precios sin ajustar, multiplicando por 40 antes del split de julio de 2021 y por
 10 antes del de junio de 2024. Es la misma disciplina de anclas de los subagentes de la
 sección 5, y por el mismo motivo.
+
+**Cuando el companyconcept viene truncado, tira de las páginas R del 10-K.** Los ficheros
+`companyconcept` de conceptos muy usados pueden ser enormes, y WebFetch los corta **por el
+final**; como los hechos van en orden cronológico ascendente, lo que se pierde es justo lo
+reciente. Pasó con la deuda a largo y la caja de Chevron: el corte caía en 2018 y en mediados
+de 2024, y quedaron ocho y tres ejercicios vacíos. Pedirlo otra vez igual no sirve, y la API
+de `frames` también llegó truncada. Lo que **sí** funcionó: las páginas `R<N>.htm` del informe
+financiero de cada 10-K, que son tablas HTML pequeñas con el balance consolidado de dos
+ejercicios. Están en `https://www.sec.gov/Archives/edgar/data/<cik>/<accession-sin-guiones>/`
+y el índice de cuál es cuál está en el `FilingSummary.xml` del mismo directorio. Con seis
+10-K se cubrieron los once valores que faltaban, y cada uno aparece en dos documentos
+distintos porque cada balance repite el ejercicio anterior como comparativo: validación cruzada
+gratis. Los números de expediente salen del feed
+`browse-edgar?action=getcompany&CIK=...&type=10-K&output=atom`, que es XML corto.
+**Ojo:** en el intento anterior el modelo pequeño de WebFetch se inventó una lista de números
+de expediente con un formato que ni siquiera era el de Chevron. Es la segunda vez hoy. Que una
+respuesta llegue redonda no significa que sea cierta: valídala siempre contra algo
+independiente antes de escribirla.
+
+**Un dato que no significa lo que el pipeline cree es peor que un dato ausente.** Chevron sí
+etiqueta `CostOfGoodsAndServicesSold`, pero ahí solo mete "Purchased crude oil and products",
+no un coste de ventas agregado: fuera quedan los gastos de explotación, el agotamiento de
+reservas y los impuestos distintos del de sociedades. Dejarlo puesto hacía que `build_src.py`
+derivase un margen bruto del 40% que no existe. Se anula, y el margen bruto sale `n.d.`, que
+es la verdad. Lo mismo con los ingresos: Chevron presenta dos cifras arriba, ventas y "total
+revenues and other income", y la de ventas solo existe desde 2018 porque nace con la ASC 606,
+así que la única serie completa de diez ejercicios es la del total; se usa esa **en los diez
+años** para no mezclar definiciones dentro de la misma serie, y se dice cuánto cambia (un 4,9%
+en FY2024). Las dos operaciones viven en `SERIES_REEMPLAZADAS` de `homogeneiza.py`, que exige
+escribir los diez valores y comprueba que la fila actual es la esperada antes de tocar nada.
+
+**Hay emisores que no etiquetan el resultado de explotación.** Chevron no lo hace en ninguno de
+los diez ejercicios, e IBM tampoco. Sin él no hay margen operativo, ni EBITDA, ni cobertura de
+intereses, ni ROIC. `build_src.py` lo deriva ahora como **EBIT = EBT + gasto financiero**, pero
+solo si la fila viene entera a null: si el emisor la publica aunque sea a medias, se respeta lo
+publicado. Hay que decir lo que arrastra esa derivación, porque no es neutral: al partir del
+resultado antes de impuestos, incluye los ingresos no operativos (resultado de participadas,
+plusvalías por venta de activos) y los deterioros. En una petrolera eso no es residual.
 
 **El salto de un split NO está donde ocurrió el split.** Está donde termina la última ventana
 comparativa que lo reexpresó, y eso hay que leerlo de la serie, nunca deducirlo de la fecha.

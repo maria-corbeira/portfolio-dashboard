@@ -45,10 +45,25 @@
   precios: ya está arreglado, se vuelcan siempre. **Para decidir hace falta una pasada
   en día hábil**, y luego leer `errors` de `data.json`. Ejecutar `probe.yml` sirve para
   saber si responden, pero en fin de semana no distingue "rota" de "sin datos hoy".
-- [ ] **Las posiciones que faltan por analizar con datos de la SEC**: COP y CVX, las dos
-  petroleras. Hoy tienen scores de búsqueda web de la primera sesión. Hechas el 6-sep-2026:
-  **WMT** (63/100, Observar) e **IBM** (58/100, Observar). El 7-sep-2026: **AMZN** (70/100,
-  Observar) y **AAPL** (72/100, Observar).
+- [ ] **Solo queda COP por analizar con datos de la SEC.** Hoy tiene el score de búsqueda web
+  de la primera sesión. Hechas el 6-sep-2026: **WMT** (63/100, Observar) e **IBM** (58/100,
+  Observar). El 7-sep-2026: **AMZN** (70/100, Observar), **AAPL** (72/100, Observar) y **CVX**
+  (52/100, Observar). COP es la hermana de CVX: mismas trampas (sin margen bruto, sin resultado
+  de explotación etiquetado, ejercicios en pérdidas en 2016 y 2020), así que el brief de CVX
+  sirve casi tal cual. CIK de ConocoPhillips: 0001163165.
+- [ ] **El marco de puntuación castiga a las cíclicas por construcción.** CVX saca 45 en
+  calidad porque el umbral de ROIC del 12% y el de ROE del 15% no tienen sentido para una
+  productora de materia prima que perdió dinero en 2016 y 2020 y ganó 35.465 M$ en 2022. Está
+  dicho en su ficha, pero convendría decidir si el marco lleva un ajuste sectorial explícito
+  (p. ej. ROIC medio del ciclo completo en vez del de cinco años) o si se deja así y el aviso
+  en la ficha basta. Afecta también a COP.
+- [ ] **Retribución en acciones de CVX sin etiquetar.** `ShareBasedCompensation` da 404 en los
+  diez ejercicios, así que `sbc_pct_revenue` sale n.d. No afecta al scoring, pero conviene
+  saberlo si algún día se compara la dilución entre posiciones.
+- [ ] **La amortización de CVX en 2019 incluye deterioros** (29.218 M$ frente a unos 19.400 los
+  años vecinos), así que el EBITDA de ese ejercicio está inflado y la deuda neta/EBITDA de 2019
+  sale mejor de lo que fue. Está dicho en la ficha. Si se quiere separar, hay que buscar el tag
+  de deterioros y restarlo.
 - [ ] **Gasto financiero de AAPL en FY2024 y FY2025.** El tag InterestExpense se corta en
   FY2023 y los fallbacks no cubren esos dos años, así que la cobertura de intereses sale n.d.
   En FY2023 era de 29,1 veces y la deuda a largo ha bajado de 95.281 a 78.328 M$ desde

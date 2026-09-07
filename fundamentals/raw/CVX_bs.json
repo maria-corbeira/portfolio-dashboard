@@ -1,0 +1,262 @@
+{
+ "ticker": "CVX",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "cash": [
+   6988,
+   4813,
+   9342,
+   5686,
+   5596,
+   5640,
+   17678,
+   8178,
+   6781,
+   6293
+  ],
+  "short_term_investments": [
+   13,
+   9,
+   53,
+   63,
+   31,
+   35,
+   223,
+   45,
+   0,
+   0
+  ],
+  "total_current_assets": [
+   29619,
+   28560,
+   34021,
+   28329,
+   26078,
+   33738,
+   50343,
+   41128,
+   40911,
+   38552
+  ],
+  "total_assets": [
+   260078,
+   253806,
+   253863,
+   237428,
+   239790,
+   239535,
+   257709,
+   261632,
+   256938,
+   324012
+  ],
+  "total_current_liabilities": [
+   31785,
+   27737,
+   27171,
+   26530,
+   22183,
+   26791,
+   34208,
+   32258,
+   38558,
+   33387
+  ],
+  "total_liabilities": [
+   113356,
+   104487,
+   98221,
+   92220,
+   107064,
+   99595,
+   97467,
+   99703,
+   103781,
+   131836
+  ],
+  "total_equity": [
+   145556,
+   148124,
+   154554,
+   144213,
+   131688,
+   139067,
+   159282,
+   160957,
+   152318,
+   186450
+  ],
+  "short_term_borrowings": [
+   10840,
+   5192,
+   5726,
+   3282,
+   1548,
+   256,
+   1964,
+   529,
+   4406,
+   977
+  ],
+  "current_portion_ltd": [
+   6253,
+   6720,
+   4999,
+   5054,
+   2600,
+   4946,
+   2694,
+   1650,
+   4012,
+   2345
+  ],
+  "long_term_debt": [
+   35193,
+   33477,
+   28733,
+   23691,
+   42767,
+   31113,
+   21375,
+   20307,
+   20135,
+   39781
+  ],
+  "finance_lease_current": [
+   null,
+   null,
+   null,
+   18,
+   186,
+   48,
+   45,
+   60,
+   58,
+   786
+  ],
+  "finance_lease_noncurrent": [
+   null,
+   null,
+   null,
+   282,
+   447,
+   449,
+   403,
+   574,
+   546,
+   659
+  ],
+  "operating_lease_current": [
+   null,
+   null,
+   null,
+   1277,
+   1291,
+   995,
+   1111,
+   1538,
+   1519,
+   1831
+  ],
+  "operating_lease_noncurrent": [
+   null,
+   null,
+   null,
+   2608,
+   2615,
+   2508,
+   2920,
+   3696,
+   3551,
+   4154
+  ]
+ },
+ "tags_usados": {
+  "cash": {
+   "tag": "CashAndCashEquivalentsAtCarryingValue",
+   "filed": "2024-02-26 (dato mas reciente obtenido; 2019/2024/2025 no recuperables, ver avisos)"
+  },
+  "short_term_investments": {
+   "tag": "MarketableSecuritiesCurrent",
+   "filed": "2026-02-24"
+  },
+  "total_current_assets": {
+   "tag": "AssetsCurrent",
+   "filed": "2026-02-24"
+  },
+  "total_assets": {
+   "tag": "Assets",
+   "filed": "2026-02-24"
+  },
+  "total_current_liabilities": {
+   "tag": "LiabilitiesCurrent",
+   "filed": "2026-02-24"
+  },
+  "total_liabilities": {
+   "tag": "Liabilities",
+   "filed": "2026-02-24"
+  },
+  "total_equity": {
+   "tag": "StockholdersEquity",
+   "filed": "2026-02-24"
+  },
+  "short_term_borrowings": {
+   "tag": "ShortTermBorrowings",
+   "filed": "2026-02-24"
+  },
+  "current_portion_ltd": {
+   "tag": "LongTermDebtCurrent",
+   "filed": "2026-02-24"
+  },
+  "long_term_debt": {
+   "tag": "LongTermDebtNoncurrent",
+   "filed": "2018-02-22 (unico dato reciente disponible es 2017; 2018-2025 no recuperables, ver avisos)"
+  },
+  "finance_lease_current": {
+   "tag": "FinanceLeaseLiabilityCurrent",
+   "filed": "2026-02-24"
+  },
+  "finance_lease_noncurrent": {
+   "tag": "FinanceLeaseLiabilityNoncurrent",
+   "filed": "2026-02-24"
+  },
+  "operating_lease_current": {
+   "tag": "OperatingLeaseLiabilityCurrent",
+   "filed": "2026-02-24"
+  },
+  "operating_lease_noncurrent": {
+   "tag": "OperatingLeaseLiabilityNoncurrent",
+   "filed": "2026-02-24"
+  }
+ },
+ "avisos": [
+  "ANCLAS: FY2024 total_assets obtenido 256.938M vs ancla ~256.900M (desv. 0,015%) -> cuadra. FY2024 total_equity (atribuible a Chevron) obtenido 152.318M vs ancla ~152.300M (desv. 0,012%) -> cuadra. FY2023 total_assets obtenido 261.632M vs ancla ~261.600M (desv. 0,012%) -> cuadra.",
+  "COHERENCIA Activo = Pasivo + Patrimonio con minoritarios: CUADRA EXACTO (diferencia 0) en los 10 ejercicios 2016-2025, usando total_assets, total_liabilities y StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest.",
+  "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest (10 valores, MUSD): [146722,149319,155642,145208,132726,139940,160242,161929,153157,192176].",
+  "MinorityInterest (10 valores, MUSD): [1166,1195,1088,995,1038,873,960,972,839,5726]. En todos los años total_equity + MinorityInterest = StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest de forma exacta.",
+  "MinorityInterest y total_assets dan un salto grande en 2025 (839->5726 y 256.938->324.012 respectivamente); es coherente con la adquisicion de Hess Corporation por Chevron cerrada en 2025 (incluye intereses minoritarios de Hess Midstream), no parece un error de datos: la ecuacion contable sigue cuadrando exacto ese año.",
+  "DebtCurrent (tag agregado de deuda a corto de Chevron, 10 valores MUSD): [19840,15192,15626,13032,11373,8015,6014,5072,12656,10918]. En TODOS los años, short_term_borrowings + current_portion_ltd (y sumando ademas finance_lease_current donde existe) es MENOR que DebtCurrent, nunca mayor (brecha entre ~1.300M y ~7.600M, variable por año). Esto descarta solapamiento/doble contabilizacion entre short_term_borrowings y current_portion_ltd -> es seguro usar ambos campos por separado sin inflar la deuda. La brecha indica que DebtCurrent incluye otras partidas de deuda corriente de Chevron no capturadas por estos tags individuales.",
+  "Arrendamientos financieros ANTIGUOS (pre-ASC842, tag CapitalLeaseObligations*) SI existen para Chevron en 2016-2018, reportados aparte (NO en las filas de leases): CapitalLeaseObligationsCurrent [2016:14, 2017:15, 2018:18] y CapitalLeaseObligationsNoncurrent [2016:93, 2017:94, 2018:127], todos en MUSD, procedentes de los 10-K de esos ejercicios.",
+  "Los null en operating_lease_current/noncurrent y finance_lease_current/noncurrent para 2016-2018 son un dato real: Chevron adopta ASC 842 en el ejercicio cerrado el 2019-12-31, antes no se reconocian arrendamientos operativos en balance.",
+  "LIMITACION TECNICA (no es ausencia real del tag): cash quedo null en 2019, 2024 y 2025, y long_term_debt (tag LongTermDebtNoncurrent) quedo null en 2018-2025 (7 de 10 años, solo se obtuvo 2016 y 2017). La causa es que el JSON companyconcept de estos dos tags es muy voluminoso (Chevron los reporta desde ~2009-2016 con muchas duplicaciones trimestrales) y WebFetch trunca/resume el contenido antes de alcanzar esas fechas. Se confirmo con multiples reintentos, prompts distintos e incluso una URL con parametro anti-cache: el corte siempre reaparecio en el mismo punto (p.ej. LongTermDebtNoncurrent se corta sistematicamente en el registro de 2018-09-30). Se probo tambien el tag alternativo DebtNoncurrent: no existe para Chevron (404 real). Con acceso HTTP directo (curl/requests, bloqueado en este entorno) estos 8 valores puntuales serian faciles de completar.",
+  "long_term_debt (LongTermDebtNoncurrent) valores obtenidos: 2016=35.193M, 2017=33.477M. El resto (2018-2025) queda null por la limitacion tecnica anterior, NO se debe interpretar como 0 ni estimarse.",
+  "Rellenado el 2026-09-07 desde tags renombrados por la SEC: deuda a largo (2018-2025) y caja (2019, 2024, 2025) leidas de las paginas R del informe financiero de los 10-K de FY2019, FY2020, FY2021, FY2022, FY2023 y FY2025, porque el companyconcept de esos dos tags es demasiado grande y WebFetch lo trunca por el final. Cada importe aparece identico en dos 10-K distintos y el activo total de cada tabla cuadra con el ya verificado. No es una estimacion: es el dato publicado, leido por otra via."
+ ],
+ "homogeneizado": {
+  "tags_antiguos": [
+   "cash",
+   "long_term_debt"
+  ]
+ }
+}

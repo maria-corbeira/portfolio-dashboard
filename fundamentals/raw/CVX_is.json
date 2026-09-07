@@ -1,0 +1,223 @@
+{
+ "ticker": "CVX",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "revenue": [
+   114472,
+   141722,
+   166339,
+   146516,
+   94692,
+   162465,
+   246252,
+   200949,
+   202792,
+   189031
+  ],
+  "cogs": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "gross_profit": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "operating_income": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "interest_expense": [
+   201,
+   307,
+   748,
+   798,
+   697,
+   712,
+   516,
+   469,
+   594,
+   1217
+  ],
+  "income_tax": [
+   1729,
+   48,
+   -5715,
+   -2691,
+   1892,
+   -5950,
+   -14066,
+   -8173,
+   -9757,
+   -7258
+  ],
+  "net_income": [
+   -497,
+   9195,
+   14824,
+   2924,
+   -5543,
+   15625,
+   35465,
+   21369,
+   17661,
+   12299
+  ],
+  "eps_diluted": [
+   -0.27,
+   4.85,
+   7.74,
+   1.54,
+   -2.96,
+   8.14,
+   18.28,
+   11.36,
+   9.72,
+   6.63
+  ],
+  "diluted_shares": [
+   1873,
+   1898,
+   1914,
+   1895,
+   1870,
+   1920,
+   1940,
+   1880,
+   1817,
+   1856
+  ],
+  "rd_expense": [
+   476,
+   433,
+   453,
+   500,
+   435,
+   268,
+   268,
+   320,
+   353,
+   427
+  ]
+ },
+ "tags_usados": {
+  "revenue": {
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "filed": "2026-02-24 (10-K FY2025, accn 0000093410-26-000078); serie completa cruzada con filings de cada ejercicio (2019-02-22 a 2026-02-24), sin restatements",
+   "nota": "Esta es la cifra de VENTAS ('Sales and other operating revenues'), NO el total con otros ingresos. Solo existe en XBRL desde FY2018 (adopcion ASC 606); FY2016 y FY2017 no tienen este tag ni SalesRevenueNet (404), por eso quedan en null, no se ha usado el tag 'Revenues' para rellenarlos porque ese tag es el TOTAL, no las ventas.",
+   "alt_tag": "Revenues",
+   "alt_desc": "Total revenues and other income (incluye ingresos por participadas y otros ingresos, ademas de ventas)",
+   "alt_series_10y": [
+    114472,
+    141722,
+    166339,
+    146516,
+    94692,
+    162465,
+    246252,
+    200949,
+    202792,
+    189031
+   ]
+  },
+  "cogs": {
+   "tag": "CostOfGoodsAndServicesSold",
+   "filed": "2026-02-24 (10-K FY2025, accn 0000093410-26-000078); serie completa sin restatements",
+   "nota": "OJO: casi con toda seguridad esto NO es un coste de ventas agregado (Chevron no presenta ese subtotal), sino que corresponde a la partida 'Purchased crude oil and products' etiquetada bajo este tag estandar. NO usar como COGS total sin verificar contra el 10-K: comparado con ingresos, dejaria un margen bruto implausiblemente alto porque faltan 'Operating expenses', 'D,D&A' y 'Taxes other than on income'."
+  },
+  "gross_profit": {
+   "tag": null,
+   "filed": null,
+   "nota": "GrossProfit da 404 en las 10 fechas: Chevron no lo etiqueta. null en los 10 anios."
+  },
+  "operating_income": {
+   "tag": null,
+   "filed": null,
+   "nota": "OperatingIncomeLoss da 404 en las 10 fechas: Chevron no lo etiqueta (igual que IBM). null en los 10 anios; hay que derivarlo aguas arriba para EBITDA/ROIC."
+  },
+  "interest_expense": {
+   "tag": "InterestExpenseDebt",
+   "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements",
+   "nota": "InterestExpense, InterestExpenseNonoperating e InterestIncomeExpenseNet dan 404 en las 10 fechas. Se ha usado InterestExpenseDebt (fallback nº2 de la cascada). Es muy probable que sea la cifra NETA de capitalizacion de intereses (la partida 'Interest and debt expense' que Chevron presenta ya neta de intereses capitalizados), como se advertia en el encargo."
+  },
+  "income_tax": {
+   "tag": "IncomeTaxExpenseBenefit",
+   "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements",
+   "nota": "Signo invertido respecto al dato bruto de la SEC (positivo=gasto en la SEC). Aqui: negativo=gasto, positivo=beneficio fiscal. Ver avisos para el signo anio a anio."
+  },
+  "net_income": {
+   "tag": "NetIncomeLoss",
+   "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements",
+   "nota": "Beneficio atribuible a Chevron (no se ha usado la variante 'IncludingPortionAttributableToNoncontrollingInterest')."
+  },
+  "eps_diluted": {
+   "tag": "EarningsPerShareDiluted",
+   "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements"
+  },
+  "diluted_shares": {
+   "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+   "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements"
+  },
+  "rd_expense": {
+   "tag": "ResearchAndDevelopmentExpense",
+   "filed": "2026-02-24 (10-K FY2025); serie completa sin restatements",
+   "nota": "Al contrario de lo esperado (se preveia 404), Chevron SI etiqueta un gasto de I+D pequeño los 10 anios."
+  }
+ },
+ "avisos": [
+  "REVENUE: el tag RevenueFromContractWithCustomerExcludingAssessedTax da la cifra de VENTAS ('Sales and other operating revenues'), no el total. FY2024=193.414 M$ (ancla ~193.400, OK). No cubre 2016 ni 2017 (no existia antes de ASC 606); SalesRevenueNet da 404 esos anios -> revenue=null en 2016 y 2017 (no se ha rellenado con el tag 'Revenues' porque ese es el TOTAL, mezclaria conceptos).",
+  "Serie alternativa 'Revenues' (total revenues and other income), los 10 anios, para poder comprobar: 2016=114.472, 2017=141.722, 2018=166.339, 2019=146.516, 2020=94.692, 2021=162.465, 2022=246.252, 2023=200.949, 2024=202.792 (ancla ~202.800, OK), 2025=189.031.",
+  "COGS: CostOfGoodsAndServicesSold SI existe (no dio 404, al contrario de lo previsto), pero casi seguro es solo 'Purchased crude oil and products', NO un coste de ventas agregado. No se ha sumado nada por mi cuenta. Usar con cautela aguas arriba.",
+  "GROSS_PROFIT: 404 en los 10 anios -> null.",
+  "OPERATING_INCOME: 404 en los 10 anios -> null. Hay que derivarlo aguas arriba para EBITDA y ROIC, como en IBM.",
+  "INTEREST_EXPENSE: InterestExpense, InterestExpenseNonoperating e InterestIncomeExpenseNet dan 404. Se uso el fallback InterestExpenseDebt (probablemente neto de intereses capitalizados).",
+  "INCOME_TAX, signo por anio (negativo=gasto, positivo=beneficio fiscal, tras invertir el signo bruto de la SEC): 2016=+1.729 (beneficio), 2017=+48 (beneficio), 2018=-5.715 (gasto), 2019=-2.691 (gasto), 2020=+1.892 (beneficio), 2021=-5.950 (gasto), 2022=-14.066 (gasto), 2023=-8.173 (gasto), 2024=-9.757 (gasto), 2025=-7.258 (gasto). 2016 y 2020 dan beneficio fiscal (positivo) porque hubo perdidas antes de impuestos: es correcto, no se ha forzado a negativo.",
+  "NET_INCOME negativo en 2016 (-497 M$) y 2020 (-5.543 M$), coincide exactamente con las cifras de referencia del encargo.",
+  "ANCLAS: FY2024 ventas 193.414 (ok vs ~193.400) y total 202.792 (ok vs ~202.800); FY2024 neto 17.661 (ok, exacto); FY2023 neto 21.369 (ok, exacto). Ninguna desviacion relevante.",
+  "CONTROL BPA x ACCIONES: desviacion maxima 1,75% en 2016 (EPS -0,27 x 1.873 M acciones = -505,7 M vs neto real -497 M), por redondeo del EPS a 2 decimales en un anio de perdida con importe pequeño. El resto de anios desvia menos del 0,2%. Ningun anio supera el 2%.",
+  "ACCIONES DILUIDAS: no hay splits. Bajaron en 2023-2024 (1.940->1.880->1.817) pese a los pagos en acciones de PDC Energy (2023), pese a que las recompras superaron la dilucion; subieron de 2024 a 2025 (1.817->1.856, +39 M) coincidiendo con el cierre de la compra de Hess (2025). El salto de Noble Energy (cierre oct-2020) se nota en la media de 2021 (1.870->1.920) mas que en 2020 mismo, por ser media ponderada del ejercicio. No hay ningun salto anomalo tipo split.",
+  "R&D_EXPENSE: al contrario de lo previsto, SI existe ResearchAndDevelopmentExpense los 10 anios (valores pequeños, 268-500 M$/anio); no se ha buscado sustituto, se reporta tal cual.",
+  "Fila `revenue` REEMPLAZADA el 2026-09-07: serie de us-gaap:Revenues, o sea 'Total revenues and other income'. Se usa esta y no la de ventas porque la de ventas solo existe desde 2018 (nace con la ASC 606) y los tags antiguos SalesRevenueNet y SalesRevenueGoodsNet dan 404. Incluye el resultado de participadas y las plusvalias por venta de activos, asi que en FY2024 son 202.792 M$ frente a 193.414 de ventas puras, un 4,9% mas.",
+  "Fila `cogs` REEMPLAZADA el 2026-09-07: us-gaap:CostOfGoodsAndServicesSold en Chevron es solo 'Purchased crude oil and products', no un coste de ventas agregado: no incluye gastos de explotacion, agotamiento de reservas ni impuestos distintos del de sociedades. Restarlo de los ingresos daba un falso margen bruto del 38-45%. Se anula para que el margen bruto salga n.d., que es lo que realmente se sabe."
+ ],
+ "homogeneizado": {
+  "series_reemplazadas": [
+   "revenue",
+   "cogs"
+  ]
+ }
+}

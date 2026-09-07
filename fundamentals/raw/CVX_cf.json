@@ -1,0 +1,35 @@
+{"ticker":"CVX",
+ "fiscal_dates":["2016-12-31","2017-12-31","2018-12-31","2019-12-31","2020-12-31","2021-12-31","2022-12-31","2023-12-31","2024-12-31","2025-12-31"],
+ "rows":{
+   "cfo":[12690,20338,30618,27314,10577,29187,49602,35609,31492,33939],
+   "capex":[-18109,-13404,-13792,-14116,-8922,-8056,-11974,-15829,-16448,-17347],
+   "depreciation_amortization":[19457,19349,19419,29218,19508,17925,16319,17326,17282,20132],
+   "stock_based_compensation":[null,null,null,null,null,null,null,null,null,null],
+   "buybacks":[-2,-1,-1751,-4039,-1757,-1383,-11255,-14939,-15229,-12079],
+   "dividends_paid":[-8032,-8132,-8502,-8959,-9651,-10179,-10968,-11336,-11801,-12751],
+   "cash_taxes_paid":[1935,3132,4748,4817,2987,4355,9148,10416,8458,7304]
+ },
+ "tags_usados":{
+   "cfo":{"tag":"NetCashProvidedByUsedInOperatingActivities","filed":"2026-02-24 (mas reciente por anio; ver avisos)"},
+   "capex":{"tag":"PaymentsToAcquireProductiveAssets","filed":"2026-02-24 (mas reciente por anio; ver avisos)"},
+   "depreciation_amortization":{"tag":"DepreciationDepletionAndAmortization","filed":"2026-02-24 (mas reciente por anio; ver avisos)"},
+   "stock_based_compensation":{"tag":"ShareBasedCompensation","filed":null},
+   "buybacks":{"tag":"PaymentsForRepurchaseOfCommonStock","filed":"2026-02-24 (mas reciente por anio; ver avisos)"},
+   "dividends_paid":{"tag":"PaymentsOfDividendsCommonStock","filed":"2026-02-24 (mas reciente por anio; ver avisos)"},
+   "cash_taxes_paid":{"tag":"IncomeTaxesPaidNet (solo 2025) / IncomeTaxesPaid (2016-2024)","filed":"2026-02-24 (2025); 2025-02-21 (2024); ver avisos"}
+ },
+ "avisos":[
+   "SIGNOS: cfo y cash_taxes_paid en positivo tal cual la SEC. capex, buybacks y dividends_paid se convirtieron a NEGATIVO (son salidas de caja) aunque la SEC los publica como importes positivos de 'pagos por'. fcf = cfo + capex, calculado con esta convencion.",
+   "CAPEX - cascada de tags: PaymentsToAcquirePropertyPlantAndEquipment devuelve 404 en todos los periodos (Chevron NO usa este tag). Se uso el segundo fallback, PaymentsToAcquireProductiveAssets, que Chevron rotula 'Capital expenditures' en su estado de flujos. Coincide con el ancla FY2024 (-16448 vs ~-16400, desviacion 0.3%).",
+   "CAPEX - tercer tag PaymentsToExploreAndDevelopOilAndGasProperties SI existe pero es una partida mucho mas pequena (gasto exploratorio, no el capex total): 2016=544, 2017=666, 2018=523, 2019=598, 2020=500, 2021=431 (millones); sin dato de ejercicio completo 2022-2025 (Chevron dejo de reportar este tag por separado tras 2021, solo quedo un dato parcial Q1-2022=74). NO se uso como capex porque subestimaria enormemente la inversion real; se deja aqui solo como referencia solicitada.",
+   "CAPEX no incluye las adquisiciones de Noble Energy (2020), PDC Energy (2023) ni Hess (2024): esas operaciones fueron pagadas con acciones, no aparecen como salida de caja en PaymentsToAcquireProductiveAssets ni lo afectan.",
+   "DEPRECIATION_AMORTIZATION: DepreciationDepletionAndAmortization existe para los 10 anios y da magnitudes de 16.000-20.000 M$/anio como se esperaba en una petrolera, EXCEPTO 2019 = 29.218 M$ (vs 19.419 en 2018 y 19.508 en 2020). El salto coincide con los grandes deterioros de activos (impairments, principalmente Appalachia/Kitimat) que Chevron registro en el Q4-2019; es probable que este tag los incluya junto con la depreciacion/agotamiento normal ese anio. AVISO para uso aguas abajo: si esta serie se usa para EBITDA, el ejercicio 2019 quedara sobreestimado por este efecto no recurrente.",
+   "STOCK_BASED_COMPENSATION: el tag ShareBasedCompensation devuelve 404 en todos los periodos. Chevron no parece reportar este XBRL tag especifico (puede estar dentro de otras partidas de nomina/beneficios no desglosadas). Los 10 valores quedan en null, tal como exige la regla de no estimar ni interpolar.",
+   "CASH_TAXES_PAID: IncomeTaxesPaidNet SOLO tiene un dato, el de FY2025 (7304 M$, 10-K filed 2026-02-24); no existe para 2016-2024 (es un tag de adopcion reciente, coherente con la nueva norma de divulgacion fiscal ASU 2023-09 que empieza a aplicarse en torno a 2025). Para 2016-2024 se uso el fallback IncomeTaxesPaid, que si cubre esos 9 anios; ese tag NO tiene una entrada FY2025, asi que para 2025 no habia alternativa mas que usar IncomeTaxesPaidNet. En definitiva la serie mezcla dos tags distintos segun el anio.",
+   "ANCLAS DE VALIDACION: FY2024 cfo=31492 (ancla ~31500, desv. 0.03%) OK; FY2023 cfo=35609 (ancla ~35600) OK; FY2022 cfo=49602 (ancla ~49600) OK; FY2024 capex=-16448 (ancla ~-16400, desv. 0.3%) OK. Las cuatro anclas cuadran dentro del margen del 1%.",
+   "CICLICIDAD: cfo pasa de 12690 M$ (2016) a 49602 M$ (2022) y vuelve a bajar a 33939 M$ (2025), confirmando el patron ciclico esperado; no se suavizo nada.",
+   "PERDIDAS 2016/2020: cfo fue positivo en ambos anios (12690 y 10577 M$ respectivamente), pese a que Chevron reporto perdida neta esos ejercicios. Confirmado.",
+   "FCF = cfo + capex por anio (M$): 2016=-5419, 2017=6934, 2018=16826, 2019=13198, 2020=1655, 2021=21131, 2022=37628, 2023=19780, 2024=15044, 2025=16592. FCF NEGATIVO unicamente en 2016.",
+   "DIVIDENDOS+RECOMPRAS / FCF (valor absoluto de dividends_paid+buybacks entre FCF, %): 2016=indefinido/infinito (FCF negativo, -5419, con pagos de 8034 M$: Chevron sostuvo el dividendo con deuda); 2017=117%; 2018=61%; 2019=98%; 2020=689% (FCF muy bajo, 1655 M$, frente a 11408 M$ de dividendos+recompras: confirma financiacion con deuda, el caso mas extremo de la serie); 2021=55%; 2022=59%; 2023=133%; 2024=180%; 2025=150%. Ademas de 2016 y 2020 (los anios anticipados en el enunciado), la ratio tambien supera el 100% en 2017, 2023, 2024 y 2025, por el fuerte ritmo de recompras en esos anios.",
+   "REVISIONES: para cfo, los valores de 2016 (12846->12690) y 2017 (20515->20338) se revisaron a la baja en 10-K posteriores; se tomo siempre el 'filed' mas reciente por regla del enunciado. El resto de partidas no mostro revisiones materiales entre presentaciones."
+ ]}
