@@ -429,8 +429,14 @@ Ordenado por lo que más desbloquea.
    entrada real.
 9. **RSI y media de 200** aparecerán solos según se acumule histórico: el RSI a las 15
    sesiones, la media a las 200 (unos diez meses). Hasta entonces salen n.d.
-10. **GitHub Pages sin configurar.** Cuando se active, ojo: el repo es público y expone
-    participaciones, coste medio y ganancias. Está avisado en `GITHUB.md`.
+10. **GitHub Pages YA está activo** (comprobado el 7-sep-2026: la página carga en
+    `https://maria-corbeira.github.io/portfolio-dashboard/`, y el workflow
+    `pages-build-deployment` aparece en la pestaña Actions). **Esto ya no es un pendiente,
+    es un hecho consumado y hay que tratarlo como tal:** el repo es público, así que
+    cualquiera con la URL ve las participaciones de Maria, su coste medio y sus ganancias.
+    Estaba avisado en `GITHUB.md` como riesgo futuro; ahora es presente. Conviene
+    preguntárselo explícitamente: o repo privado (Pages seguiría funcionando solo en plan
+    de pago), o sacar `shares` y `cost` de `index.html` y dejar solo el scoring.
 
 `TODO.md` lleva la misma lista en casillas.
 
