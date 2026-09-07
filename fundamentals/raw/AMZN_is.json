@@ -1,0 +1,291 @@
+{
+ "ticker": "AMZN",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "revenue": [
+   135987,
+   177866,
+   232887,
+   280522,
+   386064,
+   469822,
+   513983,
+   574785,
+   637959,
+   716924
+  ],
+  "cogs": [
+   88265,
+   111934,
+   139156,
+   165536,
+   233307,
+   272344,
+   288831,
+   304739,
+   326288,
+   356414
+  ],
+  "gross_profit": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "operating_income": [
+   4186,
+   4106,
+   12421,
+   14541,
+   22899,
+   24879,
+   12248,
+   36852,
+   68593,
+   79975
+  ],
+  "interest_expense": [
+   484,
+   848,
+   1417,
+   1600,
+   1647,
+   1809,
+   2367,
+   3182,
+   2406,
+   null
+  ],
+  "income_tax": [
+   -1425,
+   -769,
+   -1197,
+   -2374,
+   -2863,
+   -4791,
+   3217,
+   -7120,
+   -9265,
+   -19087
+  ],
+  "net_income": [
+   2371,
+   3033,
+   10073,
+   11588,
+   21331,
+   33364,
+   -2722,
+   30425,
+   59248,
+   77670
+  ],
+  "eps_diluted": [
+   0.245,
+   0.3075,
+   1.007,
+   1.1505,
+   2.09,
+   3.24,
+   -0.27,
+   2.9,
+   5.53,
+   7.17
+  ],
+  "diluted_shares": [
+   9680,
+   9860,
+   10000,
+   10080,
+   10198,
+   10296,
+   10189,
+   10492,
+   10721,
+   10827
+  ],
+  "rd_expense": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "tags_usados": {
+  "revenue": {
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "filed": [
+    "2019-02-01",
+    "2020-01-31",
+    "2021-02-03",
+    "2022-02-04",
+    "2023-02-03",
+    "2024-02-02",
+    "2025-02-07",
+    "2026-02-06",
+    "2026-02-06",
+    "2026-02-06"
+   ]
+  },
+  "cogs": {
+   "tag": "CostOfGoodsAndServicesSold",
+   "filed": [
+    "2019-02-01",
+    "2020-01-31",
+    "2021-02-03",
+    "2022-02-04",
+    "2023-02-03",
+    "2024-02-02",
+    "2025-02-07",
+    "2026-02-06",
+    "2026-02-06",
+    "2026-02-06"
+   ]
+  },
+  "gross_profit": {
+   "tag": "GrossProfit",
+   "filed": null,
+   "nota": "Amazon solo tiene este tag con datos residuales de 2007-2009; sin datos 2016-2025"
+  },
+  "operating_income": {
+   "tag": "OperatingIncomeLoss",
+   "filed": [
+    "2019-02-01",
+    "2020-01-31",
+    "2021-02-03",
+    "2022-02-04",
+    "2023-02-03",
+    "2024-02-02",
+    "2025-02-07",
+    "2026-02-06",
+    "2026-02-06",
+    "2026-02-06"
+   ]
+  },
+  "interest_expense": {
+   "tag": "InterestExpense",
+   "filed": [
+    "2017-02-10",
+    "2018-02-02",
+    "2019-02-01",
+    "2020-01-31",
+    "2021-02-03",
+    "2022-02-04",
+    "2023-02-03",
+    "2024-02-02",
+    null,
+    null
+   ],
+   "nota": "2024 y 2025 sin dato; fallbacks InterestExpenseDebt e InterestIncomeExpenseNet dan 404"
+  },
+  "income_tax": {
+   "tag": "IncomeTaxExpenseBenefit",
+   "filed": [
+    "2019-02-01",
+    "2020-01-31",
+    "2021-02-03",
+    "2022-02-04",
+    "2023-02-03",
+    "2024-02-02",
+    "2025-02-07",
+    "2026-02-06",
+    "2026-02-06",
+    "2026-02-06"
+   ],
+   "nota": "signo invertido respecto al valor bruto de la SEC: negativo=gasto, positivo=beneficio fiscal"
+  },
+  "net_income": {
+   "tag": "NetIncomeLoss",
+   "filed": [
+    "2019-02-01",
+    "2020-01-31",
+    "2021-02-03",
+    "2022-02-04",
+    "2023-02-03",
+    "2024-02-02",
+    "2025-02-07",
+    "2026-02-06",
+    "2026-02-06",
+    "2026-02-06"
+   ]
+  },
+  "eps_diluted": {
+   "tag": "EarningsPerShareDiluted",
+   "filed": [
+    "2019-02-01",
+    "2020-01-31",
+    "2021-02-03",
+    "2022-02-04",
+    "2023-02-03",
+    "2024-02-02",
+    "2025-02-07",
+    "2026-02-06",
+    "2026-02-06",
+    "2026-02-06"
+   ],
+   "nota": "2020 y 2021 tomados del filed mas reciente, que ya viene reexpresado post-split 20:1"
+  },
+  "diluted_shares": {
+   "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+   "filed": [
+    "2019-02-01",
+    "2020-01-31",
+    "2021-02-03",
+    "2022-02-04",
+    "2023-02-03",
+    "2024-02-02",
+    "2025-02-07",
+    "2026-02-06",
+    "2026-02-06",
+    "2026-02-06"
+   ],
+   "nota": "2020 y 2021 tomados del filed mas reciente, que ya viene reexpresado post-split 20:1"
+  },
+  "rd_expense": {
+   "tag": "ResearchAndDevelopmentExpense",
+   "filed": null,
+   "nota": "404 en los 10 ejercicios; Amazon reporta esta partida como Technology and content, sin tag GAAP equivalente"
+  }
+ },
+ "avisos": [
+  "gross_profit: el tag GrossProfit de Amazon solo tiene datos de 2007-2009, sin cobertura 2016-2025. Se deja en null; se puede derivar como revenue - cogs (47722, 65932, 93731, 114986, 152757, 197478, 225152, 270046, 311671, 360510 en MM$).",
+  "rd_expense: ResearchAndDevelopmentExpense devuelve 404 en todos los ejercicios. Amazon no usa ese tag, reporta la partida analoga como 'Technology and content'. Se deja en null tal como pide la instruccion, sin buscar sustituto.",
+  "interest_expense: el tag InterestExpense cubre 2016-2023 pero no tiene hechos para 2024 ni 2025. Fallbacks InterestExpenseDebt e InterestIncomeExpenseNet devuelven 404 para Amazon. 2024 y 2025 quedan en null.",
+  "SPLIT 20:1 (junio 2022): el salto de base esta exactamente entre FY2019 y FY2020. FY2016-FY2019 vienen en base ANTIGUA (eps_diluted 4.90/6.15/20.14/23.01 con diluted_shares de 484/493/500/504 M). FY2020-FY2025 ya vienen en base ACTUAL (eps_diluted 2.09/3.24/-0.27/2.90/5.53/7.17 con diluted_shares de 10198/10296/10189/10492/10721/10827 M), porque el 10-K de FY2022 (filed 2023-02-03) reexpreso su comparativa de FY2020-FY2021 ya divididas 20:1, y la regla de 'filed mas reciente' capta esa version. No se ha corregido nada manualmente.",
+  "income_tax: signo invertido segun la convencion pedida (negativo=gasto, positivo=beneficio fiscal). 2022 queda POSITIVO (+3217) por el beneficio fiscal asociado a la perdida de valor de Rivian; el resto de ejercicios queda negativo (gasto). Verificado: EBT derivado (net_income - income_tax) = 3796/3802/11270/13962/24194/38155/-5939/37545/68513/96757 MM$ para 2016-2025, mayor que net_income en todos los años de gasto y menor en 2022 (año de beneficio), como se esperaba.",
+  "Anclas FY2024 (revenue 637959, net_income 59248) y FY2023 (revenue 574785, net_income 30425) cuadran EXACTAS (0% desviacion) contra RevenueFromContractWithCustomerExcludingAssessedTax y NetIncomeLoss.",
+  "Control BPA x acciones diluidas vs beneficio neto: desviacion maxima 1.07% en 2022 (por redondeo de EPS a 2 decimales sobre una base de ~10.19B acciones), resto de ejercicios por debajo de 0.1%. Ningun año supera el 5% de umbral.",
+  "net_income tambien aparece en un DEF 14A filed 2026-04-09 para FY2021-FY2025 con el mismo valor que el 10-K correspondiente (sin reexpresion); se prefirio el 10-K por regla de desempate.",
+  "Rellenado el 2026-09-07 desde tags renombrados por la SEC: gasto financiero de 2024 leido de us-gaap:InterestExpenseNonoperating (10-K filed 2025-02-07), porque los tres tags de la cascada dejaron de usarse ese ano. FY2025 no existe en ningun tag de intereses y se queda vacio: no se estima.",
+  "BPA y acciones diluidas homogeneizados el 2026-09-07: split 20:1 del 6-jun-2022; FY2016-FY2019 venian en la base anterior. Factores por ejercicio: [20, 20, 20, 20, 1, 1, 1, 1, 1, 1]. El BPA se dividio y las acciones se multiplicaron. Control BPA x acciones ~= beneficio neto: OK en los 10 ejercicios."
+ ],
+ "homogeneizado": {
+  "tags_antiguos": [
+   "interest_expense"
+  ],
+  "split": "split 20:1 del 6-jun-2022; FY2016-FY2019 venian en la base anterior"
+ }
+}

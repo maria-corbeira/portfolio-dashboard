@@ -33,7 +33,14 @@ RAW = Path(__file__).resolve().parent.parent / "fundamentals" / "raw"
 # ya reexpresados (entran en la ventana comparativa de los 10-K de FY2024 y FY2025), pero
 # FY2017-21 conservan la base original. El salto se ve en las acciones diluidas:
 # 2.847 M en FY2021 frente a 8.415 M en FY2022.
+#
+# AMZN: split 20:1 del 6-jun-2022. El salto se ve en las acciones diluidas y en el BPA; los
+# factores se fijan tras leer la serie que devolvio la SEC, no a priori.
 SPLITS = {
+    "AMZN": {
+        "factores": [20, 20, 20, 20, 1, 1, 1, 1, 1, 1],
+        "nota": "split 20:1 del 6-jun-2022; FY2016-FY2019 venian en la base anterior",
+    },
     "WMT": {
         "factores": [3, 3, 3, 3, 3, 1, 1, 1, 1, 1],
         "nota": "split 3:1 del 26-feb-2024; FY2017-FY2021 venian en la base anterior",
@@ -45,8 +52,16 @@ SPLITS = {
 # total se deriva como Activo - Patrimonio incluyendo minoritarios. Estos son la
 # diferencia entre StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
 # y StockholdersEquity, leidos de la SEC en la misma extraccion del balance.
+#
+# AMZN: tampoco etiqueta us-gaap:Liabilities (404 en los diez ejercicios), y ademas el tag
+# StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest tambien da 404. No es
+# un hueco: el balance de Amazon no tiene linea de minoritarios, su patrimonio es directamente
+# "Total stockholders equity". Por eso los minoritarios van a cero explicito y el pasivo sale
+# como Activo - Patrimonio a secas. El control de deriva_pasivo (pasivo total >= pasivo
+# corriente y > 0) lo comprueba en los diez ejercicios.
 NCI = {
     "WMT": [2737, 2953, 7138, 6883, 6606, 8638, 7061, 6488, 6408, 6270],
+    "AMZN": [0] * 10,
 }
 
 
@@ -116,6 +131,79 @@ DISCONTINUIDADES = {
                       "perimetros distintos. El CAGR de ventas a 10 anios daba -1,9% anual "
                       "por esto; el de 5 anios (2020-2025) si es homogeneo."},
 }
+
+
+# --- Valores publicados bajo un tag que la SEC renombro ------------------------------
+# No es una derivacion ni una estimacion: es el MISMO hecho de la SEC, publicado bajo el
+# nombre que tenia antes de un cambio de norma. Se rellena solo donde el extractor dejo
+# hueco, nunca se pisa un valor existente.
+#
+# AMZN: la ASC 842 (adoptada en el ejercicio cerrado el 31-12-2019) renombro los
+# "capital leases" como "finance leases". Los tags FinanceLeaseLiabilityCurrent y
+# FinanceLeaseLiabilityNoncurrent no existen antes de 2019, pero los arrendamientos SI
+# estaban en balance bajo CapitalLeaseObligationsCurrent / ...Noncurrent. Dejarlos vacios
+# infravaloraba la deuda de Amazon en 17.370 M$ en 2018, frente a 23.495 M$ de deuda a
+# largo: no era un vacio real. Lo que si es un vacio real en 2016-2018 son los
+# arrendamientos OPERATIVOS, que antes de la ASC 842 no se reconocian en balance.
+TAGS_ANTIGUOS = {
+    "AMZN": [{
+        "estado": "bs",
+        "valores": {
+            "finance_lease_current": {"2016": 4000, "2017": 5800, "2018": 7720},
+            "finance_lease_noncurrent": {"2016": 5080, "2017": 8438, "2018": 9650},
+        },
+        "motivo":
+            "arrendamientos financieros de 2016-2018 leidos de us-gaap:CapitalLeaseObligations"
+            "Current y ...Noncurrent, el nombre que tenian antes de la ASC 842. Se tomo en cada "
+            "fecha el hecho de 10-K con `filed` mas reciente, segun la regla del proyecto. Ojo: "
+            "en ese 10-K posterior los importes corrientes de 2016 y 2017 vienen redondeados a "
+            "centenas de millon (4.000 frente a 3.997 del 10-K original, 5.800 frente a 5.839); "
+            "la diferencia es de 3 y 39 M$ sobre un balance de 83.000 y 131.310 M$.",
+    }, {
+        # AMZN 2024: los tres tags de la cascada de interest_expense (InterestExpense,
+        # InterestExpenseDebt, InterestIncomeExpenseNet) dejan de tener hechos, pero el gasto
+        # financiero SI esta publicado, bajo InterestExpenseNonoperating. FY2025 no aparece en
+        # ningun tag de intereses: ese si queda vacio de verdad, y con el la cobertura de
+        # intereses del ultimo ejercicio sale n.d.
+        "estado": "is",
+        "valores": {"interest_expense": {"2024": 2406}},
+        "motivo":
+            "gasto financiero de 2024 leido de us-gaap:InterestExpenseNonoperating (10-K filed "
+            "2025-02-07), porque los tres tags de la cascada dejaron de usarse ese ano. FY2025 "
+            "no existe en ningun tag de intereses y se queda vacio: no se estima.",
+    }],
+}
+
+
+def rellena_tags_antiguos(ticker: str) -> list:
+    return [linea
+            for cfg in TAGS_ANTIGUOS.get(ticker, [])
+            for linea in _rellena_bloque(ticker, cfg)]
+
+
+def _rellena_bloque(ticker: str, cfg: dict) -> list:
+    p = RAW / f"{ticker}_{cfg['estado']}.json"
+    d = json.loads(p.read_text(encoding="utf-8"))
+    if "tags_antiguos" in d.get("homogeneizado", {}):
+        return [f"{ticker}: tags antiguos ya rellenados, no se toca"]
+
+    anios = [f[:4] for f in d["fiscal_dates"]]
+    out = []
+    for campo, porano in cfg["valores"].items():
+        fila = d["rows"][campo]
+        for anio, val in porano.items():
+            i = anios.index(anio)
+            assert fila[i] is None, (
+                f"{ticker} {campo} {anio}: ya hay un valor de la SEC ({fila[i]}), no se pisa")
+            fila[i] = val
+            out.append(f"{ticker}: {campo} {anio} = {val}")
+
+    d.setdefault("homogeneizado", {})["tags_antiguos"] = sorted(cfg["valores"])
+    d.setdefault("avisos", []).append(
+        f"Rellenado el {date.today().isoformat()} desde tags renombrados por la SEC: "
+        f"{cfg['motivo']}")
+    p.write_text(json.dumps(d, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return out
 
 
 def marca_discontinuidad(ticker: str) -> list:
@@ -284,10 +372,11 @@ def deriva_pasivo(ticker: str) -> list:
 
 def main() -> int:
     tickers = sys.argv[1:] or sorted(set(SPLITS) | set(NCI) | set(CEROS_VERIFICADOS)
-                                     | set(SIGNOS) | set(DISCONTINUIDADES))
+                                     | set(SIGNOS) | set(DISCONTINUIDADES)
+                                     | set(TAGS_ANTIGUOS))
     for t in tickers:
         for linea in (marca_discontinuidad(t) + normaliza_signos(t) + aplica_split(t)
-                      + deriva_pasivo(t) + aplica_ceros(t)):
+                      + deriva_pasivo(t) + aplica_ceros(t) + rellena_tags_antiguos(t)):
             print(" ", linea)
     return 0
 

@@ -1,0 +1,263 @@
+{
+ "ticker": "AMZN",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "cash": [
+   19334,
+   20522,
+   31750,
+   36092,
+   42122,
+   36220,
+   53888,
+   73387,
+   78779,
+   86810
+  ],
+  "short_term_investments": [
+   6647,
+   10464,
+   9500,
+   18929,
+   42274,
+   59829,
+   16138,
+   13393,
+   22423,
+   36219
+  ],
+  "total_current_assets": [
+   45781,
+   60197,
+   75101,
+   96334,
+   132733,
+   161580,
+   146791,
+   172351,
+   190867,
+   229083
+  ],
+  "total_assets": [
+   83402,
+   131310,
+   162648,
+   225248,
+   321195,
+   420549,
+   462675,
+   527854,
+   624894,
+   818042
+  ],
+  "total_current_liabilities": [
+   43816,
+   57883,
+   68391,
+   87812,
+   126385,
+   142266,
+   155393,
+   164917,
+   179431,
+   218005
+  ],
+  "total_liabilities": [
+   64117,
+   103601,
+   119099,
+   163188,
+   227791,
+   282304,
+   316632,
+   325979,
+   338924,
+   406977
+  ],
+  "total_equity": [
+   19285,
+   27709,
+   43549,
+   62060,
+   93404,
+   138245,
+   146043,
+   201875,
+   285970,
+   411065
+  ],
+  "short_term_borrowings": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   318,
+   1200,
+   147,
+   151,
+   455
+  ],
+  "current_portion_ltd": [
+   1056,
+   100,
+   1371,
+   1305,
+   1155,
+   1491,
+   2999,
+   8494,
+   5017,
+   2748
+  ],
+  "long_term_debt": [
+   7694,
+   24743,
+   23495,
+   23414,
+   31816,
+   48744,
+   67150,
+   58314,
+   52623,
+   65648
+  ],
+  "finance_lease_current": [
+   4000,
+   5800,
+   7720,
+   9884,
+   10374,
+   8083,
+   4397,
+   2032,
+   1375,
+   1544
+  ],
+  "finance_lease_noncurrent": [
+   5080,
+   8438,
+   9650,
+   17095,
+   18060,
+   15670,
+   11386,
+   10077,
+   9227,
+   10742
+  ],
+  "operating_lease_current": [
+   null,
+   null,
+   null,
+   3139,
+   4586,
+   6349,
+   7458,
+   8419,
+   10546,
+   12655
+  ],
+  "operating_lease_noncurrent": [
+   null,
+   null,
+   null,
+   22696,
+   34513,
+   51981,
+   61582,
+   67220,
+   69050,
+   76597
+  ]
+ },
+ "tags_usados": {
+  "cash": {
+   "tag": "CashAndCashEquivalentsAtCarryingValue",
+   "filed": "más reciente por año (ver avisos); último dato FY2025 filed 2026-07-31 (10-Q)"
+  },
+  "short_term_investments": {
+   "tag": "MarketableSecuritiesCurrent",
+   "filed": "fallback usado (ShortTermInvestments dio 404); FY2025 filed 2026-02-06 (10-K)"
+  },
+  "total_current_assets": {
+   "tag": "AssetsCurrent",
+   "filed": "FY2025 filed 2026-02-06 (10-K)"
+  },
+  "total_assets": {
+   "tag": "Assets",
+   "filed": "FY2025 filed 2026-02-06 (10-K)"
+  },
+  "total_current_liabilities": {
+   "tag": "LiabilitiesCurrent",
+   "filed": "FY2025 filed 2026-02-06 (10-K)"
+  },
+  "total_liabilities": {
+   "tag": "Liabilities (404 - no existe para AMZN)",
+   "filed": null
+  },
+  "total_equity": {
+   "tag": "StockholdersEquity",
+   "filed": "FY2025 filed 2026-02-06 (10-K)"
+  },
+  "short_term_borrowings": {
+   "tag": "ShortTermBorrowings",
+   "filed": "FY2025 filed 2026-02-06 (10-K); 404 implícito (NONE) 2016-2020"
+  },
+  "current_portion_ltd": {
+   "tag": "LongTermDebtCurrent",
+   "filed": "FY2025 filed 2026-02-06 (10-K)"
+  },
+  "long_term_debt": {
+   "tag": "LongTermDebtNoncurrent",
+   "filed": "FY2025 filed 2026-02-06 (10-K)"
+  },
+  "finance_lease_current": {
+   "tag": "FinanceLeaseLiabilityCurrent",
+   "filed": "FY2025 filed 2026-02-06 (10-K); null 2016-2018 pre-ASC842"
+  },
+  "finance_lease_noncurrent": {
+   "tag": "FinanceLeaseLiabilityNoncurrent",
+   "filed": "FY2025 filed 2026-02-06 (10-K); null 2016-2018 pre-ASC842"
+  },
+  "operating_lease_current": {
+   "tag": "OperatingLeaseLiabilityCurrent",
+   "filed": "FY2025 filed 2026-02-06 (10-K); null 2016-2018 pre-ASC842"
+  },
+  "operating_lease_noncurrent": {
+   "tag": "OperatingLeaseLiabilityNoncurrent",
+   "filed": "FY2025 filed 2026-02-06 (10-K); null 2016-2018 pre-ASC842"
+  }
+ },
+ "avisos": [
+  "short_term_investments: el tag primario ShortTermInvestments devuelve 404 para AMZN (CIK0001018724). Se usó el primer fallback que existe, MarketableSecuritiesCurrent, para los 10 ejercicios.",
+  "total_liabilities: el tag us-gaap:Liabilities devuelve 404 para AMZN (Amazon no lo reporta con esa etiqueta). Conforme a la regla c, se dejó en null y NO se derivó como Activo-Patrimonio. Se intentó el fallback indicado, StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest, que TAMBIÉN devuelve 404 para AMZN en los 10 años -> no hay desglose de interés minoritario disponible vía XBRL; es consistente con que Amazon no reporta NCI material (su tag StockholdersEquity ya parece ser el total de patrimonio, sin partida separada de minoritarios). No se pudo aportar el dato de minoritarios por año porque el tag simplemente no existe para este emisor.",
+  "Arrendamientos: los cuatro campos (finance_lease_current/noncurrent, operating_lease_current/noncurrent) son null en 2016-12-31, 2017-12-31 y 2018-12-31. Esto es un dato REAL, no un hueco: Amazon adopta ASC 842 en el ejercicio cerrado 2019-12-31, y antes de esa norma los arrendamientos operativos no se reconocían en balance. A partir de 2019-12-31 los cuatro tags existen y tienen datos completos sin necesidad de fallback.",
+  "IMPORTANTE sobre el tamaño de los leases: en Amazon los arrendamientos son deuda de verdad y muy voluminosa (centros logísticos, equipos, oficinas). En FY2025 la suma de los cuatro campos de leases (finance current+noncurrent, operating current+noncurrent) es aprox. 1.544+10.742+12.655+76.597 = 101.538 M$, una cifra del mismo orden de magnitud que long_term_debt (65.648 M$) + current_portion_ltd (2.748 M$). Omitir cualquiera de estos cuatro campos infravaloraría sustancialmente la deuda total de Amazon.",
+  "current_portion_ltd 2019-12-31: el valor fue restated entre filings; el 10-K filed 2020-01-31 y el 10-Q filed 2020-05-01 reportaron 1.307 M$, pero los filings posteriores (10-Q filed 2020-07-31 y 2020-10-30, y 10-K filed 2021-02-03) reportan 1.305 M$. Por la regla del filed más reciente, se usó 1.305.",
+  "Anclas de validación: FY2024 (2024-12-31) total_assets obtenido = 624.894 M$ desde el tag Assets (10-K filed 2025-02-07) -> coincide EXACTAMENTE con el ancla ~624.894 M$ (0% desviación). FY2024 total_equity obtenido = 285.970 M$ desde StockholdersEquity -> coincide EXACTAMENTE con el ancla ~285.970 M$. FY2023 (2023-12-31) total_assets obtenido = 527.854 M$ -> coincide EXACTAMENTE con el ancla ~527.854 M$. Sin desviaciones que reportar.",
+  "Control de coherencia Activo = Pasivo + Patrimonio: NO se puede verificar directamente contra un total_liabilities reportado porque ese campo es null (ver aviso de Liabilities 404). Como referencia informativa (no escrita en el JSON, no derivada como campo de salida), el pasivo implícito (Activo-Patrimonio) por ejercicio en millones sería: 2016=64.117, 2017=103.601, 2018=119.099, 2019=163.188, 2020=227.791, 2021=282.304, 2022=316.632, 2023=325.979, 2024=338.924, 2025=406.977. Esta cifra es puramente ilustrativa para el control de coherencia, no sustituye al dato de Liabilities que no existe en XBRL para este emisor.",
+  "total_assets 2025-12-31 = 818.042 M$ implica un crecimiento interanual de +31% frente a 2024 (624.894 M$), muy superior al histórico habitual de Amazon (~15-25%/año). El dato proviene directamente del tag Assets del 10-K filed 2026-02-06 (accn 0001018724-26-000004) y se repite en los 10-Q posteriores (filed 2026-04-30 y 2026-07-31) sin cambios, por lo que no parece un error de extracción, pero se señala por si el usuario quiere contrastarlo con la fuente original.",
+  "short_term_borrowings: el tag primario ShortTermBorrowings SÍ existe para AMZN (no hizo falta fallback a CommercialPaper/OtherShortTermBorrowings), pero solo tiene datos desde 2021-12-31 en adelante; 2016-2020 quedan null porque no hay hechos reportados con ese tag en esas fechas (no es un 404 total del tag, sino ausencia de hechos en esos años concretos).",
+  "total_liabilities DERIVADO el 2026-09-07 como Activo total - (Patrimonio atribuible + Minoritarios), porque el emisor no etiqueta us-gaap:Liabilities (404 en los diez ejercicios). Es aritmetica sobre cifras publicadas, no una estimacion. Minoritarios usados: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0].",
+  "Rellenado el 2026-09-07 desde tags renombrados por la SEC: arrendamientos financieros de 2016-2018 leidos de us-gaap:CapitalLeaseObligationsCurrent y ...Noncurrent, el nombre que tenian antes de la ASC 842. Se tomo en cada fecha el hecho de 10-K con `filed` mas reciente, segun la regla del proyecto. Ojo: en ese 10-K posterior los importes corrientes de 2016 y 2017 vienen redondeados a centenas de millon (4.000 frente a 3.997 del 10-K original, 5.800 frente a 5.839); la diferencia es de 3 y 39 M$ sobre un balance de 83.000 y 131.310 M$."
+ ],
+ "homogeneizado": {
+  "pasivo_derivado": true,
+  "tags_antiguos": [
+   "finance_lease_current",
+   "finance_lease_noncurrent"
+  ]
+ }
+}

@@ -45,9 +45,24 @@
   precios: ya está arreglado, se vuelcan siempre. **Para decidir hace falta una pasada
   en día hábil**, y luego leer `errors` de `data.json`. Ejecutar `probe.yml` sirve para
   saber si responden, pero en fin de semana no distingue "rota" de "sin datos hoy".
-- [ ] **Las posiciones que faltan por analizar con datos de la SEC**: AMZN, AAPL, COP,
-  CVX. Hoy tienen scores de búsqueda web de la primera sesión. Hechas el 6-sep-2026:
-  **WMT** (63/100, Observar) e **IBM** (58/100, Observar).
+- [ ] **Las posiciones que faltan por analizar con datos de la SEC**: AAPL, COP, CVX.
+  Hoy tienen scores de búsqueda web de la primera sesión. Hechas el 6-sep-2026: **WMT**
+  (63/100, Observar) e **IBM** (58/100, Observar). El 7-sep-2026: **AMZN** (70/100,
+  Observar).
+- [ ] **Gasto financiero de AMZN en FY2025.** Los cuatro tags probados (InterestExpense,
+  InterestExpenseDebt, InterestIncomeExpenseNet e InterestExpenseNonoperating) no tienen
+  ningún hecho con `end=2025-12-31`; InterestAndDebtExpense da 404. La cobertura de
+  intereses del último ejercicio sale n.d. y el bloque de Salud se pondera sobre los otros
+  tres umbrales. En 2024 era de 28,5 veces, así que no hay motivo para pensar que el dato
+  sea malo: simplemente no está etiquetado todavía. Revisar cuando la SEC actualice.
+- [ ] **Capitalización por ejercicio, sin calcular en NINGUNA empresa.** `build_src.py`
+  escribe `"Market Cap (MM)": [None] * n`, así que `metrics.py` deja `market_cap` y
+  `fcf_yield` vacíos en los diez ejercicios de las nueve compañías. El P/E histórico sí
+  sale, porque se calcula como precio / BPA. Ya hay precios de cierre por ejercicio en
+  `fundamentals/raw/_precios.json` y acciones diluidas por año, así que es una
+  multiplicación: `market_cap = precio_cierre x acciones_diluidas`. Desbloquearía la serie
+  histórica de FCF yield, que hoy solo existe para el ejercicio en curso y recalculada con
+  el precio en vivo.
 - [ ] **ROIC de IBM incompleto.** Solo se calcula en 6 de los 10 ejercicios: en 2020, 2022,
   2024 y 2025 IBM tuvo ingreso fiscal neto, el tipo efectivo sale negativo y `metrics.py` lo
   invalida a propósito (solo acepta el rango 0-60%). No es un fallo de extracción, es que la

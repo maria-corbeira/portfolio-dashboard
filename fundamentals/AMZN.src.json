@@ -1,0 +1,668 @@
+{
+  "company": "Amazon.com, Inc.",
+  "ticker": "AMZN",
+  "fiscal_dates": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+  ],
+  "sheets": {
+    "7.TIKR_IS": {
+      "Total Revenues": [
+        135987,
+        177866,
+        232887,
+        280522,
+        386064,
+        469822,
+        513983,
+        574785,
+        637959,
+        716924
+      ],
+      "Cost of Goods Sold": [
+        88265,
+        111934,
+        139156,
+        165536,
+        233307,
+        272344,
+        288831,
+        304739,
+        326288,
+        356414
+      ],
+      "Gross Profit": [
+        47722,
+        65932,
+        93731,
+        114986,
+        152757,
+        197478,
+        225152,
+        270046,
+        311671,
+        360510
+      ],
+      "Operating Income": [
+        4186,
+        4106,
+        12421,
+        14541,
+        22899,
+        24879,
+        12248,
+        36852,
+        68593,
+        79975
+      ],
+      "EBITDA": [
+        12302,
+        15584,
+        27762,
+        36330,
+        48150,
+        59312,
+        54169,
+        85515,
+        121388,
+        145731
+      ],
+      "Interest Expense": [
+        484,
+        848,
+        1417,
+        1600,
+        1647,
+        1809,
+        2367,
+        3182,
+        2406,
+        null
+      ],
+      "EBT Incl. Unusual Items": [
+        3796,
+        3802,
+        11270,
+        13962,
+        24194,
+        38155,
+        -5939,
+        37545,
+        68513,
+        96757
+      ],
+      "Income Tax Expense": [
+        -1425,
+        -769,
+        -1197,
+        -2374,
+        -2863,
+        -4791,
+        3217,
+        -7120,
+        -9265,
+        -19087
+      ],
+      "Net Income": [
+        2371,
+        3033,
+        10073,
+        11588,
+        21331,
+        33364,
+        -2722,
+        30425,
+        59248,
+        77670
+      ],
+      "Diluted EPS Excl Extra Items": [
+        0.245,
+        0.3075,
+        1.007,
+        1.1505,
+        2.09,
+        3.24,
+        -0.27,
+        2.9,
+        5.53,
+        7.17
+      ],
+      "Weighted Average Diluted Shares Outstanding": [
+        9680,
+        9860,
+        10000,
+        10080,
+        10198,
+        10296,
+        10189,
+        10492,
+        10721,
+        10827
+      ],
+      "R&D Expenses": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "8.TIKR_BS": {
+      "Cash And Equivalents": [
+        19334,
+        20522,
+        31750,
+        36092,
+        42122,
+        36220,
+        53888,
+        73387,
+        78779,
+        86810
+      ],
+      "Total Cash And Short Term Investments": [
+        25981,
+        30986,
+        41250,
+        55021,
+        84396,
+        96049,
+        70026,
+        86780,
+        101202,
+        123029
+      ],
+      "Total Current Assets": [
+        45781,
+        60197,
+        75101,
+        96334,
+        132733,
+        161580,
+        146791,
+        172351,
+        190867,
+        229083
+      ],
+      "Total Current Liabilities": [
+        43816,
+        57883,
+        68391,
+        87812,
+        126385,
+        142266,
+        155393,
+        164917,
+        179431,
+        218005
+      ],
+      "Total Assets": [
+        83402,
+        131310,
+        162648,
+        225248,
+        321195,
+        420549,
+        462675,
+        527854,
+        624894,
+        818042
+      ],
+      "Total Liabilities": [
+        64117,
+        103601,
+        119099,
+        163188,
+        227791,
+        282304,
+        316632,
+        325979,
+        338924,
+        406977
+      ],
+      "Total Equity": [
+        19285,
+        27709,
+        43549,
+        62060,
+        93404,
+        138245,
+        146043,
+        201875,
+        285970,
+        411065
+      ],
+      "Total Debt": [
+        17830,
+        39081,
+        42236,
+        77533,
+        100504,
+        132636,
+        156172,
+        154703,
+        147989,
+        170389
+      ],
+      "Net Debt": [
+        -8151,
+        8095,
+        986,
+        22512,
+        16108,
+        36587,
+        86146,
+        67923,
+        46787,
+        47360
+      ]
+    },
+    "9.TIKR_CF": {
+      "Cash from Operations": [
+        16443,
+        18434,
+        30723,
+        38514,
+        66064,
+        46327,
+        46752,
+        84946,
+        115877,
+        139514
+      ],
+      "Capital Expenditure": [
+        -7804,
+        -11955,
+        -13427,
+        -16861,
+        -40140,
+        -61053,
+        -63645,
+        -52729,
+        -82999,
+        -131819
+      ],
+      "Free Cash Flow": [
+        8639,
+        6479,
+        17296,
+        21653,
+        25924,
+        -14726,
+        -16893,
+        32217,
+        32878,
+        7695
+      ],
+      "Depreciation & Amortization": [
+        8116,
+        11478,
+        15341,
+        21789,
+        25251,
+        34433,
+        41921,
+        48663,
+        52795,
+        65756
+      ],
+      "Stock-Based Compensation": [
+        2975,
+        4215,
+        5418,
+        6864,
+        9208,
+        12757,
+        19621,
+        24023,
+        22011,
+        19467
+      ],
+      "Repurchase of Common Stock": [
+        null,
+        null,
+        null,
+        null,
+        0,
+        0,
+        -6000,
+        0,
+        0,
+        null
+      ],
+      "Common & Preferred Stock Dividends Paid": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "10.TIKR_Val": {
+      "Market Cap (MM)": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Price": [
+        37.494,
+        58.474,
+        75.099,
+        92.392,
+        162.847,
+        166.717,
+        84.0,
+        151.94,
+        219.39,
+        230.82
+      ]
+    }
+  },
+  "notas": {
+    "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por ejercicio (cifras reexpresadas cuando las hay)",
+    "extraido": "2026-09-05",
+    "derivadas": [
+      "Gross Profit = Total Revenues - Cost of Goods Sold (la empresa no etiqueta GrossProfit en XBRL)",
+      "EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)",
+      "EBITDA = Operating Income + Depreciation & Amortization",
+      "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
+      "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
+      "Free Cash Flow = Cash from Operations + Capital Expenditure"
+    ],
+    "deuda_incompleta": [
+      "2016: suma sin deuda a corto, arrend. operativo corriente, arrend. operativo no corriente",
+      "2017: suma sin deuda a corto, arrend. operativo corriente, arrend. operativo no corriente",
+      "2018: suma sin deuda a corto, arrend. operativo corriente, arrend. operativo no corriente",
+      "2019: suma sin deuda a corto",
+      "2020: suma sin deuda a corto"
+    ],
+    "control_splits": {
+      "cuadra": true,
+      "desviaciones": []
+    },
+    "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "discontinuidad": null,
+    "tags_is": {
+      "revenue": {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "filed": [
+          "2019-02-01",
+          "2020-01-31",
+          "2021-02-03",
+          "2022-02-04",
+          "2023-02-03",
+          "2024-02-02",
+          "2025-02-07",
+          "2026-02-06",
+          "2026-02-06",
+          "2026-02-06"
+        ]
+      },
+      "cogs": {
+        "tag": "CostOfGoodsAndServicesSold",
+        "filed": [
+          "2019-02-01",
+          "2020-01-31",
+          "2021-02-03",
+          "2022-02-04",
+          "2023-02-03",
+          "2024-02-02",
+          "2025-02-07",
+          "2026-02-06",
+          "2026-02-06",
+          "2026-02-06"
+        ]
+      },
+      "gross_profit": {
+        "tag": "GrossProfit",
+        "filed": null,
+        "nota": "Amazon solo tiene este tag con datos residuales de 2007-2009; sin datos 2016-2025"
+      },
+      "operating_income": {
+        "tag": "OperatingIncomeLoss",
+        "filed": [
+          "2019-02-01",
+          "2020-01-31",
+          "2021-02-03",
+          "2022-02-04",
+          "2023-02-03",
+          "2024-02-02",
+          "2025-02-07",
+          "2026-02-06",
+          "2026-02-06",
+          "2026-02-06"
+        ]
+      },
+      "interest_expense": {
+        "tag": "InterestExpense",
+        "filed": [
+          "2017-02-10",
+          "2018-02-02",
+          "2019-02-01",
+          "2020-01-31",
+          "2021-02-03",
+          "2022-02-04",
+          "2023-02-03",
+          "2024-02-02",
+          null,
+          null
+        ],
+        "nota": "2024 y 2025 sin dato; fallbacks InterestExpenseDebt e InterestIncomeExpenseNet dan 404"
+      },
+      "income_tax": {
+        "tag": "IncomeTaxExpenseBenefit",
+        "filed": [
+          "2019-02-01",
+          "2020-01-31",
+          "2021-02-03",
+          "2022-02-04",
+          "2023-02-03",
+          "2024-02-02",
+          "2025-02-07",
+          "2026-02-06",
+          "2026-02-06",
+          "2026-02-06"
+        ],
+        "nota": "signo invertido respecto al valor bruto de la SEC: negativo=gasto, positivo=beneficio fiscal"
+      },
+      "net_income": {
+        "tag": "NetIncomeLoss",
+        "filed": [
+          "2019-02-01",
+          "2020-01-31",
+          "2021-02-03",
+          "2022-02-04",
+          "2023-02-03",
+          "2024-02-02",
+          "2025-02-07",
+          "2026-02-06",
+          "2026-02-06",
+          "2026-02-06"
+        ]
+      },
+      "eps_diluted": {
+        "tag": "EarningsPerShareDiluted",
+        "filed": [
+          "2019-02-01",
+          "2020-01-31",
+          "2021-02-03",
+          "2022-02-04",
+          "2023-02-03",
+          "2024-02-02",
+          "2025-02-07",
+          "2026-02-06",
+          "2026-02-06",
+          "2026-02-06"
+        ],
+        "nota": "2020 y 2021 tomados del filed mas reciente, que ya viene reexpresado post-split 20:1"
+      },
+      "diluted_shares": {
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "filed": [
+          "2019-02-01",
+          "2020-01-31",
+          "2021-02-03",
+          "2022-02-04",
+          "2023-02-03",
+          "2024-02-02",
+          "2025-02-07",
+          "2026-02-06",
+          "2026-02-06",
+          "2026-02-06"
+        ],
+        "nota": "2020 y 2021 tomados del filed mas reciente, que ya viene reexpresado post-split 20:1"
+      },
+      "rd_expense": {
+        "tag": "ResearchAndDevelopmentExpense",
+        "filed": null,
+        "nota": "404 en los 10 ejercicios; Amazon reporta esta partida como Technology and content, sin tag GAAP equivalente"
+      }
+    },
+    "tags_bs": {
+      "cash": {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "filed": "más reciente por año (ver avisos); último dato FY2025 filed 2026-07-31 (10-Q)"
+      },
+      "short_term_investments": {
+        "tag": "MarketableSecuritiesCurrent",
+        "filed": "fallback usado (ShortTermInvestments dio 404); FY2025 filed 2026-02-06 (10-K)"
+      },
+      "total_current_assets": {
+        "tag": "AssetsCurrent",
+        "filed": "FY2025 filed 2026-02-06 (10-K)"
+      },
+      "total_assets": {
+        "tag": "Assets",
+        "filed": "FY2025 filed 2026-02-06 (10-K)"
+      },
+      "total_current_liabilities": {
+        "tag": "LiabilitiesCurrent",
+        "filed": "FY2025 filed 2026-02-06 (10-K)"
+      },
+      "total_liabilities": {
+        "tag": "Liabilities (404 - no existe para AMZN)",
+        "filed": null
+      },
+      "total_equity": {
+        "tag": "StockholdersEquity",
+        "filed": "FY2025 filed 2026-02-06 (10-K)"
+      },
+      "short_term_borrowings": {
+        "tag": "ShortTermBorrowings",
+        "filed": "FY2025 filed 2026-02-06 (10-K); 404 implícito (NONE) 2016-2020"
+      },
+      "current_portion_ltd": {
+        "tag": "LongTermDebtCurrent",
+        "filed": "FY2025 filed 2026-02-06 (10-K)"
+      },
+      "long_term_debt": {
+        "tag": "LongTermDebtNoncurrent",
+        "filed": "FY2025 filed 2026-02-06 (10-K)"
+      },
+      "finance_lease_current": {
+        "tag": "FinanceLeaseLiabilityCurrent",
+        "filed": "FY2025 filed 2026-02-06 (10-K); null 2016-2018 pre-ASC842"
+      },
+      "finance_lease_noncurrent": {
+        "tag": "FinanceLeaseLiabilityNoncurrent",
+        "filed": "FY2025 filed 2026-02-06 (10-K); null 2016-2018 pre-ASC842"
+      },
+      "operating_lease_current": {
+        "tag": "OperatingLeaseLiabilityCurrent",
+        "filed": "FY2025 filed 2026-02-06 (10-K); null 2016-2018 pre-ASC842"
+      },
+      "operating_lease_noncurrent": {
+        "tag": "OperatingLeaseLiabilityNoncurrent",
+        "filed": "FY2025 filed 2026-02-06 (10-K); null 2016-2018 pre-ASC842"
+      }
+    },
+    "tags_cf": {
+      "cfo": {
+        "tag": "NetCashProvidedByUsedInOperatingActivities",
+        "filed": "cada año tomado del 10-K de ese mismo ejercicio; el más reciente es 2026-02-06 (FY2025, accn 0001018724-26-000004)"
+      },
+      "capex": {
+        "tag": "PaymentsToAcquireProductiveAssets",
+        "filed": "ver aviso; FY2024 accn 0001018724-25-000004 (filed 2025-02-07), FY2025 accn 0001018724-26-000004 (filed 2026-02-06)"
+      },
+      "depreciation_amortization": {
+        "tag": "DepreciationDepletionAndAmortization",
+        "filed": "cada año tomado del 10-K correspondiente; el más reciente es 2026-02-06 (FY2025)"
+      },
+      "stock_based_compensation": {
+        "tag": "ShareBasedCompensation",
+        "filed": "cada año tomado del 10-K correspondiente; el más reciente es 2026-02-06 (FY2025)"
+      },
+      "buybacks": {
+        "tag": "PaymentsForRepurchaseOfCommonStock",
+        "filed": "2020-2024 con hecho explícito (0 o 6000M en 2022); 2016-2019 y 2025 sin hecho encontrado -> null"
+      },
+      "dividends_paid": {
+        "tag": "PaymentsOfDividendsCommonStock -> PaymentsOfDividends (ambos 404 los 10 años)",
+        "filed": null
+      },
+      "cash_taxes_paid": {
+        "tag": "IncomeTaxesPaidNet",
+        "filed": "cada año tomado del 10-K correspondiente; el más reciente es 2026-02-06 (FY2025)"
+      }
+    },
+    "avisos_extraccion": [
+      "gross_profit: el tag GrossProfit de Amazon solo tiene datos de 2007-2009, sin cobertura 2016-2025. Se deja en null; se puede derivar como revenue - cogs (47722, 65932, 93731, 114986, 152757, 197478, 225152, 270046, 311671, 360510 en MM$).",
+      "rd_expense: ResearchAndDevelopmentExpense devuelve 404 en todos los ejercicios. Amazon no usa ese tag, reporta la partida analoga como 'Technology and content'. Se deja en null tal como pide la instruccion, sin buscar sustituto.",
+      "interest_expense: el tag InterestExpense cubre 2016-2023 pero no tiene hechos para 2024 ni 2025. Fallbacks InterestExpenseDebt e InterestIncomeExpenseNet devuelven 404 para Amazon. 2024 y 2025 quedan en null.",
+      "SPLIT 20:1 (junio 2022): el salto de base esta exactamente entre FY2019 y FY2020. FY2016-FY2019 vienen en base ANTIGUA (eps_diluted 4.90/6.15/20.14/23.01 con diluted_shares de 484/493/500/504 M). FY2020-FY2025 ya vienen en base ACTUAL (eps_diluted 2.09/3.24/-0.27/2.90/5.53/7.17 con diluted_shares de 10198/10296/10189/10492/10721/10827 M), porque el 10-K de FY2022 (filed 2023-02-03) reexpreso su comparativa de FY2020-FY2021 ya divididas 20:1, y la regla de 'filed mas reciente' capta esa version. No se ha corregido nada manualmente.",
+      "income_tax: signo invertido segun la convencion pedida (negativo=gasto, positivo=beneficio fiscal). 2022 queda POSITIVO (+3217) por el beneficio fiscal asociado a la perdida de valor de Rivian; el resto de ejercicios queda negativo (gasto). Verificado: EBT derivado (net_income - income_tax) = 3796/3802/11270/13962/24194/38155/-5939/37545/68513/96757 MM$ para 2016-2025, mayor que net_income en todos los años de gasto y menor en 2022 (año de beneficio), como se esperaba.",
+      "Anclas FY2024 (revenue 637959, net_income 59248) y FY2023 (revenue 574785, net_income 30425) cuadran EXACTAS (0% desviacion) contra RevenueFromContractWithCustomerExcludingAssessedTax y NetIncomeLoss.",
+      "Control BPA x acciones diluidas vs beneficio neto: desviacion maxima 1.07% en 2022 (por redondeo de EPS a 2 decimales sobre una base de ~10.19B acciones), resto de ejercicios por debajo de 0.1%. Ningun año supera el 5% de umbral.",
+      "net_income tambien aparece en un DEF 14A filed 2026-04-09 para FY2021-FY2025 con el mismo valor que el 10-K correspondiente (sin reexpresion); se prefirio el 10-K por regla de desempate.",
+      "Rellenado el 2026-09-07 desde tags renombrados por la SEC: gasto financiero de 2024 leido de us-gaap:InterestExpenseNonoperating (10-K filed 2025-02-07), porque los tres tags de la cascada dejaron de usarse ese ano. FY2025 no existe en ningun tag de intereses y se queda vacio: no se estima.",
+      "BPA y acciones diluidas homogeneizados el 2026-09-07: split 20:1 del 6-jun-2022; FY2016-FY2019 venian en la base anterior. Factores por ejercicio: [20, 20, 20, 20, 1, 1, 1, 1, 1, 1]. El BPA se dividio y las acciones se multiplicaron. Control BPA x acciones ~= beneficio neto: OK en los 10 ejercicios.",
+      "short_term_investments: el tag primario ShortTermInvestments devuelve 404 para AMZN (CIK0001018724). Se usó el primer fallback que existe, MarketableSecuritiesCurrent, para los 10 ejercicios.",
+      "total_liabilities: el tag us-gaap:Liabilities devuelve 404 para AMZN (Amazon no lo reporta con esa etiqueta). Conforme a la regla c, se dejó en null y NO se derivó como Activo-Patrimonio. Se intentó el fallback indicado, StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest, que TAMBIÉN devuelve 404 para AMZN en los 10 años -> no hay desglose de interés minoritario disponible vía XBRL; es consistente con que Amazon no reporta NCI material (su tag StockholdersEquity ya parece ser el total de patrimonio, sin partida separada de minoritarios). No se pudo aportar el dato de minoritarios por año porque el tag simplemente no existe para este emisor.",
+      "Arrendamientos: los cuatro campos (finance_lease_current/noncurrent, operating_lease_current/noncurrent) son null en 2016-12-31, 2017-12-31 y 2018-12-31. Esto es un dato REAL, no un hueco: Amazon adopta ASC 842 en el ejercicio cerrado 2019-12-31, y antes de esa norma los arrendamientos operativos no se reconocían en balance. A partir de 2019-12-31 los cuatro tags existen y tienen datos completos sin necesidad de fallback.",
+      "IMPORTANTE sobre el tamaño de los leases: en Amazon los arrendamientos son deuda de verdad y muy voluminosa (centros logísticos, equipos, oficinas). En FY2025 la suma de los cuatro campos de leases (finance current+noncurrent, operating current+noncurrent) es aprox. 1.544+10.742+12.655+76.597 = 101.538 M$, una cifra del mismo orden de magnitud que long_term_debt (65.648 M$) + current_portion_ltd (2.748 M$). Omitir cualquiera de estos cuatro campos infravaloraría sustancialmente la deuda total de Amazon.",
+      "current_portion_ltd 2019-12-31: el valor fue restated entre filings; el 10-K filed 2020-01-31 y el 10-Q filed 2020-05-01 reportaron 1.307 M$, pero los filings posteriores (10-Q filed 2020-07-31 y 2020-10-30, y 10-K filed 2021-02-03) reportan 1.305 M$. Por la regla del filed más reciente, se usó 1.305.",
+      "Anclas de validación: FY2024 (2024-12-31) total_assets obtenido = 624.894 M$ desde el tag Assets (10-K filed 2025-02-07) -> coincide EXACTAMENTE con el ancla ~624.894 M$ (0% desviación). FY2024 total_equity obtenido = 285.970 M$ desde StockholdersEquity -> coincide EXACTAMENTE con el ancla ~285.970 M$. FY2023 (2023-12-31) total_assets obtenido = 527.854 M$ -> coincide EXACTAMENTE con el ancla ~527.854 M$. Sin desviaciones que reportar.",
+      "Control de coherencia Activo = Pasivo + Patrimonio: NO se puede verificar directamente contra un total_liabilities reportado porque ese campo es null (ver aviso de Liabilities 404). Como referencia informativa (no escrita en el JSON, no derivada como campo de salida), el pasivo implícito (Activo-Patrimonio) por ejercicio en millones sería: 2016=64.117, 2017=103.601, 2018=119.099, 2019=163.188, 2020=227.791, 2021=282.304, 2022=316.632, 2023=325.979, 2024=338.924, 2025=406.977. Esta cifra es puramente ilustrativa para el control de coherencia, no sustituye al dato de Liabilities que no existe en XBRL para este emisor.",
+      "total_assets 2025-12-31 = 818.042 M$ implica un crecimiento interanual de +31% frente a 2024 (624.894 M$), muy superior al histórico habitual de Amazon (~15-25%/año). El dato proviene directamente del tag Assets del 10-K filed 2026-02-06 (accn 0001018724-26-000004) y se repite en los 10-Q posteriores (filed 2026-04-30 y 2026-07-31) sin cambios, por lo que no parece un error de extracción, pero se señala por si el usuario quiere contrastarlo con la fuente original.",
+      "short_term_borrowings: el tag primario ShortTermBorrowings SÍ existe para AMZN (no hizo falta fallback a CommercialPaper/OtherShortTermBorrowings), pero solo tiene datos desde 2021-12-31 en adelante; 2016-2020 quedan null porque no hay hechos reportados con ese tag en esas fechas (no es un 404 total del tag, sino ausencia de hechos en esos años concretos).",
+      "total_liabilities DERIVADO el 2026-09-07 como Activo total - (Patrimonio atribuible + Minoritarios), porque el emisor no etiqueta us-gaap:Liabilities (404 en los diez ejercicios). Es aritmetica sobre cifras publicadas, no una estimacion. Minoritarios usados: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0].",
+      "Rellenado el 2026-09-07 desde tags renombrados por la SEC: arrendamientos financieros de 2016-2018 leidos de us-gaap:CapitalLeaseObligationsCurrent y ...Noncurrent, el nombre que tenian antes de la ASC 842. Se tomo en cada fecha el hecho de 10-K con `filed` mas reciente, segun la regla del proyecto. Ojo: en ese 10-K posterior los importes corrientes de 2016 y 2017 vienen redondeados a centenas de millon (4.000 frente a 3.997 del 10-K original, 5.800 frente a 5.839); la diferencia es de 3 y 39 M$ sobre un balance de 83.000 y 131.310 M$.",
+      "ANCLAS: cuadran exactamente. CFO FY2024 = 115.877 M$ (ancla ~115.877 M$, OK). CFO FY2023 = 84.946 M$ (ancla ~84.946 M$, OK). Capex FY2024 = -82.999 M$ (ancla ~-82.999 M$, OK, coincidencia exacta).",
+      "CAPEX: se usó PaymentsToAcquireProductiveAssets como tag principal porque tiene cobertura completa en los 10 años y su valor FY2024 coincide exactamente con el ancla (82.999 M$). El tag alternativo PaymentsToAcquirePropertyPlantAndEquipment solo devolvió un hecho, para 2016-12-31, con un valor distinto (6.737 M$ vs 7.804 M$ del tag elegido); probablemente ese importe es neto de 'proceeds from property and equipment sales and incentives' o un remanente de un esquema de etiquetado antiguo. Se descartó por falta de cobertura y por no coincidir con el patrón que ancla a partir de 2024.",
+      "CAPEX vs arrendamientos financieros: el tag usado (PaymentsToAcquireProductiveAssets) corresponde a la línea 'Purchases of property and equipment' del estado de flujos de Amazon, que es la compra de inmovilizado en efectivo. No incluye 'Principal repayments of finance leases' (esa partida vive en actividades de financiación con otro tag, PaymentsOfCapitalDistributionObligationOrFinanceLeases o similar, y no se extrajo aquí). El salto de -82.999 M$ (2024) a -131.819 M$ (2025) es coherente con el aumento de capex de IA/AWS descrito en el enunciado.",
+      "DIVIDENDOS: ambos tags de la cascada (PaymentsOfDividendsCommonStock y PaymentsOfDividends) devolvieron 404 en los 10 años. Amazon no reparte dividendo; los 10 valores son null de forma legítima, no un fallo de extracción.",
+      "BUYBACKS: 2016-2019 sin ningún hecho reportado con este tag -> null (no hay recompras o no se etiquetaron). 2020, 2021, 2023 y 2024 tienen hecho explícito con valor 0 (se registran como 0, no como null, siguiendo la regla de no confundir 'no reportado' con 'reportado en cero'). 2022 = -6.000 M$, que coincide con el programa de recompra puntual de Amazon ese año. 2025: se verificó específicamente contra el 10-K de FY2025 (accn 0001018724-26-000004) y NO existe ningún hecho con end=2025-12-31 para este tag (se comprobó explícitamente), por lo que se deja null en vez de asumir 0.",
+      "DEPRECIATION_AMORTIZATION: se usó DepreciationDepletionAndAmortization, que en los 10-K de Amazon corresponde a la línea combinada 'Depreciation and amortization of property and equipment and capitalized content costs, operating lease assets, and other', es decir, una cifra amplia que sí incluye amortización de contenido capitalizado y activos por arrendamiento operativo, no solo depreciación de PP&E. Es apta para calcular EBITDA.",
+      "STOCK_BASED_COMPENSATION: la serie sube de forma sostenida hasta 2023 (24.023 M$) pero luego BAJA en 2024 (22.011 M$) y 2025 (19.467 M$). Es una inflexión real del dato tal como lo reporta el tag ShareBasedCompensation; se señala como posible efecto de capitalización de SBC o cambios en el mix de compensación, pero no se ha ajustado ni interpolado.",
+      "FCF = cfo + capex por año (M$): 2016=8.639, 2017=6.479, 2018=17.296, 2019=21.653, 2020=25.924, 2021=-14.726, 2022=-16.893, 2023=32.217, 2024=32.878, 2025=7.695. FCF NEGATIVO en 2021 y 2022 (por la sobreexpansión de capacidad logística/capex post-pandemia), no en los años más recientes. 2025 es positivo pero con margen muy estrecho (capex de 131.819 M$ casi iguala al CFO de 139.514 M$), reflejando el fuerte aumento del capex de IA/AWS.",
+      "CFO positivo los 10 años, con tendencia creciente coherente salvo el salto grande 2019->2020 (+66.064 M$, efecto COVID/e-commerce) y el retroceso 2020->2021 (46.327 M$), ambos ya conocidos y no atribuibles a error de tag.",
+      "Para cfo, depreciation_amortization, stock_based_compensation y cash_taxes_paid no hizo falta cascada de fallback: el tag principal tuvo cobertura completa y consistente en los 10 ejercicios, con valores que cuadran contra las anclas donde existía referencia."
+    ]
+  }
+}

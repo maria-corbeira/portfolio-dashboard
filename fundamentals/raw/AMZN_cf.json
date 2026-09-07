@@ -1,0 +1,34 @@
+{
+  "ticker": "AMZN",
+  "fiscal_dates": ["2016-12-31", "2017-12-31", "2018-12-31", "2019-12-31", "2020-12-31", "2021-12-31", "2022-12-31", "2023-12-31", "2024-12-31", "2025-12-31"],
+  "rows": {
+    "cfo": [16443, 18434, 30723, 38514, 66064, 46327, 46752, 84946, 115877, 139514],
+    "capex": [-7804, -11955, -13427, -16861, -40140, -61053, -63645, -52729, -82999, -131819],
+    "depreciation_amortization": [8116, 11478, 15341, 21789, 25251, 34433, 41921, 48663, 52795, 65756],
+    "stock_based_compensation": [2975, 4215, 5418, 6864, 9208, 12757, 19621, 24023, 22011, 19467],
+    "buybacks": [null, null, null, null, 0, 0, -6000, 0, 0, null],
+    "dividends_paid": [null, null, null, null, null, null, null, null, null, null],
+    "cash_taxes_paid": [412, 957, 1184, 881, 1713, 3688, 6035, 11179, 12308, 8295]
+  },
+  "tags_usados": {
+    "cfo": {"tag": "NetCashProvidedByUsedInOperatingActivities", "filed": "cada año tomado del 10-K de ese mismo ejercicio; el más reciente es 2026-02-06 (FY2025, accn 0001018724-26-000004)"},
+    "capex": {"tag": "PaymentsToAcquireProductiveAssets", "filed": "ver aviso; FY2024 accn 0001018724-25-000004 (filed 2025-02-07), FY2025 accn 0001018724-26-000004 (filed 2026-02-06)"},
+    "depreciation_amortization": {"tag": "DepreciationDepletionAndAmortization", "filed": "cada año tomado del 10-K correspondiente; el más reciente es 2026-02-06 (FY2025)"},
+    "stock_based_compensation": {"tag": "ShareBasedCompensation", "filed": "cada año tomado del 10-K correspondiente; el más reciente es 2026-02-06 (FY2025)"},
+    "buybacks": {"tag": "PaymentsForRepurchaseOfCommonStock", "filed": "2020-2024 con hecho explícito (0 o 6000M en 2022); 2016-2019 y 2025 sin hecho encontrado -> null"},
+    "dividends_paid": {"tag": "PaymentsOfDividendsCommonStock -> PaymentsOfDividends (ambos 404 los 10 años)", "filed": null},
+    "cash_taxes_paid": {"tag": "IncomeTaxesPaidNet", "filed": "cada año tomado del 10-K correspondiente; el más reciente es 2026-02-06 (FY2025)"}
+  },
+  "avisos": [
+    "ANCLAS: cuadran exactamente. CFO FY2024 = 115.877 M$ (ancla ~115.877 M$, OK). CFO FY2023 = 84.946 M$ (ancla ~84.946 M$, OK). Capex FY2024 = -82.999 M$ (ancla ~-82.999 M$, OK, coincidencia exacta).",
+    "CAPEX: se usó PaymentsToAcquireProductiveAssets como tag principal porque tiene cobertura completa en los 10 años y su valor FY2024 coincide exactamente con el ancla (82.999 M$). El tag alternativo PaymentsToAcquirePropertyPlantAndEquipment solo devolvió un hecho, para 2016-12-31, con un valor distinto (6.737 M$ vs 7.804 M$ del tag elegido); probablemente ese importe es neto de 'proceeds from property and equipment sales and incentives' o un remanente de un esquema de etiquetado antiguo. Se descartó por falta de cobertura y por no coincidir con el patrón que ancla a partir de 2024.",
+    "CAPEX vs arrendamientos financieros: el tag usado (PaymentsToAcquireProductiveAssets) corresponde a la línea 'Purchases of property and equipment' del estado de flujos de Amazon, que es la compra de inmovilizado en efectivo. No incluye 'Principal repayments of finance leases' (esa partida vive en actividades de financiación con otro tag, PaymentsOfCapitalDistributionObligationOrFinanceLeases o similar, y no se extrajo aquí). El salto de -82.999 M$ (2024) a -131.819 M$ (2025) es coherente con el aumento de capex de IA/AWS descrito en el enunciado.",
+    "DIVIDENDOS: ambos tags de la cascada (PaymentsOfDividendsCommonStock y PaymentsOfDividends) devolvieron 404 en los 10 años. Amazon no reparte dividendo; los 10 valores son null de forma legítima, no un fallo de extracción.",
+    "BUYBACKS: 2016-2019 sin ningún hecho reportado con este tag -> null (no hay recompras o no se etiquetaron). 2020, 2021, 2023 y 2024 tienen hecho explícito con valor 0 (se registran como 0, no como null, siguiendo la regla de no confundir 'no reportado' con 'reportado en cero'). 2022 = -6.000 M$, que coincide con el programa de recompra puntual de Amazon ese año. 2025: se verificó específicamente contra el 10-K de FY2025 (accn 0001018724-26-000004) y NO existe ningún hecho con end=2025-12-31 para este tag (se comprobó explícitamente), por lo que se deja null en vez de asumir 0.",
+    "DEPRECIATION_AMORTIZATION: se usó DepreciationDepletionAndAmortization, que en los 10-K de Amazon corresponde a la línea combinada 'Depreciation and amortization of property and equipment and capitalized content costs, operating lease assets, and other', es decir, una cifra amplia que sí incluye amortización de contenido capitalizado y activos por arrendamiento operativo, no solo depreciación de PP&E. Es apta para calcular EBITDA.",
+    "STOCK_BASED_COMPENSATION: la serie sube de forma sostenida hasta 2023 (24.023 M$) pero luego BAJA en 2024 (22.011 M$) y 2025 (19.467 M$). Es una inflexión real del dato tal como lo reporta el tag ShareBasedCompensation; se señala como posible efecto de capitalización de SBC o cambios en el mix de compensación, pero no se ha ajustado ni interpolado.",
+    "FCF = cfo + capex por año (M$): 2016=8.639, 2017=6.479, 2018=17.296, 2019=21.653, 2020=25.924, 2021=-14.726, 2022=-16.893, 2023=32.217, 2024=32.878, 2025=7.695. FCF NEGATIVO en 2021 y 2022 (por la sobreexpansión de capacidad logística/capex post-pandemia), no en los años más recientes. 2025 es positivo pero con margen muy estrecho (capex de 131.819 M$ casi iguala al CFO de 139.514 M$), reflejando el fuerte aumento del capex de IA/AWS.",
+    "CFO positivo los 10 años, con tendencia creciente coherente salvo el salto grande 2019->2020 (+66.064 M$, efecto COVID/e-commerce) y el retroceso 2020->2021 (46.327 M$), ambos ya conocidos y no atribuibles a error de tag.",
+    "Para cfo, depreciation_amortization, stock_based_compensation y cash_taxes_paid no hizo falta cascada de fallback: el tag principal tuvo cobertura completa y consistente en los 10 ejercicios, con valores que cuadran contra las anclas donde existía referencia."
+  ]
+}

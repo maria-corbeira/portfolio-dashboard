@@ -32,7 +32,7 @@ Maria decide con él si mantener, ampliar o vender.
 gobierna el proyecto entero es que un dato que no se ha podido obtener sale como `n.d.`
 y se explica por qué. Nunca se rellena con una estimación, una media ni un cero.
 
-### Estado a 6-sep-2026
+### Estado a 7-sep-2026
 
 - **Repo sincronizado.** El primer push se hizo hoy; local y GitHub están idénticos.
 - **El Action de precios funciona.** Primera pasada real: 21 tickers, todos vía CNBC.
@@ -40,12 +40,18 @@ y se explica por qué. Nunca se rellena con una estimación, una media ni un cer
   mano una vez (Actions → Run workflow). Hasta entonces `news.json` no existe y el
   panel de Home sale con su estado vacío, que es lo correcto.
 - 15 posiciones reales, 6 candidatas en watchlist.
-- **6 empresas analizadas con 10 años de la SEC**: GOOGL, MSFT, META, UBER, ISRG, NVDA.
-  Las otras 6 (AMZN, AAPL, IBM, COP, WMT, CVX) siguen con scores de búsqueda web de la
+- **9 empresas analizadas con 10 años de la SEC**: GOOGL, MSFT, META, UBER, ISRG, NVDA,
+  WMT, IBM y AMZN. Las otras 3 (AAPL, COP, CVX) siguen con scores de búsqueda web de la
   primera sesión, y su ficha lo dice.
-- **Las seis ya tienen P/E por ejercicio.** Los precios históricos de NVDA se cerraron el
+- **Las nueve tienen P/E por ejercicio.** Los precios históricos de NVDA se cerraron el
   6-sep-2026; con ellos aparece también su P/E frente a la mediana de 10 años (mediana
   50,9; hoy −8%).
+- **Lo que va saliendo:** WMT 63/100 y IBM 58/100, las dos Observar y por motivos
+  opuestos — Walmart es un buen negocio a precio de buen negocio, IBM un negocio flojo a
+  precio sensato. AMZN 70/100, también Observar: calidad en aumento (margen operativo del
+  3,1% al 11,2% en diez años) con la valoración sin colchón, porque el capex de IA se come
+  el flujo libre. Van tres de tres en el mismo patrón: **el freno está siempre en la pata
+  de valoración, no en la de calidad.**
 
 ---
 
@@ -205,6 +211,20 @@ con la que toca uno mismo, y validar cada valor contra una referencia independie
 fueron los precios sin ajustar, multiplicando por 40 antes del split de julio de 2021 y por
 10 antes del de junio de 2024. Es la misma disciplina de anclas de los subagentes de la
 sección 5, y por el mismo motivo.
+
+**Un tag vacío puede ser un tag renombrado, no un dato que falte.** En Amazon los cuatro
+campos de arrendamientos salían nulos en 2016, 2017 y 2018. La explicación cómoda era la de
+siempre — antes de la norma ASC 842 los arrendamientos no se reconocían en balance — y es
+verdad, pero **solo para los operativos**. Los financieros sí estaban, con el nombre que
+tenían entonces: `CapitalLeaseObligationsCurrent` y `...Noncurrent` en vez de
+`FinanceLeaseLiability...`. Darlos por vacíos dejaba fuera **17.370 M$ de deuda en 2018**,
+frente a 23.495 M$ de deuda a largo: no era un matiz. Lo mismo pasó con el gasto financiero
+de 2024, que había migrado a `InterestExpenseNonoperating`.
+La regla: cuando una fila entera se apaga a partir de un año concreto, **antes de aceptar el
+hueco, busca si la SEC renombró el concepto**. La pista es que el corte coincide con un
+cambio de norma contable o con un ejercicio redondo. Rellenarlo no es derivar ni estimar: es
+el mismo hecho publicado, y por eso vive en `TAGS_ANTIGUOS` de `homogeneiza.py`, que además
+se niega a pisar un valor que ya venga de la SEC.
 
 ---
 
