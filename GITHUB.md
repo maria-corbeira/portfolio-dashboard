@@ -160,3 +160,34 @@ cd ~/Claude/Investing/portfolio-dashboard && rm -f .git/*.lock && git push
 | Si el push se queja de un lock | `cd ~/Claude/Investing/portfolio-dashboard && rm -f .git/*.lock && git push` |
 
 Todo lo demás se hace pinchando en la web de GitHub.
+
+---
+
+## Los tres workflows: el nombre del fichero NO es el que ves
+
+Esta confusión ya costó una vuelta entera el 7-sep-2026. En la pestaña **Actions** GitHub
+muestra el campo `name:` del YAML, no el nombre del fichero. **Usa siempre la columna de la
+derecha cuando le pidas algo a Maria.**
+
+| Fichero (para ti) | Lo que ella ve en Actions | Para qué |
+|---|---|---|
+| `prices.yml` | **Actualizar precios** | precios, cada 15 min en horario de mercado |
+| `news.yml`   | **Actualizar noticias** | noticias y calendario de resultados, cada 6 h |
+| `probe.yml`  | **Probe fuentes** | comprueba qué fuentes responden; solo a mano |
+
+Aparece un cuarto, `pages-build-deployment`, que es de GitHub y se lanza solo en cada push.
+
+**«Probe fuentes» lanza los dos probes**, el de precios (`probe.json`) y el de noticias
+(`probe_news.json`). Si al terminar solo cambia uno de los dos ficheros, no es que fallara:
+es que el otro salió idéntico y git no tuvo nada que commitear.
+
+### Cómo se lanza uno a mano
+
+1. `https://github.com/maria-corbeira/portfolio-dashboard` → pestaña **Actions**.
+2. Columna izquierda → el nombre del workflow.
+3. Barra gris de la derecha → **Run workflow** → branch `main` → botón verde **Run workflow**.
+4. Un minuto y refrescar. Verde ✓ = terminó.
+
+**Los que leen el mercado hay que lanzarlos en día hábil.** En fin de semana o festivo
+responden 200 y devuelven tablas vacías, y entonces no se distingue «la fuente está rota» de
+«hoy no hubo sesión». Pasó dos veces: domingo 6-sep y Labor Day 7-sep-2026.
