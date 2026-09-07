@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T15:33:14+00:00",
-  "count": 21,
+  "generated_at": "2026-09-07T16:09:19+00:00",
+  "count": 22,
   "failed": [],
   "prices": {
     "NVDA": {
@@ -170,6 +170,14 @@
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
+    },
+    "CNSWF": {
+      "price": 2175.0,
+      "prev_close": 2202.0,
+      "change_pct": -1.23,
+      "currency": "USD",
+      "market_time": null,
+      "source": "cnbc"
     }
   },
   "indicadores": {
@@ -336,6 +344,14 @@
     "SHEL": {
       "sesiones": 2,
       "var_1d": 0.0,
+      "var_5d": null,
+      "rsi_14": null,
+      "ma_200": null,
+      "vs_ma200": null
+    },
+    "CNSWF": {
+      "sesiones": 1,
+      "var_1d": null,
       "var_5d": null,
       "rsi_14": null,
       "ma_200": null,
