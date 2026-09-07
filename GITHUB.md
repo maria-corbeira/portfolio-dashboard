@@ -76,10 +76,13 @@ Solo hay que hacerlo una vez.
 4. **Save**. A los dos o tres minutos aparece arriba la dirección, del estilo
    `https://maria-corbeira.github.io/portfolio-dashboard/`.
 
-Esa dirección es la que le mandas a tu marido. **Ojo con esto**: el repo es público, así
-que cualquiera con el enlace ve tu cartera — participaciones, coste medio y ganancias.
-Si prefieres que no, en **Settings → General**, abajo del todo, puedes pasarlo a privado;
-Pages seguirá funcionando pero solo para quien invites en **Settings → Collaborators**.
+Esa dirección es la que le mandas a tu marido. Ya está activa y la página carga.
+
+**DECIDIDO EL 7-SEP-2026: se queda público.** Maria lo sabe y le parece bien. Eso significa
+que cualquiera con el enlace ve la cartera entera — participaciones, coste medio y ganancias.
+No hay que volver a plantearlo. Si algún día cambia de idea: **Settings → General**, abajo del
+todo, se pasa a privado; Pages seguiría funcionando pero solo para quien invite en
+**Settings → Collaborators**, y eso requiere plan de pago.
 
 ---
 

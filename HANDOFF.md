@@ -434,9 +434,10 @@ Ordenado por lo que más desbloquea.
     `pages-build-deployment` aparece en la pestaña Actions). **Esto ya no es un pendiente,
     es un hecho consumado y hay que tratarlo como tal:** el repo es público, así que
     cualquiera con la URL ve las participaciones de Maria, su coste medio y sus ganancias.
-    Estaba avisado en `GITHUB.md` como riesgo futuro; ahora es presente. Conviene
-    preguntárselo explícitamente: o repo privado (Pages seguiría funcionando solo en plan
-    de pago), o sacar `shares` y `cost` de `index.html` y dejar solo el scoring.
+    Se le preguntó ese mismo día y **decidió dejarlo público**, sabiendo lo que expone.
+    **No se lo vuelvas a plantear**: está decidido, y `GITHUB.md` lo recoge. Lo que sí sigue
+    valiendo es la consecuencia práctica: no metas en el repo nada que ella no querría ver
+    publicado — ni saldos de cuenta, ni datos personales, ni claves.
 
 `TODO.md` lleva la misma lista en casillas.
 
