@@ -40,18 +40,21 @@ y se explica por qué. Nunca se rellena con una estimación, una media ni un cer
   mano una vez (Actions → Run workflow). Hasta entonces `news.json` no existe y el
   panel de Home sale con su estado vacío, que es lo correcto.
 - 15 posiciones reales, 6 candidatas en watchlist.
-- **9 empresas analizadas con 10 años de la SEC**: GOOGL, MSFT, META, UBER, ISRG, NVDA,
-  WMT, IBM y AMZN. Las otras 3 (AAPL, COP, CVX) siguen con scores de búsqueda web de la
-  primera sesión, y su ficha lo dice.
-- **Las nueve tienen P/E por ejercicio.** Los precios históricos de NVDA se cerraron el
+- **10 empresas analizadas con 10 años de la SEC**: GOOGL, MSFT, META, UBER, ISRG, NVDA,
+  WMT, IBM, AMZN y AAPL. Solo quedan COP y CVX, las dos petroleras, con scores de búsqueda
+  web de la primera sesión, y su ficha lo dice.
+- **Las diez tienen P/E por ejercicio.** Los precios históricos de NVDA se cerraron el
   6-sep-2026; con ellos aparece también su P/E frente a la mediana de 10 años (mediana
   50,9; hoy −8%).
 - **Lo que va saliendo:** WMT 63/100 y IBM 58/100, las dos Observar y por motivos
   opuestos — Walmart es un buen negocio a precio de buen negocio, IBM un negocio flojo a
   precio sensato. AMZN 70/100, también Observar: calidad en aumento (margen operativo del
   3,1% al 11,2% en diez años) con la valoración sin colchón, porque el capex de IA se come
-  el flujo libre. Van tres de tres en el mismo patrón: **el freno está siempre en la pata
-  de valoración, no en la de calidad.**
+  el flujo libre. AAPL 72/100, Observar: **95 sobre 100 de calidad, el mejor negocio de la
+  cartera, y los tres criterios de valoración fallando a la vez** (P/E 42,9, PEG 2,39, FCF
+  yield 2,06%). Van cuatro de cuatro en el mismo patrón: **el freno está siempre en la pata
+  de valoración, no en la de calidad.** Ninguna ha salido Comprar todavía, y eso ya es un
+  hallazgo sobre la cartera, no sobre las empresas.
 
 ---
 
@@ -212,6 +215,17 @@ fueron los precios sin ajustar, multiplicando por 40 antes del split de julio de
 10 antes del de junio de 2024. Es la misma disciplina de anclas de los subagentes de la
 sección 5, y por el mismo motivo.
 
+**El salto de un split NO está donde ocurrió el split.** Está donde termina la última ventana
+comparativa que lo reexpresó, y eso hay que leerlo de la serie, nunca deducirlo de la fecha.
+Apple hizo su split 4:1 en agosto de 2020, pero el salto en las acciones diluidas está **entre
+FY2017 y FY2018** (5.252 M frente a 20.000 M), porque los 10-K de 2020 y 2021 reexpresaron
+FY2018 y FY2019 y la regla del `filed` más reciente los recoge ya divididos; FY2016 y FY2017
+se quedaron fuera de toda ventana posterior. En Amazon, split de junio de 2022, el salto está
+entre FY2019 y FY2020 por lo mismo. Si hubiera puesto los factores por la fecha del split en
+vez de por la serie, en Apple habrían salido mal seis ejercicios y en Amazon tres. **Mira las
+acciones diluidas y pon el corte donde esté el salto.** El control de `aplica_split` (BPA x
+acciones ≈ beneficio neto) NO lo detecta: es invariante al split, por diseño.
+
 **Un tag vacío puede ser un tag renombrado, no un dato que falte.** En Amazon los cuatro
 campos de arrendamientos salían nulos en 2016, 2017 y 2018. La explicación cómoda era la de
 siempre — antes de la norma ASC 842 los arrendamientos no se reconocían en balance — y es
@@ -220,8 +234,11 @@ tenían entonces: `CapitalLeaseObligationsCurrent` y `...Noncurrent` en vez de
 `FinanceLeaseLiability...`. Darlos por vacíos dejaba fuera **17.370 M$ de deuda en 2018**,
 frente a 23.495 M$ de deuda a largo: no era un matiz. Lo mismo pasó con el gasto financiero
 de 2024, que había migrado a `InterestExpenseNonoperating`.
-La regla: cuando una fila entera se apaga a partir de un año concreto, **antes de aceptar el
-hueco, busca si la SEC renombró el concepto**. La pista es que el corte coincide con un
+En Apple pasó lo mismo con las inversiones a corto de FY2016 y FY2017, que vivían en
+`AvailableForSaleSecuritiesCurrent` antes de la ASU 2016-01: sin ellas su caja de esos años
+salía de 20.000 M$ en vez de 67.000 y 74.000.
+La regla: cuando una fila entera se apaga a partir de un año concreto — o se enciende a partir
+de uno —, **antes de aceptar el hueco, busca si la SEC renombró el concepto**. La pista es que el corte coincide con un
 cambio de norma contable o con un ejercicio redondo. Rellenarlo no es derivar ni estimar: es
 el mismo hecho publicado, y por eso vive en `TAGS_ANTIGUOS` de `homogeneiza.py`, que además
 se niega a pisar un valor que ya venga de la SEC.

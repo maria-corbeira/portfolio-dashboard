@@ -36,7 +36,17 @@ RAW = Path(__file__).resolve().parent.parent / "fundamentals" / "raw"
 #
 # AMZN: split 20:1 del 6-jun-2022. El salto se ve en las acciones diluidas y en el BPA; los
 # factores se fijan tras leer la serie que devolvio la SEC, no a priori.
+#
+# AAPL: split 4:1 del 28-ago-2020, pero el salto NO esta en FY2020. Esta entre FY2017 y
+# FY2018, porque la regla del `filed` mas reciente recoge FY2018 y FY2019 ya reexpresados en
+# los 10-K de 2020 y 2021, mientras que FY2016 y FY2017 se quedaron fuera de toda ventana
+# comparativa posterior y conservan la base antigua. Se ve en las acciones: 5.252 M en FY2017
+# frente a 20.000 M en FY2018.
 SPLITS = {
+    "AAPL": {
+        "factores": [4, 4, 1, 1, 1, 1, 1, 1, 1, 1],
+        "nota": "split 4:1 del 28-ago-2020; FY2016-FY2017 venian en la base anterior",
+    },
     "AMZN": {
         "factores": [20, 20, 20, 20, 1, 1, 1, 1, 1, 1],
         "nota": "split 20:1 del 6-jun-2022; FY2016-FY2019 venian en la base anterior",
@@ -146,6 +156,22 @@ DISCONTINUIDADES = {
 # largo: no era un vacio real. Lo que si es un vacio real en 2016-2018 son los
 # arrendamientos OPERATIVOS, que antes de la ASC 842 no se reconocian en balance.
 TAGS_ANTIGUOS = {
+    # AAPL: hasta FY2017 las inversiones a corto se etiquetaban como
+    # AvailableForSaleSecuritiesCurrent; despues Apple paso a MarketableSecuritiesCurrent, al
+    # adoptar la ASU 2016-01. Es la misma linea del balance, "Short-term marketable
+    # securities". Sin ella, la caja de FY2016 y FY2017 se quedaba en 20.000 M$ en vez de
+    # 67.000 y 74.000, y la deuda neta y el ROIC de esos dos ejercicios salian mal.
+    "AAPL": [{
+        "estado": "bs",
+        "valores": {"short_term_investments": {"2016": 46671, "2017": 53892}},
+        "motivo":
+            "inversiones a corto de FY2016 y FY2017 leidas de "
+            "us-gaap:AvailableForSaleSecuritiesCurrent, el tag que Apple usaba antes de la ASU "
+            "2016-01. Mismo importe en el 10-K y en los tres 10-Q siguientes de cada anio, sin "
+            "reexpresiones. Los cuatro campos de arrendamientos siguen vacios en FY2016-FY2019 "
+            "y eso SI es real: Apple adopto la ASC 842 en el primer trimestre de FY2020, asi "
+            "que antes no habia nada que reconocer en balance.",
+    }],
     "AMZN": [{
         "estado": "bs",
         "valores": {

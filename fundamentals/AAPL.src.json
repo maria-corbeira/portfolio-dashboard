@@ -1,0 +1,840 @@
+{
+  "company": "Apple Inc.",
+  "ticker": "AAPL",
+  "fiscal_dates": [
+    "2016-09-24",
+    "2017-09-30",
+    "2018-09-29",
+    "2019-09-28",
+    "2020-09-26",
+    "2021-09-25",
+    "2022-09-24",
+    "2023-09-30",
+    "2024-09-28",
+    "2025-09-27"
+  ],
+  "sheets": {
+    "7.TIKR_IS": {
+      "Total Revenues": [
+        215639,
+        229234,
+        265595,
+        260174,
+        274515,
+        365817,
+        394328,
+        383285,
+        391035,
+        416161
+      ],
+      "Cost of Goods Sold": [
+        131376,
+        141048,
+        163756,
+        161782,
+        169559,
+        212981,
+        223546,
+        214137,
+        210352,
+        220960
+      ],
+      "Gross Profit": [
+        84263,
+        88186,
+        101839,
+        98392,
+        104956,
+        152836,
+        170782,
+        169148,
+        180683,
+        195201
+      ],
+      "Operating Income": [
+        60024,
+        61344,
+        70898,
+        63930,
+        66288,
+        108949,
+        119437,
+        114301,
+        123216,
+        133050
+      ],
+      "EBITDA": [
+        70529,
+        71501,
+        81801,
+        76477,
+        77344,
+        120233,
+        130541,
+        125820,
+        134661,
+        144748
+      ],
+      "Interest Expense": [
+        1456,
+        2323,
+        3240,
+        3576,
+        2873,
+        2645,
+        2931,
+        3933,
+        null,
+        null
+      ],
+      "EBT Incl. Unusual Items": [
+        61372,
+        64089,
+        72903,
+        65737,
+        67091,
+        109207,
+        119103,
+        113736,
+        123485,
+        132729
+      ],
+      "Income Tax Expense": [
+        -15685,
+        -15738,
+        -13372,
+        -10481,
+        -9680,
+        -14527,
+        -19300,
+        -16741,
+        -29749,
+        -20719
+      ],
+      "Net Income": [
+        45687,
+        48351,
+        59531,
+        55256,
+        57411,
+        94680,
+        99803,
+        96995,
+        93736,
+        112010
+      ],
+      "Diluted EPS Excl Extra Items": [
+        2.0775,
+        2.3025,
+        2.98,
+        2.97,
+        3.28,
+        5.61,
+        6.11,
+        6.13,
+        6.08,
+        7.46
+      ],
+      "Weighted Average Diluted Shares Outstanding": [
+        22000,
+        21008,
+        20000,
+        18596,
+        17528,
+        16865,
+        16326,
+        15813,
+        15408,
+        15005
+      ],
+      "R&D Expenses": [
+        10045,
+        11581,
+        14236,
+        16217,
+        18752,
+        21914,
+        26251,
+        29915,
+        31370,
+        34550
+      ]
+    },
+    "8.TIKR_BS": {
+      "Cash And Equivalents": [
+        20484,
+        20289,
+        25913,
+        48844,
+        38016,
+        34940,
+        23646,
+        29965,
+        29943,
+        35934
+      ],
+      "Total Cash And Short Term Investments": [
+        67155,
+        74181,
+        66301,
+        100557,
+        90943,
+        62639,
+        48304,
+        61555,
+        65171,
+        54697
+      ],
+      "Total Current Assets": [
+        106869,
+        128645,
+        131339,
+        162819,
+        143713,
+        134836,
+        135405,
+        143566,
+        152987,
+        147957
+      ],
+      "Total Current Liabilities": [
+        79006,
+        100814,
+        115929,
+        105718,
+        105392,
+        125481,
+        153982,
+        145308,
+        176392,
+        165631
+      ],
+      "Total Assets": [
+        321686,
+        375319,
+        365725,
+        338516,
+        323888,
+        351002,
+        352755,
+        352583,
+        364980,
+        359241
+      ],
+      "Total Liabilities": [
+        193437,
+        241272,
+        258578,
+        248028,
+        258549,
+        287912,
+        302083,
+        290437,
+        308030,
+        285508
+      ],
+      "Total Equity": [
+        128249,
+        134047,
+        107147,
+        90488,
+        65339,
+        63090,
+        50672,
+        62146,
+        56950,
+        73733
+      ],
+      "Total Debt": [
+        87032,
+        115680,
+        114483,
+        108047,
+        122278,
+        136522,
+        132480,
+        123930,
+        119059,
+        112377
+      ],
+      "Net Debt": [
+        19877,
+        41499,
+        48182,
+        7490,
+        31335,
+        73883,
+        84176,
+        62375,
+        53888,
+        57680
+      ]
+    },
+    "9.TIKR_CF": {
+      "Cash from Operations": [
+        66231,
+        64225,
+        77434,
+        69391,
+        80674,
+        104038,
+        122151,
+        110543,
+        118254,
+        111482
+      ],
+      "Capital Expenditure": [
+        -12734,
+        -12451,
+        -13313,
+        -10495,
+        -7309,
+        -11085,
+        -10708,
+        -10959,
+        -9447,
+        -12715
+      ],
+      "Free Cash Flow": [
+        53497,
+        51774,
+        64121,
+        58896,
+        73365,
+        92953,
+        111443,
+        99584,
+        108807,
+        98767
+      ],
+      "Depreciation & Amortization": [
+        10505,
+        10157,
+        10903,
+        12547,
+        11056,
+        11284,
+        11104,
+        11519,
+        11445,
+        11698
+      ],
+      "Stock-Based Compensation": [
+        4210,
+        4840,
+        5340,
+        6068,
+        6829,
+        7906,
+        9038,
+        10833,
+        11688,
+        12863
+      ],
+      "Repurchase of Common Stock": [
+        -29722,
+        -32900,
+        -72738,
+        -66897,
+        -72358,
+        -85971,
+        -89402,
+        -77550,
+        -94949,
+        -90711
+      ],
+      "Common & Preferred Stock Dividends Paid": [
+        -11965,
+        -12563,
+        -13712,
+        -14119,
+        -14081,
+        -14467,
+        -14841,
+        -15025,
+        -15234,
+        -15421
+      ]
+    },
+    "10.TIKR_Val": {
+      "Market Cap (MM)": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Price": [
+        28.178,
+        38.53,
+        56.435,
+        54.705,
+        112.28,
+        146.92,
+        150.43,
+        171.21,
+        227.79,
+        255.46
+      ]
+    }
+  },
+  "notas": {
+    "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por ejercicio (cifras reexpresadas cuando las hay)",
+    "extraido": "2026-09-05",
+    "derivadas": [
+      "EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)",
+      "EBITDA = Operating Income + Depreciation & Amortization",
+      "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
+      "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
+      "Free Cash Flow = Cash from Operations + Capital Expenditure"
+    ],
+    "deuda_incompleta": [
+      "2016: suma sin arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2017: suma sin arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2018: suma sin arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2019: suma sin arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente"
+    ],
+    "control_splits": {
+      "cuadra": true,
+      "desviaciones": []
+    },
+    "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "discontinuidad": null,
+    "tags_is": {
+      "revenue": {
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "filed": [
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2024-11-01",
+          "2025-10-31",
+          "2025-10-31"
+        ],
+        "nota": "FY2016 no tiene hechos bajo este tag (ASC 606 no vigente aun); se uso el fallback Revenues (val 215639, filed 2018-11-05, form 10-K accn 0000320193-18-000145)."
+      },
+      "cogs": {
+        "tag": "CostOfGoodsAndServicesSold",
+        "filed": [
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2025-10-31",
+          "2025-10-31"
+        ]
+      },
+      "gross_profit": {
+        "tag": "GrossProfit",
+        "filed": [
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2025-10-31",
+          "2025-10-31"
+        ]
+      },
+      "operating_income": {
+        "tag": "OperatingIncomeLoss",
+        "filed": [
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2025-10-31",
+          "2025-10-31"
+        ]
+      },
+      "interest_expense": {
+        "tag": "InterestExpense",
+        "filed": [
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2023-11-03",
+          "2023-11-03",
+          null,
+          null
+        ],
+        "nota": "InterestExpense cubre FY2016-FY2023. Para FY2024 y FY2025 no hay hecho en ese tag; fallbacks probados: InterestExpenseNonoperating (404), InterestExpenseDebt (existe pero solo hasta FY2021, sin hechos FY2024/FY2025), InterestIncomeExpenseNet (404). Se deja null, NO se deduce de 'Other income/(expense), net'."
+      },
+      "income_tax": {
+        "tag": "IncomeTaxExpenseBenefit",
+        "filed": [
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2025-10-31",
+          "2025-10-31"
+        ],
+        "nota": "Signo invertido respecto al valor bruto de la SEC (positivo=gasto en el XBRL original): aqui negativo=gasto, positivo=beneficio fiscal. Los 10 ejercicios de Apple son gasto, por eso todos negativos."
+      },
+      "net_income": {
+        "tag": "NetIncomeLoss",
+        "filed": [
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2025-10-31",
+          "2025-10-31"
+        ]
+      },
+      "eps_diluted": {
+        "tag": "EarningsPerShareDiluted",
+        "filed": [
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2025-10-31",
+          "2025-10-31"
+        ],
+        "nota": "FY2018 (2.98) y FY2019 (2.97) tomados del filed mas reciente disponible para ese periodo, que ya viene reexpresado post-split 4:1 (accn 0000320193-20-000096 y 0000320193-21-000105 respectivamente). FY2016 (8.31) y FY2017 (9.21) quedan en base ANTIGUA porque ningun 10-K posterior al split volvio a reportar esos periodos dentro de su ventana comparativa de 3 anios."
+      },
+      "diluted_shares": {
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "filed": [
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2025-10-31",
+          "2025-10-31"
+        ],
+        "nota": "Mismo criterio que eps_diluted: FY2018 (20000M) y FY2019 (18596M) vienen del filed mas reciente, ya post-split 4:1. FY2016 (5500M) y FY2017 (5252M) quedan en base ANTIGUA por la misma razon (fuera de ventana comparativa tras el split)."
+      },
+      "rd_expense": {
+        "tag": "ResearchAndDevelopmentExpense",
+        "filed": [
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2025-10-31",
+          "2025-10-31"
+        ]
+      }
+    },
+    "tags_bs": {
+      "cash": {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "filed": [
+          "2018-11-05",
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2026-07-31"
+        ]
+      },
+      "short_term_investments": {
+        "tag": "MarketableSecuritiesCurrent (2016-2017: null; fallback ShortTermInvestments=404 no existe; AvailableForSaleSecuritiesDebtSecuritiesCurrent=sin hechos para esas fechas)",
+        "filed": [
+          null,
+          null,
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2026-07-31"
+        ]
+      },
+      "total_current_assets": {
+        "tag": "AssetsCurrent",
+        "filed": [
+          "2017-11-03",
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2026-07-31"
+        ]
+      },
+      "total_assets": {
+        "tag": "Assets",
+        "filed": [
+          "2017-11-03",
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2026-07-31"
+        ]
+      },
+      "total_current_liabilities": {
+        "tag": "LiabilitiesCurrent (2018-09-29: valor restatado, ver avisos)",
+        "filed": [
+          "2017-11-03",
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2026-07-31"
+        ]
+      },
+      "total_liabilities": {
+        "tag": "Liabilities",
+        "filed": [
+          "2017-11-03",
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2026-07-31"
+        ]
+      },
+      "total_equity": {
+        "tag": "StockholdersEquity",
+        "filed": [
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2025-10-31",
+          "2026-07-31",
+          "2026-07-31"
+        ]
+      },
+      "short_term_borrowings": {
+        "tag": "CommercialPaper",
+        "filed": [
+          "2016-10-26",
+          "2017-11-03",
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31"
+        ]
+      },
+      "current_portion_ltd": {
+        "tag": "LongTermDebtCurrent",
+        "filed": [
+          "2016-10-26",
+          "2017-11-03",
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31"
+        ]
+      },
+      "long_term_debt": {
+        "tag": "LongTermDebtNoncurrent",
+        "filed": [
+          "2016-10-26",
+          "2017-11-03",
+          "2018-11-05",
+          "2019-10-31",
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31"
+        ]
+      },
+      "finance_lease_current": {
+        "tag": "FinanceLeaseLiabilityCurrent (null 2016-2019: sin hechos en companyconcept hasta FY2020)",
+        "filed": [
+          null,
+          null,
+          null,
+          null,
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31"
+        ]
+      },
+      "finance_lease_noncurrent": {
+        "tag": "FinanceLeaseLiabilityNoncurrent (null 2016-2019)",
+        "filed": [
+          null,
+          null,
+          null,
+          null,
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31"
+        ]
+      },
+      "operating_lease_current": {
+        "tag": "OperatingLeaseLiabilityCurrent (null 2016-2019, incluye FY2019 pese a adopcion de ASC842 ese ejercicio; ver avisos)",
+        "filed": [
+          null,
+          null,
+          null,
+          null,
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31",
+          "2025-10-31"
+        ]
+      },
+      "operating_lease_noncurrent": {
+        "tag": "OperatingLeaseLiabilityNoncurrent (null 2016-2019, incluye FY2019)",
+        "filed": [
+          null,
+          null,
+          null,
+          null,
+          "2020-10-30",
+          "2021-10-29",
+          "2022-10-28",
+          "2023-11-03",
+          "2024-11-01",
+          "2025-10-31"
+        ]
+      }
+    },
+    "tags_cf": {
+      "cfo": {
+        "tag": "NetCashProvidedByUsedInOperatingActivities",
+        "filed": "variable por año, se usó el `filed` más reciente disponible en cada periodo (ver avisos: FY2016 y FY2017 fueron restated en filings posteriores)"
+      },
+      "capex": {
+        "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "filed": "variable por año, filed más reciente por periodo; PaymentsToAcquireProductiveAssets no fue necesario, el tag primario cubrió los 10 años"
+      },
+      "depreciation_amortization": {
+        "tag": "DepreciationDepletionAndAmortization",
+        "filed": "variable por año, filed más reciente por periodo; cubrió los 10 años, no se necesitaron fallbacks"
+      },
+      "stock_based_compensation": {
+        "tag": "ShareBasedCompensation",
+        "filed": "variable por año, filed más reciente por periodo; cubrió los 10 años"
+      },
+      "buybacks": {
+        "tag": "PaymentsForRepurchaseOfCommonStock",
+        "filed": "variable por año, filed más reciente por periodo; PaymentsForRepurchaseOfEquity no existe para Apple (404)"
+      },
+      "dividends_paid": {
+        "tag": "PaymentsOfDividendsCommonStock (FY2016-FY2017) / PaymentsOfDividends (FY2018-FY2025)",
+        "filed": "variable por año, filed más reciente por periodo; ver avisos sobre discrepancia entre ambos tags para FY2016-FY2017"
+      },
+      "cash_taxes_paid": {
+        "tag": "IncomeTaxesPaidNet",
+        "filed": "variable por año, filed más reciente por periodo; cubrió los 10 años"
+      }
+    },
+    "avisos_extraccion": [
+      "Anclas OK y exactas (0% desviacion): FY2024 revenue 391035 (RevenueFromContractWithCustomerExcludingAssessedTax) y net_income 93736 (NetIncomeLoss); FY2023 revenue 383285 y net_income 96995. Ambas anclas del enunciado coinciden al MM$ exacto con lo obtenido de la SEC.",
+      "SPLIT 4:1 (28-ago-2020): el salto de base en la serie entregada esta entre FY2017 y FY2018, NO en FY2020. Motivo: la regla 'filed mas reciente gana' hace que FY2018 y FY2019 se tomen de 10-Ks posteriores al split (FY2020 10-K filed 2020-10-30 y FY2021 10-K filed 2021-10-29) que reexpresaron esas comparativas ya divididas 4:1. FY2016 y FY2017 cayeron fuera de la ventana comparativa de 3 anios de cualquier 10-K posterior al split, asi que llegan intactos en base ANTIGUA. Resultado: FY2016 eps 8.31 / 5500M acciones (ANTIGUA); FY2017 eps 9.21 / 5252M acciones (ANTIGUA); FY2018 eps 2.98 / 20000M acciones (ACTUAL, reexpresada); FY2019 eps 2.97 / 18596M acciones (ACTUAL, reexpresada); FY2020-FY2025 ya se reportaron directamente en base ACTUAL (el split ocurrio dentro del propio FY2020). No se ha corregido ni homogeneizado nada manualmente; la homogeneizacion queda para el paso posterior.",
+      "interest_expense: el tag InterestExpense cubre FY2016-FY2023 pero no tiene hechos para FY2024 ni FY2025. Fallbacks probados: InterestExpenseNonoperating (404), InterestExpenseDebt (tiene datos pero se corta en FY2021, sin FY2024/FY2025), InterestIncomeExpenseNet (404). Consistente con que Apple deja de desglosar el gasto financiero y lo integra en 'Other income/(expense), net'. FY2024 y FY2025 quedan en null, no se ha deducido del neto de otros ingresos.",
+      "income_tax: signo invertido segun la convencion pedida (negativo=gasto). Los 10 ejercicios de Apple son gasto fiscal, por lo que la fila queda integramente negativa. Verificado EBT = net_income - income_tax(con signo) > net_income en los 10 anios: 61372, 64089, 72903, 65737, 67091, 109207, 119103, 113736, 123485, 132729 MM$ para 2016-2025, todos mayores que net_income, confirmando el signo correcto.",
+      "FY2024: income_tax sube a -29749 MM$ (desde -16741 en FY2023) por la carga extraordinaria de ~10200 MM$ de la sentencia de ayudas de Estado de la Comision Europea. El tipo efectivo implicito sube y el net_income CAE frente a FY2023 (93736 vs 96995) pese a que el revenue crece (391035 vs 383285). Es real, no se ha ajustado.",
+      "Control gross_profit = revenue - cogs: exacto (0 MM$ de diferencia) en los 10 ejercicios.",
+      "Control eps_diluted x diluted_shares vs net_income: desviacion maxima 0.15% en FY2020, resto de anios por debajo de 0.13%; ningun anio se acerca al umbral del 5%. La consistencia se mantiene incluso a ambos lados del salto del split, porque dentro de cada ejercicio ambos campos vienen de la misma version reexpresada (mismo accn).",
+      "BPA y acciones diluidas homogeneizados el 2026-09-07: split 4:1 del 28-ago-2020; FY2016-FY2017 venian en la base anterior. Factores por ejercicio: [4, 4, 1, 1, 1, 1, 1, 1, 1, 1]. El BPA se dividio y las acciones se multiplicaron. Control BPA x acciones ~= beneficio neto: OK en los 10 ejercicios.",
+      "CONTROL DE COHERENCIA: Activo total = Pasivo total + Patrimonio se cumple EXACTAMENTE en los 10 ejercicios (diferencia = 0 en todos los años, 2016 a 2025).",
+      "ANCLAS: FY2024 (2024-09-28) activo total obtenido = 364,980 M$ (tag Assets) y patrimonio = 56,950 M$ (tag StockholdersEquity); coinciden exactamente con las anclas (~364.980 M$ y ~56.950 M$).",
+      "ANCLAS: FY2023 (2023-09-30) activo total obtenido = 352,583 M$ y patrimonio = 62,146 M$; coinciden exactamente con las anclas (~352.583 M$ y ~62.146 M$).",
+      "DebtCurrent: el tag no existe para Apple en la API XBRL (404 en las 10 fechas), por lo que no se pudo usar como contraste directo de solapamiento entre CommercialPaper y LongTermDebtCurrent. Se reportan ambos por separado, son partidas distintas en el 10-K de Apple ('Commercial paper' y porción corriente de 'Term debt'). CommercialPaper (M$, orden de fiscal_dates): [8105, 11977, 11964, 5980, 4996, 6000, 9982, 5985, 9967, 7979]. LongTermDebtCurrent (M$): [3500, 6496, 8784, 10260, 8773, 9613, 11128, 9822, 10912, 12350].",
+      "Arrendamientos operativos (OperatingLeaseLiabilityCurrent/Noncurrent): null en 2016-09-24, 2017-09-30 y 2018-09-29 porque ASC 842 aún no estaba vigente (dato real, no hueco). Adicionalmente resultó null también en 2019-09-28 (el ejercicio en que Apple SI adoptó ASC 842): el tag companyconcept no devuelve ningun hecho con end=2019-09-28 para OperatingLeaseLiabilityCurrent ni Noncurrent; a partir de 2020-09-26 sí hay datos. Posible tageo distinto o agregado en otra partida el primer año de adopcion; no se estimó ningún valor.",
+      "No se encontraron hechos bajo los tags antiguos CapitalLeaseObligationsCurrent ni CapitalLeaseObligationsNoncurrent para Apple (HTTP 404 en ambos, el emisor no usó esos tags) al consultar 2016-09-24/2017-09-30/2018-09-29, por lo que no hay nada que reportar aparte de estas fechas en leases antiguos.",
+      "FinanceLeaseLiabilityCurrent y FinanceLeaseLiabilityNoncurrent: igual que los operativos, sin hechos hasta 2019-09-28 inclusive; datos disponibles desde 2020-09-26.",
+      "MarketableSecuritiesNoncurrent (inversiones a largo plazo, NO incluidas en short_term_investments): 2016 y 2017 sin dato bajo este tag; valores M$ 2018-2025 en orden: [170799, 105341, 100887, 127877, 120805, 100544, 91479, 77723]. Afectan a la lectura de caja neta: Apple mantiene decenas de miles de M$ adicionales fuera de caja y de las inversiones corrientes.",
+      "short_term_investments quedó null en 2016-09-24 y 2017-09-30: se probó la cascada completa (MarketableSecuritiesCurrent sin datos esos años; ShortTermInvestments da 404, tag inexistente para Apple; AvailableForSaleSecuritiesDebtSecuritiesCurrent no devuelve ningún hecho con esas fechas exactas). No se estimó ni interpoló.",
+      "total_current_liabilities en 2018-09-29: Apple restató el importe de 116,866 M$ (declarado en el 10-K original de FY2018, filed 2018-11-05) a 115,929 M$ en las presentaciones posteriores (10-Q filed 2019-01-30 en adelante y el 10-K de FY2019 filed 2019-10-31). Se aplicó la regla de 'filed más reciente' y se usó 115,929 M$.",
+      "total_equity: patrimonio muy pequeño frente al activo total en todos los años recientes (ej. FY2024: 56,950 M$ de patrimonio vs 364,980 M$ de activo) por las masivas recompras de acciones de Apple. Es un dato real; no se buscó un tag alternativo que diera una cifra mayor.",
+      "Rellenado el 2026-09-07 desde tags renombrados por la SEC: inversiones a corto de FY2016 y FY2017 leidas de us-gaap:AvailableForSaleSecuritiesCurrent, el tag que Apple usaba antes de la ASU 2016-01. Mismo importe en el 10-K y en los tres 10-Q siguientes de cada anio, sin reexpresiones. Los cuatro campos de arrendamientos siguen vacios en FY2016-FY2019 y eso SI es real: Apple adopto la ASC 842 en el primer trimestre de FY2020, asi que antes no habia nada que reconocer en balance.",
+      "ANCLAS: cuadran casi exactas. FY2024 cfo=118254 (ancla ~118254), capex=-9447 (ancla ~-9447). FY2023 cfo=110543 (ancla ~110543), buybacks=-77550 (ancla ~-77550). Sin desviación relevante.",
+      "CAPEX: se usó PaymentsToAcquirePropertyPlantAndEquipment para los 10 años (existe siempre); no hizo falta el fallback PaymentsToAcquireProductiveAssets. Valores del orden de 7.300-13.300 M$/año frente a un cfo de 64.000-122.000 M$: es real, Apple fabrica vía terceros (contract manufacturers), no un error de tag.",
+      "BUYBACKS: se usó PaymentsForRepurchaseOfCommonStock para los 10 años. Se comprobó PaymentsForRepurchaseOfEquity y la API devuelve 404: Apple no usa ese tag. Los importes (29.722 a 94.949 M$/año) son coherentes con el orden de magnitud esperado (70.000-95.000 M$ desde FY2018).",
+      "DIVIDENDOS - DISCREPANCIA ENTRE TAGS: para FY2016 y FY2017 existen DOS tags con valores DISTINTOS para el mismo periodo. PaymentsOfDividendsCommonStock da 11.965 M$ (FY2016) y 12.563 M$ (FY2017). PaymentsOfDividends da 12.150 M$ (FY2016) y 12.769 M$ (FY2017) en esos mismos periodos, reportados en filings posteriores. Siguiendo la cascada literal (usar el primer tag que exista), se usó PaymentsOfDividendsCommonStock para FY2016-FY2017 (11.965 y 12.563) y PaymentsOfDividends para FY2018-FY2025 (que es el único tag que Apple usa desde entonces). Es una diferencia real de ~200 M$/año entre tags, no un error de lectura; repórtalo si el consumidor necesita la serie más 'suave' con el tag PaymentsOfDividends para los 10 años en su lugar.",
+      "CFO - RESTATEMENT FY2016 y FY2017: el hecho más antiguo disponible para FY2016 (10-K filed 2017-11-03, comparativo) da cfo=65.824 M$, pero un filing posterior (10-K filed 2018-11-05) da 66.231 M$ para el mismo periodo FY2016. Por la regla de 'filed más reciente', se usó 66.231. Igual para FY2017: 63.598 M$ (filed 2017-11-03, original) vs 64.225 M$ (filed 2018-11-05 y 2019-10-31); se usó 64.225. La cifra '65.824' es la que suele citarse públicamente como cfo original de FY2016 de Apple; si el consumidor prefiere el valor tal como se reportó originalmente en vez del más reciente, avisar.",
+      "D&A FY2016: el tag DepreciationDepletionAndAmortization solo tiene un hecho disponible para el periodo FY2016 (filed 2018-11-05, val 10.505 M$); no hay hechos de esa etiqueta en los filings de FY2016 o FY2017 para ese mismo periodo (posiblemente usaban otra etiqueta en ese momento). El tag es comprensivo (incluye amortización de intangibles, no es 'Depreciation' a secas), así que no hay problema de EBITDA parcial en ningún año de la serie.",
+      "FCF = cfo + capex: POSITIVO en los 10 ejercicios (rango 51.774 M$ en FY2017 a 111.443 M$ en FY2022). No se detectó ningún año con FCF negativo, como se esperaba.",
+      "RECOMPRAS + DIVIDENDOS COMO % DEL FCF: supera el 100% en FY2018 (135%), FY2019 (138%), FY2020 (118%), FY2021 (108%), FY2024 (101%) y FY2025 (108%). En esos años Apple devolvió a accionistas más de lo que generó de FCF ese ejercicio, financiado con caja acumulada o deuda. FY2016 (78%), FY2017 (88%), FY2022 (94%) y FY2023 (93%) quedan por debajo del 100%.",
+      "CASH TAXES PAID: salto brusco de 9.501 M$ (FY2020) a 25.385 M$ (FY2021), y de 26.102 M$ (FY2024) a 43.369 M$ (FY2025). Son saltos grandes pero plausibles por el calendario de pagos a plazos del 'transition tax' de la TCJA (que vence en 2025) y no parecen error de tag; repórtalo como aviso de coherencia, no se ha forzado ni corregido.",
+      "CFO tendencia general: coherente con el ciclo de negocio conocido de Apple (caída FY2019, salto grande FY2021 por demanda post-pandemia, caída FY2023); el único salto que merece nota es el restatement FY2016/FY2017 ya descrito arriba, no un error de extracción."
+    ]
+  }
+}

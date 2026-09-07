@@ -97,6 +97,18 @@
    151.94,
    219.39,
    230.82
+  ],
+  "AAPL": [
+   28.178,
+   38.53,
+   56.435,
+   54.705,
+   112.28,
+   146.92,
+   150.43,
+   171.21,
+   227.79,
+   255.46
   ]
  },
  "avisos": [
@@ -107,6 +119,7 @@
   "NVDA: en la serie Weekly la fila se etiqueta con el primer dia habil de la semana y su 'c' es el cierre del ultimo dia habil de esa semana. Se toma la fila de la semana que contiene el viernes anterior al domingo de cierre fiscal.",
   "WMT: periodo Monthly. El ejercicio cierra el 31 de enero, que SI es fin de mes, asi que la fila mensual de enero es el cierre a fecha fiscal. Igual que en la serie semanal, la fila va etiquetada con el primer dia habil del mes y su 'c' es el cierre del ultimo: verificado con 2018-01-02 = 35,533, que x3 son los 106,60 del 31-ene-2018 y no los ~99 del dia 2. Ajustado por el split 3:1 del 26-feb-2024, la misma base que el BPA ya homogeneizado en WMT_is.json.",
   "IBM: periodo Monthly, cierre el 31 de diciembre (fin de mes, asi que la fila de diciembre es el cierre a fecha fiscal). Sin splits en la ventana. Cinco anclas exactas contra el cierre real: 165,99 en 2016, 113,67 en 2018, 125,88 en 2020, 163,55 en 2023 y 219,83 en 2024.",
-  "AMZN: cierre de ejercicio el 31-dic, que es fin de mes, asi que la fila mensual de diciembre es valida. Serie ajustada por el split 20:1 de junio de 2022. Validada contra cierres sin ajustar: 2016 749,87/20=37,494 - 2019 1.847,84/20=92,392 - 2021 3.334,34/20=166,717."
+  "AMZN: cierre de ejercicio el 31-dic, que es fin de mes, asi que la fila mensual de diciembre es valida. Serie ajustada por el split 20:1 de junio de 2022. Validada contra cierres sin ajustar: 2016 749,87/20=37,494 - 2019 1.847,84/20=92,392 - 2021 3.334,34/20=166,717.",
+  "AAPL: cierre de ejercicio el ultimo sabado de septiembre, que NUNCA es fin de mes, asi que la fila mensual NO vale: se usa period=Weekly y se toma la semana que contiene el cierre fiscal (fila etiquetada con el lunes, campo c = cierre del viernes). Serie ajustada por el split 4:1 del 28-ago-2020. Validada contra cierres sin ajustar: 2016 112,71/4=28,178 - 2018 225,74/4=56,435 - 2019 218,82/4=54,705 - 2024 227,79 sin ajuste."
  ]
 }

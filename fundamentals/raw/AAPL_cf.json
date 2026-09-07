@@ -1,0 +1,33 @@
+{"ticker":"AAPL",
+ "fiscal_dates":["2016-09-24","2017-09-30","2018-09-29","2019-09-28","2020-09-26","2021-09-25","2022-09-24","2023-09-30","2024-09-28","2025-09-27"],
+ "rows":{
+   "cfo":[66231,64225,77434,69391,80674,104038,122151,110543,118254,111482],
+   "capex":[-12734,-12451,-13313,-10495,-7309,-11085,-10708,-10959,-9447,-12715],
+   "depreciation_amortization":[10505,10157,10903,12547,11056,11284,11104,11519,11445,11698],
+   "stock_based_compensation":[4210,4840,5340,6068,6829,7906,9038,10833,11688,12863],
+   "buybacks":[-29722,-32900,-72738,-66897,-72358,-85971,-89402,-77550,-94949,-90711],
+   "dividends_paid":[-11965,-12563,-13712,-14119,-14081,-14467,-14841,-15025,-15234,-15421],
+   "cash_taxes_paid":[10444,11591,10417,15263,9501,25385,19573,18679,26102,43369]
+ },
+ "tags_usados":{
+   "cfo":{"tag":"NetCashProvidedByUsedInOperatingActivities","filed":"variable por año, se usó el `filed` más reciente disponible en cada periodo (ver avisos: FY2016 y FY2017 fueron restated en filings posteriores)"},
+   "capex":{"tag":"PaymentsToAcquirePropertyPlantAndEquipment","filed":"variable por año, filed más reciente por periodo; PaymentsToAcquireProductiveAssets no fue necesario, el tag primario cubrió los 10 años"},
+   "depreciation_amortization":{"tag":"DepreciationDepletionAndAmortization","filed":"variable por año, filed más reciente por periodo; cubrió los 10 años, no se necesitaron fallbacks"},
+   "stock_based_compensation":{"tag":"ShareBasedCompensation","filed":"variable por año, filed más reciente por periodo; cubrió los 10 años"},
+   "buybacks":{"tag":"PaymentsForRepurchaseOfCommonStock","filed":"variable por año, filed más reciente por periodo; PaymentsForRepurchaseOfEquity no existe para Apple (404)"},
+   "dividends_paid":{"tag":"PaymentsOfDividendsCommonStock (FY2016-FY2017) / PaymentsOfDividends (FY2018-FY2025)","filed":"variable por año, filed más reciente por periodo; ver avisos sobre discrepancia entre ambos tags para FY2016-FY2017"},
+   "cash_taxes_paid":{"tag":"IncomeTaxesPaidNet","filed":"variable por año, filed más reciente por periodo; cubrió los 10 años"}
+ },
+ "avisos":[
+   "ANCLAS: cuadran casi exactas. FY2024 cfo=118254 (ancla ~118254), capex=-9447 (ancla ~-9447). FY2023 cfo=110543 (ancla ~110543), buybacks=-77550 (ancla ~-77550). Sin desviación relevante.",
+   "CAPEX: se usó PaymentsToAcquirePropertyPlantAndEquipment para los 10 años (existe siempre); no hizo falta el fallback PaymentsToAcquireProductiveAssets. Valores del orden de 7.300-13.300 M$/año frente a un cfo de 64.000-122.000 M$: es real, Apple fabrica vía terceros (contract manufacturers), no un error de tag.",
+   "BUYBACKS: se usó PaymentsForRepurchaseOfCommonStock para los 10 años. Se comprobó PaymentsForRepurchaseOfEquity y la API devuelve 404: Apple no usa ese tag. Los importes (29.722 a 94.949 M$/año) son coherentes con el orden de magnitud esperado (70.000-95.000 M$ desde FY2018).",
+   "DIVIDENDOS - DISCREPANCIA ENTRE TAGS: para FY2016 y FY2017 existen DOS tags con valores DISTINTOS para el mismo periodo. PaymentsOfDividendsCommonStock da 11.965 M$ (FY2016) y 12.563 M$ (FY2017). PaymentsOfDividends da 12.150 M$ (FY2016) y 12.769 M$ (FY2017) en esos mismos periodos, reportados en filings posteriores. Siguiendo la cascada literal (usar el primer tag que exista), se usó PaymentsOfDividendsCommonStock para FY2016-FY2017 (11.965 y 12.563) y PaymentsOfDividends para FY2018-FY2025 (que es el único tag que Apple usa desde entonces). Es una diferencia real de ~200 M$/año entre tags, no un error de lectura; repórtalo si el consumidor necesita la serie más 'suave' con el tag PaymentsOfDividends para los 10 años en su lugar.",
+   "CFO - RESTATEMENT FY2016 y FY2017: el hecho más antiguo disponible para FY2016 (10-K filed 2017-11-03, comparativo) da cfo=65.824 M$, pero un filing posterior (10-K filed 2018-11-05) da 66.231 M$ para el mismo periodo FY2016. Por la regla de 'filed más reciente', se usó 66.231. Igual para FY2017: 63.598 M$ (filed 2017-11-03, original) vs 64.225 M$ (filed 2018-11-05 y 2019-10-31); se usó 64.225. La cifra '65.824' es la que suele citarse públicamente como cfo original de FY2016 de Apple; si el consumidor prefiere el valor tal como se reportó originalmente en vez del más reciente, avisar.",
+   "D&A FY2016: el tag DepreciationDepletionAndAmortization solo tiene un hecho disponible para el periodo FY2016 (filed 2018-11-05, val 10.505 M$); no hay hechos de esa etiqueta en los filings de FY2016 o FY2017 para ese mismo periodo (posiblemente usaban otra etiqueta en ese momento). El tag es comprensivo (incluye amortización de intangibles, no es 'Depreciation' a secas), así que no hay problema de EBITDA parcial en ningún año de la serie.",
+   "FCF = cfo + capex: POSITIVO en los 10 ejercicios (rango 51.774 M$ en FY2017 a 111.443 M$ en FY2022). No se detectó ningún año con FCF negativo, como se esperaba.",
+   "RECOMPRAS + DIVIDENDOS COMO % DEL FCF: supera el 100% en FY2018 (135%), FY2019 (138%), FY2020 (118%), FY2021 (108%), FY2024 (101%) y FY2025 (108%). En esos años Apple devolvió a accionistas más de lo que generó de FCF ese ejercicio, financiado con caja acumulada o deuda. FY2016 (78%), FY2017 (88%), FY2022 (94%) y FY2023 (93%) quedan por debajo del 100%.",
+   "CASH TAXES PAID: salto brusco de 9.501 M$ (FY2020) a 25.385 M$ (FY2021), y de 26.102 M$ (FY2024) a 43.369 M$ (FY2025). Son saltos grandes pero plausibles por el calendario de pagos a plazos del 'transition tax' de la TCJA (que vence en 2025) y no parecen error de tag; repórtalo como aviso de coherencia, no se ha forzado ni corregido.",
+   "CFO tendencia general: coherente con el ciclo de negocio conocido de Apple (caída FY2019, salto grande FY2021 por demanda post-pandemia, caída FY2023); el único salto que merece nota es el restatement FY2016/FY2017 ya descrito arriba, no un error de extracción."
+ ]
+}

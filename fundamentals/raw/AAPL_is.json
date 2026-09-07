@@ -1,0 +1,307 @@
+{
+ "ticker": "AAPL",
+ "fiscal_dates": [
+  "2016-09-24",
+  "2017-09-30",
+  "2018-09-29",
+  "2019-09-28",
+  "2020-09-26",
+  "2021-09-25",
+  "2022-09-24",
+  "2023-09-30",
+  "2024-09-28",
+  "2025-09-27"
+ ],
+ "rows": {
+  "revenue": [
+   215639,
+   229234,
+   265595,
+   260174,
+   274515,
+   365817,
+   394328,
+   383285,
+   391035,
+   416161
+  ],
+  "cogs": [
+   131376,
+   141048,
+   163756,
+   161782,
+   169559,
+   212981,
+   223546,
+   214137,
+   210352,
+   220960
+  ],
+  "gross_profit": [
+   84263,
+   88186,
+   101839,
+   98392,
+   104956,
+   152836,
+   170782,
+   169148,
+   180683,
+   195201
+  ],
+  "operating_income": [
+   60024,
+   61344,
+   70898,
+   63930,
+   66288,
+   108949,
+   119437,
+   114301,
+   123216,
+   133050
+  ],
+  "interest_expense": [
+   1456,
+   2323,
+   3240,
+   3576,
+   2873,
+   2645,
+   2931,
+   3933,
+   null,
+   null
+  ],
+  "income_tax": [
+   -15685,
+   -15738,
+   -13372,
+   -10481,
+   -9680,
+   -14527,
+   -19300,
+   -16741,
+   -29749,
+   -20719
+  ],
+  "net_income": [
+   45687,
+   48351,
+   59531,
+   55256,
+   57411,
+   94680,
+   99803,
+   96995,
+   93736,
+   112010
+  ],
+  "eps_diluted": [
+   2.0775,
+   2.3025,
+   2.98,
+   2.97,
+   3.28,
+   5.61,
+   6.11,
+   6.13,
+   6.08,
+   7.46
+  ],
+  "diluted_shares": [
+   22000,
+   21008,
+   20000,
+   18596,
+   17528,
+   16865,
+   16326,
+   15813,
+   15408,
+   15005
+  ],
+  "rd_expense": [
+   10045,
+   11581,
+   14236,
+   16217,
+   18752,
+   21914,
+   26251,
+   29915,
+   31370,
+   34550
+  ]
+ },
+ "tags_usados": {
+  "revenue": {
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "filed": [
+    "2018-11-05",
+    "2019-10-31",
+    "2020-10-30",
+    "2021-10-29",
+    "2022-10-28",
+    "2023-11-03",
+    "2024-11-01",
+    "2024-11-01",
+    "2025-10-31",
+    "2025-10-31"
+   ],
+   "nota": "FY2016 no tiene hechos bajo este tag (ASC 606 no vigente aun); se uso el fallback Revenues (val 215639, filed 2018-11-05, form 10-K accn 0000320193-18-000145)."
+  },
+  "cogs": {
+   "tag": "CostOfGoodsAndServicesSold",
+   "filed": [
+    "2018-11-05",
+    "2019-10-31",
+    "2020-10-30",
+    "2021-10-29",
+    "2022-10-28",
+    "2023-11-03",
+    "2024-11-01",
+    "2025-10-31",
+    "2025-10-31",
+    "2025-10-31"
+   ]
+  },
+  "gross_profit": {
+   "tag": "GrossProfit",
+   "filed": [
+    "2018-11-05",
+    "2019-10-31",
+    "2020-10-30",
+    "2021-10-29",
+    "2022-10-28",
+    "2023-11-03",
+    "2024-11-01",
+    "2025-10-31",
+    "2025-10-31",
+    "2025-10-31"
+   ]
+  },
+  "operating_income": {
+   "tag": "OperatingIncomeLoss",
+   "filed": [
+    "2018-11-05",
+    "2019-10-31",
+    "2020-10-30",
+    "2021-10-29",
+    "2022-10-28",
+    "2023-11-03",
+    "2024-11-01",
+    "2025-10-31",
+    "2025-10-31",
+    "2025-10-31"
+   ]
+  },
+  "interest_expense": {
+   "tag": "InterestExpense",
+   "filed": [
+    "2018-11-05",
+    "2019-10-31",
+    "2020-10-30",
+    "2021-10-29",
+    "2022-10-28",
+    "2023-11-03",
+    "2023-11-03",
+    "2023-11-03",
+    null,
+    null
+   ],
+   "nota": "InterestExpense cubre FY2016-FY2023. Para FY2024 y FY2025 no hay hecho en ese tag; fallbacks probados: InterestExpenseNonoperating (404), InterestExpenseDebt (existe pero solo hasta FY2021, sin hechos FY2024/FY2025), InterestIncomeExpenseNet (404). Se deja null, NO se deduce de 'Other income/(expense), net'."
+  },
+  "income_tax": {
+   "tag": "IncomeTaxExpenseBenefit",
+   "filed": [
+    "2018-11-05",
+    "2019-10-31",
+    "2020-10-30",
+    "2021-10-29",
+    "2022-10-28",
+    "2023-11-03",
+    "2024-11-01",
+    "2025-10-31",
+    "2025-10-31",
+    "2025-10-31"
+   ],
+   "nota": "Signo invertido respecto al valor bruto de la SEC (positivo=gasto en el XBRL original): aqui negativo=gasto, positivo=beneficio fiscal. Los 10 ejercicios de Apple son gasto, por eso todos negativos."
+  },
+  "net_income": {
+   "tag": "NetIncomeLoss",
+   "filed": [
+    "2018-11-05",
+    "2019-10-31",
+    "2020-10-30",
+    "2021-10-29",
+    "2022-10-28",
+    "2023-11-03",
+    "2024-11-01",
+    "2025-10-31",
+    "2025-10-31",
+    "2025-10-31"
+   ]
+  },
+  "eps_diluted": {
+   "tag": "EarningsPerShareDiluted",
+   "filed": [
+    "2018-11-05",
+    "2019-10-31",
+    "2020-10-30",
+    "2021-10-29",
+    "2022-10-28",
+    "2023-11-03",
+    "2024-11-01",
+    "2025-10-31",
+    "2025-10-31",
+    "2025-10-31"
+   ],
+   "nota": "FY2018 (2.98) y FY2019 (2.97) tomados del filed mas reciente disponible para ese periodo, que ya viene reexpresado post-split 4:1 (accn 0000320193-20-000096 y 0000320193-21-000105 respectivamente). FY2016 (8.31) y FY2017 (9.21) quedan en base ANTIGUA porque ningun 10-K posterior al split volvio a reportar esos periodos dentro de su ventana comparativa de 3 anios."
+  },
+  "diluted_shares": {
+   "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+   "filed": [
+    "2018-11-05",
+    "2019-10-31",
+    "2020-10-30",
+    "2021-10-29",
+    "2022-10-28",
+    "2023-11-03",
+    "2024-11-01",
+    "2025-10-31",
+    "2025-10-31",
+    "2025-10-31"
+   ],
+   "nota": "Mismo criterio que eps_diluted: FY2018 (20000M) y FY2019 (18596M) vienen del filed mas reciente, ya post-split 4:1. FY2016 (5500M) y FY2017 (5252M) quedan en base ANTIGUA por la misma razon (fuera de ventana comparativa tras el split)."
+  },
+  "rd_expense": {
+   "tag": "ResearchAndDevelopmentExpense",
+   "filed": [
+    "2018-11-05",
+    "2019-10-31",
+    "2020-10-30",
+    "2021-10-29",
+    "2022-10-28",
+    "2023-11-03",
+    "2024-11-01",
+    "2025-10-31",
+    "2025-10-31",
+    "2025-10-31"
+   ]
+  }
+ },
+ "avisos": [
+  "Anclas OK y exactas (0% desviacion): FY2024 revenue 391035 (RevenueFromContractWithCustomerExcludingAssessedTax) y net_income 93736 (NetIncomeLoss); FY2023 revenue 383285 y net_income 96995. Ambas anclas del enunciado coinciden al MM$ exacto con lo obtenido de la SEC.",
+  "SPLIT 4:1 (28-ago-2020): el salto de base en la serie entregada esta entre FY2017 y FY2018, NO en FY2020. Motivo: la regla 'filed mas reciente gana' hace que FY2018 y FY2019 se tomen de 10-Ks posteriores al split (FY2020 10-K filed 2020-10-30 y FY2021 10-K filed 2021-10-29) que reexpresaron esas comparativas ya divididas 4:1. FY2016 y FY2017 cayeron fuera de la ventana comparativa de 3 anios de cualquier 10-K posterior al split, asi que llegan intactos en base ANTIGUA. Resultado: FY2016 eps 8.31 / 5500M acciones (ANTIGUA); FY2017 eps 9.21 / 5252M acciones (ANTIGUA); FY2018 eps 2.98 / 20000M acciones (ACTUAL, reexpresada); FY2019 eps 2.97 / 18596M acciones (ACTUAL, reexpresada); FY2020-FY2025 ya se reportaron directamente en base ACTUAL (el split ocurrio dentro del propio FY2020). No se ha corregido ni homogeneizado nada manualmente; la homogeneizacion queda para el paso posterior.",
+  "interest_expense: el tag InterestExpense cubre FY2016-FY2023 pero no tiene hechos para FY2024 ni FY2025. Fallbacks probados: InterestExpenseNonoperating (404), InterestExpenseDebt (tiene datos pero se corta en FY2021, sin FY2024/FY2025), InterestIncomeExpenseNet (404). Consistente con que Apple deja de desglosar el gasto financiero y lo integra en 'Other income/(expense), net'. FY2024 y FY2025 quedan en null, no se ha deducido del neto de otros ingresos.",
+  "income_tax: signo invertido segun la convencion pedida (negativo=gasto). Los 10 ejercicios de Apple son gasto fiscal, por lo que la fila queda integramente negativa. Verificado EBT = net_income - income_tax(con signo) > net_income en los 10 anios: 61372, 64089, 72903, 65737, 67091, 109207, 119103, 113736, 123485, 132729 MM$ para 2016-2025, todos mayores que net_income, confirmando el signo correcto.",
+  "FY2024: income_tax sube a -29749 MM$ (desde -16741 en FY2023) por la carga extraordinaria de ~10200 MM$ de la sentencia de ayudas de Estado de la Comision Europea. El tipo efectivo implicito sube y el net_income CAE frente a FY2023 (93736 vs 96995) pese a que el revenue crece (391035 vs 383285). Es real, no se ha ajustado.",
+  "Control gross_profit = revenue - cogs: exacto (0 MM$ de diferencia) en los 10 ejercicios.",
+  "Control eps_diluted x diluted_shares vs net_income: desviacion maxima 0.15% en FY2020, resto de anios por debajo de 0.13%; ningun anio se acerca al umbral del 5%. La consistencia se mantiene incluso a ambos lados del salto del split, porque dentro de cada ejercicio ambos campos vienen de la misma version reexpresada (mismo accn).",
+  "BPA y acciones diluidas homogeneizados el 2026-09-07: split 4:1 del 28-ago-2020; FY2016-FY2017 venian en la base anterior. Factores por ejercicio: [4, 4, 1, 1, 1, 1, 1, 1, 1, 1]. El BPA se dividio y las acciones se multiplicaron. Control BPA x acciones ~= beneficio neto: OK en los 10 ejercicios."
+ ],
+ "homogeneizado": {
+  "split": "split 4:1 del 28-ago-2020; FY2016-FY2017 venian en la base anterior"
+ }
+}

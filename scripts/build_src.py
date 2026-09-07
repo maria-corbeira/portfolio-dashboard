@@ -34,7 +34,7 @@ EMPRESAS = {"MSFT": "Microsoft Corporation", "META": "Meta Platforms, Inc.",
             "UBER": "Uber Technologies, Inc.", "ISRG": "Intuitive Surgical, Inc.",
             "NVDA": "NVIDIA Corporation", "WMT": "Walmart Inc.",
             "IBM": "International Business Machines Corporation",
-            "AMZN": "Amazon.com, Inc."}
+            "AMZN": "Amazon.com, Inc.", "AAPL": "Apple Inc."}
 
 
 def build(ticker: str) -> dict:
