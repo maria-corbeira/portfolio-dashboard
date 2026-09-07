@@ -151,8 +151,21 @@ def compute(d):
             "fcf_yield": pct(div(fcf[i], mcap[i]), 2),
         })
 
+    # Una DISCONTINUIDAD DE PERIMETRO (una escision, una gran desinversion) parte la serie en
+    # dos empresas distintas: lo de antes y lo de despues no son comparables. IBM declara la
+    # suya en 2019 por el spin-off de Kyndryl.
+    disc = (d.get("notas") or {}).get("discontinuidad") or {}
+    corte = disc.get("desde")
+
     rev_g, eps_g, fcf_g, ni_g = yoy(rev), yoy(eps), yoy(fcf), yoy(ni)
     for i, r in enumerate(rows):
+        # El primer ejercicio tras el corte se compara con el perimetro viejo, asi que su
+        # variacion no mide nada: las ventas de IBM "caian" un 27,5% en 2019 solo porque el
+        # ano anterior incluia Kyndryl. Se anula en vez de mostrarse.
+        if corte and dates[i][:4] == str(corte):
+            r["revenue_growth"] = r["eps_growth"] = None
+            r["fcf_growth"] = r["net_income_growth"] = None
+            continue
         r["revenue_growth"] = pct(rev_g[i])
         r["eps_growth"] = pct(eps_g[i])
         r["fcf_growth"] = pct(fcf_g[i])
@@ -161,12 +174,20 @@ def compute(d):
     def last(key):
         return rows[-1][key] if rows else None
 
+    # Un CAGR que cruce la discontinuidad tampoco mide crecimiento, mide el trozo que se
+    # marcho: el de IBM a 10 anios daba -1,9% anual por eso. Se anulan los que la cruzan;
+    # los que caen enteros a un lado del corte, valen.
+    def cagr_seguro(serie, years):
+        if corte and len(dates) >= years + 1 and dates[-years - 1][:4] < str(corte):
+            return None
+        return cagr(serie, years)
+
     agg = {
         "years_covered": f"{dates[0][:4]}-{dates[-1][:4]}",
-        "revenue_cagr_5y": pct(cagr(rev, 5)),
-        "revenue_cagr_10y": pct(cagr(rev, min(10, n - 1))),
-        "eps_cagr_5y": pct(cagr(eps, 5)),
-        "fcf_cagr_5y": pct(cagr(fcf, 5)),
+        "revenue_cagr_5y": pct(cagr_seguro(rev, 5)),
+        "revenue_cagr_10y": pct(cagr_seguro(rev, min(10, n - 1))),
+        "eps_cagr_5y": pct(cagr_seguro(eps, 5)),
+        "fcf_cagr_5y": pct(cagr_seguro(fcf, 5)),
         "roic_avg_5y": None,
         "roe_avg_5y": None,
         "fcf_positive_5y": None,

@@ -32,7 +32,8 @@ DEBT_PARTS = [
 ]
 EMPRESAS = {"MSFT": "Microsoft Corporation", "META": "Meta Platforms, Inc.",
             "UBER": "Uber Technologies, Inc.", "ISRG": "Intuitive Surgical, Inc.",
-            "NVDA": "NVIDIA Corporation", "WMT": "Walmart Inc."}
+            "NVDA": "NVIDIA Corporation", "WMT": "Walmart Inc.",
+            "IBM": "International Business Machines Corporation"}
 
 
 def build(ticker: str) -> dict:
@@ -150,6 +151,7 @@ def build(ticker: str) -> dict:
             "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. "
                                     "P/E y FCF yield por ejercicio salen vacios; los actuales se "
                                     "calculan con el precio en vivo.",
+            "discontinuidad": isj.get("discontinuidad"),
             "tags_is": isj.get("tags_usados"), "tags_bs": bsj.get("tags_usados"),
             "tags_cf": cfj.get("tags_usados"),
             "avisos_extraccion": isj.get("avisos", []) + bsj.get("avisos", []) + cfj.get("avisos", []),

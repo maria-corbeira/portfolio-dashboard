@@ -45,5 +45,14 @@
   precios: ya está arreglado, se vuelcan siempre. **Para decidir hace falta una pasada
   en día hábil**, y luego leer `errors` de `data.json`. Ejecutar `probe.yml` sirve para
   saber si responden, pero en fin de semana no distingue "rota" de "sin datos hoy".
-- [ ] **Las 6 posiciones que faltan por analizar con datos de la SEC**: AMZN, AAPL,
-  IBM, COP, WMT, CVX. Hoy tienen scores de búsqueda web de la primera sesión.
+- [ ] **Las posiciones que faltan por analizar con datos de la SEC**: AMZN, AAPL, COP,
+  CVX. Hoy tienen scores de búsqueda web de la primera sesión. Hechas el 6-sep-2026:
+  **WMT** (63/100, Observar) e **IBM** (58/100, Observar).
+- [ ] **ROIC de IBM incompleto.** Solo se calcula en 6 de los 10 ejercicios: en 2020, 2022,
+  2024 y 2025 IBM tuvo ingreso fiscal neto, el tipo efectivo sale negativo y `metrics.py` lo
+  invalida a propósito (solo acepta el rango 0-60%). No es un fallo de extracción, es que la
+  fórmula NOPAT = EBIT x (1 - tipo) no significa nada con un tipo negativo. Si se quiere ROIC
+  en esos años habría que decidir un criterio (¿tipo normalizado?) y dejarlo escrito.
+- [ ] **Capex de IBM sin el software capitalizado.** IBM dejó de etiquetarlo en XBRL después
+  de 2016 y no hay tag us-gaap que lo recoja, así que su FCF está algo sobrestimado. Está
+  dicho en la ficha. Si aparece la cifra, va a `rows.capex` sumada al inmovilizado.

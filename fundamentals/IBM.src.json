@@ -1,0 +1,734 @@
+{
+  "company": "International Business Machines Corporation",
+  "ticker": "IBM",
+  "fiscal_dates": [
+    "2016-12-31",
+    "2017-12-31",
+    "2018-12-31",
+    "2019-12-31",
+    "2020-12-31",
+    "2021-12-31",
+    "2022-12-31",
+    "2023-12-31",
+    "2024-12-31",
+    "2025-12-31"
+  ],
+  "sheets": {
+    "7.TIKR_IS": {
+      "Total Revenues": [
+        79919,
+        79139,
+        79591,
+        57714,
+        55179,
+        57350,
+        60530,
+        61860,
+        62753,
+        67535
+      ],
+      "Cost of Goods Sold": [
+        41403,
+        42196,
+        42655,
+        26181,
+        24314,
+        25865,
+        27842,
+        27560,
+        27201,
+        28239
+      ],
+      "Gross Profit": [
+        38516,
+        36943,
+        36936,
+        31533,
+        30865,
+        31486,
+        32687,
+        34300,
+        35551,
+        39297
+      ],
+      "Operating Income": [
+        11921,
+        11673,
+        12191,
+        6899,
+        4042,
+        6253,
+        7511,
+        8522,
+        8384,
+        10858
+      ],
+      "EBITDA": [
+        16302,
+        16214,
+        16671,
+        12958,
+        10737,
+        12670,
+        12313,
+        12918,
+        13051,
+        15879
+      ],
+      "Interest Expense": [
+        630,
+        615,
+        723,
+        1344,
+        1288,
+        1155,
+        1216,
+        1607,
+        1712,
+        1935
+      ],
+      "EBT Incl. Unusual Items": [
+        12321,
+        11395,
+        11347,
+        9491,
+        4230,
+        5867,
+        1013,
+        8678,
+        5805,
+        10351
+      ],
+      "Income Tax Expense": [
+        -449,
+        -5642,
+        -2619,
+        -60,
+        1360,
+        -124,
+        626,
+        -1176,
+        218,
+        242
+      ],
+      "Net Income": [
+        11872,
+        5753,
+        8728,
+        9431,
+        5590,
+        5743,
+        1639,
+        7502,
+        6023,
+        10593
+      ],
+      "Diluted EPS Excl Extra Items": [
+        12.38,
+        6.14,
+        9.52,
+        10.56,
+        6.23,
+        6.35,
+        1.8,
+        8.14,
+        6.43,
+        11.17
+      ],
+      "Weighted Average Diluted Shares Outstanding": [
+        959,
+        937,
+        916,
+        893,
+        897,
+        905,
+        912,
+        922,
+        937,
+        949
+      ],
+      "R&D Expenses": [
+        5726,
+        5590,
+        5379,
+        5910,
+        6262,
+        6488,
+        6567,
+        6775,
+        7479,
+        8316
+      ]
+    },
+    "8.TIKR_BS": {
+      "Cash And Equivalents": [
+        7826,
+        11972,
+        11379,
+        8172,
+        13188,
+        6650,
+        7886,
+        13068,
+        13947,
+        13587
+      ],
+      "Total Cash And Short Term Investments": [
+        8527,
+        12580,
+        11997,
+        8868,
+        13788,
+        6650,
+        7886,
+        13068,
+        13947,
+        13587
+      ],
+      "Total Current Assets": [
+        43888,
+        49735,
+        49146,
+        38420,
+        39165,
+        29539,
+        29118,
+        32908,
+        34482,
+        36944
+      ],
+      "Total Current Liabilities": [
+        36275,
+        37363,
+        38227,
+        37701,
+        39869,
+        33619,
+        31505,
+        34122,
+        33142,
+        38658
+      ],
+      "Total Assets": [
+        117470,
+        125356,
+        123382,
+        152186,
+        155971,
+        132001,
+        127243,
+        135241,
+        137175,
+        151880
+      ],
+      "Total Liabilities": [
+        99078,
+        107631,
+        106452,
+        131202,
+        135244,
+        113005,
+        105222,
+        112628,
+        109783,
+        119139
+      ],
+      "Total Equity": [
+        18246,
+        17594,
+        16796,
+        20841,
+        20597,
+        18901,
+        21944,
+        22533,
+        27307,
+        32648
+      ],
+      "Total Debt": [
+        42168,
+        46824,
+        45812,
+        68158,
+        66492,
+        55239,
+        54252,
+        60435,
+        59397,
+        65760
+      ],
+      "Net Debt": [
+        33641,
+        34244,
+        33815,
+        59290,
+        52704,
+        48589,
+        46366,
+        47367,
+        45450,
+        52173
+      ]
+    },
+    "9.TIKR_CF": {
+      "Cash from Operations": [
+        17084,
+        16724,
+        15247,
+        14770,
+        18197,
+        12796,
+        10435,
+        13931,
+        13445,
+        13193
+      ],
+      "Capital Expenditure": [
+        -3567,
+        -3229,
+        -3395,
+        -2286,
+        -2618,
+        -2062,
+        -1346,
+        -1245,
+        -1048,
+        -1091
+      ],
+      "Free Cash Flow": [
+        13517,
+        13495,
+        11852,
+        12484,
+        15579,
+        10734,
+        9089,
+        12686,
+        12397,
+        12102
+      ],
+      "Depreciation & Amortization": [
+        4381,
+        4541,
+        4480,
+        6059,
+        6695,
+        6417,
+        4802,
+        4396,
+        4667,
+        5021
+      ],
+      "Stock-Based Compensation": [
+        544,
+        534,
+        510,
+        679,
+        937,
+        982,
+        987,
+        1133,
+        1311,
+        1715
+      ],
+      "Repurchase of Common Stock": [
+        -3502,
+        -4340,
+        -4443,
+        -1361,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Common & Preferred Stock Dividends Paid": [
+        -5256,
+        -5506,
+        -5666,
+        -5707,
+        -5797,
+        -5869,
+        -5948,
+        -6040,
+        -6147,
+        -6255
+      ]
+    },
+    "10.TIKR_Val": {
+      "Market Cap (MM)": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "Price": [
+        165.99,
+        153.42,
+        113.67,
+        134.04,
+        125.88,
+        133.66,
+        140.89,
+        163.55,
+        219.83,
+        296.21
+      ]
+    }
+  },
+  "notas": {
+    "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por ejercicio (cifras reexpresadas cuando las hay)",
+    "extraido": "2026-09-05",
+    "derivadas": [
+      "EBT Incl. Unusual Items = Net Income - Income Tax Expense (con signo)",
+      "EBITDA = Operating Income + Depreciation & Amortization",
+      "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
+      "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
+      "Free Cash Flow = Cash from Operations + Capital Expenditure"
+    ],
+    "deuda_incompleta": [
+      "2016: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2017: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2018: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
+      "2019: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente",
+      "2020: suma sin porcion corriente",
+      "2021: suma sin porcion corriente",
+      "2022: suma sin porcion corriente",
+      "2023: suma sin porcion corriente",
+      "2024: suma sin porcion corriente",
+      "2025: suma sin porcion corriente"
+    ],
+    "control_splits": {
+      "cuadra": true,
+      "desviaciones": []
+    },
+    "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "discontinuidad": {
+      "desde": "2019",
+      "motivo": "spin-off de Kyndryl (noviembre de 2021). IBM reexpreso 2019 y 2020 para presentar Kyndryl como actividad discontinuada, pero nunca reexpreso 2016-2018, que siguen incluyendola. Por eso las ventas caen de 79.591 M$ en 2018 a 57.714 M$ en 2019: no es un desplome, son dos perimetros distintos. El CAGR de ventas a 10 anios daba -1,9% anual por esto; el de 5 anios (2020-2025) si es homogeneo."
+    },
+    "tags_is": {
+      "revenue": {
+        "tag": "Revenues",
+        "note": "RevenueFromContractWithCustomerExcludingAssessedTax devuelve 404 (IBM no lo usa). Cascada cayó a Revenues.",
+        "filed_por_anio": [
+          "2019-02-26",
+          "2020-02-25",
+          "2021-02-23",
+          "2022-02-22",
+          "2023-02-28",
+          "2024-02-26",
+          "2025-02-25",
+          "2026-02-24",
+          "2026-02-24",
+          "2026-02-24"
+        ]
+      },
+      "cogs": {
+        "tag": "CostOfRevenue",
+        "note": "CostOfGoodsAndServicesSold devuelve 404 (IBM no lo usa). Cascada cayó a CostOfRevenue.",
+        "filed_por_anio": [
+          "2019-02-26",
+          "2020-02-25",
+          "2021-02-23",
+          "2022-02-22",
+          "2023-02-28",
+          "2024-02-26",
+          "2025-02-25",
+          "2026-02-24",
+          "2026-02-24",
+          "2026-02-24"
+        ]
+      },
+      "gross_profit": {
+        "tag": "GrossProfit",
+        "filed_por_anio": [
+          "2019-02-26",
+          "2020-02-25",
+          "2021-02-23",
+          "2022-02-22",
+          "2023-02-28",
+          "2024-02-26",
+          "2025-02-25",
+          "2026-02-24",
+          "2026-02-24",
+          "2026-02-24"
+        ]
+      },
+      "operating_income": {
+        "tag": null,
+        "note": "DERIVADO, no publicado por IBM. us-gaap:OperatingIncomeLoss devuelve 404 (IBM no presenta linea de resultado de explotacion: pasa de margen bruto a 'Income before income taxes'). Calculado como gross_profit - sga_expense - rd_expense (VIA A, de arriba abajo) usando SG&A derivado de SellingGeneralAndAdministrativeExpense."
+      },
+      "sga_expense": {
+        "tag": "SellingGeneralAndAdministrativeExpense",
+        "note": "Funciona para los 10 ejercicios (2016-2025). GeneralAndAdministrativeExpense y SellingGeneralAndAdministrativeExpenseIncludingProvisionForDoubtfulAccounts devuelven 404 (IBM no los usa). Para 2016 y 2019-2020 se tomo el valor del 'filed' mas reciente, que refleja la reexpresion por el spin-off de Kyndryl (nov-2021) y una reclasificacion menor en 2016.",
+        "filed_por_anio": [
+          "2019-02-26",
+          "2020-02-25",
+          "2021-02-23",
+          "2022-02-22",
+          "2023-02-28",
+          "2024-02-26",
+          "2025-02-25",
+          "2026-02-24",
+          "2026-02-24",
+          "2026-02-24"
+        ]
+      },
+      "other_nonoperating": {
+        "tag": "OtherNonoperatingIncomeExpense",
+        "note": "Solo existe (no 404) para 2020-2025; para 2016-2019 el tag no aparece en absoluto en companyconcept (null, sin estimar). DefinedBenefitPlanNetPeriodicBenefitCostCreditExcludingServiceCost devuelve 404 para los 10 anios: IBM no usa ese tag estandar para el coste de pensiones no operativo, asi que no se pudo aislar esa partida por separado.",
+        "filed_por_anio": [
+          null,
+          null,
+          null,
+          null,
+          "2023-02-28",
+          "2024-02-26",
+          "2025-02-25",
+          "2026-02-24",
+          "2026-02-24",
+          "2026-02-24"
+        ]
+      },
+      "interest_expense": {
+        "tag": "InterestExpense",
+        "filed_por_anio": [
+          "2019-02-26",
+          "2020-02-25",
+          "2021-02-23",
+          "2022-02-22",
+          "2023-02-28",
+          "2024-02-26",
+          "2025-02-25",
+          "2026-02-24",
+          "2026-02-24",
+          "2026-02-24"
+        ]
+      },
+      "income_tax": {
+        "tag": "IncomeTaxExpenseBenefit",
+        "note": "Signo invertido respecto al valor bruto de la SEC (gasto positivo en SEC -> negativo aqui; beneficio fiscal negativo en SEC -> positivo aqui).",
+        "filed_por_anio": [
+          "2019-02-26",
+          "2020-02-25",
+          "2021-02-23",
+          "2022-02-22",
+          "2023-02-28",
+          "2024-02-26",
+          "2025-02-25",
+          "2026-02-24",
+          "2026-02-24",
+          "2026-02-24"
+        ]
+      },
+      "net_income": {
+        "tag": "NetIncomeLoss",
+        "filed_por_anio": [
+          "2019-02-26",
+          "2020-02-25",
+          "2021-02-23",
+          "2022-02-22",
+          "2023-02-28",
+          "2024-02-26",
+          "2025-02-25",
+          "2026-02-24",
+          "2026-02-24",
+          "2026-02-24"
+        ]
+      },
+      "eps_diluted": {
+        "tag": "EarningsPerShareDiluted",
+        "note": "Solo existe un 'filed' por ejercicio (IBM no re-etiqueta el BPA de años comparativos antiguos).",
+        "filed_por_anio": [
+          "2017-02-28",
+          "2018-02-27",
+          "2019-02-26",
+          "2020-02-25",
+          "2021-02-23",
+          "2022-02-22",
+          "2023-02-28",
+          "2024-02-26",
+          "2025-02-25",
+          "2026-02-24"
+        ]
+      },
+      "diluted_shares": {
+        "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+        "filed_por_anio": [
+          "2019-02-26",
+          "2020-02-25",
+          "2021-02-23",
+          "2022-02-22",
+          "2023-02-28",
+          "2024-02-26",
+          "2025-02-25",
+          "2026-02-24",
+          "2026-02-24",
+          "2026-02-24"
+        ]
+      },
+      "rd_expense": {
+        "tag": "ResearchAndDevelopmentExpense",
+        "filed_por_anio": [
+          "2019-02-26",
+          "2020-02-25",
+          "2021-02-23",
+          "2022-02-22",
+          "2023-02-28",
+          "2024-02-26",
+          "2025-02-25",
+          "2026-02-24",
+          "2026-02-24",
+          "2026-02-24"
+        ]
+      }
+    },
+    "tags_bs": {
+      "cash": {
+        "tag": "CashAndCashEquivalentsAtCarryingValue",
+        "filed": "2026-02-24 (10-K FY2025); serie completa desde el mismo tag para los 10 años"
+      },
+      "short_term_investments": {
+        "tag": "ShortTermInvestments->404 no usado por IBM; cascada aplicada por año: MarketableSecuritiesCurrent (2016-2017) y AvailableForSaleSecuritiesDebtSecuritiesCurrent (2018-2020)",
+        "filed": "2018-02-27 (2016), 2018-02-27 (2017), 2020-02-25 (2018), 2021-02-23 (2019 y 2020)"
+      },
+      "total_current_assets": {
+        "tag": "AssetsCurrent",
+        "filed": "2026-02-24 (10-K FY2025) para 2024; 2025 confirmado via 10-K 2026-02-24 y reconfirmado sin cambios en 10-Q 2026-04-23/2026-07-23"
+      },
+      "total_assets": {
+        "tag": "Assets",
+        "filed": "2026-02-24 (10-K FY2025); valor de 2025-12-31 (151880) verificado idéntico en 10-K y en 10-Q posteriores filed 2026-04-23 y 2026-07-23"
+      },
+      "total_current_liabilities": {
+        "tag": "LiabilitiesCurrent",
+        "filed": "2026-02-24 (10-K FY2025)"
+      },
+      "total_liabilities": {
+        "tag": "Liabilities",
+        "filed": "2026-02-24 (10-K FY2025); no dio 404, por lo que no se solicitó StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+      },
+      "total_equity": {
+        "tag": "StockholdersEquity",
+        "filed": "2026-02-24 (10-K FY2025)"
+      },
+      "short_term_borrowings": {
+        "tag": "DEUDA CORRIENTE TOTAL, tag por tramos: DebtCurrent para 2016 (7513, filed 2017-02-28, accn 0001047469-17-001061) y 2017 (6987, filed 2018-02-27, accn 0001047469-18-001117); ShortTermBorrowings para 2018-2025 (2018:10207, filed 2019-02-26, accn 0001047469-19-000712; resto filed mas reciente por año como antes). DebtCurrent 2018-12-31 tambien vale 10207 (mismo accn 0001047469-19-000712), IDENTICO a ShortTermBorrowings 2018 -> confirma que ambos tags representan la MISMA linea de balance ('Short-term debt'), no partidas distintas. DebtCurrent deja de reportarse tras el 10-Q de 2019-Q1 (ultimo hecho end=2019-03-31); a partir del 10-K FY2019 IBM solo usa ShortTermBorrowings para esta linea, por lo que la serie se empalma sin solapamiento.",
+        "filed": "ver detalle arriba"
+      },
+      "current_portion_ltd": {
+        "tag": "LongTermDebtCurrent -> PUESTO A NULL EN TODOS LOS AÑOS, ver avisos (partida duplicada: es un componente/desglose de la deuda corriente total, no una linea adicional)",
+        "filed": "no aplica, dato descartado por duplicidad"
+      },
+      "long_term_debt": {
+        "tag": "LongTermDebtNoncurrent",
+        "filed": "2026-02-24 (10-K FY2025)"
+      },
+      "finance_lease_current": {
+        "tag": "FinanceLeaseLiabilityCurrent",
+        "filed": "2022-02-22 (2020), 2023-02-28 (2021), 2024-02-26 (2022), 2025-02-25 (2023), 2026-02-24 (2024-2025); sin hechos 2016-2019"
+      },
+      "finance_lease_noncurrent": {
+        "tag": "FinanceLeaseLiabilityNoncurrent",
+        "filed": "2022-02-22 (2020), 2023-02-28 (2021), 2024-02-26 (2022), 2025-02-25 (2023), 2026-02-24 (2024-2025); sin hechos 2016-2019"
+      },
+      "operating_lease_current": {
+        "tag": "OperatingLeaseLiabilityCurrent",
+        "filed": "2021-02-23 (2019-2020), 2022-02-22 (2021), 2023-02-28 (2022), 2024-02-26 (2023), 2025-02-25 (2024), 2026-02-24 (2025); sin hechos 2016-2018 (pre ASC 842)"
+      },
+      "operating_lease_noncurrent": {
+        "tag": "OperatingLeaseLiabilityNoncurrent",
+        "filed": "2020-02-25 (2019), 2021-02-23 (2020), 2022-02-22 (2021), 2023-02-28 (2022), 2024-02-26 (2023), 2025-02-25 (2024), 2026-02-24 (2025); sin hechos 2016-2018 (pre ASC 842)"
+      }
+    },
+    "tags_cf": {
+      "cfo": {
+        "tag": "NetCashProvidedByUsedInOperatingActivities",
+        "filed": "varia por año; el hecho de filed mas reciente disponible para cada cierre, hasta 2026-02-24 para FY2025 (accn 0000051143-26-000010)"
+      },
+      "capex": {
+        "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "filed": "varia por año; filed mas reciente para cada cierre, hasta 2026-02-24 para FY2025"
+      },
+      "depreciation_amortization": {
+        "tag": "SUMA de dos tags: Depreciation (depreciacion PPE) + AmortizationOfIntangibleAssets (amortizacion de intangibles)",
+        "filed": "Depreciation: filed mas reciente hasta 2026-02-24 para FY2025. AmortizationOfIntangibleAssets: primer tag probado de la cascada (funciono directamente, sin necesidad de AmortizationOfIntangibleAssetsExcludingGoodwill/AmortizationOfDeferredCharges/FiniteLivedIntangibleAssetsAmortizationExpense); filed mas reciente para cada cierre, hasta 2026-02-24 para FY2025 (accn 0000051143-26-000010 o equivalente). Se verifico que no hay hechos dimensionales/duplicados con valores distintos para el mismo periodo (solo repeticion del mismo valor en 10-Ks sucesivos por cifras comparativas)."
+      },
+      "depreciation_ppe": {
+        "tag": "Depreciation",
+        "filed": "serie identica a la depreciation_amortization original (solo depreciacion de PPE, sin intangibles); ver aviso"
+      },
+      "amortization_intangibles": {
+        "tag": "AmortizationOfIntangibleAssets",
+        "filed": "funciono para los 10 ejercicios 2016-2025 sin necesidad de fallback; filed mas reciente por cierre"
+      },
+      "stock_based_compensation": {
+        "tag": "ShareBasedCompensation",
+        "filed": "varia por año; filed mas reciente hasta 2026-02-24 para FY2025"
+      },
+      "buybacks": {
+        "tag": "PaymentsForRepurchaseOfCommonStock",
+        "filed": "disponible solo 2016-2019 (ultimo hecho: FY2019, filed 2022-02-22, accn 0001558370-22-001584); sin datos posteriores, ver avisos"
+      },
+      "dividends_paid": {
+        "tag": "PaymentsOfDividendsCommonStock",
+        "filed": "varia por año; filed mas reciente hasta 2026-02-24 para FY2025"
+      },
+      "cash_taxes_paid": {
+        "tag": "IncomeTaxesPaidNet",
+        "filed": "varia por año; filed mas reciente hasta 2026-02-24 para FY2025"
+      }
+    },
+    "avisos_extraccion": [
+      "operating_income es DERIVADO, no publicado por IBM: us-gaap:OperatingIncomeLoss devuelve 404 porque la cuenta de resultados de IBM pasa directamente del margen bruto a 'Income before income taxes', sin linea de resultado operativo. Formula usada (VIA A, de arriba abajo): operating_income = gross_profit - sga_expense - rd_expense, con sga_expense tomado de us-gaap:SellingGeneralAndAdministrativeExpense (unico tag SG&A que IBM etiqueta; GeneralAndAdministrativeExpense y SellingGeneralAndAdministrativeExpenseIncludingProvisionForDoubtfulAccounts dan 404).",
+      "Se contrasto con una VIA B (de abajo arriba): EBIT = (net_income - income_tax) + interest_expense. La diferencia media VIA A - VIA B en 2016-2025 es de aprox. -447 M$/anio, con mucha dispersion anual (de -3.936 M$ en 2019 a +5.282 M$ en 2022). Se atribuye a partidas 'non-operating' entre el resultado operativo y el impuesto que la VIA B no aisla (quedan enterradas en el neto): sobre todo costes de pensiones no operativos (IBM tiene planes de prestacion definida grandes) y otras partidas financieras/FX. 2019-2020 reflejan ademas la reexpresion por el spin-off de Kyndryl, y 2022 un cargo de pensiones especialmente grande (net_income cayo a 1.639 M$ ese anio pese a un resultado operativo VIA A de 7.511 M$). Por eso se usa la VIA A: mide el negocio sin mezclar financiero/pensiones.",
+      "other_nonoperating (OtherNonoperatingIncomeExpense) solo se pudo obtener para 2020-2025 (156, 225, 443, 266, 877, 221 M$); para 2016-2019 el tag no existe en el companyconcept de IBM, se deja en null. No se pudo aislar el componente de pensiones por separado: DefinedBenefitPlanNetPeriodicBenefitCostCreditExcludingServiceCost devuelve 404 para los 10 ejercicios (IBM no usa ese tag estandar), por lo que no se anadio una fila pension_nonoperating.",
+      "revenue: cascada RevenueFromContractWithCustomerExcludingAssessedTax -> Revenues -> SalesRevenueNet. El primer tag da 404 (IBM no lo usa); se uso 'Revenues'.",
+      "cogs: cascada CostOfGoodsAndServicesSold -> CostOfRevenue -> CostOfGoodsSold. El primer tag da 404; se uso 'CostOfRevenue'.",
+      "SPIN-OFF DE KYNDRYL (nov-2021): la regla del 'filed' mas reciente trae cifras REEXPRESADAS (Kyndryl como discontinuada) para 2019, 2020 y 2021, pero NO para 2016-2018 (demasiado antiguos para aparecer como comparativos tras el spin-off). Esto genera una discontinuidad de perimetro, no organica, entre 2018 y 2019:",
+      "  - revenue 2019: 77.147 M$ (10-K original, filed 2020-02-25) -> 57.714 M$ (reexpresado, filed 2022-02-22, usado aqui).",
+      "  - revenue 2020: 73.620 M$ (10-K original, filed 2021-02-23) -> 55.179 M$ (reexpresado, filed 2023-02-28, usado aqui).",
+      "  - cogs y gross_profit sufren el mismo efecto de perimetro en 2019 y 2020 (caidas de magnitud similar).",
+      "  - revenue 2016 (79.919 M$), 2017 (79.139 M$) y 2018 (79.591 M$) SIGUEN INCLUYENDO Kyndryl porque nunca se reexpresaron; comparar 2018 vs 2019 en bruto sobreestima la caida real de negocio continuado.",
+      "net_income (NetIncomeLoss) es el resultado TOTAL (continuadas + discontinuadas): se confirma porque su valor NO varia entre las versiones pre- y post-reexpresion Kyndryl para 2019 (9.431 M$ en todas las versiones) y 2020 (5.590 M$ en todas las versiones), a diferencia de revenue/cogs que si cambian. Para 2021 (ano del spin-off), net_income=5.743 M$ incluye el resultado de Kyndryl hasta la separacion en noviembre y cualquier efecto de la transaccion; la cifra de continuadas habria sido distinta.",
+      "income_tax: se invirtio el signo respecto al dato bruto de la SEC segun lo pedido. Queda POSITIVO (beneficio/ingreso fiscal) en 2020 (+1.360), 2022 (+626), 2024 (+218) y 2025 (+242); NEGATIVO (gasto) en 2016, 2017, 2018, 2019, 2021 y 2023. 2017 recoge el cargo extraordinario por la reforma fiscal de EEUU (Tax Cuts and Jobs Act): IncomeTaxExpenseBenefit bruto = 5.642 M$ (gasto) -> aqui -5.642, coherente con el beneficio neto reducido a 5.753 M$ ese ano.",
+      "income_tax 2019: el valor reexpresado tras el spin-off (filed 2022-02-22) es 60 M$ de gasto, frente a 731 M$ en el 10-K original. Es probable que parte del impuesto se reclasificara a discontinued operations, mientras que net_income (total) no se movio; por eso el 'EBT' implicito de 2019 puede parecer bajo en relacion al NI si se compara con anos no afectados por la reexpresion.",
+      "Comprobacion bruto = ventas - coste: cuadra EXACTO en 2016, 2017, 2018, 2019, 2020 y 2023. En 2021, 2022, 2024 y 2025 hay una diferencia de 1 M$ (redondeo) entre el GrossProfit etiquetado por IBM y el calculo revenue-cogs (variacion <0.01%, irrelevante).",
+      "Comprobacion BPA diluido x acciones diluidas ~= beneficio neto: cuadra en los 10 ejercicios, desviacion maxima ~0.16% en FY2022 (1,80 x 912 = 1.641,6 M$ vs NI 1.639 M$ reportado), muy por debajo del umbral del 5%. IBM no ha hecho splits en esta ventana, consistente con el enunciado.",
+      "Anclas de validacion: FY2024 revenue=62.753 M$ y net_income=6.023 M$ cuadran EXACTOS con el ancla. FY2023 revenue=61.860 M$ y net_income=7.502 M$ cuadran EXACTOS con el ancla.",
+      "Todos los datos son consolidados sin dimensiones/segmentos: el endpoint companyconcept de la SEC solo devuelve hechos sin eje de dimension, asi que no hizo falta filtrar segmentos manualmente.",
+      "DISCONTINUIDAD DE PERIMETRO desde 2019: spin-off de Kyndryl (noviembre de 2021). IBM reexpreso 2019 y 2020 para presentar Kyndryl como actividad discontinuada, pero nunca reexpreso 2016-2018, que siguen incluyendola. Por eso las ventas caen de 79.591 M$ en 2018 a 57.714 M$ en 2019: no es un desplome, son dos perimetros distintos. El CAGR de ventas a 10 anios daba -1,9% anual por esto; el de 5 anios (2020-2025) si es homogeneo.",
+      "Anclas de validacion: total_assets FY2024=137175 M$ coincide exactamente con el ancla (~137.175 M$); total_equity FY2024=27307 M$ coincide exactamente con el ancla (~27.307 M$); total_assets FY2023=135241 M$ coincide exactamente con el ancla (~135.241 M$). Sin desviaciones.",
+      "short_term_investments: el tag ShortTermInvestments da 404 (IBM no lo usa). Cascada aplicada ano a ano (no solo al primer tag que exista globalmente, sino el primero que exista para cada fecha): 2016 y 2017 desde MarketableSecuritiesCurrent (701 y 608 M$); 2018, 2019 y 2020 desde AvailableForSaleSecuritiesDebtSecuritiesCurrent (618, 696 y 600 M$). Ambos tags dan null para 2021-2025: IBM parece haber dejado de reportar inversiones a corto plazo como partida separada desde el ejercicio 2021; esos 5 anos quedan null (real, no estimado).",
+      "short_term_borrowings: el tag ShortTermBorrowings existe pero no tiene hechos para 2016 ni 2017. Fallback CommercialPaper tampoco tiene datos esos dos anos (si tiene para 2018 y 2019, pero esos anos ya estaban cubiertos por ShortTermBorrowings, asi que no se usaron). Fallback final OtherShortTermBorrowings da 404. Resultado: 2016 y 2017 quedan null (hueco real de IBM, agotada toda la cascada, no es un fallo de la extraccion).",
+      "current_portion_ltd (LongTermDebtCurrent): hay datos completos 2016-2018 (6239, 5214, 7051 M$), pero NO existe ningun hecho con end exacto 2019-12-31 ni en anos posteriores (verificado explicitamente dos veces, incluyendo revision del listado crudo de hechos). Se reporta null desde 2019 en adelante tal cual, sin derivarlo ni sumarlo a short_term_borrowings.",
+      "Arrendamientos operativos (OperatingLeaseLiability current/noncurrent): null en 2016-2018 es un dato real, no un hueco - IBM adopta ASC 842 en el ejercicio cerrado 2019-12-31 y a partir de esa fecha aparecen los hechos.",
+      "Arrendamientos financieros (FinanceLeaseLiability current/noncurrent): a diferencia del operativo, estos tags NO aparecen hasta el cierre 2020-12-31 (2019-12-31 tambien da null, verificado). Es decir, IBM no separo el pasivo por leasing financiero en un tag XBRL propio hasta el 10-K de FY2020, aunque ASC 842 ya se adopto en FY2019. Tratarlo como dato real, no como fallo de extraccion.",
+      "Control de coherencia (Activo = Pasivo + Patrimonio incluyendo minoritarios): como el tag Liabilities SI existe (no dio 404), no se solicito StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest segun la regla del prompt. Usando el patrimonio atribuible (StockholdersEquity) la diferencia Activo-Pasivo-Patrimonio_atribuible por ano es: 2016:146, 2017:131, 2018:134, 2019:143, 2020:130, 2021:95, 2022:77, 2023:80, 2024:85, 2025:93 (millones $). Son diferencias pequenas y siempre positivas, compatibles con las participaciones no controladoras (NCI) habituales de IBM; no se detecta ningun descuadre material en los 10 ejercicios.",
+      "2025-12-31: los valores de Assets, AssetsCurrent, Liabilities y LiabilitiesCurrent se verificaron de forma cruzada consultando todos los hechos crudos con end=2025-12-31: el 10-K original (filed 2026-02-24, accn 0000051143-26-000010) y los 10-Q posteriores (filed 2026-04-23 y 2026-07-23, que lo muestran como periodo comparativo) reportan exactamente el mismo valor en los cuatro conceptos. No hay reexpresion; se uso el valor del 10-K original.",
+      "Todos los formularios usados fueron 10-K salvo cuando se indica 10-Q explicitamente arriba (ninguna partida final del fichero depende de un 10-Q, todos los valores finales provienen de 10-K).",
+      "RESOLUCION DEUDA CORRIENTE (ShortTermBorrowings vs LongTermDebtCurrent): se consulto el tag agregado DebtCurrent, que representa la deuda corriente TOTAL de balance. Para 2018-12-31 DebtCurrent = 10.207 M$ (accn 0001047469-19-000712), EXACTAMENTE IGUAL a ShortTermBorrowings 2018 (10.207 M$, mismo accn) y NO a la suma ShortTermBorrowings+LongTermDebtCurrent (10.207+7.051=17.258 M$). Esto confirma la lectura (b) del enunciado: IBM presenta una unica linea de balance 'Short-term debt' que YA INCLUYE la porcion corriente de la deuda a largo plazo; LongTermDebtCurrent (7.051 M$ en 2018) es un COMPONENTE/desglose de esa misma cifra total (parte de la nota de deuda), no una partida adicional. Sumar ambas habria producido doble conteo. Ademas, para 2016 y 2017 (donde ShortTermBorrowings aun no existia como tag) DebtCurrent aporta la cifra correcta de deuda corriente total: 7.513 M$ (2016) y 6.987 M$ (2017), superiores a LongTermDebtCurrent solo (6.239 y 5.214), lo que es coherente con que este ultimo es solo un componente. El tag DebtCurrent deja de reportarse por IBM a partir de 2019 (ultimo hecho end=2019-03-31, 10-Q); desde el 10-K FY2019 en adelante ShortTermBorrowings es la unica fuente de esta linea, y la serie ya estaba completa 2019-2025 sin necesidad de ajuste. CONCLUSION: short_term_borrowings queda como serie UNICA y completa de deuda corriente total (DebtCurrent 2016-2017 + ShortTermBorrowings 2018-2025); current_portion_ltd se pone a null en los 10 años porque su valor ya esta contenido dentro de short_term_borrowings y sumarlo aparte duplicaria deuda. Se probaron tambien LongTermDebt (deuda total, tag descontinuado por IBM tras 2019-09-30, ultimo hecho esa fecha, 72 hechos totales) y DebtLongtermAndShorttermCombinedAmount (404, IBM no usa este tag): ninguno aporta datos utiles para 2019-2025, pero no hacia falta porque DebtCurrent+ShortTermBorrowings ya resuelven la serie completa.",
+      "short_term_investments fijado a 0 desde 2021 el 2026-09-06, NO por defecto: los cinco tags candidatos no tienen ningun hecho desde 2021, coherente con la simplificacion de tesoreria tras el spin-off de Kyndryl. NO se pudo confirmar por el metodo de la suma (la financiacion a clientes usa un tag propio de IBM y tapa el residuo), asi que se aplica por materialidad: 600-700 M$ frente a un capital invertido de 67.000-85.000 M$ mueven el ROIC un 1% como mucho.",
+      "SIGNOS: cfo, depreciation_amortization, stock_based_compensation y cash_taxes_paid se dejan en positivo (entradas/gasto no monetario). capex, buybacks y dividends_paid se convirtieron a NEGATIVO (salidas de caja), tal como se pide para que fcf = cfo + capex funcione directamente.",
+      "CFO / KYNDRYL: el tag principal NetCashProvidedByUsedInOperatingActivities existio sin discontinuidad para los 10 ejercicios (2016-2025), incluido el ejercicio del spin-off de Kyndryl (nov-2021), y no hubo necesidad de recurrir al fallback ...ContinuingOperations. Este tag corresponde a la cifra TOTAL consolidada tal como la reporta IBM en el 10-K de cada año (para FY2021 incluye el efecto de la separacion de Kyndryl ya reflejado por IBM en su presentacion), por lo que es la serie comparable usada.",
+      "SALTO 2021: el CFO cae de 18.197 M$ (FY2020) a 12.796 M$ (FY2021) y luego a 10.435 M$ (FY2022), una caida notable coincidente con el spin-off de Kyndryl (noviembre 2021) y sus costes de separacion; a partir de FY2023 el CFO se recupera (13.931 M$) y se mantiene en el rango 13.000-13.500 M$. La tendencia general 2016-2025 es positiva en caja operativa todos los años, sin cifras negativas.",
+      "ANCLA FY2024 CFO: obtenido 13.445 M$ desde NetCashProvidedByUsedInOperatingActivities (filed 2025-02-25 y ratificado 2026-02-24) - COINCIDE con el ancla de ~13.445 M$.",
+      "ANCLA FY2023 CFO: obtenido 13.931 M$ desde el mismo tag - COINCIDE con el ancla de ~13.931 M$.",
+      "ANCLA FY2024 CAPEX - DESVIACION IMPORTANTE: obtenido -1.048 M$ desde el tag PaymentsToAcquirePropertyPlantAndEquipment (tag existe, no did 404, por lo que segun la cascada de reglas no se usa fallback ni se ajusta). El ancla del enunciado es ~-1.685 M$, una desviacion de ~38%, muy por encima del umbral del 1%. NO SE HA AJUSTADO EL DATO. Hipotesis mas probable: IBM reporta el capex total (~1.685 M$ en su carta a accionistas) como suma de 'Payments for plant, rental machines and other property' (este tag, ~1.048 M$) mas una partida separada de capitalizacion de software ('capitalized software' u otro tag de intangibles) que no está cubierto por la cascada de tags solicitada. La misma pauta (valor por debajo del ancla) se repite de forma consistente en los años recientes (2022: 1.346 M$, 2023: 1.245 M$, 2025: 1.091 M$), lo que refuerza que el tag capta solo una parte del capex total de IBM y no que sea un dato puntual erroneo.",
+      "BUYBACKS: el tag PaymentsForRepurchaseOfCommonStock existe y tiene datos consolidados solo para los ejercicios FY2016-FY2019 (169 hechos totales en el endpoint, el ultimo con end=2019-12-31). A partir de FY2020 IBM no vuelve a reportar hechos con este tag (se verifico explicitamente que no hay entradas con end en 2020-12-31 a 2025-12-31). Esto es coherente con que IBM practicamente paralizo la recompra de acciones tras la adquisicion de Red Hat (2019) para priorizar la reduccion de deuda y el dividendo. Por regla 6, se devuelve null para 2020-2025 en vez de asumir 0 o estimar, ya que no se puede confirmar sin ambigüedad que el valor sea cero (podria estar bajo otro tag no incluido en la cascada solicitada).",
+      "DEPRECIATION_AMORTIZATION - CORREGIDO (dato completo, D&A = depreciacion PPE + amortizacion de intangibles): la version anterior de este campo usaba solo el tag 'Depreciation' (fallback tras 404 de DepreciationDepletionAndAmortization y DepreciationAmortizationAndAccretionNet), que cubre unicamente depreciacion de inmovilizado material y NO la amortizacion de intangibles derivada de adquisiciones (sobre todo Red Hat, ~34.000 M$ en 2019). Eso subestimaba el D&A (ej. 2.168 M$ en FY2024 frente a los ~4.500-5.000 M$ reales), lo que a su vez subestima el EBITDA aguas abajo y hace parecer a IBM mas endeudada de lo que esta (Deuda neta/EBITDA inflado). Se probo la cascada AmortizationOfIntangibleAssets -> AmortizationOfIntangibleAssetsExcludingGoodwill -> AmortizationOfDeferredCharges -> FiniteLivedIntangibleAssetsAmortizationExpense, y el PRIMER tag (AmortizationOfIntangibleAssets) funciono sin dimensiones/segmentos para los 10 ejercicios 2016-2025. La serie original de depreciacion se conservo en 'depreciation_ppe', la serie de amortizacion nueva se guardo en 'amortization_intangibles', y 'depreciation_amortization' pasa a ser la SUMA de ambas: [4381,4541,4480,6059,6695,6417,4802,4396,4667,5021] M$. La subida marcada en 2019-2021 (6.059/6.695/6.417 M$) frente a 2016-2018 (~4.4-4.5 mil M$) y 2022-2025 (~4.4-5.0 mil M$) es coherente con la amortizacion de los intangibles de Red Hat amortizandose mas intensamente en esos primeros años tras la adquisicion.",
+      "cash_taxes_paid: se uso IncomeTaxesPaidNet (primer tag de la cascada, disponible los 10 años), sin necesidad de fallback a IncomeTaxesPaid.",
+      "Ningun hecho seleccionado presentaba dimensiones/segmentos: el endpoint companyconcept de la SEC solo expone hechos de contexto por defecto (consolidado), por lo que la regla 4 se cumple estructuralmente.",
+      "Todos los periodos seleccionados son de 365 o 366 dias (año natural completo IBM, cierre 31-dic), dentro del rango 350-380 aceptado.",
+      "Campos que NUNCA quedaron en null para ningun año: cfo, capex, depreciation_amortization, stock_based_compensation, dividends_paid, cash_taxes_paid. El unico campo con nulls es buybacks (6 de 10 años: 2020-2025)."
+    ]
+  }
+}

@@ -1,0 +1,261 @@
+{
+ "ticker": "IBM",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "cash": [
+   7826,
+   11972,
+   11379,
+   8172,
+   13188,
+   6650,
+   7886,
+   13068,
+   13947,
+   13587
+  ],
+  "short_term_investments": [
+   701,
+   608,
+   618,
+   696,
+   600,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "total_current_assets": [
+   43888,
+   49735,
+   49146,
+   38420,
+   39165,
+   29539,
+   29118,
+   32908,
+   34482,
+   36944
+  ],
+  "total_assets": [
+   117470,
+   125356,
+   123382,
+   152186,
+   155971,
+   132001,
+   127243,
+   135241,
+   137175,
+   151880
+  ],
+  "total_current_liabilities": [
+   36275,
+   37363,
+   38227,
+   37701,
+   39869,
+   33619,
+   31505,
+   34122,
+   33142,
+   38658
+  ],
+  "total_liabilities": [
+   99078,
+   107631,
+   106452,
+   131202,
+   135244,
+   113005,
+   105222,
+   112628,
+   109783,
+   119139
+  ],
+  "total_equity": [
+   18246,
+   17594,
+   16796,
+   20841,
+   20597,
+   18901,
+   21944,
+   22533,
+   27307,
+   32648
+  ],
+  "short_term_borrowings": [
+   7513,
+   6987,
+   10207,
+   8797,
+   7116,
+   6787,
+   4760,
+   6426,
+   5089,
+   6424
+  ],
+  "current_portion_ltd": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "long_term_debt": [
+   34655,
+   39837,
+   35605,
+   54102,
+   54355,
+   44917,
+   46189,
+   50121,
+   49884,
+   54836
+  ],
+  "finance_lease_current": [
+   null,
+   null,
+   null,
+   null,
+   30,
+   36,
+   75,
+   121,
+   198,
+   279
+  ],
+  "finance_lease_noncurrent": [
+   null,
+   null,
+   null,
+   null,
+   60,
+   63,
+   164,
+   379,
+   803,
+   874
+  ],
+  "operating_lease_current": [
+   null,
+   null,
+   null,
+   1380,
+   1357,
+   974,
+   874,
+   820,
+   768,
+   800
+  ],
+  "operating_lease_noncurrent": [
+   null,
+   null,
+   null,
+   3879,
+   3574,
+   2462,
+   2190,
+   2568,
+   2655,
+   2547
+  ]
+ },
+ "tags_usados": {
+  "cash": {
+   "tag": "CashAndCashEquivalentsAtCarryingValue",
+   "filed": "2026-02-24 (10-K FY2025); serie completa desde el mismo tag para los 10 años"
+  },
+  "short_term_investments": {
+   "tag": "ShortTermInvestments->404 no usado por IBM; cascada aplicada por año: MarketableSecuritiesCurrent (2016-2017) y AvailableForSaleSecuritiesDebtSecuritiesCurrent (2018-2020)",
+   "filed": "2018-02-27 (2016), 2018-02-27 (2017), 2020-02-25 (2018), 2021-02-23 (2019 y 2020)"
+  },
+  "total_current_assets": {
+   "tag": "AssetsCurrent",
+   "filed": "2026-02-24 (10-K FY2025) para 2024; 2025 confirmado via 10-K 2026-02-24 y reconfirmado sin cambios en 10-Q 2026-04-23/2026-07-23"
+  },
+  "total_assets": {
+   "tag": "Assets",
+   "filed": "2026-02-24 (10-K FY2025); valor de 2025-12-31 (151880) verificado idéntico en 10-K y en 10-Q posteriores filed 2026-04-23 y 2026-07-23"
+  },
+  "total_current_liabilities": {
+   "tag": "LiabilitiesCurrent",
+   "filed": "2026-02-24 (10-K FY2025)"
+  },
+  "total_liabilities": {
+   "tag": "Liabilities",
+   "filed": "2026-02-24 (10-K FY2025); no dio 404, por lo que no se solicitó StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+  },
+  "total_equity": {
+   "tag": "StockholdersEquity",
+   "filed": "2026-02-24 (10-K FY2025)"
+  },
+  "short_term_borrowings": {
+   "tag": "DEUDA CORRIENTE TOTAL, tag por tramos: DebtCurrent para 2016 (7513, filed 2017-02-28, accn 0001047469-17-001061) y 2017 (6987, filed 2018-02-27, accn 0001047469-18-001117); ShortTermBorrowings para 2018-2025 (2018:10207, filed 2019-02-26, accn 0001047469-19-000712; resto filed mas reciente por año como antes). DebtCurrent 2018-12-31 tambien vale 10207 (mismo accn 0001047469-19-000712), IDENTICO a ShortTermBorrowings 2018 -> confirma que ambos tags representan la MISMA linea de balance ('Short-term debt'), no partidas distintas. DebtCurrent deja de reportarse tras el 10-Q de 2019-Q1 (ultimo hecho end=2019-03-31); a partir del 10-K FY2019 IBM solo usa ShortTermBorrowings para esta linea, por lo que la serie se empalma sin solapamiento.",
+   "filed": "ver detalle arriba"
+  },
+  "current_portion_ltd": {
+   "tag": "LongTermDebtCurrent -> PUESTO A NULL EN TODOS LOS AÑOS, ver avisos (partida duplicada: es un componente/desglose de la deuda corriente total, no una linea adicional)",
+   "filed": "no aplica, dato descartado por duplicidad"
+  },
+  "long_term_debt": {
+   "tag": "LongTermDebtNoncurrent",
+   "filed": "2026-02-24 (10-K FY2025)"
+  },
+  "finance_lease_current": {
+   "tag": "FinanceLeaseLiabilityCurrent",
+   "filed": "2022-02-22 (2020), 2023-02-28 (2021), 2024-02-26 (2022), 2025-02-25 (2023), 2026-02-24 (2024-2025); sin hechos 2016-2019"
+  },
+  "finance_lease_noncurrent": {
+   "tag": "FinanceLeaseLiabilityNoncurrent",
+   "filed": "2022-02-22 (2020), 2023-02-28 (2021), 2024-02-26 (2022), 2025-02-25 (2023), 2026-02-24 (2024-2025); sin hechos 2016-2019"
+  },
+  "operating_lease_current": {
+   "tag": "OperatingLeaseLiabilityCurrent",
+   "filed": "2021-02-23 (2019-2020), 2022-02-22 (2021), 2023-02-28 (2022), 2024-02-26 (2023), 2025-02-25 (2024), 2026-02-24 (2025); sin hechos 2016-2018 (pre ASC 842)"
+  },
+  "operating_lease_noncurrent": {
+   "tag": "OperatingLeaseLiabilityNoncurrent",
+   "filed": "2020-02-25 (2019), 2021-02-23 (2020), 2022-02-22 (2021), 2023-02-28 (2022), 2024-02-26 (2023), 2025-02-25 (2024), 2026-02-24 (2025); sin hechos 2016-2018 (pre ASC 842)"
+  }
+ },
+ "avisos": [
+  "Anclas de validacion: total_assets FY2024=137175 M$ coincide exactamente con el ancla (~137.175 M$); total_equity FY2024=27307 M$ coincide exactamente con el ancla (~27.307 M$); total_assets FY2023=135241 M$ coincide exactamente con el ancla (~135.241 M$). Sin desviaciones.",
+  "short_term_investments: el tag ShortTermInvestments da 404 (IBM no lo usa). Cascada aplicada ano a ano (no solo al primer tag que exista globalmente, sino el primero que exista para cada fecha): 2016 y 2017 desde MarketableSecuritiesCurrent (701 y 608 M$); 2018, 2019 y 2020 desde AvailableForSaleSecuritiesDebtSecuritiesCurrent (618, 696 y 600 M$). Ambos tags dan null para 2021-2025: IBM parece haber dejado de reportar inversiones a corto plazo como partida separada desde el ejercicio 2021; esos 5 anos quedan null (real, no estimado).",
+  "short_term_borrowings: el tag ShortTermBorrowings existe pero no tiene hechos para 2016 ni 2017. Fallback CommercialPaper tampoco tiene datos esos dos anos (si tiene para 2018 y 2019, pero esos anos ya estaban cubiertos por ShortTermBorrowings, asi que no se usaron). Fallback final OtherShortTermBorrowings da 404. Resultado: 2016 y 2017 quedan null (hueco real de IBM, agotada toda la cascada, no es un fallo de la extraccion).",
+  "current_portion_ltd (LongTermDebtCurrent): hay datos completos 2016-2018 (6239, 5214, 7051 M$), pero NO existe ningun hecho con end exacto 2019-12-31 ni en anos posteriores (verificado explicitamente dos veces, incluyendo revision del listado crudo de hechos). Se reporta null desde 2019 en adelante tal cual, sin derivarlo ni sumarlo a short_term_borrowings.",
+  "Arrendamientos operativos (OperatingLeaseLiability current/noncurrent): null en 2016-2018 es un dato real, no un hueco - IBM adopta ASC 842 en el ejercicio cerrado 2019-12-31 y a partir de esa fecha aparecen los hechos.",
+  "Arrendamientos financieros (FinanceLeaseLiability current/noncurrent): a diferencia del operativo, estos tags NO aparecen hasta el cierre 2020-12-31 (2019-12-31 tambien da null, verificado). Es decir, IBM no separo el pasivo por leasing financiero en un tag XBRL propio hasta el 10-K de FY2020, aunque ASC 842 ya se adopto en FY2019. Tratarlo como dato real, no como fallo de extraccion.",
+  "Control de coherencia (Activo = Pasivo + Patrimonio incluyendo minoritarios): como el tag Liabilities SI existe (no dio 404), no se solicito StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest segun la regla del prompt. Usando el patrimonio atribuible (StockholdersEquity) la diferencia Activo-Pasivo-Patrimonio_atribuible por ano es: 2016:146, 2017:131, 2018:134, 2019:143, 2020:130, 2021:95, 2022:77, 2023:80, 2024:85, 2025:93 (millones $). Son diferencias pequenas y siempre positivas, compatibles con las participaciones no controladoras (NCI) habituales de IBM; no se detecta ningun descuadre material en los 10 ejercicios.",
+  "2025-12-31: los valores de Assets, AssetsCurrent, Liabilities y LiabilitiesCurrent se verificaron de forma cruzada consultando todos los hechos crudos con end=2025-12-31: el 10-K original (filed 2026-02-24, accn 0000051143-26-000010) y los 10-Q posteriores (filed 2026-04-23 y 2026-07-23, que lo muestran como periodo comparativo) reportan exactamente el mismo valor en los cuatro conceptos. No hay reexpresion; se uso el valor del 10-K original.",
+  "Todos los formularios usados fueron 10-K salvo cuando se indica 10-Q explicitamente arriba (ninguna partida final del fichero depende de un 10-Q, todos los valores finales provienen de 10-K).",
+  "RESOLUCION DEUDA CORRIENTE (ShortTermBorrowings vs LongTermDebtCurrent): se consulto el tag agregado DebtCurrent, que representa la deuda corriente TOTAL de balance. Para 2018-12-31 DebtCurrent = 10.207 M$ (accn 0001047469-19-000712), EXACTAMENTE IGUAL a ShortTermBorrowings 2018 (10.207 M$, mismo accn) y NO a la suma ShortTermBorrowings+LongTermDebtCurrent (10.207+7.051=17.258 M$). Esto confirma la lectura (b) del enunciado: IBM presenta una unica linea de balance 'Short-term debt' que YA INCLUYE la porcion corriente de la deuda a largo plazo; LongTermDebtCurrent (7.051 M$ en 2018) es un COMPONENTE/desglose de esa misma cifra total (parte de la nota de deuda), no una partida adicional. Sumar ambas habria producido doble conteo. Ademas, para 2016 y 2017 (donde ShortTermBorrowings aun no existia como tag) DebtCurrent aporta la cifra correcta de deuda corriente total: 7.513 M$ (2016) y 6.987 M$ (2017), superiores a LongTermDebtCurrent solo (6.239 y 5.214), lo que es coherente con que este ultimo es solo un componente. El tag DebtCurrent deja de reportarse por IBM a partir de 2019 (ultimo hecho end=2019-03-31, 10-Q); desde el 10-K FY2019 en adelante ShortTermBorrowings es la unica fuente de esta linea, y la serie ya estaba completa 2019-2025 sin necesidad de ajuste. CONCLUSION: short_term_borrowings queda como serie UNICA y completa de deuda corriente total (DebtCurrent 2016-2017 + ShortTermBorrowings 2018-2025); current_portion_ltd se pone a null en los 10 años porque su valor ya esta contenido dentro de short_term_borrowings y sumarlo aparte duplicaria deuda. Se probaron tambien LongTermDebt (deuda total, tag descontinuado por IBM tras 2019-09-30, ultimo hecho esa fecha, 72 hechos totales) y DebtLongtermAndShorttermCombinedAmount (404, IBM no usa este tag): ninguno aporta datos utiles para 2019-2025, pero no hacia falta porque DebtCurrent+ShortTermBorrowings ya resuelven la serie completa.",
+  "short_term_investments fijado a 0 desde 2021 el 2026-09-06, NO por defecto: los cinco tags candidatos no tienen ningun hecho desde 2021, coherente con la simplificacion de tesoreria tras el spin-off de Kyndryl. NO se pudo confirmar por el metodo de la suma (la financiacion a clientes usa un tag propio de IBM y tapa el residuo), asi que se aplica por materialidad: 600-700 M$ frente a un capital invertido de 67.000-85.000 M$ mueven el ROIC un 1% como mucho."
+ ],
+ "homogeneizado": {
+  "ceros": [
+   "short_term_investments"
+  ]
+ }
+}

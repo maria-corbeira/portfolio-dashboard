@@ -1,0 +1,362 @@
+{
+ "ticker": "IBM",
+ "fiscal_dates": [
+  "2016-12-31",
+  "2017-12-31",
+  "2018-12-31",
+  "2019-12-31",
+  "2020-12-31",
+  "2021-12-31",
+  "2022-12-31",
+  "2023-12-31",
+  "2024-12-31",
+  "2025-12-31"
+ ],
+ "rows": {
+  "revenue": [
+   79919,
+   79139,
+   79591,
+   57714,
+   55179,
+   57350,
+   60530,
+   61860,
+   62753,
+   67535
+  ],
+  "cogs": [
+   41403,
+   42196,
+   42655,
+   26181,
+   24314,
+   25865,
+   27842,
+   27560,
+   27201,
+   28239
+  ],
+  "gross_profit": [
+   38516,
+   36943,
+   36936,
+   31533,
+   30865,
+   31486,
+   32687,
+   34300,
+   35551,
+   39297
+  ],
+  "operating_income": [
+   11921,
+   11673,
+   12191,
+   6899,
+   4042,
+   6253,
+   7511,
+   8522,
+   8384,
+   10858
+  ],
+  "interest_expense": [
+   630,
+   615,
+   723,
+   1344,
+   1288,
+   1155,
+   1216,
+   1607,
+   1712,
+   1935
+  ],
+  "income_tax": [
+   -449,
+   -5642,
+   -2619,
+   -60,
+   1360,
+   -124,
+   626,
+   -1176,
+   218,
+   242
+  ],
+  "net_income": [
+   11872,
+   5753,
+   8728,
+   9431,
+   5590,
+   5743,
+   1639,
+   7502,
+   6023,
+   10593
+  ],
+  "eps_diluted": [
+   12.38,
+   6.14,
+   9.52,
+   10.56,
+   6.23,
+   6.35,
+   1.8,
+   8.14,
+   6.43,
+   11.17
+  ],
+  "diluted_shares": [
+   959,
+   937,
+   916,
+   893,
+   897,
+   905,
+   912,
+   922,
+   937,
+   949
+  ],
+  "rd_expense": [
+   5726,
+   5590,
+   5379,
+   5910,
+   6262,
+   6488,
+   6567,
+   6775,
+   7479,
+   8316
+  ],
+  "sga_expense": [
+   20869,
+   19680,
+   19366,
+   18724,
+   20561,
+   18745,
+   18609,
+   19003,
+   19688,
+   20123
+  ],
+  "other_nonoperating": [
+   null,
+   null,
+   null,
+   null,
+   156,
+   225,
+   443,
+   266,
+   877,
+   221
+  ]
+ },
+ "tags_usados": {
+  "revenue": {
+   "tag": "Revenues",
+   "note": "RevenueFromContractWithCustomerExcludingAssessedTax devuelve 404 (IBM no lo usa). Cascada cayó a Revenues.",
+   "filed_por_anio": [
+    "2019-02-26",
+    "2020-02-25",
+    "2021-02-23",
+    "2022-02-22",
+    "2023-02-28",
+    "2024-02-26",
+    "2025-02-25",
+    "2026-02-24",
+    "2026-02-24",
+    "2026-02-24"
+   ]
+  },
+  "cogs": {
+   "tag": "CostOfRevenue",
+   "note": "CostOfGoodsAndServicesSold devuelve 404 (IBM no lo usa). Cascada cayó a CostOfRevenue.",
+   "filed_por_anio": [
+    "2019-02-26",
+    "2020-02-25",
+    "2021-02-23",
+    "2022-02-22",
+    "2023-02-28",
+    "2024-02-26",
+    "2025-02-25",
+    "2026-02-24",
+    "2026-02-24",
+    "2026-02-24"
+   ]
+  },
+  "gross_profit": {
+   "tag": "GrossProfit",
+   "filed_por_anio": [
+    "2019-02-26",
+    "2020-02-25",
+    "2021-02-23",
+    "2022-02-22",
+    "2023-02-28",
+    "2024-02-26",
+    "2025-02-25",
+    "2026-02-24",
+    "2026-02-24",
+    "2026-02-24"
+   ]
+  },
+  "operating_income": {
+   "tag": null,
+   "note": "DERIVADO, no publicado por IBM. us-gaap:OperatingIncomeLoss devuelve 404 (IBM no presenta linea de resultado de explotacion: pasa de margen bruto a 'Income before income taxes'). Calculado como gross_profit - sga_expense - rd_expense (VIA A, de arriba abajo) usando SG&A derivado de SellingGeneralAndAdministrativeExpense."
+  },
+  "sga_expense": {
+   "tag": "SellingGeneralAndAdministrativeExpense",
+   "note": "Funciona para los 10 ejercicios (2016-2025). GeneralAndAdministrativeExpense y SellingGeneralAndAdministrativeExpenseIncludingProvisionForDoubtfulAccounts devuelven 404 (IBM no los usa). Para 2016 y 2019-2020 se tomo el valor del 'filed' mas reciente, que refleja la reexpresion por el spin-off de Kyndryl (nov-2021) y una reclasificacion menor en 2016.",
+   "filed_por_anio": [
+    "2019-02-26",
+    "2020-02-25",
+    "2021-02-23",
+    "2022-02-22",
+    "2023-02-28",
+    "2024-02-26",
+    "2025-02-25",
+    "2026-02-24",
+    "2026-02-24",
+    "2026-02-24"
+   ]
+  },
+  "other_nonoperating": {
+   "tag": "OtherNonoperatingIncomeExpense",
+   "note": "Solo existe (no 404) para 2020-2025; para 2016-2019 el tag no aparece en absoluto en companyconcept (null, sin estimar). DefinedBenefitPlanNetPeriodicBenefitCostCreditExcludingServiceCost devuelve 404 para los 10 anios: IBM no usa ese tag estandar para el coste de pensiones no operativo, asi que no se pudo aislar esa partida por separado.",
+   "filed_por_anio": [
+    null,
+    null,
+    null,
+    null,
+    "2023-02-28",
+    "2024-02-26",
+    "2025-02-25",
+    "2026-02-24",
+    "2026-02-24",
+    "2026-02-24"
+   ]
+  },
+  "interest_expense": {
+   "tag": "InterestExpense",
+   "filed_por_anio": [
+    "2019-02-26",
+    "2020-02-25",
+    "2021-02-23",
+    "2022-02-22",
+    "2023-02-28",
+    "2024-02-26",
+    "2025-02-25",
+    "2026-02-24",
+    "2026-02-24",
+    "2026-02-24"
+   ]
+  },
+  "income_tax": {
+   "tag": "IncomeTaxExpenseBenefit",
+   "note": "Signo invertido respecto al valor bruto de la SEC (gasto positivo en SEC -> negativo aqui; beneficio fiscal negativo en SEC -> positivo aqui).",
+   "filed_por_anio": [
+    "2019-02-26",
+    "2020-02-25",
+    "2021-02-23",
+    "2022-02-22",
+    "2023-02-28",
+    "2024-02-26",
+    "2025-02-25",
+    "2026-02-24",
+    "2026-02-24",
+    "2026-02-24"
+   ]
+  },
+  "net_income": {
+   "tag": "NetIncomeLoss",
+   "filed_por_anio": [
+    "2019-02-26",
+    "2020-02-25",
+    "2021-02-23",
+    "2022-02-22",
+    "2023-02-28",
+    "2024-02-26",
+    "2025-02-25",
+    "2026-02-24",
+    "2026-02-24",
+    "2026-02-24"
+   ]
+  },
+  "eps_diluted": {
+   "tag": "EarningsPerShareDiluted",
+   "note": "Solo existe un 'filed' por ejercicio (IBM no re-etiqueta el BPA de años comparativos antiguos).",
+   "filed_por_anio": [
+    "2017-02-28",
+    "2018-02-27",
+    "2019-02-26",
+    "2020-02-25",
+    "2021-02-23",
+    "2022-02-22",
+    "2023-02-28",
+    "2024-02-26",
+    "2025-02-25",
+    "2026-02-24"
+   ]
+  },
+  "diluted_shares": {
+   "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+   "filed_por_anio": [
+    "2019-02-26",
+    "2020-02-25",
+    "2021-02-23",
+    "2022-02-22",
+    "2023-02-28",
+    "2024-02-26",
+    "2025-02-25",
+    "2026-02-24",
+    "2026-02-24",
+    "2026-02-24"
+   ]
+  },
+  "rd_expense": {
+   "tag": "ResearchAndDevelopmentExpense",
+   "filed_por_anio": [
+    "2019-02-26",
+    "2020-02-25",
+    "2021-02-23",
+    "2022-02-22",
+    "2023-02-28",
+    "2024-02-26",
+    "2025-02-25",
+    "2026-02-24",
+    "2026-02-24",
+    "2026-02-24"
+   ]
+  }
+ },
+ "avisos": [
+  "operating_income es DERIVADO, no publicado por IBM: us-gaap:OperatingIncomeLoss devuelve 404 porque la cuenta de resultados de IBM pasa directamente del margen bruto a 'Income before income taxes', sin linea de resultado operativo. Formula usada (VIA A, de arriba abajo): operating_income = gross_profit - sga_expense - rd_expense, con sga_expense tomado de us-gaap:SellingGeneralAndAdministrativeExpense (unico tag SG&A que IBM etiqueta; GeneralAndAdministrativeExpense y SellingGeneralAndAdministrativeExpenseIncludingProvisionForDoubtfulAccounts dan 404).",
+  "Se contrasto con una VIA B (de abajo arriba): EBIT = (net_income - income_tax) + interest_expense. La diferencia media VIA A - VIA B en 2016-2025 es de aprox. -447 M$/anio, con mucha dispersion anual (de -3.936 M$ en 2019 a +5.282 M$ en 2022). Se atribuye a partidas 'non-operating' entre el resultado operativo y el impuesto que la VIA B no aisla (quedan enterradas en el neto): sobre todo costes de pensiones no operativos (IBM tiene planes de prestacion definida grandes) y otras partidas financieras/FX. 2019-2020 reflejan ademas la reexpresion por el spin-off de Kyndryl, y 2022 un cargo de pensiones especialmente grande (net_income cayo a 1.639 M$ ese anio pese a un resultado operativo VIA A de 7.511 M$). Por eso se usa la VIA A: mide el negocio sin mezclar financiero/pensiones.",
+  "other_nonoperating (OtherNonoperatingIncomeExpense) solo se pudo obtener para 2020-2025 (156, 225, 443, 266, 877, 221 M$); para 2016-2019 el tag no existe en el companyconcept de IBM, se deja en null. No se pudo aislar el componente de pensiones por separado: DefinedBenefitPlanNetPeriodicBenefitCostCreditExcludingServiceCost devuelve 404 para los 10 ejercicios (IBM no usa ese tag estandar), por lo que no se anadio una fila pension_nonoperating.",
+  "revenue: cascada RevenueFromContractWithCustomerExcludingAssessedTax -> Revenues -> SalesRevenueNet. El primer tag da 404 (IBM no lo usa); se uso 'Revenues'.",
+  "cogs: cascada CostOfGoodsAndServicesSold -> CostOfRevenue -> CostOfGoodsSold. El primer tag da 404; se uso 'CostOfRevenue'.",
+  "SPIN-OFF DE KYNDRYL (nov-2021): la regla del 'filed' mas reciente trae cifras REEXPRESADAS (Kyndryl como discontinuada) para 2019, 2020 y 2021, pero NO para 2016-2018 (demasiado antiguos para aparecer como comparativos tras el spin-off). Esto genera una discontinuidad de perimetro, no organica, entre 2018 y 2019:",
+  "  - revenue 2019: 77.147 M$ (10-K original, filed 2020-02-25) -> 57.714 M$ (reexpresado, filed 2022-02-22, usado aqui).",
+  "  - revenue 2020: 73.620 M$ (10-K original, filed 2021-02-23) -> 55.179 M$ (reexpresado, filed 2023-02-28, usado aqui).",
+  "  - cogs y gross_profit sufren el mismo efecto de perimetro en 2019 y 2020 (caidas de magnitud similar).",
+  "  - revenue 2016 (79.919 M$), 2017 (79.139 M$) y 2018 (79.591 M$) SIGUEN INCLUYENDO Kyndryl porque nunca se reexpresaron; comparar 2018 vs 2019 en bruto sobreestima la caida real de negocio continuado.",
+  "net_income (NetIncomeLoss) es el resultado TOTAL (continuadas + discontinuadas): se confirma porque su valor NO varia entre las versiones pre- y post-reexpresion Kyndryl para 2019 (9.431 M$ en todas las versiones) y 2020 (5.590 M$ en todas las versiones), a diferencia de revenue/cogs que si cambian. Para 2021 (ano del spin-off), net_income=5.743 M$ incluye el resultado de Kyndryl hasta la separacion en noviembre y cualquier efecto de la transaccion; la cifra de continuadas habria sido distinta.",
+  "income_tax: se invirtio el signo respecto al dato bruto de la SEC segun lo pedido. Queda POSITIVO (beneficio/ingreso fiscal) en 2020 (+1.360), 2022 (+626), 2024 (+218) y 2025 (+242); NEGATIVO (gasto) en 2016, 2017, 2018, 2019, 2021 y 2023. 2017 recoge el cargo extraordinario por la reforma fiscal de EEUU (Tax Cuts and Jobs Act): IncomeTaxExpenseBenefit bruto = 5.642 M$ (gasto) -> aqui -5.642, coherente con el beneficio neto reducido a 5.753 M$ ese ano.",
+  "income_tax 2019: el valor reexpresado tras el spin-off (filed 2022-02-22) es 60 M$ de gasto, frente a 731 M$ en el 10-K original. Es probable que parte del impuesto se reclasificara a discontinued operations, mientras que net_income (total) no se movio; por eso el 'EBT' implicito de 2019 puede parecer bajo en relacion al NI si se compara con anos no afectados por la reexpresion.",
+  "Comprobacion bruto = ventas - coste: cuadra EXACTO en 2016, 2017, 2018, 2019, 2020 y 2023. En 2021, 2022, 2024 y 2025 hay una diferencia de 1 M$ (redondeo) entre el GrossProfit etiquetado por IBM y el calculo revenue-cogs (variacion <0.01%, irrelevante).",
+  "Comprobacion BPA diluido x acciones diluidas ~= beneficio neto: cuadra en los 10 ejercicios, desviacion maxima ~0.16% en FY2022 (1,80 x 912 = 1.641,6 M$ vs NI 1.639 M$ reportado), muy por debajo del umbral del 5%. IBM no ha hecho splits en esta ventana, consistente con el enunciado.",
+  "Anclas de validacion: FY2024 revenue=62.753 M$ y net_income=6.023 M$ cuadran EXACTOS con el ancla. FY2023 revenue=61.860 M$ y net_income=7.502 M$ cuadran EXACTOS con el ancla.",
+  "Todos los datos son consolidados sin dimensiones/segmentos: el endpoint companyconcept de la SEC solo devuelve hechos sin eje de dimension, asi que no hizo falta filtrar segmentos manualmente.",
+  "DISCONTINUIDAD DE PERIMETRO desde 2019: spin-off de Kyndryl (noviembre de 2021). IBM reexpreso 2019 y 2020 para presentar Kyndryl como actividad discontinuada, pero nunca reexpreso 2016-2018, que siguen incluyendola. Por eso las ventas caen de 79.591 M$ en 2018 a 57.714 M$ en 2019: no es un desplome, son dos perimetros distintos. El CAGR de ventas a 10 anios daba -1,9% anual por esto; el de 5 anios (2020-2025) si es homogeneo."
+ ],
+ "discontinuidad": {
+  "desde": "2019",
+  "motivo": "spin-off de Kyndryl (noviembre de 2021). IBM reexpreso 2019 y 2020 para presentar Kyndryl como actividad discontinuada, pero nunca reexpreso 2016-2018, que siguen incluyendola. Por eso las ventas caen de 79.591 M$ en 2018 a 57.714 M$ en 2019: no es un desplome, son dos perimetros distintos. El CAGR de ventas a 10 anios daba -1,9% anual por esto; el de 5 anios (2020-2025) si es homogeneo."
+ }
+}

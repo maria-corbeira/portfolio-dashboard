@@ -403,6 +403,7 @@
       "desviaciones": []
     },
     "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "discontinuidad": null,
     "tags_is": {
       "revenue": {
         "tag": "Revenues",
