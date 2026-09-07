@@ -1,0 +1,80 @@
+{
+  "yahoo_ticker": {
+    "status": 429,
+    "bytes": 0,
+    "items": 0,
+    "muestra": "HTTP Error 429: Too Many Requests"
+  },
+  "google_ticker": {
+    "status": 200,
+    "bytes": 125722,
+    "items": 100,
+    "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"NVDA stock when:30d\" - Google News</title><link>https://news.google.com/search?q=NVDA+stock+when:30d&amp;hl=en-US&amp;gl=US&amp;ceid=US"
+  },
+  "google_mercado": {
+    "status": 200,
+    "bytes": 129274,
+    "items": 100,
+    "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"stock market when:3d\" - Google News</title><link>https://news.google.com/search?q=stock+market+when:3d&amp;hl=en-US&amp;gl=US&amp;ceid="
+  },
+  "marketwatch": {
+    "status": 200,
+    "bytes": 8294,
+    "items": 10,
+    "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:media=\"http://search.yahoo.com/mrss/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" version=\"2.0\"\n>\n<channel>\n<title>MarketWatch.com - Top Stories</title>\n<description>MarketWatch, a leading publ"
+  },
+  "cnbc_mercados": {
+    "status": 200,
+    "bytes": 0,
+    "items": 0,
+    "muestra": ""
+  },
+  "fed_prensa": {
+    "status": 200,
+    "bytes": 14479,
+    "items": 20,
+    "muestra": "﻿<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<rss version=\"2.0\">\r\n    <channel>\r\n        <title>FRB: Press Release - All Releases</title>\r\n        <link><![CDATA[https://www.federalreserve.gov/feeds/feeds.htm]]></link>\r\n        <description><![CDATA[All recent press releases from the Federal Reserve "
+  },
+  "nasdaq_earndate": {
+    "status": 404,
+    "bytes": 0,
+    "items": 0,
+    "muestra": "HTTP Error 404: Not Found"
+  },
+  "nasdaq_eps": {
+    "status": 200,
+    "bytes": 761,
+    "items": 0,
+    "muestra": "{\"data\":{\"symbol\":\"nvda\",\"earningsPerShare\":[{\"type\":\"PreviousQuarter\",\"period\":\"Oct 2025\",\"consensus\":1.18,\"earnings\":1.24},{\"type\":\"PreviousQuarter\",\"period\":\"Jan 2026\",\"consensus\":1.45,\"earnings\":1.57},{\"type\":\"PreviousQuarter\",\"period\":\"Apr 2026\",\"consensus\":1.7,\"earnings\":1.87},{\"type\":\"Previou"
+  },
+  "nasdaq_calend": {
+    "status": 200,
+    "bytes": 6523,
+    "items": 0,
+    "muestra": "{\"data\":{\"asOf\":\"Tue, Sep 8, 2026\",\"headers\":{\"time\":\"Time\",\"symbol\":\"Symbol\",\"name\":\"Company Name\",\"marketCap\":\"Market Cap\",\"fiscalQuarterEnding\":\"Fiscal Quarter Ending\",\"epsForecast\":\"Consensus EPS* Forecast\",\"noOfEsts\":\"# of Ests\",\"lastYearRptDt\":\"Last Year's Report Date\",\"lastYearEPS\":\"Last year"
+  },
+  "nasdaq_movers": {
+    "status": 200,
+    "bytes": 18056,
+    "items": 0,
+    "muestra": "{\"data\":{\"STOCKS\":{\"MostActiveByShareVolume\":{\"dataAsOf\":\"Data as of Sep 7, 2026 1:28 PM ET\",\"lastTradeTimestamp\":\"Sep 7, 2026 1:28 PM ET\",\"table\":{\"asOf\":null,\"headers\":{\"symbol\":\"Symbol\",\"name\":\"Name\",\"lastSalePrice\":\"Last\",\"lastSaleChange\":\"Change\",\"change\":\"Share Volume\"},\"rows\":[{\"symbol\":\"GPRO"
+  },
+  "yahoo_gainers": {
+    "status": 429,
+    "bytes": 0,
+    "items": 0,
+    "muestra": "HTTP Error 429: Too Many Requests"
+  },
+  "yahoo_losers": {
+    "status": 429,
+    "bytes": 0,
+    "items": 0,
+    "muestra": "HTTP Error 429: Too Many Requests"
+  },
+  "sec_8k": {
+    "status": 403,
+    "bytes": 0,
+    "items": 0,
+    "muestra": "HTTP Error 403: Forbidden"
+  }
+}
