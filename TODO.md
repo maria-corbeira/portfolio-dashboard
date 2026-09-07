@@ -1,12 +1,19 @@
 # Pendientes del dashboard
 
-- [ ] **El calendario de resultados sale vacío.** De los dos endpoints de Nasdaq, el
-  de `earnings-date` daba 404 en los 15 tickers y se ha retirado. El que queda
-  (`quote/{t}/eps`) responde 200, pero su JSON no trae ninguna de las tres claves que
-  busca la regex (`reportDate`, `date`, `announcementDate`), así que no sale ninguna
-  fecha. Vacío es lo correcto frente a inventado, pero hoy no hay ninguna fuente de
-  fechas de resultados que funcione: hay que encontrar otra o leer la estructura real
-  de ese JSON.
+- [x] ~~**El calendario de resultados sale vacío**~~ — arreglado el 7-sep-2026, **pendiente de
+  verificar en producción**. El probe de noticias que corrió Maria destapó la fuente buena:
+  `api.nasdaq.com/api/calendar/earnings?date=YYYY-MM-DD` responde **200 con 6.523 bytes** y trae
+  `data.rows` con `symbol`, `time`, `epsForecast` y `fiscalQuarterEnding`. Es un calendario
+  **por día**, no por ticker, que es justo por lo que no se había encontrado antes: los dos
+  endpoints que se probaban eran por ticker (`company/{t}/earnings-date`, retirado con 404, y
+  `quote/{t}/eps`, que responde 200 pero no trae ninguna fecha). `calendario_resultados()` ahora
+  recorre los 45 días siguientes saltando fines de semana y parando en cuanto todos los tickers
+  tienen fecha: unas 33 peticiones en el peor caso. **No se ha podido probar contra Nasdaq desde
+  la sesión** (el proxy de egress da 403 a ese dominio); sí se probó la lógica de parseo contra
+  una respuesta sintética con la forma observada, incluidos los casos de JSON corrupto y de
+  respuesta vacía, que salen vacíos sin romper. Falta que corra `news.yml` una vez y comprobar
+  que `news.json` trae `calendario` con fechas. Ojo: el `items: 0` del probe no significa nada,
+  cuenta elementos `<item` de RSS y esto es JSON.
 - [ ] **Toggle inglés / español en las noticias.** Ahora los titulares salen en el
   idioma de origen porque el Action los copia tal cual. La idea es un botón que
   cambie el idioma de toda la vista. Implica guardar una traducción por titular:
@@ -36,15 +43,19 @@
 - [ ] **Precios objetivo de la watchlist.** Los sembré con el extremo bajo del rango
   de valor intrínseco de cada una (PGR 180, V 290, PLTR 28, LULU 190, UNP 159,
   SHEL 69). Son propuestas mías, no tuyas: revísalos.
-- [ ] **Fuente de top movers sin verificar.** Se prueban tres en cascada
-  (Nasdaq marketmovers y los dos screeners de Yahoo). Sigue sin comprobarse, pero
-  ahora se sabe más: en la pasada del 6-sep-2026 Nasdaq **sí respondió** (aparece en
-  `top_movers_fuente`) y devolvió la tabla vacía porque era **domingo, con el mercado
-  cerrado**. No es que la fuente esté rota. Los errores de las otras dos se perdían
-  porque `data.json` solo los volcaba `if failed:`, y `failed` cuenta únicamente
-  precios: ya está arreglado, se vuelcan siempre. **Para decidir hace falta una pasada
-  en día hábil**, y luego leer `errors` de `data.json`. Ejecutar `probe.yml` sirve para
-  saber si responden, pero en fin de semana no distingue "rota" de "sin datos hoy".
+- [ ] **Fuente de top movers: sigue sin poder decidirse, y ya van dos intentos.** El 7-sep-2026
+  hubo pasada con el mercado **cerrado otra vez**: es el primer lunes de septiembre, o sea el
+  Labor Day estadounidense. Se confirma mirando `data.json`, donde los 22 precios traen
+  `market_time: null` y coinciden al céntimo con el cierre del viernes 4 (MSFT 499,70 y −2,04%,
+  idénticos a los del probe del día 5). Lo que sí se aprendió: **Nasdaq no está rota**, respondió
+  y aparece en `top_movers_fuente`, y devolvió tabla vacía porque no había sesión; los dos
+  screeners de Yahoo, en cambio, dieron **429**, no un fallo de formato, así que ahí el problema
+  es límite de peticiones y no que el endpoint haya desaparecido. El mismo 429 salió en
+  `yahoo_spark` para NVDA y SHEL, aunque el respaldo de CNBC cubrió los 22 tickers y `failed`
+  quedó vacío. **Hace falta una pasada en día de mercado abierto de verdad** — martes 8 en
+  adelante — y volver a leer `errors` y `top_movers` de `data.json`. Aviso para la próxima: correr
+  el workflow en festivo no distingue "rota" de "sin datos hoy", que es exactamente lo que ha
+  pasado las dos veces.
 - [x] **Las doce posiciones analizables ya tienen 10 años de datos de la SEC.** Se cerró el
   7-sep-2026 con COP (61/100, Observar). Las doce salen **Observar**: ninguna Comprar y ninguna
   Evitar. Eso no es un empate, es un resultado: en las de calidad alta el freno es siempre el

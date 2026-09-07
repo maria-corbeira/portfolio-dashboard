@@ -25,6 +25,7 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 POR_TICKER = 5          # cuantas novedades guardar por accion
 MAX_MERCADO = 12
 DIAS_MAX = 45           # descarta lo mas viejo que esto
+DIAS_CALENDARIO = 45    # cuantos dias hacia delante se busca fecha de resultados
 
 ESTADO, ERRORES = {}, []
 
@@ -190,32 +191,55 @@ def noticias_mercado() -> list:
 
 
 def calendario_resultados(tickers: list) -> list:
-    """Proxima fecha de resultados. Se prueban dos endpoints publicos de Nasdaq;
-    si ninguno responde, el calendario sale vacio y se dice, no se inventa."""
+    """Fechas de resultados, desde el calendario DIARIO de Nasdaq.
+
+    Se consulta dia a dia `api.nasdaq.com/api/calendar/earnings?date=YYYY-MM-DD` y se
+    guardan las filas cuyo simbolo este en la cartera. Es el unico endpoint de fechas que
+    respondio en el probe del 7-sep-2026: `company/{t}/earnings-date` se retiro (404 en los
+    15 tickers) y `quote/{t}/eps` responde 200 pero su JSON no trae ninguna fecha, que es
+    por lo que el calendario llevaba semanas saliendo vacio.
+
+    Se recorren solo dias habiles y se para en cuanto todos los tickers tienen fecha, asi
+    que en temporada de resultados son pocas peticiones y fuera de ella son unas 30.
+
+    Si nada responde, el calendario sale VACIO. Nunca se estima ni se interpola una fecha:
+    una fecha de resultados inventada es peor que ninguna.
+    """
+    pendientes = {t.strip().upper() for t in tickers}
     out = []
-    for t in tickers:
-        # api.nasdaq.com/api/company/{t}/earnings-date se retiro el 6-sep-2026: dio
-        # HTTP 404 en los 15 tickers, 15 de 15. El endpoint ya no existe.
-        # AVISO: el que queda responde 200 pero su JSON no trae ninguna de las tres
-        # claves que busca la regex de abajo, asi que hoy el calendario sale VACIO.
-        # Eso es correcto segun la regla del proyecto (vacio antes que inventado), pero
-        # significa que no hay ninguna fuente de fechas de resultados que funcione.
-        for plantilla, etiqueta in (
-            ("https://api.nasdaq.com/api/quote/{t}/eps", "nasdaq-eps"),
-        ):
-            raw = get(plantilla.format(t=t), f"cal:{t}:{etiqueta}")
-            if not raw:
+    hoy = datetime.now(timezone.utc).date()
+    for delta in range(DIAS_CALENDARIO):
+        if not pendientes:
+            break
+        dia = hoy + timedelta(days=delta)
+        if dia.weekday() >= 5:          # el calendario no publica sabados ni domingos
+            continue
+        raw = get(f"https://api.nasdaq.com/api/calendar/earnings?date={dia:%Y-%m-%d}",
+                  f"cal:{dia:%Y-%m-%d}")
+        if not raw:
+            continue
+        try:
+            filas = (json.loads(raw).get("data") or {}).get("rows") or []
+        except Exception as e:
+            ERRORES.append(f"cal:{dia:%Y-%m-%d}: {type(e).__name__}")
+            continue
+        for f in filas:
+            if not isinstance(f, dict):
                 continue
-            try:
-                d = json.loads(raw)
-            except Exception:
+            sim = str(f.get("symbol") or "").strip().upper()
+            if sim not in pendientes:
                 continue
-            txt = json.dumps(d)
-            m = re.search(r'"(?:reportDate|date|announcementDate)"\s*:\s*"([^"]{6,30})"', txt)
-            if m:
-                out.append({"ticker": t, "fecha_texto": m.group(1), "fuente": etiqueta})
-                break
-        time.sleep(0.3)
+            pendientes.discard(sim)
+            limpia = lambda k: (str(f.get(k) or "").strip() or None)
+            out.append({"ticker": sim,
+                        # el frontend hace fecha_texto.slice(0,10) y exige ISO
+                        "fecha_texto": dia.isoformat(),
+                        "hora": limpia("time"),
+                        "eps_estimado": limpia("epsForecast"),
+                        "trimestre": limpia("fiscalQuarterEnding"),
+                        "fuente": "nasdaq-calendar"})
+        time.sleep(0.4)
+    out.sort(key=lambda x: x["fecha_texto"])
     return out
 
 
