@@ -101,14 +101,20 @@
   intereses del último ejercicio sale n.d. y el bloque de Salud se pondera sobre los otros
   tres umbrales. En 2024 era de 28,5 veces, así que no hay motivo para pensar que el dato
   sea malo: simplemente no está etiquetado todavía. Revisar cuando la SEC actualice.
-- [ ] **Capitalización por ejercicio, sin calcular en NINGUNA empresa.** `build_src.py`
-  escribe `"Market Cap (MM)": [None] * n`, así que `metrics.py` deja `market_cap` y
-  `fcf_yield` vacíos en los diez ejercicios de las nueve compañías. El P/E histórico sí
-  sale, porque se calcula como precio / BPA. Ya hay precios de cierre por ejercicio en
-  `fundamentals/raw/_precios.json` y acciones diluidas por año, así que es una
-  multiplicación: `market_cap = precio_cierre x acciones_diluidas`. Desbloquearía la serie
-  histórica de FCF yield, que hoy solo existe para el ejercicio en curso y recalculada con
-  el precio en vivo.
+- [x] ~~Capitalización por ejercicio, sin calcular en NINGUNA empresa~~ — hecho el
+  7-sep-2026. `build_src.py` ahora calcula `market_cap = precio_cierre x acciones_diluidas`
+  para las 11 empresas que pasan por él (GOOGL ya la traía de su plantilla IDC original).
+  Verificado contra capitalización real conocida en AAPL y NVDA antes de activarlo. Esto
+  desbloqueó la serie histórica de FCF yield (antes solo existía para el ejercicio en curso)
+  y permitió añadir EV/EBITDA (`metrics.py`, con recálculo en vivo igual que P/E) — sale
+  `n.d.` donde falta deuda neta, p. ej. NVDA FY2026 por el mismo hueco de siempre.
+  También de la misma sesión: variación Y/Y en $ además de en % (ventas y, en las tarjetas
+  de comprobación, FCF y beneficio neto), y una etiqueta `politica` en `fetch_news.py` para
+  aranceles/antitrust/sanciones — antes solo existía a nivel de mercado, ahora también por
+  ticker. Y un panel nuevo en Home, "Necesita revisión hoy", que junta en un sitio lo que
+  antes había que mirar en cuatro (precio fuera de banda, objetivo de watchlist alcanzado,
+  resultados en 3 días, rumor/política nuevos desde la última visita) — usa `localStorage`
+  para saber qué es "nuevo desde la última vez", así que es por navegador, no por usuario.
 - [ ] **ROIC de IBM incompleto.** Solo se calcula en 6 de los 10 ejercicios: en 2020, 2022,
   2024 y 2025 IBM tuvo ingreso fiscal neto, el tipo efectivo sale negativo y `metrics.py` lo
   invalida a propósito (solo acepta el rango 0-60%). No es un fallo de extracción, es que la

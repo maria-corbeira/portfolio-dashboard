@@ -358,16 +358,16 @@
     },
     "10.TIKR_Val": {
       "Market Cap (MM)": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        220452.1,
+        237610.62,
+        208224.06,
+        228366.45,
+        157921.5,
+        225312.0,
+        348210.6,
+        280420.8,
+        263174.28,
+        282872.96
       ],
       "Price": [
         117.7,
@@ -393,7 +393,8 @@
       "EBITDA = Operating Income + Depreciation & Amortization",
       "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
       "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
-      "Free Cash Flow = Cash from Operations + Capital Expenditure"
+      "Free Cash Flow = Cash from Operations + Capital Expenditure",
+      "Market Cap (MM) = Price x Weighted Average Diluted Shares Outstanding del mismo ejercicio"
     ],
     "deuda_incompleta": [
       "2016: suma sin arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
@@ -404,7 +405,7 @@
       "cuadra": true,
       "desviaciones": []
     },
-    "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "market_cap_historico": "Market Cap (MM) = Price x acciones diluidas del mismo ejercicio, calculado el 7-sep-2026. Si falta el precio o las acciones de un ejercicio, ese Market Cap sale vacio.",
     "discontinuidad": null,
     "tags_is": {
       "revenue": {

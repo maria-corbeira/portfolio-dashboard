@@ -7,10 +7,10 @@ Fuentes: RSS publico, sin clave ni cuenta. Cada fuente se intenta por separado y
 su resultado queda registrado en `fuentes_estado`: si una se cae, las demas siguen.
 
 AVISO SOBRE LA CLASIFICACION. La etiqueta de cada noticia (hecho, rumor, analista,
-resultados) se decide con reglas sobre el titular, no leyendo la noticia. Es una
-ayuda para ordenar la vista, NO una verificacion. Un titular marcado como "hecho"
-puede seguir siendo un rumor mal titulado. La unica etiqueta con garantia es
-"filing", que viene de la SEC.
+resultados, politica, producto) se decide con reglas sobre el titular, no leyendo la
+noticia. Es una ayuda para ordenar la vista, NO una verificacion. Un titular marcado
+como "hecho" puede seguir siendo un rumor mal titulado. La unica etiqueta con
+garantia es "filing", que viene de la SEC.
 """
 import json, re, sys, time, html, urllib.request, urllib.error
 import xml.etree.ElementTree as ET
@@ -35,6 +35,14 @@ REGLAS = [
     ("resultados", r"\b(earnings|q[1-4]\s|quarterly result|reports? (q[1-4]|fourth|third|second|first)|"
                    r"beats?|misses?|guidance|outlook|revenue (rose|fell|jumps?|climbs?)|"
                    r"resultados|beneficio|ingresos)\b"),
+    # Politica y regulacion: gobiernos, bancos centrales, organismos reguladores.
+    # Va antes que "rumor" y "analista" porque un titular como "White House considers
+    # new chip export ban" casaria con "considers" y se etiquetaria mal.
+    ("politica", r"\b(tariffs?|export (ban|control|restriction)s?|import ban|antitrust|"
+                 r"sanctions?|embargo|subsid(y|ies)|regulat\w+|(doj|ftc|sec) (probe|investigat\w+|"
+                 r"lawsuit|sues?)|executive order|white house|congress|senate|eu (fine|antitrust)|"
+                 r"chips? act|aranceles|sanciones|antimonopolio|multa (de|antitrust)|"
+                 r"casa blanca|gobierno (de eeuu|estadounidense))\b"),
     ("analista", r"\b(price target|upgrade[sd]?|downgrade[sd]?|initiat\w+ coverage|"
                  r"raises? (its )?target|cuts? (its )?target|overweight|underweight|"
                  r"buy rating|sell rating|neutral rating|analyst)\b"),
@@ -285,9 +293,9 @@ def main() -> int:
         "mercado": mercado,
         "calendario": calendario,
         "fuentes_estado": ESTADO,
-        "aviso": ("Las etiquetas (hecho, rumor, analista, resultados, producto) se asignan "
-                  "con reglas sobre el titular, no leyendo la noticia. Son una ayuda para "
-                  "ordenar, no una verificacion."),
+        "aviso": ("Las etiquetas (hecho, rumor, analista, resultados, politica, producto) se "
+                  "asignan con reglas sobre el titular, no leyendo la noticia. Son una ayuda "
+                  "para ordenar, no una verificacion."),
         "errores": ERRORES[:25],
     }
 

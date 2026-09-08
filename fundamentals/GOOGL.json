@@ -30,6 +30,7 @@
     "pe_latest": 29.0,
     "peg_5y": 0.97,
     "fcf_yield_latest": 1.94,
+    "ev_ebitda_latest": 24.8,
     "pe_median_10y": 26.5,
     "pe_years_available": 10,
     "latest_fiscal_year": "2025",
@@ -37,7 +38,9 @@
     "net_income_latest": 132170,
     "fcf_latest": 73266,
     "revenue_latest": 402836,
-    "equity_latest": 415265
+    "equity_latest": 415265,
+    "net_debt_latest": -59847,
+    "ebitda_latest": 150175
   },
   "by_year": [
     {
@@ -67,10 +70,16 @@
       "price_close": 39.623,
       "pe": 28.5,
       "fcf_yield": 4.79,
+      "enterprise_value": 456577.67,
+      "ev_ebitda": 15.75,
       "revenue_growth": null,
       "eps_growth": null,
       "fcf_growth": null,
-      "net_income_growth": null
+      "net_income_growth": null,
+      "revenue_growth_abs": null,
+      "eps_growth_abs": null,
+      "fcf_growth_abs": null,
+      "net_income_growth_abs": null
     },
     {
       "year": "2017",
@@ -99,10 +108,16 @@
       "price_close": 52.67,
       "pe": 58.5,
       "fcf_yield": 3.28,
+      "enterprise_value": 631542.67,
+      "ev_ebitda": 19.56,
       "revenue_growth": 22.8,
       "eps_growth": -35.4,
       "fcf_growth": -7.4,
-      "net_income_growth": -35.0
+      "net_income_growth": -35.0,
+      "revenue_growth_abs": 20583,
+      "eps_growth_abs": -0.49,
+      "fcf_growth_abs": -1917,
+      "net_income_growth_abs": -6816
     },
     {
       "year": "2018",
@@ -131,10 +146,16 @@
       "price_close": 52.248,
       "pe": 23.9,
       "fcf_yield": 3.15,
+      "enterprise_value": 618853.23,
+      "ev_ebitda": 17.34,
       "revenue_growth": 23.4,
       "eps_growth": 142.8,
       "fcf_growth": -4.5,
-      "net_income_growth": 142.7
+      "net_income_growth": 142.7,
+      "revenue_growth_abs": 25964,
+      "eps_growth_abs": 1.29,
+      "fcf_growth_abs": -1075,
+      "net_income_growth_abs": 18074
     },
     {
       "year": "2019",
@@ -163,10 +184,16 @@
       "price_close": 66.97,
       "pe": 27.2,
       "fcf_yield": 3.35,
+      "enterprise_value": 820990.69,
+      "ev_ebitda": 18.21,
       "revenue_growth": 18.3,
       "eps_growth": 12.5,
       "fcf_growth": 35.7,
-      "net_income_growth": 11.7
+      "net_income_growth": 11.7,
+      "revenue_growth_abs": 25038,
+      "eps_growth_abs": 0.27,
+      "fcf_growth_abs": 8140,
+      "net_income_growth_abs": 3607
     },
     {
       "year": "2020",
@@ -195,10 +222,16 @@
       "price_close": 87.632,
       "pe": 29.9,
       "fcf_yield": 3.61,
+      "enterprise_value": 1078733.92,
+      "ev_ebitda": 19.93,
       "revenue_growth": 12.8,
       "eps_growth": 19.2,
       "fcf_growth": 38.3,
-      "net_income_growth": 17.3
+      "net_income_growth": 17.3,
+      "revenue_growth_abs": 20670,
+      "eps_growth_abs": 0.47,
+      "fcf_growth_abs": 11871,
+      "net_income_growth_abs": 5926
     },
     {
       "year": "2021",
@@ -227,10 +260,16 @@
       "price_close": 144.852,
       "pe": 25.8,
       "fcf_yield": 3.48,
+      "enterprise_value": 1813377.45,
+      "ev_ebitda": 20.38,
       "revenue_growth": 41.2,
       "eps_growth": 91.4,
       "fcf_growth": 56.4,
-      "net_income_growth": 88.8
+      "net_income_growth": 88.8,
+      "revenue_growth_abs": 75110,
+      "eps_growth_abs": 2.68,
+      "fcf_growth_abs": 24169,
+      "net_income_growth_abs": 35764
     },
     {
       "year": "2022",
@@ -259,10 +298,16 @@
       "price_close": 88.23,
       "pe": 19.3,
       "fcf_yield": 5.23,
+      "enterprise_value": 1063668.54,
+      "ev_ebitda": 12.04,
       "revenue_growth": 9.8,
       "eps_growth": -18.7,
       "fcf_growth": -10.4,
-      "net_income_growth": -21.1
+      "net_income_growth": -21.1,
+      "revenue_growth_abs": 25199,
+      "eps_growth_abs": -1.05,
+      "fcf_growth_abs": -7002,
+      "net_income_growth_abs": -16061
     },
     {
       "year": "2023",
@@ -291,10 +336,16 @@
       "price_close": 139.69,
       "pe": 24.1,
       "fcf_yield": 3.95,
+      "enterprise_value": 1677816.41,
+      "ev_ebitda": 17.43,
       "revenue_growth": 8.7,
       "eps_growth": 27.2,
       "fcf_growth": 15.8,
-      "net_income_growth": 23.0
+      "net_income_growth": 23.0,
+      "revenue_growth_abs": 24558,
+      "eps_growth_abs": 1.24,
+      "fcf_growth_abs": 9485,
+      "net_income_growth_abs": 13823
     },
     {
       "year": "2024",
@@ -323,10 +374,16 @@
       "price_close": 189.3,
       "pe": 23.5,
       "fcf_yield": 3.13,
+      "enterprise_value": 2262659.82,
+      "ev_ebitda": 17.72,
       "revenue_growth": 13.9,
       "eps_growth": 38.6,
       "fcf_growth": 4.7,
-      "net_income_growth": 35.7
+      "net_income_growth": 35.7,
+      "revenue_growth_abs": 42624,
+      "eps_growth_abs": 2.24,
+      "fcf_growth_abs": 3269,
+      "net_income_growth_abs": 26323
     },
     {
       "year": "2025",
@@ -355,16 +412,26 @@
       "price_close": 313.0,
       "pe": 29.0,
       "fcf_yield": 1.94,
+      "enterprise_value": 3724597.21,
+      "ev_ebitda": 24.8,
       "revenue_growth": 15.1,
       "eps_growth": 34.5,
       "fcf_growth": 0.7,
-      "net_income_growth": 32.0
+      "net_income_growth": 32.0,
+      "revenue_growth_abs": 52818,
+      "eps_growth_abs": 2.77,
+      "fcf_growth_abs": 502,
+      "net_income_growth_abs": 32052
     }
   ],
   "campos_incompletos": [
     "eps_growth",
+    "eps_growth_abs",
     "fcf_growth",
+    "fcf_growth_abs",
     "net_income_growth",
-    "revenue_growth"
+    "net_income_growth_abs",
+    "revenue_growth",
+    "revenue_growth_abs"
   ]
 }

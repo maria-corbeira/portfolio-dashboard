@@ -358,16 +358,16 @@
     },
     "10.TIKR_Val": {
       "Market Cap (MM)": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        159184.41,
+        143754.54,
+        104121.72,
+        119697.72,
+        112914.36,
+        120962.3,
+        128491.68,
+        150793.1,
+        205980.71,
+        281103.29
       ],
       "Price": [
         165.99,
@@ -391,7 +391,8 @@
       "EBITDA = Operating Income + Depreciation & Amortization",
       "Total Debt = suma de las piezas de deuda y arrendamiento disponibles",
       "Net Debt = Total Debt - (Cash And Equivalents + Short Term Investments)",
-      "Free Cash Flow = Cash from Operations + Capital Expenditure"
+      "Free Cash Flow = Cash from Operations + Capital Expenditure",
+      "Market Cap (MM) = Price x Weighted Average Diluted Shares Outstanding del mismo ejercicio"
     ],
     "deuda_incompleta": [
       "2016: suma sin porcion corriente, arrend. financiero corriente, arrend. financiero no corriente, arrend. operativo corriente, arrend. operativo no corriente",
@@ -409,7 +410,7 @@
       "cuadra": true,
       "desviaciones": []
     },
-    "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. P/E y FCF yield por ejercicio salen vacios; los actuales se calculan con el precio en vivo.",
+    "market_cap_historico": "Market Cap (MM) = Price x acciones diluidas del mismo ejercicio, calculado el 7-sep-2026. Si falta el precio o las acciones de un ejercicio, ese Market Cap sale vacio.",
     "discontinuidad": {
       "desde": "2019",
       "motivo": "spin-off de Kyndryl (noviembre de 2021). IBM reexpreso 2019 y 2020 para presentar Kyndryl como actividad discontinuada, pero nunca reexpreso 2016-2018, que siguen incluyendola. Por eso las ventas caen de 79.591 M$ en 2018 a 57.714 M$ en 2019: no es un desplome, son dos perimetros distintos. El CAGR de ventas a 10 anios daba -1,9% anual por esto; el de 5 anios (2020-2025) si es homogeneo."

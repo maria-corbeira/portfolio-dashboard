@@ -134,6 +134,16 @@ def build(ticker: str) -> dict:
     derivadas.append("Free Cash Flow = Cash from Operations + Capital Expenditure")
     neg = lambda s: [None if v is None else -abs(v) for v in s]
 
+    # Capitalizacion = precio de cierre x acciones diluidas del propio ejercicio.
+    # precios y acciones diluidas vienen ya en la misma base de split (verificado
+    # contra capitalizacion real conocida en AAPL y NVDA antes de activar esto), asi
+    # que no hace falta reajustar nada aqui. Si falta cualquiera de los dos, se
+    # propaga el vacio en vez de aproximar.
+    market_cap = [None if (p is None or s is None) else round(p * s, 2)
+                  for p, s in zip(precios, I["diluted_shares"])]
+    derivadas.append("Market Cap (MM) = Price x Weighted Average Diluted Shares Outstanding "
+                     "del mismo ejercicio")
+
     return {
         "company": EMPRESAS[ticker], "ticker": ticker, "fiscal_dates": dates,
         "sheets": {
@@ -158,19 +168,16 @@ def build(ticker: str) -> dict:
                 "Stock-Based Compensation": C["stock_based_compensation"],
                 "Repurchase of Common Stock": neg(col(C, "buybacks")),
                 "Common & Preferred Stock Dividends Paid": neg(col(C, "dividends_paid"))},
-            # El P/E historico se calcula como precio/BPA, que no necesita el
-            # recuento de acciones. La capitalizacion se deja vacia: sin ella el
-            # FCF yield por ejercicio sale n.d., preferible a aproximarla.
-            "10.TIKR_Val": {"Market Cap (MM)": [None] * n, "Price": precios},
+            "10.TIKR_Val": {"Market Cap (MM)": market_cap, "Price": precios},
         },
         "notas": {
             "fuente": "data.sec.gov/api/xbrl/companyconcept, hecho con 'filed' mas reciente por "
                       "ejercicio (cifras reexpresadas cuando las hay)",
             "extraido": "2026-09-05", "derivadas": derivadas, "deuda_incompleta": incompleta,
             "control_splits": {"cuadra": split_ok, "desviaciones": split_detalle},
-            "market_cap_historico": "no disponible en esta sesion: sin fuente de precios historicos. "
-                                    "P/E y FCF yield por ejercicio salen vacios; los actuales se "
-                                    "calculan con el precio en vivo.",
+            "market_cap_historico": "Market Cap (MM) = Price x acciones diluidas del mismo "
+                                    "ejercicio, calculado el 7-sep-2026. Si falta el precio o "
+                                    "las acciones de un ejercicio, ese Market Cap sale vacio.",
             "discontinuidad": isj.get("discontinuidad"),
             "tags_is": isj.get("tags_usados"), "tags_bs": bsj.get("tags_usados"),
             "tags_cf": cfj.get("tags_usados"),

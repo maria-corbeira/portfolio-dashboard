@@ -149,6 +149,11 @@ def compute(d):
             "price_close": price[i],
             "pe": pe,
             "fcf_yield": pct(div(fcf[i], mcap[i]), 2),
+            "enterprise_value": (None if (mcap[i] is None or netdebt[i] is None)
+                                 else round(mcap[i] + netdebt[i], 2)),
+            "ev_ebitda": (None if (mcap[i] is None or netdebt[i] is None)
+                         else (None if div(mcap[i] + netdebt[i], ebitda[i]) is None
+                               else round(div(mcap[i] + netdebt[i], ebitda[i]), 2))),
         })
 
     # Una DISCONTINUIDAD DE PERIMETRO (una escision, una gran desinversion) parte la serie en
@@ -158,6 +163,13 @@ def compute(d):
     corte = disc.get("desde")
 
     rev_g, eps_g, fcf_g, ni_g = yoy(rev), yoy(eps), yoy(fcf), yoy(ni)
+
+    def delta(series, i):
+        """Variacion en $ (o en BPA) sobre el ejercicio anterior. None si falta cualquiera."""
+        if i == 0 or series[i] is None or series[i - 1] is None:
+            return None
+        return round(series[i] - series[i - 1], 2)
+
     for i, r in enumerate(rows):
         # El primer ejercicio tras el corte se compara con el perimetro viejo, asi que su
         # variacion no mide nada: las ventas de IBM "caian" un 27,5% en 2019 solo porque el
@@ -165,11 +177,19 @@ def compute(d):
         if corte and dates[i][:4] == str(corte):
             r["revenue_growth"] = r["eps_growth"] = None
             r["fcf_growth"] = r["net_income_growth"] = None
+            r["revenue_growth_abs"] = r["eps_growth_abs"] = None
+            r["fcf_growth_abs"] = r["net_income_growth_abs"] = None
             continue
         r["revenue_growth"] = pct(rev_g[i])
         r["eps_growth"] = pct(eps_g[i])
         r["fcf_growth"] = pct(fcf_g[i])
         r["net_income_growth"] = pct(ni_g[i])
+        # Mismo importe que sustenta el %, en $ (BPA en dolares/accion): sirve para ver si
+        # un % grande es sobre una base pequena o si un % modesto mueve mucho dinero.
+        r["revenue_growth_abs"] = delta(rev, i)
+        r["eps_growth_abs"] = delta(eps, i)
+        r["fcf_growth_abs"] = delta(fcf, i)
+        r["net_income_growth_abs"] = delta(ni, i)
 
     def last(key):
         return rows[-1][key] if rows else None
@@ -217,6 +237,7 @@ def compute(d):
     agg["pe_latest"] = pe
     agg["peg_5y"] = None if (pe is None or not g or g <= 0) else round(pe / g, 2)
     agg["fcf_yield_latest"] = last("fcf_yield")
+    agg["ev_ebitda_latest"] = last("ev_ebitda")
     pes = sorted(r["pe"] for r in rows if r["pe"] is not None)
     agg["pe_median_10y"] = (round(pes[len(pes)//2] if len(pes) % 2 else
                                   (pes[len(pes)//2 - 1] + pes[len(pes)//2]) / 2, 1)
@@ -232,6 +253,10 @@ def compute(d):
     agg["fcf_latest"] = last("fcf")
     agg["revenue_latest"] = last("revenue")
     agg["equity_latest"] = equity[-1] if equity else None
+    # Para recalcular EV/EBITDA con el precio en vivo: la deuda neta y el EBITDA no
+    # cambian intradia, solo la capitalizacion lo hace.
+    agg["net_debt_latest"] = netdebt[-1] if netdebt else None
+    agg["ebitda_latest"] = ebitda[-1] if ebitda else None
 
     missing = sorted({k for r in rows for k, v in r.items() if v is None})
     return {
