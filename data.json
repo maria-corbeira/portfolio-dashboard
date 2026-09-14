@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T20:56:16+00:00",
+  "generated_at": "2026-09-14T23:33:38+00:00",
   "count": 22,
   "failed": [],
   "prices": {
@@ -71,14 +71,6 @@
       "price": 249.09,
       "prev_close": 243.29,
       "change_pct": 2.38,
-      "currency": "USD",
-      "market_time": null,
-      "source": "cnbc"
-    },
-    "COP": {
-      "price": 136.67,
-      "prev_close": 137.35,
-      "change_pct": -0.5,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
@@ -178,6 +170,14 @@
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
+    },
+    "COP": {
+      "price": 136.71,
+      "prev_close": null,
+      "change_pct": null,
+      "currency": "USD",
+      "market_time": null,
+      "source": "nasdaq"
     }
   },
   "indicadores": {
@@ -255,8 +255,8 @@
     },
     "COP": {
       "sesiones": 7,
-      "var_1d": -0.5,
-      "var_5d": 1.8,
+      "var_1d": -0.47,
+      "var_5d": 1.82,
       "rsi_14": null,
       "ma_200": null,
       "vs_ma200": null
