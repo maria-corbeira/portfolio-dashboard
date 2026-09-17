@@ -1,11 +1,11 @@
 {
   "yahoo_chart": {
     "status": 200,
-    "body": "{\"chart\":{\"result\":[{\"meta\":{\"currency\":\"USD\",\"symbol\":\"MSFT\",\"exchangeName\":\"NMS\",\"fullExchangeName\":\"NasdaqGS\",\"instrumentType\":\"EQUITY\",\"firstTradeDate\":511108200,\"regularMarketTime\":1789502076,\"hasPrePostMarketData\":true,\"gmtoffset\":-14400,\"timezone\":\"EDT\",\"exchangeTimezoneName\":\"America/New_York\",\"regularMarketPrice\":497.585,\"regularMarketChangePercent\":-1.548,\"fulldayPrice\":497.585,\"fulldayC"
+    "body": "{\"chart\":{\"result\":[{\"meta\":{\"currency\":\"USD\",\"symbol\":\"MSFT\",\"exchangeName\":\"NMS\",\"fullExchangeName\":\"NasdaqGS\",\"instrumentType\":\"EQUITY\",\"firstTradeDate\":511108200,\"regularMarketTime\":1789674982,\"hasPrePostMarketData\":true,\"gmtoffset\":-14400,\"timezone\":\"EDT\",\"exchangeTimezoneName\":\"America/New_York\",\"regularMarketPrice\":498.07,\"regularMarketChangePercent\":1.585,\"fulldayPrice\":498.07,\"fulldayChan"
   },
   "yahoo_spark": {
     "status": 200,
-    "body": "{\"spark\":{\"result\":[{\"symbol\":\"MSFT\",\"response\":[{\"meta\":{\"currency\":\"USD\",\"symbol\":\"MSFT\",\"exchangeName\":\"NMS\",\"fullExchangeName\":\"NasdaqGS\",\"instrumentType\":\"EQUITY\",\"firstTradeDate\":511108200,\"regularMarketTime\":1789502086,\"hasPrePostMarketData\":true,\"gmtoffset\":-14400,\"timezone\":\"EDT\",\"exchangeTimezoneName\":\"America/New_York\",\"regularMarketPrice\":497.34,\"regularMarketChangePercent\":-1.597,\"ful"
+    "body": "{\"spark\":{\"result\":[{\"symbol\":\"MSFT\",\"response\":[{\"meta\":{\"currency\":\"USD\",\"symbol\":\"MSFT\",\"exchangeName\":\"NMS\",\"fullExchangeName\":\"NasdaqGS\",\"instrumentType\":\"EQUITY\",\"firstTradeDate\":511108200,\"regularMarketTime\":1789674983,\"hasPrePostMarketData\":true,\"gmtoffset\":-14400,\"timezone\":\"EDT\",\"exchangeTimezoneName\":\"America/New_York\",\"regularMarketPrice\":498.03,\"regularMarketChangePercent\":1.576,\"full"
   },
   "stooq_com": {
     "status": 404,
@@ -17,11 +17,11 @@
   },
   "cnbc": {
     "status": 200,
-    "body": "{\"FormattedQuoteResult\":{\"FormattedQuote\":[{\"symbol\":\"MSFT\",\"symbolType\":\"symbol\",\"code\":0,\"name\":\"Microsoft Corporation\",\"shortName\":\"MSFT\",\"onAirName\":\"Microsoft\",\"altName\":\"Microsoft Corporation\",\"last\":\"497.31\",\"last_timedate\":\"3:54 PM EDT\",\"last_time\":\"2026-09-15T15:54:48.836-0400\",\"changetype\":\"DOWN\",\"type\":\"STOCK\",\"subType\":\"Common Stock\",\"exchange\":\"NASDAQ\",\"source\":\"Last NASDAQ LS, VOL Fr"
+    "body": "{\"FormattedQuoteResult\":{\"FormattedQuote\":[{\"symbol\":\"MSFT\",\"symbolType\":\"symbol\",\"code\":0,\"name\":\"Microsoft Corporation\",\"shortName\":\"MSFT\",\"onAirName\":\"Microsoft\",\"altName\":\"Microsoft Corporation\",\"last\":\"497.97\",\"last_timedate\":\"3:56 PM EDT\",\"last_time\":\"2026-09-17T15:56:06.999-0400\",\"changetype\":\"UP\",\"type\":\"STOCK\",\"subType\":\"Common Stock\",\"exchange\":\"NASDAQ\",\"source\":\"Last NASDAQ LS, VOL From"
   },
   "nasdaq": {
     "status": 200,
-    "body": "{\"data\":{\"symbol\":\"MSFT\",\"companyName\":\"Microsoft Corporation Common Stock\",\"stockType\":\"Common Stock\",\"exchange\":\"NASDAQ-GS\",\"isNasdaqListed\":true,\"isNasdaq100\":true,\"isHeld\":false,\"primaryData\":{\"lastSalePrice\":\"$497.17\",\"netChange\":\"-8.24\",\"percentageChange\":\"-1.63%\",\"deltaIndicator\":\"down\",\"lastTradeTimestamp\":\"Sep 15, 2026 3:54 PM ET\",\"isRealTime\":true,\"bidPrice\":\"$497.23\",\"askPrice\":\"$497.29"
+    "body": "{\"data\":{\"symbol\":\"MSFT\",\"companyName\":\"Microsoft Corporation Common Stock\",\"stockType\":\"Common Stock\",\"exchange\":\"NASDAQ-GS\",\"isNasdaqListed\":true,\"isNasdaq100\":true,\"isHeld\":false,\"primaryData\":{\"lastSalePrice\":\"$498.0101\",\"netChange\":\"+7.7101\",\"percentageChange\":\"+1.57%\",\"deltaIndicator\":\"up\",\"lastTradeTimestamp\":\"Sep 17, 2026 3:56 PM ET\",\"isRealTime\":true,\"bidPrice\":\"$498.00\",\"askPrice\":\"$498."
   },
   "wsj": {
     "status": 401,
@@ -37,7 +37,7 @@
   },
   "alphavantage_demo": {
     "status": 200,
-    "body": "{\n    \"Global Quote\": {\n        \"01. symbol\": \"IBM\",\n        \"02. open\": \"249.4100\",\n        \"03. high\": \"251.3700\",\n        \"04. low\": \"244.1201\",\n        \"05. price\": \"249.0900\",\n        \"06. volume\": \"6817275\",\n        \"07. latest trading day\": \"2026-09-14\",\n        \"08. previous close\": \"243.2900\",\n        \"09. change\": \"5.8000\",\n        \"10. change percent\": \"2.3840%\"\n    }\n}"
+    "body": "{\n    \"Global Quote\": {\n        \"01. symbol\": \"IBM\",\n        \"02. open\": \"240.5000\",\n        \"03. high\": \"243.3399\",\n        \"04. low\": \"235.4100\",\n        \"05. price\": \"237.4900\",\n        \"06. volume\": \"6181838\",\n        \"07. latest trading day\": \"2026-09-16\",\n        \"08. previous close\": \"248.3700\",\n        \"09. change\": \"-10.8800\",\n        \"10. change percent\": \"-4.3806%\"\n    }\n}"
   },
   "coincap_style_hn": {
     "status": 401,
