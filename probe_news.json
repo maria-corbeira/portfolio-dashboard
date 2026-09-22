@@ -7,13 +7,13 @@
   },
   "google_ticker": {
     "status": 200,
-    "bytes": 127070,
+    "bytes": 126815,
     "items": 100,
     "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"NVDA stock when:30d\" - Google News</title><link>https://news.google.com/search?q=NVDA+stock+when:30d&amp;hl=en-US&amp;gl=US&amp;ceid=US"
   },
   "google_mercado": {
     "status": 200,
-    "bytes": 131035,
+    "bytes": 133676,
     "items": 100,
     "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"stock market when:3d\" - Google News</title><link>https://news.google.com/search?q=stock+market+when:3d&amp;hl=en-US&amp;gl=US&amp;ceid="
   },
@@ -31,7 +31,7 @@
   },
   "fed_prensa": {
     "status": 200,
-    "bytes": 14505,
+    "bytes": 14853,
     "items": 20,
     "muestra": "﻿<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<rss version=\"2.0\">\r\n    <channel>\r\n        <title>FRB: Press Release - All Releases</title>\r\n        <link><![CDATA[https://www.federalreserve.gov/feeds/feeds.htm]]></link>\r\n        <description><![CDATA[All recent press releases from the Federal Reserve "
   },
@@ -55,9 +55,9 @@
   },
   "nasdaq_movers": {
     "status": 200,
-    "bytes": 18090,
+    "bytes": 18265,
     "items": 0,
-    "muestra": "{\"data\":{\"STOCKS\":{\"MostActiveByShareVolume\":{\"dataAsOf\":\"Data as of Sep 17, 2026 3:54 PM ET\",\"lastTradeTimestamp\":\"Sep 17, 2026 3:54 PM ET\",\"table\":{\"asOf\":null,\"headers\":{\"symbol\":\"Symbol\",\"name\":\"Name\",\"lastSalePrice\":\"Last\",\"lastSaleChange\":\"Change\",\"change\":\"Share Volume\"},\"rows\":[{\"symbol\":\"CT"
+    "muestra": "{\"data\":{\"STOCKS\":{\"MostActiveByShareVolume\":{\"dataAsOf\":\"Data as of Sep 22, 2026 3:54 PM ET\",\"lastTradeTimestamp\":\"Sep 22, 2026 3:54 PM ET\",\"table\":{\"asOf\":null,\"headers\":{\"symbol\":\"Symbol\",\"name\":\"Name\",\"lastSalePrice\":\"Last\",\"lastSaleChange\":\"Change\",\"change\":\"Share Volume\"},\"rows\":[{\"symbol\":\"ZE"
   },
   "yahoo_gainers": {
     "status": 429,
