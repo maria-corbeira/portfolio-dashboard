@@ -7,19 +7,19 @@
   },
   "google_ticker": {
     "status": 200,
-    "bytes": 126815,
+    "bytes": 130395,
     "items": 100,
     "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"NVDA stock when:30d\" - Google News</title><link>https://news.google.com/search?q=NVDA+stock+when:30d&amp;hl=en-US&amp;gl=US&amp;ceid=US"
   },
   "google_mercado": {
     "status": 200,
-    "bytes": 133676,
+    "bytes": 129105,
     "items": 100,
     "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"stock market when:3d\" - Google News</title><link>https://news.google.com/search?q=stock+market+when:3d&amp;hl=en-US&amp;gl=US&amp;ceid="
   },
   "marketwatch": {
     "status": 200,
-    "bytes": 8262,
+    "bytes": 8514,
     "items": 10,
     "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:media=\"http://search.yahoo.com/mrss/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" version=\"2.0\"\n>\n<channel>\n<title>MarketWatch.com - Top Stories</title>\n<description>MarketWatch, a leading publ"
   },
@@ -31,7 +31,7 @@
   },
   "fed_prensa": {
     "status": 200,
-    "bytes": 14853,
+    "bytes": 14561,
     "items": 20,
     "muestra": "﻿<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<rss version=\"2.0\">\r\n    <channel>\r\n        <title>FRB: Press Release - All Releases</title>\r\n        <link><![CDATA[https://www.federalreserve.gov/feeds/feeds.htm]]></link>\r\n        <description><![CDATA[All recent press releases from the Federal Reserve "
   },
@@ -43,21 +43,21 @@
   },
   "nasdaq_eps": {
     "status": 200,
-    "bytes": 762,
+    "bytes": 604,
     "items": 0,
     "muestra": "{\"data\":{\"symbol\":\"nvda\",\"earningsPerShare\":[{\"type\":\"PreviousQuarter\",\"period\":\"Oct 2025\",\"consensus\":1.18,\"earnings\":1.24},{\"type\":\"PreviousQuarter\",\"period\":\"Jan 2026\",\"consensus\":1.45,\"earnings\":1.57},{\"type\":\"PreviousQuarter\",\"period\":\"Apr 2026\",\"consensus\":1.7,\"earnings\":1.87},{\"type\":\"Previou"
   },
   "nasdaq_calend": {
     "status": 200,
-    "bytes": 4886,
+    "bytes": 4884,
     "items": 0,
     "muestra": "{\"data\":{\"asOf\":\"Tue, Sep 8, 2026\",\"headers\":{\"time\":\"Time\",\"symbol\":\"Symbol\",\"name\":\"Company Name\",\"eps\":\"EPS\",\"surprise\":\"% Surprise\",\"marketCap\":\"Market Cap\",\"fiscalQuarterEnding\":\"Fiscal Quarter Ending\",\"epsForecast\":\"Consensus EPS* Forecast\",\"noOfEsts\":\"# of Ests\"},\"rows\":[{\"eps\":\"$7.37\",\"surpr"
   },
   "nasdaq_movers": {
     "status": 200,
-    "bytes": 18265,
+    "bytes": 18190,
     "items": 0,
-    "muestra": "{\"data\":{\"STOCKS\":{\"MostActiveByShareVolume\":{\"dataAsOf\":\"Data as of Sep 22, 2026 3:54 PM ET\",\"lastTradeTimestamp\":\"Sep 22, 2026 3:54 PM ET\",\"table\":{\"asOf\":null,\"headers\":{\"symbol\":\"Symbol\",\"name\":\"Name\",\"lastSalePrice\":\"Last\",\"lastSaleChange\":\"Change\",\"change\":\"Share Volume\"},\"rows\":[{\"symbol\":\"ZE"
+    "muestra": "{\"data\":{\"STOCKS\":{\"MostActiveByShareVolume\":{\"dataAsOf\":\"Data as of Sep 24, 2026 4:10 PM ET\",\"lastTradeTimestamp\":\"Sep 24, 2026 4:10 PM ET\",\"table\":{\"asOf\":null,\"headers\":{\"symbol\":\"Symbol\",\"name\":\"Name\",\"lastSalePrice\":\"Last\",\"lastSaleChange\":\"Change\",\"change\":\"Share Volume\"},\"rows\":[{\"symbol\":\"DC"
   },
   "yahoo_gainers": {
     "status": 429,
