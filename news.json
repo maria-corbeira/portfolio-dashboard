@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-27T20:39:58+00:00",
+  "generated_at": "2026-09-28T02:46:37+00:00",
   "total": 87,
   "por_ticker": {
     "NVDA": [
-      {
-        "title": "China May Reopen Nvidia's AI Market. How Will NVDA Stock React Monday? - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYWFxY2xrRWMwRWhXUlQ0MDhsUlJlQjJraTJnUGpKaDN5QVF6TTltWDJTT2syQ0pRdFRNNjZDb3VvU1lma21vLThXR0dOX3JKTktUdjNITjB2M0RRUnlNVTlITDVqNzVjNW8xemZBcHA4WkhEZlVmOGJQa0kwY1ZwVnJqR2RUeXlfc2VtNmVQelBhcE5UZ0E0?oc=5",
-        "source": "Google News",
-        "published": "2026-09-27T19:00:00+00:00",
-        "kind": "rumor",
-        "unconfirmed": false
-      },
       {
         "title": "Nvidia (NVDA) Stock Could Trade At A Discount Despite Its 10x Run - Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOd0E1MWFMaEhraVR0aUhMM1YzSUNyVWhUUjYtNnNOTE5aOXhNaVRmLWg4Z21nSzVZTDFPenhsM0hkVzFUZnpDQjJVb0NTMFJKV1lGVUlCQkt0X0pqbHBIeWZYS2ZXeHV2c005YVNrTmJYRk1DTkl5YVAtQkZRM25sRllEX3FsX3otRDhJM011QnJkM3BaTVNQbk5B?oc=5",
         "source": "Google News",
         "published": "2026-09-27T18:07:08+00:00",
+        "kind": "rumor",
+        "unconfirmed": false
+      },
+      {
+        "title": "China may permit Alibaba, ByteDance to buy new Nvidia chips – The Information - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVEotSjhDc1lfdjhPa2FkLTYzMlAwU1JkampNUzc4U1h0X2NiVGhNTkFHdExIVi05MW9sWFRoUWUwWjRFQUJ5MDBqM1BLQkRuUmUtQ2ZsUnlIaFg0aDZyT2Rjcm9hcWllNE9fOFYwenpoM3phanhoXzFRTkNVUUZtQ0pGRlpzcjVCbGYxTnhnUm1TNmd6SDVkLXV3aw?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T17:30:17+00:00",
         "kind": "rumor",
         "unconfirmed": false
       },
@@ -46,15 +46,31 @@
     ],
     "MSFT": [
       {
-        "title": "Microsoft's \"Muse\" Moment Is Here (Rating Upgrade) (NASDAQ:MSFT) - Seeking Alpha",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9vRmlHcEdIdWVhTzFFZ1N4QnBIU0dBb1VqZ0dJWUF3NDNXZ05LT0UwQjNyZVo2dTI1U01lZXpqVEJ3bVNvQXQza3lWZklBWmhpT2tqWGhWdjZHMVhJcW9RNXAyNlBaUm83NWxWaWlUWFhjdm9RZVZlSTIxSQ?oc=5",
+        "title": "MSFT Stock Bucks Iran-Linked Sell-Off: Microsoft Releases Mac-Style Search On Windows 11 - stocktwits.com",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQak1TT0hnT2RaUzFDSEZrZzloSG1uMjhHV0pybGtxYWdqRUtnUWxvRmJYOENCNXQyejNrSkJNY1NOZG9BWjRpY3NnTGNQNjZqQkhZdWVNaGc2TnNfM1JRSldhM0FtdmpiMThWUGluTnpWbHByanJxMUpBckVWMHh0WGJISDZYeXItVldUUTdUSEtRY2ZMTEtLSWh6dXp5Vy11dWNka01vMTNGWnlHaWdXOUZsVWp3WnRhXzRpOEFPbzVpZzMyQW93aHF6Qy1SWTdvSl93YmQ5V0hncUFPQWtPLVowQXRnUQ?oc=5",
         "source": "Google News",
-        "published": "2026-09-27T13:55:02+00:00",
-        "kind": "analista",
+        "published": "2026-09-27T17:34:52+00:00",
+        "kind": "producto",
         "unconfirmed": false
       },
       {
-        "title": "MSFT Stock Faces A Bigger Test Than Earnings, Gene Munster Says — Why The ‘Bot Boogeyman’ Won’t Go Away - Stocktwits",
+        "title": "Why Is Microsoft Stock Surging Today? Azure Growth Hits 43% as MSFT Targets $560 Next - TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZ3JQMng2OHFLNFd0RTRmZUpBbDBiVVlralZYbHU1TVFPcEdWNS1ZQ0w1alJDRDY1LXFDejZveUprMkVpa3RJMS1qbHpqbUpOYk9qbEZ3bXhoUW1iTWpuNUREeTZ1akxUQUQ5ZGhJWk9hcDJwb3pVbDRZblJIOElQQVl2Tmpma1VwS19oM1pIdnlXM3B0ZUpXX2RSTTA2YVZPUVhxOFJKekV3UXZGeXJUSEpxcE9zLVJPQzZHT01Lb3N2Zw?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T13:15:12+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "AMZN, META, GOOGL, MSFT Earnings This Week: One AI Bubble Signal Will Keep Investors On Edge - stocktwits.com",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNb2tEYWdJeWdnMU1GZzlfaEpqb1ZHVGxNS2NzalM5OThEdkVJem9pbmhvbGZSczkxdlFXNWFsdUhRQkxTam9HeGRHRFM3dU9YZ0xQdHVXU0Zpa0JGNXRjU0lNZl82dDRmXzQ4Zmp6c3FmVlVtN3VnNzFkekNhNlVwalFtQnhUaGpzQ3c2aFRPVFM1YWVYTXlSWHVuR2lyeVdNdDlhMG5LY05kM1lZaU5xUmVXb0tyV19aOFNWQnY2Q2hnZHZGbEVnQTRUWnFPS1pqNEhTMFV5dFdHOXJIRExPdEJzMXZRZXM?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T05:37:08+00:00",
+        "kind": "resultados",
+        "unconfirmed": false
+      },
+      {
+        "title": "MSFT Stock Faces A Bigger Test Than Earnings, Gene Munster Says — Why The ‘Bot Boogeyman’ Won’t Go Away - stocktwits.com",
         "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOWjFzOWcyU0l4RWdoWEtPT2VhOXBHNnUtYzNRd2RJUnVFY1U4WTdaWDVpYU5WV3llbHJIM3NQQklGNkZCQy1Zc0ZncmJMaHRLa2tZQ25CVHA2LUNFakhIbFN4bUxjWmlpR3RwZXB5UC1IQ21NOUJfcFBvcldiZ1A5OHIteExENld3dnMtTTFleFVVaVI2ZzRUTnpGd2YtT1hxQVNJY1ZoS0ZNVDZ6VEp2QUJOb29zcUhRNG82anpRWnVzcTBibUk2QzVvckliUVp4N2FobHBOQlB5U2U3Q01aUGstNlB0UEVFX2l1NURZV1o?oc=5",
         "source": "Google News",
         "published": "2026-09-27T01:46:20+00:00",
@@ -62,31 +78,23 @@
         "unconfirmed": false
       },
       {
-        "title": "MSFT Stock Gains After Microsoft Grows India Cloud Footprint In Battle With Google Cloud, AWS - Stocktwits",
+        "title": "MSFT Stock Gains After Microsoft Grows India Cloud Footprint In Battle With Google Cloud, AWS - stocktwits.com",
         "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdE9IbEFXQ0RYT2hKYmM0bG96cmpIQ2wwUUFDRkJITzAxdHZxUE84Mi1Kc0xOc29vdmJ2YWVabzR1dV96Qk9mVXBSZEFaQ3lORVJSZTlwUlNndE9rR0dSYnVmaW1VbUdtdXFvYnNfNGV2VEI2Q1JOaUtwUXZzUmJobG4ycnp5MVVjdVl0QU8tcE1YbGh1TFFCZVkzUHhNbjNkeWNHS3pPdUJDckZEQjBXc0lfRHpuVEg2YnYyWGM1TUx5MVhmb2tqZW1oeG9JdHN2dnJBV0pBZmM?oc=5",
         "source": "Google News",
         "published": "2026-09-27T00:25:20+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "MSFT Stock Enters Bear Market After 21% Drop From Peak: Retail Cautious But Analysts Stay Overwhelmingly Bullish - Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOeTROX09JMmNjWjFydFdOODRWZG1NNnEzVWxvdE1FTnFWeU9QUE1VWGZremhsaUNEVXpJWGpSeXMxWm9sVzRGbVBCYTlEREVvV2NFRGhwaW95Q3psZnJmRUhuVThJS19EejVoYzdEaHhFb0NlR181bzN3TVpZSWRJUWZLR0xZeFhMUEgxMElnczVTQnU4bklwVTZyZFl1UXZheXh1Q3pZc25iZnBZUmg5eFhVdGNoSGZUWnphYXY5OE1XWXhBTXQ3TTBlWmdlUUdVMDlYSUZXVFp3T0pYSFd5dlFaNGZIOU9NTkx0aWFCOGNMUXZkM25JRUx1cUxFQUFIaDI4bQ?oc=5",
-        "source": "Google News",
-        "published": "2026-09-27T00:25:07+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It ‘Safest Earnings Play’ - Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQWWZWTmZ2MUtUeUU3VDJVTkRTejNUcWNEb0Fvc3ZXWUk1OHM5QnN6Q1dUNzdYUlFnU0tueHYyblZvZnVMMFhpVVZBa1NSOXdzNmRtU2FiYVRzWmhzUUluejVsZFo1dkhKbzQwMFdTQVNBeXhQdHhmUGdydXRkLVY5QWVGcElRVVFwS1RSak5ScmVxeUpyc3hKSXFYWmd0THp1eW1EQVVFbV9kWVQwZFJ0RExtT2FRdnpXUGRLMEQ3TkYtdkZ3eXNGc3p3ZS05R3Z0VnJOaU45R0U0Z0R5OW5aSWRuWC1nZl9sc3c?oc=5",
-        "source": "Google News",
-        "published": "2026-09-26T22:17:28+00:00",
-        "kind": "resultados",
-        "unconfirmed": false
       }
     ],
     "GOOGL": [
+      {
+        "title": "GOOGL Stock Dips Premarket After Breakout Week: Analyst Says Google Developing Next-Gen AI Chip With MediaTek - stocktwits.com",
+        "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPVW9xZ1RSVnlmM1R6bFVma0lBZzd2bmNObFVsWnhmQnVaNHdEN1FBM2ZZX0JtakFtWEpHazhuUU5UX0FienlVRi1acHVYd2l6U05UQlVkV3ZDZ3NhOG1aekxGTnkxdkxINlJJaEExb1FvMjVKTjZlYnFxdUhyWTIzQWtxSHowYkloYXlESnpEY2hYZEtWMENoVXFVVFpZWlZTaWRudDI0V0pDQURRWFlUcW9OcTNVdE1hYVJGbDh0U3hqUFl0ZlNMbWhqb2RLOGc4QkJsazZsYjV5QmdlM2ZMU3ZVVFF0VTloMDhndHNLMkRpVWV4U2dONDY3eXV1S1dUbnpZ?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T17:07:22+00:00",
+        "kind": "analista",
+        "unconfirmed": false
+      },
       {
         "title": "GOOGL Stock: Should You Buy the Best-Performing Magnificent Seven Stock Right Now? - TradingKey",
         "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTmVpTE0zd1RjSFd3Q0tQRzFTdEh1dG9vdWNsYVZfb0pJTlYtZzV5bFNDckNXRWFMSzFyZ1hUVTVvVERNYnFSZnZVSHdjNXFTTk9MTElKVWJ3M2dwWnZXTFVtYVhXNktFcmZPQlRacXpsMnVseHJTcnNTM2d5c2FQdWZGOHd3MjZQS0VEZlBwSmFmaHZ4RTVLdzRtejZrSGtHTDRMVG9lV190UldWb0tmbF9reXdySWVPNnFpOHg0WVJPSjltMEltNHhuUFh2MkRSTGY4UDJlWk96eWhpTThmX3EwQ2RRQQ?oc=5",
@@ -96,7 +104,7 @@
         "unconfirmed": false
       },
       {
-        "title": "Nasdaq, S&P 500 Futures Slip Ahead Of TSLA, GOOGL Earnings: Why SMCI, INTC, SLS, BATL, OKLO, RKLB Are In Focus - Stocktwits",
+        "title": "Nasdaq, S&P 500 Futures Slip Ahead Of TSLA, GOOGL Earnings: Why SMCI, INTC, SLS, BATL, OKLO, RKLB Are In Focus - stocktwits.com",
         "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORkhxVjk2bm1PNWM1SW5vMFNCd2JiQjFjYS1PM2ZIYXI1Q3k4QlZXZnhoM19OY2hwOXlRcFAwQzFVcThKRXprNHhZNFA1QUljTVhYLUJVSzZub0tjcHRwYmRTNE5teTZheWdta3dKcEkzYUFpc1E1elRCUjRyZndFcEdVV0VMLThRaXRxcFRJS042eWtWT1k2T25QNWViUUJBM18zTVVxcFhaR2oyYVlCNGdiNmh1UHlhQk5zVXFjRkUzMGlSc1NQRm5WMXZXOGJDd1RzbWpqQk03UDRBaGM5R1p3?oc=5",
         "source": "Google News",
         "published": "2026-09-27T09:05:15+00:00",
@@ -112,23 +120,39 @@
         "unconfirmed": false
       },
       {
-        "title": "META, GOOGL Stocks In Focus — White House Plans Meeting With Tech Giants On Tuesday Over AI Safety Tests, Says Report - Stocktwits",
+        "title": "META, GOOGL Stocks In Focus — White House Plans Meeting With Tech Giants On Tuesday Over AI Safety Tests, Says Report - stocktwits.com",
         "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPcEVKX0ZTblZUcU84ZkoxMnI1WVdxb2xmLWUtVU1WaW51VUNKRHEtRkVKbUVLXzNTenc3OVQ1bHpicS00ZUVyS3BMb0x6SU42LWJiTE16V2I0OXlDRVZZbXZuT0lLQnE2clFqelNKU2ZjdmlSNHFqMWpDZm80V3BFMnlPYk1iQWh1THcyb29RaFZWM0d1OUhrQmRiWThJMW1vWGpkT19sbDZSUHV4ZXA3VXM3eXdxS1k5RzU4QnpqSkMyOWxzM2FHOW1uNVJGXzRsS1dBN3hSWUFQM3U5S2FZOUtsVjdmSjhDemtRNWdZWWRzRkhNeHJ1TA?oc=5",
         "source": "Google News",
         "published": "2026-09-27T03:00:25+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "Alphabet (GOOGL) Stock Price Forecast 2026: Cloud Hit $20B But FCF Collapsed — Buy or Short? - TradingKey",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeXNna0FPVFVzVTBlNUM5NVVCNU9TLVhBazdFMVhkaFpBelZTMHBGV2ZqWTBwdFhwUVp3ajJLWXVaNTZURlFrRlhVQ010NDZzVTFhblZESDlvME0wWkhhemJBaXlyREZDLXhpckVRM3QxUlA2dW1idHlFQkEtT3FlbEdIb05UT1QtOFcySkRlc0pwRzc2Z25JQXE2YU8zS2JvLUh1ZUxEd3c5a2lETlItcXo3UEN6ZnA0c185SjNlN1J1QzI2VkE?oc=5",
-        "source": "Google News",
-        "published": "2026-09-27T02:41:26+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "META": [
+      {
+        "title": "Jim Cramer: Apple, Microsoft, and Meta prove stock picking for individuals is not a fool's errand - CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeW1xLWtDZHpSMk9wN3FpVVk0ek9qbTFaZUNhMlJFcmNaeE1rUGh5bW9kaV9XYWtxQWRTLVlwV3VoZXBSWkRLNS03SHo1cUNCTzA5clJrQWFLMUhtMjVYTHNlNGJvdmpBTjNBaVB1M1gxWEFwQ2JsemM1LThWX2tRR3lTeFVKbTZ0Y0VSTHBLejNJOWpIX0VIZC1FcENpbGFSa3ZkM09OdUR1bmN5LTF5NTFBdjJhY00tWUZsV3hwS195cWlnYVgwN0tn?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T23:20:37+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "Why Meta Platforms Stock Jumped 13% This Week - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRWh4WUFPblJZMGh4Vm5DQjA1aHhUMHljS1RQd0lWNHBMNW5hUml1TFhuSnh3ZnFSdG1nVnJYbEV0VFJDSEJwakRZU2Y2XzRQZy1qSmFPSUYzYjBPWW5GRHRzM0hrenNVUHduWWhVcmkwUnVFTTBSZzhaRnA2eHBWZ25vSjNPMlg0Vmp5ZXJSR1IwTVB0ZzFLS3Z6SXU?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T20:45:55+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "META Stock Is Set For Its Best Month In Over 13 Years — It’s Inches Away From $2 Trillion Market Cap - stocktwits.com",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPYktranBpcVZaN256UWJmVUZkUlEycUNFTFNuRnFCVFJueWZIclV3bFJvSVpwNTljeGVIWTRDSTJjamxCM3NaeDZXZHo3ZndZMnNfb0tnU0czS21aTEQwaEI0OWVrRUFoNHJ0aFhMQjdpVVJYYW00cjFuQWhlMFdPdnVMdlkzWXAyTHRQUzA1cXBBMm5WRHVhMWc3aUR3RmE5aXlCYjZMQlpVN1lzOXRCbGVDLUZOaHRFU0J6VHFXU2hxb0tVd0JCQno2bGctSy1DcXlCUW80RXAzeUxicGdhekw5WWh4Rzd4VmtMdGlwbl9HaDA?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T17:25:36+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
       {
         "title": "'Out of nowhere came Muse': Wall Street weighs in on Meta's AI catch-up moment - Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWVZSNnJHbGFENnhFOExMZHlEdndHMW1TeXU4RUo0V2p1QmZmcnlUSGJ1akcxUU5NdlJBaWZTTEdiWGdLRlIwLVF5dFBaamVLRDBVd0VMT0hwZnAzMEdySEFkSTBiZUNKUG5KeTZqal9Ua3JsMTJmOHVwTE5PS2VFcGpHcUNkQ09WSW9tNHVOUnRYbmg5Y20wRmU0RU5HNHhmS2h3U2dCdnFLVGxzc2FpbWVzNnAyVXVWa2Z0OGlabFdwOXRpb3V6NUtmOA?oc=5",
@@ -143,30 +167,6 @@
         "source": "Google News",
         "published": "2026-09-27T10:45:12+00:00",
         "kind": "rumor",
-        "unconfirmed": false
-      },
-      {
-        "title": "Piper Sandler revamps Meta stock price target after cutting it 3 weeks ago - thestreet.com",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNXQzaTVuZUhPUnRMUFJja2tibXBPMWNzYjNRQVQxMXN6ZnU1eDF3S1hwWnlUUk5EcUZTNWFiVFBZdWRVSmc5Nm84aEpOcExiV0VBb3BVeDNFdWtoMDBkbWlldGFVWGJhOXcxNmdyck5CN21EYmowRU55YVpvWE03RmJkVVcwSEFVenZyY3hxTU83YXotVzBQWnpjZU9LNlI3Zm96QVZaemFGMENLbHNwVEt5eWVmV1lk?oc=5",
-        "source": "Google News",
-        "published": "2026-09-27T04:58:00+00:00",
-        "kind": "analista",
-        "unconfirmed": false
-      },
-      {
-        "title": "Mark Zuckerberg Loses Nearly $9 Billion in One Day as Meta Stock Slides 4% After Goldman Questions AI Spe - Benzinga",
-        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOb2tqbFdpZ2NlNVlzcFBzcFczcURpYWRRaXh4bkZ3eTZjNTZVWEE0VXhiNmFmRFFRblpaU0xsdUFZNjh2UEd5VDgtMHpnbmZlQzk3TGxlT21QYmg5U3Vjd09LNGlETk9uakhnSGREd0VpSHVfSVVGRzBJcGxaRUc2Zm81ZEZicFg4VW5BbmdTQ0JsZHY2LUxmX19UU3doR1lqaWJfcGdVVDUzTHVPTDdLcGFzYmxBaHZJVU1rUTBJUXN4cXBvLUdsb0tYc3l6LS0wdE85NVN3MFpMZ1I4ZEQzTjMxX3pEc0JDeEpYZFl0YU5EWWo4OW03NDU5QjQ?oc=5",
-        "source": "Google News",
-        "published": "2026-09-27T03:50:48+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "Meta Stock Is Having Its Best Month Since 2013. History Says Every 20% Month Has Led to Gains a Year Later. - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPU3ZqdV9CSGpVeXFIZ2xnQjlUbTVpZlhaZ0RCYVFjLWwyZWV2M05BdXJuQ0ktZU9tVW0xQ2lId0xNRkJVSDh0LVUweWR1RHdoQTNtNEZNYjVPQlpGWXpVSEZvR1JrUkk1VGJ0NGlsVUxRQ3Vwa2xCd0t6dVpkeDZpWDFqQThJNUhvWVA5bHlkNE9WbkxQdzZfUQ?oc=5",
-        "source": "Google News",
-        "published": "2026-09-27T03:12:00+00:00",
-        "kind": "hecho",
         "unconfirmed": false
       }
     ],
@@ -196,7 +196,7 @@
         "unconfirmed": false
       },
       {
-        "title": "Intuitive Surgical (ISRG) Short Interest & Short Float | Updated Sep 2026 $ISRG - MarketBeat",
+        "title": "Intuitive Surgical (ISRG) Short Interest & Short Float | Updated Sep 2026 $ISRG - marketbeat.com",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE03U1l0cXlhOFdIR3hGNTMtSlp5UHNYTVVhYm5LLVJWb01UeXNNUFlfUkNOTFNKemdxMlhneVVWTGxHTGczZlpJR20zSDIxTzFJUXlieUJnSmdYTV96R1NFUG56N1dDTXA2U2h2RVRn?oc=5",
         "source": "Google News",
         "published": "2026-09-24T07:00:00+00:00",
@@ -222,14 +222,6 @@
         "unconfirmed": false
       },
       {
-        "title": "Uber: I Sold In March - Here's Why I'm Buying Again (Double Upgrade) (NYSE:UBER) - Seeking Alpha",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbDNGekJ2NHhqV3dXd1ZVSUZjUnZIVW81cmxPWnhxUUItWVBNckhSd3NqNHcwUEpQWHNScWROMTFrUm0wNzJHQk9zOE8yTHF3WHM0Wk1NU01SamdWa2xtWDVOSnlXVXpad1QxY1h5dGtQRkhpZlNmMUd2QVl6VHQyemM5eWpQbldkZ2stVloyc05EQkw1aE0xY0ozU1Y3N1R1X1pwag?oc=5",
-        "source": "Google News",
-        "published": "2026-09-25T13:30:54+00:00",
-        "kind": "analista",
-        "unconfirmed": false
-      },
-      {
         "title": "Is Trending Stock Uber Technologies, Inc. (UBER) a Buy Now? - Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNDZaemtPVEQ4aFlPR1YwWk5xYWZ2d1M5alNHbGxCRmg5LVBsODViLXZOVmtBZGZxb2F0Y2xkR3dOeW1zZkNicWxpTHN3MnNwbzRyUkJvcS0wUmZscDBiSjIyYVlCQjhBTkxLS1lyMl9iYV9YMUNrUTVlVmxlVnI2cDZ6QUJLUFpjUXFWc3M5bF9pSDlVV2hYVHN3YVpqdXp1WkRR?oc=5",
         "source": "Google News",
@@ -252,11 +244,35 @@
         "published": "2026-09-25T09:30:15+00:00",
         "kind": "hecho",
         "unconfirmed": false
+      },
+      {
+        "title": "Can Uber’s (UBER) Economic Moat Survive the Rise of Robotaxis? - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaVgtOUtsbC1YSTZvOXdrSXlOUkNnc29RQjc1TllmQVdwdmxmcWhHaTdsWGxJTlFDRTVzU1A0UHRacDgxRmlVSVUwY0tZV0VuS05SbVNiWG5GYThtMkJDZHdpY1RkdlBLRzVvM2JsdHZYWDI5MktQa0pIZ1FodjhCLTFWRnBVaWRkTUVXekE4bHNRamotZkhjeUJWN3I?oc=5",
+        "source": "Google News",
+        "published": "2026-09-24T21:11:44+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
       }
     ],
     "AMZN": [
       {
-        "title": "Is Amazon Stock a Buy, Hold, or Sell Below $250? - aol.com",
+        "title": "I'd Buy Amazon Stock While It Sits 12% Below Its Record - The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOa0hNM2lkQzFqbVJmajZVT1h6QUdZRm1Rd2swME9Fc2RlZnl2Z3FjUi1uZmNlWHlzMldNeVNpYi1iNTlTNmdja0F4ZThsRE9VWmZ2N1BmQ1BiMGlnNDZ3emZBVHF0RzB3NVhpWVFPSklRUU45bm1WTVVERHNmVHNwYnVFREpIU0M5M0UzVUd2a3c2NkExS05WT0hTdkVlZw?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T22:14:00+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "Is Amazon Stock a Buy, Hold, or Sell Below $250? - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQUNlUWpIMDA2ZnNteVMtOG1sMWxvTHFtYktKSHptZnN2N0dOTklNNGt3aXdIZ2lNZUJSUUtqZ1B0Vm8wTTZfLWJQYnc4Qy1nNl8xTk53eDBRSVYwOEF0M0dDcjhWOTk3Y1liM0JfWjFad25RNkc3QTdSVWdrb0Z3ckRicTFtbGpWZkEwYkVZVDI3YU4tRnc?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T18:15:26+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "Is Amazon Stock a Buy, Hold, or Sell Below $250? - AOL.com",
         "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE80ZWVJVzVEcHlSM3N3SGI5bEhaNFk1MUtSckVrdzVUVG5LWFJUTzVnTUlFYTdwSmxLSXRyaS1Uczkxc05KUHM4ZERDZk9VNjBfMzAtZjdWSmpLUzlvNG1XcE11ZnNoWTdvUkU3QmxRY3d0WjdNNGVPNnF3?oc=5",
         "source": "Google News",
         "published": "2026-09-27T18:15:26+00:00",
@@ -264,7 +280,7 @@
         "unconfirmed": false
       },
       {
-        "title": "Is Amazon Stock a Buy, Hold, or Sell Below $250? - 247wallst.com",
+        "title": "Is Amazon Stock a Buy, Hold, or Sell Below $250? - 24/7 Wall St.",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRXBVQnlQanB2bGNRZkFmX29qb2Z4N2JnRkJRdTVMa1V3WEFMVkphT0pacWMyemV2RHMzaXBTZ2lwUlZyOWhRYTJqVXFCRGJoeGRMNzQwVTdqd2NUVUlWT1dleEdXWWNVTlhQWGluaTRBMXUzUVZIa3RSZGlIMmMtdmN1T09oSjZpNVB6TWJJdFluZw?oc=5",
         "source": "Google News",
         "published": "2026-09-27T18:15:00+00:00",
@@ -272,41 +288,17 @@
         "unconfirmed": false
       },
       {
-        "title": "This Magnificent Seven Stock Could Reach a New All-Time High - 247wallst.com",
+        "title": "This Magnificent Seven Stock Could Reach a New All-Time High - 24/7 Wall St.",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSDAtWVd0Rml4UkVESmxrTk56UTIxelJLZmk4LUd6YTZZcEpQQnd0elZLT2U1d3Z0Si1TbVNscUxDZUhQY05sTEltWXhZTWstUEVoUkVhUzA1a0g0elM5VlRLdnVhYXBoQVF3bDd2ai14OTZLTDkyTFR2cWhBWG5Db2Z1SjdEanB0Wl9GLWR2aGF4aXVoblVXbFk3ZkY0RndSTEZEUEpRSQ?oc=5",
         "source": "Google News",
         "published": "2026-09-27T13:30:00+00:00",
         "kind": "rumor",
         "unconfirmed": false
-      },
-      {
-        "title": "Amazon Bets Big on India and Robotics. Here’s What It Means for the Stock - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQd1ZSX3plVk9rV3lqQVczMHVWQ2ZxbS05X1RFUHg3MmpqX2lfdGE2aHpjVWg0MzBSUndXVjBlRkN3MHpVZmpTYmllSjdwbGNzVFhOOGxEUWlTQmdYOFpHSFh4RGNwQ21wZXNiRHRvSV9mbnh6bW1fdWxuNF9IR2dqdlRFRTYyQjZwZDUwZEhvMnVNUzZ2SXVoc3RMZw?oc=5",
-        "source": "Google News",
-        "published": "2026-09-27T08:58:51+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "Amazon.com (AMZN) Confirmed Iranian Drone Strikes Hit AWS Data Centers - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeUFUbHh4NlhNZ0xnZW5pY19IbkJYRkc1S0p0a0lJSkp2ZVNzdV9sNU5jY3BtVXd0VWMwMndzZHFPc3lPamFFbkYwWUxOYmh1RGFHZ2V3NHczLXZwU3lHa2U2ekJyWngtbU12Y2RBcUREMzFoUkdNTE9adnQtVlRuQTY1a3JqN01UNmJlanJvZS1hM0ZBbHotV3dPR2Ywc1k?oc=5",
-        "source": "Google News",
-        "published": "2026-09-26T14:10:13+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "AAPL": [
       {
-        "title": "Why Did AAPL, KO, PM Stocks Jump To 52-Week Highs Today? - Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOd05EdVdDNjBwZlZIeXJjcEVJTXFNNXctemw1RDRmWjR4Q2JVNlNQVVR4MGptVXIzRWYzYnNQck5UN0tGQlRxUmhpLWJSLVNnYlVYTkZvTDUtZWZRRnNIMGxmMUFtXzNQODRXUzRuVlFxbkltN0VDbDBQUWRfZDBZQWVfbU16XzRfTUVoa0hnYk9UUllxS25mN3VRa291QzlhLWJiVjE2RVJoUm1PN0U0Rk04c3B6Tzhx?oc=5",
-        "source": "Google News",
-        "published": "2026-09-27T09:48:17+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "AAPL Stock Tops Nasdaq’s Modest Gains: Analyst Says Siri Finally Shows ‘AI Chops’ In iOS 27 Beta - Stocktwits",
+        "title": "AAPL Stock Tops Nasdaq’s Modest Gains: Analyst Says Siri Finally Shows ‘AI Chops’ In iOS 27 Beta - stocktwits.com",
         "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNMl9pSUo1Z2w0eUVkR3Zfc3VoNllNck91Qy1xTlZ0MDY0OFZocHUtWDNwbVVxUHdxSTc1UjVaTGZMVDNfTUJ6cWZrNWZRdTh0bGd3NmdmNG5rcFhVZmVzRkYwNU5weVQxRzM4M3JOblRobm5zOUhnR1BFNE9MY242aFpSSFlnYV9Zck04MzdjOV9IeDk5REVIOTV4eHk5VlhEQmE3UEdUSHdENHQxTTM2WVpmSzJXWEhUNVF3ekxYTWhoek56TG9Rc3lidG5YTmRqOFBoa19iaVBsaFRRcDBPTndqOTlKUVpPWllVZHdITQ?oc=5",
         "source": "Google News",
         "published": "2026-09-26T23:26:56+00:00",
@@ -314,7 +306,7 @@
         "unconfirmed": false
       },
       {
-        "title": "Apple WWDC 2026: AAPL Stock Slips As Lack Of Launch Deadline For Siri AI Spooks Retail Investors - Stocktwits",
+        "title": "Apple WWDC 2026: AAPL Stock Slips As Lack Of Launch Deadline For Siri AI Spooks Retail Investors - stocktwits.com",
         "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPTXZ4SGdnTl9jcWotM2hKTlVYYkpDS1FLWHNaQWdYNG43ejhsMnNlbW5panh6aTdEUjBRMXJkVWhyZHZUd25MVXV0WFl1Wmk1Z2ZuY09RcEYyUllzbVg3QTU5QnVuSUhubFJPZnQ4LXJkLWZBYzdPWFM5SHEyQktadXFpa2ZHR0loYWRDcklYSllDYXV5bnJhNEtyOW1jYjZUc2FjTDZBSzJGTng5cDNLT1hrUWYwR0pWdUpoeHMwMHJ4aGY1dTBFbnk5ODhOV1U0bHRmQlpmZVNza19Gd291VTRheThuTkFLelB4R1pwNlc?oc=5",
         "source": "Google News",
         "published": "2026-09-26T21:07:30+00:00",
@@ -322,7 +314,7 @@
         "unconfirmed": false
       },
       {
-        "title": "AAPL Stock On-Track For Worst Week In Four Months — Mac, iPad Price Hikes Spurs Demand, Margins Debate - Stocktwits",
+        "title": "AAPL Stock On-Track For Worst Week In Four Months — Mac, iPad Price Hikes Spurs Demand, Margins Debate - stocktwits.com",
         "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUkRmdnNsOUVzclZjVmZzMmxJOFBSN2ctcFpvM1RQd2IxS0hQbG5WYVR4MHREVVRBbHBweS1pdzZSWDNoSVZlZ2hqcEJQRGZJOFpHdUVBY0dBYWpjekpZMjBSMHlzVURJcDlSN3RNNzRjQW9TQVd1WjRkRG5GcWZqVWp5N1d1c2hiOEdRN0NBelNtSDVreElVMXIzcnFBVjNQTDI4bF9jUzE2VmJrNVZMSXhoZnBZUkFqcFU0cHlmaUtjMjVRZlIzVDZ0cHpOR2RqS0FtVDh3c0VZcS0tNEFKMjE3T2JqOHNfOERwSGtkenNIWWhzUXc?oc=5",
         "source": "Google News",
         "published": "2026-09-26T16:17:22+00:00",
@@ -336,6 +328,14 @@
         "published": "2026-09-26T14:00:02+00:00",
         "kind": "rumor",
         "unconfirmed": false
+      },
+      {
+        "title": "Apple (AAPL) Stock Price, Quote & Analysis - TipRanks",
+        "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBxRkRfV2h3RjY5R2lPc2JObHdsS3BWand3TVZDQzZNbF9yOTZuQmY0cVl6bnQtMG1ocGpSYmZwUDBuX0k4dGtROXB5Vmc?oc=5",
+        "source": "Google News",
+        "published": "2026-09-26T04:14:55+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
       }
     ],
     "IBM": [
@@ -348,7 +348,7 @@
         "unconfirmed": false
       },
       {
-        "title": "IBM’s Dividend Survived the Old IBM. Can It Survive the New One? - 247wallst.com",
+        "title": "IBM’s Dividend Survived the Old IBM. Can It Survive the New One? - 24/7 Wall St.",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdENFTUkyVXVmclRPLUp4LW4wT09hd0NpNG0zQU5JZmRIMDgtY2w5Znkzb1VMZUVqOTNGYk12ZmsxYjVYTkxyUEYyeXh3aWRmUXpVU05uUW9BMUNyZ2RrbmFiM3FIZTdNNXF2RFVpZm42UzloaVdwQUk1ME9HR1dSdWVfLVVVeUprc1g4VXNlT3BrNUlkWHJDeWNzdGNaeXV2eFpnZTdzTlc?oc=5",
         "source": "Google News",
         "published": "2026-09-27T18:20:00+00:00",
@@ -364,7 +364,7 @@
         "unconfirmed": false
       },
       {
-        "title": "IBM Joins Swift's 17-Bank Pilot, Skipping The Cloud For On-Premises Crypto Infrastructure - Stocktwits",
+        "title": "IBM Joins Swift's 17-Bank Pilot, Skipping The Cloud For On-Premises Crypto Infrastructure - stocktwits.com",
         "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZzRoU2w2djlaOUhsTkpMV01yVDdZbzdlV0dEdUdwR0NnSUNlMFdHcXpXNGxlcFVmUldTQVY0X1dGN0g0bFROWjJZeGFhMXJLM1pSa1ZDZEEwQWR0YU9xTEV4WDMyUTJQM0R4NFFpQnpDVjJfWU9GOUhaUThCZnBLeHJKOEc5NmRVdEtzeVpackdVdHBXRk0tOGtfYU44Y3czOF96eDRYUXBiRkY3ZmN6UFI4Zlo1RDNHU016aFZJc2QwbloxSDJGaTdTd1BxUk1yQzN3WXVuSUM4QTk0R2d4ZG1jOUJUYU0?oc=5",
         "source": "Google News",
         "published": "2026-09-27T10:04:50+00:00",
@@ -406,7 +406,7 @@
         "unconfirmed": false
       },
       {
-        "title": "Is Texas Pacific Land Stock Underperforming the Nasdaq? - inkl",
+        "title": "Is Texas Pacific Land Stock Underperforming the Nasdaq? - inkl.com",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVmJBNXB6SE81WDNCR3NFSkU2MVRTMGtQN1B4dHFsWVRMal9MVDM3bTZHcnBtRUJJTldSMXpYOWhxdUZiSUtvT1dCc21WeVd5Tk51NEtrMndXRnFlNTdHbmxULUd0dEVzb2F4UjdhUjlGRjJIRGpEYkZSNFRrdUdCSHNrYWM1eVhJNHFQQ05IcnhHWUE?oc=5",
         "source": "Google News",
         "published": "2026-09-25T16:07:08+00:00",
@@ -423,6 +423,22 @@
       }
     ],
     "WMT": [
+      {
+        "title": "Is the Beauty Aisle Becoming Retail’s Next Big Battleground for Walmart (WMT) and Ulta (ULTA)? - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZVlIMmpxUkJCc0tuclE0bHhQcmZVLUdHUXA2bzFnd2g1Sk1rSDl4bzNMYnBwblA4eENHQlEtOHM5M1RxcFk1SHpKU05kVVlITTBEVjh0R0VmMDR6bEJ4N056NVpmTS1TSEFFb0ZVV0VKUnJyTU5yTnY5MkFpekZBWkJrRnFESWRuNUJyeDBVRUhpUldkTW14R2c0NzNDSzg?oc=5",
+        "source": "Google News",
+        "published": "2026-09-28T01:07:00+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "Walmart To Settle $100 Million Judgment After FTC Accuses Company Of Withholding Tips For Delivery Drivers - stocktwits.com",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRktNY3RMQWl3cWhnTU9maEJLNHlMZ1U1LU8zVTNwaGxOVnAwRUItWl9jeXZaS3Y5ckVpNXduRmZ3TmtSSUNCbTJRdkRKdWd0VFFvbzBsTExTTENaX3ZnTWNzR285RlcxMnZRRHk4REpaaHBNalRhclc2Q2RyaEg5cXo4QUhIY0JnRzZoY19nUnlvb0hrVERPbWRQc0NocTFrTTktZ0RuZUZBRTVhVGI5dFVJcFY3cWRkLVpDQQ?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T17:12:51+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
       {
         "title": "Walmart’s CEO Ruled Out Personalized Pricing. Here’s Where the Stock Could Go - Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZl9XUnhNMjJYdGtieHVZbHFqd3Vhd1BHeDhYRkJlay1mNEVLMWk5M0syOV94ZDlrV2c1MUZBdGU4cnNQTUlHRWFfRElKR2NxSGZzSkJuYmh3QW1MM1FDSkdPN2pkOFIwVGM5VGhUMFBtZ211NTJnWkxaX0s5Z3hrN09Dc3BUd1dhTXhfbGhpYVB1LVNyc3dmTVNPdVRKeU81TzRUMDJ3?oc=5",
@@ -446,39 +462,23 @@
         "published": "2026-09-27T04:13:00+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "WMT Stock Rises Premarket: Analyst Says Walmart's Vibe.co Deal Strengthens Advertising Push - Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSlNaV2w0ODZWaFlWRTBaOXo0enVQV0VNWjlYc3ZPTy00SjhDaUE2XzlRa29mbU1wejBWcnBrdkVha19xMEdPTmxRUWllTkR3ekdHMThnN1dpc1h4ME9mYUxTY1JfdEcwejB0eWxvN01hUWJvTWs2NDlNYnpMSnZjaVdEZDU3ZERnQzB2UmNKZ0lkbjlicGp0Z1lwc3pPc3JUYjB0aUJ3REluUzZmR2lHUl9wUnFPeTRmbWtuM1N3LUZsNEk3b201RnE1YjljemtJVFJMZ1NXdVZ0VURhNG5Na181cUxMZU9VZnc?oc=5",
-        "source": "Google News",
-        "published": "2026-09-27T01:34:28+00:00",
-        "kind": "analista",
-        "unconfirmed": false
-      },
-      {
-        "title": "WMT Stock Sinks To Near Eight-Month Low — Cleveland Research Flags Slowing Sales - Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOQzJlR2Vhd0ExcjZuVTczNDlPc3BOdzdXaC1aM1p3V2UzOUxmVm5UNTJBTkZxeGdWTmZDa3BPVG1NbjE5bENHejBMR2NfalZCZW5hZWNLaENHa0dSZ252WmRQYWpZemxDNUxMM2dJMDZOcE1UZ2ZsWG9qNTZESUFpdU1OSEtSVDZtenJLZHhjMHhqQng5UGR6bmlNUHFWZnZoLXFQSEs3emNwdWdUbmR6OEZsN1B2VmoyXzNjaHk3aGlGRzlEOHJ4MWczZnhrZmZqWTNtQTBzNFRyQQ?oc=5",
-        "source": "Google News",
-        "published": "2026-09-27T00:08:09+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "CVX": [
       {
-        "title": "XOM, CVX Are Already Up More Than 25% This Year — One Analyst Thinks There's Still More To Come For Big Oil - Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPU01OZUw1V0d6dENUTVN1a2JjanFzZ1VIdENxejdKbjBteW0zellnOTAzUWpOR2VKSC1zdlVyRmVLYVdZRjJSR042SHdxdzE4MzlkV0lSVFVlR3pYeUJ0d1g3T1V0QXhOaTY0NmhaWnJieVpnUW1QYXhFeExGOFREXzVtblRQWjlCdWt0UUxqZWE4U19UUmVwVXRLVjYyOWpYYWctUEdKOFRsNzVzUWEtRVlSOEVxQ05QcHR0YTZxTVREVC05RXZibTBoZnRMcDRQYnhjNzhTajdEUVRsRVJaV1RhdnZ2RDRVVnZPbXd2N3JrcFhYdXB1UGxJVQ?oc=5",
+        "title": "HSBC sets new Chevron price target amid Iran tensions - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOX1NCaE4yVHR4dExYRjJxX1ZqQ19nTmMydXFOemFpR0hocTlIYTh6WWpYTkVnNlBVQTBCWnd0TGlMd1NKUG1KTXFxcFdoM2M1eWZySklGdlNLYzNNX2lZOU1OVHVfY3pSbnJnYl9GMnZOTmgxaUd6cGpZUjRmNFJMNHhIc21CbFhSOG1zVHNGbWs?oc=5",
         "source": "Google News",
-        "published": "2026-09-27T02:28:01+00:00",
+        "published": "2026-09-27T23:37:00+00:00",
         "kind": "analista",
         "unconfirmed": false
       },
       {
-        "title": "BATL, CVX, XOM Stocks Rise As Brent Crude Tops $100 – Trump Threatens Iran With 'Major Military Punishment' After Houthi Attack On Saudi Ships - Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOVkM0VVBEZHJ0R2EzcGNvd3lWT0pneTNXSHVtajZYcUJldW9zLXhhakJDdlpXZ0V6LTc3UlVrNlNhZG5JQTY4eXQzRi0tSVlVUlRhLTZIU2gwcnNmVUY0YkJvZ0xIV3pxejJoeVd6OXNQdm1GQ2lfNWJtSHhLcV9lQ21MOV85UHk1dG9JeXRFaEwyYUlKZk9LQzJybkVFejNiNFFMQ25lZHZOZ0x0cnR3Nmk1TGtlLURXcDJfNzZTUGFQcU90Zkh6N2xBc3E5Tm0yeDBCZ3Zub2ZIX2E3ZG03bFd0d05qYklWX28tQ0VXNDQ0VEJzb2lKSWFYdjI4dE8xMTFYWDlMRGo1cDRKRmlxMGltN2tqWmg1ZzMyNmQ1TFRsQnhKcnc?oc=5",
+        "title": "XOM, CVX Are Already Up More Than 25% This Year — One Analyst Thinks There's Still More To Come For Big Oil - stocktwits.com",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPU01OZUw1V0d6dENUTVN1a2JjanFzZ1VIdENxejdKbjBteW0zellnOTAzUWpOR2VKSC1zdlVyRmVLYVdZRjJSR042SHdxdzE4MzlkV0lSVFVlR3pYeUJ0d1g3T1V0QXhOaTY0NmhaWnJieVpnUW1QYXhFeExGOFREXzVtblRQWjlCdWt0UUxqZWE4U19UUmVwVXRLVjYyOWpYYWctUEdKOFRsNzVzUWEtRVlSOEVxQ05QcHR0YTZxTVREVC05RXZibTBoZnRMcDRQYnhjNzhTajdEUVRsRVJaV1RhdnZ2RDRVVnZPbXd2N3JrcFhYdXB1UGxJVQ?oc=5",
         "source": "Google News",
-        "published": "2026-09-27T00:06:31+00:00",
-        "kind": "hecho",
+        "published": "2026-09-27T02:28:01+00:00",
+        "kind": "analista",
         "unconfirmed": false
       },
       {
@@ -490,7 +490,7 @@
         "unconfirmed": false
       },
       {
-        "title": "Own 141 Shares of Chevron (CVX) and Collect $1,000 a Year in Dividends - 247wallst.com",
+        "title": "Own 141 Shares of Chevron (CVX) and Collect $1,000 a Year in Dividends - 24/7 Wall St.",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUHRTZmtNU0hMTk50TFpEREk3aFMzMFVNdWFiOGZWVXFrSWxSdjBVWVEwZTJyWHBUTWNobXNKWGlfRGRJdlJ4dG9QbGRiWkRld0VZVWN2Z08yRTd4LVV3dk9Sc01nRDJzRUtpQUxpMXNCRU9MQ0Z4QmZxdzk2WFhuODZFR2FwaGlRTTRKajZIVE9XMDl6dEJjSHo2Y3lvbUxUWUpGSVlRQ3U2OHo0NjRr?oc=5",
         "source": "Google News",
         "published": "2026-09-26T14:00:00+00:00",
@@ -508,49 +508,49 @@
     ],
     "QQQ": [
       {
+        "title": "QQQ Nov 2026 735.000 put (QQQ261106P00735000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE02NmgwX3RNN0xIQ3FIRXZWTDhNeFpVRllkNXRQWGN2N08zVExBVWxZNVZmRE5UVW15YS0tcGljMTRhWHlWLUd4OEZfZ2hHQ0tiQjRxOXUwVmVVR2FMOHZTOXZFeTM?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T22:50:31+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "QQQ Nov 2026 500.000 put (QQQ261106P00500000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBuc1Fic3dBRzRfTzlQZkZEOXVRWmFxLWx1YWRXQmxYTTVaci02RXBvd0JEcXk4bVlGUXVVWVFudTB0Sm43NEN4dy1aMkFiVDFTQk54N2xBS2syZ2Z5VFc2S1V3MWk?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T21:26:19+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "QQQ Oct 2026 740.000 call (QQQ261007C00740000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5zM1R5RFE0WExaT3BtTXBBRzlmYWFwcTdlZ2FudUp3TmN5SDllWXBVNnFrSjVYbDFzR0g0LUVvRWZfdzk0NzRsSUFOMGo5NVUzZFlURlNaZ0hiQmtvYlhGOTdSY0s?oc=5",
+        "source": "Google News",
+        "published": "2026-09-27T20:12:27+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "QQQ Sep 2026 735.000 put (QQQ260929P00735000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9oa3U2bUhqQUJXYzZTUU5GaUVpaUdkN2hFNUdBUTgyY1JIN2RlaHAtenVYZWZ2dklseUVpdUF0S291TU1xYl9LVTJTWi1mLVMwQ29BcGFsX25yQWc3d1dvNllTZzk?oc=5",
+        "source": "Google News",
+        "published": "2026-09-26T21:55:21+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
         "title": "QQQ Sep 2026 764.000 call (QQQ260928C00764000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
         "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0yaVdwcTFoLXBVeC1ya1BGSmVpMFZLOGNxVnFVWWcwdEU5ejFGNGRFOHZfV2h4SDV2b2FOZm1ZaGVTZ2pCTDVZcmJhM0F4c1VlQzZabHVXdXUzNkMxRXpGUHBRMGg?oc=5",
         "source": "Google News",
         "published": "2026-09-26T00:56:01+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "QQQ Sep 2026 815.000 call (QQQ260928C00815000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBfa0EzYXk2SWJvME5tUG01X3Uzdktyd1hOZ0hpY2NMUmZSc280ZEJGeFNmSTh5RUp0akpOQzVzajVmck55cHVOOFBOMWpudkFTdXVfWkZKaWRHd3l6YnB2S2J1UFY?oc=5",
-        "source": "Google News",
-        "published": "2026-09-26T00:53:40+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "VGT vs. QQQ: Where Should You Invest $1,000 Right Now for Maximum Long-Term Growth? - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVVVhS0x3eU1FSkU4WDh5UnJRbXJxQkI4UlNta0ZGR3VMc3VITENkSExUUERUNzdXdVk2Q25LN3UwWGhoM0V5QTgtbUV1ek5sSHlFTG5lSWp0OHpfUUwyNFI4S2l2QlZHSHJvN2Z3a1d5NUFudk51bWs3LTExTEdWbExkVUlkUXJNdU9yQ196OHF3dw?oc=5",
-        "source": "Google News",
-        "published": "2026-09-25T15:05:00+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "QQQ Sep 2026 655.000 put (QQQ260929P00655000) stock price, news, quote and history - Yahoo Finance UK",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9JQV9vdk5feWZqdFFtNlk2VkFYWmZROXZUX0lpMmNsd1lTZXZybW1vUlFzcnVoVXl5WENuaEktZlNiRUE3Qkx6Q3N3SUlYRUxmTHlpaVhuRUxLVWRBbFVPZzQ1dnk?oc=5",
-        "source": "Google News",
-        "published": "2026-09-25T06:36:49+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "QQQ 260925 742.00P (QQQ260925P742000) Stock Options Chain | Quotes & News - Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5kS3psaWNCSWQtcUFWY21YME5TWUszcWZqY1RjbFV3cjRpZ2pjeHRLSFQ5cVdTa0ZoYXFXM284djU5enNMSGlqeHFac2RMNEczWGZwRnNkRkdCS1RPdWlN?oc=5",
-        "source": "Google News",
-        "published": "2026-09-25T05:33:26+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "VOO": [
       {
-        "title": "Is VOO Near an All-Time High a Better Buy Than Lululemon Stock Trading Under $105 Per Share? - Currently.com",
+        "title": "Is VOO Near an All-Time High a Better Buy Than Lululemon Stock Trading Under $105 Per Share? - currently.att.yahoo.com",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTnZrQUVoWnlWYm9KWEFZaVZLODdGRkVGckZqZEdaTURqTXo2VjhKZU5ZdE52X2pvVGthSVJoTk80ejFCa1F0YVJyLUIzb3QtaTFHejdsRExHakJXSm91ajZNeVN1aHNvbHNobk55Q3RDNEZpUDNMRUhVaEh6QlZLOWVR?oc=5",
         "source": "Google News",
         "published": "2026-09-27T17:38:00+00:00",
@@ -616,7 +616,7 @@
         "unconfirmed": false
       },
       {
-        "title": "North American Gold ETF Buying Jumped From $71 Million to $7.7 Billion in One Month. Can GLDM Hold Up? - 247wallst.com",
+        "title": "North American Gold ETF Buying Jumped From $71 Million to $7.7 Billion in One Month. Can GLDM Hold Up? - 24/7 Wall St.",
         "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOYVNhbUFERE4tV1gtb3ZVM3F3X0U0Um8tczFYT2hHMjBmUU9VNFV1Zl92UzhDLUt4X2lybVFIMHlYVnRLbVpYSUdSVTVYS0ZkRWxIQVJHY096cVVvb3N5LWhiQkZieGN2dmlPc29sdzF6OXlRdk9PSDFSNEEwaTdFaEZsVFoxaDk3YkxkOHFTSm5aZEtQc2RfNC13UzRxYnluMmZTenFWckpjSUZKUDBvVDhOLS1TUUQwOUUxbFhfYmUxeU1MdU1fbkxuTGN6Q3Y1MU54VFp5ZU5odlFFLTFZ?oc=5",
         "source": "Google News",
         "published": "2026-09-17T07:00:00+00:00",
@@ -635,6 +635,64 @@
   },
   "mercado": [
     {
+      "title": "Falling Oil Could Trigger a 10% Stock Market Rally, Says Wall Street Strategist - BeInCrypto",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OSHV4Rzc5dzRjWEhSWWM4SnZLS1d1cVhjWHNEZ2FseG9RXzBmMjNXWEpwWXkxeDVnZ1R2Y0RaV1FnLXhiVUdmdTJmamY5T0RNU3hoSk9fSEd1aGZHSm02RHhFY1pvZzA1aEE?oc=5",
+      "source": "Google News · mercado",
+      "tags": [
+        "macro",
+        "politica"
+      ],
+      "published": "2026-09-28T00:25:00+00:00",
+      "kind": "rumor",
+      "unconfirmed": false
+    },
+    {
+      "title": "What Fed’s rate hike means for gold, the rupee and Indian markets - Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcUE4dm1lUjdIUnNCeXJUT2l2VkJhX2V4QjlhZVI1YjgtRDM2ejB0V0JmbG1tUk5HWkFadW1zSzY3bjFjWE1QeDNUTUFhMTRZRndaT2ZEeEZlMW0zSnB5YkZxVXhLME02WGtxN2RtSlpRYnRLOWN4NDZNMUMxb1VtckxkeWJMWG9ka3ZaMi1XcnhmRWdBWER5ZXQwcnZiSTVEQ25WVXhGeVgteFBjMkVRX18tQ0FZWGNwbXhqUnFB0gG-AUFVX3lxTE1xQTh2bWVSN0hSc0J5clRPaXZWQmFfZXhCOWFlUjViOC1EMzZ6MHRXQmZsbW1STkdaQVp1bXNLNjduMWNYTVB4M1RNQWExNFlGd1pPZkR4RmUxbTNKcHliRnFVeEswTTZYa3E3ZG1KWlFidEs5Y3g0Nk0xQzFvVW1yTGR5YkxYb2RrdloyLVdyeGZFZ0FYRHlldDBydmJJNURDblZVeEZ5WC14UGMyRVFfXy1DQVlYY3BteGpScUE?oc=5",
+      "source": "Google News · mercado",
+      "tags": [
+        "macro",
+        "politica"
+      ],
+      "published": "2026-09-27T23:33:00+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
+      "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "tags": [
+        "mercado"
+      ],
+      "published": "2026-09-27T22:00:00+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
+      "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "tags": [
+        "mercado"
+      ],
+      "published": "2026-09-27T21:45:00+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "Why I'd Still Buy This 10%-Yielding Dividend Stock After the Fed's Latest Hike - The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSkhnZHFucVYwREdLdHYwUkRuWk5YN01kSGhZOXRHX1ptWm5ZR3RDLTVQWlpETTVNcXlIbDFmQ2Y5NjlIRHI0a0thcVVkWkFCd3FabWlzNzJMSk54eWZaVk9QZ2l6dkZDVldBRDRHUEJsQjd2UHBTU2V4YUN0WnlkQ1pZMGZmSVNyam90YmdpcHdqRlRmZGQ0X0JBSW1KQ2tOdUw3RXZ4aFpabEgycnFTWUtBbkxrdmRjd2RYcQ?oc=5",
+      "source": "Google News · mercado",
+      "tags": [
+        "macro",
+        "politica"
+      ],
+      "published": "2026-09-27T20:34:00+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
       "title": "A ‘death cross’ is coming for the dollar. Why Trump will be happy.",
       "url": "https://www.marketwatch.com/story/a-death-cross-is-coming-for-the-dollar-why-trump-will-be-happy-0766303d?mod=mw_rss_topstories",
       "source": "MarketWatch",
@@ -646,24 +704,13 @@
       "unconfirmed": false
     },
     {
-      "title": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
-      "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
-      "source": "MarketWatch",
+      "title": "The AI Data Center Boom Faces a New Reality Check - Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQmxTbHBUaWtQeTJJbUVGUjZqaE1GZHJtMFNRV3BqS180WVl3UU1qc2sxRXpncFljNlFXTjdJUVhmNHo5RnljQW1kOG9Lbjg2WmdZdDFHdHF4dUNhUFgtRGpzMi00MVQtekJGLU5aX0VkZFNMRFBiWXVHWF92M1QxOFFwaVRJYWtvUVJZMS13TnhIX1JJUl9RUkJYM1VWNkN6TVdJ0gGjAUFVX3lxTE1CbFNscFRpa1B5MkltRUZSNmpoTUZkcm0wU1FXcGpLXzRZWXdRTWpzazFFemdwWWM2UVdON0lRWGY0ejlGeWNBbWQ4b0tuODZaZ1l0MUd0cXh1Q2FQWC1EanMyLTQxVC16QkYtTlpfRWRkU0xEUGJZdUdYX3YzVDE4UXBpVElha29RUlkxLXdOeEhfUklSX1FSQlgzVVY2Q3pNV0k?oc=5",
+      "source": "Google News · IA y semis",
       "tags": [
-        "mercado"
+        "capex-ia"
       ],
-      "published": "2026-09-27T18:45:00+00:00",
-      "kind": "hecho",
-      "unconfirmed": false
-    },
-    {
-      "title": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
-      "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-09-27T18:30:00+00:00",
+      "published": "2026-09-27T17:00:00+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
@@ -719,52 +766,6 @@
         "mercado"
       ],
       "published": "2026-09-27T15:00:00+00:00",
-      "kind": "hecho",
-      "unconfirmed": false
-    },
-    {
-      "title": "Micron could dethrone Nvidia and become the biggest driver of S&P 500 profit growth",
-      "url": "https://www.marketwatch.com/story/micron-could-dethrone-nvidia-and-become-the-biggest-driver-of-s-p-500-profit-growth-d62e0e68?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-09-27T14:00:00+00:00",
-      "kind": "rumor",
-      "unconfirmed": false
-    },
-    {
-      "title": "Dow Jones Futures Prediction: Wall Street Outlook For Monday, September 28; Check Dow Futures, Key Market Factors & Latest US Stock Market Update - The Sunday Guardian",
-      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNZGU1cGJyTWU4SWU0ajJYZWNJcm1pdEFaMUx4eGNxdklyVnlleUxWSmRPMDdPMDFCSVg2eFE0NEpreHNsRGQ0aTBfS0Z2VERwSDNBMHR3NGtQYmFxSEVoQklHanExeDlPclZDRTBYZjVpQ1hGWk1XWFZkV1hYaHFXdDB4ZzRjcGpRaTZJZVdhOEh6ZTBZV3dMMFozSzI3Wk1XMEkzS3Y3VlBRTGttTUtnTGFibmRELUEtVXhabHdvallFeFdWbTRJeHN1M3UxckhBZ3NLb2ZFTkpyY0RzOFlKazZEZWFrTDM0UEhhUC1peHYxWk44aW11M1BHSFdIMDJJX3A4ejZHVmlrSDUwU1RreFJFOS1tOXRSTV840gGbAkFVX3lxTE1kZTVwYnJNZThJZTRqMlhlY0lybWl0QVoxTHh4Y3F2SXJWeWV5TFZKZE8wN08wMUJJWDZ4UTQ0Smt4c2xEZDRpMF9LRnZURHBIM0EwdHc0a1BiYXFIRWhCSUdqcTF4OU9yVkNFMFhmNWlDWEZaTVdYVmRXWFhocVd0MHhnNGNwalFpNkllV2E4SHplMFlXd0wwWjNLMjdaTVcwSTNLdjdWUFFMa21NS2dMYWJuZEQtQS1VeFpsd29qWUV4V1ZtNEl4c3UzdTFySEFnc0tvZkVOSnJjRHM4WUprNkRlYWtMMzRQSGFQLWl4djFaTjhpbXUzUEdIV0gwMklfcDh6NkdWaWtINTBTVGt4UkU5LW05dFJNXzg?oc=5",
-      "source": "Google News · mercado",
-      "tags": [
-        "macro",
-        "politica"
-      ],
-      "published": "2026-09-27T13:25:01+00:00",
-      "kind": "resultados",
-      "unconfirmed": false
-    },
-    {
-      "title": "Look closer, and Wall Street’s rally is showing cracks",
-      "url": "https://www.marketwatch.com/story/look-closer-and-wall-streets-rally-is-showing-cracks-94952048?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-09-27T13:00:00+00:00",
-      "kind": "hecho",
-      "unconfirmed": false
-    },
-    {
-      "title": "US Stock Market This Week - 2026-09-28 - TradingKey",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRE9WaVR0cnFvWV9tSEVHUkZVaTRna09fMVdweV80dDBqLUZ5WDRlX0RIQUlfWlVSaGw3NHZJMV81R0xVdnIwT29JME5vSmt0LVhlOC1UTTRkeks5eHI2cHBxS0U1NXBSQ1c3d1ZMX3BRSHhreFpkY0g2cm5zZ2lZc1NwMHFyWm9w?oc=5",
-      "source": "Google News · mercado",
-      "tags": [
-        "macro",
-        "politica"
-      ],
-      "published": "2026-09-27T10:48:50+00:00",
       "kind": "hecho",
       "unconfirmed": false
     }
@@ -903,7 +904,8 @@
     "cal:2026-11-05": "ok",
     "cal:2026-11-06": "ok",
     "cal:2026-11-09": "ok",
-    "cal:2026-11-10": "ok"
+    "cal:2026-11-10": "ok",
+    "cal:2026-11-11": "ok"
   },
   "aviso": "Las etiquetas (hecho, rumor, analista, resultados, producto) se asignan con reglas sobre el titular, no leyendo la noticia. Son una ayuda para ordenar, no una verificacion.",
   "errores": []
