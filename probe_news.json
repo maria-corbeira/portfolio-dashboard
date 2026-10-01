@@ -7,19 +7,19 @@
   },
   "google_ticker": {
     "status": 200,
-    "bytes": 131712,
+    "bytes": 128622,
     "items": 100,
     "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"NVDA stock when:30d\" - Google News</title><link>https://news.google.com/search?q=NVDA+stock+when:30d&amp;hl=en-US&amp;gl=US&amp;ceid=US"
   },
   "google_mercado": {
     "status": 200,
-    "bytes": 133143,
+    "bytes": 132878,
     "items": 100,
     "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"stock market when:3d\" - Google News</title><link>https://news.google.com/search?q=stock+market+when:3d&amp;hl=en-US&amp;gl=US&amp;ceid="
   },
   "marketwatch": {
     "status": 200,
-    "bytes": 8061,
+    "bytes": 8021,
     "items": 10,
     "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:media=\"http://search.yahoo.com/mrss/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" version=\"2.0\"\n>\n<channel>\n<title>MarketWatch.com - Top Stories</title>\n<description>MarketWatch, a leading publ"
   },
@@ -31,7 +31,7 @@
   },
   "fed_prensa": {
     "status": 200,
-    "bytes": 14491,
+    "bytes": 14678,
     "items": 20,
     "muestra": "﻿<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<rss version=\"2.0\">\r\n    <channel>\r\n        <title>FRB: Press Release - All Releases</title>\r\n        <link><![CDATA[https://www.federalreserve.gov/feeds/feeds.htm]]></link>\r\n        <description><![CDATA[All recent press releases from the Federal Reserve "
   },
@@ -55,9 +55,9 @@
   },
   "nasdaq_movers": {
     "status": 200,
-    "bytes": 18325,
+    "bytes": 18071,
     "items": 0,
-    "muestra": "{\"data\":{\"STOCKS\":{\"MostActiveByShareVolume\":{\"dataAsOf\":\"Data as of Sep 29, 2026 4:15 PM ET\",\"lastTradeTimestamp\":\"Sep 29, 2026 4:15 PM ET\",\"table\":{\"asOf\":null,\"headers\":{\"symbol\":\"Symbol\",\"name\":\"Name\",\"lastSalePrice\":\"Last\",\"lastSaleChange\":\"Change\",\"change\":\"Share Volume\"},\"rows\":[{\"symbol\":\"SL"
+    "muestra": "{\"data\":{\"STOCKS\":{\"MostActiveByShareVolume\":{\"dataAsOf\":\"Data as of Oct 1, 2026 4:15 PM ET\",\"lastTradeTimestamp\":\"Oct 1, 2026 4:15 PM ET\",\"table\":{\"asOf\":null,\"headers\":{\"symbol\":\"Symbol\",\"name\":\"Name\",\"lastSalePrice\":\"Last\",\"lastSaleChange\":\"Change\",\"change\":\"Share Volume\"},\"rows\":[{\"symbol\":\"GNS\""
   },
   "yahoo_gainers": {
     "status": 429,
