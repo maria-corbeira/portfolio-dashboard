@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T21:25:03+00:00",
+  "generated_at": "2026-10-01T00:38:29+00:00",
   "count": 22,
   "failed": [],
   "prices": {
@@ -182,197 +182,192 @@
   },
   "indicadores": {
     "NVDA": {
-      "sesiones": 19,
-      "var_1d": 0.51,
-      "var_5d": 1.27,
-      "rsi_14": 63.7,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": 1.69,
+      "rsi_14": 63.8,
       "ma_200": null,
       "vs_ma200": null
     },
     "MSFT": {
-      "sesiones": 19,
-      "var_1d": 0.77,
-      "var_5d": 2.46,
-      "rsi_14": 62.0,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": 3.01,
+      "rsi_14": 60.5,
       "ma_200": null,
       "vs_ma200": null
     },
     "GOOGL": {
-      "sesiones": 19,
-      "var_1d": 0.93,
-      "var_5d": 1.85,
-      "rsi_14": 58.9,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": 0.5,
+      "rsi_14": 54.7,
       "ma_200": null,
       "vs_ma200": null
     },
     "META": {
-      "sesiones": 19,
-      "var_1d": -1.84,
-      "var_5d": -2.54,
-      "rsi_14": 64.7,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -6.74,
+      "rsi_14": 64.2,
       "ma_200": null,
       "vs_ma200": null
     },
     "ISRG": {
-      "sesiones": 19,
-      "var_1d": -1.35,
-      "var_5d": 2.09,
-      "rsi_14": 82.2,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": 1.78,
+      "rsi_14": 79.8,
       "ma_200": null,
       "vs_ma200": null
     },
     "UBER": {
-      "sesiones": 19,
-      "var_1d": -1.23,
-      "var_5d": -1.31,
-      "rsi_14": 29.4,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -1.03,
+      "rsi_14": 32.4,
       "ma_200": null,
       "vs_ma200": null
     },
     "AMZN": {
-      "sesiones": 19,
-      "var_1d": 1.01,
-      "var_5d": -0.05,
-      "rsi_14": 46.9,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -0.09,
+      "rsi_14": 40.3,
       "ma_200": null,
       "vs_ma200": null
     },
     "AAPL": {
-      "sesiones": 19,
-      "var_1d": 1.1,
-      "var_5d": -1.19,
-      "rsi_14": 57.6,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -0.86,
+      "rsi_14": 51.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "IBM": {
-      "sesiones": 19,
-      "var_1d": -0.03,
-      "var_5d": -5.51,
-      "rsi_14": 36.5,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -3.14,
+      "rsi_14": 22.8,
       "ma_200": null,
       "vs_ma200": null
     },
     "COP": {
-      "sesiones": 19,
-      "var_1d": -0.23,
-      "var_5d": -2.3,
-      "rsi_14": 30.8,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -3.24,
+      "rsi_14": 30.1,
       "ma_200": null,
       "vs_ma200": null
     },
     "WMT": {
-      "sesiones": 19,
-      "var_1d": -2.7,
-      "var_5d": -5.98,
-      "rsi_14": 45.1,
-      "ma_200": null,
-      "vs_ma200": null
-    },
-    "CVX": {
-      "sesiones": 19,
-      "var_1d": -0.08,
-      "var_5d": -0.63,
-      "rsi_14": 36.9,
-      "ma_200": null,
-      "vs_ma200": null
-    },
-    "QQQ": {
-      "sesiones": 19,
-      "var_1d": 0.25,
-      "var_5d": -0.19,
-      "rsi_14": 69.3,
-      "ma_200": null,
-      "vs_ma200": null
-    },
-    "VOO": {
-      "sesiones": 19,
-      "var_1d": -0.23,
-      "var_5d": -0.95,
-      "rsi_14": 53.9,
-      "ma_200": null,
-      "vs_ma200": null
-    },
-    "IAUM": {
-      "sesiones": 19,
-      "var_1d": -0.48,
-      "var_5d": -2.95,
-      "rsi_14": 36.8,
-      "ma_200": null,
-      "vs_ma200": null
-    },
-    "PGR": {
-      "sesiones": 19,
-      "var_1d": -1.52,
-      "var_5d": 2.06,
-      "rsi_14": 37.6,
-      "ma_200": null,
-      "vs_ma200": null
-    },
-    "V": {
-      "sesiones": 19,
-      "var_1d": -1.79,
-      "var_5d": -0.61,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -3.41,
       "rsi_14": 40.5,
       "ma_200": null,
       "vs_ma200": null
     },
+    "CVX": {
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -0.7,
+      "rsi_14": 34.3,
+      "ma_200": null,
+      "vs_ma200": null
+    },
+    "QQQ": {
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -0.18,
+      "rsi_14": 66.8,
+      "ma_200": null,
+      "vs_ma200": null
+    },
+    "VOO": {
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -0.87,
+      "rsi_14": 48.2,
+      "ma_200": null,
+      "vs_ma200": null
+    },
+    "IAUM": {
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -2.75,
+      "rsi_14": 34.2,
+      "ma_200": null,
+      "vs_ma200": null
+    },
+    "PGR": {
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": 2.54,
+      "rsi_14": 35.0,
+      "ma_200": null,
+      "vs_ma200": null
+    },
+    "V": {
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -2.35,
+      "rsi_14": 35.5,
+      "ma_200": null,
+      "vs_ma200": null
+    },
     "PLTR": {
-      "sesiones": 19,
-      "var_1d": 0.04,
-      "var_5d": -2.47,
-      "rsi_14": 81.2,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -2.88,
+      "rsi_14": 80.4,
       "ma_200": null,
       "vs_ma200": null
     },
     "LULU": {
-      "sesiones": 19,
-      "var_1d": -0.7,
-      "var_5d": -5.95,
-      "rsi_14": 48.7,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -5.36,
+      "rsi_14": 44.1,
       "ma_200": null,
       "vs_ma200": null
     },
     "UNP": {
-      "sesiones": 19,
-      "var_1d": -0.74,
-      "var_5d": -1.23,
-      "rsi_14": 27.7,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -0.71,
+      "rsi_14": 29.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "SHEL": {
-      "sesiones": 19,
-      "var_1d": -0.09,
-      "var_5d": -0.38,
-      "rsi_14": 46.8,
+      "sesiones": 20,
+      "var_1d": 0.0,
+      "var_5d": -0.58,
+      "rsi_14": 43.6,
       "ma_200": null,
       "vs_ma200": null
     },
     "CNSWF": {
-      "sesiones": 18,
-      "var_1d": -0.63,
-      "var_5d": 1.71,
-      "rsi_14": 53.6,
+      "sesiones": 19,
+      "var_1d": 0.0,
+      "var_5d": 1.11,
+      "rsi_14": 44.4,
       "ma_200": null,
       "vs_ma200": null
     }
   },
   "movimientos_fuertes": [
     {
-      "ticker": "WMT",
+      "ticker": "META",
       "ventana": "5 sesiones",
-      "pct": -5.98
+      "pct": -6.74
     },
     {
       "ticker": "LULU",
       "ventana": "5 sesiones",
-      "pct": -5.95
-    },
-    {
-      "ticker": "IBM",
-      "ventana": "5 sesiones",
-      "pct": -5.51
+      "pct": -5.36
     }
   ],
   "umbral_fuerte": 5.0,
