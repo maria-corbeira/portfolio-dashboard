@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T15:29:01+00:00",
+  "generated_at": "2026-10-03T20:25:14+00:00",
   "total": 87,
   "por_ticker": {
     "NVDA": [
@@ -88,23 +88,15 @@
     ],
     "GOOGL": [
       {
-        "title": "Dan Ives Believes MSFT Is The Most Oversold Large-Cap Stock, Draws Parallels To 'Negative' Narratives Around GOOGL A Year Ago - stocktwits.com",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQQmJvSHpPdHVrcUdjYnlweThwc0VHUXZjV2lnaTdVNXRmNGZ5dTZ2aktWV2VkcklWSXZldWw3N3oya0k2dVZrRGNoRTFvUXNPdFQ2RHpLYjhFQjQ3cmZTdll3QmwtbWpLaVNkanUta2x1Sk5aclB5SVEwMlRPVEhwVUpUY0F1Rld6dzNaYjRlcm9CcVpwN0ZIOThGanEyUGNMdzJpWVJwRmZyZGJuaXg0N0dPbGtvVWhqZlJ4ZE9iYVhSRUFCek8zWUYteU8?oc=5",
+        "title": "GOOGL Stock Dips Premarket After Breakout Week: Analyst Says Google Developing Next-Gen AI Chip With MediaTek - Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPVW9xZ1RSVnlmM1R6bFVma0lBZzd2bmNObFVsWnhmQnVaNHdEN1FBM2ZZX0JtakFtWEpHazhuUU5UX0FienlVRi1acHVYd2l6U05UQlVkV3ZDZ3NhOG1aekxGTnkxdkxINlJJaEExb1FvMjVKTjZlYnFxdUhyWTIzQWtxSHowYkloYXlESnpEY2hYZEtWMENoVXFVVFpZWlZTaWRudDI0V0pDQURRWFlUcW9OcTNVdE1hYVJGbDh0U3hqUFl0ZlNMbWhqb2RLOGc4QkJsazZsYjV5QmdlM2ZMU3ZVVFF0VTloMDhndHNLMkRpVWV4U2dONDY3eXV1S1dUbnpZ?oc=5",
         "source": "Google News",
-        "published": "2026-10-03T00:11:20+00:00",
-        "kind": "hecho",
+        "published": "2026-10-02T20:47:11+00:00",
+        "kind": "analista",
         "unconfirmed": false
       },
       {
-        "title": "SPCX Stock Climbs As Three Thursday Launches Meet Start Of Google’s $920 Million AI Pact - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPb0YzRl9SbDgyWFFrWHpGZEk1RTFWY1lsZmt2U0Jmc3ZaUVVnUHdVQzN2b3VmVmZrN0pzLVNpQkwyQVNreUVYc00zNzBhTW12b0RTdk1XSHY3SnREMGtXNTA5NzkyckpFeE1fSEZHVkFEQzB5VEgwZFdsdkMyMjJYQnFRbkxNY0lkaHhBM0lmcXBjb3hZa01TSDZSYUpIdw?oc=5",
-        "source": "Google News",
-        "published": "2026-10-02T20:02:38+00:00",
-        "kind": "producto",
-        "unconfirmed": false
-      },
-      {
-        "title": "GOOGL Stock Inches Up Premarket: Retail Traders Are Buying The Dip After CapEx-Fueled Selloff - stocktwits.com",
+        "title": "GOOGL Stock Inches Up Premarket: Retail Traders Are Buying The Dip After CapEx-Fueled Selloff - Stocktwits",
         "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQV3JVZy05Smp3ZzlqejNJTzhtaVYzQ1JyMVk0RmZqaDl5T3NmVmZ2VmFFR09OcmtPYngxM0hTWUhMNFdjRG1ERWcyaDJiWV84N2NfTTliUEt6aGxhLWRRLUwzS0RFclJMSmFDRVNCSVJYMXY3MHM0TWRkVkFKbVZ5ellLZWV5bGlxWTc0c0ZKLXFjbE5sWS1wdmxuYmZqX0xFWEFoVEt3NlpwOTRxY2ZZdkpKTEFkQzV2M0M0OVZUOVRGcHhadDdjRWR5NEZPSWxCWXVaX2tSckxsVnhmVlVVUE5aZ0M0UWVRckdBbm1B?oc=5",
         "source": "Google News",
         "published": "2026-10-02T17:17:33+00:00",
@@ -120,15 +112,31 @@
         "unconfirmed": false
       },
       {
-        "title": "GOOGL Stock In Focus: Waymo Recalls Thousands Of US Robotaxis Over Navigation Issue - stocktwits.com",
+        "title": "GOOGL Stock In Focus: Waymo Recalls Thousands Of US Robotaxis Over Navigation Issue - Stocktwits",
         "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPSU9raW8wam5mYkJnVUdDWWNoUFctY2NkY0txZDJsMEtmNVBwZ3VBd25tbDFBazNHS3ozNHBPWldBZzRpMHFfZUJUbnhZTFY2Q2p6TUdDMU0xOGw4MXVvN3ZHT3J2UXMycGRua1huV2M2SnZmZlhraVpEUDRFV3o1eTFiQUowOWp5dkl2V3RudEVvcU9YMDlXX19sWlFRcUxkekRPSzFGVnB6SUdjenN3b0hMdHhha0daZTBsUGVlVHpISTVXNXhqOXNEa2dPVnJ3ZGJNZTRmWkhNZHVkeTYw?oc=5",
         "source": "Google News",
         "published": "2026-10-02T14:02:52+00:00",
         "kind": "hecho",
         "unconfirmed": false
+      },
+      {
+        "title": "GOOGL, AMZN, SNDK Stocks Hit 52-Week Highs Today: What's Fueling The Rally? - Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcHVtbEVCaXN4ZV9QNFczZ29VSXRDYkxJRDZHSE9nTG1iS2xzSFNDSG5jR2xqeV9HOGhQY005aE5TS2tobjN1ZENGM3B6MjRxQkJscnAwdTBzb1BNOWlSaEVhU1dZSnhpQXV1cE1mQ3dzMy1lMzRJRzdyQ0VnN0xDdE84eUNSblRkR3JSNTVxXzBYdjN6Yk1UMnBLdHEyRFVHVE9SbE1NQmhqY3BFUk9wV3k4NWYyN1BaMnZFRW5HSGJOR014c2twV05pVnNRcW41RkE?oc=5",
+        "source": "Google News",
+        "published": "2026-10-02T12:02:31+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
       }
     ],
     "META": [
+      {
+        "title": "Micron, Nike, Meta and More: 5 Stocks Investors Couldn't Stop Buzzing About This Week - Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNdE1pdjZJN09BcmdsRG4tWC02LXBJb2RlQ0FuZW5JN0lfSU1YTzVKR0ZYX2F3QnhxM2hmTmJnM21FV2dWN3h1aVAyenVQZ1h5Vi1OQzNzTUF0UVNRanlDOFY3ZlU3V3hmTTVsWTNPT3FfWGF5Z2FBaWRrQUFWY3UzS2FEa3FjdTZRQ0s4LTlyVlY0NDlpVVJEOU1zQkhMeUd6QWN6U0duUFZBUjdmbE0zcWppQ3k0M3NCRlNyejJZMEt5ckZDY3JWeU1BZE5kVUk1ZmNPdQ?oc=5",
+        "source": "Google News",
+        "published": "2026-10-03T12:30:20+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
       {
         "title": "Why the Meta share price surged 27% in September - Yahoo Finance UK",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZFoyZEVwUXg4YTk5ZVR4TS1LSFUtUDYyZUNjNk11WXVHT3FYRS0zV2ZkMFhjSjQtMHhkYXhwT0VFU09ROFhrU1NfanU2YU9oWllXcDV0Tl9qR2s5MVlDc09RT3JXRU9Zc08tZFVlN0FlRDcwMTdsVGNSQXN1LUVTRW53?oc=5",
@@ -154,18 +162,10 @@
         "unconfirmed": false
       },
       {
-        "title": "One Number Could Tell Us Where Meta Stock Goes Next - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTlVfNjA2YXdYQW52ajVwYkppWkJyY0h2aWNHTDI2VHdOZGJrdl9tQmNfcXNMRjRWMVNvdkFrNkNtcnpqcUlQbnlQS09xWlpkdnhYTVVJdWgtM2V4YS1mWkxJQXN4eEo0UGtsRFcyUUl1WGU4U3ppeWh3UnpOQXMyejQ2X0xsbFpJbnFnMG85TUdSa1E?oc=5",
+        "title": "AI could haggle for your next car, and one stock stands to win - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMi1ZQThPekZYRE1BU200LVBicFJrd3JrcEZsdDVCaTZUUFhOZ2E1NkhMbU9BbEE2amloVDA2VUVTTVllMWQwQkxVUXJ4WHNXLTNObC1HOUJxZ0d0UHhXdXBwYjBCRUZ3VF9qNEtWdVE4VUlFYkU4cjN5QTFRQWIxZTBVQlhpdncwdUhXWEphZEI0Tmc?oc=5",
         "source": "Google News",
-        "published": "2026-10-02T14:45:34+00:00",
-        "kind": "rumor",
-        "unconfirmed": false
-      },
-      {
-        "title": "One Number Could Tell Us Where Meta Stock Goes Next - 247wallst.com",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNS0NPWW5DLTdrLVkyckNXdTVJVTc0VzEzNHJOT1lLNVhTcDY1aWtJdnF2aC1OLWJFX3lZM3RjS3pVX1k3Tm5XQkpDbDVLSVFLc3Rud21QTHlVWG80NGFNVXNsV0FubWxqTzdiU3Y0ak5ZOElmckwzRndHanQzejZBengyVzVyM1NZYXlSTnoydVRoUWFFdnFzc1dKSQ?oc=5",
-        "source": "Google News",
-        "published": "2026-10-02T14:45:00+00:00",
+        "published": "2026-10-02T18:47:00+00:00",
         "kind": "rumor",
         "unconfirmed": false
       }
@@ -188,6 +188,14 @@
         "unconfirmed": false
       },
       {
+        "title": "Intuitive Surgical Inc. stock underperforms Friday when compared to competitors - MarketWatch",
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQODhnYUg0bVhVYU93MmJGejFoTkltZ28xTWRnanpTRnZ3djc1VEd5QW04UnNHdUlONlBxVWxoT2x3cVNfTGM0TXRiNFYxMy1Mb0o4TllVSEZiRzBTYzN1eGN3ZlZOYXIyaVQwSm1VX0ZiOHd6ejJtS1lrczhWOU1UR2VvSTQtMHJlamZPaDlFd0N3SE5KeTl6S0lLd3d5WVM2LUk3VnBOOHZfWlRndE1BejFUQmlENk5XMUVaZktKU3luMTlKMFU5Y3AwNXpSbDF2YUFGSnY3YzJJNzhCaTNGbk5lVWpDZm9ySzFEYQ?oc=5",
+        "source": "Google News",
+        "published": "2026-10-02T20:37:00+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
         "title": "Intuitive Surgical: The 17% Selloff Is A Buy (NASDAQ:ISRG) - Seeking Alpha",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNkwxbzdtMHpKREw0VmVuSTJ2TWlfeDRzckFzdnBHVEwzbDN4LWxJN1RYMFlidEdtUHdOekR0NlR3N09NaUw1cF9EMmZPS2lIYjF0czFlSjlxek1pZ2lvOVAzVlVZVVhGcW1RNVgtRVMzbXdzcG9VRTFRRE56bmtWT0JjY0xURTBHbG9rSFV3dXJwdzh4Y3c?oc=5",
         "source": "Google News",
@@ -200,14 +208,6 @@
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUHhGVktQZ1VCQUh4U3R3YVhxWGV2bzRPQjBjYVpfQmxYdldiLWFRVmpiSDRlbmQwNWV5QXVpejJ0ZHRaMloydW5JczA1LWZvQ1BtNC1UaHlhS3lpdmplb2dLalZrZVBPQUJPTkg3RUs1M1VfU21Edll4NUNxVUt3elpld0NuZkFsMjItQnpPTDV1czlLMnlRakhpbUpGUQ?oc=5",
         "source": "Google News",
         "published": "2026-10-02T13:00:00+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "Intuitive Surgical: Strong Growth, But Valuation Comes At A Premium - Seeking Alpha",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObW5UUnpSRTZzaXo3cnZEczZvcnNVUFpIUFhEeGJ4eGVBTnRYRnEtOW5ubUlsbDVRbGV1RG1UdDhWNkFaWFVzZDVWZ1AxZnNaeFM4cWlDcnlxT3hUSDBUUE1NbTg3WU9IWGU5Y2ZlVzRORm9ubElYb1VSdUhMcmtsUDI0MVI5QUZVTXVfbXNiWlNDVzYzek9POU9hZDItbkE2VXZVMUM2bF9udw?oc=5",
-        "source": "Google News",
-        "published": "2026-10-02T12:16:43+00:00",
         "kind": "hecho",
         "unconfirmed": false
       }
@@ -298,7 +298,7 @@
     ],
     "AAPL": [
       {
-        "title": "AAPL Stock Heads For Worst Single-Day Fall In Over A Year — Wall Street Warns Apple’s AI Supply Chain Headwinds Are Far From Over - stocktwits.com",
+        "title": "AAPL Stock Heads For Worst Single-Day Fall In Over A Year — Wall Street Warns Apple’s AI Supply Chain Headwinds Are Far From Over - Stocktwits",
         "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQM0NVeHRMVUhYQzcxTHE1RWR4c1BlOXZLa3VxYjZSNmhYci1ZamtvNGRDalktNlhmM1kwOE5IMmZUR05hWXMtb2lEUnN3S1BZNFE4c2s5emM4NGVnMlRXaFpQWm52S3haY191RW1KSEVwUGNJVTJEVmk1cnZhQmV1eE9VM1MwLXQ2c2pqeC1wZ1YyYnFMUmg2MFZ3Ri1aU21jN3F2aTI1S0ZhYTIzOGJXVDdxNzdBZ2FBc2JTOG9zMFZUMWJRbjdlWTYyWVRDMDlnUDVsN3hIOXNyM3lKaEQ4?oc=5",
         "source": "Google News",
         "published": "2026-10-02T23:11:15+00:00",
@@ -314,19 +314,11 @@
         "unconfirmed": false
       },
       {
-        "title": "How Much Upside Is Left In Apple Stock? - trefis.com",
+        "title": "How Much Upside Is Left In Apple Stock? - Trefis",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdjBMR3dKWDZZWGJZZnNPbC1ocHJoZzdQdFFmZkY2UHJfeDRKWndjRmowSHNYTnNlaXFreXA5QXVJUHMyUVF3SUlBSG00ZUp3Tm52dGZYMTNFSFB1Zk9UX1NkQnlqVndkN1M0ZmVpYXVndlZjSTVnNFVTVU83cWd1U0R4bXdabjc3amlVQmRCbGdwSHp2a2haV0ptNTNzWi1L?oc=5",
         "source": "Google News",
         "published": "2026-10-02T15:15:50+00:00",
         "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "AAPL Stock Tops Nasdaq’s Modest Gains: Analyst Says Siri Finally Shows ‘AI Chops’ In iOS 27 Beta - stocktwits.com",
-        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNMl9pSUo1Z2w0eUVkR3Zfc3VoNllNck91Qy1xTlZ0MDY0OFZocHUtWDNwbVVxUHdxSTc1UjVaTGZMVDNfTUJ6cWZrNWZRdTh0bGd3NmdmNG5rcFhVZmVzRkYwNU5weVQxRzM4M3JOblRobm5zOUhnR1BFNE9MY242aFpSSFlnYV9Zck04MzdjOV9IeDk5REVIOTV4eHk5VlhEQmE3UEdUSHdENHQxTTM2WVpmSzJXWEhUNVF3ekxYTWhoek56TG9Rc3lidG5YTmRqOFBoa19iaVBsaFRRcDBPTndqOTlKUVpPWllVZHdITQ?oc=5",
-        "source": "Google News",
-        "published": "2026-10-02T13:43:18+00:00",
-        "kind": "analista",
         "unconfirmed": false
       },
       {
@@ -335,6 +327,14 @@
         "source": "Google News",
         "published": "2026-10-02T12:16:51+00:00",
         "kind": "producto",
+        "unconfirmed": false
+      },
+      {
+        "title": "Apple Inc. (AAPL) Is a Trending Stock: Facts to Know Before Betting on It - Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTTZOR2lIN0JJNVZ0dTVKVmVTZDRRMjVWbThYc2lnRzVHd1A3OTlCeFllYm0yOTV0WElfNGVYcGdVUXo3S0VNYUdRdHgwN2dnazBoTVVURkRzNS0wLXhUc0IwR05fMXJJMF9hQXUwZWFLQ0tvOEtnY2czbnREbHlNb3ptUVc?oc=5",
+        "source": "Google News",
+        "published": "2026-10-02T12:00:03+00:00",
+        "kind": "hecho",
         "unconfirmed": false
       }
     ],
@@ -424,6 +424,22 @@
     ],
     "WMT": [
       {
+        "title": "SA Asks: Is Walmart a buy, sell or hold right now? (WMT:NASDAQ) - Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQXI0YlpBYk93X2xuRTVOQjRnclJxb1A4WFJzYUwwSjJISV9yLXlTY09wRk5ZSnRxT051MEFuLTBTRVFEdkN5NnFlVkN3STFPVUFoWjRBNlp4NS1CUnJQSExmTmtoNHNSQ0t3VU9NV2p6UWNhemVuaE85cTZWMnkzamxjY253QzZ6YVFYWWJn?oc=5",
+        "source": "Google News",
+        "published": "2026-10-03T18:01:30+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "Better Dividend Stock: Walmart vs. Target - TIKR.com",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE83R1FmMTZWcVhrYjFsVlpHdkd6TDdJbENZYW15dTdUT1pfZHBiT3pKUHg3dnpORkpvU0dWNVZkOVY1bW85ZG9ZNmhDRnRfV2VLNlJERTNMVC1sRnVMZlhPSTR5eklvNXN5aWV0Y3M3Z0c4Zms?oc=5",
+        "source": "Google News",
+        "published": "2026-10-03T17:13:27+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
         "title": "Walmart: Fiscal 2028 Consensus Leaves No Room For Diesel Or Rollbacks (NASDAQ:WMT) - Seeking Alpha",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ1N5VF9LT2VzOUZEdklROWZ1V0xLZndfSVoxNjZ3Y0EzT05QdE1XOURlbzdkMEJQMlVrc242eTRmSUJzcUptTl82TnlGR1MwbXltVVNZSDVXYnFUcmd2Tlh1YkNfQjBlbDB2c28tYk9lTlpvRWNMejJPQno1WDJpUElQSURKcGNUS1dPaFlNd2NJT0VoRkRtbzR6YVJ1LTBvTUFvSW82TVlJSVIzSHc?oc=5",
         "source": "Google News",
@@ -446,22 +462,6 @@
         "published": "2026-10-03T00:53:56+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "WMT Nov 2026 108.000 call (WMT261106C00108000) stock price, news, quote and history - Yahoo Finance Singapore",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5XMU5iMG1NeHlob0gwT2ZTX1FldVlMYXJyUWtzVVdqblFtTG5JWWVFc3lPQzlvVFZJcmxVNjh1WDMwREdsa2VqWDM3eEl2VTM2VGhsYUhOV2lUOWJwNkZIZFR4dmo?oc=5",
-        "source": "Google News",
-        "published": "2026-10-03T00:51:39+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "Polaris Financial Partners Purchases New Holdings in Walmart Inc. $WMT - MarketBeat",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWWhDLWVfVXQwdzBIQWFMYjh4SkMtbGE1ZWJybHJiQ0RPMk56MXRrVU1LcXBzcGxBNFdKN1FsTTR4d1ZuOG5IY2FoUkNwcWVid3J0NFA5RHJIOU5TOTgwYnA3TjY3a0pxQkpZeWhJWXh6elhMckpGRDBQcGgtczBkQ2dwcTNiSGZ6VEJ1RUJFN3ZmdkNYdFJzVk15b1d5d2hoSXpwUHhKeXQtQUNBU3FHak12dVBGeWNidFI0SjQxM3ZFS01ickQwNQ?oc=5",
-        "source": "Google News",
-        "published": "2026-10-02T23:09:48+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "CVX": [
@@ -474,7 +474,7 @@
         "unconfirmed": false
       },
       {
-        "title": "CVX Stock Price Prediction 2026-2027 | Chevron Forecast - 247wallst.com",
+        "title": "CVX Stock Price Prediction 2026-2027 | Chevron Forecast - 24/7 Wall St.",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxONG5GNHNaaDBRRVFHcS1JMS1ZREF6LVh4NExnaVVJaWRYZGRjUW9CSHhfMks1ZXctTGUxSFJRWk50dnR6MEZxSUN1ZDZqdWxVNEM0T3pKR29LV1VBSE5FYmJwX2RCN3BDdVZGM3BoVGliWUFMWmUtYmlOWWw0N0EwbWJfRDNaaXVXbTMwMVdZVFQ?oc=5",
         "source": "Google News",
         "published": "2026-10-02T13:17:09+00:00",
@@ -516,10 +516,10 @@
         "unconfirmed": false
       },
       {
-        "title": "QQQ Jun 2028 885.000 put (QQQ280616P00885000) interactive stock chart - Yahoo Finance UK",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BeGRMcmQ1ZV9pSWZQdVFHNVNic0c2Ynh2dE44bThBYlpLQWtRNjVLZTBqX2EtZHJvX2U3a2ZhRDVaMUNXdVNLS2VQMzNKREtpM2dUeXhHSTFoV2hPUkR3X3dnaldETlBWVDlNWg?oc=5",
+        "title": "QQQ Oct 2026 726.000 put (QQQ261001P00726000) interactive stock chart - Yahoo Finance UK",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0xSlA5dWlhU2VMcDNSLTRUYUdfbHJraUxlbWtpZ3VTZXpWLVRwMWRSOW1LWWM2bVFUZU5DUXhkUlh5aUZwMHNtUVJlVjR2VkM2S1NHRlJIcWppb1lpbjJmeFkzMDliNV9SSG1FMQ?oc=5",
         "source": "Google News",
-        "published": "2026-10-03T04:41:21+00:00",
+        "published": "2026-10-03T03:53:08+00:00",
         "kind": "hecho",
         "unconfirmed": false
       },
@@ -532,23 +532,31 @@
         "unconfirmed": false
       },
       {
+        "title": "QQQ Oct 2026 679.000 call (QQQ261009C00679000) stock price, news, quote and history - Yahoo Finance Singapore",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAxVkFjcmR0MjlCLUtuWUl0OThId1Raem5JSUJPdDVuV2lGRW1HXzhWSktMZnlINnp4aU1mTWVoVUZrRkpxRG0xRXRRU0VrRWMzSVVPb0hRNHVIZGxBZG12OElmQ0I?oc=5",
+        "source": "Google News",
+        "published": "2026-10-02T16:32:05+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
         "title": "QQQ is up 1.1% today, on SPCX stock price movement - Quiver Quantitative",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWnZoUkR0NGxYYy14ekhUa1ZYMEcxOWZhRUlpUXVfWFdUVFJyTEVScndndy1JNWdLQ2dTUkxBSHgtT2gyeWRiN2FINFROa2NRNU1lQVBzZ3JydjNXUFg0M2d5OGdzV0xoTXkwSURDNmRzZFlUTk84RnZCdzhBNWMydERuSVo0c1NFLVNNWWlnMGc?oc=5",
         "source": "Google News",
         "published": "2026-10-02T16:15:00+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "QQQ261023P00620000 Interactive Stock Chart | QQQ Oct 2026 620.000 put Stock - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ucGYzVEw1MEhKOGlsMXRYV1k4aWYwRFJGaWNIdm5qb0d4ZmtRMWw3T1VlN3ZWTGx6Ylp2WVlTeTJoWkZOeVRQSnZoMXdaRm1pMS1oTnVYZ3pGNEdUb3Rr?oc=5",
-        "source": "Google News",
-        "published": "2026-10-02T13:40:52+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "VOO": [
+      {
+        "title": "If a Recession Is Coming, This Is the 1 ETF I'd Buy Without a Second Thought - The Globe and Mail",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPZ2Uxd1NmQnV1cnRQeV9ZR0FlTnBxWnh5a0Fva1F0a0ZuU2VJSXNTSUdCVjN4eUZLZzBSaFZNS1VRUC03NkhMdXk1LW1UV1lqLVpMcjBQWE9PZl9KeVVjcC1TQzNhNTF3bzVWZDY3dkhNOWtjNUxKeXo3cEJNMU0teDJnLUNKM2NCYnUyRGV0SXJwMEwwM29PRXJuTVJuMG1GMS04dnhmMUVacXNLckt4S3pWc3dSYk5rQ1pWV280RWkzdno0cFl2T1ZTTW1hMUlSOWFnVnVmRnVyTm1vWFViWGNwOTgtd3VMeUdPZTRYNWg1ZjA?oc=5",
+        "source": "Google News",
+        "published": "2026-10-03T16:13:26+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
       {
         "title": "VOO261023C00745000 interactive stock chart | VOO Oct 2026 745.000 call stock - Yahoo Finance UK",
         "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1PdzNOQmlzYVBHN0lIRWl1Zk95ZHhuNTVuemE2VUVjV20zZXJEOElLNV9HVzFBaWlSYk12bHJ4M2ozT2lkN05KUjhCSWJoRmNqWjRSaUJZcnNXUllOdGxKZlRSQQ?oc=5",
@@ -580,22 +588,30 @@
         "published": "2026-10-01T14:33:52+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "VOO and SPY: Top 3 catalysts for S&P 500 ETFs in October - Invezz",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPeGF2Tm9HbkVYMFF0WmZNR25mVTMwdXFvcGRTaE43ZWtNUXAyUXJMUG9SSDVLakZJSmdYNUY1el9EUURKNDFKMGNFekd1OEUxaWE2V1ZQM3BnZGtmQ2N0QjM2NTBvNEZ3cVFOUnBQQzdvX1NnRmFfbDlObi1oNTlfLTUtLTZsVko2b0JqNTF6TWRoZ1k5?oc=5",
-        "source": "Google News",
-        "published": "2026-10-01T12:04:28+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "IAUM": [
       {
-        "title": "Discipline and Rules-Based Execution in IAUM Response - news.stocktradersdaily.com",
+        "title": "Discipline and Rules-Based Execution in IAUM Response - Stock Traders Daily",
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQWHdLNk9nTWx4b0luNnAteDM4MDhvWUlMZnl4MGFjelBPamJMSFhkdmFhX2FjYXJSaGhiWGttbmZMV1pHNlFOSldvZzJUNmtETHlXTDFFTW5sRkNXUjZYRXFveDdIdXh0RWw2bXl2djU4VE5pZlIwaXczcVFNc3RsSGllc1Fndm5CVjNpSWszVjQ5d0lHXy1XY3d0ZUYzMGRlU1lIWUd1ODJqUDRoMElpeHVzZXRkcXN4cUR6YTRWZUF3QVF4Z1U3Y3JGbkNMRjQ?oc=5",
         "source": "Google News",
         "published": "2026-10-02T04:40:02+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "GLD: Gold’s Structural Bull Market Is Intact, But The Insurance Premium Is Now Expensive - Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNUjg2cTF1WHJ0T0lHZmUyaDduV0VuM2szUmJXaThJeFhackFobGtLaXlaajRiUVVjcE81Uk8xNGxSSkh0X1VZanpWX3ZDRVI1emg3OWhHMlNrMVRfR2thNjVtUzQyV2JGc2tJTm4tcEJKbG9TWThUbWZBR0JnTWMtZnY4RHlZUmROUGF5cXRMNDBOR0JSNDJSZ05PS3NVNjFLUGhMMEt0Y3RyNTc2aEotcVBRNmt0eDFhY3l0X2xGbHVEaXdX?oc=5",
+        "source": "Google News",
+        "published": "2026-10-01T12:04:55+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "4 Best Gold ETFs to Hedge Against Stock Volatility - NerdWallet",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5aLXhZNWpHNFNaZUVwT1FMTkpQYVdEMVNlTXdFSTRXa2pLWWJkM0VCdWE4QXBEN25FU3RrU05fVmdxQmdpZzNrQWotckl4MGpyRHFseTZaQlFDZGVESDlYZ0JwMnJqSnhw?oc=5",
+        "source": "Google News",
+        "published": "2026-10-01T07:00:00+00:00",
         "kind": "hecho",
         "unconfirmed": false
       },
@@ -614,45 +630,18 @@
         "published": "2026-09-24T07:00:00+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "How (IAUM) Movements Inform Risk Allocation Models - news.stocktradersdaily.com",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRUlmanpsQWU5UTBuYjlHWmw5aVc3cTB2Y2ZES3NlOERvRjlpaG5WaWM0TFVGQjhaZ0ZTWjgtXzdmVUVUNnR4V2luNkJ2Z0hoRlVkMXdwbXh3MUU4TmpERVNVVE1YRkZKUXZtdGdTTWUxMk9ITDY4RUI1cW5LR2N5ZXVDck9Uekt2ZTVFRThfdnZhUHJhc3lfV29HZHZOQlhMb2dkbldyaHQtV0lnQjM4SXZWT280M0tYTWNiQkxaV3BHY2RmUlUxLQ?oc=5",
-        "source": "Google News",
-        "published": "2026-09-21T21:26:02+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "The Real Reason Behind the Massive Gold ETF Surge - Gotrade",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORHliQV84OGFLMjgyOWpYS1Vrbi1CMHozYWR0VlctaThZWmdYSjNuMnNxeEtjOGRwU1piUEZ0dHF2UUhtYTVTSWlndHozOFFnU2RzcVk4SjJJYnA1TjBteTg3ZHF6ZE5qNzdpbFJ5Uk5MZk4tUVhNdzBva3B2QzVyejlKOFotNlFQUDRTc1ZR?oc=5",
-        "source": "Google News",
-        "published": "2026-09-21T07:00:00+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ]
   },
   "mercado": [
     {
-      "title": "The Treasury Department started Trump accounts for 60 million kids — but families still have to take this step if they want one",
-      "url": "https://www.marketwatch.com/story/the-treasury-department-started-trump-accounts-for-60-million-kids-but-families-still-have-to-take-this-step-if-they-want-one-003d9282?mod=mw_rss_topstories",
+      "title": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
+      "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "tags": [
         "mercado"
       ],
-      "published": "2026-10-03T15:06:00+00:00",
-      "kind": "hecho",
-      "unconfirmed": false
-    },
-    {
-      "title": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
-      "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-10-03T15:00:00+00:00",
+      "published": "2026-10-03T20:00:00+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
@@ -663,109 +652,118 @@
       "tags": [
         "mercado"
       ],
-      "published": "2026-10-03T15:00:00+00:00",
+      "published": "2026-10-03T19:30:00+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
     {
-      "title": "Cars have become unaffordable for many Americans. Here’s what the numbers show.",
-      "url": "https://www.marketwatch.com/story/heres-the-most-you-should-be-spending-on-your-car-payment-whether-you-make-60-000-or-over-150-000-ee1c228c?mod=mw_rss_topstories",
+      "title": "These bond strategies can help you get a safe 5% return on your cash",
+      "url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "tags": [
         "mercado"
       ],
-      "published": "2026-10-03T14:36:00+00:00",
+      "published": "2026-10-03T18:49:00+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
     {
-      "title": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
-      "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
+      "title": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
+      "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "tags": [
         "mercado"
       ],
-      "published": "2026-10-03T14:31:00+00:00",
+      "published": "2026-10-03T18:30:00+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
     {
-      "title": "You might be shocked by how many stocks are in a bear market right now",
-      "url": "https://www.marketwatch.com/story/you-might-be-shocked-by-how-many-stocks-are-in-a-bear-market-right-now-017c9cd8?mod=mw_rss_topstories",
+      "title": "A tough job market is pushing more young Americans to make a big bet: on themselves",
+      "url": "https://www.marketwatch.com/story/a-tough-job-market-is-pushing-more-young-americans-to-make-a-big-bet-on-themselves-1aaddeca?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "tags": [
         "mercado"
       ],
-      "published": "2026-10-03T14:10:00+00:00",
-      "kind": "rumor",
-      "unconfirmed": false
-    },
-    {
-      "title": "This city saw 1 in 3 home sellers slash their asking price in September to attract reluctant buyers",
-      "url": "https://www.marketwatch.com/story/this-city-saw-1-in-3-home-sellers-slash-their-asking-price-in-september-to-attract-reluctant-buyers-7f16a0c3?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-10-03T13:50:00+00:00",
+      "published": "2026-10-03T17:24:00+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
     {
-      "title": "I made $500,000 from a stock sale in my IRA. Could this change my retirement?",
-      "url": "https://www.marketwatch.com/story/i-made-500-000-from-a-stock-sale-in-my-ira-could-this-change-my-retirement-6bddcf0d?mod=mw_rss_topstories",
+      "title": "Switching jobs to get higher pay works best in these industries",
+      "url": "https://www.marketwatch.com/story/the-best-industry-to-change-jobs-to-get-paid-more-money-and-the-worst-ae33a3a7?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "tags": [
         "mercado"
       ],
-      "published": "2026-10-03T13:23:00+00:00",
-      "kind": "rumor",
-      "unconfirmed": false
-    },
-    {
-      "title": "US Stock Market Prediction: Dow Futures Rise, S&P 500 Futures Gain & Nasdaq Futures Point Higher Ahead of Wall Street Opening; Check Monday Market Outlook, Key Things To Watch - The Sunday Guardian",
-      "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxPQ3o4Wk0wX2hrWTUwSllyeTNNakEzRERpRXhwY05uSS1NalVWQ2RZVXZja2JVbXdXVkQ3VlZET3JZQm5HZFExd0sxNjZuSnRkbUpQVXVmcjQ1YW85RUxTam14dV9keDVaeEVlX3lqbGFGNlMtQV9SQmt0a3lFcTFJSm5HT0IxeFlWUmR6N2t6RkQzZ2llVkpwOW9RM01QYks2amJzMUNFckJfSW9QUG80QWNYRXF1cnFzclhFY3JwLW5Qb2JfTG9ybFdCTmRDMExqRXlUR3hOTXlmYTRfLXEzbnI5a1dla1hlUXV0WjZLTWZRWkpjMW54T1VXRWxldExRaHAyRWlGV3cxUlFuWUVmcXUtWlRrcWc0WUxkMFQxZDY0NXhvMjItSG1GWkhNR1ZqSndacXVjaERDS2FFYW4wVEh30gHCAkFVX3lxTE9DejhaTTBfaGtZNTBKWXJ5M01qQTNERGlFeHBjTm5JLU1qVVZDZFlVdmNrYlVtd1dWRDdWVkRPcllCbkdkUTF3SzE2Nm5KdGRtSlBVdWZyNDVhbzlFTFNqbXh1X2R4NVp4RWVfeWpsYUY2Uy1BX1JCa3RreUVxMUlKbkdPQjF4WVZSZHo3a3pGRDNnaWVWSnA5b1EzTVBiSzZqYnMxQ0VyQl9Jb1BQbzRBY1hFcXVycXNyWEVjcnAtblBvYl9Mb3JsV0JOZEMwTGpFeVRHeE5NeWZhNF8tcTNucjlrV2VrWGVRdXRaNktNZlFaSmMxbnhPVVdFbGV0TFFocDJFaUZXdzFSUW5ZRWZxdS1aVGtxZzRZTGQwVDFkNjQ1eG8yMi1IbUZaSE1HVmpKd1pxdWNoRENLYUVhbjBUSHc?oc=5",
-      "source": "Google News · mercado",
-      "tags": [
-        "macro",
-        "politica"
-      ],
-      "published": "2026-10-03T13:08:21+00:00",
-      "kind": "resultados",
-      "unconfirmed": false
-    },
-    {
-      "title": "I’m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
-      "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-10-03T13:00:00+00:00",
+      "published": "2026-10-03T16:42:00+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
     {
-      "title": "The U.S. jobs market just took a turn for the worse. Or did it?",
-      "url": "https://www.marketwatch.com/story/the-u-s-jobs-market-just-took-a-turn-for-the-worse-or-did-it-c44c371b?mod=mw_rss_topstories",
+      "title": "‘I have $400,000 in equity’: I’m 80. Should I sell my house because of dangerous stairs — or spend thousands renovating?",
+      "url": "https://www.marketwatch.com/story/i-have-a-low-interest-rate-im-80-years-old-should-i-move-out-of-my-house-because-of-dangerous-stairs-389c3c7b?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "tags": [
         "mercado"
       ],
-      "published": "2026-10-03T13:00:00+00:00",
+      "published": "2026-10-03T16:00:00+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
     {
-      "title": "Key Factors Set To Affect Stock Market Next Week: RBI Policy, Q2 Earnings, And FII Outflows In Focus - Outlook Money",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQjNyeEozajJjSUcwNWZKdmFhVkRaVjd2TWtjS21HMmFhNXA3TjBEZVkzVlA0NUt5R1F2QWpCRG1iUDVpMF9MdllfaHloOFJVLUk2VVNtUlN0R0doUnJrUVhEUE5KSnhPcEQ0UWFPSVU4NXMyaWNENU9pWGw1WnNiSXRMQm13ME1LbzJ3OGl5UDhzUk5LZExXUDBLTm8weTN1b2FuYlZVMXllb185cDcwZG85RHVaTmJKNmVYUG92MVRMQlVnSGQ2MkItOGZSQ0JIU0o0dWx2cVZWd0XSAdsBQVVfeXFMTUIzcnhKM2oyY0lHMDVmSnZhYVZEWlY3dk1rY0ttRzJhYTVwN04wRGVZM1ZQNDVLeUdRdkFqQkRtYlA1aTBfTHZZX2h5aDhSVS1JNlVTbVJTdEdHaFJya1FYRFBOSkp4T3BENFFhT0lVODVzMmljRDVPaVhsNVpzYkl0TEJtdzBNS28ydzhpeVA4c1JOS2RMV1AwS05vMHkzdW9hbmJWVTF5ZW9fOXA3MGRvOUR1Wk5iSjZlWFBvdjFUTEJVZ0hkNjJCLThmUkNCSFNKNHVsdnFWVndF?oc=5",
-      "source": "Google News · mercado",
+      "title": "How Strong Financial Performance Will Impact ACM Research Stock - Simply Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT2Q1UHBtMXUtTUhDejI3akpyM1BzaWt5cVNudUcxVjNOR0wySmdqTUVFemotMWg3R1R1T0ptMlFKUW85ZC1zZFNIVGhnRGRiR2IzUDRKS0VTNGViQkdOUVVnNzZVN3cwWFU1NFROUl9hUERzRzUtNTZmZ2VLU3dGNGdYdVRQbmM5OFV4UFl0cFByTmx1WFg5ZXlMcG5yMlduOVJydldDdEVtYWc2N1hfdUNfVmhpU0NUSDdibjlZZjZJT0hPRk4tSmVBRzFOaWRfM2o00gHYAUFVX3lxTFBzazhLT25keS1seWZRZjJrMm4wRFNpWmlWZW55NElWOFFfOS1hTzVSNEN3cFhyZkRiOGVQVkprWElNczBsOW96cGJaN1dkdUJMakZIRlJ3d2VvdGtjZWcxZ2FwV0pYUWk5dkpmTTRqcEpzVGVSS0RqRnVUQ1pxR1g3TXlxMDlESnlpX3VnU1RESHVFM1dpVzZ5bnI1Q1FNcHBaNjFZRXpNWWlYc2xic1lSb3JfQXFmWmZrWUhHSF9jeklSWTlISUJKZ2RxajF0bWtWaVpvSXZpUQ?oc=5",
+      "source": "Google News · IA y semis",
       "tags": [
-        "macro",
-        "politica"
+        "capex-ia"
       ],
-      "published": "2026-10-03T07:28:23+00:00",
-      "kind": "resultados",
+      "published": "2026-10-03T15:45:39+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "The No. 1 mistake beginners make with travel cards, according to The Points Guy",
+      "url": "https://www.marketwatch.com/story/the-no-1-mistake-beginners-make-with-travel-cards-according-to-the-points-guy-3502e859?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "tags": [
+        "mercado"
+      ],
+      "published": "2026-10-03T15:42:00+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "Behind Closed Doors: What AI Executives Actually Sought from Trump - fastcompany.co.za",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcEJ1OENsSFRvX0U4a2JvLTlJdmNSUDA4ZFhFeGdOdmQ2Wlg1cGtRTEhUMUIzVmtSb0d4djUtcDV6Q3BuTkI4b1pQUmJMUm9aeWV4QjhDVXF1TU5NeHlOMlBCaER0d3Bubjc2bEJQMWhpSk0yV0paOTJaWE1RaDJ5Z0I4RDZSOW85Zmc3ODB0bkFEalRjeHpEdDRTa2NsdnllbXlhdk5tUmtobFpma3UtNU9GYlZUX1N5bmdSck03VHVnMjA?oc=5",
+      "source": "Google News · IA y semis",
+      "tags": [
+        "capex-ia"
+      ],
+      "published": "2026-10-03T15:39:27+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "‘I’m never selling’: I’m 47 and buy bitcoin with every dollar I earn. Am I crazy?",
+      "url": "https://www.marketwatch.com/story/im-never-selling-im-47-and-buy-bitcoin-with-every-dollar-i-earn-am-i-crazy-364d2a64?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "tags": [
+        "mercado"
+      ],
+      "published": "2026-10-03T15:30:00+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "The Treasury Department started Trump accounts for 60 million kids — but families still have to take this step if they want one",
+      "url": "https://www.marketwatch.com/story/the-treasury-department-started-trump-accounts-for-60-million-kids-but-families-still-have-to-take-this-step-if-they-want-one-003d9282?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "tags": [
+        "mercado"
+      ],
+      "published": "2026-10-03T15:06:00+00:00",
+      "kind": "hecho",
       "unconfirmed": false
     }
   ],
