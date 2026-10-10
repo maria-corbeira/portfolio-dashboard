@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T21:52:45+00:00",
+  "generated_at": "2026-10-10T01:20:45+00:00",
   "count": 22,
   "failed": [],
   "prices": {
@@ -182,178 +182,178 @@
   },
   "indicadores": {
     "NVDA": {
-      "sesiones": 27,
-      "var_1d": -0.52,
-      "var_5d": -2.0,
-      "rsi_14": 50.6,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": -4.3,
+      "rsi_14": 56.4,
       "ma_200": null,
       "vs_ma200": null
     },
     "MSFT": {
-      "sesiones": 27,
-      "var_1d": 2.38,
-      "var_5d": 3.39,
-      "rsi_14": 76.0,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 1.37,
+      "rsi_14": 75.1,
       "ma_200": null,
       "vs_ma200": null
     },
     "GOOGL": {
-      "sesiones": 27,
-      "var_1d": 0.97,
-      "var_5d": 2.38,
-      "rsi_14": 50.5,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 1.44,
+      "rsi_14": 69.2,
       "ma_200": null,
       "vs_ma200": null
     },
     "META": {
-      "sesiones": 27,
-      "var_1d": -0.31,
-      "var_5d": -1.29,
-      "rsi_14": 45.0,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": -3.22,
+      "rsi_14": 42.7,
       "ma_200": null,
       "vs_ma200": null
     },
     "ISRG": {
-      "sesiones": 27,
-      "var_1d": 2.06,
-      "var_5d": 8.17,
-      "rsi_14": 63.6,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 4.04,
+      "rsi_14": 66.7,
       "ma_200": null,
       "vs_ma200": null
     },
     "UBER": {
-      "sesiones": 27,
-      "var_1d": 1.81,
-      "var_5d": 4.99,
-      "rsi_14": 57.1,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 2.58,
+      "rsi_14": 59.6,
       "ma_200": null,
       "vs_ma200": null
     },
     "AMZN": {
-      "sesiones": 27,
-      "var_1d": 3.29,
-      "var_5d": 4.34,
-      "rsi_14": 59.4,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 3.69,
+      "rsi_14": 69.5,
       "ma_200": null,
       "vs_ma200": null
     },
     "AAPL": {
-      "sesiones": 27,
-      "var_1d": -1.11,
-      "var_5d": 0.88,
-      "rsi_14": 46.4,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 1.18,
+      "rsi_14": 49.5,
       "ma_200": null,
       "vs_ma200": null
     },
     "IBM": {
-      "sesiones": 27,
-      "var_1d": 0.23,
-      "var_5d": 2.02,
-      "rsi_14": 43.5,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 2.91,
+      "rsi_14": 41.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "COP": {
-      "sesiones": 27,
-      "var_1d": -0.07,
-      "var_5d": 5.8,
-      "rsi_14": 74.5,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 4.68,
+      "rsi_14": 69.8,
       "ma_200": null,
       "vs_ma200": null
     },
     "WMT": {
-      "sesiones": 27,
-      "var_1d": 0.71,
-      "var_5d": 6.8,
-      "rsi_14": 53.7,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 6.09,
+      "rsi_14": 52.5,
       "ma_200": null,
       "vs_ma200": null
     },
     "CVX": {
-      "sesiones": 27,
-      "var_1d": 0.2,
-      "var_5d": 2.56,
-      "rsi_14": 70.5,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 2.9,
+      "rsi_14": 66.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "QQQ": {
-      "sesiones": 27,
-      "var_1d": 0.49,
-      "var_5d": 0.23,
-      "rsi_14": 53.4,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": -0.63,
+      "rsi_14": 60.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "VOO": {
-      "sesiones": 27,
-      "var_1d": 0.61,
-      "var_5d": 1.14,
-      "rsi_14": 53.2,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 0.43,
+      "rsi_14": 60.3,
       "ma_200": null,
       "vs_ma200": null
     },
     "IAUM": {
-      "sesiones": 27,
-      "var_1d": 1.53,
-      "var_5d": 1.16,
-      "rsi_14": 35.1,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 1.31,
+      "rsi_14": 41.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "PGR": {
-      "sesiones": 27,
-      "var_1d": -0.59,
-      "var_5d": 3.39,
-      "rsi_14": 67.2,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 2.52,
+      "rsi_14": 76.9,
       "ma_200": null,
       "vs_ma200": null
     },
     "V": {
-      "sesiones": 27,
-      "var_1d": 2.76,
-      "var_5d": 6.87,
-      "rsi_14": 77.6,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 4.35,
+      "rsi_14": 78.5,
       "ma_200": null,
       "vs_ma200": null
     },
     "PLTR": {
-      "sesiones": 27,
-      "var_1d": 5.17,
-      "var_5d": 10.75,
-      "rsi_14": 81.8,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 10.19,
+      "rsi_14": 77.8,
       "ma_200": null,
       "vs_ma200": null
     },
     "LULU": {
-      "sesiones": 27,
-      "var_1d": 1.96,
-      "var_5d": 0.04,
-      "rsi_14": 21.8,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 1.97,
+      "rsi_14": 23.9,
       "ma_200": null,
       "vs_ma200": null
     },
     "UNP": {
-      "sesiones": 27,
-      "var_1d": 0.05,
-      "var_5d": 0.02,
-      "rsi_14": 60.5,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 0.16,
+      "rsi_14": 58.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "SHEL": {
-      "sesiones": 27,
-      "var_1d": -0.02,
-      "var_5d": 4.1,
-      "rsi_14": 79.3,
+      "sesiones": 28,
+      "var_1d": 0.0,
+      "var_5d": 3.73,
+      "rsi_14": 76.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "CNSWF": {
-      "sesiones": 26,
-      "var_1d": 2.57,
-      "var_5d": 1.33,
-      "rsi_14": 70.1,
+      "sesiones": 27,
+      "var_1d": 0.0,
+      "var_5d": 0.37,
+      "rsi_14": 68.1,
       "ma_200": null,
       "vs_ma200": null
     }
@@ -362,32 +362,12 @@
     {
       "ticker": "PLTR",
       "ventana": "5 sesiones",
-      "pct": 10.75
-    },
-    {
-      "ticker": "ISRG",
-      "ventana": "5 sesiones",
-      "pct": 8.17
-    },
-    {
-      "ticker": "V",
-      "ventana": "5 sesiones",
-      "pct": 6.87
+      "pct": 10.19
     },
     {
       "ticker": "WMT",
       "ventana": "5 sesiones",
-      "pct": 6.8
-    },
-    {
-      "ticker": "COP",
-      "ventana": "5 sesiones",
-      "pct": 5.8
-    },
-    {
-      "ticker": "PLTR",
-      "ventana": "1 día",
-      "pct": 5.17
+      "pct": 6.09
     }
   ],
   "umbral_fuerte": 5.0,
