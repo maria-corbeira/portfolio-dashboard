@@ -1,14 +1,30 @@
 {
-  "generated_at": "2026-10-16T02:26:20+00:00",
+  "generated_at": "2026-10-16T10:24:44+00:00",
   "total": 87,
   "por_ticker": {
     "NVDA": [
       {
-        "title": "Deutsche Bank has blunt advice after NVIDIA-linked stock sinks 15% - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQa3N5aHdHZU9ITkRJS1Etd2JSYUhKUnpuZ2ZldC1uaERNOXpMZkl5TG9vcjNOT1QzNVBQbi1tSTdTLVZOWkdGMG1PMEVpYlBGbFVGaGVFOUhaTTdabnVmLTIyOTFqdEtuMWNxX18tVGVxNDhLTVNiOE1IT3h6X19BTmdLTXZXNzVzQlhHUEZzX3BxOW5tR0FyamdmblV2dkk?oc=5",
+        "title": "Nvidia CEO Jensen Huang addresses CoreWeave stock plunge: 'I'm optimistic' - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQU3RweTh1THdrck1qLURYMnJEVW03ZzdxNTIwZTVRVjV3MS1YM0E1V2VOblNmdzIzdUU2RXRVSGx3WGV2XzhudDVWeHo3REtZaHRyWk94ZDBrSzhoTy1RRWROaUxIcXZnQmdkRW5OWVVOdEJzQjN1U3pQZmdkVElaWEwxbkxDbndxalNabnV4MHYxSGYtTVdIN3VjZ2ZYVExQc2gyLXlxV0ZfamNMWWJCQkhaSFhqemhZeUJxOGxNYWYxYi1Rb2c?oc=5",
         "source": "Google News",
-        "published": "2026-10-15T21:50:00+00:00",
+        "published": "2026-10-16T09:58:05+00:00",
         "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "NVDA Bucks Selloff As MU, INTC, AMD Slide Premarket Amid Chip Rout - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWVk1a2JmbmFJX2NIQW0wa2VRRWlDTVphcW9DQnRSN20tVkpxLWFpa2RqZ2hiMlljOVdKWTZJYnlxRDhLcGRyd2xUMDU2NTJZamlJMU1LZ3hBMTh5cFFtUS1iRHR2RTRicjBhWThtWTBFeFJsbEpRZTJvNnZHQ3BNMkFLV3lSS1ZsQXVINGhic3ZhMWZEemc?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T09:03:29+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "IonQ Is Following Nvidia's Playbook. Why the Stock Could Be a Buy After a 60% Dip. - The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOV3NpczZTYnhaWHFRSF9GWXNuRXU5RXpqRjNzcklxT2FjdHA2Skd5Q0Jad0ZTd3RGVFJKYnBBclJnVFN3YXRXQzhtc09OQS1sbzFRc1JKX1RXWHd1X1ZNVUJQN0tPMEhPOHJac1NIN25qS0p3QWFMT1M2U1NlN18wOWJaUzQwOXBFUXZaWHk5bmpmWGE1OXNQaA?oc=5",
+        "source": "Google News",
+        "published": "2026-10-15T23:23:00+00:00",
+        "kind": "rumor",
         "unconfirmed": false
       },
       {
@@ -26,25 +42,17 @@
         "published": "2026-10-15T16:27:23+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "Nvidia’s Huang Says CoreWeave Doesn’t Need a Backstop - Barron's",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSk9TQTJodzlYbzRfUlVmU2dvbUstbGZqbWJrV0RPX1E2ZWk3WXFTcnVPNWxrS19oZTdBX3FHaG93eEQ2Vi1QQU9lcnAzaVBqQVNVWTdMcE9fekZPRlZwY294ZHhfbmpjZGNIekl5aEFzSzVlYTBreHp1RXM5VVhiVGtWcU5uRFZ2eGpWUkhR?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T16:20:00+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "Nvidia CEO Jensen Huang addresses CoreWeave stock plunge: 'I'm optimistic' - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQU3RweTh1THdrck1qLURYMnJEVW03ZzdxNTIwZTVRVjV3MS1YM0E1V2VOblNmdzIzdUU2RXRVSGx3WGV2XzhudDVWeHo3REtZaHRyWk94ZDBrSzhoTy1RRWROaUxIcXZnQmdkRW5OWVVOdEJzQjN1U3pQZmdkVElaWEwxbkxDbndxalNabnV4MHYxSGYtTVdIN3VjZ2ZYVExQc2gyLXlxV0ZfamNMWWJCQkhaSFhqemhZeUJxOGxNYWYxYi1Rb2c?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T16:15:04+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "MSFT": [
+      {
+        "title": "How Earnings Beat Will Impact Microsoft (MSFT) Stock - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSmRPNkRTT0Z2SUczb0Z4YjdZWVB2Z2x6TXBSSi1lMlN6VGtINVdUWjV2dU5xY0IzbzZOMHQwcV9nSXczRmlOREN6Zi1aUlg1LU9ETk9Bb3JZV1JQaDN1bmxHdm5JWFcxblNuQ2ZmWE5PUF9LZDJ6bE9YaWtzN1R1UWtNWlU2U0l4TnVFMHptNnFuVExtRUQwLVdoU0NxTGNtY2c?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T04:29:00+00:00",
+        "kind": "resultados",
+        "unconfirmed": false
+      },
       {
         "title": "Microsoft (MSFT) officer Amy Coleman reports 32 shares delivered or withheld at $533.69 each. - Stock Titan",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeTkwaXQwTEwwcDdmdVV5T0hZMHBkMGlUdU44dlZvVFVmNHNHeThnb2tZcDdGa3hCR2hFNV91eFpZdjNFUXYzdm5leVI4V2M3MGVIcFZIVExaYTR4UXhfRkt1dDdacF8zRERzY3NEbVluTUxKcGQ3WGVYY3dMREp1Z1VkaVZlalgtZmN5ZC1rcHFmdVB1a2xzek9HeFJpVWxJVmk0SU1rTmJ4LWdz?oc=5",
@@ -76,17 +84,17 @@
         "published": "2026-10-15T15:37:13+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "Anthropic Is Growing 50%, Microsoft Isn’t - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWXBBVzhwbDZmMS1jYjdBcXRhME05MHNOejBLQng4aG9Hd1F1VldlWkhLMmxnbzdLX3hSRkpnT0l1RnhOZXpRNU1OVXRoVHByVFV0cGRobW0xSmM4UHJRM3Nvc1hZZ3B1cTRubGpONUUzNkNSbGdEZm4yMGRNU2VEeUNjaEZPdFJyTE54MUcwLUVxUi00MmRwSzRtS25odTgy?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T15:22:11+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "GOOGL": [
+      {
+        "title": "GOOGL Stock Gains Over 5%: Google Locks Major Long-Term Solar Power Deal With RWE — Retail Sees An AI Infrastructure Play - Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNdzdiVGMyV2JkbVZWM3c3cTQ1YlFMQUxGOXQ1Wk9YMUNVSlFGWDFhQXBkZzhmWFlUeTA2UGtqUjhSVXJ2bFlvZVhqMGpCZHlFRVhpb2F4TnI0bjJ2bHV2Y1ZobXUyWWRfTGxMS0tNUHhpVl9BS1h5YmwzU3hVMzE2RE5LVk9lNUVaMWh4TndrN3JMNUZJcmFtOHJKWmZ2NDNWVHlXZDJ5ZW1QQU5WYl9ZZEU2RU53YnpHQV9rQ0NzQXpneDFRM19PYzY0Nm52VVU3b1h5T0Jfd0lVZ1UyTTE0b3A3Nld4dHdGZVJLYURDSVBBOV83VG1jdmEzM2hjbkZYVklFaGNCa0JtVF9xZ0wtUy1qQkZhRUw3?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T03:14:59+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
       {
         "title": "GOOGL Stock Falls Out Of Favor In June – Analysts See More Upside In These Big Tech - Stocktwits",
         "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOUDlyaGhHM3ZsRWFsaEJZU0VjY0xJOGg3bjJfUnhneTRWdV9JVmpqaXNQVlpoWldZeDl4TUNfdUhCU1hlRmJraWNEXzhFc19HZHJKVnBVOEU5SXlvR2lUcGNpTkxRRmMzRDJPMXRMbWxiTzhiUlJ1dGlTM0NMdWZEQUNVcloyakJlTDlDdlJCSHhtQnZuN1lWNVJjQ0xDRVM1VERSbnlZLVNUTnd1cEZTVXltSHZyMjQ1djdTVUdoRkUybjNOOXpJelloVnJwYzZDRWZrOGtmd0lHWmpFdmc?oc=5",
@@ -96,10 +104,10 @@
         "unconfirmed": false
       },
       {
-        "title": "Google Inc (GOOG) Stock Price Today: $344.81 - Pluang",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1zbnROVmwyR21hUE1lX2RZVk9sMjkzTUxFSWM1RGRCR1NsSmExMzZfZGdpQ0p3dEpTUHVkb0JKWFkxNTA1aHl6c3lHMGQ0aHhuTEUwVXNHTXdQUQ?oc=5",
+        "title": "Alphabet Stock Can Soar 22%, J.P. Morgan Says. Why Google Can Defy AI Fears. - Barron's",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE91SExKR1JKUTMxSEpGTGxMYkRCX1ZIQ0wwd25pcEJVZ29pc2ZRdlZqN2N6ZHZYdWpVRV9TQkRKUGFwZk4tZFlPMmNQVHFUc25XRTd5YU9QUHVGTm5TQmpRczBYN3ROVjNnUGVQblg2akJKYVJTcG9RQnNLaUY?oc=5",
         "source": "Google News",
-        "published": "2026-10-15T18:51:16+00:00",
+        "published": "2026-10-15T17:48:00+00:00",
         "kind": "hecho",
         "unconfirmed": false
       },
@@ -118,30 +126,22 @@
         "published": "2026-10-15T13:02:12+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "Google Stock Isn’t Exactly Beating Markets, But YouTube’s FIFA World Cup Engagement Shows Why It’s Still A Powerhouse - Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRWpyUGlvdmJjeUtUdnA0eEl5NDk4MG9mMkFRY3FkYjJ4TmZuV0plTmJKZUpDVTBBVjFEZGpWc0ZQUF9ud2liQkVjMFhwdGwwSWI2Rkpac21mZ0xnQ2NGczhEWkpueDlLekZkQXFHOTJWZHJfZ0E4Q2hiVkxienhORk40bVdtdG1kTTBQbjBDYWtBV1ZWdlJDdWQxMnZ2enE2TjZOQUJVQzh0QS1wMmFrbkQ3OEVGZw?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T07:37:45+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "META": [
+      {
+        "title": "Does Muse Wonder Launch Change The Bull Case For Meta Stock? - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRElXNTVLMjV2anNzYmJIek5ySWdCWFhtbVRydjRSUTBrQkZpdFVVbGhNLWY2UnVTNzBZVWV6MHR0THN6LUZpN193OHlxcXh6c0tmWmViUVl4UVAycmxJOWVTMWRncGpjOGZTMlJiMmw2dWVIM0llcjRIUERBRDVfVFluNmhESmtBdEVrOEtHdWlzaDRWdDRpYjczMA?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T08:10:34+00:00",
+        "kind": "producto",
+        "unconfirmed": false
+      },
       {
         "title": "Meta Stocks Fall as $135B AI Cash-Burn Forecast Raises Funding Questions - Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONG1sdjQxRnlyM3dSWG1UU3NJelQyaTFaem9mSGlHaGhvVC1jemh1RTlyOERiYmJWNVNuMlNkYUxoenU3M2d0dmlwdVZoQzBELVhGSzhFMHBzNjJvZHBILUtaaVV2Wlp4UnVPUmZGb1c4Z2pZaEw0Y1ZTV2VTS3FnVHY2REphaWlIYkZNN1oxanZJYzg?oc=5",
         "source": "Google News",
         "published": "2026-10-15T19:32:22+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "Meta Just Climbed 12% in a Month: Take Profits, or Hold On for the Ride? - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZjhWWE9LYndXQ2ZpNlVGbndCaUdIdmJlNF9vMGM1eGRaWTVlYTBOMDd5ZXFVWHhUSXd6OU9JX2ZpUnlNVVU2VGFySG5QRl9haDB1X25Ebkx6VEJPZFVfaDBMRkJTQlRKQjVVVnZObEVxUDlfSGFFd2dHWkNJNlBTZlgxbjFGbkpoSzRkOXFiYVRDOGNDQ3c?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T18:24:41+00:00",
         "kind": "hecho",
         "unconfirmed": false
       },
@@ -172,6 +172,14 @@
     ],
     "ISRG": [
       {
+        "title": "ISRG Jan 2029 230.000 put (ISRG290119P00230000) Interactive Stock Chart - Yahoo Finance - Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB6MTk0M0lYT01wUFJmSTdVUjBlQVNqMFBZZlpycDBkQ3Q0eDg4dW50TTF6OTFFekR6aGpycExnQjhEVldTRDVpNzdUUzEzQmowcUxtbWhRUmVqUlpDMjllc2g3dVMwNFdXTFBQcnBB?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T01:00:12+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
         "title": "Intuitive Surgical, Inc. (ISRG) Beats Stock Market Upswing: What Investors Need to Know - Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSi1aRnFwRnZtQWtlWGVqZW0yb2RKREREU1B5ODB2LVFKVTZueFRGNjRlMG93YXJjTVZNdTRDUE5GZ1gwRmlSb1VwSmR0OXFUU05fUXVIejMxVGtZOVIySnFYcWd2NlE1QkVjWEFxWVpKQTNfa0g1MHZlT3BaUGFCOU9vczI5MG82RzNKQ20yNFlzdWJaeW5qYi11NHpmbWs?oc=5",
         "source": "Google News",
@@ -201,14 +209,6 @@
         "source": "Google News",
         "published": "2026-10-14T01:52:35+00:00",
         "kind": "resultados",
-        "unconfirmed": false
-      },
-      {
-        "title": "ISRG 261016 595.00P (ISRG261016P595000) Stock Options Chain | Quotes & News - Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1LRk1EXzMwQ1YwaGlKVFVkcE5ya1lJWGxzNV9vYzVGS0Z0SE5OZkhWbGpDd0xSRnFXNUxPYVU3ZmtIMHpwZ3B4aG0wMHJiek9xV19tQWFyOFJuOXVDNnRWTw?oc=5",
-        "source": "Google News",
-        "published": "2026-10-14T00:09:20+00:00",
-        "kind": "hecho",
         "unconfirmed": false
       }
     ],
@@ -256,6 +256,14 @@
     ],
     "AMZN": [
       {
+        "title": "What Amazon.com (AMZN)'s AI Shopping Bot Block Means For Shareholders - Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNd3RzSE1RcHBCYklZelpLNUl3U2xiWlJYSEFfZ2E2VHI1aW9qZ0FlTHBtbFdxZGtCdllyNFF4UDhUWkg4NEstRFZiVUxIb1NseUxfN1FxaXJveEtqVGUtbnpsZFpsd2NOWERON05kdmdPTDR0RWgxQmR1OUFQcDRfREF4SUVwRktDYmNFSDllNVBXS21NdFJV?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T07:13:20+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
         "title": "How to Play AMZN Stock Amid the Latest Round of Amazon Layoffs - Barchart.com",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQR2FMb0VtZThFM29GRkFYZmI1c0VWY2F3R0lOYlVFVDFuRXlDRWZabzZyamhOVlVaSU1uNVVqRENKSWc1VHI3M0xmRjd2LXdMMlE5MVkxYXNuTXFvMERPa09WbEVYZzFpT25weE1xV0R4alRtUEJrSUd5NFFvT3dCU29KeDhHMkdrU2pOSGJvMGVUWjZkVkh5N01QbTItc2RwWFp0OFdzUjFMZw?oc=5",
         "source": "Google News",
@@ -286,17 +294,41 @@
         "published": "2026-10-15T08:38:44+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "Amazon.com, Inc. $AMZN Stock: Avidian Wealth Enterprises LLC Reduces Position - MarketBeat",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWnIwSjVXamd3b09zN0VXS1ZDbkRYbGlHaFc2U0t1aG9HOGs5M3Y2NHhwbFlaZ1pHZjMycGJrUzNfNlQ3bTk5aENMaDc2WU9VSDJaNF9NWVRHcXVFZkNoal9lRVBOYjEzRTFLZDFwMklObWxqRlpBajlvNjBmMUwwLVZ5eU1GMEZ6MVlub01WX21nQTFQaGpKOVdGM0doaWNWYjZqaE5UcDZhY2hyNUZVbzdzd1phOU9RNWlpSHlPWFpoQ3QzNk96dnlpd1hxZw?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T07:38:31+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "AAPL": [
+      {
+        "title": "Why Did AAPL, KO, PM Stocks Jump To 52-Week Highs Today? - Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOd05EdVdDNjBwZlZIeXJjcEVJTXFNNXctemw1RDRmWjR4Q2JVNlNQVVR4MGptVXIzRWYzYnNQck5UN0tGQlRxUmhpLWJSLVNnYlVYTkZvTDUtZWZRRnNIMGxmMUFtXzNQODRXUzRuVlFxbkltN0VDbDBQUWRfZDBZQWVfbU16XzRfTUVoa0hnYk9UUllxS25mN3VRa291QzlhLWJiVjE2RVJoUm1PN0U0Rk04c3B6Tzhx?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T03:49:03+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years — HSBC Sees Another 10% Upside - Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNc0dhWjJ6Nms4ZGtCbVloQ19IYVowckJJWXBFb2Q4b1Fwa0ZBLWZMcllIVGl5ekdUa0tSdE9kQUVicnVlS1EzdEhtek1MZ2hraTlNNDl6VlRzcGZ4ZWpqT1RMc09neXhsaDRtU21Ra2xwWl9ZM1N6bE1EUXBScDB0Wk12TVJleVllazBTWm5TVUF4NEYwbFNhbWhhUVFLeE5kSGFfR2laTGxoeTZPNzl2ay1aNENhZzJzQjJhVjRjQXpfNzJRalMzOTY5VnFrblY3cGJOYTM4LTNlTFIxcm1pNHQwOW9XTTZ0bVRBNzBTSk5iRUlrSUI0NVRZVmFxdw?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T01:20:57+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "AAPL Stock Heads For Another Green Month As John Ternus Takes The Reins From Tim Cook: What Could Change? - Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNemxydjJwbGQ3bklJSG5GZ0tGRWV4Q05YeExXWVIyNWplQm9CMmU1OWctelVvYWVIOXZSYXg3a2w2Q0J3ZGxhbnJ5QndqdkFnQ1RjVmR4WGVUakkyWS02XzZEUGZUTVJVQ3RZb0VnWUFSN3ZPdks3UVhBem9RcDEyRWx1UUQ4NmkzSmR1NzFXbVRMb09DZG0xMUpqNVZYYTNnNlJ3R1p4Wk94SkkxTUVqdGN3QVRVQlpiNm5fUG5qWWVFWk1WRDI2VnQ1NTY5eWJVR0RaZTRHdENJVFA2cnY4RGJYVHdSVVVaeFg2Wk5PTjhFT0RGUk1uVWJ5MA?oc=5",
+        "source": "Google News",
+        "published": "2026-10-15T23:54:49+00:00",
+        "kind": "rumor",
+        "unconfirmed": false
+      },
+      {
+        "title": "AAPL Stock Slides Nearly 10% — Apple’s Earnings Divide Wall Street, But Retail Sees A Buying Opportunity - Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNa1VpQUtobElmVUZBaENva0FaZEVhRjlRQXNwR1M4bmF6U1E5UWVRTDhHVkNseFdXTTdRQnZnU180QXZtaElCYkc5RnVMMy1RRW1jQm1vZmVOc2hibFZ0N21tczBUWkFCeEtzaVEtQmRTdzQzWXFRbERreWoyQ3FDaVMtdk91SGRoblJLR2FjZTJ2OXFSaGtxX3FrRHV5cFJBZW9VaGNQOFBrbmt3VWFPRFMwa0FoY2ROYVREcVlDQUpmOG1YSmdOaFEwRm83YlczTXlhZWZhelZaN3FGcEdRdjNKY3BIRWQ1ZWd3ejVYV3hleGc?oc=5",
+        "source": "Google News",
+        "published": "2026-10-15T23:10:36+00:00",
+        "kind": "resultados",
+        "unconfirmed": false
+      },
       {
         "title": "AAPL Stock Gains — Apple Reportedly Eyes Foldable iPhone, Camera-Equipped AirPods Launches In 2027 - Stocktwits",
         "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQWGtNOTlQelFyMkJVelNVejNjQWQ5ME9lTHlkd2dJWnExazNscTRiSWVhWG1KTlVXOXBpSnEyeWZpNmdldHQxV2lwcU1OZ29HNVI4Z2pHbTFOclRzdHROSEhqMFBjekZwRU84TzF6UE0yN0NyanA2UnpoM29rakxkUXlPVEpLcHFMdTd2Rll3T0NjdElvc0xJeDVtZnBUSE9BTGdXWW9YendCMjRvdkZySkNQRDBDU2R3cUNhM0pXbHhZMkJpOUNaclZMT2M4UzhGUThEWQ?oc=5",
@@ -304,88 +336,80 @@
         "published": "2026-10-15T22:31:18+00:00",
         "kind": "rumor",
         "unconfirmed": true
-      },
-      {
-        "title": "Is Apple the Ultimate Stock to Buy Right Now? - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeFF1SDgwNW1RNFNZdUdydFJDWFA3THJiUENVOFlUTnFaMV8zb2t2QVNuLUEzOGF5bmtVYU56RjhYTHdXeTBvcVZ2T3FNcEE4emlPZ0dZdWw3ZVFNZjgweVY0Y3FXUTl4XzlPX3d1RE5GdmYxaTB1VHpYWnAtNTQ5Zld2UmMyVDU0NmFlbFN3dWhzemNlQjY1cg?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T21:43:00+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "Apple stock closes above $5 trillion market value for first time - Quartz",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONU1fN1NqQnpSZDdOa3pFbUI5dXBlakVhRzZFQ3dJTUJUdGl3UVkwcHZQUWljYUp3UWxOYVg2X0FOMjN5OGRkV1dEYmhHN1NMeGxUUE9PV0dKTENiRkQ3T1hodWlXTzV6azZyT1d2T1FNcFBUc1J4R0RybWs1V2xyZg?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T11:19:38+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "Apple (AAPL) Stock Could Be 25% Above Fair Value On Apple Home Push - Simply Wall Street",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVGpQaUVRVmc0S0hSUXA0aXVNZG0yMzd0RUtMTXNlUDBaQVBpVFZ5a1pRNXo5Y2N6ZTJSMlFKRGQ4dkFJcm9WaWNFN1VCM09TLU5Rd0RVTTBsTXk3c0FJQURKeE1XSmR0VllNeERxX2tvbEFZQlh4VDQxQ0w3UmxuVURkd1prY1F3RUN0MkY5NV9vOWtib0RwQ3NXMFl0aVRlY2lYakFsSWU5bGp1Uy05ZnpBd1N3b2NXdkhj0gHAAUFVX3lxTE1rVEUyQWZldHJEdWI3aTRxV2dhLUxENFZURlloVFVqOER1OHpEaHlKWnBtMldLSzlKQ0JYMnF6YVlxOUNPWVltRGo5d1JYSFNuS1RLMTVVNGk3VnJoeDFkOHRhRTIwSFgxSnk4MHZZUUh3VWR1RkhWaDR5SWt0OEFrVzh6SEJzbVNYenRxYXEyVTVIZVZHbUJqandnak9hWUJuLUYxVGJyUWluS2l3VmdUc2xpTGp0WkFhTmdFWFpNRA?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T10:27:30+00:00",
-        "kind": "rumor",
-        "unconfirmed": false
-      },
-      {
-        "title": "Premarket Movers: AAPL Gains On China AI Approval Report — Why WMT, NFLX Stocks Are Also Rising - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTXlnVU1HZU1WQ3lFYXpkN2hRYnAxblBSZjZqUC15TTd6RWxJTTlqdk5MQlJOb3BLM05yZmtmX1lWd0E1U0R6a0xLZnVjaTBmUmhRRVVWS0syZG1pQzExUXRRWFFCLW5lbjl4TW5Jd1hqWDNUTEVIVFRfSHl3UXhOSlM1TTdsWDFnaUdpZ0xUMGJTZkwtZlVjWGgzN1d5ZlU?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T10:19:03+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "IBM": [
       {
-        "title": "International Business Machines (NYSE:IBM) Shares Up 2.7% on Analyst Upgrade - MarketBeat",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTm9YUTd0a29adFd3N0d3cmFVcDU4WXhfMW5Sdi1SeDJVRDhlcU04U2ZQalRFMmZqTEpZQ18xaXVlZkZLSEZLNHF0YUNCZ25KcUg1TTNaTERFaXA2VmhFbXZKUlRMQXFTUE44anFjWXVWc1h3Wi1hdHVxcGVtcjhaNFA4bjFBMHIyQi1uMWE2SkxHakROOWtuMlNNbGZSQ2NheHRtQVVsLXA3anpqSkVfTkFMd0M3TlJNVnhsV3NUWXdKWXllNWVlQ2FCbDk?oc=5",
+        "title": "International Business Machines Corporation $IBM Stock: Milestone Asset Management LLC Decreases Holdings - MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNWHQzUldZcGZteDAzcUdCR20zRUFSOW9DbzEza2g0YmYtVW9LWkNEb3BVazBYbjhITW1NcUR6b0NYbkE0WktPc2M5WFJKdUthNFd6UmJna0N0UU1kVVRNMC0tNDBBSkFiekc5elo5Yy1UWDRfX18xeXBmcDJyX2s0OUZScU82VFZiY0p4eUNnYVBPdXUwb0dHQnZXWS0yeHlwdGxHSTMxem92Zm1KWjNFTnlLY1p5NTc0VGQzdWN1eTdVbmY5dTZXZUJoelM3c09DLWszMWoyaTlvZlVXeU5jLXdFN3BvMGVNbVIwUjRhWC1LdjhLV2I0?oc=5",
         "source": "Google News",
-        "published": "2026-10-15T21:21:29+00:00",
-        "kind": "analista",
-        "unconfirmed": false
-      },
-      {
-        "title": "International Business Machines Corporation $IBM Stock Holdings Lessened by State of Alaska Department of Revenue - MarketBeat",
-        "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPNldXLTZJOGt1anUtNUotUGRWLUpieVZZX1ExRDRyYW9ESGhJOHhYUmpLVXRxYmxEcUVNM1M5dm9sQzJNNG9zRmlKSUNrRXA4eHp5QlZsQUEteWdaVkY4N204SmhXT053VkdsMWNjSFhEQjFNVE1MVGlwclptVnRIckdWQkd4Y2E3NzlsZkFzMm9FUnhEOVpoNUZZVzQ1Y3JacjQ2VjBWUHZzVjlzYWlESV9zSzZpNUNOTU5jbGRsNGJJZDVOQVVpb0MydmhIRThZU2ZWWVhJUS1Qc21UZUFLTEprdEpudFJaUGpUeWF3WUJ4MFU0YzBORjM2c0ZlU0lpN0RR?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T17:40:13+00:00",
+        "published": "2026-10-16T10:06:03+00:00",
         "kind": "hecho",
         "unconfirmed": false
       },
       {
-        "title": "International Business Machines (NYSE:IBM) Stock Price Target Raised at Morgan Stanley - MarketBeat",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZlVWaFAta2NKa0VoTHYxVTI4QzBJRGUtUEZTNWpQSFRtUmVaVlBlMjkzZU1iS25SMHItbmxBTlRSLXFkLXlXMldENm1fWU9pSUhxR1FlNTRnYm9WRVVqQXdyWmxmaHdKajgxTGVPeHlybndDOXlSQlNEWEViZEJ5UDR2U2d3S0MwRjVhNnF1U1RyV3dkVEM5T2kxUk5RQkpScEZFUFQtMjBRY2p4NGJrT2Naa095TzEzWlcweWw5MGh1M183aFJIR3F5Y3pPT3ZqTjFlblVicExPcFVUMnNV?oc=5",
+        "title": "International Business Machines Corporation $IBM Stock: Weaver Capital Management LLC Grows Position - MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPQlUwTU44UnF5SU9pM3pNMkY2VkR1cjQxNDAzYWh0ZUlHYjNlSmVWZm1hVXVoa1J1V29uWVo0cWMyZWZ3anRzWWlIWVoxYTBLdnV6TlhjWWdJWkhNOFM5NzhUcC02MTZPQTF4V2QzZmJtMy1PRUNuZThFZUcxU1o2aWdxcmFoOV92MnBITXlKS2pEaEl5T2VCWnBzR1hVdUZ4eDhVRXJHZ1NaS3lTTEt5aTJabk9sclpCOGdMMUZPc0Jta3Z5QUx3UVZraGhfMHVSSlZRQWlNY240TXRBTEVxNW5jVDJ4T0JrQXpfdlg1VWo?oc=5",
         "source": "Google News",
-        "published": "2026-10-15T17:24:03+00:00",
-        "kind": "analista",
+        "published": "2026-10-16T09:23:38+00:00",
+        "kind": "hecho",
         "unconfirmed": false
       },
       {
-        "title": "IBM poised for modest third-quarter beat, says Bank of America - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcHZrS0tFS1FNUVlKbGF3M1pCeGhsQXNjYTNVZEkwUlNTUnpleUpNbENSMlhpYjRwODBwT2hMS3EtSmVWRDQ1RkllT1hfRlcyYjNMNVo4cTFQMHdMMXE5MEd5RGNnSmVCRFRqMUxpN1NUaFYtV3E0MGxTUDQzQ09mbXpXMlB2TU9tZmpCZUZ3Z0M0dHkyYm9sOGZFbW0?oc=5",
+        "title": "International Business Machines Corporation $IBM Shares Newly Bought by Harrell Investment Partners LLC - MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQa2F2VWJrelFLUzgyb1pVdFBOTUVSdEF4MzlqY3d4amQtbUxEWk1ENnhxYlRxQUNJVGEwWDMzLVdxYldMTW00SG1YTUQwVE45bDFqWHZtTHNnaHBTNmY0dzFlV0QzMGRRM3V1REJXZEstcm13aUtHa01IS2xkTkVkWEhPT3pHdkpRZlZYMFJ6X1B1Smc4a1RUSzZFaHBTcDlDbnpWX2JJVDJ6ZzdqV0k2Y0N6SVltSlBrcDZnMmVrbFFZZUFTdThlT3UzSGxadHZVbnZEUHQtck1FTUR3YVNkUHp6dnAyS205bFcyRWpzN3QxU2pFQlE?oc=5",
         "source": "Google News",
-        "published": "2026-10-15T17:09:00+00:00",
-        "kind": "resultados",
+        "published": "2026-10-16T08:05:29+00:00",
+        "kind": "hecho",
         "unconfirmed": false
       },
       {
-        "title": "International Business Machines Corporation $IBM Stock Sold by Fort Washington Investment Advisors Inc. OH - MarketBeat",
-        "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQMkxLcC1Ob1ZVckw0aTJ0TXl0X1hnY0g0YnViem9YS053RVN3cjdHZDE5bEktdFVqY0d1R2RjOEd5N0E5Zno4SjRNSV9fV0xKdmZaeHRHRzhiV1ZONEVRZmU1ZGxyMEFkQXlEMk5pQUtVOEpOMm8tcjBrak5HcUhFQ0VTTTJ6UHJUMl9ZamhSR2lubVpiVWZsZy1yY25vczNIQWlrZ1dSQjV6eUFobFpyOWllLUR0TE14MnRoTkRsVEpvb3VvdEh2WlVGWHl4c2VxYUZXWXJsZzVmUmd6U3ZXOWtad0hjMmdob0FjbjlVcERrY01wNHhydQ?oc=5",
+        "title": "IBM Stock Technicals: Gains 2.74% on Thursday, Testing Key Resistance - JournalArta",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRVh2S3BkQ1gtREdiTkRWQjh4TFlLd21qUEtuMjNONVUxaE9aMlB3SU5oaDRKVnJtbDd5RTd6T0Y1b1dzekFyUVV1NGR4cWZZVmk5RFdIRXM0dE8ycUpqd2JrUEZCdXUyMWFyNWZ1QVFrNWNrR0lpbkNGempIOTNLQ1FLdHhWRmxlcHhjdjc2MS1lTzdsUTVIenkzZkVwQUtGZGduUg?oc=5",
         "source": "Google News",
-        "published": "2026-10-15T11:18:57+00:00",
+        "published": "2026-10-16T07:58:49+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "International Business Machines Corporation $IBM Stock Purchased by Assenagon Asset Management S.A. - MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOYnFGRFEzeUF0VGQxSldOWFphb2dablNzNm1LVzY4N2ljUlh4WXVOMWdWUFU1UmxMOC1ZUzZUcjE2UExBNHVFcTB4ekU3TFRsU3MwWlZfUWR1WXpFV3d2NTlQcHlycjJ0ZnllYVdZRmlBUGx0UnJadzlOMlpRNm4wZWNuOWs3OXNsY3lCLVoxTXoxdzdOVGJleXdHMERXR04yT3FIMjVmeXRibUk5emZyVlJsOFdBRXZmTG54V3JaZHJKUUJ2UXBRS3FLb2JFSkRrajBtTkNKSGpSUlVPVVZnYzI1T1ZyU256aHhIZkFR?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T07:11:11+00:00",
         "kind": "hecho",
         "unconfirmed": false
       }
     ],
     "COP": [
       {
+        "title": "Grupo Sura starts COP 500 billion buyback of Grupo Sura stock - ad-hoc-news.de",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUldITDk2c1JmY3JsMWZZcHpERUdiREpyVEotY2FEQS1yOGZyUDl1ekczNGVhR2ZReVJadDdiblVtV2tvbDhPWTFmZkM5a1ZlWXVBNXUyeEJkT1FUZmVWcG1wVDFmdGNhRy1DbUI3b1lteVEtbkJlSXBYTWM1X0hmMkJTZmt1MF83azVtQ3NSWVVwdXB2Y050a3h2RXMwVlNfY3gxcTBPR0h3ZVF4cTFVeG5mQll0UjA1dVE5eQ?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T02:38:32+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
         "title": "Grupo Argos joins FTSE All-World: target for Grupo Argos stock rises to COP 20,025 - ad-hoc-news.de",
         "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMVNJdlFZU3dlLVJ3MDUyaGJUU1ptY3dtNF9MMlVzU0tsY2NVd2JLQWxNck9UbnRMRzFKeFFaRUI4X055Wm4zUmN6Qnh4bGdRY05obnJVaFhULVl5Y2JnaVlSeXVNTGJCbDFUdUJKWkJtdHpQTnRGbHQyUGNZdUtEVEVHWmtVR0c1SDkybXpFTU9oaU43bHhHZ1ZiN3JVWjNSWTZKQ21iWTFtbVlUb2dyZTVYa045WHM2SDlaUHR5aHJhbmRFNUhpRQ?oc=5",
         "source": "Google News",
         "published": "2026-10-16T01:22:28+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "COP Nov 2026 140.000 call (COP261113C00140000) stock price, news, quote and history - Yahoo Finance Australia",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95SHctdWZ3T1RRZUxranpmcURJcDZxT0ZMNW1QM2RiQnpSMUIxX3lkelJGUU9NTWxjbDZuTXBnd015WFR0cFZmUGI2b3RoWEtwaU1kTE0teDY2VVdVd2JWMGlVaFU?oc=5",
+        "source": "Google News",
+        "published": "2026-10-15T22:59:40+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "COP Oct 2026 118.000 call (COP261023C00118000) stock price, news, quote and history - Yahoo Finance Australia",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPbENnYkRsQ2NSQThTaUJpbWdwd1NQMXZmVkV1S3pqSE5YVUFJVExPaDZTeWtDR1VFUEpyTkVEMjlCeFQySWhXOEVGYWxIV2dZT1lSeTlBc0Y4N18xRGZNWjI2ZGU?oc=5",
+        "source": "Google News",
+        "published": "2026-10-15T18:25:01+00:00",
         "kind": "hecho",
         "unconfirmed": false
       },
@@ -396,33 +420,17 @@
         "published": "2026-10-15T12:30:06+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "Wells Fargo keeps USD 189 target for ConocoPhillips stock - ad-hoc-news.de",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONk1QQjdlUW81ZzJQbHBnc3k0djFFRFAxSWFCaFo4bWt1bXlVUUVsTW5FY2hiQWF3a0tKbm9veEdINTNWRklsQjJGb0FhS21MYkJydzM4MmZmalREZE9NdGhVcnFjRWFhLXRHYjlLZmVkZFd5anlhOGhBc3pyWENFcGNpZHBVZ2EtODlFQUJtaTVLZUsxTjN2c2ViWlFoWFF4WF8wMFpra09VQXdjU213VUwyZkhOSW9nbkdidw?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T07:46:40+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "2 Profitable Stocks with Impressive Fundamentals and 1 Facing Headwinds - The Globe and Mail",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOUWo5NTlkZDViVGpDUTluTUdacFM2ZDJyRjN1NW1KTjNfY0RVaFNCN3lQS2NyWlBuS2g3NXFZQmJNaUg2YUVMQVJLdDZFeWdqZk45M0ZTUXhib2MtZmtrbFRqYXI3MXNMSXhPbWM5TXdFSkZ5eDVnV1NsUXJDUlRQck1PMlpQOENfbnFmTnBiUU9fMm5IbWFiX3Z2Nl9OZTdIVEVqdVVwZ3JHRC1mTmVwQUhPZlRGNVpoZFBXWjFNSDRxTUVyUWJ5d000a1EzOXdSRWlyMVE0TmRnOXRZYWNIc21iV09IMGhxb2VJ?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T04:38:00+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "ConocoPhillips (COP) Stock Forecasts - Yahoo! Finance Canada",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOLWlLV3hRVXBBQ0tYaTRTQUpNR01JR0R6Ym9ZNDNJcDFDVmctUkVDclpsVU84QWdEQXlfZEk0YmhnRXNvb2llUmJJbkdubHZwbEt6X3dqNVVqcE5la29KQmlWUlEtOXpMRTF5T3ZoUG03ekdxLTRramIxd1Y4cldfRS1LMWg1MUVGbTFoV19oTlY?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T03:06:38+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "WMT": [
+      {
+        "title": "WMT Stock Rises Premarket: Analyst Says Walmart's Vibe.co Deal Strengthens Advertising Push - Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSlNaV2w0ODZWaFlWRTBaOXo0enVQV0VNWjlYc3ZPTy00SjhDaUE2XzlRa29mbU1wejBWcnBrdkVha19xMEdPTmxRUWllTkR3ekdHMThnN1dpc1h4ME9mYUxTY1JfdEcwejB0eWxvN01hUWJvTWs2NDlNYnpMSnZjaVdEZDU3ZERnQzB2UmNKZ0lkbjlicGp0Z1lwc3pPc3JUYjB0aUJ3REluUzZmR2lHUl9wUnFPeTRmbWtuM1N3LUZsNEk3b201RnE1YjljemtJVFJMZ1NXdVZ0VURhNG5Na181cUxMZU9VZnc?oc=5",
+        "source": "Google News",
+        "published": "2026-10-15T23:18:59+00:00",
+        "kind": "analista",
+        "unconfirmed": false
+      },
       {
         "title": "Walmart (NASDAQ:WMT) Stock Jumps 1.5% - Time to Buy? - MarketBeat",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYmUzWnZGR0dCN2tkbXZ6REZyWEpJZVZfV1pzTDltYTM5MFNGeFpGSXhsLVpQTktWRzN1TUZqYjV3aGZMamhaQWc4aXJaaUFxUkxJM2VQMFduYkc2RUhFbnJKT0FUVWhyN2w5Ni1QMnVxT1VCSE5CWXI5Vkh3eVlrdXJYQmZXS295T3ZtUzJjd3FkVWZsQ243SW10bG9LUEM1ODQyQ2xtSVU?oc=5",
@@ -454,17 +462,25 @@
         "published": "2026-10-15T18:48:00+00:00",
         "kind": "analista",
         "unconfirmed": false
-      },
-      {
-        "title": "Nike, Moderna, Walmart Get a Lift as Traders Flee AI Stocks - Benzinga",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWkxTYjZ0dWxpckdNOEVib3gzakdoeHViX3VVR3YwQnR3ZnVCck1GMnVXT2lFM1Y0MnZwb1V2TnRpZi04YVgyMnUzQ0JrX19mWEFFdTN3SEk5RFN3bm8zNXRZUm9veWo1QjNjeEM5blg3a3dRN1RwdmJzamR6dlh6TkRuTlVXM0tkbWdKaS14Sk4xTnpVQ0xSNDZxdHhWbm5DX1J4SW00Rm9ScmZZb01mcER6SnY1X0V1VHc?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T18:15:24+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "CVX": [
+      {
+        "title": "Chevron Corporation $CVX Stock Bought by State of Alaska Department of Revenue - MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcmFRelV4UG5vamZvRnlHZWpTd1c5alVPSEl6LW9XdTBjR25tZjEtZ1pwVG9UWThETWdRODU3amFyWk1ZdHU0c00wVjhUd3ZqT3Nvdi1tY3Baa0VOaGtlT1VUWGxGNEhfQ3pvei1XXzcxMWdRWFF3UTJWYy1qRG9xWGpVTUs4M3luYlk0WXhmVGtwdkZzZm94X0h4NWl4RGFMcU8tVVJlMFo5Uk4tNlZrdGlKWVlKZ3V2Z0U2VTd0SThvdzN5ZFRYQ2s1X3RxUWJSd1dGTw?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T09:07:35+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "Chevron Corporation $CVX Stock Purchased by Assenagon Asset Management S.A. - MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQZGt0UmF6QVp3RmdvSmRmQlQ2VTBkMVBPeEtSN1RPOHFLVzBobExXWFZtek1sNkJfZXI2VzRQSlBFREJFb21tWVNndkF6RXpxaWVkYUtURmZnSEpjUnVkc3lETzFRcVUtcHczN1J3cktoempBbHc1THBVUUVUYmthcmJnQlo3SUVIdmJjaDFpSmNJcEhWQWx5R0NrSEx6b25JbVh6b0h5LTNnYjY1YlBpWnplRVNjR2p5THAxNTF5RG43QWFQZ1dCOXB3eWpOdw?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T07:07:18+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
       {
         "title": "Chevron (NYSE:CVX) Stock Falls 1.1% - Here's Why - MarketBeat",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZjVYbVVlVW9oOElIcDUtOEcwaXFIbFVlbnZVcTBMQzF5SGt3cFRsSEM1TkRRUzVkUEFBQUNYZ0ZtZ1JBYnQyZldsZHZmNjVvZzg0OXJhdGhlaW5ZYVhuLTh4NWJvT1VhUXk1Q3ZKQllRYTR2VFFKSGotN2ZyWWFocUFmRUtaY0s0VTNtNU80Z3QwTVAzMkNzcnVoLTNKZ0NUYklR?oc=5",
@@ -488,25 +504,33 @@
         "published": "2026-10-15T20:04:06+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "Better Dividend Stock: Chevron vs. TotalEnergies - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdDBmYWt3X29STWtNMXlWWGFTbElLRXNlNjRpUXduX3RiUWpmYnJlemlXZHBHclNKdDVhVG5tUUU0Wk03WHRFdkdnX3BPN01VQ2pRZnJCdlJ6dFRkVDFFaEJCWGJnN3VIcGxpTC1DOXNQdHdZaThnY2dkZ1VKenJfWVo2aGgyckRWQUJOYzRCM2FkQy05ZktrUzR4YWJwQQ?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T18:25:21+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "Chevron Corporation (CVX) Hits Fresh High: Is There Still Room to Run? - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRkFldWkyR3RwUUN2RTRkbkF2VVNuR1F2VERLWmhycU9jX0J2alpRWXJMalBWOWY1VnBHN0tHU2NseXBJanJuX3YtSENvUzFJbGxSYS14NjNZTDZ0ZEFxTGtaX1RpSnlBWlZoTjdSYjhWck1NR2pFWGpicDMtMi15WDQwZDRpSGwzd1ZyRVNjcDlaN3VmZ1lRS1VlRWxNNjlH?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T12:15:28+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "QQQ": [
+      {
+        "title": "Invesco QQQ $QQQ Stock: LifeSteps Financial Inc. Decreases Holdings - MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNcVlfNmgwZ3I3WUJydVBYUWN5eDg0MjNDc2lGTlBzNkNBa0piaTRROXFscFZHTFNhWjdWQUZ1LU9zdjIxTy1xTkYxa19TSHptS0J4NlNMRl9OZ3N0Vk9PWUNMRzJJV2VXNWRQdEh5cDVpLS03V2toREk0Y3ZTRkFXVFhRUmNUSFlxM05iZ3c3bGxFQXpOVmE0ZGRQTHdRRFY5TVVIVE0yRjJ5LXo3MC11blhkMUJfd2QwRzU1ckNRN1J1aTQ?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T09:19:36+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "Invesco QQQ $QQQ Stock Sold by Charles Schwab Trust Co - MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaV92THUwZk81TlVCZHJVaEdBQ2lxQjlEdllLTTc3cHQyVldrMHVSNjlydDl1S1NUVXU4a3FOaVAxMTNsUjRBYnpGMEl4OWlRaGlCcERJbmdSQWJGeGJaUWcxaVh5X2xkc2hDUHJHTE1tWk1VZkVpOGRfSUo0Z0tHWks5dDE1UmlCdDFEa0RGb0NxQWVrSzRZdjl2eTNqeXlvRDl3b3VSWlZtZ3JsY2xkVTVwMGM?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T07:23:13+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "Invesco QQQ $QQQ Stock Bought by Brindle & Bay Financial Advisors LLC - MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdVpDUGpjemhkdHRrZG1OSWowVW9GZTdPWGVqS0FhbE41X3BKdmNBbUluVU4yTVlIM05qYnRDQlNNd1QyWERMdU5tYnlXa1JGaHhYaUhEc2w5RlRYa1RRaUZpQ3AzVnZRdjlaTmJNbzdwQzBaMHFhSFpkRmNHR2VXUWItcUlkXzlxTTVjWUFUM3o3X3ltMzlicVdyNUZ0cjdnQWx5U0tHWjdZTW9INjVScFlvNGhKUnhvOHo0S094cUEyeE50YVE?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T07:20:31+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
       {
         "title": "QQQ Oct 2026 720.000 put (QQQ261015P00720000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
         "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1scXoxbk5IVWtvM3N5QmVHY0JlZXV0RG5WcnZhb0hocWxKNGM3Zm5RWHVCbDFLVXlpMlk3cTF4cGxkMk01OTlaTG1PZ1JjMF80allkNU5ma0JtSHlnV2htNWtsMDI?oc=5",
@@ -522,33 +546,41 @@
         "published": "2026-10-15T20:45:29+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "QQQ Oct 2026 733.000 call (QQQ261015C00733000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB5TmVOLUJNYTZIU0tGdy14M2hoM3ZCRTlkazViWlVvR3lvR3pURWFXTldfQkstU1RmdEZ6WkxFU3NJMkN1VTY5dDg3Yk81YzJmT2FuNFgyZ0ZuSTBxcW9fNTUzMHA?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T19:30:29+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "QQQ Oct 2026 732.000 call (QQQ261015C00732000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5OeTItSmhoOFktdVJIcUt3RWZVTEwtdnJLVVFQaGpzc2tPclc5RmlHbFZ6ZVRPLVV0S2tId3RZY3FiY2RDUk5tSUtKcEdOMTU0WWdlMTJJSWlfZzlCTzY3bXIyVEk?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T19:22:20+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "3 Reasons QQQ Could Fall 10% Soon, and 1 Reason It Could Rally Into 2027 - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY3RrUzZvTmxmLV9XamEwUVhvMWlqZXlIOTZPUnNrQUVxZzVFZlprRmxlcnNFSmZELXh6NnJTSUVtR3EtMzZfUEpHdWdBWEFJVzNHeGJrcDBLQVFESW02UnBaN1VrM29WVzNpdWNpTC05WEUyNWFuMmZLZDBCUzlwdjlQdjlELWVqc2ZDTFc3VF9Zbkk?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T18:02:37+00:00",
-        "kind": "rumor",
-        "unconfirmed": false
       }
     ],
     "VOO": [
+      {
+        "title": "VOO Apr 2027 610.000 put (VOO270416P00610000) stock price, news, quote and history - Yahoo Finance UK",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBSN0xNdmV3ak1rVWc0RDhxY0ZvTk83cUYtNmFpTVIwQWpnbkxCV3BOYjhHTDctTno3XzI2LUVLZXhmZHZJYXlzRnhCby1lTG9Yd3BZbFR6Qi1LVUlKbndYX0FDWXQ?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T03:54:37+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "VOO Nov 2026 695.000 call (VOO261127C00695000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB5MEpDWHlsSUpHby1PY0VXTHVIRHZfOVFfOEoxcktGZkhGQ0Z2U0pLSEZGb083aTVEMmszeXFYNUktbGdJUG5kNTZFbnVzalEtWlZVbEdxcTJrSmNDWU82SmlCSms?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T02:59:51+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "VOO Nov 2026 550.000 put (VOO261120P00550000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB1MzJvYlMwRldqdDBhV3RaQVFKVEpYVlJKYkFpV3Vta1d1VkZXMGZESFZmMktVWm51TWw1Y2V6a0w2S3NsUWZiNm9KdEVLSGJnX2l5dkJYRWREa0lZZURYbEd3eVQ?oc=5",
+        "source": "Google News",
+        "published": "2026-10-16T02:16:27+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
+      {
+        "title": "VOO Nov 2026 712.500 put (VOO261106P00712500) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBOVEhBQUdaaWJkcUFMXzUtRjduc1ZYbUNkSWhCdXhwekllMzA0VnllZlViVnMyTmhzZ2EyNlY1TmRoQWdpM19yclRiVlRPUmZUQTRRVVM4SmZiRzhvbThRdG40TFE?oc=5",
+        "source": "Google News",
+        "published": "2026-10-15T22:13:34+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
       {
         "title": "VOO Nov 2026 580.000 put (VOO261120P00580000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
         "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1aNHJ0Q3J5LW5jbXlNM3VQODlrNnNRb0RwSi1IRTItTTByUkJiZUJuRHdfWmFNRGdZT3h6WnhmLVNJUjFYdDBGYi1WUDZnOFVrVW9sNWFYWWIzWExEUGc0dGxEZGU?oc=5",
@@ -556,41 +588,17 @@
         "published": "2026-10-15T21:22:12+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "VOO Nov 2026 625.000 call (VOO261113C00625000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xbUsxVWJzZ2hFNTR0ckRKSjNBZ0dLV3U4YlhhRjZ0cWdoNmFQdWQ1amZsTVRfcDhlM0VlYlA4MmV3VEUyazlOV0J5eG1BRjZxSHhBLVJOTHY3S1kwdGZRcmZjcnM?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T21:14:14+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "VOO Oct 2026 575.000 put (VOO261016P00575000) stock price, news, quote and history - Yahoo Finance UK",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5VZVNVN1NBMmZzUExmZ3h4TVRlbW9pbnRuY0VuRnFNcGRaa2sxa0JVaEtWTWNIaGRjdlZEdUdmTnhrZ2d0dkhKQTRVZi1STmdicnA4R0sxTUJiZHUzYXEwajdwTVE?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T21:09:51+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "VOO Nov 2026 625.000 call (VOO261127C00625000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ub05XSjNtbm5oNnBVTmVBTkpTOW1rSlg0TzVoRG1uWnc3TG03S0t3V0l1SXQtUlFIZGk0eFpvQ1Z6SWI1OTZ2WkFYaFF3RDRySTV4eWlhV2JLUDJDWllGRk9FQ2w?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T20:57:03+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
-      },
-      {
-        "title": "VOO Nov 2026 755.000 call (VOO261120C00755000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5GeGFUN2xNWE0wUXhSenhuMUQtM0xzNG1SQXFQZHY3WC1xR3A3SDdkLU5ubFluSUpXdXN4bTJHUE5pZWVpTE5fUWJTVjJXT2hYZzQ3WTY0V1VNOW1sa0RlaXBLOGg?oc=5",
-        "source": "Google News",
-        "published": "2026-10-15T17:40:52+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ],
     "IAUM": [
+      {
+        "title": "HSBC Discountstrukturen I (IUKR.MU) Latest Stock News & Headlines - Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBnYnJyVGo5am9sTkZIOUY4RWQyVDFUQ212a0xqdHpMNUhwS2V0UEZEZFpWUFMtcWpGNDFWek5mbzE0QjIyM3NrZVRhN2syWkc4alZWVEFqRlJQOGt3?oc=5",
+        "source": "Google News",
+        "published": "2026-10-15T14:03:20+00:00",
+        "kind": "hecho",
+        "unconfirmed": false
+      },
       {
         "title": "The Zacks Analyst Blog Highlights GLD, IAU, GLDM, IAUM, GDX, SGDM and SGDJ - Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTjdraVNwYXNlcVBxR1NnT2dpVTF1N2VOVnE1bi0tb3cwSG5ua05xZ25VT2FtNU1uMWtYbFM3ZnZvcXBNZERNWlJsUENYTkt6Y0tsbXV5eGcxaWJzaWM1MTJSejlPWVFxQWVnWjQwR0wwRjlYZWhzS1NpekRZbURXdDFrNzJsU0pDOFdBaGp4UVBQczkyaEp0bllOc2tnbFhad21JLUVR?oc=5",
@@ -622,148 +630,142 @@
         "published": "2026-10-04T07:00:00+00:00",
         "kind": "hecho",
         "unconfirmed": false
-      },
-      {
-        "title": "Best ETFs to Buy Now for October 2026 - Zacks Investment Research",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9pUnpmMFhqcGM3YWN0Wk1YelVwOUxpdXlPOHpHMEZTa0VRQUVLNnVqT0R3eGVzdm1mRFFYdV9Hc21IN1N3MkRUSXFxYXlIS0FkY2ltQnNuU2xsRHE1emNWVnEtR2s0UTV5dVNrY1c2aThLZw?oc=5",
-        "source": "Google News",
-        "published": "2026-10-02T07:00:00+00:00",
-        "kind": "hecho",
-        "unconfirmed": false
       }
     ]
   },
   "mercado": [
     {
-      "title": "Pepsi loses more ground in the soda wars, as KFC switches to Coke",
-      "url": "https://www.marketwatch.com/story/pepsi-loses-more-ground-in-the-soda-wars-as-kfc-switches-to-coke-49b1ef53?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-10-15T23:29:00+00:00",
-      "kind": "hecho",
-      "unconfirmed": false
-    },
-    {
-      "title": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-      "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-10-15T22:31:00+00:00",
-      "kind": "hecho",
-      "unconfirmed": false
-    },
-    {
-      "title": "I’m 64 years old, with two sons, but only one works in the family firm. Should I leave him 70% of the business?",
+      "title": "I’m 64 with two sons, but only one works in the family firm. Should I leave him 70% of the business?",
       "url": "https://www.marketwatch.com/story/im-64-years-old-with-two-sons-but-only-one-works-in-the-family-firm-should-i-leave-him-70-of-the-business-2fe6c382?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "tags": [
         "mercado"
       ],
-      "published": "2026-10-15T22:15:00+00:00",
+      "published": "2026-10-16T10:16:00+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
     {
-      "title": "How a midterm sweep by Democrats could turn this tech selloff into a tech crash",
-      "url": "https://www.marketwatch.com/story/how-a-midterm-sweep-by-democrats-could-turn-this-tech-selloff-into-a-tech-crash-a1d1a82f?mod=mw_rss_topstories",
+      "title": "Here are the key things Fed Chairman Kevin Warsh said — and didn’t say — while Americans were sleeping Thursday night",
+      "url": "https://www.marketwatch.com/story/here-are-the-key-things-fed-chairman-kevin-warsh-said-and-didnt-say-while-americans-were-sleeping-thursday-night-b82238a1?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "tags": [
         "mercado"
       ],
-      "published": "2026-10-15T21:56:00+00:00",
-      "kind": "rumor",
-      "unconfirmed": false
-    },
-    {
-      "title": "Nvidia and other chip stocks face renewed pressure as AI fears swell",
-      "url": "https://www.marketwatch.com/story/micron-nvidia-and-other-chip-stocks-face-renewed-pressure-as-ai-fears-swell-4e0dc989?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-10-15T21:23:00+00:00",
+      "published": "2026-10-16T09:16:00+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
     {
-      "title": "Don’t ditch tech stocks just yet. Make these moves to take advantage of the latest AI reset.",
-      "url": "https://www.marketwatch.com/story/dont-ditch-tech-stocks-just-yet-make-these-moves-to-take-advantage-of-the-latest-ai-reset-cb70c7b2?mod=mw_rss_topstories",
+      "title": "‘It’s a wait-and-see situation’: I’m 63 and diagnosed with lymphoma. Should I take my Social Security next year?",
+      "url": "https://www.marketwatch.com/story/its-a-wait-and-see-situation-im-63-and-diagnosed-with-lymphoma-should-i-take-my-social-security-next-year-ea88b419?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "tags": [
         "mercado"
       ],
-      "published": "2026-10-15T21:21:00+00:00",
+      "published": "2026-10-16T09:15:00+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
     {
-      "title": "CoreWeave’s polarizing stock rebounds as Wall Street squares off about AI spending",
-      "url": "https://www.marketwatch.com/story/coreweave-investors-are-feeling-spooked-as-the-companys-stock-and-bonds-see-fresh-pressure-ba39a931?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-10-15T21:03:00+00:00",
-      "kind": "hecho",
-      "unconfirmed": false
-    },
-    {
-      "title": "Investors are dumping AI stocks as ‘tech wreck’ worsens. Here’s where they’re turning now.",
-      "url": "https://www.marketwatch.com/story/traders-pile-into-bonds-and-defensive-stocks-as-the-tech-wreck-picks-up-steam-48c04374?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-10-15T20:40:00+00:00",
-      "kind": "hecho",
-      "unconfirmed": false
-    },
-    {
-      "title": "Big pharma stocks close near all-time highs as tech selloff pushes investors toward safer bets",
-      "url": "https://www.marketwatch.com/story/big-pharma-stocks-near-all-time-highs-as-tech-selloff-pushes-investors-toward-safer-bets-0a5d5d07?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "tags": [
-        "mercado"
-      ],
-      "published": "2026-10-15T20:29:00+00:00",
-      "kind": "hecho",
-      "unconfirmed": false
-    },
-    {
-      "title": "3 AI Hardware Stocks Riding The Semiconductor Export Boom - Simply Wall Street",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQLXdyUVpYZjAwNUdrZU9wZFVZV1hpQXo4aWRFQVdTWi0yVjFHT1hkUkFCTGpoQndDWVRlNjFFZVR0ZkFNd1FaT19PdG9GWFlmdjFjdzVzeG1nQVRCRmtETUhjQmRQbzNvVlR1UUpSNkpOQ2JqdkdIU0c3MTNmWHREMEZfbldpU2RZUXRPMEFIa2JYZGFyejh2R085YVBCOExPMEtSZnhuSDZtM0ZVZ2JXZ2tkaWlGRHpyVEJsbWN6VVdjMDU0MzdsT3NFcmNFRHEwOGQwTtIB2gFBVV95cUxPVmVZRFNDN3ZLMXo2MkkzVEw3bUhfTFpsVlhWbGRTNTBodC1lbjFqYks1VXc4R08zN0htUDE0VGFZRGpZY0c1TFptMWVsUkxyeUxiZXpwaERzUzYxcnhFVDh0NzF6UjZ5TjljYnUyQThMV2tSR0pMa0VjUUwxaGQweGUzVVdGb1JMblBlVUJlQml6V1NMMGJweDZJY05wUXdJNno4THY1TjFNcGlPQjVjTjlvNmo5aV8zaXhfejR5ejZiQW1OZ21GbV80QzEyMXEwY0I4TkFlRFNxUQ?oc=5",
+      "title": "China’s AI Chip Shortage Becomes Reality as DeepSeek Outage Exposes Compute Drought - bloomingbit",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5mRHlJTFBTdmlNeUkwQ01oVVlLMVUzeWRBZ0U0S2xQaXpkTWo1ZWhkTmZTMUF1cnhlLUJkbl9kb2o2eEg3aC1sY3dsOTc3aDJ1NDJNQw?oc=5",
       "source": "Google News · IA y semis",
       "tags": [
         "capex-ia"
       ],
-      "published": "2026-10-15T19:07:30+00:00",
+      "published": "2026-10-16T09:10:53+00:00",
       "kind": "hecho",
       "unconfirmed": false
     },
     {
-      "title": "This one governor’s race could derail the AI trade that’s powered the stock market",
-      "url": "https://www.marketwatch.com/story/this-one-governors-race-could-derail-the-ai-trade-thats-powered-the-stock-market-6bbf06f8?mod=mw_rss_topstories",
+      "title": "The pull of Nashville: A dozen celebrities who have moved to Tennessee, and why",
+      "url": "https://www.marketwatch.com/story/the-pull-of-nashville-a-dozen-celebrities-who-have-moved-to-tennessee-and-why-68446959?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "tags": [
         "mercado"
       ],
-      "published": "2026-10-15T19:00:00+00:00",
-      "kind": "rumor",
+      "published": "2026-10-16T09:05:00+00:00",
+      "kind": "hecho",
       "unconfirmed": false
     },
     {
-      "title": "ByteDance Nears Custom AI Chip Supply Pact With Taiwan's MediaTek - finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1VNnhqOUN3blBBcHRiRS1xVjE4eHZ2Qmo4VkVEX3dNVkE0SU9zVjJiN05tNTZvanZEU2dSVDdCVGZrc3FnUVdRSGdWZEh2ZVJ5SF9XTHpwUURGZE5vR08yUDJxX09rdVdYSE1IOU1MQ3BJNWdtOXc?oc=5",
+      "title": "There's a 35% Chance That the Fed Hikes Rates at Least 4 Times by September 2027, Which Can Decimate the AI-Driven Bull Market - The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZndPbWl4d21vYkhOQnpPRzJvc0RqNGczbHBLYkY4RmZGRzlOdWlTQ0tFYTJuZ3A2X0NxbnhlazVzTlh1VWNDSzlrcjdQZkU2dEhpVTBJWnVhZ2Y0bWV6a09xV2ExUXc4ZG5ZTnhiSVMzYS1lZzlvTExESVRGSTBJa1VDem9sclJYLXhYYW4xY0Nyd1NqMjZSZllwQ2E1SGU3T2EySXEzVm9URnlwVkI2MG5mLVVjc3VpeEFwMHcxajdSNmhNZUxMQUpraDdZb00?oc=5",
+      "source": "Google News · mercado",
+      "tags": [
+        "macro",
+        "politica"
+      ],
+      "published": "2026-10-16T08:23:38+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "Malaysia's Semiconductor Export Surged 82% In First Eight Months, Can This Momentum Continue? - BusinessToday Malaysia",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNS1JNZDY0dEh6UWVXT2JKeTh2VWZlejdiV3FTWjNDM1p4MjI0OW9LaUQ3bUVxWjlERFdmYmJVX1poSVdTc0JiMERQQ1BZeE5ld00xQnNtc2dSR3RXaDFyamFKY19fNjg0TTB2VE51a2JzX21pNkVMSVA5QV9BdV9IaTdQV2R1eXpIRWpqemREOE9KTVdiTEpObi1DYzJkdE5jaW9SejdRMzlTZGJTVUQycWF2TlEzNDhnRml2WlV2dE1Tb2RUb0xIT2JNaU5TVjg?oc=5",
       "source": "Google News · IA y semis",
       "tags": [
         "capex-ia"
       ],
-      "published": "2026-10-15T18:18:00+00:00",
+      "published": "2026-10-16T07:26:11+00:00",
       "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "HFCL’s AI, data centre exposure drives Nuvama’s Buy call; target implies 56% upside - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNa3o3LXFacWVlMWlhYmk5dXFmTHlMU0ZXWW9jbHRjLTgwbERsY1FUdFc1V0VFTlN0X3BSMmU0Z1UyaUctUXlUYmM1V214a0FaQ1hHdXVFVTZSeEZUaEJmTi1aaHo5dVVyWjRBdTZzSWw1VTNUU3VLWkRDVy1TZ1RkWHR5NVFwNU9ISHgyZ1FfLXF5V2l0U0ZZQ0JjWGFtWDc4ckJNdEZKclZEY21fZmxnT1ZLRWhuMmxONUZIcVdtV21XSzhVeWgyR3k5Sl9GalltVVRmc2FoMkxfUTB1alFYRFJGbGx2QjTSAewBQVVfeXFMTzIxMkZKUVF2cWxGYWFWWUJaT1VDdzBtVGtxdG15d1QtTHZ6NHBMVGNxZ2trcS1sd1dZSms2LUg5b1VrTmNZMGlIUFBJXzV2LTBxblVPd2VwcGREcGpxNkdobllNa01WSGpIdE81Z1lZSGM3ZUlXZU11M293LUhDNU5ST3UxOXlXbEZ3Sl9ZV3RLV3RzbWR0cEszWVJkRnVnYnlFT1pCUjBkT3RwTFpQdG5LM3ljbnRMajIwcVE2bDU1bGMxRHItc2NxUTJqNlpBNmN3bEV1eWU4VG1HaXNCZ2RGcFlHVGtSRHdpZTA?oc=5",
+      "source": "Google News · IA y semis",
+      "tags": [
+        "capex-ia"
+      ],
+      "published": "2026-10-16T06:53:32+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "Why Global Tech Stocks Suffered a $1 Trillion Selloff This Week? Rate Hike Expectations and AI Funding Pressures Weigh on Nvidia, AMD, and SK Hynix - TradingKey",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQM2dfZkpjQU00eVBOQUxTTDkzYWVEb1pacWFhMVhZbk81TE1fX2VCZEZBdGpZakZSTXlEVWhiSTRMQWYyYlpCSlFnWXQzTjhsSFhScUJyaFZkaEZjZHFsVWhxbGJIVC1vTFYyTS1CRUd3UlJvOFZqRzR5VVpQX3BvY1hIZEliY2w2SkFnM2dHeVdlMnU0Ry1zYzljQ1NwOEs5WlRIajZ2Vlc4UkllZlp2elJmWXhCSUJZUGZqd3BRTHh0MGU4VVdPeU9tY1ZpZHdubTFfWF9mM3ZSRjIz?oc=5",
+      "source": "Google News · mercado",
+      "tags": [
+        "macro",
+        "politica"
+      ],
+      "published": "2026-10-16T04:22:26+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "Malaysia’s Growth Cooled, But AI-Fueled Services Kept It Moving - Finimize",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRWthaHRaSzM5cWpuc3ViSWk3UW05WWJtR0RzUmRRdUlXdjJJY0l0U3hEUENvc2tMMUs1d1c1a0FWQi1UY294aVNIMDRONEtmRm1DNWpVM2IwNTMxMXZUOG5JaXZ2eXhib2RYa0xCTWFfYy15WUhJQk41T3Vrd25uc0VPeHVpa2hPTFlaMDhZQkhNNGtt?oc=5",
+      "source": "Google News · IA y semis",
+      "tags": [
+        "capex-ia"
+      ],
+      "published": "2026-10-16T04:12:03+00:00",
+      "kind": "hecho",
+      "unconfirmed": false
+    },
+    {
+      "title": "Malaysia’s growth beats forecasts as AI chip demand powers exports - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPcTAwazhLN09UVTNYSGtKYmtrUTFvaDViZHVtYmhtS2hXWWxEa2Y3bFE0Qmo3ZEZTc2Nyc25uam9qTmN6OUhIQlhXbWRuREVSSlZIY28xVk9BMUVPbG4zTHExaXJ4UFhfVFY0SjROWmpaQm5HTWFQcEJCVm1JOHFvWlR0bmF2RFJOd3l6d0haZlpLMkZZWW5Yc2FWR0pYVTBqYWZsS3NkSENCeExuX3FQbEFiTmdmYldnNlliNUpERlhjWWtibzNEbzFyWQ?oc=5",
+      "source": "Google News · IA y semis",
+      "tags": [
+        "capex-ia"
+      ],
+      "published": "2026-10-16T04:09:00+00:00",
+      "kind": "resultados",
+      "unconfirmed": false
+    },
+    {
+      "title": "ByteDance in talks with MediaTek on custom AI chips as Nvidia access tightens - 디지털투데이",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTTdReEFULWZsa2d2ZVM1aXJVS05NZUNnZDRjTlZNc2NRU0dBVko1UlM5QXNrVHhQNk5QTG9ZTmpaSVV2RmRrX0JubnU3cXVQMGJITVBiVmc4MGFNR1dYRERRWUlTZzlLUEdPclJXMmtCdzNCbjByR29Xd01tbkZ6bEVpWVpZcmM5d0ttdngyZXo1TzN0VWg4Unk3cWRvY3VyX3h1ZEREQ0VIclNReEs4SUI4S1VBZ29JcThaYUg1ZFM?oc=5",
+      "source": "Google News · IA y semis",
+      "tags": [
+        "capex-ia"
+      ],
+      "published": "2026-10-16T04:05:37+00:00",
+      "kind": "rumor",
       "unconfirmed": false
     }
   ],
