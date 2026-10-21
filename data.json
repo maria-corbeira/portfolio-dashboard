@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T22:38:31+00:00",
+  "generated_at": "2026-10-21T00:54:15+00:00",
   "count": 22,
   "failed": [],
   "prices": {
@@ -182,197 +182,187 @@
   },
   "indicadores": {
     "NVDA": {
-      "sesiones": 36,
-      "var_1d": -0.29,
-      "var_5d": -2.18,
-      "rsi_14": 27.6,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -0.35,
+      "rsi_14": 15.4,
       "ma_200": null,
       "vs_ma200": null
     },
     "MSFT": {
-      "sesiones": 36,
-      "var_1d": -0.31,
-      "var_5d": -0.34,
-      "rsi_14": 59.9,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -1.4,
+      "rsi_14": 53.2,
       "ma_200": null,
       "vs_ma200": null
     },
     "GOOGL": {
-      "sesiones": 36,
-      "var_1d": -1.13,
-      "var_5d": -2.12,
-      "rsi_14": 45.8,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -2.56,
+      "rsi_14": 41.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "META": {
-      "sesiones": 36,
-      "var_1d": -1.59,
-      "var_5d": -5.87,
-      "rsi_14": 38.8,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -5.76,
+      "rsi_14": 32.2,
       "ma_200": null,
       "vs_ma200": null
     },
     "ISRG": {
-      "sesiones": 36,
-      "var_1d": 1.11,
-      "var_5d": 4.23,
-      "rsi_14": 83.5,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": 2.37,
+      "rsi_14": 78.7,
       "ma_200": null,
       "vs_ma200": null
     },
     "UBER": {
-      "sesiones": 36,
-      "var_1d": -1.46,
-      "var_5d": -0.51,
-      "rsi_14": 53.3,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -3.27,
+      "rsi_14": 46.5,
       "ma_200": null,
       "vs_ma200": null
     },
     "AMZN": {
-      "sesiones": 36,
-      "var_1d": 0.07,
-      "var_5d": 3.37,
-      "rsi_14": 61.3,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": 3.09,
+      "rsi_14": 60.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "AAPL": {
-      "sesiones": 36,
-      "var_1d": -1.0,
-      "var_5d": -1.01,
-      "rsi_14": 61.6,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -0.73,
+      "rsi_14": 64.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "IBM": {
-      "sesiones": 36,
-      "var_1d": 2.34,
-      "var_5d": 6.16,
-      "rsi_14": 77.8,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": 3.33,
+      "rsi_14": 82.4,
       "ma_200": null,
       "vs_ma200": null
     },
     "COP": {
-      "sesiones": 36,
-      "var_1d": 0.49,
-      "var_5d": 2.54,
-      "rsi_14": 91.5,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": 2.98,
+      "rsi_14": 91.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "WMT": {
-      "sesiones": 36,
-      "var_1d": -0.72,
-      "var_5d": 1.45,
-      "rsi_14": 89.7,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -0.02,
+      "rsi_14": 89.3,
       "ma_200": null,
       "vs_ma200": null
     },
     "CVX": {
-      "sesiones": 36,
-      "var_1d": 0.6,
-      "var_5d": 1.65,
-      "rsi_14": 79.8,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": 2.91,
+      "rsi_14": 81.5,
       "ma_200": null,
       "vs_ma200": null
     },
     "QQQ": {
-      "sesiones": 36,
-      "var_1d": -0.1,
-      "var_5d": -1.55,
-      "rsi_14": 29.1,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -1.42,
+      "rsi_14": 22.7,
       "ma_200": null,
       "vs_ma200": null
     },
     "VOO": {
-      "sesiones": 36,
-      "var_1d": 0.31,
-      "var_5d": -0.09,
-      "rsi_14": 49.1,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -0.37,
+      "rsi_14": 42.1,
       "ma_200": null,
       "vs_ma200": null
     },
     "IAUM": {
-      "sesiones": 36,
-      "var_1d": -0.51,
-      "var_5d": 0.54,
-      "rsi_14": 46.7,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -1.27,
+      "rsi_14": 47.4,
       "ma_200": null,
       "vs_ma200": null
     },
     "PGR": {
-      "sesiones": 36,
-      "var_1d": 1.29,
-      "var_5d": 3.97,
-      "rsi_14": 67.5,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": 3.83,
+      "rsi_14": 65.7,
       "ma_200": null,
       "vs_ma200": null
     },
     "V": {
-      "sesiones": 36,
-      "var_1d": 0.91,
-      "var_5d": 3.87,
-      "rsi_14": 91.6,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": 1.71,
+      "rsi_14": 90.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "PLTR": {
-      "sesiones": 36,
-      "var_1d": -0.8,
-      "var_5d": -4.16,
-      "rsi_14": 53.6,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -3.94,
+      "rsi_14": 52.8,
       "ma_200": null,
       "vs_ma200": null
     },
     "LULU": {
-      "sesiones": 36,
-      "var_1d": 2.23,
-      "var_5d": 6.22,
-      "rsi_14": 65.5,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": 0.86,
+      "rsi_14": 72.9,
       "ma_200": null,
       "vs_ma200": null
     },
     "UNP": {
-      "sesiones": 36,
-      "var_1d": 0.21,
-      "var_5d": 0.41,
-      "rsi_14": 72.7,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": -0.38,
+      "rsi_14": 74.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "SHEL": {
-      "sesiones": 36,
-      "var_1d": 0.69,
-      "var_5d": 1.89,
-      "rsi_14": 81.8,
+      "sesiones": 37,
+      "var_1d": 0.0,
+      "var_5d": 1.92,
+      "rsi_14": 81.4,
       "ma_200": null,
       "vs_ma200": null
     },
     "CNSWF": {
-      "sesiones": 35,
-      "var_1d": 4.04,
-      "var_5d": 4.92,
-      "rsi_14": 70.3,
+      "sesiones": 36,
+      "var_1d": 0.0,
+      "var_5d": 0.43,
+      "rsi_14": 69.3,
       "ma_200": null,
       "vs_ma200": null
     }
   },
   "movimientos_fuertes": [
     {
-      "ticker": "LULU",
-      "ventana": "5 sesiones",
-      "pct": 6.22
-    },
-    {
-      "ticker": "IBM",
-      "ventana": "5 sesiones",
-      "pct": 6.16
-    },
-    {
       "ticker": "META",
       "ventana": "5 sesiones",
-      "pct": -5.87
+      "pct": -5.76
     }
   ],
   "umbral_fuerte": 5.0,
