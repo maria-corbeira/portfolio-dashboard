@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-21T20:06:50+00:00",
+  "generated_at": "2026-10-21T23:15:04+00:00",
   "count": 22,
   "failed": [],
   "prices": {
     "NVDA": {
-      "price": 221.88,
+      "price": 221.97,
       "prev_close": 216.47,
-      "change_pct": 2.5,
+      "change_pct": 2.54,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
@@ -20,9 +20,9 @@
       "source": "cnbc"
     },
     "GOOGL": {
-      "price": 334.68,
+      "price": 334.76,
       "prev_close": 340.28,
-      "change_pct": -1.65,
+      "change_pct": -1.62,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
@@ -172,9 +172,9 @@
       "source": "cnbc"
     },
     "CNSWF": {
-      "price": 2295.01,
+      "price": 2303.01,
       "prev_close": 2309.99,
-      "change_pct": -0.65,
+      "change_pct": -0.3,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
@@ -183,9 +183,9 @@
   "indicadores": {
     "NVDA": {
       "sesiones": 37,
-      "var_1d": 2.5,
-      "var_5d": 2.14,
-      "rsi_14": 27.2,
+      "var_1d": 2.54,
+      "var_5d": 2.18,
+      "rsi_14": 27.4,
       "ma_200": null,
       "vs_ma200": null
     },
@@ -199,9 +199,9 @@
     },
     "GOOGL": {
       "sesiones": 37,
-      "var_1d": -1.65,
-      "var_5d": -4.16,
-      "rsi_14": 35.4,
+      "var_1d": -1.62,
+      "var_5d": -4.14,
+      "rsi_14": 35.5,
       "ma_200": null,
       "vs_ma200": null
     },
@@ -351,9 +351,9 @@
     },
     "CNSWF": {
       "sesiones": 36,
-      "var_1d": -0.65,
-      "var_5d": -0.22,
-      "rsi_14": 67.4,
+      "var_1d": -0.3,
+      "var_5d": 0.13,
+      "rsi_14": 68.4,
       "ma_200": null,
       "vs_ma200": null
     }
