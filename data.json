@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T20:02:37+00:00",
+  "generated_at": "2026-10-22T23:18:50+00:00",
   "count": 22,
   "failed": [],
   "prices": {
@@ -92,9 +92,9 @@
       "source": "cnbc"
     },
     "CVX": {
-      "price": 226.66,
+      "price": 226.68,
       "prev_close": 226.78,
-      "change_pct": -0.05,
+      "change_pct": -0.04,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
@@ -172,9 +172,9 @@
       "source": "cnbc"
     },
     "CNSWF": {
-      "price": 2425.06,
+      "price": 2444.0,
       "prev_close": 2303.01,
-      "change_pct": 5.3,
+      "change_pct": 6.12,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
@@ -271,9 +271,9 @@
     },
     "CVX": {
       "sesiones": 38,
-      "var_1d": -0.05,
-      "var_5d": 0.74,
-      "rsi_14": 80.9,
+      "var_1d": -0.04,
+      "var_5d": 0.75,
+      "rsi_14": 81.0,
       "ma_200": null,
       "vs_ma200": null
     },
@@ -351,9 +351,9 @@
     },
     "CNSWF": {
       "sesiones": 37,
-      "var_1d": 5.3,
-      "var_5d": 8.96,
-      "rsi_14": 81.3,
+      "var_1d": 6.12,
+      "var_5d": 9.81,
+      "rsi_14": 81.9,
       "ma_200": null,
       "vs_ma200": null
     }
@@ -362,7 +362,7 @@
     {
       "ticker": "CNSWF",
       "ventana": "5 sesiones",
-      "pct": 8.96
+      "pct": 9.81
     },
     {
       "ticker": "IBM",
@@ -390,14 +390,14 @@
       "pct": -6.98
     },
     {
+      "ticker": "CNSWF",
+      "ventana": "1 día",
+      "pct": 6.12
+    },
+    {
       "ticker": "PLTR",
       "ventana": "5 sesiones",
       "pct": 5.46
-    },
-    {
-      "ticker": "CNSWF",
-      "ventana": "1 día",
-      "pct": 5.3
     },
     {
       "ticker": "PGR",
