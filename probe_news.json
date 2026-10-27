@@ -7,19 +7,19 @@
   },
   "google_ticker": {
     "status": 200,
-    "bytes": 127077,
+    "bytes": 127518,
     "items": 100,
     "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"NVDA stock when:30d\" - Google News</title><link>https://news.google.com/search?q=NVDA+stock+when:30d&amp;hl=en-US&amp;gl=US&amp;ceid=US"
   },
   "google_mercado": {
     "status": 200,
-    "bytes": 130703,
+    "bytes": 128177,
     "items": 100,
     "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"stock market when:3d\" - Google News</title><link>https://news.google.com/search?q=stock+market+when:3d&amp;hl=en-US&amp;gl=US&amp;ceid="
   },
   "marketwatch": {
     "status": 200,
-    "bytes": 8384,
+    "bytes": 8303,
     "items": 10,
     "muestra": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:media=\"http://search.yahoo.com/mrss/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" version=\"2.0\"\n>\n<channel>\n<title>MarketWatch.com - Top Stories</title>\n<description>MarketWatch, a leading publ"
   },
@@ -55,9 +55,9 @@
   },
   "nasdaq_movers": {
     "status": 200,
-    "bytes": 18377,
+    "bytes": 18380,
     "items": 0,
-    "muestra": "{\"data\":{\"STOCKS\":{\"MostActiveByShareVolume\":{\"dataAsOf\":\"Data as of Oct 22, 2026 4:14 PM ET\",\"lastTradeTimestamp\":\"Oct 22, 2026 4:14 PM ET\",\"table\":{\"asOf\":null,\"headers\":{\"symbol\":\"Symbol\",\"name\":\"Name\",\"lastSalePrice\":\"Last\",\"lastSaleChange\":\"Change\",\"change\":\"Share Volume\"},\"rows\":[{\"symbol\":\"SH"
+    "muestra": "{\"data\":{\"STOCKS\":{\"MostActiveByShareVolume\":{\"dataAsOf\":\"Data as of Oct 27, 2026 4:15 PM ET\",\"lastTradeTimestamp\":\"Oct 27, 2026 4:15 PM ET\",\"table\":{\"asOf\":null,\"headers\":{\"symbol\":\"Symbol\",\"name\":\"Name\",\"lastSalePrice\":\"Last\",\"lastSaleChange\":\"Change\",\"change\":\"Share Volume\"},\"rows\":[{\"symbol\":\"AX"
   },
   "yahoo_gainers": {
     "status": 429,
