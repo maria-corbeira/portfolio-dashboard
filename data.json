@@ -1,180 +1,180 @@
 {
-  "generated_at": "2026-11-03T18:42:15+00:00",
+  "generated_at": "2026-11-03T23:40:17+00:00",
   "count": 22,
   "failed": [],
   "prices": {
     "NVDA": {
-      "price": 207.9,
+      "price": 206.69,
       "prev_close": 202.06,
-      "change_pct": 2.89,
+      "change_pct": 2.29,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "MSFT": {
-      "price": 520.65,
+      "price": 520.99,
       "prev_close": 507.12,
-      "change_pct": 2.67,
+      "change_pct": 2.74,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "GOOGL": {
-      "price": 280.05,
+      "price": 280.03,
       "prev_close": 278.99,
-      "change_pct": 0.38,
+      "change_pct": 0.37,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "META": {
-      "price": 622.65,
+      "price": 621.03,
       "prev_close": 606.73,
-      "change_pct": 2.62,
+      "change_pct": 2.36,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "ISRG": {
-      "price": 442.34,
+      "price": 440.75,
       "prev_close": 436.87,
-      "change_pct": 1.25,
-      "currency": "USD",
-      "market_time": null,
-      "source": "cnbc"
-    },
-    "UBER": {
-      "price": 66.69,
-      "prev_close": 66.71,
-      "change_pct": -0.03,
-      "currency": "USD",
-      "market_time": null,
-      "source": "cnbc"
-    },
-    "AMZN": {
-      "price": 250.77,
-      "prev_close": 245.63,
-      "change_pct": 2.09,
-      "currency": "USD",
-      "market_time": null,
-      "source": "cnbc"
-    },
-    "AAPL": {
-      "price": 331.86,
-      "prev_close": 338.32,
-      "change_pct": -1.91,
-      "currency": "USD",
-      "market_time": null,
-      "source": "cnbc"
-    },
-    "IBM": {
-      "price": 249.57,
-      "prev_close": 252.51,
-      "change_pct": -1.16,
-      "currency": "USD",
-      "market_time": null,
-      "source": "cnbc"
-    },
-    "COP": {
-      "price": 144.38,
-      "prev_close": 146.84,
-      "change_pct": -1.68,
-      "currency": "USD",
-      "market_time": null,
-      "source": "cnbc"
-    },
-    "WMT": {
-      "price": 125.26,
-      "prev_close": 127.69,
-      "change_pct": -1.9,
-      "currency": "USD",
-      "market_time": null,
-      "source": "cnbc"
-    },
-    "CVX": {
-      "price": 226.33,
-      "prev_close": 227.77,
-      "change_pct": -0.63,
-      "currency": "USD",
-      "market_time": null,
-      "source": "cnbc"
-    },
-    "QQQ": {
-      "price": 687.18,
-      "prev_close": 681.09,
       "change_pct": 0.89,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
+    "UBER": {
+      "price": 66.6,
+      "prev_close": 66.71,
+      "change_pct": -0.16,
+      "currency": "USD",
+      "market_time": null,
+      "source": "cnbc"
+    },
+    "AMZN": {
+      "price": 250.69,
+      "prev_close": 245.63,
+      "change_pct": 2.06,
+      "currency": "USD",
+      "market_time": null,
+      "source": "cnbc"
+    },
+    "AAPL": {
+      "price": 331.9,
+      "prev_close": 338.32,
+      "change_pct": -1.9,
+      "currency": "USD",
+      "market_time": null,
+      "source": "cnbc"
+    },
+    "IBM": {
+      "price": 250.04,
+      "prev_close": 252.51,
+      "change_pct": -0.98,
+      "currency": "USD",
+      "market_time": null,
+      "source": "cnbc"
+    },
+    "COP": {
+      "price": 144.4,
+      "prev_close": 146.84,
+      "change_pct": -1.66,
+      "currency": "USD",
+      "market_time": null,
+      "source": "cnbc"
+    },
+    "WMT": {
+      "price": 124.86,
+      "prev_close": 127.69,
+      "change_pct": -2.22,
+      "currency": "USD",
+      "market_time": null,
+      "source": "cnbc"
+    },
+    "CVX": {
+      "price": 225.27,
+      "prev_close": 227.77,
+      "change_pct": -1.1,
+      "currency": "USD",
+      "market_time": null,
+      "source": "cnbc"
+    },
+    "QQQ": {
+      "price": 685.28,
+      "prev_close": 681.09,
+      "change_pct": 0.62,
+      "currency": "USD",
+      "market_time": null,
+      "source": "cnbc"
+    },
     "VOO": {
-      "price": 695.08,
+      "price": 693.54,
       "prev_close": 691.32,
-      "change_pct": 0.54,
+      "change_pct": 0.32,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "IAUM": {
-      "price": 39.12,
+      "price": 39.07,
       "prev_close": 39.3,
-      "change_pct": -0.46,
+      "change_pct": -0.59,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "PGR": {
-      "price": 229.44,
+      "price": 229.11,
       "prev_close": 233.92,
-      "change_pct": -1.92,
+      "change_pct": -2.06,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "V": {
-      "price": 422.5,
+      "price": 420.42,
       "prev_close": 425.51,
-      "change_pct": -0.71,
+      "change_pct": -1.2,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "PLTR": {
-      "price": 175.69,
+      "price": 175.4,
       "prev_close": 178.34,
-      "change_pct": -1.49,
+      "change_pct": -1.65,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "LULU": {
-      "price": 107.11,
+      "price": 106.95,
       "prev_close": 107.83,
-      "change_pct": -0.67,
+      "change_pct": -0.82,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "UNP": {
-      "price": 304.63,
+      "price": 303.43,
       "prev_close": 307.0,
-      "change_pct": -0.77,
+      "change_pct": -1.16,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "SHEL": {
-      "price": 104.28,
+      "price": 104.2,
       "prev_close": 104.94,
-      "change_pct": -0.63,
+      "change_pct": -0.71,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
     },
     "CNSWF": {
-      "price": 2454.99,
+      "price": 2450.89,
       "prev_close": 2427.49,
-      "change_pct": 1.13,
+      "change_pct": 0.96,
       "currency": "USD",
       "market_time": null,
       "source": "cnbc"
@@ -183,177 +183,177 @@
   "indicadores": {
     "NVDA": {
       "sesiones": 48,
-      "var_1d": 2.66,
-      "var_5d": -3.47,
-      "rsi_14": 43.5,
+      "var_1d": 2.06,
+      "var_5d": -4.03,
+      "rsi_14": 42.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "MSFT": {
       "sesiones": 48,
-      "var_1d": 2.44,
-      "var_5d": -1.95,
-      "rsi_14": 43.8,
+      "var_1d": 2.51,
+      "var_5d": -1.89,
+      "rsi_14": 44.0,
       "ma_200": null,
       "vs_ma200": null
     },
     "GOOGL": {
       "sesiones": 48,
-      "var_1d": 0.16,
-      "var_5d": -13.8,
+      "var_1d": 0.15,
+      "var_5d": -13.81,
       "rsi_14": 14.3,
       "ma_200": null,
       "vs_ma200": null
     },
     "META": {
       "sesiones": 48,
-      "var_1d": 2.48,
-      "var_5d": 1.66,
-      "rsi_14": 20.6,
+      "var_1d": 2.22,
+      "var_5d": 1.39,
+      "rsi_14": 19.7,
       "ma_200": null,
       "vs_ma200": null
     },
     "ISRG": {
       "sesiones": 48,
-      "var_1d": 0.97,
-      "var_5d": -0.41,
-      "rsi_14": 59.2,
+      "var_1d": 0.61,
+      "var_5d": -0.77,
+      "rsi_14": 58.4,
       "ma_200": null,
       "vs_ma200": null
     },
     "UBER": {
       "sesiones": 48,
-      "var_1d": 0.18,
-      "var_5d": 2.18,
-      "rsi_14": 32.4,
+      "var_1d": 0.05,
+      "var_5d": 2.04,
+      "rsi_14": 31.8,
       "ma_200": null,
       "vs_ma200": null
     },
     "AMZN": {
       "sesiones": 48,
-      "var_1d": 1.8,
-      "var_5d": -1.5,
-      "rsi_14": 50.7,
+      "var_1d": 1.77,
+      "var_5d": -1.54,
+      "rsi_14": 50.6,
       "ma_200": null,
       "vs_ma200": null
     },
     "AAPL": {
       "sesiones": 48,
-      "var_1d": -2.01,
-      "var_5d": -3.48,
+      "var_1d": -2.0,
+      "var_5d": -3.47,
       "rsi_14": 37.3,
       "ma_200": null,
       "vs_ma200": null
     },
     "IBM": {
       "sesiones": 48,
-      "var_1d": -1.74,
-      "var_5d": -1.44,
-      "rsi_14": 71.0,
+      "var_1d": -1.55,
+      "var_5d": -1.26,
+      "rsi_14": 71.8,
       "ma_200": null,
       "vs_ma200": null
     },
     "COP": {
       "sesiones": 48,
-      "var_1d": -1.94,
-      "var_5d": -3.14,
+      "var_1d": -1.93,
+      "var_5d": -3.13,
       "rsi_14": 46.1,
       "ma_200": null,
       "vs_ma200": null
     },
     "WMT": {
       "sesiones": 48,
-      "var_1d": -1.91,
-      "var_5d": 5.46,
-      "rsi_14": 67.1,
+      "var_1d": -2.22,
+      "var_5d": 5.13,
+      "rsi_14": 65.7,
       "ma_200": null,
       "vs_ma200": null
     },
     "CVX": {
       "sesiones": 48,
-      "var_1d": -0.83,
-      "var_5d": -1.25,
-      "rsi_14": 52.2,
+      "var_1d": -1.3,
+      "var_5d": -1.71,
+      "rsi_14": 50.4,
       "ma_200": null,
       "vs_ma200": null
     },
     "QQQ": {
       "sesiones": 48,
-      "var_1d": 0.77,
-      "var_5d": -5.3,
-      "rsi_14": 39.5,
+      "var_1d": 0.49,
+      "var_5d": -5.56,
+      "rsi_14": 38.4,
       "ma_200": null,
       "vs_ma200": null
     },
     "VOO": {
       "sesiones": 48,
-      "var_1d": 0.44,
-      "var_5d": -2.09,
-      "rsi_14": 43.9,
+      "var_1d": 0.22,
+      "var_5d": -2.3,
+      "rsi_14": 42.2,
       "ma_200": null,
       "vs_ma200": null
     },
     "IAUM": {
       "sesiones": 48,
-      "var_1d": -0.48,
-      "var_5d": -3.65,
-      "rsi_14": 27.5,
+      "var_1d": -0.61,
+      "var_5d": -3.77,
+      "rsi_14": 27.3,
       "ma_200": null,
       "vs_ma200": null
     },
     "PGR": {
       "sesiones": 48,
-      "var_1d": -2.09,
-      "var_5d": 1.68,
-      "rsi_14": 67.0,
+      "var_1d": -2.23,
+      "var_5d": 1.53,
+      "rsi_14": 66.3,
       "ma_200": null,
       "vs_ma200": null
     },
     "V": {
       "sesiones": 48,
-      "var_1d": -0.7,
-      "var_5d": 5.47,
-      "rsi_14": 68.7,
+      "var_1d": -1.18,
+      "var_5d": 4.95,
+      "rsi_14": 66.1,
       "ma_200": null,
       "vs_ma200": null
     },
     "PLTR": {
       "sesiones": 48,
-      "var_1d": -2.14,
-      "var_5d": -10.73,
-      "rsi_14": 39.7,
+      "var_1d": -2.3,
+      "var_5d": -10.88,
+      "rsi_14": 39.5,
       "ma_200": null,
       "vs_ma200": null
     },
     "LULU": {
       "sesiones": 48,
-      "var_1d": -0.75,
-      "var_5d": 1.8,
-      "rsi_14": 64.8,
+      "var_1d": -0.9,
+      "var_5d": 1.64,
+      "rsi_14": 64.5,
       "ma_200": null,
       "vs_ma200": null
     },
     "UNP": {
       "sesiones": 48,
-      "var_1d": -0.65,
-      "var_5d": 2.29,
-      "rsi_14": 70.4,
+      "var_1d": -1.04,
+      "var_5d": 1.89,
+      "rsi_14": 68.3,
       "ma_200": null,
       "vs_ma200": null
     },
     "SHEL": {
       "sesiones": 48,
-      "var_1d": -0.77,
-      "var_5d": -0.87,
-      "rsi_14": 43.1,
+      "var_1d": -0.85,
+      "var_5d": -0.94,
+      "rsi_14": 42.9,
       "ma_200": null,
       "vs_ma200": null
     },
     "CNSWF": {
       "sesiones": 47,
-      "var_1d": 1.16,
-      "var_5d": 2.72,
-      "rsi_14": 77.8,
+      "var_1d": 1.0,
+      "var_5d": 2.55,
+      "rsi_14": 77.6,
       "ma_200": null,
       "vs_ma200": null
     }
@@ -362,27 +362,22 @@
     {
       "ticker": "GOOGL",
       "ventana": "5 sesiones",
-      "pct": -13.8
+      "pct": -13.81
     },
     {
       "ticker": "PLTR",
       "ventana": "5 sesiones",
-      "pct": -10.73
-    },
-    {
-      "ticker": "V",
-      "ventana": "5 sesiones",
-      "pct": 5.47
-    },
-    {
-      "ticker": "WMT",
-      "ventana": "5 sesiones",
-      "pct": 5.46
+      "pct": -10.88
     },
     {
       "ticker": "QQQ",
       "ventana": "5 sesiones",
-      "pct": -5.3
+      "pct": -5.56
+    },
+    {
+      "ticker": "WMT",
+      "ventana": "5 sesiones",
+      "pct": 5.13
     }
   ],
   "umbral_fuerte": 5.0,
